@@ -1,3 +1,49 @@
+Versão 2.8.11
+
+- Chat Interno
+- bug - chat interno quando mensagem e muito comprida gerava rolagem lista de usuarios
+- novos formatos aceitos  .dwg, .cad, .cdr, .psd, .ai
+- Botão download midia
+- Contador aparece menu mensagens não lidas agora lista das equipes tambem
+
+- Agendamento
+- bug - exibição nome contato na lista agendamento
+- Agendadamento enviado agora aparece na lista mensagens no atendimento 
+- Permite agendar mensagem somente com anexo tirado obrigatoriedade texto
+
+- Tela Atendimento
+- bug - nome arquivos com acento ajuste
+- Simplificado nome arquivos ficar mais proximo possivel original
+- Melhoria botão download midia
+- Nova opção exibir status conexões
+- Novos elementos foram incluídos para identificar mensagens enviadas por diferentes tipos de bots ou automações (como ChatGPT, agendamentos, campanhas entre outros). Cada tipo possui um ícone e rótulo distintivo, facilitando o entendimento no chat. Estilos específicos foram adicionados para manter integração com o design existente.
+- Identificação usuario enviou mensagem
+
+- Campanha
+- Mensagem enviada agora aparece na lista mensagens no atendimento 
+
+- Painel de atendimento foi atualizado para modo diferente agora ele atualiza status tickets automaticamente botão tela cheia para quem quiser colocar televisão por exemplo ir acompanhando atendimentos
+
+- CRM
+- bug - ao da F5 perdia cores menu
+- Quando tem ticket aberto o icone vai direto pro ticket
+
+- Avaliações passa para dentro relatorios
+- Protocolos passa para dentro relatorios
+- Anotações passa para dentro relatorios
+- Agendamentos antigos passa para dentro relatorios
+
+- Canais
+- bug - cadastro canal whatsapp marcação importação mensagens ficava tracinho trazendo falso positivo
+
+- API
+- Mensagens enviadas por api nao abre mais varios tickets usa sempre o ultimo
+
+- Melhoria vizualização logs pm2 log
+
+- Financeiro
+- bug - ao da F5 perdia cores menu
+
 Versão 2.8.10
 
 --- Atenção essa versão somente aceita hub adquirido de revenda autorizada na Whazing ---
