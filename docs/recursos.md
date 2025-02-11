@@ -38,4 +38,4 @@
 
 
 
-Versão atual: 2.8.10
+Versão atual: 2.8.11
