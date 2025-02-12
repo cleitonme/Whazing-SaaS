@@ -91,7 +91,9 @@ Versão Premium*
 ## Videos gravador por um cliente da prataforma
 
 -  [Videos](https://www.youtube.com/@ZAPPRO-z4i/videos)
- 
+
+-  [Videos](https://www.youtube.com/watch?v=HFFFKtz7IgM)
+
 ## Instalando
 Seguem links sugerimos:
 
