@@ -1,3 +1,8 @@
+Versão 2.8.11 - 13/02/2025
+
+- bug - Envio api contatos Novos
+- Adicionado retry em mensagens que falha campanhas para tentar enviar todas mensagens
+
 Versão 2.8.11
 
 - Chat Interno
