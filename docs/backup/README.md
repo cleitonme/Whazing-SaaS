@@ -20,6 +20,8 @@ Comando abaixo pegar CONTAINER ID do docker do postgresql
 docker ps
 ```
 
+- Restauração deve ser feita em um banco de dados vazio na duvida acesso banco dados e cria banco novo antes, depois somente altere .env do backend com novo banco e renicie whazing
+
 Comando abaixo modelo alterar com seus dados
 
 ```bash
