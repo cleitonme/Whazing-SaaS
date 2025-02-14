@@ -1,83 +1,74 @@
-## Breve resumo algumas configurações chatbot interno
+## Breve Resumo de Algumas Configurações do Chatbot Interno
 
->![print](montagembot.png)
+### Configuração de Fluxo
 
-- Configuração fluxo
+![print](montagembot.png)
 
->![print](configfluxo.png)
+1. **Configurar Fluxo**
 
-- Interações na versão 2.8.4 temos atualmente "Enviar Mensagem", "Enviar documentos, vídeo, aúdio e outros arquivos", "Adicionar Delay", "Adicionar Tag", "Adicionar Webhook (GET)".
+   ![print](configfluxo.png)
 
-- Enviar Mensagem - Aqui você coloca texto quer ser enviado no cliente, possivel usar tambem variavel vericar documentação.
+   - As interações na versão 2.8.4 incluem:
+     - **Enviar Mensagem**: Coloque o texto que será enviado ao cliente. É possível usar variáveis (ver documentação).
+     - **Enviar Documentos, Vídeos, Áudios e Outros Arquivos**: Para envio de arquivos.
+     - **Adicionar Delay**: Defina um tempo em segundos entre mensagens.
+     - **Adicionar Tag**: Marque uma etiqueta no contato.
+     - **Adicionar Webhook (GET)**: Envie informações para um sistema externo (por exemplo, variáveis capturadas no atendimento).
 
-- Enviar documentos, vídeo, aúdio e outros arquivos. - Envio de arquivos
+### Ordem das Interações
 
-- Adicionar Delay - Colocar tempo em segundos entre mensagens
+   ![print](configfluxo2.png)
 
-- Adicionar Tag - Marcar uma etiqueta no contato
+   - Este número indica a ordem em que as interações serão executadas.
+   - Quando enviar mais de uma mensagem, coloque um delay entre elas para garantir que sejam enviadas na ordem correta.
 
-- Adicionar Webhook (GET) - Enviar informações para um sistema externo por exemplo variaveis capturadas no atendimento.
+### Configuração de Condições
 
->![print](configfluxo2.png)
+![print](condicoes.png)
 
-- Esse numero ordem que será executado as interações configurada acimas. Quando for enviar mais de uma mensagem coloque um delay entre elas para garantir que saia na ordem.
+   - Na tela de condições, a prioridade das condições é importante. 
+     - **Qualquer Resposta**: Executa qualquer resposta do cliente. Lembre-se de deixar esta condição sempre por último.
+     - **Respostas**: Deve ser uma resposta exata. Exemplo: "1". Se o cliente escrever "quero 1", a condição não será executada. Pode incluir mais opções, exemplo: "1" e "01".
+     - **Contém Exato**: Palavras dentro da frase. Exemplo: cadastrar "quero comprar". Se receber a mensagem "Eu quero comprar um tênis", a condição será executada.
+     - **Contém**: Palavras ou partes de palavras. Exemplo: cadastrar "compra". Se receber "estou comprando" ou "eu sou comprador", a condição será acionada.
+     - **Dentro do Horário de Atendimento**: Executa esta condição dentro do horário de atendimento. Lembre-se de deixar no início.
+     - **Fora do Horário de Atendimento**: Executa esta condição fora do horário de atendimento. Lembre-se de deixar no início.
 
+### Exemplos de Fluxos para Chat Interno
 
->![print](condicoes.png)
+#### Fluxo que Muda pelo Horário de Atendimento
 
-- Na tela condições acontece mesmo coisa esse prioridade da condição. Exemplo se você colocar condição "Qualquer resposta" ela não vai executar o que tiver abaixo dela. Esse tipo condição sempre se deixa por ultimo.
+   - Este fluxo simula uma empresa de seguros que tem um plantão para emergências.
 
-- Qualquer resposta - Qualquer resposta do cliente executa essa condição - lembre-se da prioridade deixe sempre ela por ultimo
+     ![print](horario1.jpg)
+     ![print](horario2.jpg)
 
-- Respostas - essa tem ser resposta exata exemplo se fosse colocar "1", caso cliente escrever "quero 1" a condição não sera executada tem que ser exatamente "1". Pode colocar mais opções exemplo "1" e "01" então executando caso cliente escreve 1 ou 01
+   - [Fluxo de Exemplo](horario_de_atendimento.json)
 
-- Contem exato - Essa pode ser palavra dentro frase. Exemplo cadastra "quero comprar" caso receber mensagem "Eu quero comprar um tenis" a condição sera executada
+#### Fluxo com Uso de Variáveis Dinâmicas
 
-- Contem - Essa vale meio da palavra tambem exemplo se cadastrar "compra" caso receber mensagens "estou comprando" ou "eu sou comprador" a condição vai ser acionada então deve ser usada bastante atenção.
+   - Neste fluxo, você pode fazer perguntas ao cliente e guardar uma variável para usar depois.
 
-- Dentro do Horário de Atendimento - Executa essa condição dentro horario atendimento - lembre-se da prioridade deixe ela sempre no começo
+   - [Fluxo de Exemplo](exemplo_fluxo_usando_novas_variaveis.json)
 
-- Fora do Horário de Atendimento - Executa essa condição fora horario atendimento - lembre-se da prioridade deixe ela sempre no começo
+   Exemplo de uso:
+   ```bash
+   Por favor, confirme se seu endereço é {{endereco}}?
+   1 - Sim
+   2 - Não
+   ```
 
+   O bot vai enviar:
+   ```bash
+   Por favor, confirme se seu endereço é Rua Marechal Deodoro, 11?
+   1 - Sim
+   2 - Não
+   ```
 
+#### Fluxo para Agendamento com Cal.com
 
-## Exemplos de fluxos para chat interno
+   - Exemplo de fluxo que envia o link [https://cal.com/](https://cal.com/) para fazer agendamentos.
 
-## Fluxo que muda pelo horario de atendimento
+   - [Fluxo de Exemplo](agendamentobarbearia.json)
 
-- Esse fluxo simula empresa de seguros tem que ter um plantão para emergencias
-
-
->![print](horario1.jpg)
-
->![print](horario2.jpg)
-
-
--  [Fluxo de exemplo](horario_de_atendimento.json)
-
-## Fluxo com uso variaveis dinamicas
-
-- Nesse fluxo você pode fazer pergunta cliente e guardar uma variavel usar depois
-
--  [Fluxo de exemplo](exemplo_fluxo_usando_novas_variaveis.json)
-
-Exemplo de uso:
-
-Por favor confirme se seu endereço é {{endereço}}?
-1 - Sim
-2 - Não
-
-O bot vai enviar:
-
-Por favor confirme se seu endereço é Rua marechal deodoro, 11?
-1 - Sim
-2 - Não
-
-
-## Fluxo para agendamento com cal.com
-
-- Exemplo fluxo envia link https://cal.com/ para fazer agendamentos
-
--  [Fluxo de exemplo](agendamentobarbearia.json)
-
->![print](barbearia.jpg)
+   ![print](barbearia.jpg)
