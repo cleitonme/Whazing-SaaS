@@ -6,6 +6,8 @@ As variáveis dinâmicas usam os dados das Informações Adicionais dos Contatos
 
 ### Exemplo
 
+>![print](informacoesadicionais.jpg)
+
 1. Usando a variável abaixo, o valor retornado será "0985786468528":
    ```bash
    {{CPF}}
