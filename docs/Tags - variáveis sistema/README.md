@@ -1,143 +1,156 @@
-## Tags variáveis Sistema – tela de atendimento
+## Tags e Variáveis do Sistema - Tela de Atendimento
 
-## variáveis Dinamicas
+### Variáveis Dinâmicas
 
-- As variaveis dinamicas usa os dados das Informações adicionais dos Contatos
+As variáveis dinâmicas usam os dados das Informações Adicionais dos Contatos.
 
-Exemplo
+### Exemplo
 
->![print](informacoesadicionais.jpg)
+1. Usando a variável abaixo, o valor retornado será "0985786468528":
+   ```bash
+   {{CPF}}
+   ```
 
-Usando valor abaixo retorna "0985786468528"
+2. Usando a variável abaixo, o valor retornado será "Premium":
+   ```bash
+   {{plano}}
+   ```
+
+3. Usando a variável abaixo, o valor retornado será "Rua Marechal Deodoro, 11":
+   ```bash
+   {{endereco}}
+   ```
+
+#### Exemplo de Uso:
+
+Mensagem de exemplo:
 ```bash
-{{CPF}}
-```
-
-Usando valor abaixo retorna "Premium"
-```bash
-{{plano}}
-```
-
-Usando valor abaixo retorna "Rua marechal deodoro, 11"
-```bash
-{{endereco}}
-```
-
-Exemplo de uso:
-
-Por favor confirme se seu endereço é {{endereço}}?
+Por favor, confirme se seu endereço é {{endereco}}?
 1 - Sim
 2 - Não
+```
 
-O bot vai enviar:
-
-Por favor confirme se seu endereço é Rua marechal deodoro, 11?
+Resposta do bot:
+```bash
+Por favor, confirme se seu endereço é Rua Marechal Deodoro, 11?
 1 - Sim
 2 - Não
-
-## Alterar variáveis Dinamicas pelo chatbot
-
->![print](alterardados.jpg)
-
-- No chatbot tem opção salvar resposta cliente
-
-- Tem arquivo exemplo_fluxo_usando_novas_variaveis.json disponivel com modelo de uso das variaveis dinamicas
-
--  [Fluxo de exemplo](exemplo_fluxo_usando_novas_variaveis.json)
-
-## variáveis Fixas
-primeiro nome do contato
-```bash
-{{firstName}}
-```
-nome completo do contato
-```bash
-{{name}}
-```
-número do contato
-```bash
-{{phoneNumber}}
-```
-e-mail do contato
-```bash
-{{email}}
-```
-Saudação
-```bash
-{{gretting}}
-```
-id do Ticket
-```bash
-{{ticket_id}}
-```
-Saudação
-```bash
-{{ms}}
-```
-protocolo
-```bash
-{{protocol}}
-```
-hora
-```bash
-{{hour}}
-```
-data
-```bash
-{{date}}
-```
-Fila 
-```bash
-{{fila}}
-```
-e-mail do usuário
-```bash
-{{userEmail}}
-```
-nome do usuário
-```bash
-{{user}}
 ```
 
-## Variveis Sistema - campanhas
+### Alterar Variáveis Dinâmicas pelo Chatbot
 
-```bash
-{{firstName}}
-```
-```bash
-{{name}}
-```
-```bash
-{{phoneNumber}}
-```
-```bash
-{{email}}
-```
+- No chatbot, existe a opção de salvar a resposta do cliente.
 
-## Variveis TypeBOT
+![print](alterardados.jpg)
 
-```bash
-number
-```
-```bash
-pushName
-```
-```bash
-nome
-```
-```bash
-email
-```
-```bash
-ticketId
-```
-```bash
-protocol
-```
-```bash
-ticket
-```
-```bash
-remoteJid
-```
+- Um arquivo exemplo, `exemplo_fluxo_usando_novas_variaveis.json`, está disponível como modelo de uso das variáveis dinâmicas.
+- [Fluxo de Exemplo](exemplo_fluxo_usando_novas_variaveis.json)
 
+### Variáveis Fixas
+
+- Primeiro nome do contato:
+   ```bash
+   {{firstName}}
+   ```
+- Nome completo do contato:
+   ```bash
+   {{name}}
+   ```
+- Número do contato:
+   ```bash
+   {{phoneNumber}}
+   ```
+- E-mail do contato:
+   ```bash
+   {{email}}
+   ```
+- Saudação:
+   ```bash
+   {{gretting}}
+   ```
+- ID do ticket:
+   ```bash
+   {{ticket_id}}
+   ```
+- Saudação (outra opção):
+   ```bash
+   {{ms}}
+   ```
+- Protocolo:
+   ```bash
+   {{protocol}}
+   ```
+- Hora:
+   ```bash
+   {{hour}}
+   ```
+- Data:
+   ```bash
+   {{date}}
+   ```
+- Fila:
+   ```bash
+   {{fila}}
+   ```
+- E-mail do usuário:
+   ```bash
+   {{userEmail}}
+   ```
+- Nome do usuário:
+   ```bash
+   {{user}}
+   ```
+
+## Variáveis do Sistema - Campanhas
+
+- Primeiro nome do contato:
+   ```bash
+   {{firstName}}
+   ```
+- Nome completo do contato:
+   ```bash
+   {{name}}
+   ```
+- Número do contato:
+   ```bash
+   {{phoneNumber}}
+   ```
+- E-mail do contato:
+   ```bash
+   {{email}}
+   ```
+
+## Variáveis TypeBOT
+
+- Número:
+   ```bash
+   number
+   ```
+- Nome do push:
+   ```bash
+   pushName
+   ```
+- Nome:
+   ```bash
+   nome
+   ```
+- E-mail:
+   ```bash
+   email
+   ```
+- ID do ticket:
+   ```bash
+   ticketId
+   ```
+- Protocolo:
+   ```bash
+   protocol
+   ```
+- Ticket:
+   ```bash
+   ticket
+   ```
+- Remote JID:
+   ```bash
+   remoteJid
+   ```
