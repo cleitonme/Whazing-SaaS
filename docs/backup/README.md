@@ -1,7 +1,3 @@
-Aqui está uma versão revisada do seu manual, com explicações mais claras para iniciantes, passos numerados e exemplos bem destacados.  
-
----
-
 # **Manual de Backup e Restauração para Banco de Dados PostgreSQL no Docker**  
 
 Este guia explica como fazer backup e restaurar um banco de dados PostgreSQL rodando em um container Docker. Também abordamos a compactação, transferência para outro servidor (VPS) e agendamento automático de backups.  
