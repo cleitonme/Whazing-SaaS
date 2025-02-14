@@ -1,26 +1,32 @@
-## Alterar notificação sonora 
+## Como Alterar Notificação Sonora
 
-alterar arquivos na pasta
+### Passo 1: Acessar Pasta de Arquivos
 
-```bash
-/home/deploy/whazing/frontend/src/assets
-```
-depois de alterar:
+1. Navegue até a pasta onde os arquivos de som estão localizados:
+   ```bash
+   /home/deploy/whazing/frontend/src/assets
+   ```
 
-sound.mp3
+### Passo 2: Alterar Arquivos de Som
 
-sound.ogg
+Substitua os seguintes arquivos de som na pasta:
+- `sound.mp3`
+- `sound.ogg`
+- `chatInterno.mp3`
 
-chatInterno.mp3
+### Passo 3: Rodar os Comandos
 
-## Rodar os comandos 
+1. Mude para o usuário `deploy`:
+   ```bash
+   su deploy
+   ```
 
-```bash
-su deploy
-```
-```bash
-cd /home/deploy/whazing/frontend
-```
-```bash
-npm run build
-```
+2. Navegue até a pasta `frontend` do Whazing:
+   ```bash
+   cd /home/deploy/whazing/frontend
+   ```
+
+3. Execute o comando para construir o projeto:
+   ```bash
+   npm run build
+   ```
