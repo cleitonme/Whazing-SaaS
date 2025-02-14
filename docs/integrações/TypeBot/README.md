@@ -1,60 +1,62 @@
 ## Configurar Typebot 
 
->![print](configurartypebot.png)
+![print](configurartypebot.png)
+![print](configurarwhazingtype.png)
 
->![print](configurarwhazingtype.png)
+1. **URL Integração**: Pegue a URL na publicação do Typebot, não coloque a última `/` conforme exemplo acima.
+2. **Typebot - Slug**: Nome que aparece depois na URL quando você publica. Ver exemplo acima.
+3. **Tempo em minutos para expirar uma conversa**: Tempo de inatividade que leva para o Whazing se desconectar do Typebot caso não haja mais interação do cliente.
+4. **Intervalo (ms) entre mensagens**: Tempo entre as respostas da IA. 1000ms = 1 segundo.
+5. **Palavra que fecha ticket**: Comando que o cliente envia para fechar o ticket.
+6. **Palavra que reinicia o Fluxo**: Comando que o cliente envia para voltar ao começo do fluxo do Typebot.
+7. **Mensagem caso opção escolhida seja inválida**: Mensagem que o bot enviará caso não receba a resposta esperada (exemplo: o cliente envia texto quando a entrada esperada era um número).
+8. **Mensagem ao reiniciar fluxo**: Mensagem que será enviada após o comando que reinicia o fluxo.
 
-- URL Integração - Pegar Url na publicação typebot não colocar ultima / conforme exemplo acima
-- Typebot - Slug - Nome aparece depois no final quando publica olhar exemplo acima
-- Tempo em minutos para expirar uma conversa - Tempo de inatividade que leva para whazing se desconectar typebot caso não tenha mais interação do cliente
-- Intervalor (ms) entre mensagens - Tempo entre resposta da IA 1000ms = 1S
-- Palavra que fecha ticket - Comando cliente envia que faz ticket ser fechado
-- Palavra que renicia o Fluxo - Comando cliente enviar de volta para começo do fluxo do typebot
-- Mensagem caso opção escolhida seja invalida - Mensagem bot vai enviar caso não receber mensagem esperada - Exemplo usou input numero e cliente enviou texto
-- Mensagem ao reniciar fluxo - Mensagem que será enviada apos comando renicia o fluxo
+### Variáveis do Typebot
 
-# Variveis TypeBOT
+- **number**
+- **pushName**
+- **nome**
+- **email**
+- **ticketId**
+- **protocol**
+- **ticket**
+- **remoteJid**
 
-number
+### Comandos Possíveis
 
-pushName
+Adicione os comandos abaixo em um Bubble de texto:
 
-nome
+- Comando para transferir de Fila (lembre-se de trocar o ID):
+   ```bash
+   #{ "queueId": "1" }
+   ```
+- Comando para transferir para Atendente (lembre-se de trocar o ID):
+   ```bash
+   #{ "queueId":"1", "userId":"1" }
+   ```
+- Parar o Typebot (não precisa trocar o 1):
+   ```bash
+   #{ "stopBot":"1" }
+   ```
+- Comando para adicionar uma Etiqueta (lembre-se de trocar o ID):
+   ```bash
+   #{ "tagId": "1" }
+   ```
+- Comando para finalizar o atendimento (não precisa trocar o 1):
+   ```bash
+   #{ "closeTicket":"1" }
+   ```
 
-email
-
-ticketId
-
-protocol
-
-ticket
-
-remoteJid
-
-- Comandos possiveis - colocar Bubble texto e colocar comando abaixo
-
-- Comando para transferir de Fila (lembre-se de trocar o ID)
-#{ "queueId": "1" }
-- Comando para transferir para Atendente (lembre-se de trocar o ID)
-#{ "queueId":"1", "userId":"1" }
-- Parar o TypeBot (não precisa trocar o 1)
-#{ "stopBot":"1" }
-- Comando para adicionar uma Etiqueta (lembre-se de trocar o ID)
-#{ "tagId": "1" }
-- Comando para finalizar o atendimento (não precisa trocar o 1)
-#{ "closeTicket":"1" }
-
-- Os ids podem ser pego na tela lista os cadastros no whazing
+Os IDs podem ser obtidos na tela que lista os cadastros no Whazing.
 
 **IMPORTANTE**: 
+- Veja como instalar o Typebot na mesma VPS que o Whazing [aqui](Comoinstalar.md).
 
-- [Como instalar typebot mesma VPS WHAZING](Comoinstalar.md)
+### Exemplo de fluxo para importar no Typebot
 
-# Exemplo fluxo para baixar abaixo e importar no typebot
+- [Baixe e importe o exemplo de fluxo compatível com o Whazing](exemplo-fluxo-typebot.json).
 
-- [Exemplo de fluxo typebot compativel com whazing](exemplo-fluxo-typebot.json)
+### Como Compartilhar Fluxo com o Cliente
 
-
-# Como compartilhar fluxo com cliente
-
->![print](compartilharfluxo.png)
+![print](compartilharfluxo.png)
