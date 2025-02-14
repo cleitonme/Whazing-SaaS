@@ -1,35 +1,40 @@
-# Configuração hub - instagram - facebook
+# Guia de Configuração do Hub - Instagram e Facebook
 
-- Sistema somente aceita token adquiridos de revenda autorizada
+## Requisitos Importantes
+- O sistema **somente aceita tokens** adquiridos de **revendas autorizadas**.
 
-- Acessar
-https://hub.notificame.com.br/
+## Acesso ao Hub
+1. Acesse o site: [https://hub.notificame.com.br/](https://hub.notificame.com.br/)
+2. Escolha a opção correta de acordo com o canal desejado:
+   - **Apenas Instagram**: selecione **"Instagram V2 | Oficial"**.
+     
+     ![Print da tela](instagram.png)
+   
+   - **Apenas Facebook**: selecione **"Facebook | Oficial"**.
+     
+     ![Print da tela](facebook.png)
+   
+   - **Para usar ambos (Instagram e Facebook)**: selecione **"Facebook / Instagram | Oficial"**.
+     
+     ![Print da tela](facebookinstagram.png)
+   
+   - O sistema também suporta **WebChat**.
+     
+     ![Print da tela](webchat.png)
 
-- Acesso somente instagram usar - "Instagram V2 | Oficial"
+## Integração com o Whazing
+1. Após conectar o canal no Hub, copie o **token gerado**.
+   
+   ![Print da tela](telatoken.png)
+   
+2. Acesse o **Whazing**:
+   - Navegue até **Configurações** > **Canais** > **Token Hub**.
+   - Cole o **token copiado** do Hub e cadastre-o.
+   
+   ![Print da tela](whazing.png)
+   
+3. Agora, basta **adicionar o canal** e escolher o **Hub**.
 
->![print](instagram.png)
-
-- Acesso somente Facebook usar - "Facebook| Oficial"
-
->![print](facebook.png)
-
-- Usar mesmo canal para os dois - "Facebook / Instagram | Oficial"
-
->![print](facebookinstagram.png)
-
-- Sistema também suporta WebChat
-
->![print](webchat.png)
-
-- Apos conectar canal no Hub deve pegar token para colocar no Whazing
-
->![print](telatoken.png)
-
-- No whazing - Configurações - Canais - Token Hub - Cadastrar token copiado do Hub
-
->![print](whazing.png)
-
-- Agora so colocar adicionar Canal e escolher Hub
-
-
-# Não é possivel iniciar conversa com HUB somente responder depois da interação do cliente
+## Importante
+- **Não é possível iniciar uma conversa pelo Hub.**
+- A interação só pode começar **após o cliente entrar em contato primeiro**.
