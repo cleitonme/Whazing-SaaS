@@ -24,6 +24,8 @@ Agora que você tem a senha de app, siga os passos para configurar o SMTP no Wha
 - **Porta SMTP:** `465`
 - **Habilitar SSL/TLS:** ✅ Ativado
 
+>![print](email.png)
+
 ## 3. Conferindo as Configurações
 Após preencher todas as informações no Whazing:
 1. Salve as configurações.
