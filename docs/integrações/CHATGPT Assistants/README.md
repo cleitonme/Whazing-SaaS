@@ -1,34 +1,31 @@
 ## ChatGPT Assistant
 
-- Por que escolher essa integração?
-- Você vai conseguir uma IA bem mais ajustada para obter melhor resultado
+### Por que escolher essa integração?
+- Você obterá uma IA mais ajustada para melhores resultados.
 
-## Alguns videos falando desse modelo de configuração
+### Alguns vídeos sobre esse modelo de configuração:
+- [Vídeo 1](https://www.youtube.com/watch?v=N2Ynpl16o4I)
+- [Vídeo 2](https://www.youtube.com/watch?v=3A4rdBnCJPA)
 
-https://www.youtube.com/watch?v=N2Ynpl16o4I
+### Configurar ChatGPT Assistant
 
-https://www.youtube.com/watch?v=3A4rdBnCJPA
+![print](telaintegracao.png)
 
-## Configurar ChatGPT Assistant
+1. **Fila**: Selecione a fila para a qual a IA deve transferir caso não consiga responder às perguntas ou resolver o problema.
+2. **Intervalo (ms) entre mensagens**: Defina o tempo entre as respostas da IA. Por exemplo, 1000ms = 1 segundo.
+3. **API Key**: Chave de API para conexão com a IA. Lembre-se que o ChatGPT cobra por token. Obtenha sua chave [aqui](https://platform.openai.com/settings/organization/api-keys).
+4. **ASSISTANT ID**: Identificação do assistente (começa com `asst_`). Obtenha seu ID [aqui](https://platform.openai.com/playground/assistants).
 
->![print](telaintegracao.png)
+   - Ao criar o assistente, o formato da resposta deve ser **texto**.
 
-- Fila - Selecione a fila que ia deve transferir caso ela não consiga responder as perguntas ou resolver o problema
-- Intervalor (ms) entre mensagens - Tempo entre resposta da IA 1000ms = 1S
-- API Key - Api conexão com IA - Lembrando ChatGpt paga por Token - https://platform.openai.com/settings/organization/api-keys
+![print](openai.png)
 
-- ASSISTANTID - Começa com asst_ - Identificação do assistant - https://platform.openai.com/playground/assistants
+### Formato da Resposta da IA
 
-- Ao criar assistent Response format deve ser text
+- **Formato da resposta**: Caso selecione um formato diferente de texto, será necessário configurar uma conta "Microsoft Azure Text-to-Speech" nos campos abaixo.
+- **API Key Speech Service**: Necessário caso o campo acima seja diferente de texto. Veja o manual abaixo para obter os dados.
+- **Localização/Região Speech Service**: Necessário caso o campo acima seja diferente de texto. Veja o manual abaixo para obter os dados.
 
->![print](openai.png)
+### Como obter a chave de API do Microsoft Azure Text-to-Speech
 
-
-- Formato da resposta da IA - Caso seja seleciona valor diferente de texto, tem que ter conta "Microsoft Azure Text-to-Speech" configurada nos proximos campos
-- API Key Speech service - Necessario caso campo acima seja diferente texto - Abaixo manual como obter dados
-- Localização/região Speech service - Necessario caso campo acima seja diferente texto - Abaixo manual como obter dados
-
-
-# How to get Microsoft Azure Text-to-Speech API key
-
-https://docs.merkulov.design/how-to-get-microsoft-azure-tts-api-key/
+- Siga este [guia](https://docs.merkulov.design/how-to-get-microsoft-azure-tts-api-key) para obter sua chave de API.
