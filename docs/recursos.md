@@ -1,41 +1,40 @@
-# Principais Recursos
-- Painel SaaS
-- Chat Interno
-- Solicitar teste na pagina de login, e função esqueci a senha
-- Planos
-- Menu Ajuda
-- Integração bancaria com Efi, mercado pago, Asaas, Stripe. Recebimento em PIX, cartão de crédito, boleto.
-- Lista de Protocolos
-- Lista de Agendamentos
-- Tela atendimento com varios filtros, separação por grupos
-- Mensagens rápidas com anexos
-- Importação mensagens celular
-- Importação contatos
-- Montagem de Bot estilo ChatFlow, com recursos como delay, envios audios arquivos, webhooks entre outros
-- WhiteLabel pelo Painel
-- Tarefas (função exclusiva versão premium)
-- Avaliação de atendimento (função exclusiva versão premium)
-- Transcrição de audio (função exclusiva versão premium)
-- Fechamento tickets em Massa
-- Apagar tickets em Massa
-- Envio mensagens automaticas aceitar ou transferir ticket
-- Sistema simula digitando e gravando para diminuir chance de bloqueios do WhatsApp
-- Mensagem despedida personalizavel por usuario
-- Integração WebHook - N8N (função exclusiva versão premium)
-- Integração TypeBot (função exclusiva versão premium)
-- Integração ChatGPT responder mensagens e Microsoft Azure Text-to-Speech para responder com audios (função exclusiva versão premium)
-- Integração Groq responder mensagens e Microsoft Azure Text-to-Speech para responder com audios (função exclusiva versão premium)
-- Integração DeepSeek responder mensagens e Microsoft Azure Text-to-Speech para responder com audios (função exclusiva versão premium)
-- Integração 2 via boleto Assas (função exclusiva versão premium)
-- Suporte facebook e instagram  e WebChat - VIA HUB - Necessario pagar mensalidade por canal duvidas (48) 9941-6725
-- KANBAN (função exclusiva versão premium)
-- Relatorio de tickets (função exclusiva versão premium)
-- Geração PDF atendimento (função exclusiva versão premium)
-- Anotações em tickets(função exclusiva versão premium)
-- Mensagens separadas por filas(função exclusiva versão premium)
-- Transferir atendimento para ChatBot (função exclusiva versão premium)
-- Entre outros instale e teste para verificar mais detalhes
+## Principais Recursos do Sistema
 
+- **Painel SaaS**: Gerencie todas as suas configurações e dados em um único painel.
+- **Chat Interno**: Ferramenta para comunicação interna entre membros da equipe.
+- **Solicitar Teste e Esqueci a Senha**: Funções disponíveis na página de login para novos usuários e recuperação de senha.
+- **Planos**: Diferentes opções de planos para atender às suas necessidades.
+- **Menu Ajuda**: Acesso rápido a tutoriais e suporte.
+- **Integração Bancária**: Com Efi, Mercado Pago, Asaas e Stripe. Recebimento via PIX, cartão de crédito e boleto.
+- **Lista de Protocolos**: Acompanhe todas as suas interações e casos.
+- **Lista de Agendamentos**: Gerencie seus compromissos e agendamentos.
+- **Tela de Atendimento**: Vários filtros e separação por grupos para facilitar o gerenciamento dos atendimentos.
+- **Mensagens Rápidas com Anexos**: Envie mensagens rápidas com documentos, vídeos e outros arquivos.
+- **Importação de Mensagens do Celular**: Importe mensagens diretamente do seu celular.
+- **Importação de Contatos**: Importe seus contatos facilmente.
+- **Montagem de Bot estilo ChatFlow**: Crie bots com recursos como delay, envio de áudios, arquivos, webhooks, entre outros.
+- **WhiteLabel**: Personalize a plataforma com sua marca pelo painel.
 
+### Funções Exclusivas da Versão Premium
+- **Tarefas**: Gerencie tarefas e atividades.
+- **Avaliação de Atendimento**: Avalie o atendimento prestado.
+- **Transcrição de Áudio**: Transcreva mensagens de áudio.
+- **Fechamento e Apagar Tickets em Massa**: Feche ou apague múltiplos tickets de uma vez.
+- **Envio de Mensagens Automáticas**: Aceite ou transfira tickets automaticamente.
+- **Sistema de Simulação de Digitação e Gravação**: Reduza a chance de bloqueios no WhatsApp.
+- **Mensagem de Despedida Personalizável**: Personalize a mensagem de despedida por usuário.
+- **Integração WebHook - N8N**: Conecte-se a diferentes aplicativos e serviços.
+- **Integração TypeBot**: Construa bots mais avançados.
+- **Integração ChatGPT**: Responda mensagens e utilize Microsoft Azure Text-to-Speech para respostas em áudio.
+- **Integração Groq e DeepSeek**: Responda mensagens com IA e utilize Microsoft Azure Text-to-Speech.
+- **Integração para 2ª via de boleto Asaas**: Gerencie boletos com facilidade.
+- **Suporte a Facebook e Instagram**: Gerencie mensagens dessas plataformas via HUB (necessário pagar mensalidade por canal).
+- **KANBAN**: Organize tarefas e processos visualmente.
+- **Relatório de Tickets**: Gere relatórios detalhados de atendimento.
+- **Geração de PDF de Atendimento**: Exporte atendimentos em formato PDF.
+- **Anotações em Tickets**: Adicione notas em tickets.
+- **Mensagens Separadas por Filas**: Organize mensagens por filas.
+- **Transferir Atendimento para ChatBot**: Mova atendimentos para bots.
 
-Versão atual: 2.8.11
+### Versão Atual
+- **Versão Atual**: 2.8.11
