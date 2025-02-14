@@ -1,20 +1,21 @@
 ## Configurar Groq ou ChatGPT
 
->![print](telaintegracao.png)
+### Passo 1: Configurar a Integração
 
-- Model - Modelo da linguagem
-- Prompt - Ali onde você instrui como a IA deve atender o cliente e agir
-- Fila - Selecione a fila que ia deve transferir caso ela não consiga responder as perguntas ou resolver o problema
-- Intervalor (ms) entre mensagens - Tempo entre resposta da IA 1000ms = 1S
-- API Key - Api conexão com IA - Lembrando ChatGpt paga por Token
-- Máximo de tokens na resposta - Influencia no tamanho da resposta, Lembrando ChatGpt paga por Token
-- Máximo de mensagens no histórico - Numero mensagens que ia vai consultar para montar reposta (somente consulta mensagens do mesmo ticket, valor muito alto pode fazer ia travar, ChatGPt cobra token então historico muito alto faz cobrança ficar mais alta tambem)
-- Temperatura - Controla criatividade da IA quanto maior valor mais chance da ia sair do roteiro, Pode ser usado valores quebrados exemplo 0,2 ou 1,5
-- Formato da resposta da IA - Caso seja seleciona valor diferente de texto, tem que ter conta "Microsoft Azure Text-to-Speech" configurada nos proximos campos
-- API Key Speech service - Necessario caso campo acima seja diferente texto - Abaixo manual como obter dados
-- Localização/região Speech service - Necessario caso campo acima seja diferente texto - Abaixo manual como obter dados
+![print](telaintegracao.png)
 
+- **Model**: Selecione o modelo de linguagem (Groq ou ChatGPT).
+- **Prompt**: Escreva como a IA deve atender o cliente e agir.
+- **Fila**: Escolha a fila para a qual a IA deve transferir se não conseguir responder ou resolver o problema.
+- **Intervalo (ms) entre mensagens**: Tempo entre as respostas da IA (1000 ms = 1 segundo).
+- **API Key**: Chave de API para conexão com a IA. Lembre-se de que o ChatGPT cobra por token.
+- **Máximo de tokens na resposta**: Define o tamanho máximo da resposta. O ChatGPT cobra por token.
+- **Máximo de mensagens no histórico**: Número de mensagens que a IA consultará para montar a resposta. Apenas mensagens do mesmo ticket são consultadas. Um valor muito alto pode fazer a IA travar e aumentar os custos com tokens.
+- **Temperatura**: Controla a criatividade da IA. Valores mais altos tornam as respostas menos previsíveis. Pode ser valores como 0,2 ou 1,5.
+- **Formato da resposta da IA**: Se selecionar um formato diferente de texto, será necessário configurar uma conta "Microsoft Azure Text-to-Speech" nos campos a seguir.
+- **API Key Speech Service**: Necessária se o formato da resposta for diferente de texto. Veja o manual abaixo para obter os dados.
+- **Localização/Região Speech Service**: Necessária se o formato da resposta for diferente de texto. Veja o manual abaixo para obter os dados.
 
-# How to get Microsoft Azure Text-to-Speech API key
+### Como Obter a Chave de API do Microsoft Azure Text-to-Speech
 
-https://docs.merkulov.design/how-to-get-microsoft-azure-tts-api-key/
+Acesse o [guia](https://docs.merkulov.design/how-to-get-microsoft-azure-tts-api-key) para obter sua chave de API.
