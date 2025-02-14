@@ -1,19 +1,24 @@
-## Guia rapido 2 via boleto asaas no bot
+## Guia Rápido: Emissão de 2ª Via de Boleto Asaas no Bot
 
-- Acesse configurações - integrações - clique adicionar e preencha
+### Passo 1: Configurar Integração
 
->![print](tela1.png)
+1. Acesse **Configurações** > **Integrações** > clique em **Adicionar** e preencha os dados conforme mostrado na imagem abaixo:
+   ![print](tela1.png)
 
-- Api key você deve pegar no site https://www.asaas.com/customerApiAccessToken/index
+2. Obtenha sua **Api Key** no site [Asaas](https://www.asaas.com/customerApiAccessToken/index).
 
-- Acesse Cadastros - Filas - clique adicionar e preencha
+### Passo 2: Configurar Filas
 
->![print](tela2.png)
+1. Acesse **Cadastros** > **Filas** > clique em **Adicionar** e preencha os dados conforme mostrado na imagem abaixo:
+   ![print](tela2.png)
 
-- Na integração vai selecionar a que você criou na tela anterior
+2. Na integração, selecione a opção criada no passo anterior.
 
-- Agora você cria um chatbot, verificar documentação exemplo como se cria.
+### Passo 3: Criar o Chatbot
 
->![print](tela3.png)
+1. Crie um chatbot. Verifique a documentação para exemplos de como criar um chatbot.
+   ![print](tela3.png)
 
-- Nas confições você vai colocar rotear para fila escolher fila criada anteriormente e mensagem colocar uma solicitando cpf ou cnpj do cliente
+### Passo 4: Configurar Condições
+
+1. Nas **Condições**, configure para rotear para a fila criada anteriormente e adicione uma mensagem solicitando o CPF ou CNPJ do cliente.
