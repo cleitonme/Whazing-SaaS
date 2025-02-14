@@ -1,46 +1,36 @@
-## Como Conectar ao Banco de dados Postgres SQL
+# Guia para Conectar ao Banco de Dados PostgreSQL
 
-programa para acessar Banco de Dandos Postgres SQL
-DBeaver
+## 1. Baixar o Programa para Acessar o Banco de Dados
+Para acessar o PostgreSQL, usaremos o programa **DBeaver**.
 
-```bash
-https://dbeaver.io/download/
-```
+🔗 [Baixar DBeaver](https://dbeaver.io/download/)
 
-## Cria um Postgres SQL
-Clique em nova conexão, escolha postgresql
+## 2. Criar uma Conexão com o PostgreSQL
+1. Abra o **DBeaver**.
+2. Clique em **Nova Conexão**.
+3. Escolha a opção **PostgreSQL**.
 
-host = Ip da VPS
+### 3. Preencher os Dados de Conexão
+- **Host**: IP da sua VPS
+- **Porta**: `5432`
+- **Banco de Dados**: `postgres`
+- **Usuário**: `whazing`
+- **Senha**: `AKwWM4Qu2GRppJ7`
 
-porta 
+## 4. Exibir Todos os Bancos de Dados
+Para visualizar todos os bancos disponíveis, ative a opção correspondente dentro do **DBeaver**.
 
-```bash
-5432
-```
-## ativar 
-Exibir todos os bacos de dados
+## 5. Configurar Acesso via SSH (se necessário)
+Se precisar acessar o banco de dados remotamente:
+1. Vá até a aba **SSH**.
+2. Marque a opção **Usar túnel SSH**.
+3. Preencha os dados da sua VPS.
 
+### Exemplos Visuais:
+🖼️ **Configuração do Banco de Dados**
+> ![print](dadosbanco.png)
 
-## banco de dados
+🖼️ **Configuração SSH**
+> ![print](dadosssh.png)
 
-```bash
-postgres
-```
-Nome do usuários
-
-```bash
-whazing
-```
-
-## Senha Banco de dados Criada por padrão
-
-```bash
-AKwWM4Qu2GRppJ7
-```
-
-
->![print](dadosbanco.png)
-
-Na aba ssh marcar opcao "usar ssh tunel" e preencher dados da vps
-
->![print](dadosssh.png)
+Agora você está pronto para acessar e gerenciar seu banco de dados PostgreSQL! 🚀
