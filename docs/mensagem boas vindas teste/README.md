@@ -1,20 +1,26 @@
-## Como Configurar Mensagem boas vindas teste
+## Como Configurar Mensagem de Boas-Vindas de Teste
 
-Ir até tela api criar uma configuração de API
+Siga estes passos simples para configurar uma mensagem de boas-vindas:
 
-```bash
-https://urldoseufrontend/#/api-service
-```
+## Passo 1: Criar Configuração de API
 
-Da na tela empresa mensagem boas vindas so copiar dados exatamente como aparece tela api como exemplo abaixo
+1. Acesse a página de criação de API:
 
+   ```bash
+   https://urldoseufrontend/#/api-service
+   ```
 
->![print](telaapi.png)
+## Passo 2: Configurar Mensagem de Boas-Vindas
 
->![print](telaempresas.png)
+1. Na tela **Empresa**, copie os dados exatamente como aparecem na tela de API. Veja o exemplo abaixo:
 
-Variveis disponivel na mensagem
+   ![print](telaapi.png)
 
+   ![print](telaempresas.png)
+
+## Variáveis Disponíveis na Mensagem
+
+Use as seguintes variáveis para personalizar a mensagem:
 
 ```bash
 {{nomeempresa}}
