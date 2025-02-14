@@ -119,3 +119,5 @@ crontab -e
  ```bash
 cat ~/.ssh/id_rsa.pub | ssh deploy@edereço_IP_remoto "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
 ```
+
+## Duvidas use chatgpt ele sera belo aliado para fazer esses comandos
