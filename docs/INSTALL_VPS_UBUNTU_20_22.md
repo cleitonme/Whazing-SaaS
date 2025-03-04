@@ -1,56 +1,56 @@
-# Manual de Instação do whazing na VPS
+# Manual de Instalação do Whazing na VPS
 
-### Observação:
-- Antes de começar a instalação é necessário ter criado antecipadamente os subdomínios e já estarem apontados para o IP da VPS.
-- Feito ubuntu 20
-- Nesse modelo vamos usar docker porque versão Postgresql do repositorio UBUNTU 20 ta dando erro com whazing
-- Senha usada 123@mudar
-- Dominio Frontend: whazing.seusite.com.br
-- Dominio backend: backend.seusite.com.br
-  
+### Observações:
+- Antes de iniciar a instalação, certifique-se de que os subdomínios necessários foram criados e estão apontados para o IP da VPS.
+- Este guia foi desenvolvido para Ubuntu 20.
+- Utilizaremos Docker, pois a versão do PostgreSQL do repositório do Ubuntu 20 apresenta problemas com o Whazing.
+- A senha padrão utilizada é `123@mudar`.
+- Domínio Frontend: `whazing.seusite.com.br`
+- Domínio Backend: `backend.seusite.com.br`
+
 ================================================
 
-1. Alterando para root
+1. Alterar para o usuário root
 
 ```bash
 sudo su root
 ```
 
-2. Setar Time Zone para São Paulo e atualizar sistema
+2. Configurar o fuso horário para São Paulo e atualizar o sistema
 
 ```bash
 timedatectl set-timezone America/Sao_Paulo && apt update && apt upgrade -y
 ```
 
-3. Reiniciar para atualizar kernel
+3. Reiniciar o sistema para atualizar o kernel
 
 ```bash
 reboot
 ```
 
-4. Apos reniciar conectar no servidor novamente - Alterando para root
+4. Após reiniciar, conectar no servidor novamente e alterar para root
 
 ```bash
 sudo su root
 ```
 
-5. Intalar pacotes necessários
+5. Instalar pacotes necessários
 
 ```bash
 apt install -y ffmpeg fonts-ipafont-gothic fonts-wqy-zenhei fonts-thai-tlwg fonts-kacst fonts-freefont-ttf libxss1 apt-transport-https ca-certificates software-properties-common curl libgbm-dev wget unzip fontconfig locales gconf-service libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils python2-minimal build-essential libxshmfence-dev nginx
 ```
 
-6. Adicionar repositorio Docker
+6. Adicionar o repositório do Docker
 
 ```bash
-# Add Docker's official GPG key:
+# Adicionar a chave GPG oficial do Docker:
 sudo apt-get update
 sudo apt-get install ca-certificates curl
 sudo install -m 0755 -d /etc/apt/keyrings
 sudo curl -fsSL https://download.docker.com/linux/ubuntu/gpg -o /etc/apt/keyrings/docker.asc
 sudo chmod a+r /etc/apt/keyrings/docker.asc
 
-# Add the repository to Apt sources:
+# Adicionar o repositório às fontes do Apt:
 echo \
   "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
   $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
@@ -58,19 +58,19 @@ echo \
 sudo apt-get update
 ```
 
-7. Instalar docker
+7. Instalar Docker
 
 ```bash
 sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 ```
 
-8. limpar pacotes não são mais usados
+8. Limpar pacotes não utilizados
 
 ```bash
 apt autoremove -y
 ```
 
-9. Instalar POSTGRESQL no Docker
+9. Instalar PostgreSQL no Docker
 
 ```bash
 docker run --name postgresql -e POSTGRES_USER=whazing -e POSTGRES_PASSWORD=123@mudar -e TZ="America/Sao_Paulo" -p 5432:5432 --restart=always -v /data:/var/lib/postgresql/data -d postgres
@@ -82,49 +82,49 @@ docker run --name postgresql -e POSTGRES_USER=whazing -e POSTGRES_PASSWORD=123@m
 docker run --name redis-whazing -e TZ="America/Sao_Paulo" -p 6379:6379 --restart=always -d redis:latest redis-server --appendonly yes --requirepass "123@mudar"
 ```
 
-
 11. Instalar Portainer no Docker
 
 ```bash
 docker run -d --name portainer -p 9000:9000 -p 9443:9443 --restart=always -v /var/run/docker.sock:/var/run/docker.sock -v portainer_data:/data portainer/portainer-ce
 ```
 
-12. remover arquivo padrao nginx
+12. Remover arquivo padrão do Nginx
 
 ```bash
 rm /etc/nginx/sites-enabled/default
 ```
 
-
-13. Criar o usário deploy
+13. Criar o usuário deploy
 
 ```bash
 adduser deploy
 ```
 
-14. Permisão sudo deploy
+14. Conceder permissões sudo ao usuário deploy
+
 ```bash
 usermod -aG sudo deploy
 ```
 
-15. Permisão docker deploy
+15. Conceder permissões Docker ao usuário deploy
+
 ```bash
 usermod -aG docker deploy
 ```
 
-16. Alterar para o novo usuário
+16. Alterar para o usuário deploy
 
 ```bash
 su deploy
 ```
 
-17. Realizar o download do node 20.x
+17. Realizar o download do Node.js 20.x
 
 ```bash
 curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
 ```
 
-18. Instalar o node
+18. Instalar Node.js
 
 ```bash
 sudo apt-get install -y nodejs
@@ -136,60 +136,61 @@ sudo apt-get install -y nodejs
 cd ~
 ```
 
-20. baixar o repositório do whazing
+20. Baixar o repositório do Whazing
 
 ```bash
 git clone https://github.com/cleitonme/Whazing-SaaS.git whazing
 ```
 
-21. acessar pasta
+21. Acessar a pasta do repositório
 
 ```bash
 cd whazing
 ```
 
-22. descompactar arquivos
+22. Descompactar arquivos
 
 ```bash
 unzip -o whazing.zip
 ```
 
-. garantir permisao das pastas
+23. Garantir permissões das pastas
 
 ```bash
 chmod 775 /home/deploy/whazing/ -Rf
 ```
 
-23. descompactar logos
+24. Descompactar logos
 
 ```bash
 unzip -o logos.zip
 ```
 
-. garantir permisao das pastas
+25. Garantir permissões das pastas
 
 ```bash
 chmod 775 /home/deploy/whazing/ -Rf
 ```
 
+26. Voltar para o diretório anterior
 
-. voltar pasta anterior
-```bash 
+```bash
 cd ..
 ```
 
-25. Copiar o env de exemplo para o backend
-```bash 
+27. Copiar o arquivo .env de exemplo para o backend
+
+```bash
 cp whazing/backend/.env.example whazing/backend/.env
 ```
 
-26. Rodar o comando abaixo 2x para gerar JWT_SECRET e JWT_REFRESH_SECRET
+28. Rodar o comando abaixo duas vezes para gerar `JWT_SECRET` e `JWT_REFRESH_SECRET`
 
 ```bash
 openssl rand -base64 32
 ```
 
-27. Editar os dados abaixo e colar os valores gerados no item 31.
+29. Editar os dados abaixo e colar os valores gerados no item 28.
 
 ```bash
 # ambiente
@@ -207,7 +208,6 @@ PROXY_PORT=443
 # Porta que o serviço do backend deverá ouvir
 PORT=3000
 
-
 # conexão com o banco de dados
 DB_DIALECT=postgres
 DB_TIMEZONE=-03:00
@@ -217,10 +217,9 @@ POSTGRES_USER=whazing
 POSTGRES_PASSWORD=123@mudar
 POSTGRES_DB=postgres
 
-
 # Chaves para criptografia do token jwt
-JWT_SECRET=gerado no passo 31
-JWT_REFRESH_SECRET=gerado no passo 31
+JWT_SECRET=gerado no passo 28
+JWT_REFRESH_SECRET=gerado no passo 28
 
 # Dados de conexão com o REDIS
 IO_REDIS_SERVER=localhost
@@ -240,7 +239,6 @@ MAX_SLEEP_AUTO_REPLY=6000
 MIN_SLEEP_INTERVAL=2000
 MAX_SLEEP_INTERVAL=5000
 
-
 # dados do RabbitMQ / Para não utilizar, basta comentar a var AMQP_URL
 RABBITMQ_DEFAULT_USER=admin
 RABBITMQ_DEFAULT_PASS=123@mudar
@@ -249,7 +247,7 @@ RABBITMQ_DEFAULT_PASS=123@mudar
 # api oficial (integração em desenvolvimento)
 API_URL_360=https://waba-sandbox.360dialog.io
 
-# usado para mosrar opções não disponíveis normalmente.
+# usado para mostrar opções não disponíveis normalmente.
 ADMIN_DOMAIN=whazing.io
 
 # Dados para utilização do canal do facebook
@@ -261,99 +259,101 @@ USER_LIMIT=99
 CONNECTIONS_LIMIT=99
 ```
 
-28. Abrir para edição o arquivo .env com o comando abaixo e prencher com os dados acima. Para salvar se usa Ctrl + x
+30. Abrir para edição o arquivo `.env` com o comando abaixo e preencher com os dados acima. Para salvar, use `Ctrl + X`
 
 ```bash
 nano whazing/backend/.env
 ```
 
-29. Acessando o backend
+31. Acessar o backend
 
 ```bash
 cd whazing/backend
 ```
 
-30. Instalando as dependências
+32. Instalar as dependências
 
 ```bash
 npm install --force
 ```
 
-. Reniciando docker
+33. Reiniciar Docker
+
 ```bash
 docker container restart portainer
 docker container restart postgresql
 docker container restart redis-whazing
 ```
 
-31. Criando as tabelas no BD
+34. Criar as tabelas no banco de dados
 
 ```bash
 npx sequelize db:migrate
 ```
 
-32. Inserindo dados em algumas tabelas do BD
+35. Inserir dados em algumas tabelas do banco de dados
 
 ```bash
 npx sequelize db:seed:all
 ```
 
-33. Instalando o PM2
+36. Instalar o PM2
 
 ```bash
 sudo npm install -g pm2
 ```
 
-34. Iniciando o backend com PM2
+37. Iniciar o backend com PM2
 
 ```bash
 pm2 start dist/server.js --name whazing-backend
 ```
 
-35. Gerar Startup
+38. Gerar o Startup
 
 ```bash
 pm2 startup ubuntu -u deploy
 ```
 
-36. Gerar status parte 2
+39. Gerar o status parte 2
 
 ```bash
 sudo env PATH=$PATH:/usr/bin pm2 startup ubuntu -u deploy --hp /home/deploy
 ```
 
-37. Acessando o frontend
+40. Acessar o frontend
 
 ```bash
 cd ../frontend
 ```
 
-38. copiando .env do example
+41. Copiar o arquivo `.env` do exemplo
 
 ```bash
 cp .env.example .env
 ```
 
-39. Editando o arquivo .env com o comando abaixo e prencher com os dados do item 42. Para salvar se usa Ctrl + x
+42. Editar o arquivo `.env` com o comando abaixo e preencher com os dados do item 40. Para salvar, use `Ctrl + X`
 
 ```bash
 nano .env
 ```
 
-40. Dados env frontend
+43. Dados do arquivo `.env` do frontend
 
 ```bash
 URL_API='https://backend.seusite.com.br'
 FACEBOOK_APP_ID='23156312477653241'
 ```
 
-41. Criar arquivo server.js com dados do item 44. Para salvar se usa Ctrl + x
+44. Criar arquivo `server.js` com os dados do item 46. Para salvar, use `Ctrl + X`
 
 ```bash
 nano server.js
 ```
 
-42. Dados para gerar server.js
+45. Dados para gerar o `server.js`
+
 ```bash
 // simple express server to run frontend production build;
 const express = require('express')
@@ -366,47 +366,49 @@ app.get('/*', function (req, res) {
 app.listen(4444)
 ```
 
-43. Instalando as dependências
+46. Instalar as dependências
+
 ```bash
 npm install --force
 ```
 
-44. Instalando Quasar
+47. Instalar Quasar
 
 ```bash
 npm i @quasar/cli
 ```
 
-. Update Blowser list
+48. Atualizar a lista de navegadores
 
 ```bash
 npx update-browserslist-db@latest
 ```
 
-45. Buildando o frontend
+49. Construir o frontend
 
 ```bash
 npm run build
 ```
 
-46. Iniciando o frontend com PM2
+50. Iniciar o frontend com PM2
+
 ```bash
 pm2 start server.js --name whazing-frontend
 ```
 
-47. Salvando os serviços iniciados pelo PM2
+51. Salvar os serviços iniciados pelo PM2
 
 ```bash
 pm2 save
 ```
 
-48. Listar os serviços iniciados pelo PM2
+52. Listar os serviços iniciados pelo PM2
 
 ```bash
 pm2 list
 ```
 
-49. Editar os dados abaixo com a URL que será usada para acessar o frontend.
+53. Editar os dados abaixo com a URL que será usada para acessar o frontend.
 
 ```bash
 server {
@@ -423,17 +425,16 @@ server {
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
     proxy_cache_bypass $http_upgrade;
   }
-
 }
 ```
 
-50. Criar e editar o arquivo whazing-frontend com o comando abaixo e prencher com os dados do item 52. Para salvar se usa Ctrl + x
+54. Criar e editar o arquivo `whazing-frontend` com o comando abaixo e preencher com os dados do item 53. Para salvar, use `Ctrl + X`
 
 ```bash
 sudo nano /etc/nginx/sites-available/whazing-frontend
 ```
 
-51. Editar os dados abaixo com a URL que será usada para acessar o backend.
+55. Editar os dados abaixo com a URL que será usada para acessar o backend.
 
 ```bash
 server {
@@ -450,106 +451,95 @@ server {
     proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
     proxy_cache_bypass $http_upgrade;
   }
-
 }
 ```
 
-52. Criar e editar o arquivo whazing-frontend com o comando abaixo e prencher com os dados do item 54. Para salvar se usa Ctrl + x
+56. Criar e editar o arquivo `whazing-backend` com o comando abaixo e preencher com os dados do item 55. Para salvar, use `Ctrl + X`
 
 ```bash
 sudo nano /etc/nginx/sites-available/whazing-backend
 ```
 
-53. Criar link simbólico para o arquivo whazing-frontend
+57. Criar link simbólico para o arquivo `whazing-frontend`
 
 ```bash
 sudo ln -s /etc/nginx/sites-available/whazing-frontend /etc/nginx/sites-enabled/
 ```
 
-
-54. Criar link simbólico para o arquivo whazing-backend
+58. Criar link simbólico para o arquivo `whazing-backend`
 
 ```bash
 sudo ln -s /etc/nginx/sites-available/whazing-backend /etc/nginx/sites-enabled/
 ```
 
-55. Editar o arquivo de configuração do nginx com o comando abaixo e prencher com os dados do item 59. adicionar antes# server_tokens off;. Para salvar se usa Ctrl + x
+59. Editar o arquivo de configuração do Nginx com o comando abaixo e preencher com os dados do item 62. Adicionar antes de `# server_tokens off;`. Para salvar, use `Ctrl + X`
 
 ```bash
 sudo nano /etc/nginx/nginx.conf
 ```
 
-56. adicionar antes# server_tokens off;
+60. Adicionar antes de `# server_tokens off;`
 
 ```bash
-underscores_in_headers on;	
+underscores_in_headers on;    
 client_max_body_size 100M;
 large_client_header_buffers 16 5120k;
 ```
-57. Testar as configurações do nginx
+
+61. Testar as configurações do Nginx
 
 ```bash
 sudo nginx -t
 ```
 
-58. Restartar o nginx
+62. Reiniciar o Nginx
 
 ```bash
 sudo service nginx restart
 ```
 
-59. Instalar o suporte a pacotes Snap
+63. Instalar o suporte a pacotes Snap
 
 ```bash
 sudo apt-get install snapd
 ```
 
-60. Instalar o pacote do notes
-
-```bash
-sudo snap install notes
-```
-
-61. Instalar o pacote do certbot(SSL)
+64. Instalar o pacote do Certbot (SSL)
 
 ```bash
 sudo snap install --classic certbot
 ```
 
-62. Gerar certificado
+65. Gerar certificado
 
 ```bash
 sudo certbot --nginx
 ```
 
-63. reniciar serviços docker
+66. Reiniciar serviços Docker
+
 ```bash
 docker container restart portainer
 ```
 
-64. reniciar serviços docker
+67. Reiniciar serviços Docker
+
 ```bash
 docker container restart postgresql
 ```
 
-65. reniciar serviços docker
+68. Reiniciar serviços Docker
+
 ```bash
 docker container restart redis-whazing
 ```
 
+Pronto! O sistema está instalado. Acesse o frontend em `whazing.seusite.com.br`.
 
-Pronto sistema instalado so acessar frontend
+Usuário padrão para acesso:
 
-Usuário padrão para acesso
-
-Usuário
-
-admin@admin.com 
-
-Senha:
-
-123456
-
+- Usuário: `admin@admin.com`
+- Senha: `123456`
 
 ## Erros
 
@@ -558,97 +548,100 @@ Senha:
 ```bash
 docker container restart postgresql
 ```
+
 ```bash
 docker exec -u root postgresql bash -c "chown -R postgres:postgres /var/lib/postgresql/data"
 ```
+
 ```bash
 docker container restart postgresql
 ```
 
-## Acesso Portainer gerar senha
+## Acesso ao Portainer para gerar senha
+
 "Your Portainer instance timed out for security purposes. To re-enable your Portainer instance, you will need to restart Portainer."
 
 ```bash
 docker container restart portainer
 ```
 
-Depois acesse novamente url http://seuip:9000/
+Depois, acesse novamente a URL `http://seuip:9000/`.
 
 ## Atualizar
 
-01. Use usuario deploy
+1. Use o usuário deploy
 
 ```bash
 su deploy
 ```
 
-02. Acesse pasta instalacao
+2. Acesse a pasta de instalação
 
 ```bash
 cd /home/deploy/whazing
 ```
 
-03. Atulizando pull
+3. Atualizar repositório
 
 ```bash
 git pull
 ```
 
-04. Descompactar
+4. Descompactar arquivos
 
 ```bash
 unzip -o whazing.zip
 ```
 
-05. Garantir permissao corretas
+5. Garantir permissões corretas
 
 ```bash
 chmod 775 /home/deploy/whazing/ -Rf
 ```
 
-06. acessar pasta backend
+6. Acessar a pasta backend
 
 ```bash
 cd /home/deploy/whazing/backend
 ```
 
-07. Instalando as dependências
+7. Instalar as dependências
 
 ```bash
 npm install --force
 ```
 
-08. Atualizar as tabelas no BD
+8. Atualizar as tabelas no banco de dados
 
 ```bash
 npx sequelize db:migrate
 ```
 
-09. acessar pasta frontend
+9. Acessar a pasta frontend
 
 ```bash
 cd /home/deploy/whazing/frontend
 ```
 
-10. Instalando as dependências
+10. Instalar as dependências
 
 ```bash
 npm install --force
 ```
 
-11. Update Blowser list
+11. Atualizar a lista de navegadores
 
 ```bash
 npx update-browserslist-db@latest
 ```
 
-11. Buildando o frontend
+12. Construir o frontend
 
 ```bash
 npm run build
 ```
 
-12. Reiniciar serviços PM2
+13. Reiniciar serviços PM2
 
 ```bash
 pm2 restart all
