@@ -1,74 +1,114 @@
-## Breve Resumo de Algumas Configurações do Chatbot Interno
+# Guia de Configuração do Chatbot Interno
 
-### Configuração de Fluxo
+## Índice
+1. [Configuração de Fluxo](#configuração-de-fluxo)
+2. [Ordem das Interações](#ordem-das-interações)
+3. [Configuração de Condições](#configuração-de-condições)
+4. [Exemplos Práticos de Fluxos](#exemplos-práticos-de-fluxos)
+
+## Configuração de Fluxo
+
+A configuração do fluxo do chatbot é feita através da interface visual abaixo:
 
 ![print](montagembot.png)
 
-1. **Configurar Fluxo**
+### Elementos Básicos de Configuração
 
-   ![print](configfluxo.png)
+![print](configfluxo.png)
 
-   - As interações na versão 2.8.4 incluem:
-     - **Enviar Mensagem**: Coloque o texto que será enviado ao cliente. É possível usar variáveis (ver documentação).
-     - **Enviar Documentos, Vídeos, Áudios e Outros Arquivos**: Para envio de arquivos.
-     - **Adicionar Delay**: Defina um tempo em segundos entre mensagens.
-     - **Adicionar Tag**: Marque uma etiqueta no contato.
-     - **Adicionar Webhook (GET)**: Envie informações para um sistema externo (por exemplo, variáveis capturadas no atendimento).
+Na versão 2.8.4, você tem acesso às seguintes interações:
 
-### Ordem das Interações
+#### 1. Enviar Mensagem
+- Permite inserir o texto que será enviado ao cliente
+- Suporta o uso de variáveis (consulte a seção de variáveis para mais detalhes)
 
-   ![print](configfluxo2.png)
+#### 2. Enviar Documentos, Vídeos, Áudios e Outros Arquivos
+- Funcionalidade dedicada para envio de arquivos diversos
 
-   - Este número indica a ordem em que as interações serão executadas.
-   - Quando enviar mais de uma mensagem, coloque um delay entre elas para garantir que sejam enviadas na ordem correta.
+#### 3. Adicionar Delay
+- Configure o intervalo de tempo (em segundos) entre as mensagens
+- Importante para garantir a sequência correta das mensagens
 
-### Configuração de Condições
+#### 4. Adicionar Tag
+- Permite marcar o contato com uma etiqueta específica
+
+#### 5. Adicionar Webhook (GET)
+- Integração com sistemas externos
+- Útil para enviar informações capturadas durante o atendimento
+
+## Ordem das Interações
+
+![print](configfluxo2.png)
+
+### Importante:
+- Os números indicam a sequência exata de execução das interações
+- Para múltiplas mensagens, use sempre o delay entre elas para garantir a ordem correta de envio
+
+## Configuração de Condições
 
 ![print](condicoes.png)
 
-   - Na tela de condições, a prioridade das condições é importante. 
-     - **Qualquer Resposta**: Executa qualquer resposta do cliente. Lembre-se de deixar esta condição sempre por último.
-     - **Respostas**: Deve ser uma resposta exata. Exemplo: "1". Se o cliente escrever "quero 1", a condição não será executada. Pode incluir mais opções, exemplo: "1" e "01".
-     - **Contém Exato**: Palavras dentro da frase. Exemplo: cadastrar "quero comprar". Se receber a mensagem "Eu quero comprar um tênis", a condição será executada.
-     - **Contém**: Palavras ou partes de palavras. Exemplo: cadastrar "compra". Se receber "estou comprando" ou "eu sou comprador", a condição será acionada.
-     - **Dentro do Horário de Atendimento**: Executa esta condição dentro do horário de atendimento. Lembre-se de deixar no início.
-     - **Fora do Horário de Atendimento**: Executa esta condição fora do horário de atendimento. Lembre-se de deixar no início.
+### Tipos de Condições (em ordem de prioridade):
 
-### Exemplos de Fluxos para Chat Interno
+#### 1. Dentro/Fora do Horário de Atendimento
+- Essa condição somente funciona na etapa "Boas vindas!"
+- **Posicionamento**: Sempre no início das condições
+- **Dentro do Horário**: Ativa durante o horário comercial
+- **Fora do Horário**: Ativa fora do horário comercial
 
-#### Fluxo que Muda pelo Horário de Atendimento
+#### 2. Respostas Exatas
+- Exemplo: "1" ou "01"
+- A resposta deve ser idêntica ao configurado
+- Não reconhece variações como "quero 1"
 
-   - Este fluxo simula uma empresa de seguros que tem um plantão para emergências.
+#### 3. Contém Exato
+- Procura palavras específicas na frase
+- Exemplo: Para "quero comprar", reconhece "Eu quero comprar um tênis"
 
-     ![print](horario1.jpg)
-     ![print](horario2.jpg)
+#### 4. Contém
+- Reconhece palavras ou partes de palavras
+- Exemplo: "compra" reconhece "comprando", "comprador"
 
-   - [Fluxo de Exemplo](horario_de_atendimento.json)
+#### 5. Qualquer Resposta
+- **Posicionamento**: Sempre por último
+- Captura qualquer resposta não prevista nas condições anteriores
 
-#### Fluxo com Uso de Variáveis Dinâmicas
+### Tratamento de Respostas Inesperadas
+Se nenhuma condição for atendida, o bot responderá com:
+"Desculpe! Não entendi sua resposta. Vamos tentar novamente! Escolha uma opção válida."
+(Esta mensagem pode ser personalizada nas configurações)
 
-   - Neste fluxo, você pode fazer perguntas ao cliente e guardar uma variável para usar depois.
+## Exemplos Práticos de Fluxos
 
-   - [Fluxo de Exemplo](exemplo_fluxo_usando_novas_variaveis.json)
+### 1. Fluxo com Horário de Atendimento
+Ideal para empresas com plantão de emergência
 
-   Exemplo de uso:
-   ```bash
-   Por favor, confirme se seu endereço é {{endereco}}?
-   1 - Sim
-   2 - Não
-   ```
+![print](horario1.jpg)
+![print](horario2.jpg)
 
-   O bot vai enviar:
-   ```bash
-   Por favor, confirme se seu endereço é Rua Marechal Deodoro, 11?
-   1 - Sim
-   2 - Não
-   ```
+[Download do Fluxo de Exemplo](horario_de_atendimento.json)
 
-#### Fluxo para Agendamento com Cal.com
+### 2. Fluxo com Variáveis Dinâmicas
+Permite personalizar mensagens com dados do cliente
 
-   - Exemplo de fluxo que envia o link [https://cal.com/](https://cal.com/) para fazer agendamentos.
+[Download do Fluxo de Exemplo](exemplo_fluxo_usando_novas_variaveis.json)
 
-   - [Fluxo de Exemplo](agendamentobarbearia.json)
+#### Exemplo de Uso:
+```
+Template da mensagem:
+Por favor, confirme se seu endereço é {{endereco}}?
+1 - Sim
+2 - Não
 
-   ![print](barbearia.jpg)
+Mensagem enviada ao cliente:
+Por favor, confirme se seu endereço é Rua Marechal Deodoro, 11?
+1 - Sim
+2 - Não
+```
+
+### 3. Fluxo de Agendamento com Cal.com
+Sistema integrado com [https://cal.com/](https://cal.com/)
+
+![print](barbearia.jpg)
+
+[Download do Fluxo de Exemplo](agendamentobarbearia.json)
