@@ -363,7 +363,7 @@ app.use(express.static(path.join(__dirname, 'dist/pwa')))
 app.get('/*', function (req, res) {
   res.sendFile(path.join(__dirname, 'dist/pwa', 'index.html'))
 })
-app.listen(4444)
+app.listen(3333)
 ```
 
 46. Instalar as dependências
@@ -415,7 +415,7 @@ server {
   server_name whazing.seusite.com.br;
 
   location / {
-    proxy_pass http://127.0.0.1:4444;
+    proxy_pass http://127.0.0.1:3333;
     proxy_http_version 1.1;
     proxy_set_header Upgrade $http_upgrade;
     proxy_set_header Connection 'upgrade';
