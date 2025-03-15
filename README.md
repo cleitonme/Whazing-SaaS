@@ -38,6 +38,7 @@ Versão grátis*
 - 2 canais
 - Suporte WhatsApp Api Bayles
 - Suporte facebook e Instagram  e WebChat - VIA HUB - Necessario pagar mensalidade por canal duvidas (48) 9941-6725
+- Suporte Telegram
 - Verificar premium abaixo para saber diferenças
 
 Versão Premium*
