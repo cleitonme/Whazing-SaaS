@@ -31,3 +31,5 @@
 
    ![print](token.png)  
    ![print](whazing.png)
+   
+OBS. **As mensagens devem ser enviadas para o bot que você criou, para aparecer no whazing**
