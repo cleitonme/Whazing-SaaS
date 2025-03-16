@@ -27,7 +27,7 @@ User;5551900000
 - Acesse a opção **Contatos** e clique em **Importar** no Whazing.  
 - Selecione o arquivo CSV.  
 - Opcionalmente:  
-  - Adicione a carteira.  
+  - Adicione a carteira, caso necessário.
   - Marque etiquetas, caso necessário.  
 
 ![print](whazing.png)
