@@ -2,7 +2,7 @@
 
 ### Passo 1: Configurar Integração
 
-1. Acesse **Configurações** > **Integrações** > clique em **Adicionar** e preencha os dados conforme mostrado na imagem abaixo:
+1. Acesse **Integrações** > clique em **Adicionar** e preencha os dados conforme mostrado na imagem abaixo:
    ![print](tela1.png)
 
 2. Obtenha sua **Api Key** no site [Asaas](https://www.asaas.com/customerApiAccessToken/index).
