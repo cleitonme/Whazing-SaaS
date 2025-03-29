@@ -70,6 +70,14 @@ Por favor, confirme se seu endereço é Rua Marechal Deodoro, 11?
    ```bash
    {{gretting}}
    ```
+- Saudação Espanhol:
+   ```bash
+   {{greetingEs}}
+   ```
+- Saudação Ingles:
+   ```bash
+   {{greetingEn}}
+   ```
 - ID do ticket:
    ```bash
    {{ticket_id}}
@@ -104,7 +112,18 @@ Por favor, confirme se seu endereço é Rua Marechal Deodoro, 11?
    ```
 
 ## Variáveis do Sistema - Campanhas
-
+- Saudação:
+   ```bash
+   {{gretting}}
+   ```
+- Saudação Espanhol:
+   ```bash
+   {{greetingEs}}
+   ```
+- Saudação Ingles:
+   ```bash
+   {{greetingEn}}
+   ```
 - Primeiro nome do contato:
    ```bash
    {{firstName}}
