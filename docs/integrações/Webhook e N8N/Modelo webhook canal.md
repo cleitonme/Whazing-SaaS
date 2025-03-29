@@ -12,6 +12,7 @@ Dados enviados opção "Novo ticket"
           status: ticket.status,
           protocol: ticket.protocol,
           queueId: ticket.queueId,
+		  userId: ticket.userId,
           apiConfig: ticket.apiConfig,
         },
         contact: contact ? {
@@ -29,6 +30,64 @@ Dados enviados opção "Novo ticket"
         },
       };
 	  
+	  Dados enviados opção "Ticket Transferido"
+
+
+      const dataToSend = {
+        Type:"TransferTicket",
+        messageBody: mensagem,
+        ticket: {
+          id: ticket.id,
+          status: ticket.status,
+          protocol: ticket.protocol,
+          queueId: ticket.queueId,
+		  userId: ticket.userId,
+          apiConfig: ticket.apiConfig,
+        },
+        contact: contact ? {
+          id: contact.id,
+          name: contact.name,
+          phoneNumber: contact.number,
+          profilePicUrl: contact.profilePicUrl,
+          email: contact.email,
+          isGroup: contact.isGroup,
+          pushname: contact.pushname,
+        } : null,
+        whatsapp: {
+          id: whatsapp.id,
+          name: whatsapp.name,
+        },
+      };
+	  
+	  
+	  	  Dados enviados opção "Ticket Fechado"
+
+
+      const dataToSend = {
+        Type:"ClosedTicket",
+        messageBody: mensagem,
+        ticket: {
+          id: ticket.id,
+          status: ticket.status,
+          protocol: ticket.protocol,
+          queueId: ticket.queueId,
+		  userId: ticket.userId,
+          apiConfig: ticket.apiConfig,
+        },
+        contact: contact ? {
+          id: contact.id,
+          name: contact.name,
+          phoneNumber: contact.number,
+          profilePicUrl: contact.profilePicUrl,
+          email: contact.email,
+          isGroup: contact.isGroup,
+          pushname: contact.pushname,
+        } : null,
+        whatsapp: {
+          id: whatsapp.id,
+          name: whatsapp.name,
+        },
+      };
 	  
 Dados enviado mensagens recebidas ou enviadas
 
