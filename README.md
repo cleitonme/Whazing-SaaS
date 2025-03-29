@@ -40,6 +40,7 @@ Versão grátis*
 - Suporte facebook e Instagram  e WebChat - VIA HUB - Necessario pagar mensalidade por canal duvidas (48) 9941-6725
 - Suporte Telegram
 - Verificar premium abaixo para saber diferenças
+- Suporte Wavoip
 
 Versão Premium*
 
@@ -57,6 +58,12 @@ Versão Premium*
 - Retirada mensagem "Enviado via Whazing" no modulo campanhas
 
 -  [Tabela de Valores versão premium e serviço de instalação](docs/TabeladeValores.md)
+
+- Cupom 50% desconto Wavoip
+
+```bash
+50OFF
+```
 
 ## Screenshots
 >![print](screenshots/saas.png) 
