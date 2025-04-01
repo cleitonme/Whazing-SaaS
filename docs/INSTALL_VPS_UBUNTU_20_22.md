@@ -118,10 +118,10 @@ usermod -aG docker deploy
 su deploy
 ```
 
-17. Realizar o download do Node.js 20.x
+17. Realizar o download do Node.js 22.x
 
 ```bash
-curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
 ```
 
 18. Instalar Node.js
