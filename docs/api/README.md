@@ -4,6 +4,8 @@
 
 Atualmente api somente funciona canal whatsapp bayles
 
+- externalkey - Esse é um valor para identificar mensagem, pode colocar qualquer valor, ele aparece no webook na apiConfig
+
 ---
 
 ## **1. Segue arquivo postman**
