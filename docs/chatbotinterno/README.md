@@ -1,5 +1,24 @@
 # Guia de Configuração do Chatbot Interno
 
+### Locais escolhe qual bot será usado e prioridades
+
+Atualmente, há três critérios que determinam qual bot será usado para novos tickets. Esses critérios estão listados abaixo em ordem de prioridade:
+
+1 -    Lane do CRM Todos os contatos associados a uma lane específica do CRM. Ao enviar uma mensagem para o número do sistema, caso não haja tickets abertos ou pendentes, o bot configurado para essa lane será acionado.
+
+![print](crm.png)
+
+2 -    No canal Cada canal pode ter um bot configurado. Ao enviar uma mensagem para o número do sistema, caso não haja tickets abertos ou pendentes, o bot configurado para aquele canal será utilizado.
+
+![print](canais.png)
+
+3 -    Nas Configurações Se nenhum bot for identificado pelas configurações acima, será utilizado o bot configurado no fluxo ativo do sistema.
+
+Esse ordem acima de prioridades define qual bot será escolhido quando for recebida uma mensagem pelo canal e não tiver ticket aberto ou pendente.
+
+É importante configurar os bots corretamente em cada nível para garantir que o atendimento ao cliente seja realizado conforme esperado.
+
+
 ## Índice
 1. [Configuração de Fluxo](#configuração-de-fluxo)
 2. [Ordem das Interações](#ordem-das-interações)
