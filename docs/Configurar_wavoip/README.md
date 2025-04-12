@@ -34,5 +34,5 @@
 - Aproveite o cupom de desconto **50% OFF** ao utilizar o código abaixo:
 
 ```bash
-50OFF
+whazing
 ```

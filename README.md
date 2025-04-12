@@ -62,7 +62,7 @@ Versão Premium*
 - Cupom 50% desconto Wavoip
 
 ```bash
-50OFF
+whazing
 ```
 
 ## Screenshots
