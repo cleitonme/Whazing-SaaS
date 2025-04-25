@@ -34,10 +34,14 @@ O Licenciado não é obrigado a adquirir os serviços de instalação oferecidos
 **5. Limitações da Versão Grátis**
 
 A Versão Grátis do software possui as seguintes limitações:
-- 10 usuários
-- 2 canais
-- Somente suporte WhatsApp Api Bayles
-- Entre outros limites
+
+- Limite de até 10 usuários
+- Máximo de 2 canais
+- Suporte exclusivamente à API WhatsApp Baileys
+- **Proibição de personalização visual (whitelabel):** é **expressamente proibida** qualquer modificação no frontend da aplicação, incluindo, mas não se limitando a, **remoção ou substituição de logotipos, nomes, referências visuais ou textuais à marca “Whazing”**.
+- Outras limitações técnicas e funcionais definidas pela Licenciante
+
+O descumprimento dessas restrições poderá caracterizar violação de direitos autorais e propriedade intelectual, sujeitando o Licenciado à responsabilização civil e criminal, bem como à adoção de medidas legais cabíveis, inclusive ações judiciais, indenização por perdas e danos e demais sanções previstas em lei.
 
 **6. Manutenção da VPS**
 
