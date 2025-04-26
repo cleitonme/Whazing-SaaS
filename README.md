@@ -44,6 +44,7 @@ Versão grátis*
 
 Versão Premium*
 
+- Whitelabel
 - Não possui limites
 - Kanban
 - Integração WebHook/N8N - TypeBot - Groq - ChatGPT - DeepSeek
