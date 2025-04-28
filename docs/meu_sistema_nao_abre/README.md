@@ -1,5 +1,27 @@
 ## Meu sistema não está funcionando. O que fazer?
 
+### Erro: Backend não consegue logar  
+Se você enfrentar problemas no login, tente reiniciar o PM2 seguindo os passos abaixo:
+
+1. Troque para o usuário `deploy`:
+   ```bash
+   su deploy
+   ```
+
+2. Reinicie os processos do PM2:
+   - Pare todos os processos:
+     ```bash
+     pm2 stop all
+     ```
+   - Recarregue os processos:
+     ```bash
+     pm2 reload all
+     ```
+   - Reinicie todos os processos:
+     ```bash
+     pm2 restart all
+     ```
+
 ### Instalação nova
 
 1. **Acabei de instalar e o sistema não abre**  
