@@ -1,0 +1,35 @@
+version: "3.7"
+
+services:
+  minio:
+    container_name: miniotypebot
+    image: minio/minio
+    restart: always
+    command: server /data --console-address ":9001"
+    networks:
+      - typebot_rede
+    ports:
+      - 32771:9000
+      - 32772:9001
+    volumes:
+      - minio_data:/data
+    environment:
+      - MINIO_ROOT_USER=rodnei
+      - MINIO_ROOT_PASSWORD=Admin33Admin77
+      - MINIO_BROWSER_REDIRECT_URL=https://minios3.webconfiavel.com.br
+      - MINIO_SERVER_URL=https://s3.webconfiavel.com.br
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+volumes:
+  minio_data:
+    external: false
+    name: minio_data
+
+networks:
+  typebot_rede:
+    external: false
+    name: typebot_rede

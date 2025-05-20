@@ -1,0 +1,468 @@
+{
+	"name": "exemplo barbearia",
+	"nodeList": [
+		{
+			"id": "start",
+			"name": "Início",
+			"type": "start",
+			"left": "26px",
+			"top": "100px",
+			"ico": "mdi-play",
+			"viewOnly": true,
+			"status": "success",
+			"style": {}
+		},
+		{
+			"id": "configurations",
+			"name": "Configurações",
+			"type": "configurations",
+			"left": "340px",
+			"top": "100px",
+			"viewOnly": true,
+			"ico": "mdi-alert-circle-outline",
+			"configurations": {
+				"notOptionsSelectMessage": {
+					"message": "",
+					"stepReturn": "A"
+				},
+				"notResponseMessage": {
+					"time": 10,
+					"type": 1,
+					"destiny": "",
+					"message": ""
+				},
+				"welcomeMessage": {
+					"message": ""
+				},
+				"maxRetryBotMessage": {
+					"number": 3,
+					"type": 1,
+					"destiny": ""
+				},
+				"outOpenHours": {
+					"type": 3,
+					"destiny": null
+				}
+			}
+		},
+		{
+			"id": "nodeC",
+			"name": "Boas vindas!",
+			"type": "node",
+			"left": "26px",
+			"top": "300px",
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "{{greeting}}"
+					},
+					"id": "f9bcb879-896a-4724-84b3-8b29f4dedb1f"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "2"
+					},
+					"id": "fe58f3fc-584e-403e-bd43-7dac406a6527"
+				},
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "💈 Bem-vindo à Barbearia Whazing!\nEstamos prontos para cuidar do seu estilo.\n\nPor favor, selecione uma opção no menu:\n1️⃣ Já sou cliente\n2️⃣ Não sou cliente\n3️⃣ Valores e serviços"
+					},
+					"id": "356d2e67-0d42-4675-88f2-847455c4ffa4"
+				}
+			],
+			"conditions": [
+				{
+					"type": "R",
+					"condition": [
+						"3"
+					],
+					"id": "a9a0987d-4203-498a-9b0a-d81b3a48f9fe",
+					"action": 0,
+					"nextStepId": "4cfc3d5c-47e2-48f7-b149-9d5684cfb05b"
+				},
+				{
+					"type": "R",
+					"condition": [
+						"1"
+					],
+					"id": "a900671d-4fae-4a8e-9389-6dd1b9d61965",
+					"action": 0,
+					"nextStepId": "b75139df-2551-489f-ab93-471e1a635aeb"
+				},
+				{
+					"type": "R",
+					"condition": [
+						"2"
+					],
+					"id": "9942b1a4-513d-47c9-89ba-04508c6422fa",
+					"action": 0,
+					"nextStepId": "527b1fa6-c031-44fb-b7b2-0dbb62b7bad9"
+				}
+			],
+			"actions": []
+		},
+		{
+			"id": "b75139df-2551-489f-ab93-471e1a635aeb",
+			"name": "ja sou cliente",
+			"type": "node",
+			"left": "418px",
+			"top": "230px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "R",
+					"condition": [
+						"1"
+					],
+					"id": "1341d7e1-44d6-49f5-b387-9bec9507ba7c",
+					"action": 0,
+					"nextStepId": "a96ca57e-ab41-4a1f-b975-16038bafd871"
+				},
+				{
+					"type": "R",
+					"condition": [
+						"2"
+					],
+					"id": "78323a16-b169-4598-8d8c-e26be175c500",
+					"action": 0,
+					"nextStepId": "527b1fa6-c031-44fb-b7b2-0dbb62b7bad9"
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Pode confirmar se seu email é {{emailsolicitado}}?\n1 - Sim\n2 - Não"
+					},
+					"id": "e64ef8e8-2022-4739-b549-ea42e95441e9"
+				}
+			]
+		},
+		{
+			"id": "4cfc3d5c-47e2-48f7-b149-9d5684cfb05b",
+			"name": "Serviços",
+			"type": "node",
+			"left": "336px",
+			"top": "570px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "US",
+					"condition": [],
+					"id": "8df5518e-eacd-4bfd-ad1f-9306e33b500e",
+					"action": 0,
+					"nextStepId": "nodeC"
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Confira nossos serviços e escolha o que você precisa:\n\nCorte de Cabelo – R$ 50,00\nBarba – R$ 50,00\nCabelo e Barba – R$ 90,00"
+					},
+					"id": "9315087a-7054-44f0-b044-2b57ec0b75b3"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "2"
+					},
+					"id": "08443623-b319-4333-90fb-35b63b87535c"
+				},
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Escreva qualquer coisa para voltar menu inicial"
+					},
+					"id": "a5ae6c71-6b2d-420a-adc1-9041dd5314b8"
+				}
+			]
+		},
+		{
+			"id": "527b1fa6-c031-44fb-b7b2-0dbb62b7bad9",
+			"name": "não sou cliente",
+			"type": "node",
+			"left": "416px",
+			"top": "400px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "US",
+					"condition": [],
+					"id": "d8f7d248-acc7-49b7-b7bc-25c905932633",
+					"customfield": "emailsolicitado",
+					"action": 0,
+					"nextStepId": "b75139df-2551-489f-ab93-471e1a635aeb"
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Qual seu endereço de email?\n"
+					},
+					"id": "363c0136-aaba-47e0-b614-620d1fb3c9fd"
+				}
+			]
+		},
+		{
+			"id": "a96ca57e-ab41-4a1f-b975-16038bafd871",
+			"name": "email confirmado",
+			"type": "node",
+			"left": "743px",
+			"top": "199px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "R",
+					"condition": [
+						"1"
+					],
+					"id": "6516b82d-a5f5-4062-985f-59f863aba6c6",
+					"action": 0,
+					"nextStepId": "c8fc25e3-f3b8-49a4-88a2-4300589288cc"
+				},
+				{
+					"type": "R",
+					"condition": [],
+					"id": "ec406660-f47c-47e0-9224-0c2b4eefb04a",
+					"action": 0,
+					"nextStepId": "4ea4ea3a-f21b-42a4-89d3-59fc1fbdf95a"
+				},
+				{
+					"type": "R",
+					"condition": [
+						"3"
+					],
+					"id": "dc9e41f6-1da4-4adb-bd28-736df08cc1ec",
+					"action": 0,
+					"nextStepId": "bc321c74-7816-4ea3-972e-2922feefc9bd"
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": " Escolha o serviço que você precisa:\n\n1️⃣ Corte de Cabelo\n2️⃣ Barba\n3️⃣ Cabelo e Barba"
+					},
+					"id": "8f8ae343-1100-44fd-8302-b04ac99e386e"
+				}
+			]
+		},
+		{
+			"id": "c8fc25e3-f3b8-49a4-88a2-4300589288cc",
+			"name": "cabelo",
+			"type": "node",
+			"left": "1027px",
+			"top": "32px",
+			"state": "success",
+			"actions": [],
+			"conditions": [],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Clique no link abaixo para fazer o agendamento:"
+					},
+					"id": "6c961d9c-e92f-430e-ae3c-33978b7544de"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "5"
+					},
+					"id": "69cccc6d-6fce-4798-9a76-ed19cd9d9f08"
+				},
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "https://cal.com/cleiton-meurer/cabelo?name={{firstName}}&phone-id=+{{phoneNumber}}&email={{emailsolicitado}}"
+					},
+					"id": "1f94bf2d-80fa-45ad-8202-0e92c4fa2671"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "60"
+					},
+					"id": "93d49960-b785-4374-9924-bc7f04032343"
+				},
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Não se esqueça de clicar no link acima para realizar seu agendamento, ele que garante sua agenda"
+					},
+					"id": "8bc0e796-2cc9-4792-abb2-92da7908001a"
+				}
+			]
+		},
+		{
+			"id": "4ea4ea3a-f21b-42a4-89d3-59fc1fbdf95a",
+			"name": "barba",
+			"type": "node",
+			"left": "1028px",
+			"top": "195px",
+			"state": "success",
+			"actions": [],
+			"conditions": [],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Clique no link abaixo para fazer o agendamento:"
+					},
+					"id": "28d8a929-6760-4670-80dd-caf06ab79f3c"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "5"
+					},
+					"id": "347146b9-6415-4fea-9b74-b1aca2c3e1e1"
+				},
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "https://cal.com/cleiton-meurer/barba?name={{firstName}}&phone-id=+{{phoneNumber}}&email={{emailsolicitado}}"
+					},
+					"id": "f68867a6-4797-42ca-b416-1578f748cf7e"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "60"
+					},
+					"id": "b07c6d42-ad08-4e71-8526-120900f4cef7"
+				},
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Não se esqueça de clicar no link acima para realizar seu agendamento, ele que garante sua agenda"
+					},
+					"id": "6104df0b-6d62-4149-a102-5eb407589628"
+				}
+			]
+		},
+		{
+			"id": "bc321c74-7816-4ea3-972e-2922feefc9bd",
+			"name": "cabelo e barba",
+			"type": "node",
+			"left": "1021px",
+			"top": "363px",
+			"state": "success",
+			"actions": [],
+			"conditions": [],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Clique no link abaixo para fazer o agendamento:"
+					},
+					"id": "a67f9a54-96f2-4190-bfa3-5a3c38dc2262"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "5"
+					},
+					"id": "865d06f3-7576-441a-a37d-b352f3716732"
+				},
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "https://cal.com/cleiton-meurer/cabeloebarba?name={{firstName}}&phone-id=+{{phoneNumber}}&email={{emailsolicitado}}"
+					},
+					"id": "be8c2f6d-c3f8-4dcd-854d-d9a68a655461"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "60"
+					},
+					"id": "046a3507-feae-4288-a281-1c7f149b51fc"
+				},
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Não se esqueça de clicar no link acima para realizar seu agendamento, ele que garante sua agenda"
+					},
+					"id": "9666a9f9-747c-4c1a-8346-87c4550641c2"
+				}
+			]
+		}
+	],
+	"lineList": [
+		{
+			"from": "start",
+			"to": "nodeC",
+			"paintStyle": {
+				"strokeWidth": 3,
+				"stroke": "#5c67f2"
+			}
+		},
+		{
+			"from": "4cfc3d5c-47e2-48f7-b149-9d5684cfb05b",
+			"to": "nodeC",
+			"label": null
+		},
+		{
+			"from": "nodeC",
+			"to": "4cfc3d5c-47e2-48f7-b149-9d5684cfb05b",
+			"label": null
+		},
+		{
+			"from": "nodeC",
+			"to": "b75139df-2551-489f-ab93-471e1a635aeb",
+			"label": null
+		},
+		{
+			"from": "nodeC",
+			"to": "527b1fa6-c031-44fb-b7b2-0dbb62b7bad9",
+			"label": null
+		},
+		{
+			"from": "527b1fa6-c031-44fb-b7b2-0dbb62b7bad9",
+			"to": "b75139df-2551-489f-ab93-471e1a635aeb",
+			"label": null
+		},
+		{
+			"from": "b75139df-2551-489f-ab93-471e1a635aeb",
+			"to": "a96ca57e-ab41-4a1f-b975-16038bafd871",
+			"label": null
+		},
+		{
+			"from": "b75139df-2551-489f-ab93-471e1a635aeb",
+			"to": "527b1fa6-c031-44fb-b7b2-0dbb62b7bad9",
+			"label": null
+		},
+		{
+			"from": "a96ca57e-ab41-4a1f-b975-16038bafd871",
+			"to": "c8fc25e3-f3b8-49a4-88a2-4300589288cc",
+			"label": null
+		},
+		{
+			"from": "a96ca57e-ab41-4a1f-b975-16038bafd871",
+			"to": "4ea4ea3a-f21b-42a4-89d3-59fc1fbdf95a",
+			"label": null
+		},
+		{
+			"from": "a96ca57e-ab41-4a1f-b975-16038bafd871",
+			"to": "bc321c74-7816-4ea3-972e-2922feefc9bd",
+			"label": null
+		}
+	],
+	"action": 0,
+	"userId": 1,
+	"celularTeste": "554899416725",
+	"isActive": true,
+	"AcceptTransfer": true,
+	"id": null
+}

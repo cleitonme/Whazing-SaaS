@@ -1,0 +1,35 @@
+version: "3.7"
+
+services:
+  postgres:
+    container_name: postgresqln8n
+    image: postgres:latest
+    restart: always
+    environment:
+      - POSTGRES_PASSWORD=Admin33Admin77
+    networks:
+      - n8n_rede
+    #ports:
+    #  - 5432:5432
+    volumes:
+      - postgres_n8n:/var/lib/postgresql/data
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      resources:
+        limits:
+          cpus: "0.5"
+          memory: 1024M
+
+volumes:
+  postgres_n8n:
+    external: false
+    name: postgres_n8n
+
+networks:
+  n8n_rede:
+    external: false
+    name: n8n_rede

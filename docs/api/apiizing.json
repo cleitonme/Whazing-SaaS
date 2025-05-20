@@ -1,0 +1,633 @@
+{
+  "info": {
+    "_postman_id": "4a255f71-390d-4db6-a27f-37989267354a",
+    "name": "API IZING",
+    "description": "Teste API IZING",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "33969866"
+  },
+  "item": [
+    {
+      "name": "SendMessageAPIFile",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE2MTU1OTM3ODIsImV4cCI6MTY3ODY2NTc4Mn0.d_irhAg5jMXHVvZoLAV1pO13nMhxuNS3u3EsKxFQUoQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "media",
+              "type": "file",
+              "src": "/home/durans/Downloads/577.pdf"
+            },
+            {
+              "key": "body",
+              "value": "Mensagem de teste 2",
+              "type": "text"
+            },
+            {
+              "key": "number",
+              "value": "5598999...",
+              "type": "text"
+            },
+            {
+              "key": "externalKey",
+              "value": "externalKeydd211",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://backend.whazing.com.br/v1/api/external/999ab3a2-9f1f-4ffb-969a-bfb72234ece1",
+          "protocol": "https",
+          "host": [
+            "backend",
+            "whazing",
+            "com",
+            "br"
+          ],
+          "path": [
+            "v1",
+            "api",
+            "external",
+            "999ab3a2-9f1f-4ffb-969a-bfb72234ece1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "SendMessageAPIFile Grupo",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE2MTU1OTM3ODIsImV4cCI6MTY3ODY2NTc4Mn0.d_irhAg5jMXHVvZoLAV1pO13nMhxuNS3u3EsKxFQUoQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "formdata",
+          "formdata": [
+            {
+              "key": "media",
+              "type": "file",
+              "src": "/home/durans/Downloads/577.pdf"
+            },
+            {
+              "key": "body",
+              "value": "Mensagem de teste 2",
+              "type": "text"
+            },
+            {
+              "key": "number",
+              "value": "numerodogrupo@grupo",
+              "type": "text"
+            },
+            {
+              "key": "externalKey",
+              "value": "externalKeydd211",
+              "type": "text"
+            }
+          ]
+        },
+        "url": {
+          "raw": "https://backend.whazing.com.br/v1/api/external/999ab3a2-9f1f-4ffb-969a-bfb72234ece1",
+          "protocol": "https",
+          "host": [
+            "backend",
+            "whazing",
+            "com",
+            "br"
+          ],
+          "path": [
+            "v1",
+            "api",
+            "external",
+            "999ab3a2-9f1f-4ffb-969a-bfb72234ece1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "SendMessageAPIText",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE2MTU1OTM3ODIsImV4cCI6MTY3ODY2NTc4Mn0.d_irhAg5jMXHVvZoLAV1pO13nMhxuNS3u3EsKxFQUoQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"body\": \"A mensagem desejada\",\n    \"number\": \"DDI+DDD+CELUAR === 55989...\",\n    \"externalKey\": \"ID_UNICA_DO_SISTEMA_CLIENTE_PARA_EXECUTAR_UMA_ACAO_COM_WEBHOOK\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://backend.whazing.com.br/v1/api/external/999ab3a2-9f1f-4ffb-969a-bfb72234ece1",
+          "protocol": "https",
+          "host": [
+            "backend",
+            "whazing",
+            "com",
+            "br"
+          ],
+          "path": [
+            "v1",
+            "api",
+            "external",
+            "999ab3a2-9f1f-4ffb-969a-bfb72234ece1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "SendMessageAPIText Grupo",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE2MTU1OTM3ODIsImV4cCI6MTY3ODY2NTc4Mn0.d_irhAg5jMXHVvZoLAV1pO13nMhxuNS3u3EsKxFQUoQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"body\": \"A mensagem desejada\",\n    \"number\": \"numerodogrupo@grupo\",\n    \"externalKey\": \"ID_UNICA_DO_SISTEMA_CLIENTE_PARA_EXECUTAR_UMA_ACAO_COM_WEBHOOK\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://backend.whazing.com.br/v1/api/external/999ab3a2-9f1f-4ffb-969a-bfb72234ece1",
+          "protocol": "https",
+          "host": [
+            "backend",
+            "whazing",
+            "com",
+            "br"
+          ],
+          "path": [
+            "v1",
+            "api",
+            "external",
+            "999ab3a2-9f1f-4ffb-969a-bfb72234ece1"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ShowTicketInformation",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE3MDU3NjcxNDksImV4cCI6MTc2ODgzOTE0OX0.2RgbDllXF9p4QX-lYDsGNWtxK0XVtVI25_ECvFgA8EQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"number\":\"5511999999999\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://backend.whazing.com.br/v1/api/external/999ab3a2-9f1f-4ffb-969a-bfb72234ece1/showticket",
+          "protocol": "https",
+          "host": [
+            "backend",
+            "whazing",
+            "com",
+            "br"
+          ],
+          "path": [
+            "v1",
+            "api",
+            "external",
+            "999ab3a2-9f1f-4ffb-969a-bfb72234ece1",
+            "showticket"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ShowTicketInformationChatBot",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE3MDU3NjcxNDksImV4cCI6MTc2ODgzOTE0OX0.2RgbDllXF9p4QX-lYDsGNWtxK0XVtVI25_ECvFgA8EQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"number\":\"5511999999999\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://backend.whazing.com.br/v1/api/external/999ab3a2-9f1f-4ffb-969a-bfb72234ece1/showticketchatbot",
+          "protocol": "https",
+          "host": [
+            "backend",
+            "whazing",
+            "com",
+            "br"
+          ],
+          "path": [
+            "v1",
+            "api",
+            "external",
+            "999ab3a2-9f1f-4ffb-969a-bfb72234ece1",
+            "showticketchatbot"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "ShowAllTicketInformation",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE3MDU3NjcxNDksImV4cCI6MTc2ODgzOTE0OX0.2RgbDllXF9p4QX-lYDsGNWtxK0XVtVI25_ECvFgA8EQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"number\":\"5511999999999\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://backend.whazing.com.br/v1/api/external/999ab3a2-9f1f-4ffb-969a-bfb72234ece1/showallticket",
+          "protocol": "https",
+          "host": [
+            "backend",
+            "whazing",
+            "com",
+            "br"
+          ],
+          "path": [
+            "v1",
+            "api",
+            "external",
+            "999ab3a2-9f1f-4ffb-969a-bfb72234ece1",
+            "showallticket"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "SetTag",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE3MDU3NjcxNDksImV4cCI6MTc2ODgzOTE0OX0.2RgbDllXF9p4QX-lYDsGNWtxK0XVtVI25_ECvFgA8EQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"ticketId\": 4,\n    \"tag\": 1\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://backend.whazing.com.br/v1/api/external/999ab3a2-9f1f-4ffb-969a-bfb72234ece1/updatetag",
+          "protocol": "https",
+          "host": [
+            "backend",
+            "whazing",
+            "com",
+            "br"
+          ],
+          "path": [
+            "v1",
+            "api",
+            "external",
+            "999ab3a2-9f1f-4ffb-969a-bfb72234ece1",
+            "updatetag"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "SetQueue",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE3MDU3NjcxNDksImV4cCI6MTc2ODgzOTE0OX0.2RgbDllXF9p4QX-lYDsGNWtxK0XVtVI25_ECvFgA8EQ",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"ticketId\": 4,\n    \"queueId\": 1\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://backend.whazing.com.br/v1/api/external/999ab3a2-9f1f-4ffb-969a-bfb72234ece1/updatequeue",
+          "protocol": "https",
+          "host": [
+            "backend",
+            "whazing",
+            "com",
+            "br"
+          ],
+          "path": [
+            "v1",
+            "api",
+            "external",
+            "999ab3a2-9f1f-4ffb-969a-bfb72234ece1",
+            "updatequeue"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "SendMessageParams",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://backend.whazing.com.br/v1/api/external/999ab3a2-9f1f-4ffb-969a-bfb72234ece1/params/?body=A%20mensagem%20desejadaa&number=5511999999999&externalKey=ID_UNICA_DO_SISTEMA_CLIENTE&bearertoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE3MDU3NjcxNDksImV4cCI6MTc2ODgzOTE0OX0.2RgbDllXF9p4QX-lYDsGNWtxK0XVtVI25_ECvFgA8EQ",
+          "protocol": "https",
+          "host": [
+            "backend",
+            "whazing",
+            "com",
+            "br"
+          ],
+          "path": [
+            "v1",
+            "api",
+            "external",
+            "999ab3a2-9f1f-4ffb-969a-bfb72234ece1",
+            "params",
+            ""
+          ],
+          "query": [
+            {
+              "key": "body",
+              "value": "A%20mensagem%20desejadaa"
+            },
+            {
+              "key": "number",
+              "value": "5511999999999"
+            },
+            {
+              "key": "externalKey",
+              "value": "ID_UNICA_DO_SISTEMA_CLIENTE"
+            },
+            {
+              "key": "bearertoken",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE3MDU3NjcxNDksImV4cCI6MTc2ODgzOTE0OX0.2RgbDllXF9p4QX-lYDsGNWtxK0XVtVI25_ECvFgA8EQ"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "SendMessageParams grupo",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "auth": {
+          "type": "noauth"
+        },
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://backend.whazing.com.br/v1/api/external/999ab3a2-9f1f-4ffb-969a-bfb72234ece1/params/?body=A%20mensagem%20desejadaa&number=numerodogrupo@grupo&externalKey=ID_UNICA_DO_SISTEMA_CLIENTE&bearertoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE3MDU3NjcxNDksImV4cCI6MTc2ODgzOTE0OX0.2RgbDllXF9p4QX-lYDsGNWtxK0XVtVI25_ECvFgA8EQ",
+          "protocol": "https",
+          "host": [
+            "backend",
+            "whazing",
+            "com",
+            "br"
+          ],
+          "path": [
+            "v1",
+            "api",
+            "external",
+            "999ab3a2-9f1f-4ffb-969a-bfb72234ece1",
+            "params",
+            ""
+          ],
+          "query": [
+            {
+              "key": "body",
+              "value": "A%20mensagem%20desejadaa"
+            },
+            {
+              "key": "number",
+              "value": "numerodogrupo@grupo"
+            },
+            {
+              "key": "externalKey",
+              "value": "ID_UNICA_DO_SISTEMA_CLIENTE"
+            },
+            {
+              "key": "bearertoken",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE3MDU3NjcxNDksImV4cCI6MTc2ODgzOTE0OX0.2RgbDllXF9p4QX-lYDsGNWtxK0XVtVI25_ECvFgA8EQ"
+            }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "SetTicketInfo",
+      "request": {
+        "auth": {
+          "type": "bearer",
+          "bearer": [
+            {
+              "key": "token",
+              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE3MTI2MDUzNDYsImV4cCI6MTc3NTY3NzM0Nn0.ILXyz7W8TcWldhDPiu5vHjewqapTl6xyuQknL_bEYGo",
+              "type": "string"
+            }
+          ]
+        },
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"ticketId\": 1003,\n    \"status\": \"open\",\n    \"userId\": 1,\n    \"queueId\": null\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "https://backend.whazing.com.br/v1/api/external/999ab3a2-9f1f-4ffb-969a-bfb72234ece1/updateticketinfo",
+          "protocol": "https",
+          "host": [
+            "backend",
+            "whazing",
+            "com",
+            "br"
+          ],
+          "path": [
+            "v1",
+            "api",
+            "external",
+            "999ab3a2-9f1f-4ffb-969a-bfb72234ece1",
+            "updateticketinfo"
+          ]
+        }
+      },
+      "response": []
+    }
+  ],
+  "auth": {
+    "type": "bearer",
+    "bearer": [
+      {
+        "key": "token",
+        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE2MTYwNDAwNDgsImV4cCI6MTY3OTExMjA0OH0.gDoVv_JDnrPLFLAzJgwpz_Cwd2JGhzeCUz2ILQ2uRRA",
+        "type": "string"
+      }
+    ]
+  },
+  "event": [
+    {
+      "listen": "prerequest",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    },
+    {
+      "listen": "test",
+      "script": {
+        "type": "text/javascript",
+        "exec": [
+          ""
+        ]
+      }
+    }
+  ],
+  "variable": [
+    {
+      "key": "BaseUrl",
+      "value": ""
+    }
+  ]
+}

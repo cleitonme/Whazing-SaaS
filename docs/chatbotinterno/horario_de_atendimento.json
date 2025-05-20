@@ -1,0 +1,176 @@
+{
+	"name": "horario atendimento",
+	"nodeList": [
+		{
+			"id": "start",
+			"name": "Início",
+			"type": "start",
+			"left": "26px",
+			"top": "100px",
+			"ico": "mdi-play",
+			"viewOnly": true,
+			"status": "success",
+			"style": {}
+		},
+		{
+			"id": "configurations",
+			"name": "Configurações",
+			"type": "configurations",
+			"left": "340px",
+			"top": "100px",
+			"viewOnly": true,
+			"ico": "mdi-alert-circle-outline",
+			"configurations": {
+				"notOptionsSelectMessage": {
+					"message": "",
+					"stepReturn": "A"
+				},
+				"notResponseMessage": {
+					"time": 10,
+					"type": 1,
+					"destiny": "",
+					"message": ""
+				},
+				"welcomeMessage": {
+					"message": ""
+				},
+				"maxRetryBotMessage": {
+					"number": 3,
+					"type": 1,
+					"destiny": ""
+				},
+				"outOpenHours": {
+					"type": 3,
+					"destiny": null
+				}
+			}
+		},
+		{
+			"id": "nodeC",
+			"name": "Boas vindas!",
+			"type": "node",
+			"left": "24px",
+			"top": "303px",
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "{{greeting}}"
+					},
+					"id": "4d77c38c-4c74-428d-b51f-3f93bcc1b6a0"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "2"
+					},
+					"id": "4e200adc-881e-462e-8e3d-1312a1b97113"
+				},
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "🎉 Seja bem-vindo à Whazing Seguros!"
+					},
+					"id": "d1cbe4ee-1db8-44a8-b22f-a84bbdee4c37"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "2"
+					},
+					"id": "c466582c-eda0-4c20-bbaf-3c237adecfc2"
+				},
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Qual seu nome? 😊"
+					},
+					"id": "717a14c8-0cb7-40ff-81ad-c8c52c6391aa"
+				}
+			],
+			"conditions": [
+				{
+					"type": "IN_BUSINESS_HOUR",
+					"condition": [],
+					"id": "ca3a111d-a8ac-4e4b-afa3-7023f757f971",
+					"action": 0,
+					"nextStepId": "2de00007-b023-47d4-8781-f61878f53530",
+					"customfield": "nome"
+				},
+				{
+					"type": "OUT_OF_BUSINESS_HOUR",
+					"condition": [],
+					"id": "13c7ac2a-1108-4202-b8e7-23569850acdb",
+					"action": 0,
+					"nextStepId": "dc2bf6d9-136e-4996-bce8-340d708adc8b",
+					"customfield": "nome"
+				}
+			],
+			"actions": []
+		},
+		{
+			"id": "2de00007-b023-47d4-8781-f61878f53530",
+			"name": "dentro horario",
+			"type": "node",
+			"left": "401px",
+			"top": "245px",
+			"state": "success",
+			"actions": [],
+			"conditions": [],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "📋 Menu de Opções\n{{nome}}, Por favor, escolha uma das opções abaixo:\n\n1️⃣ Cotação de Seguro\n2️⃣ Falar com o Financeiro\n3️⃣ Solicitar Guincho\n4️⃣ Outras Emergências"
+					},
+					"id": "80b7e84f-7c64-4152-9b75-593c60c0cf68"
+				}
+			]
+		},
+		{
+			"id": "dc2bf6d9-136e-4996-bce8-340d708adc8b",
+			"name": "fora horario",
+			"type": "node",
+			"left": "399px",
+			"top": "423px",
+			"state": "success",
+			"actions": [],
+			"conditions": [],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "{{nome}},\n📞 Atendimento Emergencial\nNosso departamento de vendas está disponível apenas em horário comercial.\nNo momento, estamos atendendo exclusivamente casos de emergência.\n\nPor favor, escolha uma opção:\n1️⃣ Solicitar Guincho\n2️⃣ Outras Urgências"
+					},
+					"id": "2c8dbe26-8881-4cec-a358-6d7064ed3151"
+				}
+			]
+		}
+	],
+	"lineList": [
+		{
+			"from": "start",
+			"to": "nodeC",
+			"paintStyle": {
+				"strokeWidth": 3,
+				"stroke": "#5c67f2"
+			}
+		},
+		{
+			"from": "nodeC",
+			"to": "2de00007-b023-47d4-8781-f61878f53530",
+			"label": null
+		},
+		{
+			"from": "nodeC",
+			"to": "dc2bf6d9-136e-4996-bce8-340d708adc8b",
+			"label": null
+		}
+	],
+	"action": 0,
+	"userId": 1,
+	"celularTeste": null,
+	"isActive": true,
+	"AcceptTransfer": false,
+	"id": null
+}

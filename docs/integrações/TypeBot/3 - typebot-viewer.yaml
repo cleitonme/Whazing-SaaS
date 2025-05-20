@@ -1,0 +1,50 @@
+version: "3.7"
+
+services:
+  typebot_viewer:
+    container_name: typebotviewer
+    image: baptistearno/typebot-viewer:latest
+    restart: always
+    networks:
+      - typebot_rede
+    ports:
+      - 8081:3000
+    environment:
+      - DATABASE_URL=postgresql://postgres:Admin33Admin77@postgres:5432/postgres
+      - ENCRYPTION_SECRET=7Rl2NKGhkMUHRV0dtRg8hD2YNopCrAeH
+      - DEFAULT_WORKSPACE_PLAN=UNLIMITED
+      - NEXTAUTH_URL=https://chatbot.webconfiavel.com.br
+      - NEXT_PUBLIC_VIEWER_URL=https://chatbotapi.webconfiavel.com.br
+      - NEXTAUTH_URL_INTERNAL=http://localhost:3000
+      - DISABLE_SIGNUP=false
+      - ADMIN_EMAIL=sourodmil@gmail.com
+      - NEXT_PUBLIC_SMTP_FROM='RWeb Tec' <sourodmil@gmail.com>
+      - SMTP_AUTH_DISABLED=false
+      - SMTP_USERNAME=sourodmil@gmail.com
+      - SMTP_PASSWORD=pfuvqidfkyhtaxtx
+      - SMTP_HOST=smtp.gmail.com
+      - SMTP_PORT=465
+      - SMTP_SECURE=false
+      # Configurações do Typebot e Google Cloud
+      #- GOOGLE_CLIENT_ID=
+      #- GOOGLE_CLIENT_SECRET=
+      # Configurações do Typebot e Minio
+      - S3_ACCESS_KEY=0euO7HOE7NTM6PmS6loK
+      - S3_SECRET_KEY=kGED9FHLuBFYLzFGwRkHy1SLAh7oSuKcfXzCfeyt
+      - S3_BUCKET=typebot
+      - S3_ENDPOINT=s3.webconfiavel.com.br
+    deploy:
+      mode: replicated
+      replicas: 1
+      placement:
+        constraints:
+          - node.role == manager
+      resources:
+        limits:
+          cpus: "1"
+          memory: 1024M
+
+networks:
+  typebot_rede:
+    external: false
+    name: typebot_rede

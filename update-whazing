@@ -1,0 +1,17 @@
+#!/bin/bash
+echo  "Updating whazing, please wait."
+git pull
+unzip -o whazing.zip
+chmod 775 /home/deploy/whazing/ -Rf
+cd backend
+npm install --force
+npx sequelize db:migrate
+pm2 restart all
+
+cd ..
+cd frontend
+npm install --force
+npx update-browserslist-db@latest
+npm run build
+
+echo  "Update finished. Enjoy!"
