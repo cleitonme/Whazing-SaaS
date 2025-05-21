@@ -99,7 +99,7 @@ cd /home/deploy
 10. **Baixar arquivo zip repositorio**:
 
 ```bash
-wget ...
+wget https://github.com/cleitonme/Whazing-SaaS/raw/refs/heads/main/docs/Instalacao_manual_docker/whazing.zip
 ```
 
 4. **Baixar arquivo zip repositorio**:
