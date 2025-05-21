@@ -106,7 +106,7 @@ whazing
 ## Instalando
 Seguem links sugerimos:
 
--  [Como Instalar o Whazing VPS - Texto - UBUNTU 20, 22](docs/INSTALL_VPS_UBUNTU_20_22.md)
+-  [Como Instalar Manualmente o Whazing VPS UBUNTU 22](docs/Instalacao_manual_docker)
 
 -  [Instalador automatico](https://github.com/cleitonme/Whazing-SaaS.instalador)
 <br/>
