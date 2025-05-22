@@ -23,7 +23,7 @@ Se você enfrentar problemas no login, tente reiniciar o PM2 seguindo os passos 
      ```
 	 
 ### Erro: Backend não consegue logar - Nova instação docker
-Se você enfrentar problemas no login, tente reiniciar o PM2 seguindo os passos abaixo:
+Se você enfrentar problemas no login, tente reiniciar o docker seguindo os passos abaixo:
 
 1. Renicie os proscessos:
 

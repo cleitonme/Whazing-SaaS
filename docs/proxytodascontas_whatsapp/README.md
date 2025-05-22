@@ -29,7 +29,7 @@ PROXY_URL=socks5://127.0.0.1:9150
    - Reinicie os serviços executando o comando abaixo no terminal:
 
 ```bash
-pm2 restart all
+docker container restart whazing-backend
 ```
 
 ---
@@ -59,5 +59,5 @@ PROXY_URL=socks5://127.0.0.1:9150
    - Execute o seguinte comando para reiniciar todos os serviços:
 
 ```bash
-pm2 restart all
+docker container restart whazing-backend
 ```
