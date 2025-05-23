@@ -57,7 +57,7 @@ Se você enfrentar problemas no login, tente reiniciar o docker seguindo os pass
      - O IP da VPS deve aparecer em todas as validações no **dnschecker.org**.  
 
 5. **Certifique-se de que o SSL está correto**  
-   - Consulte a documentação na seção [Problemas com SSL](../Problemas com SSL.md) para maiores detalhes.
+   - Consulte a documentação na seção [Problemas com SSL](../Problemas_com_SSL.md) para maiores detalhes.
    
 ### Meu sistema não envia ou recebe mensagens
 
