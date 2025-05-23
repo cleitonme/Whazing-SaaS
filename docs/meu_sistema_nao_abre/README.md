@@ -44,7 +44,7 @@ Se você enfrentar problemas no login, tente reiniciar o docker seguindo os pass
      - Ao verificar no **dnschecker.org**, o IP da sua VPS deve aparecer em todas as validações.  
      
 2. **Verifique os logs do sistema**  
-   - Consulte a documentação na seção **"acessando_logs"** para identificar possíveis erros.  
+   - Consulte a documentação na seção [acessando_logs](../acessando_logs) para identificar possíveis erros.  
    
 3. **Reinstale o sistema**  
    - Caso seja uma instalação nova, formate a VPS utilizando o sistema operacional recomendado **Ubuntu 22** e refaça a instalação.  
@@ -60,7 +60,7 @@ Se você enfrentar problemas no login, tente reiniciar o docker seguindo os pass
    - É possível que algum erro tenha ocorrido durante o processo de atualização.  
 
 3. **Verifique os logs do sistema**  
-   - Consulte a documentação na seção **"acessando_logs"** para investigar eventuais erros.  
+   - Consulte a documentação na seção [acessando_logs](../acessando_logs) para investigar eventuais erros.  
 
 ---
 
@@ -69,7 +69,7 @@ Se você enfrentar problemas no login, tente reiniciar o docker seguindo os pass
 1. **Reinicie a VPS**  
 
 2. **Verifique os logs do sistema**  
-   - Acesse a documentação na seção **"acessando_logs"** para identificar problemas.  
+   - Acesse a documentação na seção [acessando_logs](../acessando_logs) para identificar problemas.  
 
 3. **Execute a atualização**  
 
@@ -88,8 +88,8 @@ Se você enfrentar problemas no login, tente reiniciar o docker seguindo os pass
 2. **Conecte novamente o whatsapp**
 
 3. **Verifique os logs do sistema**  
-   - Acesse a documentação na seção **"acessando_logs"** para identificar problemas. 
-   [acessando_logs](../acessando_logs)
+   - Acesse a documentação na seção [acessando_logs](../acessando_logs) para identificar problemas. 
+
 Obs: Caso log aparece erro no redis exemplo "[ioredis] Unhandled error event: Error: connect ECONNREFUSED"
 
 Necessário reinstalar o mesmo - Verificar documentação "reinstalar_redis"
@@ -104,4 +104,4 @@ Acesse nosso grupo de suporte:
 **Informe o máximo de informações possíveis**, como:  
 - Domínios de acesso  
 - Resultados de comandos como *ping*  
-- Logs relevantes  
+- Logs relevantes  [acessando_logs](../acessando_logs)
