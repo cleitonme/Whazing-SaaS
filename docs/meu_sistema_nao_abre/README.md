@@ -79,8 +79,21 @@ Se você enfrentar problemas no login, tente reiniciar o docker seguindo os pass
      - O IP da VPS deve aparecer em todas as validações no **dnschecker.org**.  
 
 5. **Certifique-se de que o SSL está correto**  
-   - Consulte a documentação na seção **"Problemas com SSL"** para maiores detalhes.  
+   - Consulte a documentação na seção **"Problemas com SSL"** para maiores detalhes.
+   
+### Meu sistema não envia ou recebe mensagens
 
+1. **Reinicie a VPS**
+
+2. **Conecte novamente o whatsapp**
+
+3. **Verifique os logs do sistema**  
+   - Acesse a documentação na seção **"acessando_logs"** para identificar problemas. 
+   [acessando_logs](acessando_logs)
+Obs: Caso log aparece erro no redis exemplo "[ioredis] Unhandled error event: Error: connect ECONNREFUSED"
+
+Necessário reinstalar o mesmo - Verificar documentação "reinstalar_redis"
+   [reinstalar_redis](reinstalar_redis)
 ---
 
 ### Grupo de suporte
