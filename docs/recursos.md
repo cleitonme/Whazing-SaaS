@@ -14,7 +14,6 @@
 - **Importação de Mensagens do Celular**: Importe mensagens diretamente do seu celular.
 - **Importação de Contatos**: Importe seus contatos facilmente.
 - **Montagem de Bot estilo ChatFlow**: Crie bots com recursos como delay, envio de áudios, arquivos, webhooks, entre outros.
-- **WhiteLabel**: Personalize a plataforma com sua marca pelo painel.
 - **Envio de Mensagens Automáticas**: Aceite ou transfira tickets automaticamente.
 - **Sistema de Simulação de Digitação e Gravação**: Reduza a chance de bloqueios no WhatsApp.
 - **Mensagem de Despedida Personalizável**: Personalize a mensagem de despedida por usuário.
@@ -37,6 +36,7 @@
 - **Anotações em Tickets**: Adicione notas em tickets.
 - **Mensagens Separadas por Filas**: Organize mensagens por filas.
 - **Transferir Atendimento para ChatBot**: Mova atendimentos para bots.
+- **WhiteLabel**: Personalize a plataforma com sua marca pelo painel.
 
 ### Versão Atual
 - **Versão Atual**: 2.8.14.4
