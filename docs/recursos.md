@@ -18,7 +18,6 @@
 - **Sistema de Simulação de Digitação e Gravação**: Reduza a chance de bloqueios no WhatsApp.
 - **Mensagem de Despedida Personalizável**: Personalize a mensagem de despedida por usuário.
 - **Suporte a Facebook e Instagram**: Gerencie mensagens dessas plataformas via HUB (necessário pagar mensalidade por canal).
-- **Suporte Wavoip**: Faça ligação whatsapp
 
 
 ### Funções Exclusivas da Versão Premium
@@ -37,6 +36,7 @@
 - **Mensagens Separadas por Filas**: Organize mensagens por filas.
 - **Transferir Atendimento para ChatBot**: Mova atendimentos para bots.
 - **WhiteLabel**: Personalize a plataforma com sua marca pelo painel.
+- **Suporte Wavoip**: Faça ligação whatsapp
 
 ### Versão Atual
 - **Versão Atual**: 2.8.14.4
