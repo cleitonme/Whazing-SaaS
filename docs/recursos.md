@@ -8,7 +8,7 @@
 - **Fechamento e Apagar Tickets em Massa**: Feche ou apague múltiplos tickets de uma vez.
 - **Integração Bancária**: Com Efi, Mercado Pago, Asaas e Stripe. Recebimento via PIX, cartão de crédito e boleto.
 - **Lista de Protocolos**: Acompanhe todas as suas interações e casos.
-- **Lista de Agendamentos**: Gerencie seus compromissos e agendamentos.
+- **Lista de Agendamentos**: Gerencie mensagens agendadas.
 - **Tela de Atendimento**: Vários filtros e separação por grupos para facilitar o gerenciamento dos atendimentos.
 - **Mensagens Rápidas com Anexos**: Envie mensagens rápidas com documentos, vídeos e outros arquivos.
 - **Importação de Mensagens do Celular**: Importe mensagens diretamente do seu celular.
