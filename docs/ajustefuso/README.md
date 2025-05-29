@@ -26,10 +26,32 @@
    TZ=America/Sao_Paulo
    ```
 
-5. Reniciar Whazing
+5. parar docker
 
    ```env
-   docker container restart whazing-backend
+   docker stop whazing-backend
+   ```
+
+5. Remover docker
+
+   ```env
+   docker rm whazing-backend
+   ```
+
+5. Reinstalar docker, alterar fuso e se quer beta ou latest
+
+   ```env
+  docker run -d \
+  --name whazing-backend \
+  --network host \
+  --restart=always \
+  -e TZ=America/Sao_Paulo \
+  -v /etc/localtime:/etc/localtime:ro \
+  -v /home/deploy/whazing/backend/private:/app/private \
+  -v /home/deploy/whazing/backend/public:/app/public \
+  -v /home/deploy/whazing/backend/logs:/app/logs \
+  -v /home/deploy/whazing/backend/.env:/app/.env \
+  whazing/whazing-backend:beta
    ```
 
 > 📌 **Dica:** Essa variável afeta o timezone usado nas conexões com o banco de dados.
