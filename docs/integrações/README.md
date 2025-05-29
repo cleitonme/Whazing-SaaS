@@ -18,3 +18,5 @@ Elas ficam no meu - Cadastros - Filas/Integrações
 - Caso queira novo ticket já inicie naquela integração escolha a fila possui integracao no canal
 
 ![print](canal.png)
+
+## Para integrações entender audio necessário ter transcrição ativa verificar documentação "Transcrição_audio"
