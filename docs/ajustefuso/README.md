@@ -10,7 +10,7 @@ Este tutorial mostra como configurar corretamente o fuso horário no Whazing, ta
 
    ```bash
    cd /home/deploy/whazing
-````
+   ````
 
 2. Edite o arquivo `.env`:
 
