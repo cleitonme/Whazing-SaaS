@@ -1,4 +1,3 @@
-````markdown
 # ✅ Como Ajustar o Fuso Horário no Whazing (Servidor e Banco de Dados)
 
 Este tutorial mostra como configurar corretamente o fuso horário no Whazing, tanto no backend (Docker) quanto no servidor (Linux/Ubuntu). Isso é importante para garantir que horários de mensagens, logs e banco de dados estejam corretos.
