@@ -67,7 +67,7 @@ Este Contrato constitui o entendimento completo entre as partes e substitui quai
 
 **11. Legislação Aplicável e Foro**
 
-Este Contrato será regido e interpretado de acordo com as leis do Brasil. Fica eleito o foro da comarca de [Cidade], Estado de [Estado], para dirimir quaisquer dúvidas ou controvérsias decorrentes deste Contrato, com renúncia expressa de qualquer outro, por mais privilegiado que seja.
+Este Contrato será regido e interpretado de acordo com as leis do Brasil. Fica eleito o foro da comarca de São João Batista, Estado de Santa Catarina, para dirimir quaisquer dúvidas ou controvérsias decorrentes deste Contrato, com renúncia expressa de qualquer outro, por mais privilegiado que seja.
 
 **12. Aceitação dos Termos**
 
