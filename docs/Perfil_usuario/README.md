@@ -1,6 +1,6 @@
 ## **Resumo Básico de Perfis de Usuário**  
 
-### **Administrator**  
+### **Administrador**  
 Usuário com permissões mais altas, garantindo acesso completo a todas as funções do sistema.  
 
 ### **Supervisor**  
