@@ -1,4 +1,4 @@
-## Tags e Variáveis do Sistema - Tela de Atendimento
+## Variáveis do Sistema - Tela de Atendimento
 
 ### Variáveis Dinâmicas
 
