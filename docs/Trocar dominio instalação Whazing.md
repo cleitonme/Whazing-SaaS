@@ -97,15 +97,8 @@ nano /home/deploy/whazing/frontend/.env
 ```
 Preencha a variável `URL_API` com o novo backend. Para salvar, pressione `Ctrl + X`, depois `Y` e `Enter`.
 
-## Passo 10: Reiniciar Serviços PM2
+## Passo 10: Rodar atualização
 
-Reinicie whazing do docker
-```bash
-docker container restart whazing-backend
-```
-
-```bash
-docker container restart whazing-frontend
-```
+Após alterações rodar o atualizador e selecionar versao você esta usando para atualizar estavel 2 ou beta 11
 
 Seguindo esses passos, você terá trocado com sucesso o domínio da instalação Whazing.
