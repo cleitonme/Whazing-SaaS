@@ -1,0 +1,356 @@
+{
+	"info": {
+		"_postman_id": "03319d28-c5ce-46de-ac34-05f38e030ef3",
+		"name": "API Whazing ADMIN",
+		"description": "Teste API Whazing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33969866"
+	},
+	"item": [
+		{
+			"name": "CriarEmpresa",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN_ADMIN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n     \"name\": \"Test User\",\r\n     \"email\": \"test@example.com\",\r\n     \"password\": \"mudar123\",\r\n     \"tenantName\": \"Test Company\",\r\n     \"phone\": \"55555555555\",\r\n     \"plano\": \"1\",\r\n     \"timetest\": \"3\"\r\n   }"
+				},
+				"url": {
+					"raw": "{{URL_ADMIN}}/{{API_ID}}/createtenant",
+					"host": [
+						"{{URL_ADMIN}}"
+					],
+					"path": [
+						"{{API_ID}}",
+						"createtenant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar todas empresas",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN_ADMIN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{URL_ADMIN}}/{{API_ID}}",
+					"host": [
+						"{{URL_ADMIN}}"
+					],
+					"path": [
+						"{{API_ID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Usuarios empresa",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN_ADMIN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"url": {
+					"raw": "{{URL_ADMIN}}/{{API_ID}}/users/1",
+					"host": [
+						"{{URL_ADMIN}}"
+					],
+					"path": [
+						"{{API_ID}}",
+						"users",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "alterar senha ususuario",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN_ADMIN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n     \"userId\": \"10\",\r\n     \"password\": \"novasenha\"\r\n   }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{URL_ADMIN}}/{{API_ID}}/users",
+					"host": [
+						"{{URL_ADMIN}}"
+					],
+					"path": [
+						"{{API_ID}}",
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Listar empresa id especifico",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true,
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN_ADMIN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n     \"tenantId\": \"2\"\r\n   }"
+				},
+				"url": {
+					"raw": "{{URL_ADMIN}}/{{API_ID}}",
+					"host": [
+						"{{URL_ADMIN}}"
+					],
+					"path": [
+						"{{API_ID}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "renovar 1 mes",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN_ADMIN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n     \"tenantId\": \"34\"\r\n   }"
+				},
+				"url": {
+					"raw": "{{URL_ADMIN}}/{{API_ID}}/addMonth",
+					"host": [
+						"{{URL_ADMIN}}"
+					],
+					"path": [
+						"{{API_ID}}",
+						"addMonth"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "update empresa",
+			"protocolProfileBehavior": {
+				"disabledSystemHeaders": {
+					"content-type": true
+				}
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{TOKEN_ADMIN}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "   {\r\n     \"tenantId\": \"23\",\r\n     \"email\": \"test@example.com\",\r\n     \"tenantName\": \"Test Company\",\r\n     \"phone\": \"55555555555\",\r\n     \"plano\": \"1\",\r\n     \"dueDate\": \"2025-07-17T20:58\"\r\n   }"
+				},
+				"url": {
+					"raw": "{{URL_ADMIN}}/{{API_ID}}/updatetenant",
+					"host": [
+						"{{URL_ADMIN}}"
+					],
+					"path": [
+						"{{API_ID}}",
+						"updatetenant"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjozNSwiaWF0IjoxNzQ0NjczNDU0LCJleHAiOjE4MDc3NDU0NTR9.HGM3Zx-Yx3sgm-G0TUoYGILFgUp2xr0_RTXbaAieItc",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "URL_ADMIN",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "API_ID",
+			"value": "",
+			"type": "string"
+		},
+		{
+			"key": "TOKEN_ADMIN",
+			"value": "",
+			"type": "string"
+		}
+	]
+}

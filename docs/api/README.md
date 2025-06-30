@@ -1,46 +1,43 @@
-# **Como USAR API DO WHAZING**
-
----
-
-Atualmente api somente funciona canal whatsapp bayles
-
-- externalkey - Esse é um valor para identificar mensagem, pode colocar qualquer valor, ele aparece no webook na apiConfig
-
----
-
-## **1. Segue arquivo postman**
-
-- Faça o [download do arquivo modelo](apiizing.json)
-
----
-
 # Manual de Uso da API Whazing
 
 ![print](whazing.png)
 
+- Faça o [download do arquivo modelo](apiizing.json)
+
 ## Índice
-1. Autenticação
-2. Endpoints Disponíveis
-3. Exemplos de Uso
-4. Códigos de Exemplo
+1. [Introdução](#introdução)
+2. [Autenticação](#autenticação)
+3. [Endpoints](#endpoints)
+   - [Mensagens](#mensagens)
+   - [Contatos](#contatos)
+   - [Tickets](#tickets)
+   - [Mensagens Interativas](#mensagens-interativas)
+   - [Templates](#templates)
+   - [Outros Endpoints](#outros-endpoints)
+4. [Exemplos de Código](#exemplos-de-código)
 
-## 1. Autenticação
+## Introdução
 
-Todas as requisições devem incluir o token Bearer no header de autenticação. Para o exemplo fornecido:
+A API do Whazing permite a integração com o WhatsApp Business API para envio e gerenciamento de mensagens, contatos e tickets.
 
+- **Base URL**: `https://testeapi.whazing.com.br/v1/api/external/[SEU-ID]`
+- **ExternalKey**: Identificador único para cada mensagem (pode ser qualquer valor e aparece no webhook na apiConfig)
+
+## Autenticação
+
+Todas as requisições devem incluir o token Bearer no header:
+
+```http
+Authorization: Bearer seu-token-aqui
 ```
-Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjo0LCJpYXQiOjE3NDIxMzEyNDMsImV4cCI6MTgwNTIwMzI0M30.gXZNKw76z-5334NBMOr7ToBMLF0szIsqv8P_CK5T9js
-```
 
-## 2. Endpoints Disponíveis
+## Endpoints
 
-Base URL: `https://testeapi.whazing.com.br/v1/api/external/d6747d15-7346-4047-97f4-247f6ce45585`
+### Mensagens
 
-### 2.1 Envio de Mensagens
-
-#### a) Enviar Mensagem de Texto
-- **Endpoint**: `/`
+#### 1. Enviar Mensagem de Texto
 - **Método**: POST
+- **Endpoint**: `/`
 - **Content-Type**: application/json
 
 ```json
@@ -51,85 +48,478 @@ Base URL: `https://testeapi.whazing.com.br/v1/api/external/d6747d15-7346-4047-97
 }
 ```
 
-#### b) Enviar Mensagem para Grupo
-- **Endpoint**: `/`
+#### 2. Enviar Arquivo
 - **Método**: POST
-- **Content-Type**: application/json
+- **Endpoint**: `/`
+- **Content-Type**: multipart/form-data
 
 ```json
 {
-    "body": "Sua mensagem aqui",
-    "number": "nome-do-grupo@grupo",
+    "media": "(arquivo)",
+    "body": "Texto da mensagem",
+    "number": "5511999999999",
     "externalKey": "ID_UNICO_SISTEMA"
 }
 ```
 
-#### c) Enviar Arquivo
-- **Endpoint**: `/`
+#### 3. Enviar Sticker
 - **Método**: POST
+- **Endpoint**: `/`
 - **Content-Type**: multipart/form-data
 
-Parâmetros:
-- media (arquivo)
-- body (texto)
-- number (telefone ou grupo)
-- externalKey (identificador único)
-
-### 2.2 Consulta de Tickets
-
-#### a) Consultar Ticket Específico
-- **Endpoint**: `/showticket`
-- **Método**: POST
 ```json
 {
-    "number": "5511999999999"
+    "media": "(arquivo)",
+    "body": "sticker",
+    "number": "5511999999999",
+    "externalKey": "ID_UNICO_SISTEMA",
+    "sticker": "true"
 }
 ```
 
-#### b) Consultar Todos os Tickets
-- **Endpoint**: `/showallticket`
+#### 4. Enviar Localização
 - **Método**: POST
+- **Endpoint**: `/location`
+
 ```json
 {
-    "number": "5511999999999"
+  "number": "5511999999999",
+  "contents": {
+    "type": "location",
+    "longitude": -27.2842864,
+    "latitude": -48.9243959,
+    "name": "Nome do Local",
+    "address": "Endereço Completo"
+  }
 }
 ```
 
-### 2.3 Gerenciamento de Tickets
+#### 5. Enviar Mensagem via Parâmetros
+- **Método**: GET
+- **Endpoint**: `/params`
 
-#### a) Atualizar Tag
+```
+/params/?body=Mensagem&number=5511999999999&externalKey=ID_UNICO&bearertoken=seu-token
+```
+
+### Contatos
+
+#### 1. Criar Contato
+- **Método**: POST
+- **Endpoint**: `/createcontact`
+
+```json
+{
+  "name": "Nome do Contato",
+  "number": "5511999999999",
+  "email": "email@exemplo.com",
+  "extraInfo": [
+    {
+      "name": "Campo Extra",
+      "value": "Valor"
+    }
+  ],
+  "wallets": [],
+  "disableBot": false,
+  "disableCampaign": false,
+  "commentary": "Observações",
+  "deadline": "2025-12-31T23:59:59Z",
+  "disableKanban": false,
+  "kanbanPrice": "1500",
+  "ignore": false
+}
+```
+
+#### 2. Buscar Contato
+- **Método**: POST
+- **Endpoint**: `/contact`
+
+Por número:
+```json
+{
+  "number": "5511999999999"
+}
+```
+
+Por ID:
+```json
+{
+  "contactId": 123
+}
+```
+
+#### 3. Atualizar CRM do Contato
+- **Método**: POST
+- **Endpoint**: `/updatecrm`
+
+Por número:
+```json
+{
+  "number": "5511999999999",
+  "crm": 1
+}
+```
+
+Por contactId:
+```json
+{
+  "contactId": 3397,
+  "crm": 8
+}
+```
+
+Por ticketId:
+```json
+{
+  "ticketId": 2881,
+  "crm": 19
+}
+```
+
+Para retirar contato do crm use valor 0
+
+#### 4. Atualizar Tags do Contato
+- **Método**: POST
 - **Endpoint**: `/updatetag`
-- **Método**: POST
+
+Por número:
 ```json
 {
-    "ticketId": 1234,
-    "tag": 1
+  "number": "5511999999999",
+  "tags": [25, 26]
 }
 ```
 
-#### b) Atualizar Fila
-- **Endpoint**: `/updatequeue`
-- **Método**: POST
+Por contactId:
 ```json
 {
-    "ticketId": 1234,
-    "queueId": 1
+  "contactId": 3649,
+  "tags": [25]
 }
 ```
 
-#### c) Atualizar Informações do Ticket
+Por ticketId:
+```json
+{
+  "ticketId": 3183,
+  "tags": []
+}
+```
+
+Caso usar [] vai retirar tags. Esse valor altera para tags que você colocar no endpoint tags anteriores são removidas.
+
+#### 5. Editar Contato
+- **Método**: POST
+- **Endpoint**: `/updatecontact`
+
+Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar contato a ser alterado
+
+```json
+{
+  "name": "Nome do Contato",
+  "number": "5511999999999",
+  "email": "email@exemplo.com",
+  "extraInfo": [
+    {
+      "name": "Campo Extra",
+      "value": "Valor"
+    }
+  ],
+  "wallets": [],
+  "disableBot": false,
+  "disableCampaign": false,
+  "commentary": "Observações",
+  "deadline": "2025-12-31T23:59:59Z",
+  "disableKanban": false,
+  "kanbanPrice": "1500",
+  "ignore": false
+}
+```
+
+### Tickets
+
+#### 1. Criar Ticket
+- **Método**: POST
+- **Endpoint**: `/createticket`
+
+```json
+{
+  "number": "5511999999999",
+  "status": "pending",
+  "queueId": 4,
+  "userId": null
+}
+```
+
+#### 2. Consulta ultimo Ticket atribuido ao canal
+- **Método**: POST
+- **Endpoint**: `/showticket`
+
+```json
+{
+  "number": "5511999999999"
+}
+```
+
+#### 3. Consultar Ticket ChatBot
+- **Método**: POST
+- **Endpoint**: `/showticketchatbot`
+
+```json
+{
+  "number": "5511999999999"
+}
+```
+
+#### 4. Consultar Todos os Tickets atribuidos ao canal
+- **Método**: POST
+- **Endpoint**: `/showallticket`
+
+```json
+{
+  "number": "5511999999999"
+}
+```
+
+#### 5. Atualizar Ticket
+- **Método**: POST
 - **Endpoint**: `/updateticketinfo`
-- **Método**: POST
+
 ```json
 {
-    "ticketId": 1234,
-    "status": "open",
-    "userId": 1,
-    "queueId": null
+  "ticketId": 1003,
+  "status": "open",
+  "userId": 1,
+  "queueId": null
 }
 ```
 
-## 3. Exemplos de Código
+#### 6. Atualizar Fila do Ticket
+- **Método**: POST
+- **Endpoint**: `/updatequeue`
+
+```json
+{
+  "ticketId": 4,
+  "queueId": 1
+}
+```
+
+#### 7. Listar todas mensagens do ticket
+- **Método**: GET
+- **Endpoint**: `/ticket/{ticketId}`
+
+### Mensagens Interativas
+
+#### 1. Mensagem com Botões
+- **Método**: POST
+- **Endpoint**: `/apioficial`
+
+```json
+{
+    "number": "5511999999999",
+    "contents": {
+        "type": "button",
+        "body": {
+            "text": "Texto principal"
+        },
+        "action": {
+            "buttons": [
+                {
+                    "type": "reply",
+                    "reply": {
+                        "id": "1",
+                        "title": "Botão 1"
+                    }
+                }
+            ]
+        }
+    }
+}
+```
+
+#### 2. Mensagem com Lista
+- **Método**: POST
+- **Endpoint**: `/apioficial`
+
+```json
+{
+  "number": "5511999999999",
+  "contents": {
+    "type": "list",
+    "header": {
+      "type": "text",
+      "text": "Título"
+    },
+    "body": {
+      "text": "Descrição"
+    },
+    "action": {
+      "sections": [
+        {
+          "title": "Seção 1",
+          "rows": [
+            {
+              "id": 1,
+              "title": "Item 1",
+              "description": "Descrição do item 1"
+            }
+          ]
+        }
+      ],
+      "button": "Clique aqui"
+    }
+  }
+}
+```
+
+#### 3. Mensagem com Link (CTA)
+- **Método**: POST
+- **Endpoint**: `/apioficial`
+
+```json
+{
+    "number": "5511999999999",
+    "contents": {
+        "type": "cta_url",
+        "header": {
+            "type": "text",
+            "text": "Título"
+        },
+        "body": {
+            "text": "Descrição"
+        },
+        "footer": {
+            "text": "Rodapé"
+        },
+        "action": {
+            "name": "cta_url",
+            "parameters": {
+                "display_text": "Ver Mais",
+                "url": "SEU_LINK"
+            }
+        }
+    }
+}
+```
+
+#### 4. Solicitar Localização
+- **Método**: POST
+- **Endpoint**: `/apioficial`
+
+```json
+{
+    "number": "5511999999999",
+    "contents": {
+        "type": "location_request_message",
+        "body": {
+            "text": "Por favor compartilhe sua localização"
+        },
+        "action": {
+            "name": "send_location"
+        }
+    }
+}
+```
+
+### Templates
+
+#### 1. Template Simples
+- **Método**: POST
+- **Endpoint**: `/apioficial`
+
+```json
+{
+    "number": "5511999999999",
+    "contents": {
+        "name": "nome_do_template",
+        "components": [{
+            "type": "body",
+            "parameters": []
+        }],
+        "language": {
+            "code": "pt_BR"
+        }
+    }
+}
+```
+
+#### 2. Template com Parâmetros
+- **Método**: POST
+- **Endpoint**: `/apioficial`
+
+```json
+{
+    "number": "5511999999999",
+    "contents": {
+        "name": "nome_do_template",
+        "components": [
+            {
+                "type": "header",
+                "parameters": [{
+                    "type": "image",
+                    "image": {
+                        "link": "link_da_imagem"
+                    }
+                }]
+            },
+            {
+                "type": "body",
+                "parameters": [
+                    {
+                        "type": "text",
+                        "parameter_name": "nome_do_parametro",
+                        "text": "texto_do_parametro"
+                    }
+                ]
+            },
+            {
+                "type": "button",
+                "sub_type": "tipo_do_botão",
+                "index": "index_do_botão",
+                "parameters": []
+            }
+        ],
+        "language": {
+            "code": "pt_BR"
+        }
+    }
+}
+```
+
+### Outros Endpoints
+
+#### 1. Validar Número WhatsApp
+- **Método**: POST
+- **Endpoint**: `/valid-whatsapp-number`
+
+```json
+{
+  "number": "5511999999999"
+}
+```
+
+#### 2. Status do Canal
+- **Método**: GET
+- **Endpoint**: `/statuschannel`
+
+#### 3. QR Code
+- **Método**: POST
+- **Endpoint**: `/qrcode`
+
+```json
+{
+  "number": null
+}
+```
+
+#### 4. Listar Contatos por Filtro
+- **Método**: GET
+- **Por Tag**: `/contacts/tag/{tagId}`
+- **Por CRM**: `/contacts/crm/{crmId}`
+- **Por Carteira**: `/contacts/wallet/{walletId}`
+
+## Exemplos de Código
 
 ### Python
 ```python
@@ -162,20 +552,11 @@ class WhazingAPI:
             'number': (None, number),
             'externalKey': (None, external_key)
         }
-        headers = {'Authorization': f'Bearer {token}'}
+        headers = {'Authorization': f'Bearer {self.headers["Authorization"]}'}
         response = requests.post(self.base_url, 
                                headers=headers, 
                                files=files)
         return response.json()
-
-# Exemplo de uso
-api = WhazingAPI(
-    'https://testeapi.whazing.com.br/v1/api/external/d6747d15-7346-4047-97f4-247f6ce45585',
-    'seu-token-aqui'
-)
-
-# Enviar mensagem
-result = api.send_message('5511999999999', 'Olá, mundo!', 'TEST123')
 ```
 
 ### Node.js
@@ -236,17 +617,6 @@ class WhazingAPI {
         }
     }
 }
-
-// Exemplo de uso
-const api = new WhazingAPI(
-    'https://testeapi.whazing.com.br/v1/api/external/d6747d15-7346-4047-97f4-247f6ce45585',
-    'seu-token-aqui'
-);
-
-// Enviar mensagem
-api.sendMessage('5511999999999', 'Olá, mundo!', 'TEST123')
-    .then(response => console.log(response))
-    .catch(error => console.error(error));
 ```
 
 ### PHP
@@ -314,17 +684,17 @@ class WhazingAPI {
         return json_decode($response, true);
     }
 }
-
-// Exemplo de uso
-$api = new WhazingAPI(
-    'https://testeapi.whazing.com.br/v1/api/external/d6747d15-7346-4047-97f4-247f6ce45585',
-    'seu-token-aqui'
-);
-
-// Enviar mensagem
-$result = $api->sendMessage('5511999999999', 'Olá, mundo!', 'TEST123');
-print_r($result);
 ```
 
+## Observações Importantes
 
-Este manual fornece uma visão geral da API Whazing. Para casos específicos ou dúvidas adicionais, consulte a documentação completa ou entre em contato com o suporte.
+1. Todos os números devem estar no formato DDI+DDD+NÚMERO (ex: 5511999999999)
+2. O token de autenticação deve ser mantido em segurança
+3. Para mensagens em grupo, use o formato "nome-do-grupo@grupo" no campo number
+4. Os templates devem ser previamente aprovados pelo WhatsApp
+5. Mantenha o externalKey único para cada mensagem para rastreamento
+6. Certifique-se de que os arquivos enviados estejam em formatos suportados pelo WhatsApp
+7. Para endpoints que aceitam status, os valores possíveis são: "pending", "open", "closed"
+8. Os IDs de fila (queueId) e usuário (userId) devem existir no sistema
+
+Para casos específicos ou dúvidas adicionais, consulte a documentação completa ou entre em contato com o suporte.

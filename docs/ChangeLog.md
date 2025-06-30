@@ -1,3 +1,378 @@
+## Versão 2.9.4.8 Final - Changelog - 29-06-2025
+
+- Mensagem recebida de lid solicita automaticamente para compartilhar numero telefone
+
+## Versão 2.9.4.8 Beta - Changelog - 23-06-2025
+
+- bug - correção bug envio varios arquivos
+
+## Versão 2.9.4.8 Beta - Changelog - 22-06-2025
+
+- bug - erro integração mercado pago - painel saas
+- update baileys versão com algumas pequenas melhoras @lid
+
+
+## Versão 2.9.4.8 Beta - Changelog
+
+- Endpoint cadastro teste alterado para evitar ataques testes falsos
+
+- API ADMIN - Endpoint Admin criar teste - esse endpoint separado com validações extras, nao prescisa ta habilitada a opção criar testes, não envia mensagem de boas vindas(ideia vocês personalize maximo possivel por exemplo usando typebot). Caso queria validar telefone ou enviar mensagem boas use endpoints ja existe e personalize a experiencia do usuario.
+- API ADMIN -  Endpoint Admin update empresa
+- API ADMIN - Endpoint Admin listar todas empresas ou filtrar id especifico
+- API ADMIN - Endpoint Admin adicionar 1 mês na empresa
+- API ADMIN - Endpoint Admin Listar usuarios da empresa
+- API ADMIN - Endpoint Admin atualzar senha usuario
+
+- API - Endpoint para editar contato
+- API - Enpoint listar mensagens ticket
+- API - Melhoria validação token api externa para evitar ataques
+
+- Busca por mensagem especifica na tela atendimento - tem limites, contatos com muitas mensagens não vai localizar todas
+- Input do atendimento aceitar correção sugeridas pelo navegador usado
+- Importação contatos do aparelho tem agora posibilidade de selecionar etiquetas, carteira ou crm
+
+- TypeBot - Criado integração lista modelo evolution - possivel criar lista personalizada usando burble text  - tem exemplo fluxo para importar
+- TypeBot - Criado integração botão estilo whazing - possivel criar botão direto usando comandos especificos typebot
+- Typebot - As informações adicionais funcionaram como variaveis typebot (atenção essa informação carregada quando inicia conexão typebot se alguma for alterada durante fluxo typebot não vai alterar até fluxo typebot for reniciado)
+- Typebot - Novo comando possivel para alterar informações adicionais do contato - tem exemplo fluxo para importar
+- Typebot - Ajustados parte comandos para quando ser usado etiquetas, crm, informações adicionais não parar fluxo
+
+## Versão 2.9.4.7 Beta - Changelog
+
+ *quem ta na versao Versão 2.9.4.6 Beta atualize agora urgente*
+
+- bug - bot enviar mensagem transferencia no fechar ticket
+- bug - Exibição data feriados
+- bug - botão clicar responder audio
+- bug - Correção envio arquivos criado versão 2.9.4.6
+
+- Relatorio tickets, filtro por estado
+- Relatorio tickets, filtro por informações adicionais do contato
+- Relatorio tickets, mostra numero telefone do contato
+- Relatorio tickets, mostra informações adicionais do contato
+- Relatorio tickets, botão ocultar filtros para ser melhor leitura dos relatorios
+- Relatorio tickets, opção escolher quantidade tickets carregar
+- Relatorio tickets, opção escolher carregar grupos ou não
+- Relatorio tickets, opção escolher colunas para aparecer
+- Fechamento ticket em massa marca eles como lidos
+- Listar usuarios painel saas da empresa mostra se ta online e ultimo horario estava online - informação importante acompanhar se cliente esta usando sistema, e tentar pegar feedback por que não
+
+## Versão 2.9.4.6 Beta - Changelog
+
+- bug - bot não acionar com arquivos
+- bug - mensagens editadas com anexo ficava undefined texto
+
+- webhook fechamento ticket colocado closingReasonId
+- Suporte edição caption arquivos enviados
+- Suporte responder com imagem ou arquivo ou audio
+
+- preparativos para mudança whatsapp criação estrutura para trabalhar com "LID"
+- API se usar numero@lid da ele vai enviar usando lid
+- Webhook adicionado lid do contato no json
+
+## Versão 2.9.4.5 Beta - Changelog
+
+- bug - pix assas
+
+- Melhoria tratamento e aviso de erros ao criar novo ticket caso ja tenha uma aberto
+
+## Versão 2.9.4.4 Beta - Changelog
+
+- mudanças no banco - não permite downgrade de versão
+
+- bug - Mensagem rapida remover anexo
+
+- Tenant vencido não consegui mais enviar mensagens
+- Refatoração envio hub para melhor desempenho e futurar auditorias
+- Refatoração bot interno preparação novos canais
+- retorno filtro canal dashboard apaguei sem querer
+- melhoria integração ia - configuração Intervalo (ms) entre mensagens
+Define o tempo de espera (em milissegundos) entre as respostas da IA.
+Por exemplo: 15000 ms significa 15 segundos.
+
+Durante esse intervalo, se o cliente enviar várias mensagens, a IA responderá apenas uma vez — ou seja, ela aguardará esse tempo antes de responder novamente.
+
+Resumo: a IA só responde uma vez a cada intervalo definido, mesmo que o cliente envie várias mensagens nesse tempo.
+
+## Versão 2.9.4.3 Beta - Changelog
+
+- atualização versão baileys correção conectar via codigo
+
+## Versão 2.9.4.2 Beta - Changelog
+
+- Opção salvar senha tela login
+- Cache local figurinhas enviadas
+- Possivel quebra linha tela print tambem
+- Melhorias layout da dashboard
+- Identificação mensagens enviadas por fora whazing
+
+## Versão 2.9.4.1 Beta - Changelog
+
+### 🐛 Correções de Bugs
+
+- Arquivos recebidos com # no nome, não conseguir abrir
+- Volta volta rolagem lista mensagens
+
+## Versão 2.9.4 Beta - Changelog
+
+### 🐛 Correções de Bugs
+
+* Corrigida a **cor da legenda nos gráficos de pizza** ao passar o mouse (hover)
+
+### ⚙️ Melhorias de Sistema
+
+* **Otimização no backend:** remoção de trechos de código não utilizados
+* **Melhoria visual** na exibição de áudios na tela de atendimento
+* **Zoom na imagem de perfil do contato** na tela de atendimento
+* **Remoção do texto "aproximadamente"** na tela de tickets, por ser muito extenso
+* **Campo de edição de contatos atualizado:** agora é possível desabilitar a avaliação do contato (apenas para Admins e Supervisores)
+* Pressionar **Ctrl + Enter permite quebra de linha** na tela de atendimento
+
+### 🤖 Integrações e Automações
+
+* Atendimentos feitos por **automações (IA, Typebot)** agora marcam mensagens como lidas automaticamente
+* Tickets com **integrações ativas** (como Typebot ou IA) **não acionam validação de horário de atendimento**
+
+### 🧑💼 Funcionalidades e Recursos
+
+* **Nova indicação visual:** mostra qual usuário reagiu à mensagem
+* **Nova indicação visual:** mostra qual usuário encaminhou uma mensagem
+* **Nova opção "Motivo de Encerramento" (somente plano Premium):**
+
+  * Ao encerrar um ticket, o usuário deverá escolher um motivo obrigatório
+  * Os motivos podem ser utilizados como filtro e em gráficos no dashboard
+  * A opção só aparece se houver motivos cadastrados e ativos
+  * Exemplo de motivos: "Cliente desistiu", "Preço alto", "Não respondeu"
+
+### 📊 Relatórios e Dashboard
+
+* **Nova coluna no relatório de tickets:** "Primeira mensagem" (mensagem que originou o ticket), útil para rastrear a origem do lead
+* **Novo gráfico de evolução por canal**
+* **Novo gráfico de atendimentos por canal**
+* **Filtro por canal** adicionado à dashboard (além do filtro por data)
+
+## Versão 2.9.4 Beta - Changelog
+
+- bug - correção cor legenda ao passar mouse graficos de pizza
+
+- Otimização backend retirada partes não usadas
+- Zoom imagem profile do contato tela atendimento
+- Atendimento feito por automações como ia, typebot marcam mensagens como lidas.
+- Ticket com integrações ativas não aciona horario de atendimento. Ex. Typebot, IA.
+- Indicação usuario que reagiu
+- Indicação usuario encaminhou mensagem
+- Nova opção Motivo encerramento(somente premium) - Ao fechar ticket usuario será obrigatorio selecionar motivo para poder fechar, esses valores podem ser usados no filtros e grafico dashboard, caso não tenha motivo cadastrado ou ativo a opção não aparece. Exemplo: Não fechou, Preço alto. Aumentando o rastreamento dos atendimentos
+- Nova coluna relatorio tickets, primeira mensagem(mensagem que fez ticket ser aberto). Pode ser usado para ajudar rastrear origem do lead.
+- Melhoria visual audios tela atendimento.
+- Retirado aproximadamente tela atendimento tickets, texto muito longo.
+- Novo grafico evolução por canal(anterior era por tipo de canal)
+- Novo grafico atendimento por canal(anterior era por tipo de canal)
+- Alem do filtro data será possivel filtrar por canal na dashboard
+- Segura Ctrl possibilidade fazer quebra linha na tela atendimento
+- Edição contatos configuração desabilitar avaliação, somente disponivel para admin e supervisor
+
+## Versão 2.9.3 Beta - Changelog
+
+### 🐛 Correções de Bugs
+
+- bug da beta - * Corrigido botão de **mutar chamadas (wavoip)** que não funcionava corretamente
+
+### ⚙️ Melhorias e Novos Recursos
+
+* Focar automaticamente após envio de mensagens, campo texto
+* **Botão "Sincronizar Contatos"** agora disponível apenas para administradores
+* Validação de **horário de atendimento** ajustada: se o responsável estiver online e o ticket aberto, aviso fora do horário não será enviado
+* Implementado **cache no título da página** para caso queda backend manter titulo
+* Campos de **botões e listas agora aceitam variáveis dinâmicas**
+* Atualizada versão da **biblioteca Baileys**, restabelecendo conexão via código Código
+* Melhorias nas **traduções do sistema**
+* Sistema passou a exigir **senhas mais complexas** para maior segurança
+
+## Versão 2.9.2 Beta - Changelog
+
+### 🐛 Correções de Bugs
+- Corrigido erro na confirmação de leitura de mensagens enviadas pelo bot
+- Resolvido não funcionamento do webhook quando ticket é fechado usando interação do bot
+- Corrigido bug da API oficial beta onde template com imagem não era enviado
+- Solucionado problema nas estatísticas de entrega na campanha da API oficial beta
+- Resolvido problema de duplicação de mensagens enviadas pelo hub
+- Corrigido problema de rolagem na lista de mensagens de despedida
+- Ajustado permissões para admin poder apagar mensagem de despedida
+- Corrigido exibição do horário de fechamento no relatório de tickets
+- Corrigido tradução na beta onde relatório exibia tickets fechados como pendentes
+
+### ⚙️ Melhorias nas Configurações
+- A opção de "não capturar mensagens enviadas fora da plataforma" agora é configurável por canal, não mais uma configuração geral do Whazing
+- Adicionado controle de acesso por dia e horário dos usuários
+- Implementado definição de horário de atendimento por canal/fila
+- Adicionado cadastro de feriados com horários diferenciados de atendimento
+- Configuração para ignorar chamadas movida para nível de canal (otimização para WaVoip)
+- Implementado soft delete para usuários (mantém dados no banco ao deletar)
+
+
+### 🔄 APIs Modificadas
+- Endpoint `showticket` atualizado para retornar o ticket mais recente atribuído ao canal selecionado no cadastro de APIs
+- Endpoint `showallticket` atualizado para listar todos os tickets atribuídos ao canal selecionado na API
+
+### 🔄 Melhorias no WaVoip
+- Adicionada notificação automática quando uma chamada é atendida por outro usuário:
+  - O webphone é fechado automaticamente para o usuário original
+  - Uma notificação é exibida informando qual usuário atendeu a chamada
+
+### 🚀 Novos Recursos
+- Suporte ao envio de contatos
+- Implementado espiar ticket em modo mobile
+
+### 💅 Melhorias na Interface
+- Nova exibição na dashboard SaaS da quantidade de empresas vencidas
+- Adicionado foto do usuário
+- Implementado filtro para empresas vencidas
+- Melhorada tela de cadastro de API com exibição do nome e canal
+- Adicionado destaque no botão de configurar canal
+- Otimização da tela de atendimento para modo mobile:
+  - Removido botão de emoji para melhor aproveitamento de espaço
+  - Reorganizado botão de anexo
+  - Novo botão "+" com múltiplas opções
+  - Suporte a envio de contatos, figurinhas e templates
+
+### 📱 Otimizações Mobile
+- Interface otimizada para melhor experiência em dispositivos móveis
+- Reorganização de botões e controles para maior eficiência
+- Melhor aproveitamento do espaço em tela
+
+---
+*Nota: Esta versão beta contém importantes correções de bugs e melhorias significativas na experiência do usuário, especialmente para uso mobile.*
+
+## Versão 2.9.1 Beta - Changelog
+
+* Wavoip disponível apenas na versão premium
+* Suporte completo à API Wavoip: fazer e receber chamadas, além de relatórios de chamadas realizadas *(relatório disponível apenas para chamadas feitas com o novo Whazing)*
+* Não é mais necessário escanear QR Code no site da Wavoip – integração 100% com Whazing, basta inserir a chave
+* Referências ao nome Wavoip nos textos foram removidas – ideia é que vocês possam vender como serviço adicional sem divulgar o fornecedor
+* Versão do Baileys modificada que permite uso do Wavoip com a API oficial conectada via QR Code
+* No cadastro de usuários, nova configuração permite liberar o uso do Wavoip por canal, semelhante ao controle por filas. Se o canal estiver marcado, o usuário poderá fazer e receber ligações por ele
+
+---
+
+* Integração com Typebot (API não oficial): caso não tenha valor preenchido na lista, o sistema usa um texto padrão para garantir o funcionamento
+* API Oficial – novo botão para solicitar localização do cliente, disponível no bot e na API
+* Suporte ao envio de localização via API (oficial e não oficial), disponível tanto no bot quanto via API
+* Notificação de atualização de navegador agora mais chamativa
+
+---
+
+* API não oficial (Baileys): nova opção para ignorar chats privados. Objetivo é permitir o uso conjunto com a API oficial, fazendo chamadas e enviando mensagens fora da janela via Baileys, e recebendo/enviando mensagens normalmente pela API oficial. Também permite acesso a grupos via Baileys
+* Novo modo fallback da API oficial usando conexão Baileys – permite envio de mensagens e chamadas via Wavoip. Requer versão modificada instalada no Whazing (não funciona com a original). Fallback por WWJS externo continua disponível
+* Sistema agora captura mensagens enviadas fora do Whazing usando o hub (ex: Instagram, API oficial via QR Code)
+
+---
+
+* Identificação das interações no bot interno
+* Nova opção de envio de figurinhas: qualquer imagem enviada será convertida automaticamente em figurinha
+* API – mudança de fila: altera integração associada a fila
+* API – endpoint de tags reformulado: agora é possível adicionar várias tags de uma vez ou remover todas
+* API – endpoint do CRM: para remover um contato do CRM, envie o valor `0`
+
+
+## Versão 2.9 Beta - Changelog
+
+### 🛠 Alterações na API
+- A versão gratuita adicionará automaticamente a assinatura “whazing.com.br” nas mensagens enviadas.
+- Funções White Label foram removidas da versão gratuita.
+
+### 🐞 Correções de Bugs
+- Corrigido problema ao adicionar dois contatos seguidos: os dados do contato anterior não eram apagados corretamente.
+- Ajuste na transferência de usuários: agora só é possível transferir para usuários dentro da fila selecionada.
+- Correção na quebra de linha ao editar mensagens.
+- Corrigido o envio de notificações no chat interno: usuários fora da equipe não recebem mais alertas.
+- Atualização correta das etiquetas na tela de Atendimento.
+- CRM agora respeita as regras da carteira.
+- Corrigida permissão para supervisores criarem e editarem chatbots.
+- Correção no recebimento de múltiplos arquivos via Hub.
+
+### 🚀 Novos Recursos e Melhorias
+- Suporte a múltiplos idiomas: Português, Inglês e Espanhol.
+- Integração parcial com a API oficial via HUB (documentação separada disponível).
+- Permissão para encaminhar mensagens a até 5 contatos simultaneamente.
+- Nova configuração para ocultar o número de telefone dos usuários.
+- Adição de botão “Voltar” nos relatórios.
+- Exibição da imagem do contato ao encaminhar mensagens e ao agendar.
+- Campanhas agora são ordenadas das mais recentes para as mais antigas.
+- Nova configuração de restrição de canais por usuário (semelhante ao controle por filas).
+- Reformulação na abertura de tickets:
+  - Mostra apenas canais e filas permitidos para o usuário.
+  - Usuários sem filas ou canais não podem abrir tickets.
+  - Tickets são atribuídos automaticamente ao próprio usuário.
+- Opção de abrir ticket direto para um usuário do grupo.
+- Otimização do cache de cores: cor original mantida após F5.
+- Personalização de textos no painel SaaS:
+  - E-mails de recuperação de senha.
+  - Mensagens de erro (downloads, transcrição, etc).
+  - Respostas do bot em transcrições.
+- Adição de logs em tickets criados automaticamente pelo bot.
+- Tickets fechados não são mais carregados por padrão na tela de Atendimento, melhorando o desempenho.
+- Campo `externalKey` na API agora é opcional.
+- Melhoria na geração do QR Code: atualização sem recarregar a página.
+- Suporte ao campo `n8nApiKey` nos webhooks de canais.
+- Novo webhook: criação de tickets por usuários com o tipo `NewTicketUserCreate`.
+- Personalização de mensagens automáticas ao solicitar atendimento humano.
+- Novo filtro no CRM para listar contatos sem tickets (uso não recomendado para bases grandes).
+- Suporte à Grok xAI.
+- Novo sistema de ChatBot baseado em palavras-chave:
+  - Ativado na primeira mensagem do cliente.
+  - Exemplo: cliente digita “Quero comprar” → encaminhado ao bot da palavra “comprar”.
+  - Prioridade: CRM > Palavra-chave > Canal > Configuração.
+- Fila de processamento de mensagens adicionada ao HUB.
+- Filtro de avaliações por nota.
+- Avisos ao editar filas/configurações: necessário deslogar usuários para limpar cache.
+- Sistema antigo de agendamento removido.
+- Sistema de reabertura de tickets descontinuado.
+- Prévia de áudio em agendamentos e mensagens rápidas, com botão para apagar o arquivo.
+- Em grupos, exibição da foto do contato.
+- Exibição do nome do usuário que criou a nota interna no chat.
+- Suporte à exibição no frontend de formatos da API não oficial: Produto, Evento, Pagamento e Enquete.
+- Suporte ao modelo Meta LLaMA via Groq.
+- Melhorias no suporte à exibição de imagens da OpenAI.
+- Integração com Whazing Instagram V2:
+  - Responder comentários diretamente.
+  - Resposta automática via Direct ao receber um comentário.
+- Suporte a botões no Instagram e Facebook (máximo de 3, conforme limitação do Instagram).
+- Remoção do suporte ao Microsoft Azure Text-to-Speech.
+- Suporte ao ElevenLabs nas IAs (resposta em texto salva na lista de mensagens, mas não enviada ao cliente).
+- Reformulação do envio de campanhas:
+  - Estatísticas de campanhas antigas não serão mais exibidas.
+  - Exibição da foto de contatos ao buscá-los para campanhas.
+  - Possibilidade de envio de campanhas para grupos (desde que o número faça parte do grupo).
+- Importação de contatos:
+  - A API oficial não valida se o número é válido.
+  - Se houver conexão com a API não oficial, será usada para validação. Caso contrário, o número será importado sem verificação.
+- Cadastro individual de contatos:
+  - Validação do número desativada caso não haja conexão com API oficial.
+- Novos comandos e opções:
+  - Comando TypeBot `#{ "crmId": "1" }` para mudar o lane no CRM compartilhado.
+  - Chatbot Interno: opção para mudar o lane do contato no CRM compartilhado.
+  - Chatbot Interno: nova função de Auto Distribuição de atendimentos (balanceada).
+- Suporte a listas via API Baileys (funciona apenas com versão modificada da Evolution; sem garantia de funcionamento).
+  - Em casos com botões TypeBot, será enviada a lista.
+  - Sistema referencia apenas APIs oficiais como garantidas.
+- Nova coluna de importação de contatos: e-mail.
+- Cadastro de usuários agora força e-mails com letras minúsculas.
+- Se nenhuma fila estiver selecionada, a IA não tentará transferir.
+- Importação de contatos diretamente para lane do CRM compartilhado.
+
+### 📡 Atualizações da API
+- Novo endpoint: Criação de contatos.
+- Novo endpoint: Criação de tickets.
+- Novo endpoint: Status dos canais.
+- Novo endpoint: Geração de QR Code.
+- Novo endpoint: Exibição de dados do contato.
+- Melhorias no endpoint de atualização de etiquetas.
+- Novo endpoint: Listar contatos por etiqueta.
+- Novo endpoint: Listar contatos por CRM.
+- Novo endpoint: Listar contatos por Carteira.
+- Novo endpoint: Mover contato no CRM compartilhado.
+- Novo endpoint: Validação de número WhatsApp.
+
 Versão 2.8.14.4
 - bug - Correção filtro não exibir tickets no ChatBot
 - bug - Correção exibir valores a enviar da campanha

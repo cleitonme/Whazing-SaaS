@@ -1,633 +1,1429 @@
 {
-  "info": {
-    "_postman_id": "4a255f71-390d-4db6-a27f-37989267354a",
-    "name": "API IZING",
-    "description": "Teste API IZING",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "_exporter_id": "33969866"
-  },
-  "item": [
-    {
-      "name": "SendMessageAPIFile",
-      "request": {
-        "auth": {
-          "type": "bearer",
-          "bearer": [
-            {
-              "key": "token",
-              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE2MTU1OTM3ODIsImV4cCI6MTY3ODY2NTc4Mn0.d_irhAg5jMXHVvZoLAV1pO13nMhxuNS3u3EsKxFQUoQ",
-              "type": "string"
-            }
-          ]
-        },
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "formdata",
-          "formdata": [
-            {
-              "key": "media",
-              "type": "file",
-              "src": "/home/durans/Downloads/577.pdf"
-            },
-            {
-              "key": "body",
-              "value": "Mensagem de teste 2",
-              "type": "text"
-            },
-            {
-              "key": "number",
-              "value": "5598999...",
-              "type": "text"
-            },
-            {
-              "key": "externalKey",
-              "value": "externalKeydd211",
-              "type": "text"
-            }
-          ]
-        },
-        "url": {
-          "raw": "https://backend.whazing.com.br/v1/api/external/999ab3a2-9f1f-4ffb-969a-bfb72234ece1",
-          "protocol": "https",
-          "host": [
-            "backend",
-            "whazing",
-            "com",
-            "br"
-          ],
-          "path": [
-            "v1",
-            "api",
-            "external",
-            "999ab3a2-9f1f-4ffb-969a-bfb72234ece1"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "SendMessageAPIFile Grupo",
-      "request": {
-        "auth": {
-          "type": "bearer",
-          "bearer": [
-            {
-              "key": "token",
-              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE2MTU1OTM3ODIsImV4cCI6MTY3ODY2NTc4Mn0.d_irhAg5jMXHVvZoLAV1pO13nMhxuNS3u3EsKxFQUoQ",
-              "type": "string"
-            }
-          ]
-        },
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "formdata",
-          "formdata": [
-            {
-              "key": "media",
-              "type": "file",
-              "src": "/home/durans/Downloads/577.pdf"
-            },
-            {
-              "key": "body",
-              "value": "Mensagem de teste 2",
-              "type": "text"
-            },
-            {
-              "key": "number",
-              "value": "numerodogrupo@grupo",
-              "type": "text"
-            },
-            {
-              "key": "externalKey",
-              "value": "externalKeydd211",
-              "type": "text"
-            }
-          ]
-        },
-        "url": {
-          "raw": "https://backend.whazing.com.br/v1/api/external/999ab3a2-9f1f-4ffb-969a-bfb72234ece1",
-          "protocol": "https",
-          "host": [
-            "backend",
-            "whazing",
-            "com",
-            "br"
-          ],
-          "path": [
-            "v1",
-            "api",
-            "external",
-            "999ab3a2-9f1f-4ffb-969a-bfb72234ece1"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "SendMessageAPIText",
-      "request": {
-        "auth": {
-          "type": "bearer",
-          "bearer": [
-            {
-              "key": "token",
-              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE2MTU1OTM3ODIsImV4cCI6MTY3ODY2NTc4Mn0.d_irhAg5jMXHVvZoLAV1pO13nMhxuNS3u3EsKxFQUoQ",
-              "type": "string"
-            }
-          ]
-        },
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"body\": \"A mensagem desejada\",\n    \"number\": \"DDI+DDD+CELUAR === 55989...\",\n    \"externalKey\": \"ID_UNICA_DO_SISTEMA_CLIENTE_PARA_EXECUTAR_UMA_ACAO_COM_WEBHOOK\"\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "https://backend.whazing.com.br/v1/api/external/999ab3a2-9f1f-4ffb-969a-bfb72234ece1",
-          "protocol": "https",
-          "host": [
-            "backend",
-            "whazing",
-            "com",
-            "br"
-          ],
-          "path": [
-            "v1",
-            "api",
-            "external",
-            "999ab3a2-9f1f-4ffb-969a-bfb72234ece1"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "SendMessageAPIText Grupo",
-      "request": {
-        "auth": {
-          "type": "bearer",
-          "bearer": [
-            {
-              "key": "token",
-              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE2MTU1OTM3ODIsImV4cCI6MTY3ODY2NTc4Mn0.d_irhAg5jMXHVvZoLAV1pO13nMhxuNS3u3EsKxFQUoQ",
-              "type": "string"
-            }
-          ]
-        },
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"body\": \"A mensagem desejada\",\n    \"number\": \"numerodogrupo@grupo\",\n    \"externalKey\": \"ID_UNICA_DO_SISTEMA_CLIENTE_PARA_EXECUTAR_UMA_ACAO_COM_WEBHOOK\"\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "https://backend.whazing.com.br/v1/api/external/999ab3a2-9f1f-4ffb-969a-bfb72234ece1",
-          "protocol": "https",
-          "host": [
-            "backend",
-            "whazing",
-            "com",
-            "br"
-          ],
-          "path": [
-            "v1",
-            "api",
-            "external",
-            "999ab3a2-9f1f-4ffb-969a-bfb72234ece1"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "ShowTicketInformation",
-      "request": {
-        "auth": {
-          "type": "bearer",
-          "bearer": [
-            {
-              "key": "token",
-              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE3MDU3NjcxNDksImV4cCI6MTc2ODgzOTE0OX0.2RgbDllXF9p4QX-lYDsGNWtxK0XVtVI25_ECvFgA8EQ",
-              "type": "string"
-            }
-          ]
-        },
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"number\":\"5511999999999\"\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "https://backend.whazing.com.br/v1/api/external/999ab3a2-9f1f-4ffb-969a-bfb72234ece1/showticket",
-          "protocol": "https",
-          "host": [
-            "backend",
-            "whazing",
-            "com",
-            "br"
-          ],
-          "path": [
-            "v1",
-            "api",
-            "external",
-            "999ab3a2-9f1f-4ffb-969a-bfb72234ece1",
-            "showticket"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "ShowTicketInformationChatBot",
-      "request": {
-        "auth": {
-          "type": "bearer",
-          "bearer": [
-            {
-              "key": "token",
-              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE3MDU3NjcxNDksImV4cCI6MTc2ODgzOTE0OX0.2RgbDllXF9p4QX-lYDsGNWtxK0XVtVI25_ECvFgA8EQ",
-              "type": "string"
-            }
-          ]
-        },
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"number\":\"5511999999999\"\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "https://backend.whazing.com.br/v1/api/external/999ab3a2-9f1f-4ffb-969a-bfb72234ece1/showticketchatbot",
-          "protocol": "https",
-          "host": [
-            "backend",
-            "whazing",
-            "com",
-            "br"
-          ],
-          "path": [
-            "v1",
-            "api",
-            "external",
-            "999ab3a2-9f1f-4ffb-969a-bfb72234ece1",
-            "showticketchatbot"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "ShowAllTicketInformation",
-      "request": {
-        "auth": {
-          "type": "bearer",
-          "bearer": [
-            {
-              "key": "token",
-              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE3MDU3NjcxNDksImV4cCI6MTc2ODgzOTE0OX0.2RgbDllXF9p4QX-lYDsGNWtxK0XVtVI25_ECvFgA8EQ",
-              "type": "string"
-            }
-          ]
-        },
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"number\":\"5511999999999\"\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "https://backend.whazing.com.br/v1/api/external/999ab3a2-9f1f-4ffb-969a-bfb72234ece1/showallticket",
-          "protocol": "https",
-          "host": [
-            "backend",
-            "whazing",
-            "com",
-            "br"
-          ],
-          "path": [
-            "v1",
-            "api",
-            "external",
-            "999ab3a2-9f1f-4ffb-969a-bfb72234ece1",
-            "showallticket"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "SetTag",
-      "request": {
-        "auth": {
-          "type": "bearer",
-          "bearer": [
-            {
-              "key": "token",
-              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE3MDU3NjcxNDksImV4cCI6MTc2ODgzOTE0OX0.2RgbDllXF9p4QX-lYDsGNWtxK0XVtVI25_ECvFgA8EQ",
-              "type": "string"
-            }
-          ]
-        },
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"ticketId\": 4,\n    \"tag\": 1\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "https://backend.whazing.com.br/v1/api/external/999ab3a2-9f1f-4ffb-969a-bfb72234ece1/updatetag",
-          "protocol": "https",
-          "host": [
-            "backend",
-            "whazing",
-            "com",
-            "br"
-          ],
-          "path": [
-            "v1",
-            "api",
-            "external",
-            "999ab3a2-9f1f-4ffb-969a-bfb72234ece1",
-            "updatetag"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "SetQueue",
-      "request": {
-        "auth": {
-          "type": "bearer",
-          "bearer": [
-            {
-              "key": "token",
-              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE3MDU3NjcxNDksImV4cCI6MTc2ODgzOTE0OX0.2RgbDllXF9p4QX-lYDsGNWtxK0XVtVI25_ECvFgA8EQ",
-              "type": "string"
-            }
-          ]
-        },
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"ticketId\": 4,\n    \"queueId\": 1\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "https://backend.whazing.com.br/v1/api/external/999ab3a2-9f1f-4ffb-969a-bfb72234ece1/updatequeue",
-          "protocol": "https",
-          "host": [
-            "backend",
-            "whazing",
-            "com",
-            "br"
-          ],
-          "path": [
-            "v1",
-            "api",
-            "external",
-            "999ab3a2-9f1f-4ffb-969a-bfb72234ece1",
-            "updatequeue"
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "SendMessageParams",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "auth": {
-          "type": "noauth"
-        },
-        "method": "GET",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "https://backend.whazing.com.br/v1/api/external/999ab3a2-9f1f-4ffb-969a-bfb72234ece1/params/?body=A%20mensagem%20desejadaa&number=5511999999999&externalKey=ID_UNICA_DO_SISTEMA_CLIENTE&bearertoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE3MDU3NjcxNDksImV4cCI6MTc2ODgzOTE0OX0.2RgbDllXF9p4QX-lYDsGNWtxK0XVtVI25_ECvFgA8EQ",
-          "protocol": "https",
-          "host": [
-            "backend",
-            "whazing",
-            "com",
-            "br"
-          ],
-          "path": [
-            "v1",
-            "api",
-            "external",
-            "999ab3a2-9f1f-4ffb-969a-bfb72234ece1",
-            "params",
-            ""
-          ],
-          "query": [
-            {
-              "key": "body",
-              "value": "A%20mensagem%20desejadaa"
-            },
-            {
-              "key": "number",
-              "value": "5511999999999"
-            },
-            {
-              "key": "externalKey",
-              "value": "ID_UNICA_DO_SISTEMA_CLIENTE"
-            },
-            {
-              "key": "bearertoken",
-              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE3MDU3NjcxNDksImV4cCI6MTc2ODgzOTE0OX0.2RgbDllXF9p4QX-lYDsGNWtxK0XVtVI25_ECvFgA8EQ"
-            }
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "SendMessageParams grupo",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true
-      },
-      "request": {
-        "auth": {
-          "type": "noauth"
-        },
-        "method": "GET",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "https://backend.whazing.com.br/v1/api/external/999ab3a2-9f1f-4ffb-969a-bfb72234ece1/params/?body=A%20mensagem%20desejadaa&number=numerodogrupo@grupo&externalKey=ID_UNICA_DO_SISTEMA_CLIENTE&bearertoken=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE3MDU3NjcxNDksImV4cCI6MTc2ODgzOTE0OX0.2RgbDllXF9p4QX-lYDsGNWtxK0XVtVI25_ECvFgA8EQ",
-          "protocol": "https",
-          "host": [
-            "backend",
-            "whazing",
-            "com",
-            "br"
-          ],
-          "path": [
-            "v1",
-            "api",
-            "external",
-            "999ab3a2-9f1f-4ffb-969a-bfb72234ece1",
-            "params",
-            ""
-          ],
-          "query": [
-            {
-              "key": "body",
-              "value": "A%20mensagem%20desejadaa"
-            },
-            {
-              "key": "number",
-              "value": "numerodogrupo@grupo"
-            },
-            {
-              "key": "externalKey",
-              "value": "ID_UNICA_DO_SISTEMA_CLIENTE"
-            },
-            {
-              "key": "bearertoken",
-              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE3MDU3NjcxNDksImV4cCI6MTc2ODgzOTE0OX0.2RgbDllXF9p4QX-lYDsGNWtxK0XVtVI25_ECvFgA8EQ"
-            }
-          ]
-        }
-      },
-      "response": []
-    },
-    {
-      "name": "SetTicketInfo",
-      "request": {
-        "auth": {
-          "type": "bearer",
-          "bearer": [
-            {
-              "key": "token",
-              "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE3MTI2MDUzNDYsImV4cCI6MTc3NTY3NzM0Nn0.ILXyz7W8TcWldhDPiu5vHjewqapTl6xyuQknL_bEYGo",
-              "type": "string"
-            }
-          ]
-        },
-        "method": "POST",
-        "header": [],
-        "body": {
-          "mode": "raw",
-          "raw": "{\n    \"ticketId\": 1003,\n    \"status\": \"open\",\n    \"userId\": 1,\n    \"queueId\": null\n}",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "https://backend.whazing.com.br/v1/api/external/999ab3a2-9f1f-4ffb-969a-bfb72234ece1/updateticketinfo",
-          "protocol": "https",
-          "host": [
-            "backend",
-            "whazing",
-            "com",
-            "br"
-          ],
-          "path": [
-            "v1",
-            "api",
-            "external",
-            "999ab3a2-9f1f-4ffb-969a-bfb72234ece1",
-            "updateticketinfo"
-          ]
-        }
-      },
-      "response": []
-    }
-  ],
-  "auth": {
-    "type": "bearer",
-    "bearer": [
-      {
-        "key": "token",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjoxLCJpYXQiOjE2MTYwNDAwNDgsImV4cCI6MTY3OTExMjA0OH0.gDoVv_JDnrPLFLAzJgwpz_Cwd2JGhzeCUz2ILQ2uRRA",
-        "type": "string"
-      }
-    ]
-  },
-  "event": [
-    {
-      "listen": "prerequest",
-      "script": {
-        "type": "text/javascript",
-        "exec": [
-          ""
-        ]
-      }
-    },
-    {
-      "listen": "test",
-      "script": {
-        "type": "text/javascript",
-        "exec": [
-          ""
-        ]
-      }
-    }
-  ],
-  "variable": [
-    {
-      "key": "BaseUrl",
-      "value": ""
-    }
-  ]
+	"info": {
+		"_postman_id": "5eeab5b1-23ce-4c0e-8eff-07bd081f000d",
+		"name": "API Whazing Copy",
+		"description": "Teste API Whazing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33969866"
+	},
+	"item": [
+		{
+			"name": "Mensagens",
+			"item": [
+				{
+					"name": "SendMessageAPIFile",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "media",
+									"type": "file",
+									"src": "/home/durans/Downloads/577.pdf"
+								},
+								{
+									"key": "body",
+									"value": "Mensagem de teste 2",
+									"type": "text"
+								},
+								{
+									"key": "number",
+									"value": "554896459588",
+									"type": "text"
+								},
+								{
+									"key": "externalKey",
+									"value": "externalKeydd211",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}",
+							"host": [
+								"{{base_url}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendMessageSticker",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "media",
+									"type": "file",
+									"src": "PVW0TQnJi/Sem título.png"
+								},
+								{
+									"key": "body",
+									"value": "sticker",
+									"type": "text"
+								},
+								{
+									"key": "number",
+									"value": "554896459588",
+									"type": "text"
+								},
+								{
+									"key": "externalKey",
+									"value": "externalKeydd211",
+									"type": "text"
+								},
+								{
+									"key": "sticker",
+									"value": "true",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}",
+							"host": [
+								"{{base_url}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendMessageAPIText",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"body\": \"A mensagem desejada\",\n    \"number\": \"554896459588\",\n    \"externalKey\": \"ID_UNICA_DO_SISTEMA_CLIENTE_PARA_EXECUTAR_UMA_ACAO_COM_WEBHOOK\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}",
+							"host": [
+								"{{base_url}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendMessage Localizacao",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"number\": \"554896459588\",\n  \"contents\": {\n    \"type\": \"location\",\n    \"longitude\": -27.2842864,\n    \"latitude\": -48.9243959,\n    \"name\": \"Informeurer Informatica\",\n    \"address\": \"R. Nicolau Bado, 219 - Centro, Nova Trento - SC, 88270-000\"\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/location",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"location"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendMessageParams",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/params/?body=A%20mensagem%20desejadaa&number=5511999999999&externalKey=ID_UNICA_DO_SISTEMA_CLIENTE&bearertoken={{token}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"params",
+								""
+							],
+							"query": [
+								{
+									"key": "body",
+									"value": "A%20mensagem%20desejadaa"
+								},
+								{
+									"key": "number",
+									"value": "5511999999999"
+								},
+								{
+									"key": "externalKey",
+									"value": "ID_UNICA_DO_SISTEMA_CLIENTE"
+								},
+								{
+									"key": "bearertoken",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendMessageParams grupo",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/params/?body=A%20mensagem%20desejadaa&number=5511999999999&externalKey=ID_UNICA_DO_SISTEMA_CLIENTE&bearertoken={{token}}",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"params",
+								""
+							],
+							"query": [
+								{
+									"key": "body",
+									"value": "A%20mensagem%20desejadaa"
+								},
+								{
+									"key": "number",
+									"value": "5511999999999"
+								},
+								{
+									"key": "externalKey",
+									"value": "ID_UNICA_DO_SISTEMA_CLIENTE"
+								},
+								{
+									"key": "bearertoken",
+									"value": "{{token}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Tickets",
+			"item": [
+				{
+					"name": "ShowTicketInformation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\":\"5511999999999\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/showticket",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"showticket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowTicketInformationChatBot",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\":\"554896459588\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/showticketchatbot",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"showticketchatbot"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "ShowAllTicketInformation",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\":\"5511999999999\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/showallticket",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"showallticket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SetQueue",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ticketId\": 4,\n    \"queueId\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/updatequeue",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"updatequeue"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SetTicketInfo",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ticketId\": 1003,\n    \"status\": \"open\",\n    \"userId\": 1,\n    \"queueId\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/updateticketinfo",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"updateticketinfo"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar Ticket",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"number\": 554896459588,\n  \"status\": \"pending\",\n  \"queueId\": 4,\n  \"userId\": null\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/createticket",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"createticket"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar mensagem ticket",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/ticket/4990",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"ticket",
+								"4990"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Contatos",
+			"item": [
+				{
+					"name": "Set CRM no contato pelo contactId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"contactId\": 3397,\n    \"crm\": 8\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/updatecrm",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"updatecrm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set CRM no contato pelo numero ticketid",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ticketId\": 2881,\n    \"crm\": 19\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/updatecrm",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"updatecrm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Set CRM no contato pelo numero",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\": 555135001381,\n    \"crm\": 0\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/updatecrm",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"updatecrm"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SetTag no contato pelo numero ticket",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ticketId\": 3183,\n    \"tags\": []\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/updatetag",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"updatetag"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SetTag por contactId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"contactId\": 3649,\n    \"tags\": [25]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/updatetag",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"updatetag"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SetTag por number",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\": 555135001381,\n    \"tags\": [25, 26]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/updatetag",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"updatetag"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Criar Contato",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"name\": \"João Silva\",\n  \"number\": \"5511987654321\",\n  \"email\": \"joao.silva@exemplo.com\",\n  \"extraInfo\": [\n    {\n      \"name\": \"Empresa\",\n      \"value\": \"Exemplo Ltda\"\n    }\n  ],\n  \"wallets\": [],\n  \"disableBot\": false,\n  \"disableCampaign\": false,\n  \"commentary\": \"Cliente VIP\",\n  \"deadline\": \"2023-12-31T23:59:59Z\",\n  \"disableKanban\": false,\n  \"kanbanPrice\": \"1500\",\n  \"ignore\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/createcontact",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"createcontact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update contato busca nome",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\": \"5511997654321\",\n    \"name\": \"João Silva\",\n    \"email\": \"joao.silva@exemplo.com\",\n    \"extraInfo\": [\n        {\n            \"name\": \"Empresa\",\n            \"value\": \"Exemplo Ltda\"\n        }\n    ],\n    \"wallets\": [],\n    \"disableBot\": false,\n    \"disableCampaign\": false,\n    \"commentary\": \"Cliente VIP\",\n    \"deadline\": \"2023-12-31T23:59:59Z\",\n    \"disableKanban\": false,\n    \"kanbanPrice\": \"1500\",\n    \"ignore\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/updatecontact",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"updatecontact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update contato buscacontatoid",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"contactId\": \"5219\",\n    \"name\": \"João Silva\",\n    \"email\": \"joao.silva@exemplo.com\",\n    \"extraInfo\": [\n        {\n            \"name\": \"Empresa\",\n            \"value\": \"Exemplo Ltda\"\n        }\n    ],\n    \"wallets\": [],\n    \"disableBot\": false,\n    \"disableCampaign\": false,\n    \"commentary\": \"Cliente VIP\",\n    \"deadline\": \"2023-12-31T23:59:59Z\",\n    \"disableKanban\": false,\n    \"kanbanPrice\": \"1500\",\n    \"ignore\": false\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/updatecontact",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"updatecontact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Contact Info number",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"number\": 554896459588\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/contact",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"contact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Show Contact Info contactid",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"contactId\": 3397\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/contact",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"contact"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "validar numero whatsapp",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"number\": 554896459588\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/valid-whatsapp-number",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"valid-whatsapp-number"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar contatos por etiqueta",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/contacts/tag/19",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"contacts",
+								"tag",
+								"19"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar contatos por crm",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/contacts/crm/3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"contacts",
+								"crm",
+								"3"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "listar contatos por carteira",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/contacts/wallet/3",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"contacts",
+								"wallet",
+								"3"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ApiOficial",
+			"item": [
+				{
+					"name": "SendMessageAPIOficial botao",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\": \"554896459588\",\n    \"contents\":\n        {\n            \"type\": \"button\",\n            \"body\": {\n                \"text\": \"Texto do Botão\"\n            },\n            \"action\": {\n                \"buttons\": [\n                    {\n                        \"type\": \"reply\",\n                        \"reply\": {\n                            \"id\": \"1\",\n                            \"title\": \"Botão 1\"\n                        }\n                    },\n                    {\n                        \"type\": \"reply\",\n                        \"reply\": {\n                            \"id\": \"2\",\n                            \"title\": \"Botão 2\"\n                        }\n                    },\n                    {\n                        \"type\": \"reply\",\n                        \"reply\": {\n                            \"id\": \"3\",\n                            \"title\": \"Botão 3\"\n                        }\n                    }\n                ]\n            }\n        }\n    }",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/apioficial",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"apioficial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendMessageAPIOficial lista",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"number\": \"554896459588\",\n  \"contents\": {\n    \"type\": \"list\",\n    \"header\": {\n      \"type\": \"text\",\n      \"text\": \"Título\"\n    },\n    \"body\": {\n      \"text\": \"Descrição\"\n    },\n    \"action\": {\n      \"sections\": [\n        {\n          \"title\": \"Lista 1\",\n          \"rows\": [\n            {\n              \"id\": 1,\n              \"title\": \"Linha 1\",\n              \"description\": \"Descrição da linha 1\"\n            },\n            {\n              \"id\": 2,\n              \"title\": \"Linha 2\",\n              \"description\": \"Descrição da linha 2\"\n            }\n          ]\n        },\n        {\n          \"title\": \"Lista 2\",\n          \"rows\": [\n            {\n              \"id\": 3,\n              \"title\": \"Linha 3\",\n              \"description\": \"Descrição da linha 3\"\n            },\n            {\n              \"id\": 4,\n              \"title\": \"Linha 4\",\n              \"description\": \"Descrição da linha 4\"\n            }\n          ]\n        }\n      ],\n      \"button\": \"Clique aqui\"\n    }\n  }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/apioficial",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"apioficial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendMessageAPIOficial link",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\": \"554896459588\",\n    \"contents\": {\n        \"type\": \"cta_url\",\n        \"header\": {\n            \"type\": \"text\",\n            \"text\": \"Datas Disponíveis\"\n        },\n        \"body\": {\n            \"text\": \"Toque no botão abaixo para ver as datas disponíveis.\"\n        },\n        \"footer\": {\n            \"text\": \"Datas sujeitas a alterações.\"\n        },\n        \"action\": {\n            \"name\": \"cta_url\",\n            \"parameters\": {\n                \"display_text\": \"Ver Datas\",\n                \"url\": \"SEU_LINK\"\n            }\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/apioficial",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"apioficial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendMessageAPIOficial solicitar localizacao",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\": \"554896459588\",\n    \"contents\": {\n        \"type\": \"location_request_message\",\n        \"body\": {\n            \"text\": \"Por favor compartilhe sua localização\"\n        },\n        \"action\": {\n            \"name\": \"send_location\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/apioficial",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"apioficial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendMessageAPIOficial Template sem parametros",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\": \"554896459588\",\n    \"contents\": {\n        \"name\": \"nome_do_template\",\n        \"components\": [{\n            \"type\": \"body\",\n            \"parameters\": []\n        }],\n        \"language\": {\n            \"code\": \"pt_BR\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/apioficial",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"apioficial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendMessageAPIOficial Template template com parâmetros (número)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\": \"554896459588\",\n    \"contents\": {\n        \"name\": \"nome_do_template\",\n        \"components\": [\n            {\n                \"type\": \"header\",\n                \"parameters\": [{\n                    \"type\": \"image\",\n                    \"image\": {\n                        \"link\": \"link_da_imagem\"\n                    }\n                }]\n            },\n            {\n                \"type\": \"button\",\n                \"sub_type\": \"tipo_do_botão\",\n                \"index\": \"index_do_botão (0, 1, 2...)\",\n                \"parameters\": []\n            }\n        ],\n        \"language\": {\n            \"code\": \"pt_BR\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/apioficial",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"apioficial"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendMessageAPIOficial Template  template com parâmetros (nome)",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"number\": \"554896459588\",\n    \"contents\": {\n        \"name\": \"nome_do_template\",\n        \"components\": [\n            {\n                \"type\": \"header\",\n                \"parameters\": [\n                    {\n                        \"type\": \"image\",\n                        \"image\": {\n                            \"link\": \"link_da_imagem\"\n                        }\n                    }\n                ]\n            },\n            {\n                \"type\": \"body\",\n                \"parameters\": [\n                    {\n                        \"type\": \"text\",\n                        \"parameter_name\": \"nome_do_parametro\",\n                        \"text\": \"texto_do_parametro\"\n                    }\n                ]\n            },\n            {\n                \"type\": \"button\",\n                \"sub_type\": \"tipo_do_botão\",\n                \"index\": \"index_do_botão (0, 1, 2...)\",\n                \"parameters\": []\n            }\n        ],\n        \"language\": {\n            \"code\": \"pt_BR\"\n        }\n    }\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/apioficial",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"apioficial"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Canal",
+			"item": [
+				{
+					"name": "status canal",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/statuschannel",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"statuschannel"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "qrcode",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"number\": null\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/qrcode",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"qrcode"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjozNSwiaWF0IjoxNzQ0NjczNDU0LCJleHAiOjE4MDc3NDU0NTR9.HGM3Zx-Yx3sgm-G0TUoYGILFgUp2xr0_RTXbaAieItc",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": ""
+		},
+		{
+			"key": "token",
+			"value": "",
+			"type": "string"
+		}
+	]
 }

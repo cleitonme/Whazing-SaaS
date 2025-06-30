@@ -13,12 +13,15 @@
 - **Mensagens Rápidas com Anexos**: Envie mensagens rápidas com documentos, vídeos e outros arquivos.
 - **Importação de Mensagens do Celular**: Importe mensagens diretamente do seu celular.
 - **Importação de Contatos**: Importe seus contatos facilmente.
-- **Montagem de Bot estilo ChatFlow**: Crie bots com recursos como delay, envio de áudios, arquivos, webhooks, entre outros.
+- **Montagem de Bot estilo ChatFlow**: Crie bots com recursos como delay, envio de áudios, arquivos, webhooks, figurinhas, localização, botão(api oficial), lista(api oficial) entre outros.
 - **Envio de Mensagens Automáticas**: Aceite ou transfira tickets automaticamente.
 - **Sistema de Simulação de Digitação e Gravação**: Reduza a chance de bloqueios no WhatsApp.
 - **Mensagem de Despedida Personalizável**: Personalize a mensagem de despedida por usuário.
 - **Suporte a Facebook e Instagram**: Gerencie mensagens dessas plataformas via HUB (necessário pagar mensalidade por canal).
-
+- **Controle Horario de Login**: Não permita seu funcionario acesse sistema fora do expediente
+- **Horario de atendimento**: Horario de atendimento personalizavel, por empresa, canal ou fila e pesonalização de feriados.
+- **Multi-idioma**: Português, inglês e espanhol
+- **Suporte Whatsapp API Oficial**: Gerencie mensagens dessas plataformas via HUB (necessário pagar mensalidade por canal).
 
 ### Funções Exclusivas da Versão Premium
 - **Tarefas**: Gerencie tarefas e atividades.
@@ -26,8 +29,9 @@
 - **Transcrição de Áudio**: Transcreva mensagens de áudio.
 - **Integração WebHook - N8N**: Conecte-se a diferentes aplicativos e serviços.
 - **Integração TypeBot**: Construa bots mais avançados.
-- **Integração ChatGPT**: Responda mensagens e utilize Microsoft Azure Text-to-Speech para respostas em áudio.
-- **Integração Groq e DeepSeek**: Responda mensagens com IA e utilize Microsoft Azure Text-to-Speech.
+- **Integração ChatGPT**: Responda mensagens e utilize ElevenLabs para respostas em áudio.
+- **Integração Groq e DeepSeek**: Responda mensagens com IA e utilize ElevenLabs.
+- **Integração Grok**: Responda mensagens com IA e utilize ElevenLabs.
 - **Integração para 2ª via de boleto Asaas**: Gerencie boletos com facilidade.
 - **CRM**: Organize tarefas e processos visualmente.
 - **Relatório de Tickets**: Gere relatórios detalhados de atendimento.
@@ -35,8 +39,11 @@
 - **Anotações em Tickets**: Adicione notas em tickets.
 - **Mensagens Separadas por Filas**: Organize mensagens por filas.
 - **Transferir Atendimento para ChatBot**: Mova atendimentos para bots.
+- **Wavoip**: Fazer e receber chamadas whatsapp
+- **API**: Integre com outras prataformas como n8n e PerfexCrm
+- **Bot Por palavra chave**: De acordo com primeira mensagem cliente escolhe bot diferente
 - **WhiteLabel**: Personalize a plataforma com sua marca pelo painel.
-- **Suporte Wavoip**: Faça ligação whatsapp
+- **Motivo de Encerramento**:Ao encerrar um ticket, o usuário deverá escolher um motivo obrigatório, tornando rastreamento atendimentos mais prescisos
 
 ### Versão Atual
-- **Versão Atual**: 2.8.14.4
+- **Versão Atual**: 2.9.4.8
