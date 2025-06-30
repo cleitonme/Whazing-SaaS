@@ -1,0 +1,178 @@
+{
+	"info": {
+		"_postman_id": "f9a3d4a0-7142-443d-bbca-8651e798cafd",
+		"name": "botoes whazing",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "33969866"
+	},
+	"item": [
+		{
+			"name": "SendMessageAPIOficial botao",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjozMSwiaWF0IjoxNzQ0NDE3NTc0LCJleHAiOjE4MDc0ODk1NzR9.m78Xj916D_RucQWmMIGBs9aKzRYbLYUNtSVOj4qaNkY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"number\": \"554899416725\",\n    \"contents\":\n        {\n            \"type\": \"button\",\n            \"body\": {\n                \"text\": \"Texto do Botão\"\n            },\n            \"action\": {\n                \"buttons\": [\n                    {\n                        \"type\": \"reply\",\n                        \"reply\": {\n                            \"id\": \"1\",\n                            \"title\": \"Botão 1\"\n                        }\n                    },\n                    {\n                        \"type\": \"reply\",\n                        \"reply\": {\n                            \"id\": \"2\",\n                            \"title\": \"Botão 2\"\n                        }\n                    },\n                    {\n                        \"type\": \"reply\",\n                        \"reply\": {\n                            \"id\": \"3\",\n                            \"title\": \"Botão 3\"\n                        }\n                    }\n                ]\n            }\n        }\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://testeapi.whazing.com.br/v1/api/external/31335ac5-2852-4a60-b1ee-eafa616bed53/apioficial",
+					"protocol": "https",
+					"host": [
+						"testeapi",
+						"whazing",
+						"com",
+						"br"
+					],
+					"path": [
+						"v1",
+						"api",
+						"external",
+						"31335ac5-2852-4a60-b1ee-eafa616bed53",
+						"apioficial"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendMessageAPIOficial lista",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjozMSwiaWF0IjoxNzQ0NDE3NTc0LCJleHAiOjE4MDc0ODk1NzR9.m78Xj916D_RucQWmMIGBs9aKzRYbLYUNtSVOj4qaNkY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"number\": \"554899416725\",\n  \"contents\": {\n    \"type\": \"list\",\n    \"header\": {\n      \"type\": \"text\",\n      \"text\": \"Título\"\n    },\n    \"body\": {\n      \"text\": \"Descrição\"\n    },\n    \"action\": {\n      \"sections\": [\n        {\n          \"title\": \"Lista 1\",\n          \"rows\": [\n            {\n              \"id\": 1,\n              \"title\": \"Linha 1\",\n              \"description\": \"Descrição da linha 1\"\n            },\n            {\n              \"id\": 2,\n              \"title\": \"Linha 2\",\n              \"description\": \"Descrição da linha 2\"\n            }\n          ]\n        },\n        {\n          \"title\": \"Lista 2\",\n          \"rows\": [\n            {\n              \"id\": 3,\n              \"title\": \"Linha 3\",\n              \"description\": \"Descrição da linha 3\"\n            },\n            {\n              \"id\": 4,\n              \"title\": \"Linha 4\",\n              \"description\": \"Descrição da linha 4\"\n            }\n          ]\n        }\n      ],\n      \"button\": \"Clique aqui\"\n    }\n  }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://testeapi.whazing.com.br/v1/api/external/31335ac5-2852-4a60-b1ee-eafa616bed53/apioficial",
+					"protocol": "https",
+					"host": [
+						"testeapi",
+						"whazing",
+						"com",
+						"br"
+					],
+					"path": [
+						"v1",
+						"api",
+						"external",
+						"31335ac5-2852-4a60-b1ee-eafa616bed53",
+						"apioficial"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendMessageAPIOficial link",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjozMSwiaWF0IjoxNzQ0NDE3NTc0LCJleHAiOjE4MDc0ODk1NzR9.m78Xj916D_RucQWmMIGBs9aKzRYbLYUNtSVOj4qaNkY",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"number\": \"554899416725\",\n    \"contents\": {\n        \"type\": \"cta_url\",\n        \"header\": {\n            \"type\": \"text\",\n            \"text\": \"Datas Disponíveis\"\n        },\n        \"body\": {\n            \"text\": \"Toque no botão abaixo para ver as datas disponíveis.\"\n        },\n        \"footer\": {\n            \"text\": \"Datas sujeitas a alterações.\"\n        },\n        \"action\": {\n            \"name\": \"cta_url\",\n            \"parameters\": {\n                \"display_text\": \"Ver Datas\",\n                \"url\": \"SEU_LINK\"\n            }\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://testeapi.whazing.com.br/v1/api/external/31335ac5-2852-4a60-b1ee-eafa616bed53/apioficial",
+					"protocol": "https",
+					"host": [
+						"testeapi",
+						"whazing",
+						"com",
+						"br"
+					],
+					"path": [
+						"v1",
+						"api",
+						"external",
+						"31335ac5-2852-4a60-b1ee-eafa616bed53",
+						"apioficial"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SendMessageAPIOficial solicitar localizacao",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "{{token}}",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"number\": \"554896459588\",\n    \"contents\": {\n        \"type\": \"location_request_message\",\n        \"body\": {\n            \"text\": \"Por favor compartilhe sua localização\"\n        },\n        \"action\": {\n            \"name\": \"send_location\"\n        }\n    }\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{base_url}}/apioficial",
+					"host": [
+						"{{base_url}}"
+					],
+					"path": [
+						"apioficial"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
