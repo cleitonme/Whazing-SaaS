@@ -1,0 +1,871 @@
+{
+  "nodes": [
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        380,
+        420
+      ],
+      "id": "5ae1ef7d-db49-4489-9c4e-caec5bf4d7b0",
+      "name": "When clicking ‘Test workflow’"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://{{ $('Dados').item.json.backend }}/v1/api/external/{{ $('Dados').item.json.externalKey }}/showallticket",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $('Dados').item.json.token }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "number",
+              "value": "={{ $('Dados').item.json.number }}"
+            }
+          ]
+        },
+        "options": {
+          "redirect": {
+            "redirect": {
+              "followRedirects": false
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1340,
+        340
+      ],
+      "id": "17596f9a-8be2-4990-806d-40ac1c2e7593",
+      "name": "showallticket"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://{{ $json.backend }}/v1/api/external/{{ $('Dados').item.json.externalKey }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $('Dados').item.json.token }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "body",
+              "value": "Olá"
+            },
+            {
+              "name": "number",
+              "value": "={{ $json.number }}"
+            },
+            {
+              "name": "externalKey",
+              "value": "={{ $('Dados').item.json.externalKey }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1060,
+        80
+      ],
+      "id": "d13594aa-5618-49ab-b264-8d665af2aeed",
+      "name": "SendMessageAPIText"
+    },
+    {
+      "parameters": {
+        "content": "### Envia mensagem de texto\n",
+        "height": 220,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1000,
+        0
+      ],
+      "typeVersion": 1,
+      "id": "da5cf10d-37d1-4433-9c33-627b1ec49de6",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "### Envia mensagem com arquivo\n\n",
+        "height": 220,
+        "color": 6
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1280,
+        0
+      ],
+      "typeVersion": 1,
+      "id": "fc020808-0a4e-4540-8078-93b5cd1891f6",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "mode": "jsonToBinary",
+        "convertAllData": false,
+        "sourceKey": "ticket_data",
+        "options": {
+          "dataIsBase64": true,
+          "fileName": "ticket.png",
+          "mimeType": "image/png"
+        }
+      },
+      "id": "2dbcbb3c-2ae3-40da-971d-ed59b28cf4a4",
+      "name": "Convert to/from binary data",
+      "type": "n8n-nodes-base.moveBinaryData",
+      "typeVersion": 1.1,
+      "position": [
+        480,
+        880
+      ]
+    },
+    {
+      "parameters": {
+        "fieldToSplitOut": "body",
+        "options": {}
+      },
+      "id": "ab5c1d57-b907-4ed2-988f-5078d0290ce3",
+      "name": "Item Lists",
+      "type": "n8n-nodes-base.itemLists",
+      "typeVersion": 3.1,
+      "position": [
+        180,
+        880
+      ]
+    },
+    {
+      "parameters": {
+        "fields": {
+          "values": [
+            {
+              "name": "body",
+              "type": "arrayValue",
+              "arrayValue": "[ {\"TICKET\": \"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABHNCSVQICAgIfAhkiAAAADNJREFUOI1j/MfA8J8BD2CuZ8QnzcCEV5YIMGrAYDCAkYHhH9508O8ffjsG3gujBlDBAAAh2gaaLC6rygAAAABJRU5ErkJggg==\"} ]"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "19e1f8b6-11bb-44e9-a7cc-9f475411691e",
+      "name": "Mock data",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.2,
+      "position": [
+        40,
+        880
+      ]
+    },
+    {
+      "parameters": {
+        "fields": {
+          "values": [
+            {
+              "name": "ticket_data",
+              "stringValue": "={{ $json.TICKET.split(\",\")[1] }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "a3cf7a3c-f73d-4522-9155-e65db291eff6",
+      "name": "Extract base64 value from URI",
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.2,
+      "position": [
+        320,
+        880
+      ]
+    },
+    {
+      "parameters": {
+        "content": "## Converte Base 64 em Arquivo\n",
+        "height": 300,
+        "width": 640
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        0,
+        780
+      ],
+      "typeVersion": 1,
+      "id": "87c31a31-42bf-4d56-a9be-e6a57631107c",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "content": "### Mostra Ticket\n",
+        "height": 220
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1000,
+        280
+      ],
+      "typeVersion": 1,
+      "id": "4fdbcc9e-11d4-48c9-8ecd-b7c81e35e239",
+      "name": "Sticky Note3"
+    },
+    {
+      "parameters": {
+        "content": "### Mostra Todos Tickets\n",
+        "height": 220
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1280,
+        280
+      ],
+      "typeVersion": 1,
+      "id": "bae2365c-3376-4617-949d-0e0a6db0c040",
+      "name": "Sticky Note4"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://{{ $('Dados').item.json.backend }}/v1/api/external/{{ $('Dados').item.json.externalKey }}/showticket",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $('Dados').item.json.token }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "number",
+              "value": "={{ $('Dados').item.json.number }}"
+            }
+          ]
+        },
+        "options": {
+          "redirect": {
+            "redirect": {
+              "followRedirects": false
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1060,
+        340
+      ],
+      "id": "a18d72ce-3661-42aa-a303-18a0c53e5477",
+      "name": "showticket"
+    },
+    {
+      "parameters": {
+        "content": "### Mostra Ticket Chatbot\n\n",
+        "height": 220
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1560,
+        280
+      ],
+      "typeVersion": 1,
+      "id": "15f512f9-4a96-45e7-a3f7-dfe18d807da6",
+      "name": "Sticky Note5"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://{{ $('Dados').item.json.backend }}/v1/api/external/{{ $('Dados').item.json.externalKey }}/showticketchatbot",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $('Dados').item.json.token }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "number",
+              "value": "={{ $('Dados').item.json.number }}"
+            }
+          ]
+        },
+        "options": {
+          "redirect": {
+            "redirect": {
+              "followRedirects": false
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1620,
+        340
+      ],
+      "id": "84ae089d-8863-4b50-af91-86a0af3ecec2",
+      "name": "showticketchatbot"
+    },
+    {
+      "parameters": {
+        "content": "## Edite aqui informações do seu CRM\nAcesse Configurações > Canal/API\nClique na Aba \"API\", escolha um nome e de qual canal será enviado as mensagens\n\nUrl: https://backend.dominio.com.br/v1/api/external/700aa0aa-0000-0000-0000-00a00aa0a000\nToken: eyJ....jNg\n\nbackend: Base do seu domínio (https://backend.dominio.com.br)\nexternalKey: copia e cola código final da URL (700aa0aa-0000-0000-0000-00a00aa0a000)\ntoken: Copia e cola o token (eyJ....jNg)\nnumber: Seu número para teste (5511991991234)\n\n",
+        "height": 420,
+        "width": 700,
+        "color": 5
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        0,
+        160
+      ],
+      "typeVersion": 1,
+      "id": "bddc45e7-359a-4859-9538-dde3a01246ff",
+      "name": "Sticky Note6"
+    },
+    {
+      "parameters": {
+        "content": "## Tutorial de Conexão do Whaing API\n** Edite as informações em nó Dados para funcionar.\n** Basta clicar no play do modulo que queira testar.",
+        "height": 120,
+        "width": 700,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        0,
+        0
+      ],
+      "typeVersion": 1,
+      "id": "81c63f56-452e-4a0c-81f4-19f0fb671a5b",
+      "name": "Sticky Note7"
+    },
+    {
+      "parameters": {
+        "content": "### Editar Ticket",
+        "height": 220
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "position": [
+        1000,
+        540
+      ],
+      "typeVersion": 1,
+      "id": "1bf277d2-f10e-4a81-acb6-8c0659c29c74",
+      "name": "Sticky Note9"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://{{ $('Dados').item.json.backend }}/v1/api/external/{{ $('Dados').item.json.externalKey }}/SetTicketInfo",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $('Dados').item.json.token }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "ticketId",
+              "value": "="
+            },
+            {
+              "name": "status"
+            },
+            {
+              "name": "userId"
+            },
+            {
+              "name": "queueId"
+            }
+          ]
+        },
+        "options": {
+          "redirect": {
+            "redirect": {
+              "followRedirects": false
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1060,
+        600
+      ],
+      "id": "fa9fe02c-2fdc-414d-b947-7df8ad0e71d2",
+      "name": "SetTicketInfo"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://{{ $json.backend }}/v1/api/external/{{ $('Dados').item.json.externalKey }}/apioficial",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $json.token }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"number\": \"{{ $json.number }}\",\n  \"contents\": {\n    \"type\": \"list\",\n    \"header\": {\n      \"type\": \"text\",\n      \"text\": \"Título\"\n    },\n    \"body\": {\n      \"text\": \"Descrição\"\n    },\n    \"action\": {\n      \"sections\": [\n        {\n          \"title\": \"Lista 1\",\n          \"rows\": [\n            {\n              \"id\": 1,\n              \"title\": \"Linha 1\",\n              \"description\": \"Descrição da linha 1\"\n            },\n            {\n              \"id\": 2,\n              \"title\": \"Linha 2\",\n              \"description\": \"Descrição da linha 2\"\n            }\n          ]\n        },\n        {\n          \"title\": \"Lista 2\",\n          \"rows\": [\n            {\n              \"id\": 3,\n              \"title\": \"Linha 3\",\n              \"description\": \"Descrição da linha 3\"\n            },\n            {\n              \"id\": 4,\n              \"title\": \"Linha 4\",\n              \"description\": \"Descrição da linha 4\"\n            }\n          ]\n        }\n      ],\n      \"button\": \"Clique aqui\"\n    }\n  }\n}",
+        "options": {
+          "redirect": {
+            "redirect": {}
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1060,
+        1560
+      ],
+      "id": "b81b4dd2-e218-46c6-8bb6-c2fc476d5b2c",
+      "name": "EnviarLista"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://{{ $json.backend }}/v1/api/external/{{ $('Dados').item.json.externalKey }}/createcontact",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $json.token }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "{\n  \"name\": \"João Silva\",\n  \"number\": \"5511987654321\",\n  \"email\": \"joao.silva@exemplo.com\",\n  \"extraInfo\": [\n    {\n      \"name\": \"Empresa\",\n      \"value\": \"Exemplo Ltda\"\n    }\n  ],\n  \"wallets\": [],\n  \"disableBot\": false,\n  \"disableCampaign\": false,\n  \"commentary\": \"Cliente VIP\",\n  \"deadline\": \"2023-12-31T23:59:59Z\",\n  \"disableKanban\": false,\n  \"kanbanPrice\": \"1500\",\n  \"ignore\": false\n}",
+        "options": {
+          "redirect": {
+            "redirect": {}
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1060,
+        840
+      ],
+      "id": "993bd429-d46c-430e-9f1f-7d9ac1797426",
+      "name": "CriarContato"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://{{ $json.backend }}/v1/api/external/{{ $('Dados').item.json.externalKey }}/updatecrm",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $json.token }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "number",
+              "value": "={{ $json.number }}"
+            },
+            {
+              "name": "externalKey",
+              "value": "={{ $('ImportanteWhazing').item.json.externalKey }}"
+            },
+            {
+              "name": "crm",
+              "value": "2"
+            }
+          ]
+        },
+        "options": {
+          "redirect": {
+            "redirect": {}
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1060,
+        1220
+      ],
+      "id": "69223de6-73d9-492a-aba0-dcb62ff74f2e",
+      "name": "Kamban1"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://{{ $json.backend }}/v1/api/external/{{ $('Dados').item.json.externalKey }}/updatequeue",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $json.token }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "ticketId",
+              "value": "={{ $json.ID_Ticket }}"
+            },
+            {
+              "name": "queueId",
+              "value": "={{ $json.ID_Fila }}"
+            },
+            {
+              "name": "externalKey",
+              "value": "={{ $json.externalKey }}"
+            }
+          ]
+        },
+        "options": {
+          "redirect": {
+            "redirect": {}
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1060,
+        1400
+      ],
+      "id": "71b9325a-76cf-46e9-9a74-beeb8fc9c388",
+      "name": "Fila1"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://{{ $json.backend }}/v1/api/external/{{ $('Dados').item.json.externalKey }}/valid-whatsapp-number",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $json.token }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "number",
+              "value": "={{ $json.number }}"
+            },
+            {
+              "name": "externalKey",
+              "value": "={{ $json.externalKey }}"
+            }
+          ]
+        },
+        "options": {
+          "redirect": {
+            "redirect": {}
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1060,
+        1020
+      ],
+      "id": "523e7b44-b36d-4319-b8ea-b8ca574f6e65",
+      "name": "ValidarNumero2"
+    },
+    {
+      "parameters": {},
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.1,
+      "position": [
+        760,
+        340
+      ],
+      "id": "d0418b99-fcaa-4ef9-bdb8-0744589899dd",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "=https://{{ $('Dados').item.json.backend }}/v1/api/external/{{ $('Dados').item.json.externalKey }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $('Dados').item.json.token }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "body",
+              "value": "Teste"
+            },
+            {
+              "name": "number",
+              "value": "={{ $('Dados').item.json.number }}"
+            },
+            {
+              "name": "externalKey",
+              "value": "={{ $('Dados').item.json.externalKey }}"
+            },
+            {
+              "name": "media",
+              "value": "=iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAIAAAAmkwkpAAAAIUlEQVR4nGP4z8Dwn4GBgYFh+P///xkYGJgBgBWnBAM6bpZaAAAAAElFTkSuQmCC"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1340,
+        80
+      ],
+      "id": "774aec85-e80e-4cf7-a024-32670ea5569c",
+      "name": "SendMessageAPIFile [falhou]"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "d1bbc243-e75f-4bbc-b50e-41da3f3eeca6",
+              "name": "backend",
+              "value": "backend.seudominio.com.br",
+              "type": "string"
+            },
+            {
+              "id": "b9548762-f97a-4970-a1a8-ad50fcbafc8c",
+              "name": "externalKey",
+              "value": "700aa0aa-0000-0000-0000-00a00aa0a000",
+              "type": "string"
+            },
+            {
+              "id": "8017cc09-a57a-4f35-b8df-d1ca813b356c",
+              "name": "token",
+              "value": "ey56273839428ujhfjsgaf3673y4328247tgsausfsgqwtqert373I6BA",
+              "type": "string"
+            },
+            {
+              "id": "94d21db7-4c7c-40d1-b73a-0e714e6dd0c2",
+              "name": "number",
+              "value": "5511991991234",
+              "type": "string"
+            },
+            {
+              "id": "9b5b4988-73fe-4664-a9c9-7a119152259f",
+              "name": "crm",
+              "value": "",
+              "type": "string"
+            },
+            {
+              "id": "847c72af-b5b8-4aa7-b957-b1e6205f8305",
+              "name": "idTicket",
+              "value": "",
+              "type": "string"
+            },
+            {
+              "id": "9200ba50-cf36-42d7-a44b-064749382c65",
+              "name": "idFila",
+              "value": "",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        480,
+        420
+      ],
+      "id": "953499c1-940a-4621-9eb7-1450ecf2b30e",
+      "name": "Dados"
+    }
+  ],
+  "connections": {
+    "When clicking ‘Test workflow’": {
+      "main": [
+        [
+          {
+            "node": "Dados",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Convert to/from binary data": {
+      "main": [
+        []
+      ]
+    },
+    "Item Lists": {
+      "main": [
+        [
+          {
+            "node": "Extract base64 value from URI",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Mock data": {
+      "main": [
+        [
+          {
+            "node": "Item Lists",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Extract base64 value from URI": {
+      "main": [
+        [
+          {
+            "node": "Convert to/from binary data",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ValidarNumero2": {
+      "main": [
+        []
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "SendMessageAPIText",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "SendMessageAPIFile [falhou]",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "showticket",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "showallticket",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "showticketchatbot",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "SetTicketInfo",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "CriarContato",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "ValidarNumero2",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Kamban1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Fila1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "EnviarLista",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Dados": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "pinData": {},
+  "meta": {
+    "instanceId": "9154976d4071f5f2093b15fa0eafe142972468a0bde6e62f9e23eaed2a71cda2"
+  }
+}

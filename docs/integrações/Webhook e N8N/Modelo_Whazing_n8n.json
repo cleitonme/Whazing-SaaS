@@ -1,0 +1,521 @@
+{
+  "name": "Modelo Whazing",
+  "nodes": [
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 1
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "tendimento",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    },
+                    "id": "5f0ab93e-9a5c-445c-949e-4292a7e82438"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "atendimento"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 1
+                },
+                "conditions": [
+                  {
+                    "id": "eadc984e-a429-4c48-abfe-b99859fe6c69",
+                    "leftValue": "={{ $json.output }}",
+                    "rightValue": "umano",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "humano"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "id": "5a49bb46-4700-4115-a623-704d75195fea",
+      "name": "Switch_classificador",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3,
+      "position": [
+        776,
+        -920
+      ]
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "webhook_whazing",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -480,
+        -920
+      ],
+      "id": "ffce98d2-7fed-4363-b664-b3fcae9db4b2",
+      "name": "Webhook",
+      "webhookId": "4a5ea317-ce83-4bc5-8e1b-4bef73c06205"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "c04f1cfc-112a-44c8-8324-80065a42871c",
+              "name": "body.ticket.id",
+              "value": "={{ $json.body.ticket.id }}",
+              "type": "number"
+            },
+            {
+              "id": "c8ba791b-2edc-419c-bda8-5579b1095a5b",
+              "name": "body.ticket.status",
+              "value": "={{ $json.body.ticket.status }}",
+              "type": "string"
+            },
+            {
+              "id": "c9b8017a-0a03-45fa-aaf1-c1226b307be2",
+              "name": "body.ticket.queueId",
+              "value": "={{ $json.body.ticket.queueId }}",
+              "type": "number"
+            },
+            {
+              "id": "806727e9-c16d-4b79-ae70-51dd28ca4f82",
+              "name": "body.contact.id",
+              "value": "={{ $json.body.contact.id }}",
+              "type": "number"
+            },
+            {
+              "id": "51871d6c-f81d-4e55-af56-e3377838c00b",
+              "name": "body.contact.name",
+              "value": "={{ $json.body.contact.name }}",
+              "type": "string"
+            },
+            {
+              "id": "790ed8ba-7bdc-446b-b9d2-e453f89e0be7",
+              "name": "body.contact.phoneNumber",
+              "value": "={{ $json.body.contact.phoneNumber }}",
+              "type": "string"
+            },
+            {
+              "id": "d3cabda4-79c9-45f6-b0ce-233c622f57a5",
+              "name": "body.messageBody",
+              "value": "={{ $json.body.messageBody }}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -260,
+        -920
+      ],
+      "id": "55b27c6f-9ac1-41fb-8aab-44a1f8e49e40",
+      "name": "Dados_Atendimento"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "b1a211f8-ac68-4090-b5e0-e3cc3ef668b9",
+              "name": "URL_Whazing",
+              "value": "{{base_url}}",
+              "type": "string"
+            },
+            {
+              "id": "c064f336-7f3a-4006-8f0d-903742a2a9f3",
+              "name": "TOKEN_Whazing",
+              "value": "{{token}}",
+              "type": "string"
+            },
+            {
+              "id": "9d530bd2-a20d-4690-ad1f-bd5a58c2fa69",
+              "name": "externalKey",
+              "value": "{{externalkey}}",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        -40,
+        -920
+      ],
+      "id": "bea14643-b77b-4ffc-ae77-3c8fbb6adabe",
+      "name": "DadosWhazing"
+    },
+    {
+      "parameters": {
+        "assignments": {
+          "assignments": [
+            {
+              "id": "8c2e671a-12d1-4283-b3bd-fa1a0c67d3eb",
+              "name": "crm",
+              "value": "=2",
+              "type": "string"
+            },
+            {
+              "id": "a7ece123-b4d5-4485-be9a-c22215e1c6b0",
+              "name": "ID_Fila",
+              "value": "=3",
+              "type": "string"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.set",
+      "typeVersion": 3.4,
+      "position": [
+        180,
+        -920
+      ],
+      "id": "dc4d837c-7d7c-4993-b6f8-9ca514bc5685",
+      "name": "DadosTranferencia"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('DadosWhazing').item.json.URL_Whazing }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $('DadosWhazing').item.json.TOKEN_Whazing }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "body",
+              "value": "=Olá bem vindo ao Whazing!"
+            },
+            {
+              "name": "number",
+              "value": "={{ $('Webhook').item.json.body.contact.phoneNumber }}"
+            },
+            {
+              "name": "externalKey",
+              "value": "={{ $('DadosWhazing').item.json.externalKey }}"
+            }
+          ]
+        },
+        "options": {
+          "redirect": {
+            "redirect": {}
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        996,
+        -1020
+      ],
+      "id": "5f742113-d3e1-4924-880e-98d194d570bf",
+      "name": "EnviarMsg1"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('DadosWhazing').item.json.URL_Whazing }}",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $('DadosWhazing').item.json.TOKEN_Whazing }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "body",
+              "value": "=Olá bem vindo ao Whazing, um de nossos atendentes iram lhe atender!"
+            },
+            {
+              "name": "number",
+              "value": "={{ $('Webhook').item.json.body.contact.phoneNumber }}"
+            },
+            {
+              "name": "externalKey",
+              "value": "={{ $('DadosWhazing').item.json.externalKey }}"
+            }
+          ]
+        },
+        "options": {
+          "redirect": {
+            "redirect": {}
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        996,
+        -820
+      ],
+      "id": "17363ccc-eaba-4714-9026-3778e5173dea",
+      "name": "EnviarMsg2"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $('DadosWhazing').item.json.URL_Whazing }}/updatequeue",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "=Bearer {{ $('DadosWhazing').item.json.TOKEN_Whazing }}"
+            }
+          ]
+        },
+        "sendBody": true,
+        "bodyParameters": {
+          "parameters": [
+            {
+              "name": "ticketId",
+              "value": "={{ $('Dados_Atendimento').item.json.body.ticket.id }}"
+            },
+            {
+              "name": "queueId",
+              "value": "={{ $('DadosTranferencia').item.json.ID_Fila }}"
+            },
+            {
+              "name": "externalKey",
+              "value": "={{ $('DadosWhazing').item.json.externalKey }}"
+            }
+          ]
+        },
+        "options": {
+          "redirect": {
+            "redirect": {}
+          }
+        }
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1216,
+        -820
+      ],
+      "id": "2759dafd-e014-4b56-9141-75c6df02323d",
+      "name": "TranfereFila"
+    },
+    {
+      "parameters": {
+        "content": "## Configuração do Webhook\n\nAqui, você pega o URL e adiciona no campo de webhook da conexão do *Whazing*.\n",
+        "height": 460,
+        "width": 260,
+        "color": 3
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -580,
+        -1120
+      ],
+      "id": "7ef0218a-fe0d-498e-9987-e95685559baa",
+      "name": "Sticky Note"
+    },
+    {
+      "parameters": {
+        "content": "## Edição dos Dados\n\nAgora você edita conforme seus dados:\n\n* **Dados do Whazing**\n* **Dados de Transferências**\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n## **Atenção:** Não alterar os **Dados de Atendimento**.\n",
+        "height": 460,
+        "width": 640
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        -320,
+        -1120
+      ],
+      "id": "7ffe6a37-7c2c-4165-a043-74f8011f9bee",
+      "name": "Sticky Note1"
+    },
+    {
+      "parameters": {
+        "content": "## Configuração do Chat Model\n\nAqui, adicione o seu *Chat Model* conforme as especificações\n",
+        "height": 460,
+        "width": 400,
+        "color": 4
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        320,
+        -1120
+      ],
+      "id": "d750aa34-e943-4fc2-99e4-26972067299d",
+      "name": "Sticky Note2"
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{ $('Dados_Atendimento').item.json.body.messageBody }}",
+        "options": {
+          "systemMessage": "=Agora você um classificador.\nClassificador: identifique em qual estágio o usuário se encontra.\n\nPara qualquer solicitação que não envolva atendimento humano, responda estritamente com: \"atendimento\".\nSe o usuário solicitar falar com um atendente humano, responda estritamente com: \"humano\".\n\n# REGRA\n\nResponda exclusivamente com as expressões entre aspas mencionadas acima. Não envie com as aspas."
+        }
+      },
+      "id": "12496d8f-4dec-4224-9aa1-84db8f427d52",
+      "name": "classificador",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 1.6,
+      "position": [
+        400,
+        -920
+      ]
+    },
+    {
+      "parameters": {
+        "content": "## Envio de Mensagens\n\nAqui é o local onde será feito o envio de mensagens normais para o cliente, ou o aviso de que a fila será transferida.\n",
+        "height": 460,
+        "width": 700
+      },
+      "type": "n8n-nodes-base.stickyNote",
+      "typeVersion": 1,
+      "position": [
+        720,
+        -1120
+      ],
+      "id": "338110a1-a21a-4b0a-bf2c-9f8649bfd09e",
+      "name": "Sticky Note3"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "Dados_Atendimento",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Dados_Atendimento": {
+      "main": [
+        [
+          {
+            "node": "DadosWhazing",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "DadosWhazing": {
+      "main": [
+        [
+          {
+            "node": "DadosTranferencia",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "DadosTranferencia": {
+      "main": [
+        [
+          {
+            "node": "classificador",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch_classificador": {
+      "main": [
+        [
+          {
+            "node": "EnviarMsg1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "EnviarMsg2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "EnviarMsg2": {
+      "main": [
+        [
+          {
+            "node": "TranfereFila",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "classificador": {
+      "main": [
+        [
+          {
+            "node": "Switch_classificador",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1"
+  },
+  "versionId": "203e4fc5-e6ec-4a35-a767-6f46e107a66f",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "59339a41af0c753bc98d3d69122ef985087abd4568507352cbc01da0e2d89adb"
+  },
+  "id": "WAYFF7Cg8umIG0F9",
+  "tags": []
+}
