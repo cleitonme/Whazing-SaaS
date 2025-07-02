@@ -1,3 +1,9 @@
+## Versão 2.9.4.8 Final - Changelog - 02-07-2025
+
+--- não mudei numero versão mais importante fazer para melhorar tratamento mensagens com essa novo modelo do whatsapp
+
+- Update tratamento mensagens que ta vindo com lid e senderpn
+
 ## Versão 2.9.4.8 Final - Changelog - 29-06-2025
 
 - Mensagem recebida de lid solicita automaticamente para compartilhar numero telefone
