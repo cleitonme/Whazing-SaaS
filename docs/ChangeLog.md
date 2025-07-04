@@ -1,3 +1,10 @@
+## Versão 2.9.4.8 Final - Changelog - 04-07-2025
+
+--- não mudei numero versão mais importante fazer para melhorar tratamento mensagens com essa novo modelo do whatsapp
+
+- Update para para melhor identificar jid ou lid evitar erros
+
+
 ## Versão 2.9.4.8 Final - Changelog - 02-07-2025
 
 --- não mudei numero versão mais importante fazer para melhorar tratamento mensagens com essa novo modelo do whatsapp
