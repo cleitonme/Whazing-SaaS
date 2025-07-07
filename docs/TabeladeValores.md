@@ -2,10 +2,10 @@
 
 Licença Premium por vps:
 
-- Plano 1 mês R$ 50,00
-- Plano 3 meses R$ 135,00
-- Plano 6 meses R$ 250,00
-- Plano 12 meses R$ 450,00
+- Plano 1 mês R$ 55,00
+- Plano 3 meses R$ 150,00
+- Plano 6 meses R$ 300,00
+- Plano 12 meses R$ 500,00
 
 # Valores serviço de instalação
 
