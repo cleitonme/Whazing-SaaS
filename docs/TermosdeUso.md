@@ -11,8 +11,6 @@ O software está disponível em duas versões: Grátis e Premium.
 
 - **Versão Grátis**: Esta versão do software é oferecida gratuitamente. No entanto, ela possui limitações de uso, incluindo o máximo de 10 usuários, 2 canais, e suporte exclusivamente ao canal WhatsApp. A versão grátis é fornecida **sem qualquer garantia de suporte, atualizações ou personalização**.
 
-  - **Proibição de Whitelabel:** É **terminantemente proibida** a modificação da interface do sistema, incluindo remoção ou substituição de logotipos, textos ou qualquer outra referência à marca **Whazing**. O descumprimento desta regra pode constituir **violação de direitos autorais e de propriedade intelectual**, sujeitando o usuário às **medidas legais cabíveis**, inclusive **ações judiciais** e **indenização por danos**.
-
 - **Versão Premium**: A versão premium do software não possui os limites da versão grátis. A sua utilização está condicionada ao pagamento da taxa de licença, conforme os termos estabelecidos no contrato de licença. Nessa versão, o suporte, atualizações e eventuais customizações estão disponíveis de acordo com o plano contratado.
 
 **4. Propriedade Intelectual e Medidas Legais**  
