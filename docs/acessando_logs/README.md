@@ -85,10 +85,10 @@ docker container restart whazing-backend
 ### **Como Visualizar os Logs**
 
 1. **Visualização em Tempo Real**:
-   - Execute o seguinte comando no terminal para ver os logs em tempo real:
+   - Execute o seguinte comando no terminal para ver os logs em tempo real - ultimas 100 linhas:
 
 ```bash
-docker logs -f whazing-backend
+docker logs --tail 100 -f whazing-backend
 ```
 
 2. **Download dos Logs**:
