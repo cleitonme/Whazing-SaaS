@@ -44,6 +44,7 @@
 - **Bot Por palavra chave**: De acordo com primeira mensagem cliente escolhe bot diferente
 - **WhiteLabel**: Personalize a plataforma com sua marca pelo painel.
 - **Motivo de Encerramento**:Ao encerrar um ticket, o usuário deverá escolher um motivo obrigatório, tornando rastreamento atendimentos mais prescisos
+- **Follow-up**: Mantenha contato ativo com leads
 
 ## Acesse Demo do produto para conhecer tudo
 
