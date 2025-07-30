@@ -32,6 +32,8 @@ const dataToSend = {
     isGroup: ticket.contact.isGroup,
     pushname: ticket.contact.pushname,
 	lid: contact.lid,
+	kanbanId: contact.kanbanId,
+	followupId: contact.followupId
   } : null,
   whatsapp: {
     id: whatsapp.id,
@@ -67,6 +69,8 @@ const dataToSend = {
     isGroup: contact.isGroup,
     pushname: contact.pushname,
 	lid: contact.lid,
+	kanbanId: contact.kanbanId,
+	followupId: contact.followupId
   } : null,
   whatsapp: {
     id: whatsapp.id,
@@ -102,6 +106,8 @@ const dataToSend = {
     isGroup: contact.isGroup,
     pushname: contact.pushname,
 	lid: contact.lid,
+	kanbanId: contact.kanbanId,
+	followupId: contact.followupId
   } : null,
   whatsapp: {
     id: whatsapp.id,
@@ -138,6 +144,8 @@ const dataToSend = {
     isGroup: contact.isGroup,
     pushname: contact.pushname,
 	lid: contact.lid,
+	kanbanId: contact.kanbanId,
+	followupId: contact.followupId
   } : null,
   whatsapp: {
     id: whatsapp.id,
@@ -181,6 +189,8 @@ const dataToSend = {
     isGroup: contact.isGroup,
     pushname: contact.pushname,
 	lid: contact.lid,
+	kanbanId: contact.kanbanId,
+	followupId: contact.followupId
   } : null,
   user: user ? {
     id: user.id,

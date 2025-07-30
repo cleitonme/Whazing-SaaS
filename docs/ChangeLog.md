@@ -1,15 +1,103 @@
-## Versão 2.9.4.8 Final - Changelog - 04-07-2025
+## Versão 2.10.1.4 Final - Changelog
 
---- não mudei numero versão mais importante fazer para melhorar tratamento mensagens com essa novo modelo do whatsapp
+- contagem mensagem não lidas - mudança sistema contagem, quando cliente conversa 2 whatsapp diferentes da mesma empresa somava valores não lidos, ou grupos causando valores errados
+- Emoji editar mensagem
 
-- Update para para melhor identificar jid ou lid evitar erros
+- api plus - novos modelos mensagens mapeadas
 
+- mudança posição botão dark
 
-## Versão 2.9.4.8 Final - Changelog - 02-07-2025
+- Tickets de grupos - mudanças
+ Não fica atribuido usuario somente as filas
+ Somente supervisor ou admin pode fechar ticket, transferir ou retornar fila
+ Coloque ticket grupo em uma fila que usuarios que você queira tenha acesso ticket possa ver
 
---- não mudei numero versão mais importante fazer para melhorar tratamento mensagens com essa novo modelo do whatsapp
+## Versão 2.10.1.3 BETA - Changelog
 
-- Update tratamento mensagens que ta vindo com lid e senderpn
+- bug 2.10.1.2 - listagens mensagens atualizar agora se tiver na 2.10.1.2
+
+## Versão 2.10.1.2 BETA - Changelog
+
+- api plus - validação garantir campos necessarios serem preenchidos
+- api plus - Correção mensagens editadas
+- api plus - correção download documentos
+- api plus - contatos recebidos whatsapp web e iphone correção
+- botão download audio
+
+## Versão 2.10.1.1 BETA - Changelog
+
+- api plus - Marcação encaminha mensagens api plus enviadas e recebidas
+- bug - api plus - Correção bug envio mensagem celular contato cadastrado nome errado
+- api baileys - suporte exibir imagem vindo anuncio - identificar anuncio
+- api plus - suporte exibir imagem vindo anuncio - identificar anuncio
+- api plus - melhoria importação contatos captura nome
+- Configuração .env determina tempo expiração token
+
+## Versão 2.10.1 BETA - Changelog
+
+- Botão agendamento tela atendimento api plus
+- API plus melhora captura mensagens que pode causar perda da mensagem.
+- Validação para busca lid e cadastro caso chega somente numero do contato para garantia melhor concistencia dados
+
+## Versão 2.10.0 BETA - Changelog
+
+- bug - Correção update crm pelo painel atendimento usuario comum
+
+**Atenção** campanhas criadas que envia arquivos antes dessa versão não vai funcionar, deve alterar arquivo -
+
+- Novo Api PLUS - Mais estavel e leve - Terá custo por canal
+API não oficial
+API com recursos PREMIUM
+API maior estabilidade e mais recursos
+Suporte envio botão, listas, botão copia e cola, link, solicitação localização
+Por ser tratar api paga teremos garantia maior de funcionamento
+
+Api processada em um servidor externo as mensagens tornando muito mais leve envio e recebimento de mensagens para sua vps, favorecendo uso de grupos por exemplo.
+
+Dica de ouro em campanhas possivel enviar com botões colocar um botão com texto "Denunciar e Bloquear". Assim você faz cliente mesmo não querendo receber interragir e diminui chance do ban
+
+Sera possivel migrar baileys para api plus ou voltar sem, perda mensagens.
+Api plus suporte wavoip - tem que fazer leitura qrcode no painel do wavoip - vai ficar 2 locais conectados painel wavoip e no painel whazing
+
+- Organização arquivos - por data e ticket - sistema vai criar subpasta anomes ex: 202507 e para campanhas pasta campaign e mensagens rapidas pasta fastreply 
+
+- Opção SaaS para ocultar botão multiplos logins - somente oculta botão caso usuario tenha ativado opção continua Ativado
+
+- Opção SaaS botão coringa - Você pode criar nova opção menu para ir para site personalizado seu
+
+- Opção duplicar campanha
+
+- Follow-up
+Pode ser definido tela de atendimento, typebot, api, bot interno, CRM
+Endpoint listar contatos que estão naquele Follow-up
+
+- ChatBot Interno - Alteração CRM para poder remover contato da LANE
+
+- webbook - adicionado informacao kanbanId e followupId
+
+- Endpoint suporta arquivo base64
+
+- Sincronizar mensagem com um contato - somente api plus
+-  API Plus - maximo 100 - Verificar docs
+
+- Planos criado opção desativar importação mensagens(canal baileys), essa opção causa muito problemas desempenho durante processo achei melhor criar opção quem queira desativar
+
+- Relatorios de anotações novos filtros e opção impressão e exportar excel
+- Relatorios de protocolos novos filtros e opção impressão e exportar excel
+- Relatorios de ligações opção impressão e exportar excel
+- Relatorios de avaliações opção impressão e exportar excel
+
+- Integração de IA para melhorar e sugerir mensagens no atendimento
+
+- Edição contato opção desativar transcrição audio
+
+- Opção para transcrever audios enviados tela atendimento
+
+- Opção admin ou supervisor caixa de seleção para excluir varios contatos mesmo tempo
+
+- Permitir excluir contato mesmo tendo ticket
+
+- Botão excluir contato individual somente admin ou supervisor
 
 ## Versão 2.9.4.8 Final - Changelog - 29-06-2025
 

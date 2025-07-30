@@ -2,19 +2,19 @@
 
 ### Locais escolhe qual bot será usado e prioridades
 
-Atualmente, há três critérios que determinam qual bot será usado para novos tickets. Esses critérios estão listados abaixo em ordem de prioridade:
+Atualmente, há 4 critérios que determinam qual bot será usado para novos tickets. Esses critérios estão listados abaixo em ordem de prioridade:
 
-1 -    Lane do CRM Todos os contatos associados a uma lane específica do CRM. Ao enviar uma mensagem para o número do sistema, caso não haja tickets abertos ou pendentes, o bot configurado para essa lane será acionado.
+1 - Lane do CRM Todos os contatos associados a uma lane específica do CRM. Ao enviar uma mensagem para o número do sistema, caso não haja tickets abertos ou pendentes, o bot configurado para essa lane será acionado.
 
 ![print](crm.png)
 
-2 - Palavra chave - Exemplo: Ao cadastrar a palavra-chave "comprar" e o cliente enviar "Eu quero comprar", a mensagem será encaminhada para o bot correspondente.
+2 - Palavra chave - Exemplo: Ao cadastrar a palavra-chave "comprar" e o cliente enviar "Eu quero comprar", a mensagem será encaminhada para o bot correspondente. Somente primeira mensagem cliente ticket novo. se cliente enviar oi depois quero comprar não vai funcionar.
 
-3 -    No canal Cada canal pode ter um bot configurado. Ao enviar uma mensagem para o número do sistema, caso não haja tickets abertos ou pendentes, o bot configurado para aquele canal será utilizado.
+3 - No canal Cada canal pode ter um bot configurado. Ao enviar uma mensagem para o número do sistema, caso não haja tickets abertos ou pendentes, o bot configurado para aquele canal será utilizado.
 
 ![print](canais.png)
 
-4 -    Nas Configurações Se nenhum bot for identificado pelas configurações acima, será utilizado o bot configurado no fluxo ativo do sistema.
+4 - Nas Configurações Se nenhum bot for identificado pelas configurações acima, será utilizado o bot configurado no fluxo ativo do sistema.
 
 Esse ordem acima de prioridades define qual bot será escolhido quando for recebida uma mensagem pelo canal e não tiver ticket aberto ou pendente.
 
@@ -37,7 +37,7 @@ A configuração do fluxo do chatbot é feita através da interface visual abaix
 
 ![print](configfluxo.png)
 
-Na versão 2.9.1, você tem acesso às seguintes interações:
+Na versão 2.10.0, você tem acesso às seguintes interações:
 
 #### 1. Enviar Mensagem
 - Permite inserir o texto que será enviado ao cliente
@@ -52,41 +52,63 @@ Na versão 2.9.1, você tem acesso às seguintes interações:
 #### 4. Enviar localização
 - Enviar localizacação para o contato somente funciona whatsapp api oficial ou baileys
 
-#### 5. Enviar Botões
-- Compativel com api oficial, facebook e instagram - máximo 3 botões
+#### 5. Adicionar Delay
+- Configure o intervalo de tempo (em segundos) entre as mensagens
+- Importante para garantir a sequência correta das mensagens
 
-![print](botao.png)
+#### 6. Adicionar Tag
+- Permite marcar o contato com uma etiqueta específica
 
-#### 6. Adicionar botão com Link
-- Compativel com api oficial
+#### 7. Adicionar CRM
+- Move contato para lane no crm compartilhado
 
-![print](links.png)
+#### 8. Alterar Follow-up
+- Pode colcar ou tirar cliente de um follow-up
 
-#### 7. Adicionar lista
-- Compativel com api oficial
+#### 9. Adicionar Webhook (GET)
+- Integração com sistemas externos
+- Útil para enviar informações capturadas durante o atendimento
+- Envio via get entao monta url com variaveis ques enviar ele nao pega retorno. 
+
+#### 10. Adicionar lista
+- Compativel com api oficial - API Plus
+*baileys esta funcionando mas por se tratar não ter suporte oficial pode parar de funcionar
 
 ![print](lista.png)
 
 ![print](lista2.png)
 
-#### 8. Solicitar localização - somente api oficial
+#### 11. Enviar Botões
+- Compativel com api oficial, facebook e instagram e API PLUS - máximo 3 botões
+
+![print](botao.png)
+
+#### 12. Adicionar botão com Link
+- Compativel com api oficial e Api Plus
+
+![print](links.png)
+
+
+#### 13. Solicitar localização
+- Compativel com api oficial e Api Plus
 - Envia botão pedindo para cliente localizacação dele, util serviços de entrega por exemplo
 
 ![print](solicitarlocalizacao.png)
 
-#### 8. Adicionar Delay
-- Configure o intervalo de tempo (em segundos) entre as mensagens
-- Importante para garantir a sequência correta das mensagens
+#### 14. Botão Dinamico
+- Api Plus
+- Pode enviar botão misturado varios tipos, resposta, copiar e cola, ligação e link
 
-#### 9. Adicionar Tag
-- Permite marcar o contato com uma etiqueta específica
+![print](dinamico.png)
 
-#### 10. Adicionar CRM
-- Move contato para lane no crm compartilhado
+#### 15. Carrossel de midea
+- Api Plus
+- Pode colocar varias fotos com botão abaixo da mesma
+- Pode enviar botão misturado varios tipos, resposta, copiar e cola, ligação e link
 
-#### 11. Adicionar Webhook (GET)
-- Integração com sistemas externos
-- Útil para enviar informações capturadas durante o atendimento
+![print](carrossel1.png)
+![print](carrossel2.png)
+
 
 ## Ordem das Interações
 

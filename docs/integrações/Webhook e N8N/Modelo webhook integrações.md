@@ -38,7 +38,9 @@ const dataToSend = {
     email: contact.email,
     isGroup: contact.isGroup,
     pushname: contact.pushname,
-	lid: contact.lid
+	lid: contact.lid,
+	kanbanId: contact.kanbanId,
+	followupId: contact.followupId
   } : null,
 
   user: user ? {                         // Informações do usuário (caso mensagem enviada manualmente)

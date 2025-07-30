@@ -74,6 +74,11 @@ Adicione os comandos abaixo em um Bubble de texto:
    ```bash
    #{ "crmId": "1" }
    ```
+   
+- Comando para adicionar contato em um Follow-up - (lembre-se de trocar o ID) - Para Retirar usar id 0:
+   ```bash
+   #{ "followupId": "1" }
+   ```
 
 - Comando Criar ou alterar informação adicional contato
   
@@ -123,7 +128,7 @@ rowId: id_opcao_3
 [/menu]
 ```
 
-- Criar menu reply - api oficial somente
+- Criar menu reply - api oficial e API PLUS
 
 ```bash
 [replybutton]
@@ -142,7 +147,7 @@ id: 3
 [button]
 ```
 
-- Criar url button - api oficial somente
+- Criar url button - api oficial e API PLUS
 
 ```bash
 [urlbutton]
@@ -154,11 +159,70 @@ id: 3
 
 ```
    
-- Criar solicitar localizacao - api oficial somente
+- Criar solicitar localizacao - api oficial e API PLUS
 
 ```bash
 [locationrequest]
 [text]Por favor compartilhe sua localização para encontrarmos a loja mais próxima[text]
+```
+
+- Criar Botão dinamico - Somente API PLUS
+
+```bash
+[dinamicbutton]
+[text]This is the main button message text[text]
+[footerText]This is the footer text[footerText]
+[reply]
+displayText: Reply Button Text
+id: reply-button-id
+[reply]
+[copy]
+displayText: Copy Button Text
+copyText: This is the text that will be copied
+[copy]
+[call]
+displayText: Call Button Text
+phoneNumber: 554899416725
+[call]
+[url]
+displayText: URL Button Text
+url: https://www.whazing.com.br
+[url]
+```
+
+- Criar Carosel - Somente API PLUS
+
+```bash
+[carousel]
+[title]Nossos Produtos em Destaque[title]
+
+[item]
+[text]Smartphone XYZ
+O mais avançado smartphone da linha[text]
+[image]https://example.com/images/smartphone-xyz.jpg[image]
+[reply]
+displayText: Comprar Agora
+id: SIM_COMPRAR_XYZ
+[reply]
+[url]
+displayText: Ver Detalhes
+url: https://exemplo.com/xyz
+[url]
+[item]
+
+[item]
+[text]Cupom de Desconto
+Ganhe 20% OFF em qualquer produto[text]
+[image]https://example.com/images/discount-coupon.jpg[image]
+[copy]
+displayText: Copiar Cupom
+copyText: DESCONTO20
+[copy]
+[call]
+displayText: Falar com Vendedor
+phoneNumber: 5511999999999
+[call]
+[item]
 ```
 
 

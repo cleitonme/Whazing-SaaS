@@ -4,6 +4,8 @@
 
 - Faça o [download do arquivo modelo](apiizing.json)
 
+ALGUNS ENDPOINTS NOVOS PODEM NÃO ESTAR NA DOCUMENTAÇÃO SEMPRE BAIXE MODELO POSTMAN
+
 ## Índice
 1. [Introdução](#introdução)
 2. [Autenticação](#autenticação)
@@ -14,6 +16,7 @@
    - [Mensagens Interativas](#mensagens-interativas)
    - [Templates](#templates)
    - [Outros Endpoints](#outros-endpoints)
+   - [API PLUS (Novos Endpoints)](#api-plus-novos-endpoints)
 4. [Exemplos de Código](#exemplos-de-código)
 
 ## Introdução
@@ -518,6 +521,189 @@ Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar c
 - **Por Tag**: `/contacts/tag/{tagId}`
 - **Por CRM**: `/contacts/crm/{crmId}`
 - **Por Carteira**: `/contacts/wallet/{walletId}`
+
+---
+
+## API PLUS (Novos Endpoints)
+
+> **Todos os endpoints abaixo utilizam:**  
+> - **Método**: POST  
+> - **Endpoint**: `/apiplus`  
+> - **Header**:  
+>   `Authorization: Bearer {{token}}`  
+>   `Content-Type: application/json`  
+
+### 1. Mensagem com Botões (Novo)
+```json
+{
+    "number": "{{number}}",
+    "contents": {
+        "type": "button",
+        "body": {
+            "text": "Texto do Botão"
+        },
+        "action": {
+            "buttons": [
+                {
+                    "type": "reply",
+                    "reply": {
+                        "id": "1",
+                        "title": "Botão 1"
+                    }
+                },
+                {
+                    "type": "reply",
+                    "reply": {
+                        "id": "2",
+                        "title": "Botão 2"
+                    }
+                },
+                {
+                    "type": "reply",
+                    "reply": {
+                        "id": "3",
+                        "title": "Botão 3"
+                    }
+                }
+            ]
+        }
+    }
+}
+```
+
+### 2. Mensagem com Lista (Novo)
+```json
+{
+  "number": "{{number}}",
+  "contents": {
+    "type": "list",
+    "header": {
+      "type": "text",
+      "text": "Título"
+    },
+    "body": {
+      "text": "Descrição"
+    },
+    "action": {
+      "sections": [
+        {
+          "title": "Lista 1",
+          "rows": [
+            {
+              "id": 1,
+              "title": "Linha 1",
+              "description": "Descrição da linha 1"
+            },
+            {
+              "id": 2,
+              "title": "Linha 2",
+              "description": "Descrição da linha 2"
+            }
+          ]
+        },
+        {
+          "title": "Lista 2",
+          "rows": [
+            {
+              "id": 3,
+              "title": "Linha 3",
+              "description": "Descrição da linha 3"
+            },
+            {
+              "id": 4,
+              "title": "Linha 4",
+              "description": "Descrição da linha 4"
+            }
+          ]
+        }
+      ],
+      "button": "Clique aqui"
+    }
+  }
+}
+```
+
+### 3. Mensagem com Link (CTA) (Novo)
+```json
+{
+    "number": "{{number}}",
+    "contents": {
+        "type": "cta_url",
+        "header": {
+            "type": "text",
+            "text": "Datas Disponíveis"
+        },
+        "body": {
+            "text": "Toque no botão abaixo para ver as datas disponíveis."
+        },
+        "footer": {
+            "text": "Datas sujeitas a alterações."
+        },
+        "action": {
+            "name": "cta_url",
+            "parameters": {
+                "display_text": "Ver Datas",
+                "url": "SEU_LINK"
+            }
+        }
+    }
+}
+```
+
+### 4. Solicitar Localização (Novo)
+```json
+{
+    "number": "{{number}}",
+    "contents": {
+        "type": "location_request_message",
+        "body": {
+            "text": "Por favor compartilhe sua localização"
+        },
+        "action": {
+            "name": "send_location"
+        }
+    }
+}
+```
+
+### 5. Botão Dinâmico (Novo)
+```json
+{
+    "number": "{{number}}",
+    "contents": {
+        "type": "dinamic_button",
+        "text": "top",
+        "footerText": "footer",
+        "choices": [
+            {
+                "displayText": "resposta",
+                "id": "resposta",
+                "type": "reply"
+            },
+            {
+                "displayText": "Copiar Chave PIX",
+                "id": "",
+                "type": "copy",
+                "copyText": "11071697000108"
+            },
+            {
+                "displayText": "telefone",
+                "id": "",
+                "type": "call",
+                "phoneNumber": "554899416725"
+            },
+            {
+                "displayText": "site",
+                "id": "",
+                "type": "url",
+                "url": "https://www.whazing.com.br"
+            }
+        ]
+    }
+}
+```
+
+---
 
 ## Exemplos de Código
 
