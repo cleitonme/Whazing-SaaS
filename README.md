@@ -29,7 +29,28 @@ Caso apresente algum bug abra um Issues com maximo de detalhes possiveis
 
 - [Contrato de Licença](docs/contratodelicenca.md)
 
+## Screenshots
+>![print](screenshots/saas.png) 
 
+>![print](screenshots/atendimento.png)
+
+>![print](screenshots/solicitarteste.png)
+
+>![print](screenshots/kanban.png)
+
+>![print](screenshots/white.png)
+
+>![print](screenshots/dashboard.png)
+
+
+## Demo do produto
+
+-  [https://teste.whazing.com.br/](https://teste.whazing.com.br/)
+
+- usuario: admin@admin.com
+- senha: 123456
+
+## Licenças
 
 Versão grátis*
 
@@ -59,33 +80,6 @@ Versão Premium*
 - Retirada mensagem "Enviado via Whazing" no modulo campanhas
 
 -  [Tabela de Valores versão premium e serviço de instalação](docs/TabeladeValores.md)
-
-- Cupom 50% desconto Wavoip
-
-```bash
-whazing
-```
-
-## Screenshots
->![print](screenshots/saas.png) 
-
->![print](screenshots/atendimento.png)
-
->![print](screenshots/solicitarteste.png)
-
->![print](screenshots/kanban.png)
-
->![print](screenshots/white.png)
-
->![print](screenshots/dashboard.png)
-
-
-## Demo do produto
-
--  [https://teste.whazing.com.br/](https://teste.whazing.com.br/)
-
-- usuario: admin@admin.com
-- senha: 123456
 
 ## Como instalar
 
@@ -120,6 +114,12 @@ Seguem links sugerimos:
 
 ```bash
 WHAZING
+```
+
+## Cupom desconto Wavoip
+
+```bash
+whazing
 ```
 
 #### Curtiu? Apoie o projeto!! Com sua doação, será possível continuar com as atualizações. Segue QR code (PIX)  

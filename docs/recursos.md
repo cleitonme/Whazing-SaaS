@@ -45,4 +45,12 @@
 - **WhiteLabel**: Personalize a plataforma com sua marca pelo painel.
 - **Motivo de Encerramento**:Ao encerrar um ticket, o usuário deverá escolher um motivo obrigatório, tornando rastreamento atendimentos mais prescisos
 
+## Acesse Demo do produto para conhecer tudo
+
+-  [https://teste.whazing.com.br/](https://teste.whazing.com.br/)
+
+- usuario: admin@admin.com
+- senha: 123456
+
+
 ### Versão Atual: 2.10.1.4
