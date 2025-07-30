@@ -48,7 +48,7 @@ nano /home/deploy/whazing/backend/.env
    - Adicione as seguintes linhas:
 
 ```bash
-# Ativar o BullBoard - URL: urlbackend/admin/queues/
+# Ativar o BullBoard - URL: urldobackend/admin/queues/
 BULL_BOARD=true
 BULL_USER=admin
 BULL_PASS=123456
@@ -68,4 +68,4 @@ docker container restart whazing-backend
 
 ---
 
-Após essas etapas, o acesso ao BullBoard estará disponível através da URL: `urlbackend/admin/queues/`.
+Após essas etapas, o acesso ao BullBoard estará disponível através da URL: `urldobackend/admin/queues/`.
