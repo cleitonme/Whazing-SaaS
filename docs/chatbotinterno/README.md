@@ -187,6 +187,8 @@ Sistema integrado com [https://cal.com/](https://cal.com/)
 
 [Download do Fluxo de Exemplo](agendamentobarbearia.json)
 
+![print](barbeariabotao.jpg)
+
 [Download do Fluxo de Exemplo com botões](agendamentobarbeariabotao.json)
 
 ### 4. Fluxo sobre whazing com lista, botão e links
