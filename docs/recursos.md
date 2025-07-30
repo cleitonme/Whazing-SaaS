@@ -45,4 +45,4 @@
 - **WhiteLabel**: Personalize a plataforma com sua marca pelo painel.
 - **Motivo de Encerramento**:Ao encerrar um ticket, o usuário deverá escolher um motivo obrigatório, tornando rastreamento atendimentos mais prescisos
 
-### Versão Atual: 2.9.4.8
+### Versão Atual: 2.10.1.4
