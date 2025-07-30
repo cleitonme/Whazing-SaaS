@@ -187,7 +187,7 @@ Sistema integrado com [https://cal.com/](https://cal.com/)
 
 [Download do Fluxo de Exemplo](agendamentobarbearia.json)
 
-![print](barbeariabotao.jpg)
+![print](barbeariabotao.jpeg)
 
 [Download do Fluxo de Exemplo com botões](agendamentobarbeariabotao.json)
 
