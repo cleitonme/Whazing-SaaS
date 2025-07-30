@@ -4,7 +4,7 @@ Um sistema para gestão de atendimento multicanais centralizado.
 
 [![Grupo do WhatsApp](https://img.shields.io/badge/WhatsApp-Grupo%20Whazing-brightgreen.svg)](https://grupo.whazing.com.br)
 
-Novos recursos
+Alguns recursos
 - Painel SaaS
 - Chat Interno
 - Solicitar teste na pagina de login, e função esqueci a senha
@@ -14,6 +14,7 @@ Novos recursos
 - Integração WebHook/N8N - TypeBot - Groq - ChatGPT (função exclusiva versão premium)
 - Suporte facebook e instagram  e WebChat via hub (função exclusiva versão premium)
 - KANBAN (função exclusiva versão premium)
+- Api não oficial envia lista e botões
 - [Mais informações de recursos](docs/recursos.md)
 
 Dados de Acesso
