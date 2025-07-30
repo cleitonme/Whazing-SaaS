@@ -1,3 +1,8 @@
+## Versão 2.10.1.5 Final - Changelog
+
+- bug - Integração ia caso tenha lista, botão outro tipos mensagens trava ia
+- Supervisores podem criar tarefas outros usuarios
+
 ## Versão 2.10.1.4 Final - Changelog
 
 - contagem mensagem não lidas - mudança sistema contagem, quando cliente conversa 2 whatsapp diferentes da mesma empresa somava valores não lidos, ou grupos causando valores errados
