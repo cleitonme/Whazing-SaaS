@@ -1,0 +1,1726 @@
+{
+	"name": "Whazing",
+	"nodeList": [
+		{
+			"id": "start",
+			"name": "Início",
+			"type": "start",
+			"left": "26px",
+			"top": "100px",
+			"ico": "mdi-play",
+			"viewOnly": true,
+			"status": "success",
+			"style": {}
+		},
+		{
+			"id": "configurations",
+			"name": "Configurações",
+			"type": "configurations",
+			"left": "340px",
+			"top": "100px",
+			"viewOnly": true,
+			"ico": "mdi-alert-circle-outline",
+			"configurations": {
+				"notOptionsSelectMessage": {
+					"message": "Por favor selecione uma resposta do menu",
+					"stepReturn": "A"
+				},
+				"notResponseMessage": {
+					"time": 120,
+					"type": 3,
+					"destiny": "",
+					"message": "Por ausência de resposta seu atendimento foi encerrado"
+				},
+				"welcomeMessage": {
+					"message": ""
+				},
+				"maxRetryBotMessage": {
+					"number": 5,
+					"type": 1,
+					"destiny": 3
+				},
+				"outOpenHours": {
+					"type": 1,
+					"destiny": 1
+				},
+				"autoDistributeTickets": "N",
+				"answerCloseTicket": [
+					"sair",
+					"encerrar"
+				]
+			}
+		},
+		{
+			"id": "nodeC",
+			"name": "Boas vindas!",
+			"type": "node",
+			"left": "24px",
+			"top": "298.889px",
+			"interactions": [
+				{
+					"type": "ListField",
+					"data": {
+						"header": {
+							"type": "text",
+							"text": "{{greeting}} {{name}}"
+						},
+						"body": {
+							"text": "Seja bem vindo auto atendimento Whazing"
+						},
+						"action": {
+							"sections": [
+								{
+									"title": "",
+									"rows": [
+										{
+											"id": 1,
+											"title": "🛠️ Instalação",
+											"description": ""
+										},
+										{
+											"id": 2,
+											"title": "🔌 Conexão de Canais",
+											"description": ""
+										},
+										{
+											"id": 3,
+											"title": "📢 Suporte e Documentação",
+											"description": ""
+										},
+										{
+											"id": 4,
+											"title": "🔒 Código Fonte",
+											"description": ""
+										},
+										{
+											"id": 5,
+											"title": "🧪 Demonstração",
+											"description": ""
+										},
+										{
+											"id": 6,
+											"title": "Mensalidade inclui VPS",
+											"description": ""
+										},
+										{
+											"id": 7,
+											"title": "✨ Recursos do Sistema",
+											"description": ""
+										},
+										{
+											"id": 8,
+											"title": "💰 Planos e Pagamentos",
+											"description": ""
+										},
+										{
+											"id": 9,
+											"title": "Whitelabel",
+											"description": ""
+										}
+									]
+								}
+							],
+							"button": "Clique aqui"
+						}
+					},
+					"id": "6896509a-aabf-4c84-af13-0cf46b922ad4"
+				},
+				{
+					"type": "CrmField",
+					"data": {
+						"crm": 7
+					},
+					"id": "5cb84d45-6b6e-4ff0-854c-f8652740292f"
+				}
+			],
+			"conditions": [
+				{
+					"type": "Contain2",
+					"condition": [
+						"Instalação"
+					],
+					"id": "09e0772e-c142-4db1-a105-dac507857235",
+					"action": 0,
+					"nextStepId": "02fdf587-5dd3-414a-88a1-c275d6a7a780"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Conexão de Canais"
+					],
+					"id": "e8661817-7a4b-4416-8025-f78f764ad224",
+					"action": 0,
+					"nextStepId": "0b9d742f-6506-4d22-82b8-be02bc0e096f"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Suporte e Documentação"
+					],
+					"id": "8bf547c0-343d-4493-83d7-c55bf532ff01",
+					"action": 0,
+					"nextStepId": "dc1a1c5e-3b0d-4562-8d73-05cfdb2d3df3"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Código Fonte"
+					],
+					"id": "e6689996-e9be-43f9-83b3-4fba67008753",
+					"action": 0,
+					"nextStepId": "ecf41a4e-88b4-4041-82ba-df5d8b1b57e7"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Demonstração"
+					],
+					"id": "7d0ae509-6b53-4918-8dff-a45c23a7ccb8",
+					"action": 0,
+					"nextStepId": "25478028-04a3-4741-886a-714723ba95c8"
+				},
+				{
+					"type": "R",
+					"condition": [
+						"Mensalidade inclui VPS"
+					],
+					"id": "6ac07d9f-9a1f-4ede-a756-8174edc63729",
+					"action": 0,
+					"nextStepId": "3cfaab6d-7864-44c8-a800-eea3734f0aa8"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Recursos do Sistema"
+					],
+					"id": "273f6ff8-5579-49e0-83b2-4e2ceec6dd09",
+					"action": 0,
+					"nextStepId": "a23d12a0-01e3-4f11-a736-7d301e8010d3"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Planos e Pagamentos"
+					],
+					"id": "71aad0c9-75b0-4833-af8a-bc3599cb7af6",
+					"action": 0,
+					"nextStepId": "df768da4-3387-46c6-a22c-3ce77dfcff33"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Whitelabel"
+					],
+					"id": "97a0cc0b-63e9-482a-bcb9-72a1128c077f",
+					"action": 0,
+					"nextStepId": "68152624-7f88-4fd9-9119-f49c36e33717"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Falar com atendente"
+					],
+					"id": "0b503937-051d-4fbd-a696-5c0a15fb4a88",
+					"action": 0,
+					"nextStepId": "34832df1-d4d5-4444-b6e6-e7c6bab1fffe"
+				}
+			],
+			"actions": []
+		},
+		{
+			"id": "02fdf587-5dd3-414a-88a1-c275d6a7a780",
+			"name": "instalação",
+			"type": "node",
+			"left": "606px",
+			"top": "130px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "Contain2",
+					"condition": [
+						"Tenho ainda duvidas"
+					],
+					"id": "9e425f70-b6c1-4756-a595-5766f3813a5e",
+					"action": 0,
+					"nextStepId": "nodeC"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Quero adquirir"
+					],
+					"id": "fce2a45f-d822-40af-811f-0e9e2d7a2d61",
+					"action": 0,
+					"nextStepId": "aeee7b64-b60c-4aa9-a271-e7a99c046532"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Encerrar Atendimento"
+					],
+					"id": "07fd7861-e5c1-48e1-85bf-98aa7d43d9db",
+					"action": 3,
+					"closeTicket": "Certo seu atendimento está sendo encerrado. Se tiver mais alguma duvida estamos aqui.",
+					"nextStepId": null,
+					"userIdDestination": null,
+					"queueId": null
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "## 💻 Requisitos de Instalação\n\n* VPS com:\n\n  * 8 GB RAM\n  * 4 vCPUs\n  * Ubuntu 20 ou 22\n* Domínio com 2 subdomínios apontando para a VPS\n\n### VPS Recomendadas:\n\n* Peramix (Cupom: **WHAZING**)\n* Hetzner (EUA)\n\n❌ Evite: VPS na Europa ou Contabo"
+					},
+					"id": "f6ec2ec6-978e-45da-9c18-2afcb0f0ab44"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "10"
+					},
+					"id": "2157457b-b3eb-4c53-9765-4d93be9511f3"
+				},
+				{
+					"type": "LinkButtonsField",
+					"data": {
+						"header": "Aproveite",
+						"body": "Cupom 25% desconto \"WHAZING\"",
+						"footer": "Não perca Tempo",
+						"display_text": "Site Peramix",
+						"url": "https://control.peramix.com/?affid=58"
+					},
+					"id": "16511feb-bf1e-4a73-a3c8-060efd13ef96"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "10"
+					},
+					"id": "3d4b8cc1-38a8-433c-89a7-cbc67bf11d25"
+				},
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Valores serviço de instalação\nAdquirindo plano Premium 6 meses ou mais instalação grátis, planos menores \nPix R$ 50,00\nCartão R$ 55,00\n\nInstalação versão grátis\nPix R$ 100,00\nCartão R$ 110,00\n\nSou obrigado adquirir a instalação? Não é opcional todo material necessário para instalar se encontra no repositório\n\nServiço adicional instalação na mesma vps do Typebot e N8N \nPix R$ 100,00\nCartão R$ 110,00"
+					},
+					"id": "54c89115-cbae-4151-a12b-3affb13b1afe"
+				},
+				{
+					"type": "LinkButtonsField",
+					"data": {
+						"header": "Instalador Automatico",
+						"body": "Segue link nosso instalador automatico",
+						"footer": "",
+						"display_text": "Site",
+						"url": "https://github.com/cleitonme/Whazing-SaaS.instalador"
+					},
+					"id": "e95256aa-ca44-42de-b434-795e01d74ded"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "10"
+					},
+					"id": "d8bbd4ab-0770-446c-8012-6e6569d0a755"
+				},
+				{
+					"type": "ButtonsField",
+					"data": {
+						"text": "Agora o que você prescisa?",
+						"buttons": [
+							{
+								"id": 1,
+								"title": "Tenho ainda duvidas"
+							},
+							{
+								"id": 2,
+								"title": "Quero adquirir"
+							},
+							{
+								"id": 3,
+								"title": "Encerrar Atendimento"
+							}
+						]
+					},
+					"id": "eaba1afd-0522-45c7-9723-a68c65215deb"
+				}
+			]
+		},
+		{
+			"id": "aeee7b64-b60c-4aa9-a271-e7a99c046532",
+			"name": "termos de uso",
+			"type": "node",
+			"left": "841.429px",
+			"top": "48.1429px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "Contain2",
+					"condition": [
+						"Não"
+					],
+					"id": "fefd57e0-bd3b-48e5-84ce-502890c9b387",
+					"action": 3,
+					"closeTicket": "Como você não aceito termos de uso não poderemos continuar com a negociação. Seu atendimento esta sendo encerrado.",
+					"nextStepId": null,
+					"userIdDestination": null,
+					"queueId": null
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Sim"
+					],
+					"id": "0d584610-eba5-4f23-9219-be73f119867e",
+					"action": 0,
+					"nextStepId": "c4542c3f-63c3-46a3-a724-abd4fd42d830"
+				}
+			],
+			"interactions": [
+				{
+					"type": "LinkButtonsField",
+					"data": {
+						"header": "Termos de Uso",
+						"body": "",
+						"footer": "Por favor leia termos de uso antes de continuar",
+						"display_text": "Acessar Termos",
+						"url": "https://github.com/cleitonme/Whazing-SaaS/blob/main/docs/TermosdeUso.md"
+					},
+					"id": "670f4b87-0561-44c4-954a-cddba01e57dc"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "10"
+					},
+					"id": "4a3f8faa-3b45-41b1-9bfc-d229941e0242"
+				},
+				{
+					"type": "ButtonsField",
+					"data": {
+						"text": "{{name}}  com numero de Whatsapp {{phoneNumber}} aceita os termos de uso?",
+						"buttons": [
+							{
+								"id": 1,
+								"title": "Sim"
+							},
+							{
+								"id": 2,
+								"title": "Não"
+							}
+						]
+					},
+					"id": "bfea3e83-c2fb-4b62-b2cb-de6b869eb441"
+				}
+			]
+		},
+		{
+			"id": "c4542c3f-63c3-46a3-a724-abd4fd42d830",
+			"name": "Adquirir Instalação",
+			"type": "node",
+			"left": "1078.29px",
+			"top": "51.1429px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "Contain2",
+					"condition": [
+						"Não"
+					],
+					"id": "b56984d0-8428-4fdf-8f2c-0a1f823ff71a",
+					"action": 0,
+					"nextStepId": "85ba7093-329a-4dee-b4a8-0d470fa1796f"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Sim"
+					],
+					"id": "30d8c88c-9fa3-4e18-b051-b0524d8bda59",
+					"action": 0,
+					"nextStepId": "835c28c7-d414-43f2-ab6c-7cf60b3aa929"
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Valores serviço de instalação\n\nR$ 50,00 pix\nR$ 55,00 cartão\n\nAdquirindo plano semestral ou anual sai gratuito.\n\nSou obrigado adquirir serviço de instalação? Não todo material para instalar encontrasse no repositorio: https://github.com/cleitonme/Whazing-SaaS.instalador\n\nInstalação Typebot ou N8N cobrado serviço adicional R$ 100,00 Pix"
+					},
+					"id": "9f47b83c-eb04-49ed-9d25-7275635b0c8d"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "10"
+					},
+					"id": "39042ae4-881b-40b8-8b89-998ea9648558"
+				},
+				{
+					"type": "ButtonsField",
+					"data": {
+						"text": "Você gostaria adquirir serviço de instalação?",
+						"buttons": [
+							{
+								"id": 1,
+								"title": "Sim"
+							},
+							{
+								"id": 2,
+								"title": "Não"
+							}
+						]
+					},
+					"id": "15d1631d-7959-4943-ae01-fac4064500de"
+				}
+			]
+		},
+		{
+			"id": "85ba7093-329a-4dee-b4a8-0d470fa1796f",
+			"name": "escolha planos",
+			"type": "node",
+			"left": "1386px",
+			"top": "13px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "Contain2",
+					"condition": [
+						"Mensal"
+					],
+					"id": "d29ade5c-f0e9-4005-b64f-286f874c8052",
+					"action": 0,
+					"nextStepId": "daa46498-dfe3-42e6-9287-8d31d7f9fc2f"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Plano 3 meses ",
+						"Plano 6 meses",
+						"Plano 12 meses "
+					],
+					"id": "d54825cb-775d-41b1-bbac-de036533cb41",
+					"action": 0,
+					"nextStepId": "17262f63-b91c-4ef8-ad6e-be7155609877"
+				}
+			],
+			"interactions": [
+				{
+					"type": "ListField",
+					"data": {
+						"header": {
+							"type": "text",
+							"text": "Qual plano você deseja?"
+						},
+						"body": {
+							"text": "Escolha um plano para continuar"
+						},
+						"action": {
+							"sections": [
+								{
+									"title": "",
+									"rows": [
+										{
+											"id": 1,
+											"title": "Mensal",
+											"description": "Pix R$ 55,00\nCartão R$ 60,00"
+										},
+										{
+											"id": 2,
+											"title": "Plano 3 meses ",
+											"description": "Pix R$ 150,00\nCartão R$ 165,00"
+										},
+										{
+											"id": 3,
+											"title": "Plano 6 meses",
+											"description": "Pix R$ 300,00\nCartão R$ 330,00"
+										},
+										{
+											"id": 4,
+											"title": "Plano 12 meses ",
+											"description": "Pix R$ 500,00\nCartão R$ 550,00"
+										}
+									]
+								}
+							],
+							"button": "Clique Aqui"
+						}
+					},
+					"id": "c349bf16-cb47-44a1-b05f-23efe85a8f93"
+				}
+			]
+		},
+		{
+			"id": "835c28c7-d414-43f2-ab6c-7cf60b3aa929",
+			"name": "quer instalacao",
+			"type": "node",
+			"left": "1715px",
+			"top": "101.429px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "R",
+					"condition": [
+						"Sim"
+					],
+					"id": "49d97caa-987e-4221-82ad-83c3aa544f27",
+					"action": 0,
+					"nextStepId": "85ba7093-329a-4dee-b4a8-0d470fa1796f"
+				},
+				{
+					"type": "R",
+					"condition": [
+						"Não"
+					],
+					"id": "1aca0e58-2dad-4087-9447-bb5504c50de5",
+					"action": 3,
+					"closeTicket": "Certo quando você tiver o necessário para fazer instalação volta aqui para ser atendido. Seu atendimento esta sendo encerrado.",
+					"nextStepId": null,
+					"userIdDestination": null,
+					"queueId": null
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Para fazer Instalação vou prescisar de uma vps.\n\nDominio com 2 dns apontados para VPS\n\nDados acesso VPS\nIP\nsenha root"
+					},
+					"id": "587ed55e-06cb-4f81-a996-c357e4a6bce7"
+				},
+				{
+					"type": "ButtonsField",
+					"data": {
+						"text": "Você já tem o que é necessário?",
+						"buttons": [
+							{
+								"id": 1,
+								"title": "Sim"
+							},
+							{
+								"id": 2,
+								"title": "Não"
+							}
+						]
+					},
+					"id": "cc57a6e8-e49a-495e-b02e-40f4820337d9"
+				}
+			]
+		},
+		{
+			"id": "daa46498-dfe3-42e6-9287-8d31d7f9fc2f",
+			"name": "Pix CPF",
+			"type": "node",
+			"left": "1223px",
+			"top": "204px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "US",
+					"condition": [],
+					"id": "91c5dcae-8cc8-48b3-be74-2307638472b3",
+					"action": 1,
+					"queueId": 2,
+					"nextStepId": null,
+					"userIdDestination": null,
+					"closeTicket": null
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Segue nosso Pix para pagamento, pix do tipo email"
+					},
+					"id": "ed55d3e8-9124-44b8-a482-a88324fffadf"
+				},
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "cleitonme@gmail.com"
+					},
+					"id": "5a6ed2e2-9865-4d00-b542-06dcc3e30492"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "10"
+					},
+					"id": "6a6be982-d87e-45b8-a7f7-b3989eb54dda"
+				},
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Após Pagamento envie comprovante."
+					},
+					"id": "6093436d-6498-4b05-95c1-6ffc19063a11"
+				},
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Para liberar precisamos somente do ip da VPS"
+					},
+					"id": "ef939ab2-da64-4410-af71-3d09b02a8008"
+				},
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Seu email para cadastro"
+					},
+					"id": "55358d7f-a35f-4954-af76-f3df54a61664"
+				}
+			]
+		},
+		{
+			"id": "17262f63-b91c-4ef8-ad6e-be7155609877",
+			"name": "Pix CNPJ",
+			"type": "node",
+			"left": "1467px",
+			"top": "225px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "US",
+					"condition": [],
+					"id": "836f0283-a771-4ede-9530-7b64a4fa08d6",
+					"action": 1,
+					"queueId": 2,
+					"nextStepId": null,
+					"userIdDestination": null,
+					"closeTicket": null
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Segue nosso Pix para pagamento, pix do tipo Cnpj"
+					},
+					"id": "ebba349b-0667-492c-b956-ee2d21c95020"
+				},
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "11071697000108"
+					},
+					"id": "fb03001d-bf02-428a-8978-fdfe6e6bface"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "10"
+					},
+					"id": "90f97898-dabf-46fc-b3c8-8f3c64d05190"
+				},
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Após Pagamento envie comprovante."
+					},
+					"id": "d128e7cc-3a51-48e9-a617-fd0b359246d5"
+				},
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Para liberar precisamos somente do ip da VPS"
+					},
+					"id": "45586300-afb0-4c1d-89b8-03682f0129a1"
+				},
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Seu email para cadastro"
+					},
+					"id": "d143f249-9586-4bc5-87f8-3db8a436c7ac"
+				}
+			],
+			"sourceId": "835c28c7-d414-43f2-ab6c-7cf60b3aa929",
+			"targetId": "85ba7093-329a-4dee-b4a8-0d470fa1796f"
+		},
+		{
+			"id": "0b9d742f-6506-4d22-82b8-be02bc0e096f",
+			"name": "Conexão de Canais",
+			"type": "node",
+			"left": "603px",
+			"top": "256px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "Contain2",
+					"condition": [
+						"Tenho ainda duvidas"
+					],
+					"id": "6d6fc5e9-1d5f-48b5-b740-3722a11df98c",
+					"action": 0,
+					"nextStepId": "nodeC"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Quero adquirir"
+					],
+					"id": "78f8ac7b-fd5a-496c-b5d4-f205113dccef",
+					"action": 0,
+					"nextStepId": "aeee7b64-b60c-4aa9-a271-e7a99c046532"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Encerrar atendimento"
+					],
+					"id": "9a7f2071-72b0-4880-ac2f-679a758e44d6",
+					"action": 3,
+					"closeTicket": "Certo seu atendimento está sendo encerrado. Se tiver mais alguma duvida estamos aqui.",
+					"nextStepId": null,
+					"userIdDestination": null,
+					"queueId": null
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Tenho ainda duvidas"
+					],
+					"id": "f346be69-4332-4b15-b944-8bc9abc455d8",
+					"action": 0,
+					"nextStepId": "nodeC"
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "#### ✅ API Não Oficial (gratuita)\n\n\n* **WhatsApp com API não oficial (Baileys)** ou **Telegram**:\n\n\n  * **Sem custo por canal**\n  * Pode adicionar **quantos canais quiser** no plano premium **\n  * Incluído no plano Premium, **sem limite de usuários ou canais** (até onde sua VPS suportar)"
+					},
+					"id": "085ee416-53b4-4ef2-a54c-4f43e1a28620"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "10"
+					},
+					"id": "fed38735-870f-4119-a328-b4f733c08cbf"
+				},
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "#### ✅ API Não Oficial Premium (paga)\n\n# Whatsapp API PLUS*\n- Se trata api não oficial, com recursos premium\n\nSuporte envio botão, listas, botão copia e cola, link, solicitação localização\n\nApi com maior garantia de estabilidade\n\nCusto baixo por canal, mas com garantia maior de estabilidade e menor consumo de recursos da VPS\n\n# Migrar Canal entre plus*e baileys\n\n- Desconect* o whatsapp\n- Fechar todos tickets, edite canal alterando o tipo, gere qrcode novamente e cone*te \n\n\n# Valores\n\n- Cada canal prescisa de um token de acesso\n\n# Clientes da Versão*Grátis do Whazing #*\n- R$ 50,00 - 6 meses\n- R$ 100,00 - 1 ano\n\n# Clientes da Versão Premium do Whazing #\n\nGanha 1 canal para testar e conhecer\n\nCanais adicionais\n1 Canal - R$ 5,00 mensal\n10 canais - R$ 35,00 mensal \n20 canais - R$ 60,00 me*sal\n40 canais - R$ 100,00 mensal\n\n- Vencimento fica junto com pag*mento da licença premium no mensal\n- Desconto somente na compra de pacotes de comprar 11 canais por exemplo valor R$ 40,00 será cobrado valor por canal individual."
+					},
+					"id": "7d04ac99-38d4-4a78-9530-30bd87bb829c"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "20"
+					},
+					"id": "84855c8e-ffb8-44ba-a0ab-55f799633992"
+				},
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "#### 💼 API Oficial via HUB (paga)\n\n\n* Para usar **WhatsApp Oficial**, é necessário contratar via **HUB**:\n\n\n  * Ativação: **R$ 120,00**\n  * Mensalidade: cobrada por canal conectado\n  * Também se aplica aos canais:\n\n  * Instagram - não tem taxa ativação\n  * Facebook - não tem taxa ativação\n  * Webchat - não tem taxa ativação\n  * Cada um desses canais tem **mensalidade individual de R$ 40,00 no plano premium**"
+					},
+					"id": "123a8055-87f5-4a54-900b-7a06d063d073"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "10"
+					},
+					"id": "319d7a30-8629-41ff-866a-eb8f59c8a5a6"
+				},
+				{
+					"type": "ButtonsField",
+					"data": {
+						"text": "Agora o que você prescisa?",
+						"buttons": [
+							{
+								"id": 1,
+								"title": "Tenho ainda duvidas"
+							},
+							{
+								"id": 2,
+								"title": "Quero adquirir"
+							},
+							{
+								"id": 3,
+								"title": "Encerrar atendimento"
+							}
+						]
+					},
+					"id": "1abfd011-831e-4c9a-b559-ec7ef2999bee"
+				}
+			]
+		},
+		{
+			"id": "dc1a1c5e-3b0d-4562-8d73-05cfdb2d3df3",
+			"name": "Suporte e Documentação",
+			"type": "node",
+			"left": "595px",
+			"top": "389px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "Contain2",
+					"condition": [
+						"Encerrar atendimento"
+					],
+					"id": "2a93b376-0bb4-49f5-a826-d6091d6f5de8",
+					"action": 3,
+					"closeTicket": "Certo seu atendimento está sendo encerrado. Se tiver mais alguma duvida estamos aqui.",
+					"nextStepId": null,
+					"userIdDestination": null,
+					"queueId": null
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Quero adquirir"
+					],
+					"id": "696fa6f4-8cf6-4a7c-8a82-feb8342050df",
+					"action": 0,
+					"nextStepId": "aeee7b64-b60c-4aa9-a271-e7a99c046532"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Tenho ainda duvidas"
+					],
+					"id": "59e75687-9f73-4ce7-b581-84ac8245075d",
+					"action": 0,
+					"nextStepId": "nodeC"
+				}
+			],
+			"interactions": [
+				{
+					"type": "LinkButtonsField",
+					"data": {
+						"header": "Suporte",
+						"body": "💬 Nosso suporte somente via grupo whatsapp",
+						"footer": "",
+						"display_text": "Link do grupo",
+						"url": "https://grupo.whazing.com.br"
+					},
+					"id": "a3ae9aaa-9bf8-4a6e-877e-098cb5e0fde9"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "5"
+					},
+					"id": "d3fcfcce-dd99-420c-99a2-3c0326db1717"
+				},
+				{
+					"type": "LinkButtonsField",
+					"data": {
+						"header": "📘 Documentação oficial:",
+						"body": "Você também encontrar nossa documentação oficial",
+						"footer": "",
+						"display_text": "Acessar documentação",
+						"url": "https://doc.whazing.com.br"
+					},
+					"id": "daf946a5-723d-495e-87d7-44c31d801775"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "5"
+					},
+					"id": "6ce3a188-c866-4e15-a299-b35155b14ceb"
+				},
+				{
+					"type": "ButtonsField",
+					"data": {
+						"text": "Agora o que você prescisa?",
+						"buttons": [
+							{
+								"id": 1,
+								"title": "Tenho ainda duvidas"
+							},
+							{
+								"id": 2,
+								"title": "Quero adquirir"
+							},
+							{
+								"id": 3,
+								"title": "Encerrar atendimento"
+							}
+						]
+					},
+					"id": "97ef958f-72c5-43c6-a386-667687420e47"
+				}
+			]
+		},
+		{
+			"id": "ecf41a4e-88b4-4041-82ba-df5d8b1b57e7",
+			"name": "Código Fonte",
+			"type": "node",
+			"left": "609px",
+			"top": "524px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "Contain2",
+					"condition": [
+						"Encerrar atendimento"
+					],
+					"id": "30d20fef-0727-41a2-94de-824f84c7f744",
+					"action": 3,
+					"closeTicket": "Certo seu atendimento está sendo encerrado. Se tiver mais alguma duvida estamos aqui.",
+					"nextStepId": null,
+					"userIdDestination": null,
+					"queueId": null
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Quero adquirir"
+					],
+					"id": "7f4971d1-0555-418a-a837-d2c062a9475b",
+					"action": 0,
+					"nextStepId": "aeee7b64-b60c-4aa9-a271-e7a99c046532"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Tenho ainda duvidas"
+					],
+					"id": "1907753a-0876-4a7e-8388-54bdce894819",
+					"action": 0,
+					"nextStepId": "nodeC"
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "💻 Sistema Profissional de Atendimento\n🔥 Apenas R$ 50,00/mês – instalado na sua VPS!\n\n🚫 Código-fonte fechado (não fornecemos)\n✅ Whitelabel completo (logo, cores e nome personalizado)\n✅ Integração com WhatsApp, Instagram e Facebook\n✅ Chatbot, filas, atendimento humano, painel web\n✅ Gerencie várias empresas no mesmo sistema\n✅ Interface moderna e atualizações constantes\n\nIdeal pra quem quer revender, prestar serviço ou usar internamente.\n\n⚙️ Você recebe tudo pronto, é só usar!"
+					},
+					"id": "4a61fcd7-66b4-40a6-932d-74c30fc43a65"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "5"
+					},
+					"id": "493fd9a8-302f-4ed0-98dc-caa80c52cae0"
+				},
+				{
+					"type": "ButtonsField",
+					"data": {
+						"text": "Agora o que você prescisa?",
+						"buttons": [
+							{
+								"id": 1,
+								"title": "Tenho ainda duvidas"
+							},
+							{
+								"id": 2,
+								"title": "Quero adquirir"
+							},
+							{
+								"id": 3,
+								"title": "Encerrar atendimento"
+							}
+						]
+					},
+					"id": "2207792a-d26f-47b6-890b-101eb476c98f"
+				}
+			]
+		},
+		{
+			"id": "25478028-04a3-4741-886a-714723ba95c8",
+			"name": "Demonstração",
+			"type": "node",
+			"left": "602px",
+			"top": "690px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "Contain2",
+					"condition": [
+						"Tenho ainda duvidas"
+					],
+					"id": "5388e3a8-1b77-41e0-a0b4-2d4a0c7d4378",
+					"action": 0,
+					"nextStepId": "nodeC"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Quero adquirir"
+					],
+					"id": "0053f9f7-4f16-42c3-816d-c8c4a1953b09",
+					"action": 0,
+					"nextStepId": "aeee7b64-b60c-4aa9-a271-e7a99c046532"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Encerrar atendimento"
+					],
+					"id": "e0fe3468-3a8d-40c8-bc77-ae8f29c4f1da",
+					"action": 3,
+					"closeTicket": "Certo seu atendimento está sendo encerrado. Se tiver mais alguma duvida estamos aqui.",
+					"nextStepId": null,
+					"userIdDestination": null,
+					"queueId": null
+				}
+			],
+			"interactions": [
+				{
+					"type": "LinkButtonsField",
+					"data": {
+						"header": "Demostração",
+						"body": "Você pode acessar nosso teste com dados:\nLogin: `admin@admin.com`\nSenha: `123456`",
+						"footer": "",
+						"display_text": "Acessar o teste",
+						"url": "https://teste.whazing.com.br/"
+					},
+					"id": "cc396f42-65c1-49af-842c-ca22ea4f8d74"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "5"
+					},
+					"id": "db98751f-9014-40fa-bade-eed777ad3196"
+				},
+				{
+					"type": "ButtonsField",
+					"data": {
+						"text": "Agora o que você prescisa?",
+						"buttons": [
+							{
+								"id": 1,
+								"title": "Tenho ainda duvidas"
+							},
+							{
+								"id": 2,
+								"title": "Quero adquirir"
+							},
+							{
+								"id": 3,
+								"title": "Encerrar atendimento"
+							}
+						]
+					},
+					"id": "a6a1731f-e392-4733-b22d-d9042d9135c2"
+				}
+			],
+			"sourceId": "25478028-04a3-4741-886a-714723ba95c8",
+			"targetId": "aeee7b64-b60c-4aa9-a271-e7a99c046532"
+		},
+		{
+			"id": "3cfaab6d-7864-44c8-a800-eea3734f0aa8",
+			"name": "Mensalidade inclui VPS",
+			"type": "node",
+			"left": "603px",
+			"top": "883px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "Contain2",
+					"condition": [
+						"Tenho ainda duvidas"
+					],
+					"id": "93371806-f84d-402c-b985-1b5e83f4f4a4",
+					"action": 0,
+					"nextStepId": "nodeC"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Quero adquirir"
+					],
+					"id": "f346f920-148e-431a-b245-efac84e2fa24",
+					"action": 0,
+					"nextStepId": "aeee7b64-b60c-4aa9-a271-e7a99c046532"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Encerrar atendimento"
+					],
+					"id": "58fad020-2808-403b-8255-0ed8f03c2dea",
+					"action": 3,
+					"closeTicket": "Certo seu atendimento está sendo encerrado. Se tiver mais alguma duvida estamos aqui.",
+					"nextStepId": null,
+					"userIdDestination": null,
+					"queueId": null
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "❌ Não. A VPS deve ser contratada separadamente.\n\nManutenção e atualização sistema de responsabilidade do cliente não está incluso valor mensalidade\n\n## 🔐 Segurança Recomendável\n\n* Alterar senha padrão após instalação\n* Manter firewall ativo (portas 22, 80, 443)\n* Usar túnel Cloudflare se possível\n* Fazer backups regulares\n* Alterar email/senha do admin padrão"
+					},
+					"id": "07e282ed-c270-42dd-bb86-4a56e086c703"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "5"
+					},
+					"id": "c6b74258-60dc-4590-8480-65e583b66c85"
+				},
+				{
+					"type": "ButtonsField",
+					"data": {
+						"text": "Agora o que você prescisa?",
+						"buttons": [
+							{
+								"id": 1,
+								"title": "Tenho ainda duvidas"
+							},
+							{
+								"id": 2,
+								"title": "Quero adquirir"
+							},
+							{
+								"id": 3,
+								"title": "Encerrar atendimento"
+							}
+						]
+					},
+					"id": "71a843be-96ae-4839-bb15-0522d3b9faa4"
+				}
+			]
+		},
+		{
+			"id": "a23d12a0-01e3-4f11-a736-7d301e8010d3",
+			"name": "Recursos do Sistema",
+			"type": "node",
+			"left": "604px",
+			"top": "1067px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "Contain2",
+					"condition": [
+						"Tenho ainda duvidas"
+					],
+					"id": "edfbee0b-cd95-49eb-9b79-6589ddfa9477",
+					"action": 0,
+					"nextStepId": "nodeC"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Quero adquirir"
+					],
+					"id": "ecdef425-f1e8-4332-bc20-f1c53ead0800",
+					"action": 0,
+					"nextStepId": "aeee7b64-b60c-4aa9-a271-e7a99c046532"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Encerrar atendimento"
+					],
+					"id": "e95e8c01-3622-4205-9dd3-b992c946e728",
+					"action": 3,
+					"closeTicket": "Certo seu atendimento está sendo encerrado. Se tiver mais alguma duvida estamos aqui.",
+					"nextStepId": null,
+					"userIdDestination": null,
+					"queueId": null
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "### ✅ Inclusos em todos os planos\n\n* Chat interno com operadores\n* Fechamento e exclusão em massa\n* Integrações: Efi, Asaas, Mercado Pago, Stripe\n* Bots com ChatFlow\n* Multi-idioma\n* Controle de horários e logins\n* Envio de mensagens com anexos\n* API Plus não oficial envia botões, lista\n\n### ⭐ Recursos exclusivos da Premium\n\n* SaaS completo - cadastre outras empresas e revenda com sua marca\n* Atendimento com IA (ChatGPT, Groq, ElevenLabs, DeepSeek)\n* Tarefas e avaliação de atendimento\n* Transcrição de áudios\n* Integração com N8N, TypeBot\n* Segunda via de boleto (Asaas)\n* WhiteLabel no painel\n* Relatórios de tickets\n* CRM visual\n* Bot por palavra-chave\n* Geração de PDFs\n* API de integração\n* Suporte a chamadas (Wavoip)\n* Follow-up\nEntre outros recursos"
+					},
+					"id": "094737cd-4294-4989-8a43-ea911367ef25"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "5"
+					},
+					"id": "57d41f30-5f77-4663-b038-568abcf28f39"
+				},
+				{
+					"type": "LinkButtonsField",
+					"data": {
+						"header": "Acessar instalação teste",
+						"body": "Você pode acessar nosso teste com dados:\nLogin: `admin@admin.com`\nSenha: `123456`",
+						"footer": "",
+						"display_text": "Acessar teste",
+						"url": "https://teste.whazing.com.br/"
+					},
+					"id": "f129d77f-1672-41f6-9008-76db064a0b39"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "5"
+					},
+					"id": "3338d924-8431-4f2c-97cd-87f56c5bd31e"
+				},
+				{
+					"type": "ButtonsField",
+					"data": {
+						"text": "Agora o que você prescisa?",
+						"buttons": [
+							{
+								"id": 1,
+								"title": "Tenho ainda duvidas"
+							},
+							{
+								"id": 2,
+								"title": "Quero adquirir"
+							},
+							{
+								"id": 3,
+								"title": "Encerrar atendimento"
+							}
+						]
+					},
+					"id": "57b8f74b-8fec-4b44-91d5-4d63eacc8d37"
+				}
+			]
+		},
+		{
+			"id": "df768da4-3387-46c6-a22c-3ce77dfcff33",
+			"name": "Planos e Pagamentos",
+			"type": "node",
+			"left": "598.889px",
+			"top": "1221px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "Contain2",
+					"condition": [
+						"Tenho ainda duvidas"
+					],
+					"id": "8bb75076-8f11-4a2c-9158-204a9f718917",
+					"action": 0,
+					"nextStepId": "nodeC"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Quero adquirir"
+					],
+					"id": "f67174dc-ec06-403d-8084-ea6c99023e96",
+					"action": 0,
+					"nextStepId": "aeee7b64-b60c-4aa9-a271-e7a99c046532"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Encerrar atendimento"
+					],
+					"id": "61f324f1-9220-4a9c-a611-f1de1f8d1d0c",
+					"action": 3,
+					"closeTicket": "Certo seu atendimento está sendo encerrado. Se tiver mais alguma duvida estamos aqui.",
+					"nextStepId": null,
+					"userIdDestination": null,
+					"queueId": null
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "### 💰 Planos e Pagamentos\nLicença Premium por vps:\n\nPlano 1 mês \nPix R$ 55,00\nCartão R$ 60,00\n\nPlano 3 meses \nPix R$ 150,00\nCartão R$ 165,00\n\nPlano 6 meses\nPix R$ 300,00\nCartão R$ 330,00\n\nPlano 12 meses \nPix R$ 500,00\nCartão R$ 550,00\n\n  > Pagamento obrigatório para manter o acesso\n  > Se não pagar, o sistema é **bloqueado**"
+					},
+					"id": "ee98369b-d223-4219-82e9-980ab62b8541"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "5"
+					},
+					"id": "b3b79d67-c1f9-4ba5-b344-0ee453f47f3a"
+				},
+				{
+					"type": "ButtonsField",
+					"data": {
+						"text": "Agora o que você prescisa?",
+						"buttons": [
+							{
+								"id": 1,
+								"title": "Tenho ainda duvidas"
+							},
+							{
+								"id": 2,
+								"title": "Quero adquirir"
+							},
+							{
+								"id": 3,
+								"title": "Encerrar atendimento"
+							}
+						]
+					},
+					"id": "0856f21d-6e2c-4c30-8c54-5bc231536917"
+				}
+			]
+		},
+		{
+			"id": "68152624-7f88-4fd9-9119-f49c36e33717",
+			"name": "Whitelabel",
+			"type": "node",
+			"left": "592px",
+			"top": "1393px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "Contain2",
+					"condition": [
+						"Tenho ainda duvidas"
+					],
+					"id": "bca4b84f-330a-46f6-acdc-b530cd9f82b0",
+					"action": 0,
+					"nextStepId": "nodeC"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Quero adquirir"
+					],
+					"id": "56adfa0e-5ee2-4bed-b49f-9c6bd8ce85b4",
+					"action": 0,
+					"nextStepId": "aeee7b64-b60c-4aa9-a271-e7a99c046532"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Encerrar atendimento"
+					],
+					"id": "79dd792a-4d42-44d4-8658-f1b958505395",
+					"action": 3,
+					"closeTicket": "Certo seu atendimento está sendo encerrado. Se tiver mais alguma duvida estamos aqui.",
+					"nextStepId": null,
+					"userIdDestination": null,
+					"queueId": null
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "* Permitido apenas na **licença Premium**\n* É possível:\n\n\n  * Trocar ícones, imagens e nome no painel\n  * **Retirar referências ao nome Whazing** no sistema"
+					},
+					"id": "6e856806-e5d5-4c86-a99c-82e886d2cd6a"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "5"
+					},
+					"id": "c11d2a87-87ba-4f1e-905c-b88fcc09164b"
+				},
+				{
+					"type": "LinkButtonsField",
+					"data": {
+						"header": "Acessar teste",
+						"body": "",
+						"footer": "Você pode acessar nosso teste com dados: Login: `admin@admin.com` Senha: `123456`",
+						"display_text": "Acessar teste",
+						"url": "https://teste.whazing.com.br/"
+					},
+					"id": "3186062f-caec-465d-85ef-cacad0183caf"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "5"
+					},
+					"id": "89f45db2-f275-460c-883c-860550a3304f"
+				},
+				{
+					"type": "ButtonsField",
+					"data": {
+						"text": "Agora o que você prescisa?",
+						"buttons": [
+							{
+								"id": 1,
+								"title": "Tenho ainda duvidas"
+							},
+							{
+								"id": 2,
+								"title": "Quero adquirir"
+							},
+							{
+								"id": 3,
+								"title": "Encerrar atendimento"
+							}
+						]
+					},
+					"id": "39ef7eeb-92db-4148-8ae4-b3cb4a9f27f2"
+				}
+			]
+		},
+		{
+			"id": "34832df1-d4d5-4444-b6e6-e7c6bab1fffe",
+			"name": "Falar com atendente",
+			"type": "node",
+			"left": "490px",
+			"top": "1610px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "R",
+					"condition": [
+						"Sim"
+					],
+					"id": "caabe489-7b31-4dce-b80a-bf325fd3a6d9",
+					"action": 0,
+					"queueId": null,
+					"nextStepId": "nodeC",
+					"userIdDestination": null,
+					"closeTicket": null
+				},
+				{
+					"type": "R",
+					"condition": [
+						"Não"
+					],
+					"id": "16439c78-e7d4-46b8-8a83-1e7dceada64f",
+					"action": 1,
+					"queueId": 1,
+					"nextStepId": null,
+					"userIdDestination": null,
+					"closeTicket": null,
+					"queueMessage": "Por favor fale resumidamente sua duvida para melhor esclarecimento?"
+				}
+			],
+			"interactions": [
+				{
+					"type": "ButtonsField",
+					"data": {
+						"text": "A duvida que tenho está no menu inicial?",
+						"buttons": [
+							{
+								"id": 1,
+								"title": "Sim"
+							},
+							{
+								"id": 2,
+								"title": "Não"
+							}
+						]
+					},
+					"id": "08573d2e-43ec-4882-bd92-9113f2c421f5"
+				}
+			]
+		}
+	],
+	"lineList": [
+		{
+			"from": "start",
+			"to": "nodeC",
+			"paintStyle": {
+				"strokeWidth": 3,
+				"stroke": "#5c67f2"
+			}
+		},
+		{
+			"from": "nodeC",
+			"to": "02fdf587-5dd3-414a-88a1-c275d6a7a780",
+			"label": null
+		},
+		{
+			"from": "02fdf587-5dd3-414a-88a1-c275d6a7a780",
+			"to": "nodeC",
+			"label": null
+		},
+		{
+			"from": "02fdf587-5dd3-414a-88a1-c275d6a7a780",
+			"to": "aeee7b64-b60c-4aa9-a271-e7a99c046532",
+			"label": null
+		},
+		{
+			"from": "aeee7b64-b60c-4aa9-a271-e7a99c046532",
+			"to": "c4542c3f-63c3-46a3-a724-abd4fd42d830",
+			"label": null
+		},
+		{
+			"from": "c4542c3f-63c3-46a3-a724-abd4fd42d830",
+			"to": "85ba7093-329a-4dee-b4a8-0d470fa1796f",
+			"label": null
+		},
+		{
+			"from": "c4542c3f-63c3-46a3-a724-abd4fd42d830",
+			"to": "835c28c7-d414-43f2-ab6c-7cf60b3aa929",
+			"label": null
+		},
+		{
+			"from": "835c28c7-d414-43f2-ab6c-7cf60b3aa929",
+			"to": "85ba7093-329a-4dee-b4a8-0d470fa1796f",
+			"label": null
+		},
+		{
+			"from": "85ba7093-329a-4dee-b4a8-0d470fa1796f",
+			"to": "daa46498-dfe3-42e6-9287-8d31d7f9fc2f",
+			"label": null
+		},
+		{
+			"from": "85ba7093-329a-4dee-b4a8-0d470fa1796f",
+			"to": "17262f63-b91c-4ef8-ad6e-be7155609877",
+			"label": null
+		},
+		{
+			"from": "nodeC",
+			"to": "0b9d742f-6506-4d22-82b8-be02bc0e096f",
+			"label": null
+		},
+		{
+			"from": "0b9d742f-6506-4d22-82b8-be02bc0e096f",
+			"to": "nodeC",
+			"label": null
+		},
+		{
+			"from": "0b9d742f-6506-4d22-82b8-be02bc0e096f",
+			"to": "aeee7b64-b60c-4aa9-a271-e7a99c046532",
+			"label": null
+		},
+		{
+			"from": "nodeC",
+			"to": "dc1a1c5e-3b0d-4562-8d73-05cfdb2d3df3",
+			"label": null
+		},
+		{
+			"from": "dc1a1c5e-3b0d-4562-8d73-05cfdb2d3df3",
+			"to": "aeee7b64-b60c-4aa9-a271-e7a99c046532",
+			"label": null
+		},
+		{
+			"from": "0b9d742f-6506-4d22-82b8-be02bc0e096f",
+			"to": "nodeC",
+			"label": null
+		},
+		{
+			"from": "dc1a1c5e-3b0d-4562-8d73-05cfdb2d3df3",
+			"to": "nodeC",
+			"label": null
+		},
+		{
+			"from": "nodeC",
+			"to": "ecf41a4e-88b4-4041-82ba-df5d8b1b57e7",
+			"label": null
+		},
+		{
+			"from": "ecf41a4e-88b4-4041-82ba-df5d8b1b57e7",
+			"to": "aeee7b64-b60c-4aa9-a271-e7a99c046532",
+			"label": null
+		},
+		{
+			"from": "ecf41a4e-88b4-4041-82ba-df5d8b1b57e7",
+			"to": "nodeC",
+			"label": null
+		},
+		{
+			"from": "nodeC",
+			"to": "25478028-04a3-4741-886a-714723ba95c8",
+			"label": null
+		},
+		{
+			"from": "25478028-04a3-4741-886a-714723ba95c8",
+			"to": "nodeC",
+			"label": null
+		},
+		{
+			"from": "25478028-04a3-4741-886a-714723ba95c8",
+			"to": "aeee7b64-b60c-4aa9-a271-e7a99c046532",
+			"label": null
+		},
+		{
+			"from": "nodeC",
+			"to": "3cfaab6d-7864-44c8-a800-eea3734f0aa8",
+			"label": null
+		},
+		{
+			"from": "3cfaab6d-7864-44c8-a800-eea3734f0aa8",
+			"to": "nodeC",
+			"label": null
+		},
+		{
+			"from": "3cfaab6d-7864-44c8-a800-eea3734f0aa8",
+			"to": "aeee7b64-b60c-4aa9-a271-e7a99c046532",
+			"label": null
+		},
+		{
+			"from": "nodeC",
+			"to": "a23d12a0-01e3-4f11-a736-7d301e8010d3",
+			"label": null
+		},
+		{
+			"from": "a23d12a0-01e3-4f11-a736-7d301e8010d3",
+			"to": "nodeC",
+			"label": null
+		},
+		{
+			"from": "a23d12a0-01e3-4f11-a736-7d301e8010d3",
+			"to": "aeee7b64-b60c-4aa9-a271-e7a99c046532",
+			"label": null
+		},
+		{
+			"from": "nodeC",
+			"to": "df768da4-3387-46c6-a22c-3ce77dfcff33",
+			"label": null
+		},
+		{
+			"from": "df768da4-3387-46c6-a22c-3ce77dfcff33",
+			"to": "nodeC",
+			"label": null
+		},
+		{
+			"from": "df768da4-3387-46c6-a22c-3ce77dfcff33",
+			"to": "aeee7b64-b60c-4aa9-a271-e7a99c046532",
+			"label": null
+		},
+		{
+			"from": "nodeC",
+			"to": "68152624-7f88-4fd9-9119-f49c36e33717",
+			"label": null
+		},
+		{
+			"from": "68152624-7f88-4fd9-9119-f49c36e33717",
+			"to": "nodeC",
+			"label": null
+		},
+		{
+			"from": "68152624-7f88-4fd9-9119-f49c36e33717",
+			"to": "aeee7b64-b60c-4aa9-a271-e7a99c046532",
+			"label": null
+		},
+		{
+			"from": "nodeC",
+			"to": "34832df1-d4d5-4444-b6e6-e7c6bab1fffe",
+			"label": null
+		},
+		{
+			"from": "34832df1-d4d5-4444-b6e6-e7c6bab1fffe",
+			"to": "nodeC",
+			"label": null
+		}
+	],
+	"action": 0,
+	"userId": 1,
+	"celularTeste": null,
+	"isActive": true,
+	"AcceptTransfer": true,
+	"AcceptKanban": true,
+	"id": null
+}
