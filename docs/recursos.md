@@ -13,7 +13,7 @@
 - **Mensagens Rápidas com Anexos**: Envie mensagens rápidas com documentos, vídeos e outros arquivos.
 - **Importação de Mensagens do Celular**: Importe mensagens diretamente do seu celular.
 - **Importação de Contatos**: Importe seus contatos facilmente.
-- **Montagem de Bot estilo ChatFlow**: Crie bots com recursos como delay, envio de áudios, arquivos, webhooks, figurinhas, localização, botão(api oficial), lista(api oficial) entre outros.
+- **Montagem de Bot estilo ChatFlow**: Crie bots com recursos como delay, envio de áudios, arquivos, webhooks, figurinhas, localização, botão(api oficial), lista(api oficial e api plus) entre outros.
 - **Envio de Mensagens Automáticas**: Aceite ou transfira tickets automaticamente.
 - **Sistema de Simulação de Digitação e Gravação**: Reduza a chance de bloqueios no WhatsApp.
 - **Mensagem de Despedida Personalizável**: Personalize a mensagem de despedida por usuário.
@@ -22,6 +22,7 @@
 - **Horario de atendimento**: Horario de atendimento personalizavel, por empresa, canal ou fila e pesonalização de feriados.
 - **Multi-idioma**: Português, inglês e espanhol
 - **Suporte Whatsapp API Oficial**: Gerencie mensagens dessas plataformas via HUB (necessário pagar mensalidade por canal).
+- **Suporte lista e botões**: Api não oficial plus com suporte a lista e botões
 
 ### Funções Exclusivas da Versão Premium
 - **Tarefas**: Gerencie tarefas e atividades.
