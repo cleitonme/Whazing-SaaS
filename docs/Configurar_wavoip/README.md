@@ -44,3 +44,5 @@ whazing
 ---------
 
 ### Necessário liberar o canal pro usuario no cadastro usuarios
+
+     ![liberar](liberar.png)
