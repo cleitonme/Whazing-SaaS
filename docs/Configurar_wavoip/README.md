@@ -32,17 +32,16 @@
 
 ![Canal](wavoip.png)
 
----
-
-### Dica Especial  
-- Aproveite o cupom de desconto **60% desconto** ao utilizar o código abaixo:
-
-```bash
-whazing
-```
-
 ---------
 
 ### Necessário liberar o canal pro usuario no cadastro usuarios
 
 ![liberar](liberar.png)
+
+### Dica Especial  
+
+- Aproveite o cupom de desconto **60% desconto** ao utilizar o código abaixo:
+
+```bash
+whazing
+```
