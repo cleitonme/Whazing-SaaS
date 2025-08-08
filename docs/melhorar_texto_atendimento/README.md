@@ -13,3 +13,6 @@ Corrija o texto a seguir em português brasileiro, mantendo o conteúdo original
 Apos configurado aparece tela atendimento aparece o botão acima, e abaixo resultado após melhoria
 
 ![print](resultado.png)
+
+Obter key ChatGPT:
+https://platform.openai.com/settings/organization/api-keys

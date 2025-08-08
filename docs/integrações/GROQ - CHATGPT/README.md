@@ -27,3 +27,7 @@ Resumo: a IA só responde uma vez a cada intervalo definido, mesmo que o cliente
 - **API Key ElevenLabs**: Necessária se o formato da resposta for diferente de texto.
 - **Formato da resposta da IA**: Selecione voz da ElevenLabs deseja usar tem que preencher api key acima antes
 - **Modelos ElevenLabs**: Selecione modelo de voz para usar
+
+
+Obter key ChatGPT:
+https://platform.openai.com/settings/organization/api-keys
