@@ -70,3 +70,6 @@
 * [Termos de Uso da Plataforma](termos-de-uso-da-plataforma.md)
 * [Como instalar e atualizar](como-instalar-e-atualizar.md)
 * [Canais Suportados](canais-suportados.md)
+* [Demonstração](demonstracao.md)
+* [Whitelabel](whitelabel.md)
+* [Principais Recursos do Sistema](principais-recursos-do-sistema.md)
