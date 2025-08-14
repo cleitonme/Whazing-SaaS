@@ -1,7 +1,7 @@
 # Table of contents
 
 * [Whazing SaaS](README.md)
-* [docs](docs/README.md)
+* [Documentação](docs/README.md)
   * [Como Atualizar o Whazing](<docs/Atualizar Whazing.md>)
   * [ChangeLog](docs/ChangeLog.md)
   * [Como Criar a Opção de Ajuda](docs/CriarAjuda.md)
