@@ -73,3 +73,4 @@
 * [Demonstração](demonstracao.md)
 * [Whitelabel](whitelabel.md)
 * [Principais Recursos do Sistema](principais-recursos-do-sistema.md)
+* [Tabela de Valores](tabela-de-valores.md)
