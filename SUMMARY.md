@@ -65,7 +65,3 @@
   * [❗ Erro no sistema: \[ioredis\] Unhandled error event: Error: connect ECONNREFUSED](docs/reinstalar_redis/README.md)
   * [Guia de Conexão do TELEGRAM](docs/telegram/README.md)
   * [Dedifir tempo login expira manualmente](docs/validade_autenticacao/README.md)
-* [.github](.github/README.md)
-  * [ISSUE\_TEMPLATE](.github/issue_template/README.md)
-    * [relatório-de-bug](.github/ISSUE_TEMPLATE/relatório-de-bug.md)
-    * [solicitação-de-recurso](.github/ISSUE_TEMPLATE/solicitação-de-recurso.md)
