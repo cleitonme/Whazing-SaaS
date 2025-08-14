@@ -66,3 +66,4 @@
   * [Guia de Conexão do TELEGRAM](docs/telegram/README.md)
   * [Dedifir tempo login expira manualmente](docs/validade_autenticacao/README.md)
 * [Changelog e Atualizações](changelog.md)
+* [Contrato de Licença de Uso de Software](contrato-de-licenca-de-uso-de-software.md)
