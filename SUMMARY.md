@@ -67,3 +67,4 @@
   * [Dedifir tempo login expira manualmente](docs/validade_autenticacao/README.md)
 * [Changelog e Atualizações](changelog.md)
 * [Contrato de Licença de Uso de Software](contrato-de-licenca-de-uso-de-software.md)
+* [Termos de Uso da Plataforma](termos-de-uso-da-plataforma.md)
