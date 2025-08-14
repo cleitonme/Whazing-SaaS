@@ -4,30 +4,18 @@ Um sistema para gestão de atendimento multicanais centralizado.
 
 [![Grupo do WhatsApp](https://img.shields.io/badge/WhatsApp-Grupo%20Whazing-brightgreen.svg)](https://grupo.whazing.com.br)
 
-Alguns recursos
+## Demo do produto
 
-* Painel SaaS
-* Chat Interno
-* Solicitar teste na pagina de login, e função esqueci a senha
-* Planos
-* Menu Ajuda
-* Integração bancaria(mercado pago, assas, EFI, Stripe) recebimento PIX, cartão e boleto verificar docs
-* Integração WebHook/N8N - TypeBot - Groq - ChatGPT (função exclusiva versão premium)
-* Suporte facebook e instagram e WebChat via hub (função exclusiva versão premium)
-* KANBAN (função exclusiva versão premium)
-* Api não oficial envia lista e botões
-* [Mais informações de recursos](docs/recursos.md)
+* [https://teste.whazing.com.br/](https://teste.whazing.com.br/)
+* usuario: admin@admin.com
+* senha: 123456
 
-Dados de Acesso
-
-admin@admin.com 123456
-
-Caso apresente algum bug abra um Issues com maximo de detalhes possiveis
+* [Resumo Recursos](https://doc.whazing.com.br/principais-recursos-do-sistema)
 
 **IMPORTANTE**:
 
-* [Termos de USO](docs/TermosdeUso.md)
-* [Contrato de Licença](docs/contratodelicenca.md)
+* [Termos de USO](https://doc.whazing.com.br/termos-de-uso-da-plataforma)
+* [Contrato de Licença](https://doc.whazing.com.br/contrato-de-licenca-de-uso-de-software)
 
 ## Screenshots
 
@@ -43,46 +31,23 @@ Caso apresente algum bug abra um Issues com maximo de detalhes possiveis
 
 > <img src="screenshots/dashboard.png" alt="print" data-size="original">
 
-## Demo do produto
+## Instalando
 
-* [https://teste.whazing.com.br/](https://teste.whazing.com.br/)
-* usuario: admin@admin.com
-* senha: 123456
+Seguem links sugerimos:
 
-## Licenças
-
-Versão grátis\*
-
-* Limites da versão grátis
-* 10 usuários
-* 2 canais
-* Suporte WhatsApp Api Bayles
-* Suporte facebook e Instagram e WebChat - VIA HUB - Necessario pagar mensalidade por canal duvidas (48) 9941-6725
-* Suporte Telegram
-* Verificar premium abaixo para saber diferenças
-* Suporte Wavoip
-
-Versão Premium\*
-
-* Whitelabel
-* Não possui limites
-* Kanban
-* Integração WebHook/N8N - TypeBot - Groq - ChatGPT - DeepSeek
-* Transcrição de audio
-* Tarefas
-* Avaliação de atendimento
-* Geração PDF atendimento
-* Relatorio de tickets
-* Anotações em tickets
-* Mensagens separadas por filas
-* Transferir atendimento para ChatBot
-* Retirada mensagem "Enviado via Whazing" no modulo campanhas
-* [Tabela de Valores versão premium e serviço de instalação](docs/TabeladeValores.md)
+* [Como Instalar Manualmente o Whazing VPS UBUNTU 22](docs/Instalacao_manual_docker/)
+*   [Instalador automatico](https://github.com/cleitonme/Whazing-SaaS.instalador)
 
 ## Como instalar
 
 * [Demonstração basica e Instalação](https://www.youtube.com/watch?v=RMztcAwRjxQ)
 * [Instalação](https://youtu.be/3vsXNyGxo58?si=sjnyqHtKgyfSJX7_)
+
+Dados de Acesso
+
+admin@admin.com 123456
+
+* [Documentação oficial](https://doc.whazing.com.br)
 
 ## Manual feito por um cliente da prataforma
 
@@ -92,16 +57,6 @@ Versão Premium\*
 
 * [Videos](https://www.youtube.com/@ZAPPRO-z4i/videos)
 * [Videos](https://www.youtube.com/watch?v=HFFFKtz7IgM)
-
-## Instalando
-
-Seguem links sugerimos:
-
-* [Como Instalar Manualmente o Whazing VPS UBUNTU 22](docs/Instalacao_manual_docker/)
-*   [Instalador automatico](https://github.com/cleitonme/Whazing-SaaS.instalador)
-
-    \
-
 
 ## Recomendação de VPS boa e barata
 
