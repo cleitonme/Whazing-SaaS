@@ -73,10 +73,6 @@ WHAZING
 whazing
 ```
 
-#### Curtiu? Apoie o projeto!! Com sua doação, será possível continuar com as atualizações. Segue QR code (PIX)
-
-[![](donate.jpg)](donate.jpg)
-
 ## Adquirir Versão Premium
 
 Para adquirir a versao premium 48 999416725
