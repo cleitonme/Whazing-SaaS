@@ -58,7 +58,7 @@
       * [Modelo webhook integrações](<docs/integrações/Webhook e N8N/Modelo webhook integrações.md>)
   * [Integração de IA para melhorar e sugerir mensagens no atendimento](docs/melhorar_texto_atendimento/README.md)
   * [mensagem boas vindas teste](<docs/mensagem boas vindas teste/README.md>)
-  * [meu\_sistema\_nao\_abre](docs/meu_sistema_nao_abre/README.md)
+  * [Meu sistema não abre](docs/meu_sistema_nao_abre/README.md)
   * [Modulo para notificação PerfexCRM](docs/perfexcrm/README.md)
   * [Para garantir melhor segurança e desempenho, vamos configurar o Whazing para rodar pelo Cloudflare](docs/protegendo_com_tunel_cloudflare/README.md)
   * [Como Configurar Proxy para Conexões do WhatsApp](docs/proxytodascontas_whatsapp/README.md)
@@ -69,3 +69,4 @@
 * [Contrato de Licença de Uso de Software](contrato-de-licenca-de-uso-de-software.md)
 * [Termos de Uso da Plataforma](termos-de-uso-da-plataforma.md)
 * [Como instalar e atualizar](como-instalar-e-atualizar.md)
+* [Canais Suportados](canais-suportados.md)
