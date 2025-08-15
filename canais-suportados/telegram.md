@@ -7,7 +7,7 @@
     * No campo de pesquisa, digite `@BotFather` e acesse esse bot oficial.
     * Bots oficiais do Telegram possuem um visto azul ao lado de seu nome.
 
-    ![print](BotFather.png)
+    ![print](../docs/telegram/BotFather.png)
 3. **Ative o BotFather**
    * Clique no botão **Iniciar** para ativar o chatbot BotFather.
    * Você receberá uma lista de comandos disponíveis para gerenciar bots.
@@ -26,7 +26,7 @@
     * Para conectar seu bot à Whazing, copie o valor do token fornecido.
     * Use esse token para cadastrar o canal na Whazing.
 
-    ![print](token.png)\
-    ![print](whazing.png)
+    ![print](../docs/telegram/token.png)\
+    ![print](../docs/telegram/whazing.png)
 
 OBS. **As mensagens devem ser enviadas para o bot que você criou, para aparecer no whazing**

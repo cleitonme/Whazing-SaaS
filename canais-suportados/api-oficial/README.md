@@ -29,14 +29,14 @@ A API oficial está disponível tanto na **versão gratuita** quanto para **clie
 ### ✅ Whazing tem suporte às mensagens especiais da API OFICIAL
 
 * **Botões (até 3)**\
-  ![print](<../../API OFICIAL/botao.png>)
+  ![print](<../../docs/API OFICIAL/botao.png>)
 * **Lista**\
-  ![print](<../../API OFICIAL/lista.png>)\
-  ![print](<../../API OFICIAL/lista2.png>)
+  ![print](<../../docs/API OFICIAL/lista.png>)\
+  ![print](<../../docs/API OFICIAL/lista2.png>)
 * **Links com informações**\
-  ![print](<../../API OFICIAL/links.png>)
+  ![print](<../../docs/API OFICIAL/links.png>)
 * **Solicitar localização**\
-  ![print](<../../API OFICIAL/solicitarlocalizacao.png>)
+  ![print](<../../docs/API OFICIAL/solicitarlocalizacao.png>)
 
 ***
 
@@ -50,9 +50,9 @@ A API oficial está disponível tanto na **versão gratuita** quanto para **clie
 * **Via API**:
   * Envio de botões deve ser feito dentro da **janela de 24 horas** da Meta.
   * Postman com exemplos será disponibilizado.\
-    ➤ [Download do POSTMAN API](../../API%20OFICIAL/postman.json)
+    ➤ [Download do POSTMAN API](../../docs/API%20OFICIAL/postman.json)
 * Modelo Typebot com botão e envio via HTTP request:\
-  ➤ [Typebot modelo com botão](../../API%20OFICIAL/typebotusobotao.json)
+  ➤ [Typebot modelo com botão](../../docs/API%20OFICIAL/typebotusobotao.json)
 
 ***
 
@@ -62,13 +62,13 @@ A API oficial está disponível tanto na **versão gratuita** quanto para **clie
 2. Imagens PNG com fundo transparente podem apresentar **alterações**, pois o WhatsApp converte para JPEG.
 3. Mensagens fora do modelo só são entregues **dentro da janela de 24 horas** desde a última mensagem do cliente.
 
-![print](<../../API OFICIAL/limites.png>)
+![print](<../../docs/API OFICIAL/limites.png>)
 
 ***
 
 ## ❌ Por que minha mensagem enviada tem um “X” vermelho?
 
-![print](<../../API OFICIAL/mensagemrejeitada.png>)
+![print](<../../docs/API OFICIAL/mensagemrejeitada.png>)
 
 * Isso ocorre quando:
   * A mensagem é enviada **fora da janela de 24 horas**, ou
