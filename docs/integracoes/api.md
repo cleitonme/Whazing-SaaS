@@ -1,30 +1,31 @@
-# Manual de Uso da API Whazing
+# API Whazing
 
-![print](whazing.png)
+![print](../api/whazing.png)
 
-- Faça o [download do arquivo modelo](apiizing.json)
+* Faça o [download do arquivo modelo](../api/apiizing.json)
 
 ALGUNS ENDPOINTS NOVOS PODEM NÃO ESTAR NA DOCUMENTAÇÃO SEMPRE BAIXE MODELO POSTMAN
 
 ## Índice
-1. [Introdução](#introdução)
-2. [Autenticação](#autenticação)
-3. [Endpoints](#endpoints)
-   - [Mensagens](#mensagens)
-   - [Contatos](#contatos)
-   - [Tickets](#tickets)
-   - [Mensagens Interativas](#mensagens-interativas)
-   - [Templates](#templates)
-   - [Outros Endpoints](#outros-endpoints)
-   - [API PLUS (Novos Endpoints)](#api-plus-novos-endpoints)
-4. [Exemplos de Código](#exemplos-de-código)
+
+1. [Introdução](api.md#introdução)
+2. [Autenticação](api.md#autenticação)
+3. [Endpoints](api.md#endpoints)
+   * [Mensagens](api.md#mensagens)
+   * [Contatos](api.md#contatos)
+   * [Tickets](api.md#tickets)
+   * [Mensagens Interativas](api.md#mensagens-interativas)
+   * [Templates](api.md#templates)
+   * [Outros Endpoints](api.md#outros-endpoints)
+   * [API PLUS (Novos Endpoints)](api.md#api-plus-novos-endpoints)
+4. [Exemplos de Código](api.md#exemplos-de-código)
 
 ## Introdução
 
 A API do Whazing permite a integração com o WhatsApp Business API para envio e gerenciamento de mensagens, contatos e tickets.
 
-- **Base URL**: `https://testeapi.whazing.com.br/v1/api/external/[SEU-ID]`
-- **ExternalKey**: Identificador único para cada mensagem (pode ser qualquer valor e aparece no webhook na apiConfig)
+* **Base URL**: `https://testeapi.whazing.com.br/v1/api/external/[SEU-ID]`
+* **ExternalKey**: Identificador único para cada mensagem (pode ser qualquer valor e aparece no webhook na apiConfig)
 
 ## Autenticação
 
@@ -39,9 +40,10 @@ Authorization: Bearer seu-token-aqui
 ### Mensagens
 
 #### 1. Enviar Mensagem de Texto
-- **Método**: POST
-- **Endpoint**: `/`
-- **Content-Type**: application/json
+
+* **Método**: POST
+* **Endpoint**: `/`
+* **Content-Type**: application/json
 
 ```json
 {
@@ -52,9 +54,10 @@ Authorization: Bearer seu-token-aqui
 ```
 
 #### 2. Enviar Arquivo
-- **Método**: POST
-- **Endpoint**: `/`
-- **Content-Type**: multipart/form-data
+
+* **Método**: POST
+* **Endpoint**: `/`
+* **Content-Type**: multipart/form-data
 
 ```json
 {
@@ -66,9 +69,10 @@ Authorization: Bearer seu-token-aqui
 ```
 
 #### 3. Enviar Sticker
-- **Método**: POST
-- **Endpoint**: `/`
-- **Content-Type**: multipart/form-data
+
+* **Método**: POST
+* **Endpoint**: `/`
+* **Content-Type**: multipart/form-data
 
 ```json
 {
@@ -81,8 +85,9 @@ Authorization: Bearer seu-token-aqui
 ```
 
 #### 4. Enviar Localização
-- **Método**: POST
-- **Endpoint**: `/location`
+
+* **Método**: POST
+* **Endpoint**: `/location`
 
 ```json
 {
@@ -98,8 +103,9 @@ Authorization: Bearer seu-token-aqui
 ```
 
 #### 5. Enviar Mensagem via Parâmetros
-- **Método**: GET
-- **Endpoint**: `/params`
+
+* **Método**: GET
+* **Endpoint**: `/params`
 
 ```
 /params/?body=Mensagem&number=5511999999999&externalKey=ID_UNICO&bearertoken=seu-token
@@ -108,8 +114,9 @@ Authorization: Bearer seu-token-aqui
 ### Contatos
 
 #### 1. Criar Contato
-- **Método**: POST
-- **Endpoint**: `/createcontact`
+
+* **Método**: POST
+* **Endpoint**: `/createcontact`
 
 ```json
 {
@@ -134,10 +141,12 @@ Authorization: Bearer seu-token-aqui
 ```
 
 #### 2. Buscar Contato
-- **Método**: POST
-- **Endpoint**: `/contact`
+
+* **Método**: POST
+* **Endpoint**: `/contact`
 
 Por número:
+
 ```json
 {
   "number": "5511999999999"
@@ -145,6 +154,7 @@ Por número:
 ```
 
 Por ID:
+
 ```json
 {
   "contactId": 123
@@ -152,10 +162,12 @@ Por ID:
 ```
 
 #### 3. Atualizar CRM do Contato
-- **Método**: POST
-- **Endpoint**: `/updatecrm`
+
+* **Método**: POST
+* **Endpoint**: `/updatecrm`
 
 Por número:
+
 ```json
 {
   "number": "5511999999999",
@@ -164,6 +176,7 @@ Por número:
 ```
 
 Por contactId:
+
 ```json
 {
   "contactId": 3397,
@@ -172,6 +185,7 @@ Por contactId:
 ```
 
 Por ticketId:
+
 ```json
 {
   "ticketId": 2881,
@@ -182,10 +196,12 @@ Por ticketId:
 Para retirar contato do crm use valor 0
 
 #### 4. Atualizar Tags do Contato
-- **Método**: POST
-- **Endpoint**: `/updatetag`
+
+* **Método**: POST
+* **Endpoint**: `/updatetag`
 
 Por número:
+
 ```json
 {
   "number": "5511999999999",
@@ -194,6 +210,7 @@ Por número:
 ```
 
 Por contactId:
+
 ```json
 {
   "contactId": 3649,
@@ -202,6 +219,7 @@ Por contactId:
 ```
 
 Por ticketId:
+
 ```json
 {
   "ticketId": 3183,
@@ -209,11 +227,12 @@ Por ticketId:
 }
 ```
 
-Caso usar [] vai retirar tags. Esse valor altera para tags que você colocar no endpoint tags anteriores são removidas.
+Caso usar \[] vai retirar tags. Esse valor altera para tags que você colocar no endpoint tags anteriores são removidas.
 
 #### 5. Editar Contato
-- **Método**: POST
-- **Endpoint**: `/updatecontact`
+
+* **Método**: POST
+* **Endpoint**: `/updatecontact`
 
 Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar contato a ser alterado
 
@@ -242,8 +261,9 @@ Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar c
 ### Tickets
 
 #### 1. Criar Ticket
-- **Método**: POST
-- **Endpoint**: `/createticket`
+
+* **Método**: POST
+* **Endpoint**: `/createticket`
 
 ```json
 {
@@ -255,8 +275,9 @@ Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar c
 ```
 
 #### 2. Consulta ultimo Ticket atribuido ao canal
-- **Método**: POST
-- **Endpoint**: `/showticket`
+
+* **Método**: POST
+* **Endpoint**: `/showticket`
 
 ```json
 {
@@ -265,8 +286,9 @@ Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar c
 ```
 
 #### 3. Consultar Ticket ChatBot
-- **Método**: POST
-- **Endpoint**: `/showticketchatbot`
+
+* **Método**: POST
+* **Endpoint**: `/showticketchatbot`
 
 ```json
 {
@@ -275,8 +297,9 @@ Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar c
 ```
 
 #### 4. Consultar Todos os Tickets atribuidos ao canal
-- **Método**: POST
-- **Endpoint**: `/showallticket`
+
+* **Método**: POST
+* **Endpoint**: `/showallticket`
 
 ```json
 {
@@ -285,8 +308,9 @@ Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar c
 ```
 
 #### 5. Atualizar Ticket
-- **Método**: POST
-- **Endpoint**: `/updateticketinfo`
+
+* **Método**: POST
+* **Endpoint**: `/updateticketinfo`
 
 ```json
 {
@@ -298,8 +322,9 @@ Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar c
 ```
 
 #### 6. Atualizar Fila do Ticket
-- **Método**: POST
-- **Endpoint**: `/updatequeue`
+
+* **Método**: POST
+* **Endpoint**: `/updatequeue`
 
 ```json
 {
@@ -309,14 +334,16 @@ Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar c
 ```
 
 #### 7. Listar todas mensagens do ticket
-- **Método**: GET
-- **Endpoint**: `/ticket/{ticketId}`
+
+* **Método**: GET
+* **Endpoint**: `/ticket/{ticketId}`
 
 ### Mensagens Interativas
 
 #### 1. Mensagem com Botões
-- **Método**: POST
-- **Endpoint**: `/apioficial`
+
+* **Método**: POST
+* **Endpoint**: `/apioficial`
 
 ```json
 {
@@ -342,8 +369,9 @@ Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar c
 ```
 
 #### 2. Mensagem com Lista
-- **Método**: POST
-- **Endpoint**: `/apioficial`
+
+* **Método**: POST
+* **Endpoint**: `/apioficial`
 
 ```json
 {
@@ -377,8 +405,9 @@ Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar c
 ```
 
 #### 3. Mensagem com Link (CTA)
-- **Método**: POST
-- **Endpoint**: `/apioficial`
+
+* **Método**: POST
+* **Endpoint**: `/apioficial`
 
 ```json
 {
@@ -407,8 +436,9 @@ Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar c
 ```
 
 #### 4. Solicitar Localização
-- **Método**: POST
-- **Endpoint**: `/apioficial`
+
+* **Método**: POST
+* **Endpoint**: `/apioficial`
 
 ```json
 {
@@ -428,8 +458,9 @@ Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar c
 ### Templates
 
 #### 1. Template Simples
-- **Método**: POST
-- **Endpoint**: `/apioficial`
+
+* **Método**: POST
+* **Endpoint**: `/apioficial`
 
 ```json
 {
@@ -448,8 +479,9 @@ Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar c
 ```
 
 #### 2. Template com Parâmetros
-- **Método**: POST
-- **Endpoint**: `/apioficial`
+
+* **Método**: POST
+* **Endpoint**: `/apioficial`
 
 ```json
 {
@@ -493,8 +525,9 @@ Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar c
 ### Outros Endpoints
 
 #### 1. Validar Número WhatsApp
-- **Método**: POST
-- **Endpoint**: `/valid-whatsapp-number`
+
+* **Método**: POST
+* **Endpoint**: `/valid-whatsapp-number`
 
 ```json
 {
@@ -503,12 +536,14 @@ Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar c
 ```
 
 #### 2. Status do Canal
-- **Método**: GET
-- **Endpoint**: `/statuschannel`
+
+* **Método**: GET
+* **Endpoint**: `/statuschannel`
 
 #### 3. QR Code
-- **Método**: POST
-- **Endpoint**: `/qrcode`
+
+* **Método**: POST
+* **Endpoint**: `/qrcode`
 
 ```json
 {
@@ -517,23 +552,26 @@ Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar c
 ```
 
 #### 4. Listar Contatos por Filtro
-- **Método**: GET
-- **Por Tag**: `/contacts/tag/{tagId}`
-- **Por CRM**: `/contacts/crm/{crmId}`
-- **Por Carteira**: `/contacts/wallet/{walletId}`
 
----
+* **Método**: GET
+* **Por Tag**: `/contacts/tag/{tagId}`
+* **Por CRM**: `/contacts/crm/{crmId}`
+* **Por Carteira**: `/contacts/wallet/{walletId}`
+
+***
 
 ## API PLUS (Novos Endpoints)
 
-> **Todos os endpoints abaixo utilizam:**  
-> - **Método**: POST  
-> - **Endpoint**: `/apiplus`  
-> - **Header**:  
->   `Authorization: Bearer {{token}}`  
->   `Content-Type: application/json`  
+> **Todos os endpoints abaixo utilizam:**
+>
+> * **Método**: POST
+> * **Endpoint**: `/apiplus`
+> * **Header**:\
+>   `Authorization: Bearer {{token}}`\
+>   `Content-Type: application/json`
 
 ### 1. Mensagem com Botões (Novo)
+
 ```json
 {
     "number": "{{number}}",
@@ -572,6 +610,7 @@ Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar c
 ```
 
 ### 2. Mensagem com Lista (Novo)
+
 ```json
 {
   "number": "{{number}}",
@@ -624,6 +663,7 @@ Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar c
 ```
 
 ### 3. Mensagem com Link (CTA) (Novo)
+
 ```json
 {
     "number": "{{number}}",
@@ -651,6 +691,7 @@ Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar c
 ```
 
 ### 4. Solicitar Localização (Novo)
+
 ```json
 {
     "number": "{{number}}",
@@ -667,6 +708,7 @@ Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar c
 ```
 
 ### 5. Botão Dinâmico (Novo)
+
 ```json
 {
     "number": "{{number}}",
@@ -703,11 +745,12 @@ Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar c
 }
 ```
 
----
+***
 
 ## Exemplos de Código
 
 ### Python
+
 ```python
 import requests
 import json
@@ -746,6 +789,7 @@ class WhazingAPI:
 ```
 
 ### Node.js
+
 ```javascript
 const axios = require('axios');
 const FormData = require('form-data');
@@ -806,6 +850,7 @@ class WhazingAPI {
 ```
 
 ### PHP
+
 ```php
 <?php
 

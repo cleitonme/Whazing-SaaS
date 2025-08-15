@@ -9,7 +9,6 @@ Um sistema para gestão de atendimento multicanais centralizado.
 * [https://teste.whazing.com.br/](https://teste.whazing.com.br/)
 * usuario: admin@admin.com
 * senha: 123456
-
 * [Resumo Recursos](https://doc.whazing.com.br/principais-recursos-do-sistema)
 
 **IMPORTANTE**:
@@ -35,8 +34,8 @@ Um sistema para gestão de atendimento multicanais centralizado.
 
 Seguem links sugerimos:
 
-* [Como Instalar Manualmente o Whazing VPS UBUNTU 22](docs/Instalacao_manual_docker/)
-*   [Instalador automatico](https://github.com/cleitonme/Whazing-SaaS.instalador)
+* [Como Instalar Manualmente o Whazing VPS UBUNTU 22](docs/configuracoes-vps-e-whazing/instalacao_manual_docker.md)
+* [Instalador automatico](https://github.com/cleitonme/Whazing-SaaS.instalador)
 
 ## Como instalar
 
