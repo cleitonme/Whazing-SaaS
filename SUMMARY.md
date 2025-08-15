@@ -41,7 +41,6 @@
   * [Para garantir melhor segurança e desempenho, vamos configurar o Whazing para rodar pelo Cloudflare](docs/protegendo_com_tunel_cloudflare/README.md)
   * [Como Configurar Proxy para Conexões do WhatsApp](docs/proxytodascontas_whatsapp/README.md)
   * [Dedifir tempo login expira manualmente](docs/validade_autenticacao/README.md)
-  * [Como Atualizar o Whazing](<docs/Atualizar Whazing.md>)
   * [Problemas no Whazing?](docs/problemas-no-whazing/README.md)
     * [❗ Erro no sistema: \[ioredis\] Unhandled error event: Error: connect ECONNREFUSED](docs/problemas-no-whazing/reinstalar_redis.md)
     * [Meu sistema não abre](docs/problemas-no-whazing/meu_sistema_nao_abre.md)
@@ -71,3 +70,4 @@
 * [Whitelabel](whitelabel.md)
 * [Principais Recursos do Sistema](principais-recursos-do-sistema.md)
 * [Tabela de Valores](tabela-de-valores.md)
+* [Como Atualizar o Whazing](atualizar-whazing.md)

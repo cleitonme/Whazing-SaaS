@@ -1,3 +1,7 @@
+---
+description: Para instalações feitas usando instalador automático
+---
+
 # Como Atualizar o Whazing
 
 ## Antes de começar faça um snapshot da VPS
