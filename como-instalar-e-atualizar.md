@@ -2,11 +2,68 @@
 
 Existe 2 modelos de instalação pelo instalador automático disponível no endereço.&#x20;
 
-**Você encontra como instalador automático repositório abaixo:**
+**Opção 1 - Instalador automático**
 
-{% embed url="https://github.com/cleitonme/Whazing-SaaS.instalador" %}
+### RODAR OS COMANDOS ABAIXO PARA INSTALAR
 
-Instalação Manual via Docker:
+Para evitar erros, recomenda-se atualizar o sistema e reiniciar antes da instalação:
+
+```bash
+sudo su root
+```
+
+```bash
+apt install software-properties-common
+```
+
+```bash
+apt -y update && apt -y upgrade
+reboot
+```
+
+Depois reiniciar seguir com a instalação
+
+```bash
+sudo su root
+```
+
+```bash
+apt install git
+```
+
+```bash
+cd /root
+```
+
+```bash
+git clone https://github.com/cleitonme/Whazing-SaaS.instalador.git whazinginstalador
+```
+
+```bash
+sudo chmod +x ./whazinginstalador/whazing
+```
+
+```bash
+cd ./whazinginstalador
+```
+
+### Importante alterar senhas padrão para evitar ataques
+
+Editar dados com seus dados, com nano para salvar aperta Ctrl + x Ou com acesso vps pelo aplicativo que preferir
+
+* Use somente letras e números, não use caracteres especiais
+* Não precisa alterar outros campos caso queria usar mesma senha todos serviços somente alterar primeira linha senha=AKwWM4Qu2GRppJ7
+* Configure timezone se necessário
+
+```bash
+nano config
+```
+
+```bash
+sudo ./whazing
+```
+
+**Opção 2 - Instalação Manual via Docker:**
 
 #### ✅ **Como usar no Ubuntu 22 (instalação limpa)**
 

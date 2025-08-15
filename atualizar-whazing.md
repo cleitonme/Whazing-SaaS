@@ -6,7 +6,7 @@ description: Para instalações feitas usando instalador automático
 
 ## Antes de começar faça um snapshot da VPS
 
-## Tutorial rápido e fácil de como migrar nova versão
+## Tutorial rápido e fácil de como atualizar para nova versão
 
 ### RODAR OS COMANDOS ABAIXO ANTES FAÇA BACKUP DA VPS
 
