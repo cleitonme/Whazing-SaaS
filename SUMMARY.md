@@ -44,7 +44,7 @@
   * [Usuários](docs/usuarios/README.md)
     * [Resumo Básico de Perfis de Usuário](docs/usuarios/perfil_usuario.md)
   * [Contatos](docs/contatos/README.md)
-    * [importarcontatos](docs/contatos/importarcontatos.md)
+    * [Como Importar Contatos Usando um Arquivo CSV no WHAZING](docs/contatos/importarcontatos.md)
   * [Importar mensagens WhatsApp](docs/importar-mensagens-whatsapp/README.md)
     * [SINCRONIZAR MENSAGENS - API PLUS](docs/importar-mensagens-whatsapp/sincronizar_mensagens_api_plus.md)
 * [Changelog e Atualizações](changelog.md)

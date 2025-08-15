@@ -1,4 +1,4 @@
-# importarcontatos
+# Como Importar Contatos Usando um Arquivo CSV no WHAZING
 
 ## 📥 **Como Importar Contatos Usando um Arquivo CSV no WHAZING**
 
@@ -42,8 +42,12 @@ User;5551900000;email@email.com
 
 ## 📌 Observações
 
-* ✅ Arquivos fora do padrão podem causar falhas na importação.
-* ✅ Revise os dados antes de enviar para evitar duplicidade de contatos.
-* ✅ Ideal sempre usar editores que respeitem a formatação CSV com ponto e vírgula.
+✅ Sistema valida contatos somente importa se tiver whatsapp
+
+✅ Arquivos fora do padrão podem causar falhas na importação.
+
+✅ Revise os dados antes de enviar para evitar duplicidade de contatos.
+
+✅ Ideal sempre usar editores que respeitem a formatação CSV com ponto e vírgula.
 
 > 💬 Em caso de dúvidas, consulte nossa documentação oficial ou tire duvidas nosso grupo suporte https://grupo.whazing.com.br.
