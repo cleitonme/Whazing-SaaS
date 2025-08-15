@@ -64,7 +64,7 @@
 * [Changelog e Atualizações](changelog.md)
 * [Contrato de Licença de Uso de Software](contrato-de-licenca-de-uso-de-software.md)
 * [Termos de Uso da Plataforma](termos-de-uso-da-plataforma.md)
-* [Como instalar e atualizar](como-instalar-e-atualizar.md)
+* [Como instalar](como-instalar-e-atualizar.md)
 * [Canais Suportados](canais-suportados.md)
 * [Demonstração](demonstracao.md)
 * [Whitelabel](whitelabel.md)
