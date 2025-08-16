@@ -21,7 +21,7 @@
 
 * Módulo para designar tarefas a usuários da plataforma, incluindo prazos para execução.
 
-#### **Despedida**
+#### [**Despedida**](despedida.md)
 
 * Criação de mensagens pré prontas para enviar ao cliente ao finalizar o atendimento, quando solicitar finalizar ticket vai aparecer essa lista mensagens para ser enviada.
 
@@ -29,11 +29,11 @@
 
 * Agende mensagens para envio automático em datas programadas.
 
-#### **Ajuda**
+#### [**Ajuda**](../../modulo-saas/criarajuda.md)
 
 * Espaço para adicionar manuais de uso da plataforma, em formato de texto ou vídeos.
 
-#### **SaaS**
+#### [**SaaS**](../../modulo-saas/)
 
 * Módulo exclusivo para Super Usuários, permitindo criar acessos, definir planos, configurar a plataforma, personalizar cores e gerenciar formas de pagamento.
 

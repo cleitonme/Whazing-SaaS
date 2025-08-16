@@ -6,6 +6,7 @@
     * [Como Enviar Campanhas no Whazing](docs/modulos/campanha.md)
     * [Como Configurar a Avaliação de Atendimento](docs/modulos/avaliacao.md)
     * [Follow-up](docs/modulos/follow-up.md)
+    * [Despedida](docs/modulos/despedida.md)
   * [Como Liberar Grupos no Whazing](docs/Liberar_grupos_whatsapp/README.md)
   * [Variáveis sistema](<docs/Variáveis sistema/README.md>)
   * [CHAT BOT INTERNO](docs/chatbotinterno/README.md)
