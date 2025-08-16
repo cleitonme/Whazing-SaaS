@@ -9,6 +9,7 @@
   * [Como Liberar Grupos no Whazing](docs/Liberar_grupos_whatsapp/README.md)
   * [Variáveis sistema](<docs/Variáveis sistema/README.md>)
   * [CHAT BOT INTERNO](docs/chatbotinterno/README.md)
+    * [Fluxo por palavra chave](docs/chatbotinterno/fluxo-por-palavra-chave.md)
   * [⚙️ Configurações do WHAZING](docs/configuracoes/README.md)
     * [Integração de IA para melhorar e sugerir mensagens no atendimento](docs/configuracoes/melhorar_texto_atendimento.md)
   * [Integrações](docs/integrações/README.md)
