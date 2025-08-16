@@ -1,80 +1,97 @@
-# **Manual de Backup e Restauração para Banco de Dados PostgreSQL no Docker**  
+# Manual de Backup e Restauração para Banco de Dados PostgreSQL no Docker
 
-Este guia explica como fazer backup e restaurar um banco de dados PostgreSQL rodando em um container Docker. Também abordamos a compactação, transferência para outro servidor (VPS) e agendamento automático de backups.  
+Este guia explica como fazer backup e restaurar um banco de dados PostgreSQL rodando em um container Docker. Também abordamos a compactação, transferência para outro servidor (VPS) e agendamento automático de backups.
 
----
+***
 
-## **1. Identificar o ID do Container do PostgreSQL**  
-Antes de qualquer operação, precisamos do **ID do container** onde o PostgreSQL está rodando. Para listar os containers ativos, use:  
+## **1. Identificar o ID do Container do PostgreSQL**
+
+Antes de qualquer operação, precisamos do **ID do container** onde o PostgreSQL está rodando. Para listar os containers ativos, use:
 
 ```bash
 docker ps
 ```
 
-Anote o **CONTAINER ID** correspondente ao PostgreSQL, pois será necessário nos próximos comandos.  
+Anote o **CONTAINER ID** correspondente ao PostgreSQL, pois será necessário nos próximos comandos.
 
----
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-## **2. Fazer Backup do Banco de Dados**  
+***
 
-### **Comando para gerar o backup**  
-Substitua **iddocker** pelo ID do seu container e **senha** pela senha correta do PostgreSQL.  
+## **2. Fazer Backup do Banco de Dados**
+
+### **Comando para gerar o backup**
+
+Substitua **iddocker** "exemplo acima é 9bd60958203a" pelo ID do seu container e **senha** pela senha correta do PostgreSQL.
 
 ```bash
 docker exec -i iddocker /bin/bash -c "PGPASSWORD=senha pg_dump --username=whazing --dbname=postgres" > dump.sql
 ```
 
-Isso criará um arquivo **dump.sql** contendo o backup do banco de dados.  
+Isso criará um arquivo **dump.sql** contendo o backup do banco de dados.
 
----
+***
 
-## **3. Restaurar o Banco de Dados**  
+## **3. Restaurar o Banco de Dados**
 
-### **Importante:**  
-- A restauração deve ser feita em um **banco de dados vazio**.  
-- Caso precise, crie um novo banco antes de restaurar.  
-- Depois, atualize o arquivo **.env** do backend para apontar para o novo banco e reinicie o sistema.  
+### **Importante:**
 
-### **Comando para restaurar o backup**  
+* A restauração deve ser feita em um **banco de dados vazio**.
+* Caso precise, crie um novo banco antes de restaurar.
+
+### **Comando para criar banco de dados**
 
 ```bash
-docker exec -i iddocker /bin/bash -c "PGPASSWORD=senha psql --username=whazing --dbname=postgres" < dump.sql
+docker exec -i iddocker /bin/bash -c "PGPASSWORD=senha psql --username=whazing --dbname=postgres -c 'CREATE DATABASE novobanco;'"
 ```
 
----
+### **Comando para restaurar o backup**
 
-## **4. Compactar e Descompactar o Backup**  
+```bash
+docker exec -i iddocker /bin/bash -c "PGPASSWORD=senha psql --username=whazing --dbname=novobanco" < dump.sql
+```
 
-### **Compactar o arquivo para economizar espaço**  
+* Depois, atualize o arquivo **.env** do backend para apontar para o novo banco e reinicie o sistema.
+
+***
+
+## **4. Compactar e Descompactar o Backup**
+
+### **Compactar o arquivo para economizar espaço**
+
 ```bash
 gzip dump.sql
 ```
-Isso criará um arquivo **dump.sql.gz**.  
 
-### **Descompactar quando precisar restaurar**  
+Isso criará um arquivo **dump.sql.gz**.
+
+### **Descompactar quando precisar restaurar**
+
 ```bash
 gunzip dump.sql.gz
 ```
-Isso trará o backup de volta para **dump.sql**.  
 
----
+Isso trará o backup de volta para **dump.sql**.
 
-## **5. Transferir o Backup para Outra VPS**  
+***
 
-Se quiser copiar o backup para outro servidor, substitua **deploy@ip** pelo usuário e IP da VPS de destino:  
+## **5. Transferir o Backup para Outra VPS**
+
+Se quiser copiar o backup para outro servidor, substitua **deploy@ip** pelo usuário e IP da VPS de destino:
 
 ```bash
 scp dump.sql.gz deploy@ip:/home/deploy/
 ```
 
----
+***
 
-## **6. Backup de Arquivos da Pasta "Public" e Envio para Outra VPS**  
+## **6. Backup de Arquivos da Pasta "Public" e Envio para Outra VPS**
 
-O script abaixo copia apenas os arquivos **modificados nas últimas 25 horas** e os envia para outra VPS.  
+O script abaixo copia apenas os arquivos **modificados nas últimas 25 horas** e os envia para outra VPS.
 
-### **Criação do Script**  
-Crie um arquivo chamado **backup_pasta.sh** e cole o código abaixo:  
+### **Criação do Script**
+
+Crie um arquivo chamado **backup\_pasta.sh** e cole o código abaixo:
 
 ```bash
 #!/bin/bash
@@ -104,14 +121,15 @@ scp "$BACKUP_DIR$BACKUP_FILE" deploy@ipvps:/home/deploy/backup
 rm "$BACKUP_DIR$BACKUP_FILE"
 ```
 
----
+***
 
-## **7. Backup do Banco de Dados e Transferência para Outra VPS**  
+## **7. Backup do Banco de Dados e Transferência para Outra VPS**
 
-Esse script faz o backup do banco, compacta e envia automaticamente para outra VPS.  
+Esse script faz o backup do banco, compacta e envia automaticamente para outra VPS.
 
-### **Criação do Script**  
-Crie um arquivo chamado **backup_db.sh** e cole o código abaixo:  
+### **Criação do Script**
+
+Crie um arquivo chamado **backup\_db.sh** e cole o código abaixo:
 
 ```bash
 #!/bin/bash
@@ -136,46 +154,48 @@ rm "$DATA".whazing.sql.gz
 echo "BACKUP CONCLUÍDO!"
 ```
 
----
+***
 
-## **8. Agendar Backup Automático (Cronjob)**  
+## **8. Agendar Backup Automático (Cronjob)**
 
-### **Passo 1: Tornar o script executável**  
-Se criou o arquivo **backup.sh** na pasta `/home/deploy/`, torne-o executável:  
+### **Passo 1: Tornar o script executável**
+
+Se criou o arquivo **backup.sh** na pasta `/home/deploy/`, torne-o executável:
 
 ```bash
 chmod +x /home/deploy/backup.sh
 ```
 
-### **Passo 2: Configurar o agendamento no Cron**  
-Abra o agendador de tarefas:  
+### **Passo 2: Configurar o agendamento no Cron**
+
+Abra o agendador de tarefas:
 
 ```bash
 crontab -e
 ```
 
-Adicione a linha abaixo para executar o backup **todos os dias às 2h da manhã**:  
+Adicione a linha abaixo para executar o backup **todos os dias às 2h da manhã**:
 
 ```bash
 0 2 * * * /home/deploy/backup.sh
 ```
 
----
+***
 
-## **9. Acesso a Outra VPS sem Senha (Para Backups Automáticos)**  
+## **9. Acesso a Outra VPS sem Senha (Para Backups Automáticos)**
 
-Para evitar que o sistema peça senha ao transferir arquivos via **scp**, use este comando:  
+Para evitar que o sistema peça senha ao transferir arquivos via **scp**, use este comando:
 
 ```bash
 cat ~/.ssh/id_rsa.pub | ssh deploy@endereco_IP_remoto "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
 ```
 
-Isso permitirá conexões automáticas entre os servidores.  
+Isso permitirá conexões automáticas entre os servidores.
 
----
+***
 
-## **10. Dúvidas?**  
+## **10. Dúvidas?**
 
-Se precisar de mais detalhes, use o **ChatGPT** como aliado para entender melhor esses comandos! 🚀  
+Se precisar de mais detalhes, use o **ChatGPT** como aliado para entender melhor esses comandos! 🚀
 
----
+***

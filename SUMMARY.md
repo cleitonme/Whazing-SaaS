@@ -37,7 +37,7 @@
     * [Manual de Backup e Restauração para Banco de Dados PostgreSQL no Docker](docs/configuracoes-vps-e-whazing/backup.md)
     * [Como Habilitar o Acesso ao BullBoard](docs/configuracoes-vps-e-whazing/ativar_acesso_bull_board.md)
     * [✅ Como Ajustar o Fuso Horário no Whazing (Servidor e Banco de Dados)](docs/configuracoes-vps-e-whazing/ajustefuso.md)
-    * [Instalacao\_manual\_docker](docs/configuracoes-vps-e-whazing/instalacao_manual_docker.md)
+    * [Instalação manual usando docker](docs/configuracoes-vps-e-whazing/instalacao_manual_docker.md)
     * [Como Trocar Domínio da Instalação Whazing](docs/configuracoes-vps-e-whazing/trocar-dominio-instalacao-whazing.md)
     * [Guia para Conectar ao Banco de Dados PostgreSQL](docs/configuracoes-vps-e-whazing/conectar-banco-de-dados.md)
     * [Guia para Configurar e Acompanhar Logs no Sistema](docs/configuracoes-vps-e-whazing/acessando_logs.md)
