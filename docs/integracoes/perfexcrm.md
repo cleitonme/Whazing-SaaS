@@ -1,18 +1,19 @@
-## **Modulo para notificação PerfexCRM**  
+# Modulo para notificação PerfexCRM
 
-- Esse modulo foi testado versao perfexcrm 3.3.1 e php 8.2
+* Esse modulo foi testado versão PerfexCRM 3.3.1 e php 8.2
 
-- Em anexo modelo dockerfile usado para instalar via docker o perfex
+[https://github.com/cleitonme/Whazing-SaaS/raw/refs/heads/main/docs/perfexcrm/modulo%20notificacao%20para%20PerfexCRM%20%20compativel%20com%20api%20do%20whazing.zip](https://github.com/cleitonme/Whazing-SaaS/raw/refs/heads/main/docs/perfexcrm/modulo%20notificacao%20para%20PerfexCRM%20%20compativel%20com%20api%20do%20whazing.zip)
 
-- Para gerar imagem docker crie uma pasta "perfexcrm" coloque arquivos dele dentro e arquivo dockerfile pasta anteorior onde sera executado comandos
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
+Após instalado ir configurações - SMS - **WhatsApp API Whazing**
 
-   ```bash
-   docker build -t perfexcrm .
-   ````
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-para subir imagem - 8090 porta que ele vai ser instalado, dae tem configura nginx ou proxy de sua preferencia
+Dados devem ser colocados e da api somente ir no whazing em Configurações - Canais/Api e criar seu dados de acesso
 
-   ```bash
-   docker run --name perfexcrm -itd -p 8090:80 perfexcrm:latest
-   ````
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+Modulo colocar whazing em um Iframe Perfex CRM
+
+[https://github.com/cleitonme/Whazing-SaaS/raw/refs/heads/main/docs/perfexcrm/modulo%20colocar%20iframe%20whazing%20no%20perfexcrm.zip](https://github.com/cleitonme/Whazing-SaaS/raw/refs/heads/main/docs/perfexcrm/modulo%20colocar%20iframe%20whazing%20no%20perfexcrm.zip)
