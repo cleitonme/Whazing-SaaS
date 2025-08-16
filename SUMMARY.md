@@ -76,3 +76,4 @@
 * [Principais Recursos do Sistema](principais-recursos-do-sistema.md)
 * [Tabela de Valores](tabela-de-valores.md)
 * [Como Atualizar o Whazing](atualizar-whazing.md)
+* [Changelog](changelog-1.md)
