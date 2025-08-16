@@ -8,8 +8,8 @@ Sugestão de Prompt Corrija o texto a seguir em português brasileiro, mantendo 
 
 ![print](../melhorar_texto_atendimento/botao.png)
 
-Apos configurado aparece tela atendimento aparece o botão acima, e abaixo resultado após melhoria
+Após configurado aparece tela atendimento aparece o botão acima, e abaixo resultado após melhoria
 
 ![print](../melhorar_texto_atendimento/resultado.png)
 
-Obter key ChatGPT: https://platform.openai.com/settings/organization/api-keys
+Obter key ChatGPT: [https://platform.openai.com/settings/organization/api-keys](https://platform.openai.com/settings/organization/api-keys)
