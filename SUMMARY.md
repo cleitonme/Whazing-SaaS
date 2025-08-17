@@ -52,7 +52,7 @@
 * [Changelog e Atualizações](changelog.md)
 * [Contrato de Licença de Uso de Software](contrato-de-licenca-de-uso-de-software.md)
 * [Termos de Uso da Plataforma](termos-de-uso-da-plataforma.md)
-* [Como instalar](como-instalar-e-atualizar.md)
+* [🚀 Guia de Instalação Whazing (Ubuntu 22)](como-instalar-e-atualizar.md)
 * [Como Atualizar o Whazing](atualizar-whazing.md)
 * [Modulo SaaS](modulo-saas/README.md)
   * [Mensagem de boas vindas teste](modulo-saas/mensagem-boas-vindas-teste.md)

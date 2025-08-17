@@ -1,97 +1,99 @@
-# Como instalar e atualizar
+# 🚀 Guia de Instalação Whazing (Ubuntu 22)
 
-Existe 2 modelos de instalação pelo instalador automático disponível no endereço.&#x20;
+### 🔹 Antes de começar
 
-**Opção 1 - Instalador automático**
+1. Crie **dois subdomínios** e aponte-os para o **IP da sua VPS**:
+   * Frontend → `whazing.seusite.com.br`
+   * Backend → `backend.seusite.com.br`
+2. **Verifique a propagação do domínio** em [dnschecker.org](https://dnschecker.org).
+   * Se usar **Cloudflare**, desative o **proxy (nuvem laranja)**.
+   * O IP da sua VPS deve aparecer em todas as validações.
 
-### RODAR OS COMANDOS ABAIXO PARA INSTALAR
+⚠️ Só continue quando os subdomínios estiverem resolvendo corretamente.
 
-Para evitar erros, recomenda-se atualizar o sistema e reiniciar antes da instalação:
+***
+
+### 🔹 Requisitos mínimos
+
+* Ubuntu 22 (instalação limpa)
+* 8 GB de memória RAM
+* 2 subdomínios configurados (frontend e backend)
+
+***
+
+### 🔹 Instalação Automática (Recomendada)
+
+#### 1. Acessar como root
 
 ```bash
-sudo su root
+sudo su -
 ```
+
+#### 2. Instalar dependências iniciais
 
 ```bash
 apt install software-properties-common
 ```
 
+#### 3. Atualizar pacotes
+
 ```bash
-apt -y update && apt -y upgrade
+apt -y update
+```
+
+```bash
+apt -y upgrade
+```
+
+#### 4. Reiniciar a VPS
+
+```bash
 reboot
 ```
 
-Depois reiniciar seguir com a instalação
+#### 5. Instalador Whazing automaticamente
 
 ```bash
-sudo su root
+curl -sSL instalar.whazing.com.br | sudo bash
+```
+
+Use opção 1 e siga as instruções da tela
+
+***
+
+### 🔹 Instalação Manual via Docker
+
+#### 1. Atualizar pacotes
+
+```bash
+sudo apt update
 ```
 
 ```bash
-apt install git
+sudo apt upgrade -y
 ```
 
-```bash
-cd /root
-```
-
-```bash
-git clone https://github.com/cleitonme/Whazing-SaaS.instalador.git whazinginstalador
-```
-
-```bash
-sudo chmod +x ./whazinginstalador/whazing
-```
-
-```bash
-cd ./whazinginstalador
-```
-
-### Importante alterar senhas padrão para evitar ataques
-
-Editar dados com seus dados, com nano para salvar aperta Ctrl + x Ou com acesso vps pelo aplicativo que preferir
-
-* Use somente letras e números, não use caracteres especiais
-* Não precisa alterar outros campos caso queria usar mesma senha todos serviços somente alterar primeira linha senha=AKwWM4Qu2GRppJ7
-* Configure timezone se necessário
-
-```bash
-nano config
-```
-
-```bash
-sudo ./whazing
-```
-
-**Opção 2 - Instalação Manual via Docker:**
-
-#### ✅ **Como usar no Ubuntu 22 (instalação limpa)**
-
-## Manual de Instalação do Whazing na VPS
-
-#### Observações:
-
-* Antes de iniciar a instalação, certifique-se de que os subdomínios necessários foram criados e estão apontados para o IP da VPS.
-* A senha padrão utilizada é `sua_senha_segura`.
-* Domínio Frontend: `whazing.seusite.com.br`
-* Domínio Backend: `backend.seusite.com.br`
-* Timezone: `America/Sao_Paulo`
-
-1. **Instalar dependências principais**:
-
-```bash
-sudo apt update && sudo apt upgrade -y
-```
+#### 2. Reiniciar a VPS
 
 ```bash
 sudo reboot
 ```
 
-2. Adicionar o repositório do Docker
+#### 3. Instalar pacotes básicos
 
 ```bash
-sudo apt-get install ca-certificates curl
+sudo apt-get install -y ca-certificates
 ```
+
+```bash
+sudo apt-get install -y curl
+```
+
+```bash
+sudo apt-get install -y unzip
+```
+
+#### 4. Configurar repositório Docker
 
 ```bash
 sudo install -m 0755 -d /etc/apt/keyrings
@@ -106,87 +108,103 @@ sudo chmod a+r /etc/apt/keyrings/docker.asc
 ```
 
 ```bash
-echo \
-  "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu \
-  $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | \
-  sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
+echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu $(. /etc/os-release && echo "$VERSION_CODENAME") stable" | sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 ```
 
 ```bash
 sudo apt-get update
 ```
 
-3. Instalar Docker
+#### 5. Instalar Docker e Docker Compose
 
 ```bash
-sudo apt install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt install -y docker-ce
 ```
-
-4. instalar unzip
 
 ```bash
-apt install unzip
+sudo apt install -y docker-ce-cli
 ```
 
-5. Criar o usuário deploy
+```bash
+sudo apt install -y containerd.io
+```
+
+```bash
+sudo apt install -y docker-buildx-plugin
+```
+
+```bash
+sudo apt install -y docker-compose-plugin
+```
+
+#### 6. Criar usuário `deploy`
 
 ```bash
 adduser deploy
 ```
 
-6. Conceder permissões sudo ao usuário deploy
-
 ```bash
 usermod -aG sudo deploy
 ```
-
-7. Conceder permissões Docker ao usuário deploy
 
 ```bash
 usermod -aG docker deploy
 ```
 
-8. Alterar para o usuário deploy
-
 ```bash
 su deploy
 ```
 
-9. **Criar diretório do projeto e extrair arquivos**:
+#### 7. Baixar projeto Whazing
 
 ```bash
 mkdir -p /home/deploy/whazing
-cd /home/deploy
 ```
 
-10. **Baixar arquivo zip repositorio**:
+```bash
+cd /home/deploy
+```
 
 ```bash
 wget https://github.com/cleitonme/Whazing-SaaS/raw/refs/heads/main/docs/Instalacao_manual_docker/whazing.zip
 ```
 
-4. **Baixar arquivo zip repositorio**:
-
 ```bash
 unzip whazing.zip
-sudo chown deploy.deploy /home/deploy/whazing/ -Rf
-cd whazing
-chmod 600 /home/deploy/whazing/traefik/acme.json
 ```
 
-3. **Editar variáveis de ambiente**:
+```bash
+sudo chown deploy.deploy /home/deploy/whazing/ -Rf
+```
 
-Abra o arquivo 'docker-compose.yaml' e '.env' da pasta backend e do frontend com seu editor favorito e ajuste os valores.
+```bash
+cd whazing
+```
 
-Troque os domínios, senhas e timezone conforme sua necessidade.
+```bash
+chmod 600 traefik/acme.json
+```
 
-4. **Subir os serviços com Docker Compose**:
+#### 8. Configurar variáveis de ambiente
+
+* Edite os arquivos:
+  * `backend/.env`
+  * `frontend/.env`
+  * `docker-compose.yaml`
+
+⚙️ Ajuste os valores: domínios, senha padrão (`sua_senha_segura`) e timezone (`America/Sao_Paulo`).
+
+#### 9. Subir os serviços
 
 ```bash
 docker compose up -d
 ```
 
-**Como atualizar para estavel**
+***
+
+### 🔄 Atualizações
+
+#### Atualizar para versão estável
 
 ```bash
 docker pull whazing/whazing-backend:latest
@@ -204,29 +222,25 @@ docker compose up -d --no-deps --build backend
 docker compose up -d --no-deps --build frontend
 ```
 
-### 🔁 COMO MUDAR PARA VERSÃO `beta`
+#### Migrar para versão Beta
 
-1. **Edite o `docker-compose.yaml`:**
-
-No serviço `backend`, mude:
+Edite `docker-compose.yaml` e troque as imagens:
 
 ```yaml
 image: whazing/whazing-backend:beta
 ```
 
-No serviço `frontend`, mude:
-
 ```yaml
 image: whazing/whazing-frontend:beta
 ```
 
-2. **Recrie os containers:**
+Recriar containers:
 
 ```bash
 docker compose up -d backend frontend
 ```
 
-**Como atualizar versão beta**
+#### Atualizar versão Beta
 
 ```bash
 docker pull whazing/whazing-backend:beta
@@ -244,7 +258,11 @@ docker compose up -d --no-deps --build backend
 docker compose up -d --no-deps --build frontend
 ```
 
-**Limpar imagens não usadas**
+***
+
+### 🧹 Manutenção
+
+#### Limpar imagens antigas e não usadas
 
 ```bash
 docker system prune -a
