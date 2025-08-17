@@ -68,7 +68,7 @@
   * [🎛️ Botão Coringa](modulo-saas/botao-coringa.md)
 * [📡 Canais Disponíveis](canais-suportados/README.md)
   * [Guia de Conexão do TELEGRAM](canais-suportados/telegram.md)
-  * [Whatsapp API PLUS](canais-suportados/whatsapp_api_plus.md)
+  * [WhatsApp API PLUS](canais-suportados/whatsapp_api_plus.md)
   * [Whatsapp API OFICIAL VIA HUB](canais-suportados/api-oficial/README.md)
     * [Como criar template](canais-suportados/api-oficial/criar_template.md)
     * [Modo Fallback](canais-suportados/api-oficial/fallback.md)

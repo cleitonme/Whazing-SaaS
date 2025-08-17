@@ -1,35 +1,57 @@
-# Whatsapp API PLUS
+---
+description: >-
+  A WhatsApp API PLUS é uma API não oficial, com recursos premium e maior
+  estabilidade em comparação com a Baileys.
+---
 
-## Whatsapp API PLUS
+# WhatsApp API PLUS
 
-* Se trata api não oficial, com recursos premium
+### Recursos disponíveis
 
-Suporte envio botão, listas, botão copia e cola, link, solicitação localização
+* Envio de **botões**
+* Envio de **listas**
+* Botão **copiar e colar**
+* **Links clicáveis**
+* **Solicitação de localização**
+* **Maior garantia de estabilidade**
+* **Menor consumo de recursos da VPS**
 
-Api com maior garantia de estabilidade
+***
 
-Custo baixo por canal, mas com garantia maior de estabilidade e menor consumo de recursos da VPS
+### Migração entre canais (Plus ↔ Baileys)
 
-## Migrar Canal entre plus e baileys
+1. **Desconecte o WhatsApp**.
+2. **Feche todos os tickets**.
+3. **Edite o canal** e altere o tipo (Plus ou Baileys).
+4. **Gere novamente o QR Code** e conecte.
 
-* Desconecte o WhatsApp
-* Fechar todos tickets, edite canal alterando o tipo, gere qrcode novamente e conecte
-* Se deixar telefone preenchido ele gera somente codigo conectar, sem telefone gera qrcode
+📌 **Atenção**
 
-## Valores
+* Se o campo **telefone** estiver preenchido → será gerado apenas o **código de conexão**.
+* Se o campo **telefone** estiver vazio → será gerado o **QR Code**.
 
-* Cada canal precisa de um token de acesso
+***
 
-## Clientes da Versão Grátis do Whazing
+### Valores
 
-* R$ 50,00 - 6 meses
-* R$ 100,00 - 1 ano
+#### Clientes da **Versão Grátis** do Whazing
 
-## Clientes da Versão Premium do Whazing
+* **R$ 50,00** → 6 meses
+* **R$ 100,00** → 1 ano
 
-Ganha 1 canal para testar e conhecer
+#### Clientes da **Versão Premium** do Whazing
 
-Canais adicionais 1 Canal - R$ 5,00 mensal 10 canais - R$ 35,00 mensal 20 canais - R$ 60,00 mensal 40 canais - R$ 100,00 mensal
+* Direito a **1 canal gratuito** para teste.
+* **Canais adicionais**:
+  * 1 Canal → **R$ 5,00 / mês**
+  * 10 Canais → **R$ 35,00 / mês**
+  * 20 Canais → **R$ 60,00 / mês**
+  * 40 Canais → **R$ 100,00 / mês**
 
-* Vencimento fica junto com pagamento da licença premium no mensal
-* Desconto somente na compra de pacotes de comprar 11 canais por exemplo valor R$ 40,00 será cobrado valor por canal individual.
+📅 O vencimento acompanha o pagamento da **licença Premium** mensal.
+
+⚠️ **Descontos apenas em pacotes fechados**.\
+Exemplo:
+
+* Pacote de **10 canais** = **R$ 35,00 / mês**.
+* Se contratar **11 canais**, o valor do 11º canal será cobrado individualmente (**R$ 5,00**).
