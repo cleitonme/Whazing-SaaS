@@ -1,6 +1,6 @@
 # Como Enviar Campanhas no Whazing
 
-Atualmente, as campanhas funcionam apenas no canal **WhatsApp Bayles**.
+Atualmente, as campanhas funcionam apenas no canal **WhatsApp**.
 
 ***
 
