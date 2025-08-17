@@ -53,6 +53,7 @@
 * [Contrato de Licença de Uso de Software](contrato-de-licenca-de-uso-de-software.md)
 * [Termos de Uso da Plataforma](termos-de-uso-da-plataforma.md)
 * [Como instalar](como-instalar-e-atualizar.md)
+* [Como Atualizar o Whazing](atualizar-whazing.md)
 * [Modulo SaaS](modulo-saas/README.md)
   * [Mensagem de boas vindas teste](modulo-saas/mensagem-boas-vindas-teste.md)
   * [Como Criar a Opção de Ajuda](modulo-saas/criarajuda.md)
@@ -75,5 +76,3 @@
 * [Whitelabel](whitelabel.md)
 * [Principais Recursos do Sistema](principais-recursos-do-sistema.md)
 * [Tabela de Valores](tabela-de-valores.md)
-* [Como Atualizar o Whazing](atualizar-whazing.md)
-* [Changelog](changelog-1.md)
