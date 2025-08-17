@@ -74,7 +74,7 @@
     * [Modo Fallback](canais-suportados/api-oficial/fallback.md)
     * [Grupos x API Oficial WhatsApp](canais-suportados/api-oficial/grupos.md)
   * [Responder Comentários Instagram - HUB NotificaMe](canais-suportados/responder-comentarios-instagram.md)
-  * [Guia de Configuração do Hub - Instagram e Facebook](canais-suportados/facebook-e-instagram-via-hub.md)
+  * [Conectar instagram, facebook e webchat via NotificaMe](canais-suportados/facebook-e-instagram-via-hub.md)
 * [Demonstração](demonstracao.md)
 * [Whitelabel](whitelabel.md)
 * [Principais Recursos do Sistema](principais-recursos-do-sistema.md)
