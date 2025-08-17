@@ -1,32 +1,42 @@
 # Guia de Conexão do TELEGRAM
 
-1. **Acesse o Telegram**
-   * Faça login em sua conta ou crie uma nova, caso ainda não possua.
-2.  **Localize o BotFather**
+1. **📲 Acesse o Telegram**\
+   \
+   **Faça login em sua conta ou crie uma nova, caso ainda não possua.**\
+   \
+   **🔍 Localize o BotFather**\
+   \
+   **No campo de pesquisa, digite @BotFather e acesse esse bot oficial.**\
+   \
+   **Os bots oficiais do Telegram possuem um ✅ visto azul ao lado do nome**
 
-    * No campo de pesquisa, digite `@BotFather` e acesse esse bot oficial.
-    * Bots oficiais do Telegram possuem um visto azul ao lado de seu nome.
+![print](../docs/telegram/BotFather.png)
 
-    ![print](../docs/telegram/BotFather.png)
-3. **Ative o BotFather**
-   * Clique no botão **Iniciar** para ativar o chatbot BotFather.
-   * Você receberá uma lista de comandos disponíveis para gerenciar bots.
-4. **Crie um novo bot**
-   * Digite ou selecione o comando `/newbot` e envie.
-   * Escolha um nome para o seu bot (será exibido para os seus assinantes).
-   * Defina um nome de usuário único para o bot, que deve terminar com **“bot”**.
-     * **Exemplo:** `whazing_bot`.
-5. **Finalize a criação**
-   * Após escolher o nome, seu bot será criado.
-   * Você receberá:
-     * Um link para o bot no formato: `t.me/<bot_username>`
-     * Recomendações para personalizar imagem de perfil, descrição e comandos do bot.
-6.  **Obtenha o token do bot**
+### ▶️ Ative o BotFather
 
-    * Para conectar seu bot à Whazing, copie o valor do token fornecido.
-    * Use esse token para cadastrar o canal na Whazing.
+* Clique no botão **Iniciar** para ativar o BotFather.
+* Você receberá uma lista de comandos disponíveis para criar e gerenciar bots.
 
-    ![print](../docs/telegram/token.png)\
-    ![print](../docs/telegram/whazing.png)
+### 🤖 Crie um novo bot
 
-OBS. **As mensagens devem ser enviadas para o bot que você criou, para aparecer no whazing**
+1. Digite ou selecione o comando **`/newbot`** e envie.
+2. Escolha um **nome para o seu bot** (esse nome será exibido para os usuários).
+3. Defina um **nome de usuário único**, que **deve terminar com “bot”**.
+   * Exemplo: `whazing_bot`
+
+### ✅ Finalize a criação
+
+* Após escolher o nome e usuário, seu bot será criado.
+* Você receberá:
+  * Um **link do bot** no formato: `t.me/<bot_username>`
+  * Recomendações para personalizar: imagem de perfil, descrição e comandos.
+
+### 🔑 Obtenha o token do bot
+
+* O BotFather fornecerá um **token de acesso**.
+* Copie esse token e utilize para **cadastrar o canal no Whazing**.
+
+1. ![print](../docs/telegram/token.png)\
+   ![print](../docs/telegram/whazing.png)
+
+⚠️ **Importante:** Todas as mensagens devem ser enviadas para o **bot que você criou** para que apareçam no sistema Whazing.
