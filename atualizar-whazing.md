@@ -4,56 +4,32 @@ description: Para instalações feitas usando instalador automático
 
 # Como Atualizar o Whazing
 
-## Antes de começar faça um snapshot da VPS
+## Atualização do Whazing
 
-## Tutorial rápido e fácil de como atualizar para nova versão
+Antes de iniciar, **faça um snapshot da sua VPS**. Isso garante que você possa reverter caso algo não saia como esperado.
 
-### RODAR OS COMANDOS ABAIXO ANTES FAÇA BACKUP DA VPS
+### Atualizando para a versão estável
 
-1 - acessar como root
-
-```bash
-sudo su root
-```
-
-2 - acessar pasta root
+Para atualizar para a versão estável do Whazing, execute:
 
 ```bash
-cd /root/
+curl -sSL update.whazing.com.br | sudo bash
 ```
 
-3 - apagar instalador antigo
+### Atualizando para a versão beta
+
+Se você deseja testar a versão beta, utilize:
 
 ```bash
-rm whazinginstalador/ -Rf
+curl -sSL beta.whazing.com.br | sudo bash
 ```
 
-4 - baixar novo instalador
 
-```bash
-git clone https://github.com/cleitonme/Whazing-SaaS.instalador.git whazinginstalador
-```
 
-5 - Da permisão
+> ℹ️ O script de atualização irá:
+>
+> * Parar o serviço atual do Whazing
+> * Baixar a nova versão
+> * Reiniciar automaticamente o serviço
 
-```bash
-sudo chmod +x ./whazinginstalador/whazing
-```
-
-6 - Acessar pasta
-
-```bash
-cd ./whazinginstalador
-```
-
-8 - Executar
-
-```bash
-./whazing
-```
-
-11 - Use opção 2 para versão estável ou 11 versão beta
-
-**Para quem instalou sistema antes 19/05/25**
-
-* Caso ainda não migrou para novo modelo docker segue documentação https://github.com/cleitonme/Whazing-SaaS.instalador/blob/main/migrar\_nova\_versao.md
+***
