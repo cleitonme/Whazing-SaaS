@@ -64,6 +64,7 @@
   * [Guia Simples para Configurar o Gmail e Lembrar a Senha no Whazing](modulo-saas/configurar-gmail.md)
   * [📘 API SaaS](modulo-saas/api_saas.md)
   * [📢 Informativo do Sistema](modulo-saas/informativo-do-sistema.md)
+  * [🎛️ Botão Coringa](modulo-saas/botao-coringa.md)
 * [Canais Suportados](canais-suportados/README.md)
   * [Guia de Conexão do TELEGRAM](canais-suportados/telegram.md)
   * [Whatsapp API PLUS](canais-suportados/whatsapp_api_plus.md)
