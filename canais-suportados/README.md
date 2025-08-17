@@ -34,22 +34,22 @@ description: >-
 
 ### 💼 [API Oficial via Hub NotificaMe ](api-oficial/)(paga)
 
-#### 📱 WhatsApp Oficial
+#### 📱[ WhatsApp Oficial](api-oficial/)
 
 * Ativação por canal: **R$ 120,00**
 * Mensalidade: **R$ 40,00 por canal conectado** (no Plano Premium)
 
-#### 📸 [Instagram](facebook-e-instagram-via-hub.md)
+#### 📸 [Instagram](facebook-e-instagram-via-hub/)
 
 * Sem taxa de ativação
 * Mensalidade: **R$ 40,00 por canal conectado** (no Plano Premium)
 
-#### 📘 [Facebook](facebook-e-instagram-via-hub.md)
+#### 📘 [Facebook](facebook-e-instagram-via-hub/)
 
 * Sem taxa de ativação
 * Mensalidade: **R$ 40,00 por canal conectado** (no Plano Premium)
 
-#### 💬 [Webchat](facebook-e-instagram-via-hub.md)
+#### 💬 [Webchat](facebook-e-instagram-via-hub/)
 
 * Sem taxa de ativação
 * Mensalidade: **R$ 40,00 por canal conectado** (no Plano Premium)
