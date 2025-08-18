@@ -32,25 +32,13 @@ Um sistema para gestão de atendimento multicanais centralizado.
 
 ## Instalando
 
-Seguem links sugerimos:
-
-* [Como Instalar Manualmente o Whazing VPS UBUNTU 22](docs/configuracoes-vps-e-whazing/instalacao_manual_docker.md)
-* [Instalador automatico](https://github.com/cleitonme/Whazing-SaaS.instalador)
-
-## Como instalar
-
-* [Demonstração basica e Instalação](https://www.youtube.com/watch?v=RMztcAwRjxQ)
-* [Instalação](https://youtu.be/3vsXNyGxo58?si=sjnyqHtKgyfSJX7_)
+[https://doc.whazing.com.br/como-instalar-e-atualizar](https://doc.whazing.com.br/como-instalar-e-atualizar)
 
 Dados de Acesso
 
 admin@admin.com 123456
 
 * [Documentação oficial](https://doc.whazing.com.br)
-
-## Manual feito por um cliente da prataforma
-
-* [Manual](https://ajuda.super-zapp.com.br/)
 
 ## Videos gravador por um cliente da prataforma
 
