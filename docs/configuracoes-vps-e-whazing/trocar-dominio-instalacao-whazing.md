@@ -1,21 +1,92 @@
-# Como Trocar Domínio da Instalação Whazing
+# 🔁 Trocar o Domínio da Instalação Whazing
 
-Este guia passo a passo ajudará você a trocar o domínio da instalação Whazing. **Todos os comandos devem ser executados usando o usuário `deploy`.** Siga as instruções cuidadosamente.
+> **Importante:** sempre use o usuário `deploy`.\
+> Quando for editar arquivos do sistema, use `sudo`.
 
-## Passo 1: Editar Configuração do Backend
+Existem **dois cenários possíveis**:
 
-Abra o arquivo de configuração do backend com o comando abaixo:
+* 🟩 Se sua instalação usa **Caddy**
+* 🟦 Se sua instalação é mais antiga (antes de **17/08/2025**) e usa **NGINX**
+
+Escolha o cenário correto e siga os passos.
+
+***
+
+### 🟩 Cenário A — Instalações com **Caddy**
+
+* [ ] **Abrir arquivo Caddyfile**
+
+```bash
+sudo nano /etc/caddy/Caddyfile
+```
+
+Edite os domínios do **backend** e do **frontend**. Salve e feche.
+
+* [ ] **(Opcional) Validar configuração do Caddy**
+
+```bash
+sudo caddy validate --config /etc/caddy/Caddyfile
+```
+
+* [ ] **Reiniciar Caddy**
+
+```bash
+sudo systemctl restart caddy
+```
+
+* [ ] **Editar arquivo `.env` do backend**
+
+```bash
+nano /home/deploy/whazing/backend/.env
+```
+
+Atualize:
+
+```
+BACKEND_URL=https://backend.novodominio.com.br
+FRONTEND_URL=https://novodominio.com.br
+```
+
+* [ ] **Editar arquivo `.env` do frontend**
+
+```bash
+nano /home/deploy/whazing/frontend/.env
+```
+
+Atualize:
+
+```
+URL_API=https://backend.novodominio.com.br
+```
+
+* [ ] **Rodar atualização (escolher versão)**\
+  Versão estável:
+
+```bash
+curl -sSL update.whazing.com.br | sudo bash
+```
+
+Versão beta:
+
+```bash
+curl -sSL beta.whazing.com.br | sudo bash
+```
+
+***
+
+### 🟦 Cenário B — Instalações com **NGINX** (antes de 17/08/2025)
+
+* [ ] **Editar configuração do backend**
+
 ```bash
 sudo nano /etc/nginx/sites-available/whazing-backend
 ```
-Substitua o conteúdo do arquivo com os dados do item 2. Para salvar, pressione `Ctrl + X`, depois `Y` e `Enter`.
 
-## Passo 2: Configurar URL do Backend
+Exemplo de configuração:
 
-Edite os dados abaixo substituindo `backend.seusite.com.br` pela URL que será usada para acessar o backend:
 ```nginx
 server {
-  server_name backend.seusite.com.br;
+  server_name backend.novodominio.com.br;
 
   location / {
     proxy_pass http://127.0.0.1:3000;
@@ -31,20 +102,17 @@ server {
 }
 ```
 
-## Passo 3: Editar Configuração do Frontend
+* [ ] **Editar configuração do frontend**
 
-Abra o arquivo de configuração do frontend com o comando abaixo:
 ```bash
 sudo nano /etc/nginx/sites-available/whazing-frontend
 ```
-Substitua o conteúdo do arquivo com os dados do item 4. Para salvar, pressione `Ctrl + X`, depois `Y` e `Enter`.
 
-## Passo 4: Configurar URL do Frontend
+Exemplo de configuração:
 
-Edite os dados abaixo substituindo `whazing.seusite.com.br` pela URL que será usada para acessar o frontend:
 ```nginx
 server {
-  server_name whazing.seusite.com.br;
+  server_name novodominio.com.br;
 
   location / {
     proxy_pass http://127.0.0.1:3333;
@@ -60,45 +128,59 @@ server {
 }
 ```
 
-## Passo 5: Testar Configurações do Nginx
+* [ ] **Testar configuração**
 
-Verifique se as configurações do Nginx estão corretas com o comando:
 ```bash
 sudo nginx -t
 ```
 
-## Passo 6: Reiniciar o Nginx
+* [ ] **Reiniciar NGINX**
 
-Reinicie o Nginx para aplicar as novas configurações:
 ```bash
 sudo service nginx restart
 ```
 
-## Passo 7: Gerar Certificado SSL
+* [ ] **Gerar certificado SSL (HTTPS)**
 
-Gere o certificado SSL utilizando o Certbot:
 ```bash
 sudo certbot --nginx
 ```
 
-## Passo 8: Editar Arquivo .env do Backend
+* [ ] **Editar `.env` do backend**
 
-Abra o arquivo `.env` do backend para edição:
 ```bash
 nano /home/deploy/whazing/backend/.env
 ```
-Preencha as variáveis `BACKEND_URL` e `FRONTEND_URL` com os novos dados. Para salvar, pressione `Ctrl + X`, depois `Y` e `Enter`.
 
-## Passo 9: Editar Arquivo .env do Frontend
+Atualize com os novos domínios.
 
-Abra o arquivo `.env` do frontend para edição:
+* [ ] **Editar `.env` do frontend**
+
 ```bash
 nano /home/deploy/whazing/frontend/.env
 ```
-Preencha a variável `URL_API` com o novo backend. Para salvar, pressione `Ctrl + X`, depois `Y` e `Enter`.
 
-## Passo 10: Rodar atualização
+Atualize com o novo backend.
 
-Após alterações rodar o atualizador e selecionar versao você esta usando para atualizar estavel 2 ou beta 11
+* [ ] **Rodar atualização (escolher versão)**\
+  Versão estável:
 
-Seguindo esses passos, você terá trocado com sucesso o domínio da instalação Whazing.
+```bash
+curl -sSL update.whazing.com.br | sudo bash
+```
+
+Versão beta:
+
+```bash
+curl -sSL beta.whazing.com.br | sudo bash
+```
+
+***
+
+### ✅ Resultado final
+
+Se seguiu todos os passos do seu cenário (Caddy ou NGINX):
+
+* Os arquivos `.env` estão com os novos domínios.
+* O servidor foi recarregado.
+* O domínio do Whazing já está funcionando no novo endereço.

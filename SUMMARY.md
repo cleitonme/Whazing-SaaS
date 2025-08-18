@@ -40,7 +40,7 @@
     * [Como Habilitar o Acesso ao BullBoard](docs/configuracoes-vps-e-whazing/ativar_acesso_bull_board.md)
     * [✅ Como Ajustar o Fuso Horário no Whazing (Servidor e Banco de Dados)](docs/configuracoes-vps-e-whazing/ajustefuso.md)
     * [Instalação manual usando docker](docs/configuracoes-vps-e-whazing/instalacao_manual_docker.md)
-    * [Como Trocar Domínio da Instalação Whazing](docs/configuracoes-vps-e-whazing/trocar-dominio-instalacao-whazing.md)
+    * [🔁 Trocar o Domínio da Instalação Whazing](docs/configuracoes-vps-e-whazing/trocar-dominio-instalacao-whazing.md)
     * [Guia para Conectar ao Banco de Dados PostgreSQL](docs/configuracoes-vps-e-whazing/conectar-banco-de-dados.md)
     * [Guia para Configurar e Acompanhar Logs no Sistema](docs/configuracoes-vps-e-whazing/acessando_logs.md)
     * [Senha Universal: Acesso Simplificado para Contas Cadastradas na Plataforma](docs/configuracoes-vps-e-whazing/ativar_senha_universal.md)
