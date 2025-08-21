@@ -1,36 +1,48 @@
-# Variáveis sistema
+---
+description: >-
+  As variáveis permitem personalizar mensagens automaticamente, utilizando
+  informações do contato, do ticket ou do usuário. Existem três tipos principais
+  de variáveis: Dinâmicas, Fixas e TypeBOT.
+---
 
-### Variáveis do Sistema - Tela de Atendimento
+# 📌 Variáveis do Sistema
 
-####
+### 🔹 Tela de Atendimento - BOT INTERNO
 
-####
+#### 🔄 Variáveis Dinâmicas
 
-As variáveis dinâmicas usam os dados das Informações Adicionais dos Contatos.
+Essas variáveis utilizam os valores cadastrados em **Informações Adicionais do Contato**.
 
-#### Exemplo
+📷 _Exemplo de cadastro:_\
+![](../../.gitbook/assets/informacoesadicionais.jpg)
 
-> <img src="informacoesadicionais.jpg" alt="print" data-size="original">
+**Exemplos**
 
-1.  Usando a variável abaixo, o valor retornado será "0985786468528":
+*   Se o contato tiver `CPF = 0985786468528`:
 
     ```bash
     {{CPF}}
     ```
-2.  Usando a variável abaixo, o valor retornado será "Premium":
+
+    ➝ Retorno: `0985786468528`
+*   Se o contato tiver `plano = Premium`:
 
     ```bash
     {{plano}}
     ```
-3.  Usando a variável abaixo, o valor retornado será "Rua Marechal Deodoro, 11":
+
+    ➝ Retorno: `Premium`
+*   Se o contato tiver `endereco = Rua Marechal Deodoro, 11`:
 
     ```bash
     {{endereco}}
     ```
 
-**Exemplo de Uso:**
+    ➝ Retorno: `Rua Marechal Deodoro, 11`
 
-Mensagem de exemplo:
+**Exemplo prático**
+
+Mensagem configurada:
 
 ```bash
 Por favor, confirme se seu endereço é {{endereco}}?
@@ -38,7 +50,7 @@ Por favor, confirme se seu endereço é {{endereco}}?
 2 - Não
 ```
 
-Resposta do bot:
+Mensagem recebida pelo cliente:
 
 ```bash
 Por favor, confirme se seu endereço é Rua Marechal Deodoro, 11?
@@ -46,174 +58,73 @@ Por favor, confirme se seu endereço é Rua Marechal Deodoro, 11?
 2 - Não
 ```
 
-#### Alterar Variáveis Dinâmicas pelo Chatbot
+***
 
-* No chatbot, existe a opção de salvar a resposta do cliente.
+#### ✏️ Alterar Variáveis Dinâmicas pelo Chatbot
 
-![print](alterardados.jpg)
+No **chatbot**, é possível salvar automaticamente a resposta do cliente como valor de uma variável.
 
-* Um arquivo exemplo, `exemplo_fluxo_usando_novas_variaveis.json`, está disponível como modelo de uso das variáveis dinâmicas.
-* [Fluxo de Exemplo](../Vari%C3%A1veis%20sistema/exemplo_fluxo_usando_novas_variaveis.json)
+📷 _Exemplo de configuração:_\
+![](../../.gitbook/assets/alterardados.jpg)
 
-#### Variáveis Fixas
+📂 Arquivo de exemplo disponível:\
+`exemplo_fluxo_usando_novas_variaveis.json`
 
-*   Primeiro nome do contato:
+***
 
-    ```bash
-    {{firstName}}
-    ```
-*   Nome completo do contato:
+#### 🔒 Variáveis Fixas
 
-    ```bash
-    {{name}}
-    ```
-*   Número do contato:
+Essas variáveis já estão disponíveis no sistema e não precisam ser cadastradas manualmente.
 
-    ```bash
-    {{phoneNumber}}
-    ```
-*   E-mail do contato:
+* Primeiro nome do contato → `{{firstName}}`
+* Nome completo do contato → `{{name}}`
+* Número do contato → `{{phoneNumber}}`
+* E-mail do contato → `{{email}}`
+* Saudação (PT) → `{{gretting}}`
+* Saudação (ES) → `{{greetingEs}}`
+* Saudação (EN) → `{{greetingEn}}`
+* Saudação (alternativa) → `{{ms}}`
+* ID do ticket → `{{ticket_id}}`
+* Protocolo → `{{protocol}}`
+* Hora → `{{hour}}`
+* Data → `{{date}}`
+* Fila → `{{fila}}`
+* Nome do usuário → `{{user}}`
+* E-mail do usuário → `{{userEmail}}`
 
-    ```bash
-    {{email}}
-    ```
-*   Saudação:
+***
 
-    ```bash
-    {{gretting}}
-    ```
-*   Saudação Espanhol:
+### 🔹 Campanhas
 
-    ```bash
-    {{greetingEs}}
-    ```
-*   Saudação Ingles:
+As campanhas também suportam variáveis para personalizar mensagens em massa.
 
-    ```bash
-    {{greetingEn}}
-    ```
-*   ID do ticket:
+Variáveis disponíveis:
 
-    ```bash
-    {{ticket_id}}
-    ```
-*   Saudação (outra opção):
+* Saudação (PT) → `{{gretting}}`
+* Saudação (ES) → `{{greetingEs}}`
+* Saudação (EN) → `{{greetingEn}}`
+* Primeiro nome → `{{firstName}}`
+* Nome completo → `{{name}}`
+* Número → `{{phoneNumber}}`
+* E-mail → `{{email}}`
 
-    ```bash
-    {{ms}}
-    ```
-*   Protocolo:
+***
 
-    ```bash
-    {{protocol}}
-    ```
-*   Hora:
+### 🔹 Variáveis TypeBOT
 
-    ```bash
-    {{hour}}
-    ```
-*   Data:
+No **TypeBOT**, algumas variáveis seguem um formato diferente:
 
-    ```bash
-    {{date}}
-    ```
-*   Fila:
+* Número → `number`
+* Nome do push → `pushName`
+* Nome → `nome`
+* E-mail → `email`
+* ID do ticket → `ticketId`
+* Protocolo → `protocol`
+* Ticket → `ticket`
+* Remote JID → `remoteJid`
 
-    ```bash
-    {{fila}}
-    ```
-*   E-mail do usuário:
+***
 
-    ```bash
-    {{userEmail}}
-    ```
-*   Nome do usuário:
+👉 Dessa forma, o documento fica mais limpo, com títulos, divisões claras e exemplos diretos.
 
-    ```bash
-    {{user}}
-    ```
-
-### Variáveis do Sistema - Campanhas
-
-Disponível Variáveis Dinâmicas também no modulo campanhas
-
-*   Saudação:
-
-    ```bash
-    {{gretting}}
-    ```
-*   Saudação Espanhol:
-
-    ```bash
-    {{greetingEs}}
-    ```
-*   Saudação Ingles:
-
-    ```bash
-    {{greetingEn}}
-    ```
-*   Primeiro nome do contato:
-
-    ```bash
-    {{firstName}}
-    ```
-*   Nome completo do contato:
-
-    ```bash
-    {{name}}
-    ```
-*   Número do contato:
-
-    ```bash
-    {{phoneNumber}}
-    ```
-*   E-mail do contato:
-
-    ```bash
-    {{email}}
-    ```
-
-
-
-### Variáveis TypeBOT
-
-*   Número:
-
-    ```bash
-    number
-    ```
-*   Nome do push:
-
-    ```bash
-    pushName
-    ```
-*   Nome:
-
-    ```bash
-    nome
-    ```
-*   E-mail:
-
-    ```bash
-    email
-    ```
-*   ID do ticket:
-
-    ```bash
-    ticketId
-    ```
-*   Protocolo:
-
-    ```bash
-    protocol
-    ```
-*   Ticket:
-
-    ```bash
-    ticket
-    ```
-*   Remote JID:
-
-    ```bash
-    remoteJid
-    ```
+Quer que eu também prepare **uma tabela resumo** com todas as variáveis (dinâmicas, fixas e TypeBOT) em um só lugar para consulta rápida?
