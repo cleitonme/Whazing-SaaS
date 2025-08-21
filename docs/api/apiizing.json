@@ -93,6 +93,39 @@
 					"response": []
 				},
 				{
+					"name": "SendMessageAPIFile url",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"body\": \"Mensagem de teste 2\",\n  \"number\": \"{{number}}\",\n  \"externalKey\": \"externalKeydd211\",\n  \"mediaUrl\": \"https://img.freepik.com/psd-gratuitas/ilustracao-de-renderizacao-3d-isolada-do-icone-do-google_47987-9777.jpg\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}",
+							"host": [
+								"{{base_url}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "SendMessageSticker",
 					"request": {
 						"auth": {
