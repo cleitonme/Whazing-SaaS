@@ -68,7 +68,9 @@ No **chatbot**, é possível salvar automaticamente a resposta do cliente como v
 ![](../../.gitbook/assets/alterardados.jpg)
 
 📂 Arquivo de exemplo disponível:\
-`exemplo_fluxo_usando_novas_variaveis.json`
+
+
+{% file src="../../.gitbook/assets/exemplo_fluxo_usando_novas_variaveis.json" %}
 
 ***
 
