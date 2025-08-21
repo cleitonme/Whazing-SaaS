@@ -37,40 +37,42 @@ A configuração do fluxo do chatbot é feita através da interface visual abaix
 
 ![print](configfluxo.png)
 
-Na versão 2.10.0, você tem acesso às seguintes interações:
+Na versão 2.11.0, você tem acesso às seguintes interações:
 
-#### 1. Enviar Mensagem
+#### Enviar Mensagem
 - Permite inserir o texto que será enviado ao cliente
 - Suporta o uso de variáveis (consulte a seção de variáveis para mais detalhes)
 
-#### 2. Enviar Documentos, Vídeos, Áudios e Outros Arquivos
+#### Enviar Documentos, Vídeos, Áudios e Outros Arquivos
 - Funcionalidade dedicada para envio de arquivos diversos
 
-#### 3. Enviar figurinhas
+#### Enviar figurinhas
 - Funcionalidade dedicada para envio de figurinhas qualquer imagem usada será convertida em uma figurinha
 
-#### 4. Enviar localização
+#### Enviar localização
 - Enviar localizacação para o contato somente funciona whatsapp api oficial ou baileys
 
-#### 5. Adicionar Delay
+#### Adicionar Delay
 - Configure o intervalo de tempo (em segundos) entre as mensagens
 - Importante para garantir a sequência correta das mensagens
 
-#### 6. Adicionar Tag
+#### Adicionar Tag
 - Permite marcar o contato com uma etiqueta específica
 
-#### 7. Adicionar CRM
+#### Adicionar CRM
 - Move contato para lane no crm compartilhado
 
-#### 8. Alterar Follow-up
+#### Alterar Follow-up
 - Pode colcar ou tirar cliente de um follow-up
 
-#### 9. Adicionar Webhook (GET)
-- Integração com sistemas externos
-- Útil para enviar informações capturadas durante o atendimento
-- Envio via get entao monta url com variaveis ques enviar ele nao pega retorno. 
+#### HTTP Resquest
+- Fazer requisição personalizada em servidores externos e gravar resultado em alguma variavel
 
-#### 10. Adicionar lista
+#### Forçar executar condições
+- Executa as condições sem prescisar esperar receber uma nova mensagem
+Exemplo util de uso: Faça um http request salva resposta em uma variavel e depois faça uma comparação dessa variavel nas condições.
+
+#### Adicionar lista
 - Compativel com api oficial - API Plus
 *baileys esta funcionando mas por se tratar não ter suporte oficial pode parar de funcionar
 
@@ -78,30 +80,30 @@ Na versão 2.10.0, você tem acesso às seguintes interações:
 
 ![print](lista2.png)
 
-#### 11. Enviar Botões
+#### Enviar Botões
 - Compativel com api oficial, facebook e instagram e API PLUS - máximo 3 botões
 
 ![print](botao.png)
 
-#### 12. Adicionar botão com Link
+#### Adicionar botão com Link
 - Compativel com api oficial e Api Plus
 
 ![print](links.png)
 
 
-#### 13. Solicitar localização
+#### Solicitar localização
 - Compativel com api oficial e Api Plus
 - Envia botão pedindo para cliente localizacação dele, util serviços de entrega por exemplo
 
 ![print](solicitarlocalizacao.png)
 
-#### 14. Botão Dinamico
+#### Botão Dinamico
 - Api Plus
 - Pode enviar botão misturado varios tipos, resposta, copiar e cola, ligação e link
 
 ![print](dinamico.png)
 
-#### 15. Carrossel de midea
+#### Carrossel de midea
 - Api Plus
 - Pode colocar varias fotos com botão abaixo da mesma
 - Pode enviar botão misturado varios tipos, resposta, copiar e cola, ligação e link
@@ -124,28 +126,34 @@ Na versão 2.10.0, você tem acesso às seguintes interações:
 
 ### Tipos de Condições (em ordem de prioridade):
 
-#### 1. Dentro/Fora do Horário de Atendimento
+#### Dentro/Fora do Horário de Atendimento
 - Essa condição somente funciona na etapa "Boas vindas!"
 - **Posicionamento**: Sempre no início das condições
 - **Dentro do Horário**: Ativa durante o horário comercial
 - **Fora do Horário**: Ativa fora do horário comercial
 
-#### 2. Respostas Exatas
+#### Respostas Exatas
 - Exemplo: "1" ou "01"
 - A resposta deve ser idêntica ao configurado
 - Não reconhece variações como "quero 1"
 
-#### 3. Contém Exato
+#### Contém Exato
 - Procura palavras específicas na frase
 - Exemplo: Para "quero comprar", reconhece "Eu quero comprar um tênis"
 
-#### 4. Contém
+#### Contém
 - Reconhece palavras ou partes de palavras
 - Exemplo: "compra" reconhece "comprando", "comprador"
 
-#### 5. Qualquer Resposta
+#### Qualquer Resposta
 - **Posicionamento**: Sempre por último
 - Captura qualquer resposta não prevista nas condições anteriores
+
+#### Dentro/Fora do Horário personalizado
+- Pode colocar conforme horário configurado execute alguma ação
+
+#### Comparação variavel
+- Varios tipos comparação de variavel, como se existe, compara com valores fixos ou outros variaveis
 
 ### Tratamento de Respostas Inesperadas
 Se nenhuma condição for atendida, o bot responderá com:
@@ -194,3 +202,17 @@ Sistema integrado com [https://cal.com/](https://cal.com/)
 ### 4. Fluxo sobre whazing com lista, botão e links
 
 [Download do Fluxo de Exemplo](exemplo_whazing.json)
+
+### 5. Exemplo fluxo usando HTTP Request e compara valor variavel
+
+- Exemplo abaixo verifica se existe variavel cidade, caso exista responde com variavel cidade e estado.
+Caso não existe pergunta o cep e faz consulta pelo nome cidade e estado caso consulta tenha sucesso grava o valor variaveis cidade e estado.
+Neste exemplo sendo usado funções Http Request, Comparação variavel e Forçar executar condições
+
+[Download do Fluxo de Exemplo](exemplo_http_request.json)
+
+### 6. Exemplo fluxo que cria teste api SaaS
+
+- Exemplo que usa HTTP Request e api SaaS para gerar teste para cliente
+
+[Download do Fluxo de Exemplo](exemplo_teste_whazing.json)

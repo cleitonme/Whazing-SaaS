@@ -1,0 +1,890 @@
+{
+	"name": "Whazing",
+	"nodeList": [
+		{
+			"id": "start",
+			"name": "Início",
+			"type": "start",
+			"left": "26px",
+			"top": "100px",
+			"ico": "mdi-play",
+			"viewOnly": true,
+			"status": "success",
+			"style": {}
+		},
+		{
+			"id": "configurations",
+			"name": "Configurações",
+			"type": "configurations",
+			"left": "340px",
+			"top": "100px",
+			"viewOnly": true,
+			"ico": "mdi-alert-circle-outline",
+			"configurations": {
+				"notOptionsSelectMessage": {
+					"message": "",
+					"stepReturn": "A"
+				},
+				"notResponseMessage": {
+					"time": 120,
+					"type": 3,
+					"destiny": "",
+					"message": ""
+				},
+				"welcomeMessage": {
+					"message": ""
+				},
+				"maxRetryBotMessage": {
+					"number": 99,
+					"type": 1,
+					"destiny": 3
+				},
+				"outOpenHours": {
+					"type": 3,
+					"destiny": null
+				},
+				"autoDistributeTickets": "N",
+				"answerCloseTicket": [
+					"sair"
+				]
+			}
+		},
+		{
+			"id": "nodeC",
+			"name": "Boas vindas!",
+			"type": "node",
+			"left": "26px",
+			"top": "301px",
+			"interactions": [
+				{
+					"type": "ListField",
+					"data": {
+						"header": {
+							"type": "text",
+							"text": "{{greeting}}, {{name}}"
+						},
+						"body": {
+							"text": "Seja bem vindo auto atendimento"
+						},
+						"action": {
+							"sections": [
+								{
+									"title": "",
+									"rows": [
+										{
+											"id": 1,
+											"title": "Teste Grátis",
+											"description": "👋🏻 Comece seu teste GRATUITO de 30 dias!  💳"
+										},
+										{
+											"id": 2,
+											"title": "O que é a Whazing?",
+											"description": "Como funciona?"
+										},
+										{
+											"id": 3,
+											"title": "A Whazing tem chatbot",
+											"description": ""
+										},
+										{
+											"id": 4,
+											"title": "Como funciona",
+											"description": "Atendimento"
+										},
+										{
+											"id": 5,
+											"title": "Faz chamadas",
+											"description": ""
+										}
+									]
+								}
+							],
+							"button": "Clique Aqui"
+						}
+					},
+					"id": "20ca46ce-d76d-4255-8519-6eae2421ada8"
+				}
+			],
+			"conditions": [
+				{
+					"type": "Contain2",
+					"condition": [
+						"Teste Grátis"
+					],
+					"id": "d6c5b404-455e-4e8a-b6f3-785d3f390053",
+					"action": 0,
+					"queueId": null,
+					"nextStepId": "d3b649df-bae6-46ea-ad5a-0690e39c0f7f",
+					"userIdDestination": null,
+					"closeTicket": null,
+					"queueMessage": "Qual nome da sua empresa?"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"O que é a Whazing?"
+					],
+					"id": "f5c6ce74-7907-4b18-b6c5-3319570edc6a",
+					"action": 0,
+					"nextStepId": "b263585e-b1b7-40cc-9499-b4e2048a9091"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"A Whazing tem chatbot"
+					],
+					"id": "93b2f061-d43b-46b4-9971-97bbbf2a1807",
+					"action": 0,
+					"nextStepId": "4e7fa097-0be7-43d4-85e8-3b1a67bd9ef2"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Como funciona"
+					],
+					"id": "6dfca559-aefc-4bcb-ac71-74219ee87bce",
+					"action": 0,
+					"nextStepId": "bcc462c6-83f5-489d-857e-ef5020f7984c"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Faz chamadas"
+					],
+					"id": "2a0fed76-645d-4917-97b5-8b73059d6c76",
+					"action": 0,
+					"nextStepId": "f521c756-83b4-4344-b233-6f75820892ed"
+				}
+			],
+			"actions": []
+		},
+		{
+			"id": "b263585e-b1b7-40cc-9499-b4e2048a9091",
+			"name": "O que é a Whazing?",
+			"type": "node",
+			"left": "541px",
+			"top": "211px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "Contain2",
+					"condition": [
+						"Sim"
+					],
+					"id": "07ed5c02-3219-433d-a25b-da5b51fe6ef7",
+					"action": 0,
+					"queueId": null,
+					"nextStepId": "d3b649df-bae6-46ea-ad5a-0690e39c0f7f",
+					"userIdDestination": null,
+					"closeTicket": null,
+					"queueMessage": "Qual nome da sua empresa?"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Falar com um atendente"
+					],
+					"id": "7ecc8c99-587d-49fe-8478-7837b87c9422",
+					"action": 1,
+					"queueId": 1,
+					"nextStepId": null,
+					"userIdDestination": null,
+					"closeTicket": null
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Voltar menu"
+					],
+					"id": "0625244b-25e7-4ade-9114-d44456d9d32a",
+					"action": 0,
+					"nextStepId": "nodeC"
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "**🚀 Conheça o whazing: muito mais que atendimento!**\n\nO **Whazing** é uma plataforma completa de atendimento que vai além da simples gestão de conversas. Ideal para empresas que buscam automação, eficiência e controle em todos os canais de atendimento.\n\n### ✅ Com o Whazing, você pode:\n\n* Criar **chatbots personalizados**\n* Etiquetar e **classificar contatos**\n* Usar **respostas rápidas**\n* **Gerenciar sua equipe** de atendimento\n* **Agendar envios** com anexos e áudios\n* Acompanhar **relatórios completos**\n* Definir **horários de atendimento personalizados**\n\n### 🧩 **Recursos Principais da Plataforma**\n\n* **Chat interno** para comunicação entre equipe.\n* **Planos variados** para atender diferentes necessidades.\n* **Lista de protocolos e agendamentos** com visualização completa.\n* **Tela de atendimento** com filtros e separações por grupo.\n* **Mensagens rápidas com anexos**: envie arquivos, vídeos, documentos e mais.\n* **Importação de mensagens e contatos** direto do celular.\n* **Montagem de bots no estilo ChatFlow** com recursos como: delay, envio de áudios, arquivos, webhooks, botões, listas, localização, figurinhas etc.\n* **Envio automático de mensagens** e distribuição de tickets.\n* **Controle de horário de login**: bloqueie acessos fora do expediente.\n* **Horário de atendimento personalizado** por empresa, canal, fila e feriados.\n\n### 💎 **Recursos Exclusivos**\n\n* **Tarefas e atividades** para gestão interna.\n* **Avaliação de atendimento** pelos clientes.\n* **Transcrição de áudios** recebidos.\n* Integrações avançadas com:\n\n  * **WebHook (N8N)**\n  * **TypeBot**\n  * **ChatGPT, Groq, DeepSeek, Grok**\n  * **ElevenLabs** para respostas em áudio com IA\n* **2ª via de boletos Asaas** integrada.\n* **CRM visual** para organização de processos.\n* **Relatórios completos de tickets** e **exportação em PDF**.\n* **Anotações em tickets**.\n* **Organização por filas**.\n* **Transferência de atendimento para chatbot**.\n* **Chamadas**: chamadas de voz via WhatsApp.\n* **API própria**: integração com ferramentas como n8n, PerfexCRM e outras.\n* **Bots por palavra-chave**: personalize a experiência conforme a primeira mensagem do cliente.\n* **Motivo de encerramento obrigatório**: para um controle mais preciso dos atendimentos.\n\n📞 **Quer saber mais ou testar agora?** Fale com a gente!\nA Whazing está pronta para transformar seu atendimento."
+					},
+					"id": "dc0b5771-a8ba-4833-818a-8dd1532aae7d"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "10"
+					},
+					"id": "5605ab52-e9f0-45de-a6ae-d7644ee2a2d1"
+				},
+				{
+					"type": "ButtonsField",
+					"data": {
+						"text": "Gostaria de solicitar um teste?",
+						"buttons": [
+							{
+								"id": 1,
+								"title": "Sim"
+							},
+							{
+								"id": 2,
+								"title": "Falar com atendente"
+							},
+							{
+								"id": 3,
+								"title": "Voltar menu"
+							}
+						]
+					},
+					"id": "3e7f04cb-14d7-4ae4-b20a-f3958917826e"
+				}
+			]
+		},
+		{
+			"id": "4e7fa097-0be7-43d4-85e8-3b1a67bd9ef2",
+			"name": "🤖 A Whazing tem chatbot?",
+			"type": "node",
+			"left": "515px",
+			"top": "368px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "Contain2",
+					"condition": [
+						"Falar com atendente"
+					],
+					"id": "15def02f-dca4-4d4f-886f-96ea0a9da966",
+					"action": 1,
+					"queueId": 1,
+					"nextStepId": null,
+					"userIdDestination": null,
+					"closeTicket": null
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Sim"
+					],
+					"id": "85ff8098-d43e-4040-b9f0-e3c4bedf4a46",
+					"action": 0,
+					"queueId": null,
+					"nextStepId": "d3b649df-bae6-46ea-ad5a-0690e39c0f7f",
+					"userIdDestination": null,
+					"closeTicket": null,
+					"queueMessage": "Qual nome da sua empresa?"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Voltar menu"
+					],
+					"id": "ea06866f-d32b-45b2-b421-6e7af202fdbe",
+					"action": 0,
+					"nextStepId": "nodeC"
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Sim! Nossa plataforma oferece:\n\n* Chatbot básico (semelhante a uma URA telefônica)\n* Integração com Typebot para criar fluxos completos de atendimento\n\nTudo isso **sem custo adicional**.\n\nAliás, este próprio bot está rodando na nossa plataforma 😉\n"
+					},
+					"id": "eee80dcd-b35d-45b9-99f1-99e9d78dc8de"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "10"
+					},
+					"id": "c7141b26-e669-4d01-9af4-7aa5e3038f59"
+				},
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Montamos seu chatbot sem custo!\nPode contar com nosso suporte sempre que precisar — estamos aqui para ajudar, sem complicação 😊"
+					},
+					"id": "86791b6d-c80a-4537-8a0b-36db5d5efa25"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "10"
+					},
+					"id": "4300f91d-23a9-4498-ae9a-cd6d8c007f65"
+				},
+				{
+					"type": "ButtonsField",
+					"data": {
+						"text": "Gostaria de solicitar um teste?",
+						"buttons": [
+							{
+								"id": 1,
+								"title": "Sim"
+							},
+							{
+								"id": 2,
+								"title": "Falar com atendente"
+							},
+							{
+								"id": 3,
+								"title": "Voltar menu"
+							}
+						]
+					},
+					"id": "4a650ff4-ef6a-48b4-b3ac-b8459707dc3d"
+				}
+			]
+		},
+		{
+			"id": "bcc462c6-83f5-489d-857e-ef5020f7984c",
+			"name": "Como funciona",
+			"type": "node",
+			"left": "530px",
+			"top": "505px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "Contain2",
+					"condition": [
+						"Falar com atendente"
+					],
+					"id": "fb83b4fa-c419-4bac-9516-33a2f6b109d6",
+					"action": 1,
+					"queueId": 1,
+					"nextStepId": null,
+					"userIdDestination": null,
+					"closeTicket": null
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Sim"
+					],
+					"id": "61ab004a-17b1-4a20-ab96-fcbd3812553f",
+					"action": 0,
+					"queueId": null,
+					"nextStepId": "d3b649df-bae6-46ea-ad5a-0690e39c0f7f",
+					"userIdDestination": null,
+					"closeTicket": null,
+					"queueMessage": "Qual nome da sua empresa?"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Voltar menu"
+					],
+					"id": "f1ee7663-c491-4a55-9b0b-3f7025222f41",
+					"action": 0,
+					"nextStepId": "nodeC"
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "📱 **Como funciona o atendimento no WhatsApp, Instagram ou Facebook?**\nCom a nossa plataforma, você pode:\n\n* Dividir os atendimentos por setores\n* Acompanhar e auditar em tempo real o que cada atendente está fazendo\n* Usar um único número de WhatsApp em vários dispositivos (PC, celular, tablet) com toda a equipe ao mesmo tempo\n\nSimples, organizado e eficiente! 💬"
+					},
+					"id": "9a377553-c52e-4e19-a0db-4459b0bb18d0"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "10"
+					},
+					"id": "6a240706-d723-424a-aeb7-e063c9ebde4b"
+				},
+				{
+					"type": "ButtonsField",
+					"data": {
+						"text": "Gostaria de solicitar um teste?",
+						"buttons": [
+							{
+								"id": 1,
+								"title": "Sim"
+							},
+							{
+								"id": 2,
+								"title": "Falar com atendente"
+							},
+							{
+								"id": 3,
+								"title": "Voltar menu"
+							}
+						]
+					},
+					"id": "9ee9fb1d-fe15-4585-8300-6c0cfe8b475c"
+				}
+			]
+		},
+		{
+			"id": "f521c756-83b4-4344-b233-6f75820892ed",
+			"name": "Faz chamadas",
+			"type": "node",
+			"left": "537px",
+			"top": "664px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "Contain2",
+					"condition": [
+						"Voltar menu"
+					],
+					"id": "9d821d67-5348-4588-9c21-2929ee6e738a",
+					"action": 0,
+					"nextStepId": "nodeC"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Sim"
+					],
+					"id": "755c6e5a-1592-4477-b58d-e0f9ba01a788",
+					"action": 0,
+					"queueId": null,
+					"nextStepId": "d3b649df-bae6-46ea-ad5a-0690e39c0f7f",
+					"userIdDestination": null,
+					"closeTicket": null,
+					"queueMessage": "Qual nome da sua empresa?"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Falar com atendente"
+					],
+					"id": "8d5ad986-70f1-49fb-b457-af343caca007",
+					"action": 1,
+					"queueId": 1,
+					"nextStepId": null,
+					"userIdDestination": null,
+					"closeTicket": null
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "📞 A Whazing faz chamadas?\nSim!\nTemos parceria com a Wavoip.\n    • R$ 40,00/mês para chamadas ilimitadas\n    • Plano gratuito com 50 chamadas/mês"
+					},
+					"id": "ca095b4e-afb5-402d-a007-207a36b0a7d0"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "10"
+					},
+					"id": "78f5c42a-00eb-4198-8a95-1cbca25c896a"
+				},
+				{
+					"type": "ButtonsField",
+					"data": {
+						"text": "Gostaria de solicitar um teste?",
+						"buttons": [
+							{
+								"id": 1,
+								"title": "Sim"
+							},
+							{
+								"id": 2,
+								"title": "Falar com atendente"
+							},
+							{
+								"id": 3,
+								"title": "Voltar menu"
+							}
+						]
+					},
+					"id": "807ac268-d204-442f-bfd6-4c5b89f368d8"
+				}
+			]
+		},
+		{
+			"id": "d3b649df-bae6-46ea-ad5a-0690e39c0f7f",
+			"name": "Cadastro teste inicio",
+			"type": "node",
+			"left": "888px",
+			"top": "95px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "US",
+					"condition": [],
+					"id": "32d611a8-fcd8-4b45-a9af-1c3c45000526",
+					"customfield": "nomeempresa",
+					"action": 0,
+					"nextStepId": "27d4965f-a768-4166-b6af-3c4bea08247b"
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Qual nome da sua empresa?"
+					},
+					"id": "ad9e92d3-bf8f-4b49-9592-9fe393b0f433"
+				}
+			]
+		},
+		{
+			"id": "27d4965f-a768-4166-b6af-3c4bea08247b",
+			"name": "qual seu nome?",
+			"type": "node",
+			"left": "1237px",
+			"top": "95px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "US",
+					"condition": [],
+					"id": "b8ded122-c8e0-4fc8-87d5-3d4d5d4d242b",
+					"customfield": "nomecompleto",
+					"action": 0,
+					"nextStepId": "b30a0acb-2ce6-47b3-a9ec-fd58f1be2baf"
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Qual seu nome?"
+					},
+					"id": "901f9752-0d37-49b6-98ac-54888d5ae289"
+				}
+			]
+		},
+		{
+			"id": "b30a0acb-2ce6-47b3-a9ec-fd58f1be2baf",
+			"name": "Qual seu melhor email?",
+			"type": "node",
+			"left": "1539px",
+			"top": "101px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "US",
+					"condition": [],
+					"id": "91698051-f235-4dbd-ab09-67e3a60a80be",
+					"customfield": "email",
+					"action": 0,
+					"nextStepId": "c4d75bc6-0f01-4736-978c-cc0457e79010"
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Qual seu melhor email?"
+					},
+					"id": "da8b4605-311a-445d-a99c-de5dea7d8d71"
+				}
+			]
+		},
+		{
+			"id": "c4d75bc6-0f01-4736-978c-cc0457e79010",
+			"name": "escolha plano",
+			"type": "node",
+			"left": "1485px",
+			"top": "316px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "Contain2",
+					"condition": [
+						"Plano Start"
+					],
+					"id": "2a874fe5-745f-49e9-b808-cdce53b3ee6e",
+					"action": 0,
+					"nextStepId": "49258655-a74d-4c96-be32-8071966f0b67"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Plano Top"
+					],
+					"id": "d7e7705d-438b-4e6e-8d0e-ab6863ec4cd4",
+					"action": 0,
+					"nextStepId": "9353f353-3733-4e70-9e34-aafd42cb3a60"
+				}
+			],
+			"interactions": [
+				{
+					"type": "ListField",
+					"data": {
+						"header": {
+							"type": "text",
+							"text": "Planos"
+						},
+						"body": {
+							"text": "Por favor selecione Plano"
+						},
+						"action": {
+							"sections": [
+								{
+									"title": "Planos",
+									"rows": [
+										{
+											"id": 1,
+											"title": "Plano Start",
+											"description": ""
+										},
+										{
+											"id": 2,
+											"title": "Plano Top",
+											"description": ""
+										}
+									]
+								}
+							],
+							"button": "Clique Aqui"
+						}
+					},
+					"id": "00a77594-a3f1-4e68-ac31-a9bc1d335388"
+				}
+			]
+		},
+		{
+			"id": "49258655-a74d-4c96-be32-8071966f0b67",
+			"name": "request plano start",
+			"type": "node",
+			"left": "1308px",
+			"top": "516px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "VAR_EQUALS_VALUE",
+					"condition": [],
+					"id": "1c481a70-e8cc-47f4-adcf-f3decf70904f",
+					"varName": "StatusTeste",
+					"action": 0,
+					"nextStepId": "ca6d3180-7bfe-46db-906e-b8b92da9f183",
+					"varValue": "200"
+				},
+				{
+					"type": "VAR_NOT_EQUALS_VALUE",
+					"condition": [],
+					"id": "0ad4bba8-37aa-49b8-b921-aba45320c5cb",
+					"varName": "StatusTeste",
+					"action": 1,
+					"queueId": 13,
+					"nextStepId": null,
+					"userIdDestination": null,
+					"closeTicket": null,
+					"queueMessage": "Houve um erro cadastrar seu teste vamos encaminhar para atendimento.",
+					"varValue": "200"
+				}
+			],
+			"interactions": [
+				{
+					"type": "WebhookField",
+					"data": {
+						"webhook": "{\n  \"method\": \"POST\",\n  \"url\": \"https://testeapi.whazing.com.br/v1/api/admin/UtvMCooKs1HgOoJ3Nd0DJIEUr6LZdX/createtenant\",\n  \"params\": {},\n  \"headers\": {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": \"Bearer 12qeqpuZrd7rLQkjMTLXtRDdABmvff\"\n  },\n  \"timeout\": 30000,\n  \"variables\": {\n    \"StatusTeste\": {\n      \"path\": \"status\",\n      \"type\": \"number\"\n    }\n  },\n  \"data\": {\n    \"name\": \"{{nomecompleto}}\",\n    \"email\": \"{{email}}\",\n    \"password\": \"mudar123\",\n    \"tenantName\": \"{{nomeempresa}}\",\n    \"phone\": \"{{phoneNumber}}\",\n    \"plano\": \"4\",\n    \"timetest\": \"14\"\n  }\n}"
+					},
+					"id": "7076370e-66ed-41ad-950f-62b7903bb679"
+				},
+				{
+					"type": "ExecuteConditions",
+					"data": {
+						"time": "10"
+					},
+					"id": "25df9e67-6cb2-45b2-af5a-172a8620af2b"
+				}
+			]
+		},
+		{
+			"id": "ca6d3180-7bfe-46db-906e-b8b92da9f183",
+			"name": "Criado com sucesso",
+			"type": "node",
+			"left": "1252px",
+			"top": "759px",
+			"state": "success",
+			"actions": [],
+			"conditions": [],
+			"interactions": [
+				{
+					"type": "LinkButtonsField",
+					"data": {
+						"header": "Teste cadastrado com sucesso",
+						"body": "Acesse agora seu teste:\nEmail: {{email}}\nSenha: mudar123",
+						"footer": "",
+						"display_text": "Acessar Teste",
+						"url": "https://teste.whazing.com.br/"
+					},
+					"id": "0b277243-28f8-424c-a301-13cd8150526e"
+				}
+			]
+		},
+		{
+			"id": "9353f353-3733-4e70-9e34-aafd42cb3a60",
+			"name": "request Plano Top",
+			"type": "node",
+			"left": "1606px",
+			"top": "514px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "VAR_EQUALS_VALUE",
+					"condition": [],
+					"id": "938f0a6f-df06-4088-96bf-8c5720c4c185",
+					"varName": "StatusTeste",
+					"action": 0,
+					"nextStepId": "ca6d3180-7bfe-46db-906e-b8b92da9f183",
+					"varValue": "200"
+				},
+				{
+					"type": "VAR_NOT_EQUALS_VALUE",
+					"condition": [],
+					"id": "9a61c869-4c48-4467-8cdd-8980373469cd",
+					"varName": "StatusTeste",
+					"action": 1,
+					"queueId": 13,
+					"nextStepId": null,
+					"userIdDestination": null,
+					"closeTicket": null,
+					"queueMessage": "Houve um erro cadastrar seu teste vamos encaminhar para atendimento.",
+					"varValue": "200"
+				}
+			],
+			"interactions": [
+				{
+					"type": "WebhookField",
+					"data": {
+						"webhook": "{\n  \"method\": \"POST\",\n  \"url\": \"https://testeapi.whazing.com.br/v1/api/admin/UtvMCooKs1HgOoJ3Nd0DJIEUr6LZdX/createtenant\",\n  \"params\": {},\n  \"headers\": {\n    \"Content-Type\": \"application/json\",\n    \"Authorization\": \"Bearer 12qeqpuZrd7rLQkjMTLXtRDdABmvff\"\n  },\n  \"timeout\": 30000,\n  \"data\": {\n    \"name\": \"{{nomecompleto}}\",\n    \"email\": \"{{email}}\",\n    \"password\": \"mudar123\",\n    \"tenantName\": \"{{nomeempresa}}\",\n    \"phone\": \"{{phoneNumber}}\",\n    \"plano\": \"5\",\n    \"timetest\": \"14\"\n  },\n  \"variables\": {\n    \"StatusTeste\": {\n      \"path\": \"status\",\n      \"type\": \"number\"\n    }\n  }\n}"
+					},
+					"id": "98b671d6-dba7-4d75-b6e8-2822f7b17c8f"
+				},
+				{
+					"type": "ExecuteConditions",
+					"data": {
+						"time": "10"
+					},
+					"id": "0d9ff1c9-f334-486c-9c7d-c887944bab0c"
+				}
+			]
+		}
+	],
+	"lineList": [
+		{
+			"from": "start",
+			"to": "nodeC",
+			"paintStyle": {
+				"strokeWidth": 3,
+				"stroke": "#5c67f2"
+			}
+		},
+		{
+			"from": "nodeC",
+			"to": "b263585e-b1b7-40cc-9499-b4e2048a9091",
+			"label": null
+		},
+		{
+			"from": "nodeC",
+			"to": "4e7fa097-0be7-43d4-85e8-3b1a67bd9ef2",
+			"label": null
+		},
+		{
+			"from": "nodeC",
+			"to": "bcc462c6-83f5-489d-857e-ef5020f7984c",
+			"label": null
+		},
+		{
+			"from": "b263585e-b1b7-40cc-9499-b4e2048a9091",
+			"to": "nodeC",
+			"label": null
+		},
+		{
+			"from": "bcc462c6-83f5-489d-857e-ef5020f7984c",
+			"to": "nodeC",
+			"label": null
+		},
+		{
+			"from": "4e7fa097-0be7-43d4-85e8-3b1a67bd9ef2",
+			"to": "nodeC",
+			"label": null
+		},
+		{
+			"from": "nodeC",
+			"to": "f521c756-83b4-4344-b233-6f75820892ed",
+			"label": null
+		},
+		{
+			"from": "f521c756-83b4-4344-b233-6f75820892ed",
+			"to": "nodeC",
+			"label": null
+		},
+		{
+			"from": "nodeC",
+			"to": "d3b649df-bae6-46ea-ad5a-0690e39c0f7f",
+			"label": null
+		},
+		{
+			"from": "b263585e-b1b7-40cc-9499-b4e2048a9091",
+			"to": "d3b649df-bae6-46ea-ad5a-0690e39c0f7f",
+			"label": null
+		},
+		{
+			"from": "4e7fa097-0be7-43d4-85e8-3b1a67bd9ef2",
+			"to": "d3b649df-bae6-46ea-ad5a-0690e39c0f7f",
+			"label": null
+		},
+		{
+			"from": "bcc462c6-83f5-489d-857e-ef5020f7984c",
+			"to": "d3b649df-bae6-46ea-ad5a-0690e39c0f7f",
+			"label": null
+		},
+		{
+			"from": "f521c756-83b4-4344-b233-6f75820892ed",
+			"to": "d3b649df-bae6-46ea-ad5a-0690e39c0f7f",
+			"label": null
+		},
+		{
+			"from": "d3b649df-bae6-46ea-ad5a-0690e39c0f7f",
+			"to": "27d4965f-a768-4166-b6af-3c4bea08247b",
+			"label": null
+		},
+		{
+			"from": "27d4965f-a768-4166-b6af-3c4bea08247b",
+			"to": "b30a0acb-2ce6-47b3-a9ec-fd58f1be2baf",
+			"label": null
+		},
+		{
+			"from": "b30a0acb-2ce6-47b3-a9ec-fd58f1be2baf",
+			"to": "c4d75bc6-0f01-4736-978c-cc0457e79010",
+			"label": null
+		},
+		{
+			"from": "c4d75bc6-0f01-4736-978c-cc0457e79010",
+			"to": "49258655-a74d-4c96-be32-8071966f0b67",
+			"label": null
+		},
+		{
+			"from": "49258655-a74d-4c96-be32-8071966f0b67",
+			"to": "ca6d3180-7bfe-46db-906e-b8b92da9f183",
+			"label": null
+		},
+		{
+			"from": "9353f353-3733-4e70-9e34-aafd42cb3a60",
+			"to": "ca6d3180-7bfe-46db-906e-b8b92da9f183",
+			"label": null
+		},
+		{
+			"from": "c4d75bc6-0f01-4736-978c-cc0457e79010",
+			"to": "9353f353-3733-4e70-9e34-aafd42cb3a60",
+			"label": null
+		}
+	],
+	"action": 0,
+	"userId": 1,
+	"celularTeste": null,
+	"isActive": true,
+	"AcceptTransfer": true,
+	"AcceptKanban": true,
+	"id": null
+}

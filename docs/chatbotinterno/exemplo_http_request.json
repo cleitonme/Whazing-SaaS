@@ -1,0 +1,249 @@
+{
+	"name": "httprequest",
+	"nodeList": [
+		{
+			"id": "start",
+			"name": "Início",
+			"type": "start",
+			"left": "26px",
+			"top": "100px",
+			"ico": "mdi-play",
+			"viewOnly": true,
+			"status": "success",
+			"style": {}
+		},
+		{
+			"id": "configurations",
+			"name": "Configurações",
+			"type": "configurations",
+			"left": "340px",
+			"top": "100px",
+			"viewOnly": true,
+			"ico": "mdi-alert-circle-outline",
+			"configurations": {
+				"notOptionsSelectMessage": {
+					"message": "",
+					"stepReturn": "A"
+				},
+				"notResponseMessage": {
+					"time": 10,
+					"type": 1,
+					"destiny": "",
+					"message": ""
+				},
+				"welcomeMessage": {
+					"message": ""
+				},
+				"maxRetryBotMessage": {
+					"number": 3,
+					"type": 1,
+					"destiny": ""
+				},
+				"outOpenHours": {
+					"type": 3,
+					"destiny": null
+				}
+			}
+		},
+		{
+			"id": "nodeC",
+			"name": "Boas vindas!",
+			"type": "node",
+			"left": "26px",
+			"top": "301px",
+			"interactions": [
+				{
+					"type": "ExecuteConditions",
+					"data": {
+						"time": "5"
+					},
+					"id": "b7e114aa-2637-4db8-bfd9-ccd5b59346bd"
+				}
+			],
+			"conditions": [
+				{
+					"type": "VAR_EXISTS",
+					"condition": [],
+					"id": "eeaf3ba6-d746-4d1d-8deb-e74c2f9b2e58",
+					"varName": "cidade",
+					"action": 0,
+					"nextStepId": "ba6cde4f-25f8-4b90-b780-ddcb9930eb35"
+				},
+				{
+					"type": "VAR_NOT_EXISTS",
+					"condition": [],
+					"id": "76e9d8fe-ebe2-460a-9b5c-632f542f798b",
+					"varName": "cidade",
+					"action": 0,
+					"nextStepId": "2bc94de5-a287-445a-96d9-561b0505e130"
+				}
+			],
+			"actions": []
+		},
+		{
+			"id": "2bc94de5-a287-445a-96d9-561b0505e130",
+			"name": "qual cep",
+			"type": "node",
+			"left": "526px",
+			"top": "231px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "US",
+					"condition": [],
+					"id": "376934f0-9f0e-4ae6-9551-d8eecd1e9126",
+					"customfield": "cep",
+					"action": 0,
+					"nextStepId": "6a03a236-e10f-44d1-b762-fcfc95b69e1d"
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Qual seu CEP? Somente numeros ex: 88270000"
+					},
+					"id": "c1a67bd8-6aaa-4ee9-b5ac-441e10616701"
+				}
+			]
+		},
+		{
+			"id": "ba6cde4f-25f8-4b90-b780-ddcb9930eb35",
+			"name": "mostra nome cidade",
+			"type": "node",
+			"left": "503px",
+			"top": "453px",
+			"state": "success",
+			"actions": [],
+			"conditions": [],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Sua cidade é {{cidade}} fica em {{estado}}"
+					},
+					"id": "34d8fdc8-5bae-4e10-870d-4818150599b4"
+				}
+			]
+		},
+		{
+			"id": "6a03a236-e10f-44d1-b762-fcfc95b69e1d",
+			"name": "http request",
+			"type": "node",
+			"left": "953px",
+			"top": "68px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "VAR_EXISTS",
+					"condition": [],
+					"id": "c27a1ad5-c634-4c66-98a2-f1d877fdf87a",
+					"varName": "cidade",
+					"action": 0,
+					"nextStepId": "ba6cde4f-25f8-4b90-b780-ddcb9930eb35"
+				},
+				{
+					"type": "VAR_NOT_EXISTS",
+					"condition": [],
+					"id": "16e6425d-a25e-4bd4-a3e8-f29bdd6e2e21",
+					"varName": "cidade",
+					"action": 0,
+					"nextStepId": "cb927870-dc4d-446d-a813-29752fa8f196"
+				}
+			],
+			"interactions": [
+				{
+					"type": "WebhookField",
+					"data": {
+						"webhook": "{\n  \"method\": \"GET\",\n  \"url\": \"https://viacep.com.br/ws/{{cep}}/json/\",\n  \"params\": {},\n  \"headers\": {},\n  \"timeout\": 30000,\n  \"variables\": {\n    \"cidade\": {\n      \"path\": \"localidade\",\n      \"type\": \"string\"\n    },\n    \"estado\": {\n      \"path\": \"estado\",\n      \"type\": \"string\"\n    }\n  }\n}"
+					},
+					"id": "ab82b22e-f1a7-487a-b8d8-eb6fd840afdf"
+				},
+				{
+					"type": "ExecuteConditions",
+					"data": {
+						"time": "10"
+					},
+					"id": "f3bbb00f-d2db-4767-b1e2-f06129f250ee"
+				}
+			]
+		},
+		{
+			"id": "cb927870-dc4d-446d-a813-29752fa8f196",
+			"name": "erro cep",
+			"type": "node",
+			"left": "1391px",
+			"top": "128px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "US",
+					"condition": [],
+					"id": "13d39ed0-c9f7-461c-8388-65ec0fe040a6",
+					"customfield": "cep",
+					"action": 0,
+					"nextStepId": "6a03a236-e10f-44d1-b762-fcfc95b69e1d"
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Houve erro consultar seu cep pode repetir por favor."
+					},
+					"id": "6f5f40ef-c8ff-4f73-a1e7-fb165ad49113"
+				}
+			]
+		}
+	],
+	"lineList": [
+		{
+			"from": "start",
+			"to": "nodeC",
+			"paintStyle": {
+				"strokeWidth": 3,
+				"stroke": "#5c67f2"
+			}
+		},
+		{
+			"from": "nodeC",
+			"to": "ba6cde4f-25f8-4b90-b780-ddcb9930eb35",
+			"label": null
+		},
+		{
+			"from": "nodeC",
+			"to": "2bc94de5-a287-445a-96d9-561b0505e130",
+			"label": null
+		},
+		{
+			"from": "2bc94de5-a287-445a-96d9-561b0505e130",
+			"to": "6a03a236-e10f-44d1-b762-fcfc95b69e1d",
+			"label": null
+		},
+		{
+			"from": "6a03a236-e10f-44d1-b762-fcfc95b69e1d",
+			"to": "ba6cde4f-25f8-4b90-b780-ddcb9930eb35",
+			"label": null
+		},
+		{
+			"from": "6a03a236-e10f-44d1-b762-fcfc95b69e1d",
+			"to": "cb927870-dc4d-446d-a813-29752fa8f196",
+			"label": null
+		},
+		{
+			"from": "cb927870-dc4d-446d-a813-29752fa8f196",
+			"to": "6a03a236-e10f-44d1-b762-fcfc95b69e1d",
+			"label": null
+		}
+	],
+	"action": 0,
+	"userId": 1,
+	"celularTeste": null,
+	"isActive": true,
+	"AcceptTransfer": true,
+	"AcceptKanban": true,
+	"id": null
+}
