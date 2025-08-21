@@ -16,7 +16,7 @@ O sistema suporta diferentes tipos de canais de atendimento, cada um com suas ca
 
 ### ✅ API Não Oficial (gratuita)
 
-* **WhatsApp (Baileys)** ou **Telegram**
+* **WhatsApp (Baileys)** ou [**Telegram**](telegram.md)
 * Sem custo por canal
 * Pode adicionar quantos canais quiser no **Plano Premium**
 * Incluído no Plano Premium
@@ -26,7 +26,7 @@ O sistema suporta diferentes tipos de canais de atendimento, cada um com suas ca
 
 ### ✅ API Não Oficial Premium (paga)
 
-* **WhatsApp API PLUS**\*
+* [**WhatsApp API PLUS**](whatsapp_api_plus.md)\*
 * API não oficial, mas com recursos avançados
 
 📌 Recursos disponíveis:
@@ -47,16 +47,16 @@ O sistema suporta diferentes tipos de canais de atendimento, cada um com suas ca
 
 ### 💼 API Oficial via Hub NotificaMe (paga)
 
-* **WhatsApp Oficial**
+* [**WhatsApp Oficial**](api-oficial/)
   * Ativação por canal: **R$ 120,00**
   * Mensalidade: **R$ 40,00 por canal conectado** (no Plano Premium)
-* **Instagram**
+* [**Instagram**](facebook-e-instagram-via-hub/)
   * Sem taxa de ativação
   * Mensalidade: **R$ 40,00 por canal conectado** (no Plano Premium)
-* **Facebook**
+* [**Facebook**](facebook-e-instagram-via-hub/)
   * Sem taxa de ativação
   * Mensalidade: **R$ 40,00 por canal conectado** (no Plano Premium)
-* **Webchat**
+* [**Webchat**](facebook-e-instagram-via-hub/)
   * Sem taxa de ativação
   * Mensalidade: **R$ 40,00 por canal conectado** (no Plano Premium)
 
@@ -89,5 +89,14 @@ O sistema suporta diferentes tipos de canais de atendimento, cada um com suas ca
 * Quem quer **custo zero** → usa API Não Oficial (Baileys / Telegram).
 * Quem quer **mais recursos e estabilidade** → usa API PLUS.
 * Quem busca **oficialidade, reputação e escalabilidade** → usa API Oficial (Meta ou Hub NotificaMe).
+
+📊 Comparativo dos Canais (Informação Adicional)
+
+| Canal                                          | Tipo     | Custo                              | Recursos Principais                | Vantagens                                 |
+| ---------------------------------------------- | -------- | ---------------------------------- | ---------------------------------- | ----------------------------------------- |
+| **API Não Oficial** (Baileys / Telegram)       | Gratuita | R$ 0,00                            | Envio de mensagens básicas         | Sem custo, ilimitado no Premium           |
+| **API PLUS** (Não Oficial Premium)             | Paga     | Baixo custo por canal              | Botões, listas, links, localização | Estável, leve na VPS                      |
+| **Hub NotificaMe** (WhatsApp, IG, FB, Webchat) | Paga     | Ativação + mensalidade R$ 40/canal | Recursos oficiais (via hub)        | Suporte multiplataforma                   |
+| **API Oficial Meta (WABA)**                    | Paga     | Conforme uso da API (Meta)         | Templates, botões, multimídia      | Oficial, maior entregabilidade, escalável |
 
 ***
