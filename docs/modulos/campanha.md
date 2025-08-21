@@ -1,44 +1,169 @@
-# Como Enviar Campanhas no Whazing
+# 📢 Como Enviar Campanhas no Whazing
 
-Atualmente, as campanhas funcionam apenas no canal **WhatsApp**.
-
-***
-
-## Etapa 1: Configuração da Campanha
-
-![print](../campanha/campanha1.png)
-
-* **Nome da Campanha**: Escolha um nome para diferenciar sua campanha. Esse campo não influencia no envio das mensagens.
-* **Data e Hora de Início**: Informe a data e o horário em que o envio das mensagens será iniciado.
-* **Enviar por**: Selecione o WhatsApp que será utilizado para o envio.
-* **Delay**: Defina o tempo de intervalo entre o envio das mensagens.
-* **Mídia**: Adicione um arquivo que será enviado junto com a mensagem, se necessário.
-* **Mensagens (1, 2, 3)**: Configure 3 mensagens diferentes. Uma mensagem será escolhida aleatoriamente para cada contato, reduzindo a chance de bloqueio pelo WhatsApp.
-
-Depois de preencher todos os campos, clique em **Salvar**. Em seguida, vá para a próxima etapa, onde adicionaremos os contatos.
+⚠️ Atualmente, as campanhas estão disponíveis apenas para o canal **WhatsApp**.
 
 ***
 
-## Etapa 2: Adicionando Contatos
+### 🚀 Etapa 1: Configuração da Campanha
 
-### Incluir Contatos
+<figure><img src="../../.gitbook/assets/campanha1.png" alt=""><figcaption></figcaption></figure>
 
-![print](../campanha/campanha2.png)
+* **Nome da Campanha** → Identifique sua campanha. _(Apenas para organização interna, não interfere no envio)._
+* **Data e Hora de Início** → Defina quando a campanha será iniciada.
+* **Enviar por** → Escolha a conta de WhatsApp que fará o disparo.
+* **Delay** → Configure o intervalo entre o envio de uma mensagem e outra.
+* **Mídia** → Opcionalmente, anexe uma imagem, vídeo ou documento para enviar junto com a mensagem.
+* **Mensagens (1, 2, 3)** → Cadastre até **3 variações de mensagem**. O sistema escolherá aleatoriamente uma delas para cada contato, ajudando a reduzir riscos de bloqueio no WhatsApp.
 
-1. Clique no botão **Incluir Contatos**.
-2. Utilize os filtros disponíveis para selecionar os contatos mais adequados para a campanha.
-3. Clique em **Gerar**. Dependendo da quantidade de contatos, a lista pode levar algum tempo para ser exibida.
-4. Selecione os contatos desejados na lista gerada e clique em **Adicionar**.
-
-![print](../campanha/campanha3.png)
-
-Caso precise adicionar mais contatos, repita o processo acima. Após adicionar todos os contatos, clique em **Listar Campanhas** para retornar à tela anterior.
+Depois de preencher todos os campos, clique em **Salvar** e siga para a próxima etapa: **adicionar contatos**.
 
 ***
 
-## Etapa 3: Programação e Envio
+### 👥 Etapa 2: Adicionando Contatos
 
-![print](../campanha/campanha4.png)
+<figure><img src="../../.gitbook/assets/campanha2.png" alt=""><figcaption></figcaption></figure>
 
-1. Após revisar os detalhes da campanha, clique em **Programar Envio**.
-2. A partir deste momento, basta aguardar o envio ser executado conforme a configuração realizada.
+<figure><img src="../../.gitbook/assets/campanha4.png" alt=""><figcaption></figcaption></figure>
+
+#### Incluir Contatos
+
+1. Clique em **Incluir Contatos**.
+2. Utilize os **filtros** disponíveis para segmentar os contatos mais adequados.
+3. Clique em **Gerar**. _(Dependendo da quantidade de contatos, a lista pode levar alguns segundos para ser carregada.)_
+4. Selecione os contatos desejados e clique em **Adicionar**.
+
+👉 Caso precise incluir mais contatos, basta repetir o processo.\
+Quando terminar, clique em **Listar Campanhas** para voltar à tela anterior.
+
+***
+
+### 📅 Etapa 3: Programação e Envio
+
+1. Revise todos os detalhes da campanha.
+2. Clique em **Programar Envio**.
+3. A campanha será executada automaticamente na data e horário definidos.
+
+
+
+<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### 🔄 Uso de Variáveis Dinâmicas
+
+Você pode **personalizar suas mensagens** utilizando informações cadastradas no contato.
+
+📷 _Exemplo de Informações Adicionais:_
+
+![](<../../.gitbook/assets/informacoesadicionais (1).jpg>)\
+
+
+*   Exemplo 1:
+
+    ```bash
+    {{CPF}}
+    ```
+
+    ➝ Retorna: `0985786468528`
+*   Exemplo 2:
+
+    ```bash
+    {{plano}}
+    ```
+
+    ➝ Retorna: `Premium`
+*   Exemplo 3:
+
+    ```bash
+    {{endereco}}
+    ```
+
+    ➝ Retorna: `Rua Marechal Deodoro, 11`
+
+***
+
+👉 Com isso, suas campanhas ficam **mais personalizadas** e com maior taxa de engajamento.
+
+***
+
+## 📢 Exemplos de Mensagens de Campanha com Variáveis e Botões
+
+### 🔹 Exemplo 1 – Campanha de Cobrança
+
+```bash
+Olá {{firstName}}, tudo bem?  
+Identificamos que o seu plano **{{plano}}** venceu em {{date}}.  
+
+📌 Valor pendente: R$ 120,00  
+
+Gostaria de regularizar agora?
+```
+
+**Botões sugeridos (API Plus):**
+
+* ✅ Quero pagar agora
+* 📅 Preciso de mais prazo
+* 🚫 Não é meu boleto
+
+***
+
+### 🔹 Exemplo 2 – Campanha de Lembrete de Endereço
+
+```bash
+Oi {{firstName}}, confira se seu endereço está correto:  
+📍 {{endereco}}  
+
+Caso precise alterar, clique abaixo:
+```
+
+**Botões sugeridos (API Plus):**
+
+* ✏️ Atualizar endereço
+* ✅ Está correto
+
+***
+
+### 🔹 Exemplo 3 – Campanha de Engajamento / Retenção
+
+```bash
+Olá {{firstName}} 👋  
+Notamos que faz um tempo que você não interage com a gente.  
+Temos novidades exclusivas para você no WhatsApp!  
+
+Quer receber?
+```
+
+**Botões sugeridos (API Plus):**
+
+* 🔥 Sim, quero novidades
+* 🤔 Me conte mais
+* 🚫 Não tenho interesse
+
+***
+
+### 🔹 Exemplo 4 – Incentivar Interação (mesmo para opt-out)
+
+```bash
+Se não quiser mais receber mensagens, pode escolher abaixo:  
+```
+
+**Botões sugeridos (API Plus):**
+
+* 🚫 Parar de receber
+* 🛡️ Denunciar mensagem
+* 🔒 Bloquear remetente
+
+👉 **Estratégia**: Mesmo que o cliente clique em "Denunciar" ou "Bloquear", o simples fato de **interagir com o botão gera engajamento**, o que ajuda a manter a reputação do número mais alta.
+
+***
+
+⚡ **Dica extra**: Sempre que possível, misture **texto personalizado com variáveis** e **botões interativos**, porque:
+
+1. O cliente se sente mais próximo da mensagem.
+2. O WhatsApp entende que há **relevância e interação**.
+3. Reduz as chances de bloqueio ou banimento.
+
+***
+
+***
+

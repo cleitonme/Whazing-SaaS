@@ -3,7 +3,7 @@
 * [Whazing SaaS](README.md)
 * [Documentação](docs/README.md)
   * [Módulos](docs/modulos/README.md)
-    * [Como Enviar Campanhas no Whazing](docs/modulos/campanha.md)
+    * [📢 Como Enviar Campanhas no Whazing](docs/modulos/campanha.md)
     * [Como Configurar a Avaliação de Atendimento](docs/modulos/avaliacao.md)
     * [Follow-up](docs/modulos/follow-up.md)
     * [Despedida](docs/modulos/despedida.md)
