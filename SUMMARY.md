@@ -70,6 +70,7 @@
 * [📡 Canais Disponíveis](canais-suportados/README.md)
   * [Guia de Conexão do TELEGRAM](canais-suportados/telegram.md)
   * [WhatsApp API PLUS](canais-suportados/whatsapp_api_plus.md)
+  * [API Oficial do WhatsApp (Meta)](canais-suportados/api-oficial-do-whatsapp-meta.md)
   * [Whatsapp API OFICIAL VIA HUB](canais-suportados/api-oficial/README.md)
     * [Como criar template](canais-suportados/api-oficial/criar_template.md)
     * [Modo Fallback](canais-suportados/api-oficial/fallback.md)
