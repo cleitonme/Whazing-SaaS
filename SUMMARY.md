@@ -58,6 +58,8 @@
 * [🚀 Guia de Instalação Whazing (Ubuntu 22)](como-instalar-e-atualizar.md)
 * [Como Atualizar o Whazing](atualizar-whazing/README.md)
   * [📸 Criar Snapshot da VPS (Peramix)](atualizar-whazing/criar-snapshot-da-vps-peramix.md)
+  * [📸 Criar Snapshot da VPS (Contabo)](atualizar-whazing/criar-snapshot-da-vps-contabo.md)
+  * [📸 Criar Snapshot da VPS (Hetzner)](atualizar-whazing/criar-snapshot-da-vps-hetzner.md)
 * [Modulo SaaS](modulo-saas/README.md)
   * [Mensagem de boas vindas teste](modulo-saas/mensagem-boas-vindas-teste.md)
   * [Como Criar a Opção de Ajuda](modulo-saas/criarajuda.md)
