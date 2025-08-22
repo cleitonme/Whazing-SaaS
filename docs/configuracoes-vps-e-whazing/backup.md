@@ -1,8 +1,25 @@
 # Manual de Backup e Restauração para Banco de Dados PostgreSQL no Docker
 
-Este guia explica como fazer backup e restaurar um banco de dados PostgreSQL rodando em um container Docker. Também abordamos a compactação, transferência para outro servidor (VPS) e agendamento automático de backups.
+## 🔑 Como descobrir a senha do banco no Whazing
+
+Em sistemas baseados no **Whazing**, a senha do banco de dados não fica em um lugar visível no painel.\
+Ela está salva em um **arquivo de configuração do sistema**, chamado `.env`.
 
 ***
+
+### 📂 Onde fica o arquivo `.env`
+
+No Ubuntu (servidores padrão de instalação), o arquivo está no caminho:
+
+```
+/home/deploy/whazing/backend/.env
+```
+
+Esse arquivo contém **todas as informações de conexão com o banco de dados** (usuário, senha, nome do banco e endereço do servidor).
+
+***
+
+
 
 ## **1. Identificar o ID do Container do PostgreSQL**
 

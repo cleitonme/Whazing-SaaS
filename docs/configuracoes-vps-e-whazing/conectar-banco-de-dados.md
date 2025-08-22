@@ -1,4 +1,23 @@
-# Guia para Conectar ao Banco de Dados PostgreSQL
+# Conectar ao Banco de Dados PostgreSQL
+
+## 🔑 Como descobrir a senha do banco no Whazing
+
+Em sistemas baseados no **Whazing**, a senha do banco de dados não fica em um lugar visível no painel.\
+Ela está salva em um **arquivo de configuração do sistema**, chamado `.env`.
+
+***
+
+### 📂 Onde fica o arquivo `.env`
+
+No Ubuntu (servidores padrão de instalação), o arquivo está no caminho:
+
+```
+/home/deploy/whazing/backend/.env
+```
+
+Esse arquivo contém **todas as informações de conexão com o banco de dados** (usuário, senha, nome do banco e endereço do servidor).
+
+***
 
 ## 1. Baixar o Programa para Acessar o Banco de Dados
 
@@ -18,7 +37,7 @@ Para acessar o PostgreSQL, usaremos o programa **DBeaver**.
 * **Porta**: `5432`
 * **Banco de Dados**: `postgres`
 * **Usuário**: `whazing`
-* **Senha**: `AKwWM4Qu2GRppJ7`
+* **Senha**:&#x20;
 
 ## 4. Exibir Todos os Bancos de Dados
 
