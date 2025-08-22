@@ -1,5 +1,10 @@
 # Changelog e Atualizações
 
+### Versão 2.11.1.2 Final - Changelog
+
+* bug - Mudança sistema contagem avaliações
+* Api Plus - Mudança sistema geração qrcode colocado botão solicitar qrcode quando tem telefone preenchido e somente aparece pairing code, fazendo limpar numero e gerando qrcode. Colocado retorno servidor quando tem muitas tentativar gerar que causa erro, informando que deve aguardar para uma nova tentativa.
+
 ### Versão 2.11.1.1 Final - Changelog
 
 💸 Novo Gateway de Pagamentos via Pix Cada transação Pix tem taxa fixa de apenas R$ 0,30 – valor definitivo, sem promoções temporárias.
