@@ -8,6 +8,7 @@
     * [Follow-up](docs/modulos/follow-up.md)
     * [Despedida](docs/modulos/despedida.md)
     * [📊 Motivos de Encerramento de Tickets](docs/modulos/motivos-de-encerramento-de-tickets.md)
+    * [📲 Instalação do PWA e habilitação de notificações](docs/modulos/instalacao-do-pwa-e-habilitacao-de-notificacoes.md)
   * [Como Liberar Grupos no Whazing](docs/Liberar_grupos_whatsapp/README.md)
   * [📌 Variáveis do Sistema](<docs/Variáveis sistema/README.md>)
   * [CHAT BOT INTERNO](docs/chatbotinterno/README.md)
