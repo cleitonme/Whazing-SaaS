@@ -86,4 +86,10 @@ Se não aparecer o aviso:
 * Habilite **notificações** para receber WebPush em tempo real.
 * Em caso de problemas, siga as dicas da seção **Problemas comuns e soluções**.
 
+### 🙏 Agradecimentos
+
+Agradecemos a todos que contribuíram para a criação deste manual.
+
+**Obrigado a Cristian Grando pela colaboração!**
+
 ***
