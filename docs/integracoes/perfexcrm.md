@@ -17,3 +17,9 @@ Dados devem ser colocados e da api somente ir no whazing em Configurações - Ca
 Modulo colocar whazing em um Iframe Perfex CRM
 
 [https://github.com/cleitonme/Whazing-SaaS/raw/refs/heads/main/docs/perfexcrm/modulo%20colocar%20iframe%20whazing%20no%20perfexcrm.zip](https://github.com/cleitonme/Whazing-SaaS/raw/refs/heads/main/docs/perfexcrm/modulo%20colocar%20iframe%20whazing%20no%20perfexcrm.zip)
+
+Caso queira para PERFEX CRM uma integração pix custo super baixo temos modulo do Pushin Pay
+
+💸 **Pushin Pay no Perfex CRM** Cada transação Pix tem **taxa fixa de apenas R$ 0,30** – valor definitivo, não é promoção!
+
+👉 Cadastre-se agora e aproveite: [https://pushinpay.whazing.com.br](https://pushinpay.whazing.com.br)
