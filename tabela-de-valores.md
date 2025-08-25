@@ -48,7 +48,7 @@ Versão Premium\*
 
 **Valores painel revenda hub (Para clientes versão Premium)**
 
-Valor mensal por canal conectado$ 40,00
+Valor mensal por canal conectado R$ 50,00
 
 Vencimento ficará junto com da licença Premium
 
