@@ -49,16 +49,16 @@ O sistema suporta diferentes tipos de canais de atendimento, cada um com suas ca
 
 * [**WhatsApp Oficial**](api-oficial/)
   * Ativação por canal: **R$ 120,00**
-  * Mensalidade: **R$ 40,00 por canal conectado** (no Plano Premium)
+  * Mensalidade: **R$ 50,00 por canal conectado**
 * [**Instagram**](facebook-e-instagram-via-hub/)
   * Sem taxa de ativação
-  * Mensalidade: **R$ 40,00 por canal conectado** (no Plano Premium)
+  * Mensalidade: **R$ 50,00 por canal conectado**
 * [**Facebook**](facebook-e-instagram-via-hub/)
   * Sem taxa de ativação
-  * Mensalidade: **R$ 40,00 por canal conectado** (no Plano Premium)
+  * Mensalidade: **R$ 50,00 por canal conectado**
 * [**Webchat**](facebook-e-instagram-via-hub/)
   * Sem taxa de ativação
-  * Mensalidade: **R$ 40,00 por canal conectado** (no Plano Premium)
+  * Mensalidade: **R$ 50,00 por canal conectado** (no Plano Premium)
 
 ***
 
@@ -96,7 +96,7 @@ O sistema suporta diferentes tipos de canais de atendimento, cada um com suas ca
 | ---------------------------------------------- | -------- | ---------------------------------- | ---------------------------------- | ----------------------------------------- |
 | **API Não Oficial** (Baileys / Telegram)       | Gratuita | R$ 0,00                            | Envio de mensagens básicas         | Sem custo, ilimitado no Premium           |
 | **API PLUS** (Não Oficial Premium)             | Paga     | Baixo custo por canal              | Botões, listas, links, localização | Estável, leve na VPS                      |
-| **Hub NotificaMe** (WhatsApp, IG, FB, Webchat) | Paga     | Ativação + mensalidade R$ 40/canal | Recursos oficiais (via hub)        | Suporte multiplataforma                   |
+| **Hub NotificaMe** (WhatsApp, IG, FB, Webchat) | Paga     | Ativação + mensalidade R$ 50/canal | Recursos oficiais (via hub)        | Suporte multiplataforma                   |
 | **API Oficial Meta (WABA)**                    | Paga     | Conforme uso da API (Meta)         | Templates, botões, multimídia      | Oficial, maior entregabilidade, escalável |
 
 ***
