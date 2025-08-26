@@ -2,9 +2,11 @@
 
 ## 🌐 Integração com Hub NotificaMe
 
-### 🔹 Requisitos importantes
+Cadastrar através da URL [https://hub.whazing.com.br/](https://hub.whazing.com.br/)​
 
-* O sistema **somente aceita tokens adquiridos de revendas autorizadas**.
+Usar cupom desconto: whazing
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 🔹 Acesso ao Hub
 

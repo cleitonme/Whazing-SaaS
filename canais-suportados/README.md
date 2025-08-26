@@ -47,6 +47,12 @@ O sistema suporta diferentes tipos de canais de atendimento, cada um com suas ca
 
 ### 💼 API Oficial via Hub NotificaMe (paga)
 
+Cadastrar através da URL [https://hub.whazing.com.br/](https://hub.whazing.com.br/)​
+
+Usar cupom desconto: whazing
+
+<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 * [**WhatsApp Oficial**](api-oficial/)
   * Ativação por canal: **R$ 120,00**
   * Mensalidade: **R$ 50,00 por canal conectado**

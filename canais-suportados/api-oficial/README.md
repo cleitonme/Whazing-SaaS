@@ -11,6 +11,12 @@ A API oficial está disponível tanto na **versão gratuita** quanto para **clie
 * Em caso de **banimento do número**, a taxa de ativação também é **perdida** — sim, a API oficial **também pode ser banida**.
 * Mensalidade de uso do Hub: **R$ 50,00**
 
+Cadastrar através da URL [https://hub.whazing.com.br/](https://hub.whazing.com.br/)​
+
+Usar cupom desconto: whazing
+
+<figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 ### ⚠️ Considerações importantes
