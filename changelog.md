@@ -9,9 +9,9 @@
 
 💸 Novo Gateway de Pagamentos via Pix Cada transação Pix tem taxa fixa de apenas R$ 0,30 – valor definitivo, sem promoções temporárias.
 
-👉 Garanta essa condição exclusiva cadastrando-se no link: https://pushinpay.whazing.com.br
+👉 Garanta essa condição exclusiva cadastrando-se no link: [https://pushinpay.whazing.com.br](https://pushinpay.whazing.com.br/)
 
-https://doc.whazing.com.br/modulo-saas/gateways-pagamentos/configurar-pushin-pay
+[https://doc.whazing.com.br/modulo-saas/gateways-pagamentos/configurar-pushin-pay](modulo-saas/gateways-pagamentos/configurar-pushin-pay.md)
 
 * bug - corrigido filtro relatório tickets primeira mensagem
 * Sugestão instalar PWA tela login
