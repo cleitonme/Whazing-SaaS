@@ -46,9 +46,15 @@ Versão Premium\*
 
 
 
-**Valores painel revenda hub (Para clientes versão Premium)**
+**Valores painel revenda hub**
 
 Valor mensal por canal conectado R$ 50,00
+
+Cadastrar através da URL [https://hub.whazing.com.br/](https://hub.whazing.com.br/)
+
+Usar cupom desconto: whazing
+
+<figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
 
 Vencimento ficará junto com da licença Premium
 
