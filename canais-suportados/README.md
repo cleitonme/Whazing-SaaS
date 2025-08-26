@@ -64,7 +64,7 @@ Usar cupom desconto: whazing
   * Mensalidade: **R$ 50,00 por canal conectado**
 * [**Webchat**](facebook-e-instagram-via-hub/)
   * Sem taxa de ativação
-  * Mensalidade: **R$ 50,00 por canal conectado** (no Plano Premium)
+  * Mensalidade: **R$ 50,00 por canal conectado**
 
 ***
 
