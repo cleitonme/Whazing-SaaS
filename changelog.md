@@ -1,5 +1,16 @@
 # Changelog e Atualizações
 
+#### Versão 2.11.3.2 FINAL - Changelog
+
+* Mudanças na versão free - Todos recursos da premium disponível na free sem limite de canais - a free envia uma propaganda do whazing em tickets novos, api, mensagem agendada, folowup.
+* bug cadastro api oficial - aceitar mesmo token canais diferentes
+* Deletar canal validação nome canal - para garantia extra leitura deletar
+* Botão fechar informativo pro usuario
+* Correções relatorios de folowup
+* Botão abrir qrcode do wavoip - api plus - abrir qrcode ler no site wavoip - atalho somente para facilitar
+* NotificaMe - Podera ser adquirido token diretamente deles usar link cadastro https://hub.whazing.com.br e cupom 'whazing'
+* Decidi atualizar versão nova baileys que testes que fiz melhorou bastante questão lid - _Não tem suporte lista, botao etc_
+
 ### Versão 2.11.1.2 Final - Changelog
 
 * bug - Mudança sistema contagem avaliações
