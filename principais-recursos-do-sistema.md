@@ -29,9 +29,6 @@ description: >-
 * **Multi idioma**: Português, inglês e espanhol
 * **Suporte WhatsApp API Oficial**: Gerencie mensagens dessas plataformas via HUB (necessário pagar mensalidade por canal).
 * **Suporte lista e botões**: Api não oficial plus com suporte a lista e botões
-
-#### Funções Exclusivas da Versão Premium
-
 * **Tarefas**: Gerencie tarefas e atividades.
 * **Avaliação de Atendimento**: Avalie o atendimento prestado.
 * **Transcrição de Áudio**: Transcreva mensagens de áudio.
