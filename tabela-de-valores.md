@@ -18,29 +18,21 @@ Licença Premium por VPS:
 
 ## Valores não inclui manutenção da vps.
 
-Versão grátis\*
+#### 📌 Diferença entre as versões
 
-* Limites da versão grátis
-* 10 usuários
-* 2 canais
-* Suporte WhatsApp Api Bayles
-* Suporte Facebook e Instagram e WebChat - VIA HUB - Necessário pagar mensalidade por canal duvidas (48) 9941-6725
-* Verificar premium abaixo para saber diferenças
+**Versão Grátis** 🆓
 
-Versão Premium\*
+* Exibe anúncios do Whazing.
+* Envia automaticamente propaganda em:\
+  • Primeira mensagem de novos tickets\
+  • Mensagens via API\
+  • Mensagens agendadas\
+  • Follow-ups
 
-* Não possui limites
-* Kanban
-* Integração WebHook/N8N - TypeBot - Groq - ChatGPT - DeepSeek
-* Transcrição de áudio
-* Tarefas
-* Avaliação de atendimento
-* Geração PDF atendimento
-* Relatório de tickets
-* Anotações em tickets
-* Mensagens separadas por filas
-* Transferir atendimento para ChatBot
-* Retirada mensagem "Enviado via Whazing" no modulo campanhas
+**Versão Premium** 💎
+
+* Sem anúncios.
+* Entregas limpas, sem propaganda adicional.
 
 ## Quer revender? Temos desconto de acordo quantidade VPS contratada.
 
