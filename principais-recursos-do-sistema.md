@@ -51,6 +51,20 @@ description: >-
 * **Motivo de Encerramento**:Ao encerrar um ticket, o usuário deverá escolher um motivo obrigatório, tornando rastreamento atendimentos mais precisos
 * **Follow-up**: Mantenha contato ativo com leads
 
+
+
+**Versão Grátis** 🆓
+
+* Exibe anúncios do Whazing.
+* Envia automaticamente propaganda em: • Primeira mensagem de novos tickets • Mensagens via API • Mensagens agendadas • Follow-ups
+
+**Versão Premium** 💎
+
+* Sem anúncios.
+* Entregas limpas, sem propaganda adicional.
+
+
+
 ### Acesse Demo do produto para conhecer tudo
 
 * [https://teste.whazing.com.br](https://teste.whazing.com.br/)
