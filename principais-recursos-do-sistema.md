@@ -53,10 +53,14 @@ description: >-
 
 
 
-**Versão Grátis** 🆓
-
-* Exibe anúncios do Whazing.
-* Envia automaticamente propaganda em: • Primeira mensagem de novos tickets • Mensagens via API • Mensagens agendadas • Follow-ups
+Versão Grátis 🆓\
+Exibe anúncios do Whazing.\
+Envia automaticamente propaganda em:\
+• Primeira mensagem de novos tickets\
+• Mensagens via API\
+• Mensagens agendadas\
+• Follow-ups\
+• Campanhas
 
 **Versão Premium** 💎
 
