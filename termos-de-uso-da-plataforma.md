@@ -8,11 +8,24 @@ Ao utilizar este software, você concorda com os termos e condições estabeleci
 **2. Validador de Licença**\
 Nosso sistema inclui um validador de licença que coleta informações específicas para verificar a legitimidade da sua instalação. As informações coletadas incluem o endereço IP da instalação, a URL associada e a versão do software em uso. Essas informações são necessárias para garantir que a licença esteja em conformidade com os termos de uso do software.
 
-**3. Versões do Software**\
-O software está disponível em duas versões: Grátis e Premium.
+### 3. Versões do Software
 
-* **Versão Grátis**: Esta versão do software é oferecida gratuitamente. No entanto, ela possui limitações de uso, incluindo o máximo de 10 usuários, 2 canais, e suporte exclusivamente ao canal WhatsApp. A versão grátis é fornecida **sem qualquer garantia de suporte, atualizações ou personalização**.
-* **Versão Premium**: A versão premium do software não possui os limites da versão grátis. A sua utilização está condicionada ao pagamento da taxa de licença, conforme os termos estabelecidos no contrato de licença. Nessa versão, o suporte, atualizações e eventuais customizações estão disponíveis de acordo com o plano contratado.
+#### 3.1 Versão Grátis 🆓
+
+* Disponibilizada gratuitamente, podendo ter alterações ou encerramento a qualquer momento.
+* Envia, de forma automática, **anúncios e/ou menções à marca Whazing** em determinadas situações, como:\
+  • Abertura de novos tickets.\
+  • Mensagens enviadas pela API.\
+  • Mensagens agendadas.\
+  • Follow-ups.
+* Não inclui garantia de suporte, atualizações ou personalizações.
+
+#### 3.2 Versão Premium 💎
+
+* Não possui as limitações da versão grátis.
+* **Não exibe anúncios** nem insere propagandas automáticas nas mensagens.
+* A utilização está condicionada ao pagamento da taxa de licença, conforme contrato de licença vigente.
+* Inclui suporte, atualizações e eventuais customizações, de acordo com o plano contratado.
 
 **4. Propriedade Intelectual e Medidas Legais**\
 Todo o conteúdo, código-fonte, identidade visual, logotipo, marca e demais elementos que compõem o software são de propriedade exclusiva da empresa desenvolvedora e estão protegidos pelas leis de direitos autorais, propriedade intelectual e tratados internacionais aplicáveis.\
