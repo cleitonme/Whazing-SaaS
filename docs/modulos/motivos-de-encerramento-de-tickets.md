@@ -25,14 +25,14 @@ Essa informação é fundamental para gerar relatórios e dashboards que ajudam 
 2. Clique em **Adicionar motivo**.
 3. Defina o **nome** do motivo e escolha uma **cor** para identificação.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 📝 Como funciona no atendimento
 
 * Ao finalizar um ticket, o atendente será **obrigado a selecionar um motivo** antes de encerrar.
 * Isso garante que cada finalização fique registrada com um motivo específico.
 
-<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -48,6 +48,6 @@ Essa informação é fundamental para gerar relatórios e dashboards que ajudam 
 
 ✅ Dessa forma, sua equipe terá **mais controle e visibilidade** sobre os atendimentos, ajudando a melhorar a tomada de decisão.
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
