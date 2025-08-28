@@ -2,7 +2,7 @@
 
 #### Versão 2.11.3.2 FINAL - Changelog
 
-* Mudanças na versão free - Todos recursos da premium disponível na free sem limite de canais - a free envia uma propaganda do whazing em tickets novos, api, mensagem agendada, folowup.
+* **Mudanças na versão free - Todos recursos da premium disponível na free sem limite de canais - a free envia uma propaganda do whazing em tickets novos, api, mensagem agendada, folowup, campanhas.**
 * bug cadastro api oficial - aceitar mesmo token canais diferentes
 * Deletar canal validação nome canal - para garantia extra leitura deletar
 * Botão fechar informativo pro usuario

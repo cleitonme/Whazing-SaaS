@@ -18,21 +18,20 @@ Licença Premium por VPS:
 
 ## Valores não inclui manutenção da vps.
 
-#### 📌 Diferença entre as versões
+📌 Diferença entre as versões
 
-**Versão Grátis** 🆓
+Versão Grátis 🆓\
+Exibe anúncios do Whazing.\
+Envia automaticamente propaganda em:\
+• Primeira mensagem de novos tickets\
+• Mensagens via API\
+• Mensagens agendadas\
+• Follow-ups\
+• Campanhas
 
-* Exibe anúncios do Whazing.
-* Envia automaticamente propaganda em:\
-  • Primeira mensagem de novos tickets\
-  • Mensagens via API\
-  • Mensagens agendadas\
-  • Follow-ups
-
-**Versão Premium** 💎
-
-* Sem anúncios.
-* Entregas limpas, sem propaganda adicional.
+Versão Premium 💎\
+Sem anúncios.\
+Entregas limpas, sem propaganda adicional.
 
 ## Quer revender? Temos desconto de acordo quantidade VPS contratada.
 
