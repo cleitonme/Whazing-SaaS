@@ -157,4 +157,6 @@ Para retirar contato do follow-up use valor 0
 
 ![print](../Follow-up/telaatendimento.png)
 
-#### Novo relatórios para indicar contatos que estão no Follow-up e status envio das mensagens
+#### Para acompanhar os envios acesse nos relatórios
+
+<figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
