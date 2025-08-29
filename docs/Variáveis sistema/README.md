@@ -125,8 +125,4 @@ No **TypeBOT**, algumas variáveis seguem um formato diferente:
 * Ticket → `ticket`
 * Remote JID → `remoteJid`
 
-***
-
-👉 Dessa forma, o documento fica mais limpo, com títulos, divisões claras e exemplos diretos.
-
-Quer que eu também prepare **uma tabela resumo** com todas as variáveis (dinâmicas, fixas e TypeBOT) em um só lugar para consulta rápida?
+As informações adicionais podem ser usadas como variáveis (atenção essa informação carregada quando inicia conexão typebot se alguma for alterada durante fluxo typebot não vai alterar até fluxo typebot for reiniciado)
