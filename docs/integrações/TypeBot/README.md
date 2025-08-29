@@ -234,8 +234,6 @@ phoneNumber: 5511999999999
 
 ## Exemplo de fluxo para importar no Typebot
 
-Clique botão direito escolha salvar link como
-
 {% file src="../../../.gitbook/assets/exemplo_alterar_informacao_adicional.json" %}
 
 {% file src="../../../.gitbook/assets/exemplo_de_lista.json" %}
