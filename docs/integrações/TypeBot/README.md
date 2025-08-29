@@ -1,7 +1,6 @@
-## Configurar Typebot 
+# Configurar Typebot
 
-![print](configurartypebot.png)
-![print](configurarwhazingtype.png)
+![print](configurartypebot.png) ![print](configurarwhazingtype.png)
 
 1. **URL Integração**: Pegue a URL na publicação do Typebot, não coloque a última `/` conforme exemplo acima.
 2. **Typebot - Slug**: Nome que aparece depois na URL quando você publica. Ver exemplo acima.
@@ -12,76 +11,80 @@
 7. **Mensagem caso opção escolhida seja inválida**: Mensagem que o bot enviará caso não receba a resposta esperada (exemplo: o cliente envia texto quando a entrada esperada era um número).
 8. **Mensagem ao reiniciar fluxo**: Mensagem que será enviada após o comando que reinicia o fluxo.
 
-### Variáveis do Typebot
+## Variáveis do Typebot
 
-- **number**
-- **pushName**
-- **nome**
-- **email**
-- **ticketId**
-- **protocol**
-- **ticket**
-- **remoteJid**
-- **firstMessage**
+* **number**
+* **pushName**
+* **nome**
+* **email**
+* **ticketId**
+* **protocol**
+* **ticket**
+* **remoteJid**
+* **firstMessage**
+* As informações adicionais podem ser usadas como variaveis (atenção essa informação carregada quando inicia conexão typebot se alguma for alterada durante fluxo typebot não vai alterar até fluxo typebot for reniciado)
 
-- As informações adicionais podem ser usadas como variaveis (atenção essa informação carregada quando inicia conexão typebot se alguma for alterada durante fluxo typebot não vai alterar até fluxo typebot for reniciado)
+## Exemplo
 
-### Exemplo
+> <img src="informacoesadicionais.jpg" alt="print" data-size="original">
 
->![print](informacoesadicionais.jpg)
+1.  Usando a variável abaixo, o valor retornado será "0985786468528":
 
-1. Usando a variável abaixo, o valor retornado será "0985786468528":
-   ```bash
-   {{CPF}}
-   ```
+    ```bash
+    {{CPF}}
+    ```
+2.  Usando a variável abaixo, o valor retornado será "Premium":
 
-2. Usando a variável abaixo, o valor retornado será "Premium":
-   ```bash
-   {{plano}}
-   ```
+    ```bash
+    {{plano}}
+    ```
+3.  Usando a variável abaixo, o valor retornado será "Rua Marechal Deodoro, 11":
 
-3. Usando a variável abaixo, o valor retornado será "Rua Marechal Deodoro, 11":
-   ```bash
-   {{endereco}}
-   ```
+    ```bash
+    {{endereco}}
+    ```
 
-### Comandos Possíveis
+## Comandos Possíveis
 
 Adicione os comandos abaixo em um Bubble de texto:
 
-- Comando para transferir de Fila (lembre-se de trocar o ID):
-   ```bash
-   #{ "queueId": "1" }
-   ```
-- Comando para transferir para Atendente (lembre-se de trocar o ID):
-   ```bash
-   #{ "queueId":"1", "userId":"1" }
-   ```
-- Parar o Typebot (não precisa trocar o 1):
-   ```bash
-   #{ "stopBot":"1" }
-   ```
-- Comando para adicionar uma Etiqueta (lembre-se de trocar o ID):
-   ```bash
-   #{ "tagId": "1" }
-   ```
-- Comando para finalizar o atendimento (não precisa trocar o 1):
-   ```bash
-   #{ "closeTicket":"1" }
-   ```
-   
-- Comando para adicionar contato em uma Lane CRM - Somente crm compartilhado (lembre-se de trocar o ID):
-   ```bash
-   #{ "crmId": "1" }
-   ```
-   
-- Comando para adicionar contato em um Follow-up - (lembre-se de trocar o ID) - Para Retirar usar id 0:
-   ```bash
-   #{ "followupId": "1" }
-   ```
+*   Comando para transferir de Fila (lembre-se de trocar o ID):
 
-- Comando Criar ou alterar informação adicional contato
-  
+    ```bash
+    #{ "queueId": "1" }
+    ```
+*   Comando para transferir para Atendente (lembre-se de trocar o ID):
+
+    ```bash
+    #{ "queueId":"1", "userId":"1" }
+    ```
+*   Parar o Typebot (não precisa trocar o 1):
+
+    ```bash
+    #{ "stopBot":"1" }
+    ```
+*   Comando para adicionar uma Etiqueta (lembre-se de trocar o ID):
+
+    ```bash
+    #{ "tagId": "1" }
+    ```
+*   Comando para finalizar o atendimento (não precisa trocar o 1):
+
+    ```bash
+    #{ "closeTicket":"1" }
+    ```
+*   Comando para adicionar contato em uma Lane CRM - Somente crm compartilhado (lembre-se de trocar o ID):
+
+    ```bash
+    #{ "crmId": "1" }
+    ```
+*   Comando para adicionar contato em um Follow-up - (lembre-se de trocar o ID) - Para Retirar usar id 0:
+
+    ```bash
+    #{ "followupId": "1" }
+    ```
+* Comando Criar ou alterar informação adicional contato
+
 ```bash
 #{
   "AddiInfo": {
@@ -93,9 +96,9 @@ Adicione os comandos abaixo em um Bubble de texto:
 
 Os IDs podem ser obtidos na tela que lista os cadastros no Whazing.
 
-#### Comando especiais - usar bubbles texto
+### Comando especiais - usar bubbles texto
 
-- Criar lista personalizada
+* Criar lista personalizada
 
 ```bash
 [list]
@@ -128,7 +131,7 @@ rowId: id_opcao_3
 [/menu]
 ```
 
-- Criar menu reply - api oficial e API PLUS
+* Criar menu reply - api oficial e API PLUS
 
 ```bash
 [replybutton]
@@ -147,7 +150,7 @@ id: 3
 [button]
 ```
 
-- Criar url button - api oficial e API PLUS
+* Criar url button - api oficial e API PLUS
 
 ```bash
 [urlbutton]
@@ -158,15 +161,15 @@ id: 3
 [url]https://teste.whazing.com.br/[/url]
 
 ```
-   
-- Criar solicitar localizacao - api oficial e API PLUS
+
+* Criar solicitar localizacao - api oficial e API PLUS
 
 ```bash
 [locationrequest]
 [text]Por favor compartilhe sua localização para encontrarmos a loja mais próxima[text]
 ```
 
-- Criar Botão dinamico - Somente API PLUS
+* Criar Botão dinamico - Somente API PLUS
 
 ```bash
 [dinamicbutton]
@@ -190,7 +193,7 @@ url: https://www.whazing.com.br
 [url]
 ```
 
-- Criar Carosel - Somente API PLUS
+* Criar Carosel - Somente API PLUS
 
 ```bash
 [carousel]
@@ -225,14 +228,24 @@ phoneNumber: 5511999999999
 [item]
 ```
 
+**IMPORTANTE**:
 
-**IMPORTANTE**: 
-- Veja como instalar o Typebot na mesma VPS que o Whazing [aqui](Comoinstalar.md).
+* Veja como instalar o Typebot na mesma VPS que o Whazing [aqui](Comoinstalar.md).
 
-### Exemplo de fluxo para importar no Typebot
+## Exemplo de fluxo para importar no Typebot
 
-- [Baixe e importe o exemplo de fluxo compatível com o Whazing](exemplo-fluxo-typebot.json).
+Clique botão direito escolha salvar link como
 
-### Como Compartilhar Fluxo com o Cliente
+{% file src="../../../.gitbook/assets/exemplo_alterar_informacao_adicional.json" %}
+
+{% file src="../../../.gitbook/assets/exemplo_de_lista.json" %}
+
+{% file src="../../../.gitbook/assets/exemplo2_alterar_informacao_adicional.json" %}
+
+{% file src="../../../.gitbook/assets/exemplo-fluxo-typebot.json" %}
+
+{% file src="../../../.gitbook/assets/typebot_ixc_by_Claudemir_Todo_Bom.json" %}
+
+## Como Compartilhar Fluxo com o Cliente
 
 ![print](compartilharfluxo.png)
