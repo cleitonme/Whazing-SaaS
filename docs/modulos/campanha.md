@@ -1,5 +1,9 @@
 # 📢 Como Enviar Campanhas no Whazing
 
+Lembre-se campanha tem riscos altos de ban aconselhamos uso de números descartáveis caso queira adquirir números descartáveis aquecidos com preço justo acesse [https://disparo.whazing.com.br](https://disparo.whazing.com.br/)
+
+
+
 ⚠️ Atualmente, as campanhas estão disponíveis apenas para o canal **WhatsApp**.
 
 ***
