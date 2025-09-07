@@ -18,8 +18,6 @@ O sistema suporta diferentes tipos de canais de atendimento, cada um com suas ca
 
 * **WhatsApp (Baileys)** ou [**Telegram**](telegram.md)
 * Sem custo por canal
-* Pode adicionar quantos canais quiser no **Plano Premium**
-* Incluído no Plano Premium
 * Sem limite de usuários ou canais (limitado apenas pela capacidade da VPS)
 
 ***
@@ -100,7 +98,7 @@ Usar cupom desconto: whazing
 
 | Canal                                          | Tipo     | Custo                              | Recursos Principais                | Vantagens                                 |
 | ---------------------------------------------- | -------- | ---------------------------------- | ---------------------------------- | ----------------------------------------- |
-| **API Não Oficial** (Baileys / Telegram)       | Gratuita | R$ 0,00                            | Envio de mensagens básicas         | Sem custo, ilimitado no Premium           |
+| **API Não Oficial** (Baileys / Telegram)       | Gratuita | R$ 0,00                            | Envio de mensagens básicas         | Sem custo                                 |
 | **API PLUS** (Não Oficial Premium)             | Paga     | Baixo custo por canal              | Botões, listas, links, localização | Estável, leve na VPS                      |
 | **Hub NotificaMe** (WhatsApp, IG, FB, Webchat) | Paga     | Ativação + mensalidade R$ 50/canal | Recursos oficiais (via hub)        | Suporte multiplataforma                   |
 | **API Oficial Meta (WABA)**                    | Paga     | Conforme uso da API (Meta)         | Templates, botões, multimídia      | Oficial, maior entregabilidade, escalável |
