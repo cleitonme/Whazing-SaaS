@@ -68,19 +68,17 @@ Usar cupom desconto: whazing
 
 ### 💼 API Oficial via Hub ConnectionHub (paga)
 
-Facebook
+[Facebook](instagram-facebook-via-connectionhub.md)
 
 * Sem taxa de ativação
 * Mensalidade: **R$ 25,00 por canal conectado**
 
-Instagram
+[Instagram](instagram-facebook-via-connectionhub.md)
 
 * Sem taxa de ativação
 * Mensalidade: **R$ 25,00 por canal conectado**
 
 **\*ConnectionHub não suporta comentários em postagem somente direct**
-
-
 
 ***
 
@@ -110,15 +108,16 @@ Instagram
 
 * Quem quer **custo zero** → usa API Não Oficial (Baileys / Telegram).
 * Quem quer **mais recursos e estabilidade** → usa API PLUS.
-* Quem busca **oficialidade, reputação e escalabilidade** → usa API Oficial (Meta ou Hub NotificaMe).
+* Quem busca **oficialidade, reputação e escalabilidade** → usa API Oficial (Meta, Hub NotificaMe ou Connection Hub).
 
 📊 Comparativo dos Canais (Informação Adicional)
 
-| Canal                                          | Tipo     | Custo                              | Recursos Principais                | Vantagens                                 |
-| ---------------------------------------------- | -------- | ---------------------------------- | ---------------------------------- | ----------------------------------------- |
-| **API Não Oficial** (Baileys / Telegram)       | Gratuita | R$ 0,00                            | Envio de mensagens básicas         | Sem custo                                 |
-| **API PLUS** (Não Oficial Premium)             | Paga     | Baixo custo por canal              | Botões, listas, links, localização | Estável, leve na VPS                      |
-| **Hub NotificaMe** (WhatsApp, IG, FB, Webchat) | Paga     | Ativação + mensalidade R$ 50/canal | Recursos oficiais (via hub)        | Suporte multiplataforma                   |
-| **API Oficial Meta (WABA)**                    | Paga     | Conforme uso da API (Meta)         | Templates, botões, multimídia      | Oficial, maior entregabilidade, escalável |
+| Canal                                             | Tipo     | Custo                              | Recursos Principais                | Vantagens                          |
+| ------------------------------------------------- | -------- | ---------------------------------- | ---------------------------------- | ---------------------------------- |
+| **API Não Oficial** (Baileys / Telegram)          | Gratuita | R$ 0,00                            | Envio de mensagens básicas         | Sem custo                          |
+| **API PLUS** (Não Oficial Premium)                | Paga     | Baixo custo por canal              | Botões, listas, links, localização | Estável, leve na VPS               |
+| **Hub NotificaMe** (WhatsApp, IG, FB, Webchat)    | Paga     | Ativação + mensalidade R$ 50/canal | Recursos oficiais (via hub)        | Suporte multiplataforma            |
+| **Hub ConnectionHub** (WhatsApp, IG, FB, Webchat) | Paga     | mensalidade R$ 25/canal            | Recursos oficiais (via hub)        | Suporte multiplataforma            |
+| **API Oficial Meta (WABA)**                       | Paga     | Conforme uso da API (Meta)         | Templates, botões, multimídia      | Oficial, maior garantia, escalável |
 
 ***
