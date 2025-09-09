@@ -66,6 +66,24 @@ Usar cupom desconto: whazing
 
 ***
 
+### 💼 API Oficial via Hub ConnectionHub (paga)
+
+Facebook
+
+* Sem taxa de ativação
+* Mensalidade: **R$ 25,00 por canal conectado**
+
+Instagram
+
+* Sem taxa de ativação
+* Mensalidade: **R$ 25,00 por canal conectado**
+
+**\*ConnectionHub não suporta comentários em postagem somente direct**
+
+
+
+***
+
 ### API Oficial da Meta (WABA)
 
 * **WhatsApp Business API (Meta Oficial)**
