@@ -70,6 +70,7 @@
     * [Configurar o Asaas](modulo-saas/gateways-pagamentos/configurar-asaas.md)
     * [Configurar EFI Bank](modulo-saas/gateways-pagamentos/configurar-efi-bank.md)
     * [Configurar Mercado Pago](modulo-saas/gateways-pagamentos/configurar-mercado-pago.md)
+    * [InfinitePay](modulo-saas/gateways-pagamentos/infinitepay.md)
   * [Guia Simples para Configurar o Gmail e Lembrar a Senha no Whazing](modulo-saas/configurar-gmail.md)
   * [📘 API SaaS](modulo-saas/api_saas.md)
   * [📢 Informativo do Sistema](modulo-saas/informativo-do-sistema.md)
