@@ -27,3 +27,7 @@ Clique meios de pagamento escolha se quer repassar taxas cartão ou não
 <figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
 
 Pronto seu whazing está pronto para receber pagamento. Caso cliente feche tela de pagamento antes de finalizar e voltar para site whazing automaticamente o pagamento não será renovado automaticamente.
+
+
+
+Para quem usa PerfexCRM vendemos modulo com suporte infinitipay

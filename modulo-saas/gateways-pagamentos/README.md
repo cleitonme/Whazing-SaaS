@@ -11,4 +11,5 @@ No Whazing você pode receber pagamentos via:\
 ✅ [Mercado Pago](configurar-mercado-pago.md)\
 ✅ [Asaas](configurar-asaas.md)\
 ✅ [Efi](configurar-efi-bank.md)\
+✅ [InfinitePay](infinitepay.md)\
 ✅ Stripe
