@@ -1,5 +1,26 @@
 # Changelog e Atualizações
 
+#### Versão 2.12.0.0 BETA - Changelog
+
+**Correções de Bugs**
+
+* Correção na exibição do status de envio por contato em campanhas.
+* Ajuste no frontend para evitar travamentos em cenários com muitas mensagens rápidas (não será mais necessário dar F5).
+* Correção no envio de contatos pelo Plus, que não atualizava o status de mensagem enviada.
+* Tela de login ajustada para impedir múltiplos cliques no botão, evitando falhas.
+
+**Melhorias e Novos Recursos**
+
+* Campanhas agora exibem mensagens que tiveram erro de envio.
+* API Plus (WABA / Hub) com mecanismo de **retry automático**, realizando até 5 tentativas em caso de erro.
+* Suporte ao discador SIP (Asterisk e FreeSWITCH).
+* Novo Hub para **Instagram e Facebook**.
+* Nova integração SaaS de pagamento: **InfinityPay**
+  * Pix com taxa 0.
+  * Cartão com possibilidade de repassar taxa ao cliente.
+* Integração com sistema **IXC** para emissão de boletos e desbloqueio de confiança.
+* Atualização do **Baileys** - recomendado ler Novamente QRCODE.
+
 #### Versão 2.11.3.2 FINAL - Changelog
 
 * **Mudanças na versão free - Todos recursos da premium disponível na free sem limite de canais - a free envia uma propaganda do whazing em tickets novos, api, mensagem agendada, folowup, campanhas.**
