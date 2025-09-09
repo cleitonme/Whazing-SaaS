@@ -30,6 +30,7 @@
     * [API Whazing](docs/integracoes/api.md)
     * [Como Configurar Wavoip](docs/integracoes/configurar_wavoip.md)
     * [Como Configurar Transcrição de Áudio](docs/integracoes/transcricao_audio.md)
+    * [Discador SIP](docs/integracoes/discador-sip.md)
   * [Problemas no Whazing?](docs/problemas-no-whazing/README.md)
     * [❗ Erro no sistema: \[ioredis\] Unhandled error event: Error: connect ECONNREFUSED](docs/problemas-no-whazing/reinstalar_redis.md)
     * [Meu sistema não abre](docs/problemas-no-whazing/meu_sistema_nao_abre.md)
