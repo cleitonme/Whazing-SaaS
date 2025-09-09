@@ -12,7 +12,7 @@ description: >-
 * **Planos**: Diferentes opções de planos para atender às suas necessidades.
 * **Menu Ajuda**: Acesso rápido a tutoriais e suporte.
 * **Fechamento e Apagar Tickets em Massa**: Feche ou apague múltiplos tickets de uma vez.
-* **Integração Bancária**: Com Efi, Mercado Pago, Asaas e Stripe. Recebimento via PIX, cartão de crédito e boleto.
+* **Integração Bancária**: Com Efi, Mercado Pago, Asaas, infinitepay e Stripe. Recebimento via PIX, cartão de crédito e boleto.
 * **Lista de Protocolos**: Acompanhe todas as suas interações e casos.
 * **Lista de Agendamentos**: Gerencie mensagens agendadas.
 * **Tela de Atendimento**: Vários filtros e separação por grupos para facilitar o gerenciamento dos atendimentos.
@@ -27,7 +27,7 @@ description: >-
 * **Controle Horário de Login**: Não permita seu funcionário acesse sistema fora do expediente
 * **Horário de atendimento**: Horário de atendimento personalizável, por empresa, canal ou fila e personalização de feriados.
 * **Multi idioma**: Português, inglês e espanhol
-* **Suporte WhatsApp API Oficial**: Gerencie mensagens dessas plataformas via HUB (necessário pagar mensalidade por canal).
+* **Suporte WhatsApp API Oficial**: Existe acesso direto e via HUB
 * **Suporte lista e botões**: Api não oficial plus com suporte a lista e botões
 * **Tarefas**: Gerencie tarefas e atividades.
 * **Avaliação de Atendimento**: Avalie o atendimento prestado.
@@ -38,6 +38,7 @@ description: >-
 * **Integração Groq e DeepSeek**: Responda mensagens com IA e utilize ElevenLabs.
 * **Integração Grok**: Responda mensagens com IA e utilize ElevenLabs.
 * **Integração para 2ª via de boleto Asaas**: Gerencie boletos com facilidade.
+* **Integração com IXC Soft:** 2 via de boletos e desbloqueio de confiança
 * **CRM**: Organize tarefas e processos visualmente.
 * **Relatório de Tickets**: Gere relatórios detalhados de atendimento.
 * **Geração de PDF de Atendimento**: Exporte atendimentos em formato PDF.
@@ -45,6 +46,7 @@ description: >-
 * **Mensagens Separadas por Filas**: Organize mensagens por filas.
 * **Transferir Atendimento para ChatBot**: Mova atendimentos para bots.
 * **Wavoip**: Fazer e receber chamadas WhatsApp
+* **Discador Sip:** Integração servidor de voip compatível com WebRTC
 * **API**: Integre com outras plataformas como n8n e PerfexCrm
 * **Bot Por palavra chave**: De acordo com primeira mensagem cliente escolhe bot diferente
 * **White Label**: Personalize a plataforma com sua marca pelo painel.
