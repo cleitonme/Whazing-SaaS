@@ -2,7 +2,10 @@
 
 <figure><img src="../../.gitbook/assets/image (27).png" alt=""><figcaption></figcaption></figure>
 
-Conexão servidor sip com suporte WebRTC
+Para que a integração funcione, seu servidor de telefonia (ex: Asterisk, Issabel) **deve** ter suporte a:
+
+* ✅ **WebRTC**
+* ✅ **WSS (Web Socket Secure)**, geralmente operando na porta `8089`.
 
 No cadastro de usuários temos novos campos
 
