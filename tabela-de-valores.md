@@ -9,6 +9,8 @@ Licença Premium por VPS:
 * Plano 6 meses R$ 300,00
 * Plano 12 meses R$ 500,00
 
+Existe canais que pago separado para uso consultar [Canais Disponíveis](canais-suportados/)
+
 ## Valores serviço de instalação
 
 * Adquirindo plano Premium 6 meses ou mais instalação grátis, planos menores R$ 50,00
@@ -38,37 +40,4 @@ Sem anúncios.\
 Entregas limpas, sem propaganda adicional.
 
 ## Quer revender? Temos desconto de acordo quantidade VPS contratada.
-
-
-
-**Valores painel revenda hub**
-
-Valor mensal por canal conectado R$ 50,00
-
-Cadastrar através da URL [https://hub.whazing.com.br/](https://hub.whazing.com.br/)
-
-Usar cupom desconto: whazing
-
-<figure><img src=".gitbook/assets/image (11).png" alt=""><figcaption></figcaption></figure>
-
-Como funciona acesso via HUB WhatsApp api oficial, Instagram, Facebook e webchat?
-
-O acesso ao HUB é cobrado por canal conectado. Isso significa que para cada conta conectada, seja WhatsApp api oficial, Instagram, Facebook ou WebChat, há uma mensalidade separada.
-
-WhatsApp api oficial possui uma taxa ativação de R$ 120,00 reais por número
-
-Exemplos:\
-✅ Se conectar 2 contas do Instagram, serão 2 mensalidades.\
-✅ Se conectar 1 Instagram, 1 Facebook e 1 WebChat, serão 3 mensalidades\
-✅ Se conectar 3 números na api oficial WhatsApp, 2 Instagram, 1 Facebook e 1 WebChat, serão 7 mensalidades
-
-## [Whatsapp API PLUS](canais-suportados/whatsapp_api_plus.md)
-
-* Se trata api não oficial, com recursos premium
-
-Suporte envio botão, listas, botão copia e cola, link, solicitação localização
-
-Api com maior garantia de estabilidade
-
-Custo baixo por canal, mas com garantia maior de estabilidade e menor consumo de recursos da VPS
 
