@@ -8,6 +8,12 @@ description: Suporte 2 via de boletos e desbloqueio de confiança
 
 ## Passo 1: Configurar Integração
 
+Atenção:&#x20;
+
+Exemplo domínio [https://ixc.whazing.com.br/webservice/v1](https://www.flashnetprovedor.com.br/webservice/v1)
+
+na url da integração preencha somente [https://ixc.whazing.com.br](https://www.flashnetprovedor.com.br/webservice/v1), não colocar valor depois /
+
 1. Acesse **Integrações** > clique em **Adicionar** e preencha os dados conforme mostrado na imagem abaixo:
 2. &#x20;![](<../../.gitbook/assets/image (14).png>)
 3. cadastrar dados para acesso Api IXC e liberar ip da vps abaixo segue prints tela configuração no ixc
