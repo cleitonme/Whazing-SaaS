@@ -1,5 +1,12 @@
 # Changelog e Atualizações
 
+#### Versão 2.12.1.0 BETA - Changelog
+
+* bug api plus - Grupo nova mensagem não aparece nome contato chat aberto
+* api plus - marca mensagens como lidas
+* supervisor de fila permisão alterar status tickets grupos
+* solicitar confirmacão botão adicionar 1 mês painel saas evitar clique acidental
+
 #### Versão 2.12.0.0 BETA - Changelog
 
 **Correções de Bugs**
