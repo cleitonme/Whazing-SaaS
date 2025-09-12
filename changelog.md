@@ -1,5 +1,9 @@
 # Changelog e Atualizações
 
+#### Versão 2.12.1.0 BETA HOTFIX - Changelog
+
+* Integração IXC com 3 boletos ou mais uso apis com suporte lista como api oficial ou api plus erro ao selecionar boleto
+
 #### Versão 2.12.1.0 BETA - Changelog
 
 * bug api plus - Grupo nova mensagem não aparece nome contato chat aberto
