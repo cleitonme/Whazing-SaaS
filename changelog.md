@@ -2,6 +2,8 @@
 
 #### Versão 2.12.2.0 BETA - Changelog
 
+* Atenção para quem usa avaliação tem que reconfigurar
+
 Integrações
 
 * Integração 2 via boletos Asaas totalmente reestruturada - consulta mais de um boletos em apis compatível usa lista e botão. Da opção transferir ou finalizar.
