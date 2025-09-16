@@ -17,7 +17,9 @@ Você deve colocar perguntar cpf ou cnpj do cliente ao encaminhar fila a integra
 ### Passo 2: Configurar Filas <a href="#passo-2-configurar-filas" id="passo-2-configurar-filas"></a>
 
 1. Acesse **Cadastros** > **Filas** > clique em **Adicionar** e preencha os dados conforme mostrado na imagem abaixo:
-2. ![](https://doc.whazing.com.br/~gitbook/image?url=https%3A%2F%2F858671661-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FL28BkT6aCze1NvvWNwS5%252Fuploads%252FPbC7JO0rbCgTiNMiDXo5%252Fimage.png%3Falt%3Dmedia%26token%3D7b3a88d0-2840-491d-bfe4-10d86999521d\&width=768\&dpr=4\&quality=100\&sign=3cae69b4\&sv=2)
+2.
+
+    <figure><img src="../../.gitbook/assets/image (30).png" alt=""><figcaption></figcaption></figure>
 3. Na integração, selecione a opção criada no passo anterior.
 
 ### Passo 3: Criar o Chatbot <a href="#passo-3-criar-o-chatbot" id="passo-3-criar-o-chatbot"></a>
