@@ -129,3 +129,32 @@ Você pode definir mensagens específicas que serão enviadas de acordo com a si
 * Sempre defina uma **fila de fallback** para evitar que o cliente fique sem resposta.
 * Ajuste o **intervalo entre mensagens** para evitar que a IA responda mensagens curtas isoladamente (“oi”, “bom dia”).
 * Teste diferentes **temperaturas** para encontrar o equilíbrio entre objetividade e naturalidade.
+
+***
+
+### 🚀 Como Usar a Recepção Inteligente
+
+1. **Cadastre a integração**
+   * Vá até o menu de **Integrações** e crie uma nova configuração de **Recepção Inteligente**.
+   * Defina o provedor de IA (Groq ou ChatGPT), informe a **API KEY** e configure o **prompt** e demais parâmetros.
+2. **Associe a integração a uma fila**
+   * No menu de **Filas**, escolha ou crie a fila desejada (ex: recepcao).
+   * Defina que essa fila utilizará a integração da **Recepção Inteligente** cadastrada.
+3. **Vincule a fila ao canal**
+   * No menu de **Canais**, selecione o canal de atendimento (ex: WhatsApp, Instagram, Facebook).
+   * Configure para que as **novas conversas recebidas** nesse canal sejam direcionadas para a fila que contém a integração.
+4. **Pronto!**
+   * A partir de agora, sempre que chegar uma **nova mensagem nesse canal**, o primeiro atendimento será feito automaticamente pela **Recepção Inteligente**.
+   * A IA responderá o cliente conforme o prompt definido, podendo **finalizar o atendimento** ou **transferir para a fila/setor correto**.
+
+***
+
+📌 **Exemplo prático de fluxo**:
+
+* Cliente envia mensagem pelo WhatsApp: _“Quero a segunda via do boleto”_.
+* O canal está vinculado à fila **Financeiro**, que usa a integração da **Recepção Inteligente**.
+* A IA identifica a palavra-chave “boleto” e automaticamente:
+  * transfere para a fila **Financeiro** se houver atendente online, ou
+  * envia a mensagem: _“Informe seu CPF para gerar a segunda via do boleto”_ se não houver atendente disponível.
+
+***
