@@ -39,7 +39,7 @@ description: >-
 * **Integração Grok**: Responda mensagens com IA e utilize ElevenLabs.
 * **Integração para 2ª via de boleto Asaas**: Gerencie boletos com facilidade.
 * **Integração com IXC Soft:** 2 via de boletos e desbloqueio de confiança
-* **Integração com SGP:** 2 via de boletos e desbloqueio de confiança
+* **Integração com TSMX SGP:** 2 via de boletos e desbloqueio de confiança
 * **Integração com HubSoft:** 2 via de boletos e desbloqueio de confiança
 * **Integração Recepção inteligente:** Bot com uso ia faz atendimento inicial e faz encaminhamento fila ou finaliza atendimento
 * **CRM**: Organize tarefas e processos visualmente.
@@ -67,9 +67,9 @@ Envia automaticamente propaganda em:\
 • Follow-ups\
 • Campanhas
 
-<figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Versão Premium** 💎
 

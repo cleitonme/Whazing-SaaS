@@ -180,9 +180,9 @@ Se nenhuma condição for atendida, o bot responderá com: "Desculpe! Não enten
 
 ## Configurações
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Mensagem de saudação (Fila/Usuário)
 

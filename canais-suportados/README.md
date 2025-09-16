@@ -49,7 +49,7 @@ Cadastrar através da URL [https://hub.whazing.com.br/](https://hub.whazing.com.
 
 Usar cupom desconto: whazing
 
-<figure><img src="../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 * [**WhatsApp Oficial**](api-oficial/)
   * Ativação por canal: **R$ 120,00**

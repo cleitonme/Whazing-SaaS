@@ -9,7 +9,7 @@ Siga estes passos simples para configurar uma mensagem de boas-vindas:
 1.  Acesse a página de criação de API:
 
     ```bash
-    https://urldoseufrontend/#/api-service
+    https://urldoseufrontend/#/sessoes
     ```
 
 ### Passo 2: Configurar Mensagem de Boas-Vindas

@@ -1,6 +1,32 @@
 # Changelog e Atualizações
 
-#### Versão 2.12.1.0 BETA HOTFIX - Changelog
+#### Versão 2.12.2.0 BETA - Changelog
+
+Integrações
+
+* Integração 2 via boletos Asaas totalmente reestruturada - consulta mais de um boletos em apis compatível usa lista e botão. Da opção transferir ou finalizar.
+* Nova integração - Recepção inteligente - Usar ia para analisar mensagem cliente e transferir para fila adequada, finalizar atendimento
+* Nova integração - Sistema SGP - 2 via boleto e desbloqueio confiança
+* Nova integração - Sistema HubSoft - 2 via boleto e desbloqueio confiança
+
+Avaliação
+
+* ajustes em horas tempo entre cada avaliação - Função para tickets fechados seguidos não solicitar toda vez avaliação. Hoje tempo fixo de 6 horas
+* Canais suporte lista será enviado lista para escolha opção, será necessário reconfigura canais que usam avaliação pois notas estão agora valores separados.
+
+Etiquetas
+
+* Liberado deletar etiquetas mesmo com contatos vinculados - não apaga contato somente retirar a tag
+
+ChatBot
+
+* Transferência outro fluxo
+
+Migração Baileys x PLUS
+
+* Possibilidade migrar mesmo com ticket abertos ou pendentes
+
+#### Versão 2.12.1.0 FINAL - Changelog
 
 * Integração IXC com 3 boletos ou mais uso apis com suporte lista como api oficial ou api plus erro ao selecionar boleto
 

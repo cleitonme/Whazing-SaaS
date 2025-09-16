@@ -17,6 +17,8 @@
     * [Integração de IA para melhorar e sugerir mensagens no atendimento](docs/configuracoes/melhorar_texto_atendimento.md)
   * [Integrações](docs/integrações/README.md)
     * [IXC Soft](docs/integracoes/ixc-soft.md)
+    * [HubSoft](docs/integracoes/hubsoft.md)
+    * [TSMX SGP](docs/integracoes/tsmx-sgp.md)
     * [Emissão de 2ª Via de Boleto Asaas no Bot](docs/integrações/2viaboletoasaas/README.md)
     * [ChatGPT Assistant](<docs/integrações/CHATGPT Assistants/README.md>)
     * [Configurar Groq ou ChatGPT](<docs/integrações/GROQ - CHATGPT/README.md>)
