@@ -1,5 +1,37 @@
 # Changelog e Atualizações
 
+#### 🚀 Versão 2.12.2.1 BETA - Changelog
+
+**Painel SaaS**
+
+* Adicionada opção para **ocultar itens do menu lateral direito** (apenas oculta, não remove).
+* Nova função para **visualizar o espaço utilizado** na pasta `public` por empresa.
+* **Estatísticas por empresa** agora disponíveis.
+* Possibilidade de **editar canais diretamente pelo Painel SaaS**.
+* Correção de bug: usuários **excluídos eram listados**
+
+**API Plus**
+
+* Agora **rejeita chamadas**, exibindo mensagem de aviso.
+* Adicionado suporte a **Custom URL para servidor Plus**, para quem optar por adquirir acesso direto.
+
+**Frontend**
+
+* Incluída **mensagem de erro** em casos de falha de comunicação com o backend.
+
+**Avaliação**
+
+* Nova opção para **desativar a lista de avaliações**.
+
+**Gravação de Áudio**
+
+* Substituído o módulo de gravação áudio para **mensagens agendadas** e **mensagens rápidas**.
+
+**Integrações**
+
+* **Correção Assas (2ª via):** quando havia múltiplos boletos na lista, ocorria erro.
+* **2ª via Assas, IXC e Hubsoft** com API Plus agora utilizam **botão "Copiar e Colar"**.
+
 #### Versão 2.12.2.0 BETA - Changelog
 
 * Atenção para quem usa avaliação tem que reconfigurar
