@@ -2,6 +2,10 @@
 
 #### 🚀 Versão 2.12.2.1 BETA HOTFIX - Changelog
 
+* bug - correção Balanceada de usuarios no chatbot
+
+#### 🚀 Versão 2.12.2.1 BETA HOTFIX - Changelog
+
 * bug - correção suporte gpt-5
 
 #### 🚀 Versão 2.12.2.1 BETA - Changelog
