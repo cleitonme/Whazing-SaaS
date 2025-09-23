@@ -1,37 +1,38 @@
-# Instalar N8N mesma VPS WHAZING
+# Como Instalar
 
-## CRIAR SUBDOMINIO E APONTAR PARA O IP DA SUA VPS
+## Instalar N8N mesma VPS WHAZING
 
-Exemplo:
-n8n.webconfiavel.com.br
+### CRIAR SUBDOMINIO E APONTAR PARA O IP DA SUA VPS
 
-## CHECAR PROPAGAÇÃO DO DOMÍNIO
+Exemplo: n8n.webconfiavel.com.br
+
+### CHECAR PROPAGAÇÃO DO DOMÍNIO
 
 https://dnschecker.org/
 
-## Acesso Portainer
+### Acesso Portainer
 
 Acesse URL do Portainer: http://seuip:9000/
 
 Caso seja primeira vez tem que gerar senha conforme instruções abaixo
 
-## Acesso Portainer gerar senha
+### Acesso Portainer gerar senha
+
 "Your Portainer instance timed out for security purposes. To re-enable your Portainer instance, you will need to restart Portainer."
 
 Executar no terminal
+
 ```bash
 docker container restart portainer
 ```
 
 Depois acesse novamente url http://seuip:9000/
 
-# Continuando
+## Continuando
 
-- Vai "Home" - "Live Connect" - "Stacks" - "Add Stack"
-
-- Name - postgresql-n8n
-
-- Web editor - Coloque conteudo abaixo
+* Vai "Home" - "Live Connect" - "Stacks" - "Add Stack"
+* Name - postgresql-n8n
+* Web editor - Coloque conteudo abaixo
 
 ```bash
 version: "3.7"
@@ -71,13 +72,10 @@ networks:
     name: n8n_rede
 ```
 
-- Clique em Deploy the stack - Aguarde demora um pouco
-
-- Vai "Home" - "Live Connect" - "Stacks" - "Add Stack"
-
-- Name - n8n
-
-- Web editor - Coloque conteudo abaixo
+* Clique em Deploy the stack - Aguarde demora um pouco
+* Vai "Home" - "Live Connect" - "Stacks" - "Add Stack"
+* Name - n8n
+* Web editor - Coloque conteudo abaixo
 
 ```bash
 version: "3.7"
@@ -122,74 +120,50 @@ networks:
     name: n8n_rede
 ```
 
-. Criar e editar o arquivo n8n com o comando abaixo e prencher com os dados do proximo item
+. Editar arquivo caddy&#x20;
 
 ```bash
-sudo nano /etc/nginx/sites-available/n8n
+sudo nano /etc/caddy/Caddyfile
 ```
 
-. Editar os dados abaixo com a URL que será usada para acessar o minio api.
+. Acrecentar a dados do N8N
 
 ```bash
-server {
-  server_name n8n.webconfiavel.com.br;
-
-  location / {
-    proxy_pass http://127.0.0.1:5678;
-    proxy_http_version 1.1;
-    proxy_set_header Upgrade $http_upgrade;
-    proxy_set_header Connection 'upgrade';
-    proxy_set_header Host $host;
-    proxy_set_header X-Real-IP $remote_addr;
-    proxy_set_header X-Forwarded-Proto $scheme;
-    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    proxy_cache_bypass $http_upgrade;
-  }
-
+n8n.webconfiavel.com.br {
+    reverse_proxy 127.0.0.1:5678
+    request_body {
+        max_size 200MB
+    }
 }
 ```
 
-. Criar link simbólico para o arquivo minioapi
+. Reiniciar o caddy
 
 ```bash
-sudo ln -s /etc/nginx/sites-available/n8n /etc/nginx/sites-enabled/
+sudo systemctl restart caddy
 ```
 
-. Testar as configurações do nginx
+* Você terá liberar rede nova no firewall no ponteiner acesse Network - vai ter rede n8n\_rede copie coluna IPV4 vai ter valor parecido 172.18.0.0/16 com essa informação coloque comando abaixo
+* Comando digitar terminal altere conforme dados acima
 
-```bash
-sudo nginx -t
-```
-
-. Restartar o nginx
-
-```bash
-sudo service nginx restart
-```
-
-. Gerar certificado
-
-```bash
-sudo certbot --nginx
-```
-
-- Você tera liberar rede nova no firewall no ponteiner acesse Network - vai ter rede 	n8n_rede copie coluna IPV4 vai ter valor parecido 172.18.0.0/16 com essa informacao coloque comando abaixo
-- Comando digitar terminal altere conforme dados acima
 ```bash
 sudo iptables -t nat -A POSTROUTING ! -o docker0 -s 172.18.0.0/16 -j MASQUERADE
 ```
 
-- Criar pasta para um script executar comando inicializacao
+* Criar pasta para um script executar comando inicialização
+
 ```bash
 sudo mkdir /etc/iptables
 ```
 
-- Criar um script executar comando inicializacao
+* Criar um script executar comando inicialização
+
 ```bash
 sudo nano /etc/iptables/rules.sh
 ```
 
-- crie arquivo como exemplo abaixo coloque todas linhas necessarias pode ter mais de uma se tiver varios doccker como exemplo abaixo
+* crie arquivo como exemplo abaixo coloque todas linhas necessárias pode ter mais de uma se tiver vários doccker como exemplo abaixo
+
 ```bash
 #!/bin/bash
 
@@ -200,46 +174,52 @@ iptables -t nat -A POSTROUTING ! -o docker0 -s 172.19.0.0/16 -j MASQUERADE
 iptables -t nat -A POSTROUTING ! -o docker0 -s 172.20.0.0/16 -j MASQUERADE
 ```
 
-- tornar arquivo executavel
+* tornar arquivo executavel
+
 ```bash
 sudo chmod +x /etc/iptables/rules.sh
 ```
 
-- Executar script
+* Executar script
+
 ```bash
 sudo /etc/iptables/rules.sh
 ```
 
-- Configurar o Script para Executar na Inicialização
+* Configurar o Script para Executar na Inicialização
+
 ```bash
 sudo nano /etc/rc.local
 ```
 
-- Adiciona no rc.local como exemplo
+* Adiciona no rc.local como exemplo
+
 ```bash
 #!/bin/bash
 sudo /etc/iptables/rules.sh
 ```
 
-- tonar executavel
+* tonar executavel
+
 ```bash
 sudo chmod +x /etc/rc.local
 ```
 
-- vericar status rc.local
+* vericar status rc.local
+
 ```bash
 sudo systemctl status rc-local
 ```
 
-- Caso nao tenha rc.local ativado verificar abaixo.
-https://www.lw92.me/index.php/archives/550
+* Caso nao tenha rc.local ativado verificar abaixo. https://www.lw92.me/index.php/archives/550
+* create a systemd service
 
-- create a systemd service
 ```bash
 sudo nano /etc/systemd/system/rc-local.service
 ```
 
-- Colocar dados abaixo no arquivo acima
+* Colocar dados abaixo no arquivo acima
+
 ```bash
 [Unit]
 Description=Local Startup Script
@@ -252,24 +232,28 @@ ExecStart=/etc/rc.local
 WantedBy=multi-user.target
 ```
 
-- Tornar executavel
+* Tornar executavel
+
 ```bash
 sudo chmod 644 /etc/systemd/system/rc-local.service
 ```
 
-- Ativar
+* Ativar
+
 ```bash
 sudo systemctl enable rc-local.service
 ```
 
-- Iniciar
+* Iniciar
+
 ```bash
 sudo systemctl start rc-local.service
 ```
 
-- Verificar Status
+* Verificar Status
+
 ```bash
 sudo systemctl status rc-local.service
 ```
 
-- Errei ou quero alterar algo so alterar dados na stack na opcao editor e escolher update stack 
+* Errei ou quero alterar algo so alterar dados na stack na opcao editor e escolher update stack
