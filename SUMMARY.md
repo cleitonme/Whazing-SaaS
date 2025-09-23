@@ -23,7 +23,7 @@
     * [ChatGPT Assistant](<docs/integrações/CHATGPT Assistants/README.md>)
     * [Configurar Groq ou ChatGPT](<docs/integrações/GROQ - CHATGPT/README.md>)
     * [Configurar Typebot](docs/integrações/TypeBot/README.md)
-      * [Comoinstalar](docs/integrações/TypeBot/Comoinstalar.md)
+      * [Como instalar](docs/integrações/TypeBot/Comoinstalar.md)
     * [Webhook e N8N](<docs/integrações/Webhook e N8N/README.md>)
       * [Como Instalar](<docs/integrações/Webhook e N8N/Como Instalar.md>)
       * [Modelo webhook canal](<docs/integrações/Webhook e N8N/Modelo webhook canal.md>)

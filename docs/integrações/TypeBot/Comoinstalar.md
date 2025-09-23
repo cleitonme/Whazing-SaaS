@@ -1,43 +1,42 @@
-# Instalar Typebot mesma VPS WHAZING
+# Como instalar
+
+## Instalar Typebot mesma VPS WHAZING
+
 Tutorial com muitos detalhes então preste bastante atenção e veja o video que me baseado pra fazer o mesmo, para ajudar entender melhor os passos. Lembrando no video ele usa traefik e alteramos usar nginx para ser compativel mesma vps whazing
 
-Baseado tutorial alterado para usar com ngnix: https://rwebtec.com.br/instalar-typebot-portainer-lucrar-vendendo-assinaturas/ 
+Baseado tutorial alterado para usar com ngnix: https://rwebtec.com.br/instalar-typebot-portainer-lucrar-vendendo-assinaturas/
 
-## CRIAR SUBDOMINIO E APONTAR PARA O IP DA SUA VPS
+### CRIAR SUBDOMINIO E APONTAR PARA O IP DA SUA VPS
 
-Exemplo:
-chatbot.webconfiavel.com.br
-chatbotapi.webconfiavel.com.br
-minios3.webconfiavel.com.br
-s3.webconfiavel.com.br
+Exemplo: chatbot.webconfiavel.com.br chatbotapi.webconfiavel.com.br minios3.webconfiavel.com.br s3.webconfiavel.com.br
 
-## CHECAR PROPAGAÇÃO DO DOMÍNIO
+### CHECAR PROPAGAÇÃO DO DOMÍNIO
 
 https://dnschecker.org/
 
-## Acesso Portainer
+### Acesso Portainer
 
 Acesse URL do Portainer: http://seuip:9000/
 
 Caso seja primeira vez tem que gerar senha conforme instruções abaixo
 
-## Acesso Portainer gerar senha
+### Acesso Portainer gerar senha
+
 "Your Portainer instance timed out for security purposes. To re-enable your Portainer instance, you will need to restart Portainer."
 
 Executar no terminal
+
 ```bash
 docker container restart portainer
 ```
 
 Depois acesse novamente url http://seuip:9000/
 
-# Continuando
+## Continuando
 
-- Vai "Home" - "Live Connect" - "Stacks" - "Add Stack"
-
-- Name - postgresql-typebot
-
-- Web editor - Coloque conteudo abaixo
+* Vai "Home" - "Live Connect" - "Stacks" - "Add Stack"
+* Name - postgresql-typebot
+* Web editor - Coloque conteudo abaixo
 
 ```bash
 version: "3.7"
@@ -77,13 +76,10 @@ networks:
     name: typebot_rede
 ```
 
-- Clique em Deploy the stack - Aguarde demora um pouco
-
-- Vai "Home" - "Live Connect" - "Stacks" - "Add Stack"
-
-- Name - minio-typebot
-
-- Web editor - Coloque conteudo abaixo
+* Clique em Deploy the stack - Aguarde demora um pouco
+* Vai "Home" - "Live Connect" - "Stacks" - "Add Stack"
+* Name - minio-typebot
+* Web editor - Coloque conteudo abaixo
 
 ```bash
 version: "3.7"
@@ -123,111 +119,49 @@ networks:
     name: typebot_rede
 ```
 
-. Criar e editar o arquivo minioweb com o comando abaixo e prencher com os dados do proximo item
+. Editar arquivo caddy
 
-```bash
-sudo nano /etc/nginx/sites-available/minioweb
+```
+sudo nano /etc/caddy/Caddyfile
 ```
 
-. Editar os dados abaixo com a URL que será usada para acessar o minio browser.
+. Acrecentar a dados do minio
 
-```bash
-server {
-  server_name minios3.webconfiavel.com.br;
+```
+minios3.webconfiavel.com.br {
+    reverse_proxy 127.0.0.1:32772
+    request_body {
+        max_size 200MB
+    }
+}
 
-  location / {
-    proxy_pass http://127.0.0.1:32772;
-    proxy_http_version 1.1;
-    proxy_set_header Upgrade $http_upgrade;
-    proxy_set_header Connection 'upgrade';
-    proxy_set_header Host $host;
-    proxy_set_header X-Real-IP $remote_addr;
-    proxy_set_header X-Forwarded-Proto $scheme;
-    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    proxy_cache_bypass $http_upgrade;
-  }
-
+s3.webconfiavel {
+    reverse_proxy 127.0.0.1:32771
+    request_body {
+        max_size 200MB
+    }
 }
 ```
 
-. Criar link simbólico para o arquivo minioweb
+. Reiniciar o caddy
 
-```bash
-sudo ln -s /etc/nginx/sites-available/minioweb /etc/nginx/sites-enabled/
+```
+sudo systemctl restart caddy
 ```
 
-. Criar e editar o arquivo minioweb com o comando abaixo e prencher com os dados do proximo item
 
-```bash
-sudo nano /etc/nginx/sites-available/minioapi
-```
 
-. Editar os dados abaixo com a URL que será usada para acessar o minio api.
+. Agora acesse url minio "minios3.webconfiavel.com.br" - MINIO\_ROOT\_USER=rodnei - MINIO\_ROOT\_PASSWORD=Admin33Admin77
 
-```bash
-server {
-  server_name s3.webconfiavel.com.br;
-
-  location / {
-    proxy_pass http://127.0.0.1:32771;
-    proxy_http_version 1.1;
-    proxy_set_header Upgrade $http_upgrade;
-    proxy_set_header Connection 'upgrade';
-    proxy_set_header Host $host;
-    proxy_set_header X-Real-IP $remote_addr;
-    proxy_set_header X-Forwarded-Proto $scheme;
-    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    proxy_cache_bypass $http_upgrade;
-  }
-
-}
-```
-
-. Criar link simbólico para o arquivo minioapi
-
-```bash
-sudo ln -s /etc/nginx/sites-available/minioapi /etc/nginx/sites-enabled/
-```
-
-. Testar as configurações do nginx
-
-```bash
-sudo nginx -t
-```
-
-. Restartar o nginx
-
-```bash
-sudo service nginx restart
-```
-
-. Gerar certificado
-
-```bash
-sudo certbot --nginx
-```
-
-. Agora acesse url minio "minios3.webconfiavel.com.br"
-      - MINIO_ROOT_USER=rodnei
-      - MINIO_ROOT_PASSWORD=Admin33Admin77
-	  
-- Dentro do minio siga instruções abaixo
-	  
-- Buckets - 
-
-- Bucket Name - typebot
-
-- Create Bucket
-
-- Clica bucket criado typebot alterar "Access Policy" Public
-
-- Access Keys - Create Access Key
-
-- Copia o Access Key - Secret Key
-
-- Agora vamos voltar Portainer - "Stacks" - "Add Stack" - typebot_viewer
-
-- Web editor - Coloque conteudo abaixo - alterar com dados email etc para funcionar - no campos S3 vai colocar dados que você gerou acima
+* Dentro do minio siga instruções abaixo
+* Buckets -
+* Bucket Name - typebot
+* Create Bucket
+* Clica bucket criado typebot alterar "Access Policy" Public
+* Access Keys - Create Access Key
+* Copia o Access Key - Secret Key
+* Agora vamos voltar Portainer - "Stacks" - "Add Stack" - typebot\_viewer
+* Web editor - Coloque conteudo abaixo - alterar com dados email etc para funcionar - no campos S3 vai colocar dados que você gerou acima
 
 ```bash
 version: "3.7"
@@ -282,8 +216,8 @@ networks:
     name: typebot_rede
 ```
 
-- Agora vamos voltar Portainer - "Stacks" - "Add Stack" - typebot_builder
-- Web editor - Coloque conteudo abaixo - alterar com dados email, semelhante o que você fez antes etc para funcionar - no campos S3 vai colocar dados que você gerou acima
+* Agora vamos voltar Portainer - "Stacks" - "Add Stack" - typebot\_builder
+* Web editor - Coloque conteudo abaixo - alterar com dados email, semelhante o que você fez antes etc para funcionar - no campos S3 vai colocar dados que você gerou acima
 
 ```bash
 version: "3.7"
@@ -337,107 +271,55 @@ networks:
     name: typebot_rede
 ```
 
-. Criar e editar o arquivo typebotviewer com o comando abaixo e prencher com os dados do proximo item
-
-```bash
-sudo nano /etc/nginx/sites-available/typebotviewer
+```
+sudo nano /etc/caddy/Caddyfile
 ```
 
-. Editar os dados abaixo com a URL que será usada para acessar o minio browser.
+. Acrecentar a dados do typebot
 
-```bash
-server {
-  server_name chatbot.webconfiavel.com.br;
+```
+chatbotapi.webconfiavel.com.br {
+    reverse_proxy 127.0.0.1:8081
+    request_body {
+        max_size 200MB
+    }
+}
 
-  location / {
-    proxy_pass http://127.0.0.1:8080;
-    proxy_http_version 1.1;
-    proxy_set_header Upgrade $http_upgrade;
-    proxy_set_header Connection 'upgrade';
-    proxy_set_header Host $host;
-    proxy_set_header X-Real-IP $remote_addr;
-    proxy_set_header X-Forwarded-Proto $scheme;
-    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    proxy_cache_bypass $http_upgrade;
-  }
-
+chatbot.webconfiavel.com.br {
+    reverse_proxy 127.0.0.1:8080
+    request_body {
+        max_size 200MB
+    }
 }
 ```
 
-. Criar link simbólico para o arquivo minioweb
+. Reiniciar o caddy
 
-```bash
-sudo ln -s /etc/nginx/sites-available/typebotviewer /etc/nginx/sites-enabled/
+```
+sudo systemctl restart caddy
 ```
 
-. Criar e editar o arquivo minioweb com o comando abaixo e prencher com os dados do proximo item
+* Você tera liberar rede nova no firewall no ponteiner acesse Network - vai ter rede typebot\_rede copie coluna IPV4 vai ter valor parecido 172.18.0.0/16 com essa informacao coloque comando abaixo
+* Comando digitar terminal altere conforme dados acima
 
-```bash
-sudo nano /etc/nginx/sites-available/typebotbuilder
-```
-
-. Editar os dados abaixo com a URL que será usada para acessar o minio api.
-
-```bash
-server {
-  server_name chatbotapi.webconfiavel.com.br;
-
-  location / {
-    proxy_pass http://127.0.0.1:8081;
-    proxy_http_version 1.1;
-    proxy_set_header Upgrade $http_upgrade;
-    proxy_set_header Connection 'upgrade';
-    proxy_set_header Host $host;
-    proxy_set_header X-Real-IP $remote_addr;
-    proxy_set_header X-Forwarded-Proto $scheme;
-    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
-    proxy_cache_bypass $http_upgrade;
-  }
-
-}
-```
-
-. Criar link simbólico para o arquivo minioapi
-
-```bash
-sudo ln -s /etc/nginx/sites-available/typebotbuilder /etc/nginx/sites-enabled/
-```
-
-. Testar as configurações do nginx
-
-```bash
-sudo nginx -t
-```
-
-. Restartar o nginx
-
-```bash
-sudo service nginx restart
-```
-
-. Gerar certificado
-
-```bash
-sudo certbot --nginx
-```
-
-- Você tera liberar rede nova no firewall no ponteiner acesse Network - vai ter rede 	typebot_rede copie coluna IPV4 vai ter valor parecido 172.18.0.0/16 com essa informacao coloque comando abaixo
-- Comando digitar terminal altere conforme dados acima
 ```bash
 sudo iptables -t nat -A POSTROUTING ! -o docker0 -s 172.18.0.0/16 -j MASQUERADE
 ```
 
-- Criar pasta para um script executar comando inicializacao
+* Criar pasta para um script executar comando inicializacao
+
 ```bash
 sudo mkdir /etc/iptables
 ```
 
-- Criar um script executar comando inicializacao
+* Criar um script executar comando inicializacao
+
 ```bash
 sudo nano /etc/iptables/rules.sh
 ```
 
-- crie arquivo como exemplo abaixo coloque todas linhas necessarias pode ter mais de uma se tiver varios doccker como exemplo abaixo
+* crie arquivo como exemplo abaixo coloque todas linhas necessarias pode ter mais de uma se tiver varios doccker como exemplo abaixo
+
 ```bash
 #!/bin/bash
 
@@ -448,46 +330,52 @@ iptables -t nat -A POSTROUTING ! -o docker0 -s 172.19.0.0/16 -j MASQUERADE
 iptables -t nat -A POSTROUTING ! -o docker0 -s 172.20.0.0/16 -j MASQUERADE
 ```
 
-- tornar arquivo executavel
+* tornar arquivo executavel
+
 ```bash
 sudo chmod +x /etc/iptables/rules.sh
 ```
 
-- Executar script
+* Executar script
+
 ```bash
 sudo /etc/iptables/rules.sh
 ```
 
-- Configurar o Script para Executar na Inicialização
+* Configurar o Script para Executar na Inicialização
+
 ```bash
 sudo nano /etc/rc.local
 ```
 
-- Adiciona no rc.local como exemplo
+* Adiciona no rc.local como exemplo
+
 ```bash
 #!/bin/bash
 sudo /etc/iptables/rules.sh
 ```
 
-- tonar executavel
+* tonar executavel
+
 ```bash
 sudo chmod +x /etc/rc.local
 ```
 
-- vericar status rc.local
+* vericar status rc.local
+
 ```bash
 sudo systemctl status rc-local
 ```
 
-- Caso nao tenha rc.local ativado verificar abaixo.
-https://www.lw92.me/index.php/archives/550
+* Caso nao tenha rc.local ativado verificar abaixo. https://www.lw92.me/index.php/archives/550
+* create a systemd service
 
-- create a systemd service
 ```bash
 sudo nano /etc/systemd/system/rc-local.service
 ```
 
-- Colocar dados abaixo no arquivo acima
+* Colocar dados abaixo no arquivo acima
+
 ```bash
 [Unit]
 Description=Local Startup Script
@@ -500,25 +388,28 @@ ExecStart=/etc/rc.local
 WantedBy=multi-user.target
 ```
 
-- Tornar executavel
+* Tornar executavel
+
 ```bash
 sudo chmod 644 /etc/systemd/system/rc-local.service
 ```
 
-- Ativar
+* Ativar
+
 ```bash
 sudo systemctl enable rc-local.service
 ```
 
-- Iniciar
+* Iniciar
+
 ```bash
 sudo systemctl start rc-local.service
 ```
 
-- Verificar Status
+* Verificar Status
+
 ```bash
 sudo systemctl status rc-local.service
 ```
 
-
-- Errei ou quero alterar algo so alterar dados na stack na opcao editor e escolher update stack 
+* Errei ou quero alterar algo so alterar dados na stack na opcao editor e escolher update stack
