@@ -32,6 +32,13 @@ Ao habilitar a avaliação de atendimento, você poderá configurar os seguintes
 * Determine o tempo, em minutos, que o sistema aguardará para receber a avaliação do cliente após o envio da solicitação.
 * **Exemplo:** Defina 10 minutos, caso queira que o cliente tenha esse intervalo para responder.
 
+### **5.** Intervalo em horas entre as solicitações de avaliação
+
+* Determine o tempo, em horas, que o sistema aguardará para solicitar uma nova avaliação
+* **Exemplo:** Defina 6 horas, somente será solicitado avaliar atendimento após 6 horas da uma avaliação.
+
+Avaliações em canais que suporta plus\_whatsapp e api oficial é possível enviar lista para escolha. Terá novos campos configurar dados da lista.
+
 ## **Monitoramento do Desempenho**
 
 * Para acompanhar os resultados, acesse os **Relatórios** na plataforma.
