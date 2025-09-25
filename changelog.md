@@ -1,6 +1,6 @@
 # Changelog e Atualizações
 
-#### 🚀 Versão 2.12.2.2 FINAL - Changelog
+#### 🚀 Versão 2.12.2.1 FINAL - Changelog
 
 Tela Atendimento
 
