@@ -79,7 +79,6 @@ docker run --name redis-whazing \
     --requirepass "senhacopiada" \
     --maxclients 2000 \
     --tcp-keepalive 60 \
-    --maxmemory 512mb \
     --maxmemory-policy allkeys-lru \
     --save "" \
     --appendonly yes \
