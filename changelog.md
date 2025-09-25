@@ -1,8 +1,14 @@
 # Changelog e Atualizações
 
+#### 🚀 Versão 2.12.2.2 FINAL - Changelog
+
+Tela Atendimento
+
+* Envio mensagem tela atendimento informa canal esta desconectado e da erro Envio
+
 #### 🚀 Versão 2.12.2.1 BETA HOTFIX - Changelog
 
-* bug - correção Balanceada de usuarios no chatbot
+* bug - correção Balanceada de usuários no chatbot
 
 #### 🚀 Versão 2.12.2.1 BETA HOTFIX - Changelog
 
