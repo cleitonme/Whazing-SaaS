@@ -1,5 +1,10 @@
 # Changelog e Atualizações
 
+#### 🚀 Versão 2.12.2.1 Final - Changelog
+
+* bug - Correção contagem tickets tela dashboard
+* bug - relatorio tickets ajustes data final
+
 #### 🚀 Versão 2.12.2.1 FINAL - Changelog
 
 Tela Atendimento
