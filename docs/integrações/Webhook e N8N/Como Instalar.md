@@ -137,123 +137,16 @@ n8n.webconfiavel.com.br {
 }
 ```
 
-. Reiniciar o caddy
+.&#x20;
+
+Reiniciar o caddy
 
 ```bash
 sudo systemctl restart caddy
 ```
 
-* Você terá liberar rede nova no firewall no ponteiner acesse Network - vai ter rede n8n\_rede copie coluna IPV4 vai ter valor parecido 172.18.0.0/16 com essa informação coloque comando abaixo
-* Comando digitar terminal altere conforme dados acima
+Adicionar N8N rede principal
 
 ```bash
-sudo iptables -t nat -A POSTROUTING ! -o docker0 -s 172.18.0.0/16 -j MASQUERADE
+docker network connect bridge n8n
 ```
-
-* Criar pasta para um script executar comando inicialização
-
-```bash
-sudo mkdir /etc/iptables
-```
-
-* Criar um script executar comando inicialização
-
-```bash
-sudo nano /etc/iptables/rules.sh
-```
-
-* crie arquivo como exemplo abaixo coloque todas linhas necessárias pode ter mais de uma se tiver vários doccker como exemplo abaixo
-
-```bash
-#!/bin/bash
-
-# Regras NAT
-iptables -t nat -A POSTROUTING ! -o docker0 -s 172.17.0.0/16 -j MASQUERADE
-iptables -t nat -A POSTROUTING ! -o docker0 -s 172.18.0.0/16 -j MASQUERADE
-iptables -t nat -A POSTROUTING ! -o docker0 -s 172.19.0.0/16 -j MASQUERADE
-iptables -t nat -A POSTROUTING ! -o docker0 -s 172.20.0.0/16 -j MASQUERADE
-```
-
-* tornar arquivo executavel
-
-```bash
-sudo chmod +x /etc/iptables/rules.sh
-```
-
-* Executar script
-
-```bash
-sudo /etc/iptables/rules.sh
-```
-
-* Configurar o Script para Executar na Inicialização
-
-```bash
-sudo nano /etc/rc.local
-```
-
-* Adiciona no rc.local como exemplo
-
-```bash
-#!/bin/bash
-sudo /etc/iptables/rules.sh
-```
-
-* tonar executavel
-
-```bash
-sudo chmod +x /etc/rc.local
-```
-
-* vericar status rc.local
-
-```bash
-sudo systemctl status rc-local
-```
-
-* Caso nao tenha rc.local ativado verificar abaixo. https://www.lw92.me/index.php/archives/550
-* create a systemd service
-
-```bash
-sudo nano /etc/systemd/system/rc-local.service
-```
-
-* Colocar dados abaixo no arquivo acima
-
-```bash
-[Unit]
-Description=Local Startup Script
-
-[Service]
-Type=simple
-ExecStart=/etc/rc.local
-
-[Install]
-WantedBy=multi-user.target
-```
-
-* Tornar executavel
-
-```bash
-sudo chmod 644 /etc/systemd/system/rc-local.service
-```
-
-* Ativar
-
-```bash
-sudo systemctl enable rc-local.service
-```
-
-* Iniciar
-
-```bash
-sudo systemctl start rc-local.service
-```
-
-* Verificar Status
-
-```bash
-sudo systemctl status rc-local.service
-```
-
-* Errei ou quero alterar algo so alterar dados na stack na opcao editor e escolher update stack
