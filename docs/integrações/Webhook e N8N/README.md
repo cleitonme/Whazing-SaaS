@@ -54,3 +54,5 @@ Obrigado Elizeu Garcez e Ricardo Schonfelder Filho por compartilhar modelos
 **NODE WHAZING PARA N8N**
 
 Atenção sempre bom da conferida documentação da api pode não ter todos endpoints no node
+
+{% embed url="https://youtu.be/To1x6wZAI1s" %}
