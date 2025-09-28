@@ -91,20 +91,16 @@ Em termos simples: são funcionalidades que deixam a conversa mais automática e
 #### Checklist rápido (faça antes)
 
 * [ ] Avise a equipe/usuários do painel que haverá manutenção.
-* [ ] Faça backup dos tickets principais (exporte ou anote números críticos).
 * [ ] Verifique se ninguém está usando ativamente chats importantes.
 
 #### Passos para migrar (detalhado)
 
 1. **Desconectar o WhatsApp** atual (no painel).
    * Por que: evita que mensagens novas sejam vinculadas ao canal antigo.
-2. **Fechar todos os tickets abertos ou pendentes**
-   * Por que: para que não haja tickets pendentes associados ao canal antigo.
-3. **Editar o canal** no painel e **alterar o tipo** (de Plus para Baileys ou vice-versa).
-4. **Gerar novo QR Code**
-5. **Conectar**: abra o WhatsApp no celular, escaneie o QR Code.
-6. **Validar**: confirme que as mensagens chegam e que o perfil está correto.
-7. **Criar novos tickets** conforme necessário e verificar histórico.
+2. **Editar o canal** no painel e **alterar o tipo** (de Plus para Baileys ou vice-versa).
+3. **Gerar novo QR Code**
+4. **Conectar**: abra o WhatsApp no celular, escaneie o QR Code.
+5. **Validar**: confirme que as mensagens chegam e que o perfil está correto.
 
 ***
 
