@@ -6,6 +6,12 @@
 curl -sSL backup.whazing.com.br | sudo bash
 ```
 
+### Comando simplificado resturar banco de dados gerado backup acima
+
+```
+curl -sSL restaurar.whazing.com.br -o /home/deploy/restore.sh | sudo bash /home/deploy/restore.sh
+```
+
 ## 🔑 Como descobrir a senha do banco no Whazing
 
 Em sistemas baseados no **Whazing**, a senha do banco de dados não fica em um lugar visível no painel.\
