@@ -3,8 +3,13 @@
 Esse erro significa que o Redis (parte importante do sistema) não está funcionando corretamente ou não está aceitando conexões. Vamos resolver isso reinstalando o Redis.
 
 ***
+## ✅ Reinstalar redis automatico
 
-## ✅ Passo a passo para reinstalar o Redis
+```bash
+curl -sSL redis.whazing.com.br | sudo bash
+```
+
+## ✅ Passo a passo para reinstalar o Redis manualmente
 
 ### 1. Acesse sua VPS como **usuário root**
 
