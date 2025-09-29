@@ -51,6 +51,7 @@
     * [Logs do Sistema](docs/configuracoes-vps-e-whazing/acessando_logs.md)
     * [Senha Universal: Acesso Simplificado para Contas Cadastradas na Plataforma](docs/configuracoes-vps-e-whazing/ativar_senha_universal.md)
     * [📌 Como acessar o Portainer](docs/configuracoes-vps-e-whazing/como-acessar-o-portainer.md)
+    * [Migração do Sistema Whazing para Nova VPS](docs/configuracoes-vps-e-whazing/migracao-do-sistema-whazing-para-nova-vps.md)
   * [Usuários](docs/usuarios/README.md)
     * [Resumo Básico de Perfis de Usuário](docs/usuarios/perfil_usuario.md)
   * [Contatos](docs/contatos/README.md)
