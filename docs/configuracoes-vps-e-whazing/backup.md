@@ -1,5 +1,11 @@
 # Manual de Backup e Restauração para Banco de Dados PostgreSQL no Docker
 
+### Comando simplificado gera um backup banco de dados mesma pasta que comando executado
+
+```
+curl -sSL backup.whazing.com.br | sudo bash
+```
+
 ## 🔑 Como descobrir a senha do banco no Whazing
 
 Em sistemas baseados no **Whazing**, a senha do banco de dados não fica em um lugar visível no painel.\
