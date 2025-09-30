@@ -2,6 +2,10 @@
 
 #### 🚀 Versão 2.12.2.1 Final - Changelog
 
+* bug - Correção importante quem usa grupos api plus - Alguns casos duplica contato e até salva mesmo com numero errado. Salva lid no lugar do numero
+
+#### 🚀 Versão 2.12.2.1 Final - Changelog
+
 * bug - Correção contagem tickets tela dashboard
 * bug - relatorio tickets ajustes data final
 
