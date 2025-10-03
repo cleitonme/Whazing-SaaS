@@ -1,5 +1,15 @@
 # Changelog e Atualizações
 
+#### 🚀 Versão 2.12.2.1 Final 03/10/25 - Changelog
+
+Baileys ler qrcode novamente
+- Update versão baileys - 
+O WhatsApp não está mais enviando acks. Isso é um enorme vetor de banimento. Por favor, aqueles que puderem atualizar para a rc5, façam isso pela segurança de suas contas.
+
+Para quem ainda está na versão 6.7.19, atualize para a nova release 6.7.20. Essa versão incluirá apenas esse patch e é um hotfix que desenvolvi para vocês.
+
+Para quem acompanha o GitHub, o branch hotfix/ack estará disponível até o fim do ciclo de release da versão 7.0.0.
+
 #### 🚀 Versão 2.12.2.1 Final - Changelog
 
 * bug - Correção importante quem usa grupos baileys - não capturava contato da mensagem, aparece todas como se grupo enviase
