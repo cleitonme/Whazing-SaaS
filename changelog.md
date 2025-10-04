@@ -1,5 +1,12 @@
 # Changelog e Atualizações
 
+#### 🚀 Versão 2.12.3.0 Final - Changelog
+
+- bug grava baileys -
+Descoberto bug grave da grande perda de mensagens atualização importante
+- bug baileys 2 -
+Mensagens enviadas por outros dispositivos(do numero ta conectado no whazing) em grupos aparece como mensagem recebida
+
 #### 🚀 Versão 2.12.2.1 Final 03/10/25 - Changelog
 
 Baileys ler qrcode novamente
