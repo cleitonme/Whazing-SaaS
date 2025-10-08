@@ -62,4 +62,4 @@ whazing
 
 ## Adquirir Versão Premium
 
-Para adquirir a versao premium 48 999416725
+Para adquirir a versao premium whatsapp +55 48 3197-0599
