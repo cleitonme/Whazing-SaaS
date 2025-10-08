@@ -116,7 +116,7 @@ R: Se comprou perto do vencimento, é possível que tenha sido cobrado na compra
 R: Não — **desconto só para pacotes oficiais** (10, 20, 40). No exemplo: 10 → R$ 35,00 + 1 → R$ 5,00 = R$ 40,00.
 
 **P: O que é “token” e onde pego?**\
-R: Token é uma chave gerada para conectar na api plus adquirir pelo whatsapp (48) 99941-6725
+R: Token é uma chave gerada para conectar na api plus adquirir pelo Whatsapp +55 48 3197-0599
 
 ***
 

@@ -1,6 +1,6 @@
 # Instagram, Facebook via ConnectionHub
 
-Solicite painel conosco (48) 99941-6725 R$ 25,00 por canal
+Solicite painel conosco Whatsapp +55 48 3197-0599 R$ 25,00 por canal
 
 URL painel: [https://app.connectionhub.com.br/](https://app.connectionhub.com.br/)
 
