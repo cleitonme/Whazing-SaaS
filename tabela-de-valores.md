@@ -41,3 +41,5 @@ Entregas limpas, sem propaganda adicional.
 
 ## Quer revender? Temos desconto de acordo quantidade VPS contratada.
 
+Para adquirir premium acesse o site [https://loja.whazing.com.br/](https://loja.whazing.com.br/) ou Whatsapp +55 48 3197-0599
+
