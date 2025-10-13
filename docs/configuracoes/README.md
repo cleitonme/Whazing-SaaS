@@ -47,8 +47,10 @@ Aqui você encontrará todas as opções de personalização para adaptar o aten
   Restringe a tela de contatos apenas para administradores.
 * 🧳 **Forçar atendimento via Carteira**\
   Encaminha automaticamente contatos para seus responsáveis (carteiras).
-* 👥 **Listar apenas contatos da carteira do usuário**\
-  Exibe somente os contatos da carteira atribuída ao usuário.
+* 👥 **Exibir contatos da carteira apenas para usuários autorizados**\
+  Contatos que estão vinculados a uma carteira só serão exibidos para o responsável, supervisor ou administrador. Contatos sem carteira continuarão visíveis para todos os usuários.
+* 👥 **Ocultar contatos sem carteira**\
+  Contatos sem carteira definida somente admin e supervisor terá acesso
 * 🔄 **Fluxo ativo para o Bot de atendimento**\
   Define o fluxo padrão para o atendimento automatizado.
 * 🚫 **Ignorar mensagens de grupo**\
