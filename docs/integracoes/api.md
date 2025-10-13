@@ -53,6 +53,20 @@ Authorization: Bearer seu-token-aqui
 }
 ```
 
+- Pode ser usado numero ticket em canais que não tem número telefone como instagram
+
+* **Método**: POST
+* **Endpoint**: `/`
+* **Content-Type**: application/json
+
+```json
+{
+    "body": "Sua mensagem aqui",
+    "ticketId": "123",
+    "externalKey": "ID_UNICO_SISTEMA"
+}
+```
+
 #### 2. Enviar Arquivo
 
 * **Método**: POST
@@ -64,6 +78,21 @@ Authorization: Bearer seu-token-aqui
     "media": "(arquivo)",
     "body": "Texto da mensagem",
     "number": "5511999999999",
+    "externalKey": "ID_UNICO_SISTEMA"
+}
+```
+
+- Pode ser usado numero ticket em canais que não tem número telefone como instagram
+
+* **Método**: POST
+* **Endpoint**: `/`
+* **Content-Type**: multipart/form-data
+
+```json
+{
+    "media": "(arquivo)",
+    "body": "Texto da mensagem",
+    "ticketId": "123",
     "externalKey": "ID_UNICO_SISTEMA"
 }
 ```
