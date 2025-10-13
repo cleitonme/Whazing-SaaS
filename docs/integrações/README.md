@@ -11,10 +11,10 @@ Elas ficam no meu - Cadastros - Filas/Integrações
 * Primeiro cadastre ela conforme o tipo você quer consultar documentação
 * Depois cadastre uma fila e escolha integração para usar naquela fila
 
-![print](fila.png)
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-* Agora ao transferir para aquela fila a integração será ativada
-* Caso queira novo ticket já inicie naquela integração escolha a fila possui integracao no canal
+* Para integração ser executada imediatamente ao transferir atendimento marque opção "Inicia integração ao transferir" Agora ao transferir para aquela fila a integração será executada imediato.
+* Caso queira novo ticket já inicie naquela integração escolha a fila possui integração no canal
 
 ![print](canal.png)
 
