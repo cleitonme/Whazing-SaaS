@@ -29,6 +29,7 @@ Você pode escolher qual provedor de IA utilizar:
 
 * **Groq**
 * **ChatGPT (OpenAI)**
+* **Gemini (Google)**
 
 Também é possível selecionar o **modelo de linguagem** desejado.
 
@@ -36,7 +37,7 @@ Também é possível selecionar o **modelo de linguagem** desejado.
 
 #### 2. Definir API KEY
 
-Informe a chave de API do serviço escolhido (Groq ou ChatGPT).
+Informe a chave de API do serviço escolhido (Groq,  ChatGPT ou Gemini).
 
 ***
 
