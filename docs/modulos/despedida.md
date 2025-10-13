@@ -6,7 +6,7 @@
 
 * **Disponibilidade**: A mensagem de despedida é configurada de forma **global**, ou seja, fica disponível para **todos os usuários da empresa**.
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Finalizar atendimento**:
 

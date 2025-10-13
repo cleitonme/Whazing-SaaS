@@ -6,7 +6,7 @@ Aqui está uma versão melhorada e mais clara da sua documentação:
 
 #### Regras para acionar chatbot por palavra-chave na **primeira mensagem**
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. O acionamento do **fluxo do chatbot** só ocorre quando o cliente envia a **primeira mensagem de um novo ticket** (ou seja, ticket fechado anteriormente).
 2. Exemplo:
