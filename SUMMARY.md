@@ -80,6 +80,7 @@
   * [📘 API SaaS](modulo-saas/api_saas.md)
   * [📢 Informativo do Sistema](modulo-saas/informativo-do-sistema.md)
   * [🎛️ Botão Coringa](modulo-saas/botao-coringa.md)
+  * [Envio WhatsApp aviso fatura em aberto](modulo-saas/envio-whatsapp-aviso-fatura-em-aberto.md)
 * [📡 Canais Disponíveis](canais-suportados/README.md)
   * [Guia de Conexão do TELEGRAM](canais-suportados/telegram.md)
   * [WhatsApp API PLUS](canais-suportados/whatsapp_api_plus.md)

@@ -31,8 +31,6 @@ Esse arquivo contém **todas as informações de conexão com o banco de dados**
 
 ***
 
-
-
 ## **1. Identificar o ID do Container do PostgreSQL**
 
 Antes de qualquer operação, precisamos do **ID do container** onde o PostgreSQL está rodando. Para listar os containers ativos, use:
@@ -43,7 +41,7 @@ docker ps
 
 Anote o **CONTAINER ID** correspondente ao PostgreSQL, pois será necessário nos próximos comandos.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
