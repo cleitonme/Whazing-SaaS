@@ -55,4 +55,10 @@ Obrigado Elizeu Garcez e Ricardo Schonfelder Filho por compartilhar modelos
 
 Atenção sempre bom da conferida documentação da api pode não ter todos endpoints no node
 
+[https://www.npmjs.com/package/n8n-nodes-whazing](https://www.npmjs.com/package/n8n-nodes-whazing)
+
 {% embed url="https://youtu.be/To1x6wZAI1s" %}
+
+<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
