@@ -60,6 +60,55 @@
 					"response": []
 				},
 				{
+					"name": "SendMessageAPIFile ticketId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "media",
+									"type": "file",
+									"src": "/home/durans/Downloads/577.pdf"
+								},
+								{
+									"key": "body",
+									"value": "Mensagem de teste 2",
+									"type": "text"
+								},
+								{
+									"key": "ticketId",
+									"value": "{{ticketId}}",
+									"type": "text"
+								},
+								{
+									"key": "externalKey",
+									"value": "externalKeydd211",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{base_url}}",
+							"host": [
+								"{{base_url}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "SendMessageAPIFile Base64",
 					"request": {
 						"auth": {
@@ -197,6 +246,39 @@
 						"body": {
 							"mode": "raw",
 							"raw": "{\n    \"body\": \"A mensagem desejada\",\n    \"number\": \"{{number}}\",\n    \"externalKey\": \"ID_UNICA_DO_SISTEMA_CLIENTE_PARA_EXECUTAR_UMA_ACAO_COM_WEBHOOK\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}",
+							"host": [
+								"{{base_url}}"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SendMessageAPIText ticketId",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"body\": \"A mensagem desejada\",\n    \"ticketId\": \"{{ticketId}}\",\n    \"externalKey\": \"ID_UNICA_DO_SISTEMA_CLIENTE_PARA_EXECUTAR_UMA_ACAO_COM_WEBHOOK\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1824,6 +1906,7 @@
 			"listen": "prerequest",
 			"script": {
 				"type": "text/javascript",
+				"requests": {},
 				"exec": [
 					""
 				]
@@ -1833,6 +1916,7 @@
 			"listen": "test",
 			"script": {
 				"type": "text/javascript",
+				"requests": {},
 				"exec": [
 					""
 				]
@@ -1846,13 +1930,15 @@
 		},
 		{
 			"key": "token",
-			"value": "",
-			"type": "string"
+			"value": ""
 		},
 		{
 			"key": "number",
-			"value": "",
-			"type": "string"
+			"value": ""
+		},
+		{
+			"key": "ticketId",
+			"value": ""
 		}
 	]
 }
