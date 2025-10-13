@@ -1,5 +1,76 @@
 # Changelog e Atualizações
 
+### 🚀 Versão 2.13.0 BETA - Changelog
+
+Tela Atendimento
+- ticket atendimento por ia e typebot mostra na aba chatbot caso ativa
+- suporte encaminhar localização
+- Opção abrir novo ticket mais rapidamente, pelo telefone ou buscando contato
+- Scroll mensagens aparece data mensagem semelhante whatsapp web
+- Scroll lista tickets força carregar mais tickets
+- Mostra hora mensagem foi deletada
+
+- Grupos
+- Marcar contatos
+- Se tiver lista contatos mostrar nome contato marcado - lista mensagens
+
+Chat Interno
+- Alterações visuais
+- Responder mensagem
+- Reagir
+- Deletar mensagem
+- Editar Mensagem
+
+Integração
+- Recepção inteligente suporte gemini
+- Integração x bot interno - Interno passa ter prioridade sobre bot interno caso tenha integração bot interno não sera ativado
+Exemplo: Caso selecionado no canal uma fila que tem integração e um ChatBot. O chatbot não será ativado. Prioridade: 1 - Integração, 2 - ChatBot
+- Cadastro fila nova configuração - Iniciar a transferir (com essa configuração ativa quando transferindo ticket para um que tem integração ativada ele executa integração imediatamente)
+
+
+Painel SaaS
+- Card numero usuarios online
+- Botão reniciar conexão modal whatsapp
+- Modal whatsapp coluna ultima atualização whatsapp
+- Modal whatsapp botão desconectar canal
+- Status Redis ajudar caso erros dele
+- Mais botões coringa, 2 abre nova aba e 2 iframe
+- Nova configuração envio mensagem aviso vencimento, será enviado 7 dias antes, 3 dias antes, 1 dia antes e no dia vencimento.
+
+Pagina ajuda
+- Alterado layout iframe para ocupar pagina toda
+
+Configuração canais
+- Melhoria na exibição erros na geração qrcode api plus - botão separado gerar qrcode e pairing code
+- baileys - detectar se tentar conectar mesmo numero mais de uma vez bugando instalação
+- Api Plus e Baileys - Nova opção marcar status de presença essa opção voltar notificar celular mas tem limitações verificar nas configurações
+
+Contatos
+- Somente admin e supervisor pode ignorar contato ou desativar bot
+- Opção desativar integrações de determinado contato
+- Planilha importar contatos suportar criar campos informações adicionais
+
+Telegram 
+- Suporte grupos telegram
+
+Relatorio Tickets
+- Valor Negociação kanban
+
+Carteira
+- Nova configuração para ocultar contatos sem carteira definida
+Como funciona
+Com essa opção ativada, caso contato não tiver carteira definida não sera exibido na lista do perfil usuario e supervisor de fila caso opção "Ignorar carteira - Listar todos contatos" do cadastro usuarios esteja desativa
+Supervidor Geral e Admin ve todos contatos
+
+Api
+- Suporte Envio usando ticketId, como funciona no lugar number usar parametro ticketId, usado para canais como telegram nao tem numero
+
+Motivos de encerramento
+- Possibilidade separar motivos encerramento por fila
+
+Mensagem despedida
+- Nova coluna identificar mensagem
+
 #### 🚀 Versão 2.12.3.0 Final - Changelog
 
 - bug grava baileys -
