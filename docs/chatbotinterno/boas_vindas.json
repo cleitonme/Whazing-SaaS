@@ -1,0 +1,102 @@
+{
+	"name": "boas vindas",
+	"nodeList": [
+		{
+			"id": "start",
+			"name": "Início",
+			"type": "start",
+			"left": "26px",
+			"top": "100px",
+			"ico": "mdi-play",
+			"viewOnly": true,
+			"status": "success",
+			"style": {}
+		},
+		{
+			"id": "configurations",
+			"name": "Configurações",
+			"type": "configurations",
+			"left": "340px",
+			"top": "100px",
+			"viewOnly": true,
+			"ico": "mdi-alert-circle-outline",
+			"configurations": {
+				"notOptionsSelectMessage": {
+					"message": "",
+					"stepReturn": "A"
+				},
+				"notResponseMessage": {
+					"time": 10,
+					"type": 1,
+					"destiny": "",
+					"message": ""
+				},
+				"welcomeMessage": {
+					"message": ""
+				},
+				"maxRetryBotMessage": {
+					"number": 3,
+					"type": 1,
+					"destiny": ""
+				},
+				"outOpenHours": {
+					"type": 1,
+					"destiny": ""
+				},
+				"farewellMessage": {
+					"message": ""
+				},
+				"autoDistributeTickets": "N"
+			}
+		},
+		{
+			"id": "nodeC",
+			"name": "Boas vindas!",
+			"type": "node",
+			"left": "26px",
+			"top": "301px",
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Seja bem vindo atendimento whazing em breve iremos lhe atender."
+					},
+					"id": "c7708108-2291-440b-bd97-abf434149b25"
+				},
+				{
+					"type": "ExecuteConditions",
+					"data": {
+						"time": "0"
+					},
+					"id": "a671bbfd-5050-4e8e-b658-e45bf643cc20"
+				}
+			],
+			"conditions": [
+				{
+					"type": "US",
+					"condition": [],
+					"id": "aa787e43-9459-479b-a1e5-7d5f3f7500d4",
+					"action": 1
+				}
+			],
+			"actions": []
+		}
+	],
+	"lineList": [
+		{
+			"from": "start",
+			"to": "nodeC",
+			"paintStyle": {
+				"strokeWidth": 3,
+				"stroke": "#5c67f2"
+			}
+		}
+	],
+	"action": 0,
+	"userId": 1,
+	"celularTeste": null,
+	"isActive": true,
+	"AcceptTransfer": true,
+	"AcceptKanban": true,
+	"id": null
+}
