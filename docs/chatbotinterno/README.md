@@ -1,285 +1,338 @@
-# CHAT BOT INTERNO
+# 🤖 CHAT BOT INTERNO
 
-### Locais escolhe qual bot será usado e prioridades
+## 🧭 Escolha e Prioridade dos Bots
 
-Atenção: caso fila que esteja marcada no canal tiver alguma integração o bot não será acionado
+> ⚠️ **Atenção:** Se a **fila** associada ao canal tiver **integração ativa**, o bot **não será acionado**.
 
-Atualmente, há 4 critérios que determinam qual bot será usado para novos tickets. Esses critérios estão listados abaixo em ordem de prioridade:
+O sistema utiliza **quatro critérios de prioridade** para definir **qual bot será usado** em novos tickets.
+Eles são avaliados **nessa ordem**:
 
-1 - Lane do CRM Todos os contatos associados a uma lane específica do CRM. Ao enviar uma mensagem para o número do sistema, caso não haja tickets abertos ou pendentes, o bot configurado para essa lane será acionado.
+---
+
+### 1️⃣ Lane do CRM
+
+Todos os contatos vinculados a uma *lane* específica do CRM seguirão o bot configurado para ela.
+Ao enviar uma mensagem para o número do sistema, se **não houver tickets abertos ou pendentes**, o bot dessa *lane* será acionado.
 
 ![print](crm.png)
 
-2 - Palavra chave - Exemplo: Ao cadastrar a palavra-chave "comprar" e o cliente enviar "Eu quero comprar", a mensagem será encaminhada para o bot correspondente. Somente primeira mensagem cliente ticket novo. se cliente enviar oi depois quero comprar não vai funcionar.
+---
 
-3 - No canal Cada canal pode ter um bot configurado. Ao enviar uma mensagem para o número do sistema, caso não haja tickets abertos ou pendentes, o bot configurado para aquele canal será utilizado.
+### 2️⃣ Palavra-chave
+
+Permite definir palavras que acionam um bot específico.
+Exemplo: se você cadastrar a palavra **"comprar"**, e o cliente enviar **"Eu quero comprar"**, a mensagem será direcionada ao bot configurado.
+
+> ⚠️ Observação: a palavra-chave só funciona **na primeira mensagem** de um novo ticket.
+> Se o cliente enviar “oi” e depois “quero comprar”, **não será reconhecida**.
+
+---
+
+### 3️⃣ Canal
+
+Cada canal pode ter um bot próprio.
+Quando o cliente envia uma mensagem para o número do sistema, caso **não existam tickets abertos ou pendentes**, o bot configurado nesse canal será utilizado.
 
 ![print](canais.png)
 
-4 - Nas Configurações Se nenhum bot for identificado pelas configurações acima, será utilizado o bot configurado no fluxo ativo do sistema.
+---
 
-Esse ordem acima de prioridades define qual bot será escolhido quando for recebida uma mensagem pelo canal e não tiver ticket aberto ou pendente.
+### 4️⃣ Configurações Globais
 
-É importante configurar os bots corretamente em cada nível para garantir que o atendimento ao cliente seja realizado conforme esperado.
+Se nenhum dos critérios anteriores se aplicar, o sistema usará o **bot configurado no fluxo ativo padrão**.
 
-## Índice
+---
 
-1. [Configuração de Fluxo](./#configuração-de-fluxo)
-2. [Ordem das Interações](./#ordem-das-interações)
-3. [Configuração de Condições](./#configuração-de-condições)
-4. [Exemplos Práticos de Fluxos](./#exemplos-práticos-de-fluxos)
+Essas prioridades determinam **qual bot será acionado** sempre que uma nova mensagem for recebida **sem ticket aberto ou pendente**.
+Garanta que cada bot esteja corretamente configurado em seu respectivo nível para que o atendimento funcione conforme o esperado.
 
-## Configuração de Fluxo
+---
 
-A configuração do fluxo do chatbot é feita através da interface visual abaixo:
+## 📚 Índice
+
+1. [Configuração de Fluxo](#configuração-de-fluxo)
+2. [Ordem das Interações](#ordem-das-interações)
+3. [Configuração de Condições](#configuração-de-condições)
+4. [Exemplos Práticos de Fluxos](#exemplos-práticos-de-fluxos)
+
+---
+
+## ⚙️ Configuração de Fluxo
+
+A configuração do fluxo do chatbot é feita pela interface visual:
 
 ![print](montagembot.png)
 
-### Elementos Básicos de Configuração
+### 🔧 Elementos Básicos de Configuração
 
 ![print](configfluxo.png)
 
-Na versão 2.11.0, você tem acesso às seguintes interações:
+A partir da versão **2.11.0**, estão disponíveis as seguintes interações:
 
-#### Enviar Mensagem
+---
 
-* Permite inserir o texto que será enviado ao cliente
-* Suporta o uso de variáveis (consulte a seção de variáveis para mais detalhes)
+### 💬 Enviar Mensagem
 
-#### Enviar Documentos, Vídeos, Áudios e Outros Arquivos
+* Permite definir o texto a ser enviado ao cliente.
+* Suporta **variáveis dinâmicas** (veja seção de variáveis).
 
-* Funcionalidade dedicada para envio de arquivos diversos
+### 📎 Enviar Documentos, Vídeos, Áudios e Arquivos
 
-#### Enviar figurinhas
+* Envio de qualquer tipo de arquivo.
 
-* Funcionalidade dedicada para envio de figurinhas qualquer imagem usada será convertida em uma figurinha
+### 😄 Enviar Figurinhas
 
-#### Enviar localização
+* Converte automaticamente qualquer imagem enviada em **figurinha**.
 
-* Enviar localizacação para o contato somente funciona whatsapp api oficial ou baileys
+### 📍 Enviar Localização
 
-#### Adicionar Delay
+* Envia localização para o contato.
+* **Compatível apenas com a WHATSAPP oficial e não oficial.**
 
-* Configure o intervalo de tempo (em segundos) entre as mensagens
-* Importante para garantir a sequência correta das mensagens
+### ⏱️ Adicionar Delay
 
-#### Adicionar Tag
+* Define o tempo (em segundos) entre as mensagens.
+* Garante a **sequência correta de envio**.
 
-* Permite marcar o contato com uma etiqueta específica
+### 🏷️ Adicionar Tag
 
-#### Adicionar CRM
+* Marca o contato com uma etiqueta específica.
 
-* Move contato para lane no crm compartilhado
+### 📂 Adicionar CRM
 
-#### Alterar Follow-up
+* Move o contato para uma *lane* do CRM compartilhado.
 
-* Pode colcar ou tirar cliente de um follow-up
+### 🔁 Alterar Follow-up
 
-#### HTTP Resquest
+* Adiciona ou remove o cliente de um **follow-up**.
 
-* Fazer requisição personalizada em servidores externos e gravar resultado em alguma variavel
+### 🌐 HTTP Request
 
-#### Forçar executar condições
+* Permite realizar requisições externas e gravar o resultado em variáveis.
 
-* Executa as condições sem prescisar esperar receber uma nova mensagem Exemplo util de uso: Faça um http request salva resposta em uma variavel e depois faça uma comparação dessa variavel nas condições.
+### ⚡ Forçar Execução de Condições
 
-#### Adicionar lista
+* Executa condições sem esperar uma nova mensagem.
+  *Exemplo:* fazer uma requisição HTTP, salvar o resultado e comparar a variável obtida.
 
-* Compativel com api oficial - API Plus \*baileys esta funcionando mas por se tratar não ter suporte oficial pode parar de funcionar
+### 🗂️ Adicionar Lista
+
+* Compatível com **API oficial** e **API Plus**.
+* Funciona parcialmente no **Baileys** (sem suporte oficial, pode parar a qualquer momento).
 
 ![print](lista.png)
-
 ![print](lista2.png)
 
-#### Enviar Botões
+### 🔘 Enviar Botões
 
-* Compativel com api oficial, facebook e instagram e API PLUS - máximo 3 botões
+* Compatível com **WhatsApp oficial**, **Facebook**, **Instagram** e **API Plus**.
+* Máximo de **3 botões**.
 
 ![print](botao.png)
 
-#### Adicionar botão com Link
+### 🔗 Botão com Link
 
-* Compativel com api oficial e Api Plus
+* Compatível com **API oficial** e **API Plus**.
 
 ![print](links.png)
 
-#### Solicitar localização
+### 📍 Solicitar Localização
 
-* Compativel com api oficial e Api Plus
-* Envia botão pedindo para cliente localizacação dele, util serviços de entrega por exemplo
+* Envia botão solicitando a localização do cliente.
+* Útil para serviços de **entrega**.
+* Compatível com **API oficial** e **API Plus**.
 
 ![print](solicitarlocalizacao.png)
 
-#### Botão Dinamico
+### 🧩 Botão Dinâmico
 
-* Api Plus
-* Pode enviar botão misturado varios tipos, resposta, copiar e cola, ligação e link
+* Exclusivo da **API Plus**.
+* Permite misturar tipos de botões: resposta, link, cópia, ligação, etc.
+* Alguns dispositivos pode aparecer mensagem não compativel
 
 ![print](dinamico.png)
 
-#### Carrossel de midea
+### 🎠 Carrossel de Mídia
 
-* Api Plus
-* Pode colocar varias fotos com botão abaixo da mesma
-* Pode enviar botão misturado varios tipos, resposta, copiar e cola, ligação e link
+* Exclusivo da **API Plus**.
+* Envie várias imagens com botões interativos abaixo delas.
+* Alguns dispositivos pode aparecer mensagem não compativel
 
 ![print](carrossel1.png) ![print](carrossel2.png)
 
-## Ordem das Interações
+---
+
+## 🔄 Ordem das Interações
 
 ![print](configfluxo2.png)
 
-### Importante:
+> ⚠️ **Importante:**
+>
+> * Os números indicam a **sequência exata de execução**.
+> * Use **delays** entre mensagens múltiplas para manter a ordem correta.
 
-* Os números indicam a sequência exata de execução das interações
-* Para múltiplas mensagens, use sempre o delay entre elas para garantir a ordem correta de envio
+---
 
-## Configuração de Condições
+## 🧩 Configuração de Condições
 
 ![print](condicoes.png)
 
-### Tipos de Condições (em ordem de prioridade):
+### Tipos de Condições (em ordem de prioridade)
 
-#### Dentro/Fora do Horário de Atendimento
+#### 🕓 Dentro/Fora do Horário de Atendimento
 
-* Essa condição somente funciona na etapa "Boas vindas!"
-* **Posicionamento**: Sempre no início das condições
-* **Dentro do Horário**: Ativa durante o horário comercial
-* **Fora do Horário**: Ativa fora do horário comercial
+* Funciona apenas na etapa **"Boas-vindas!"**.
+* Deve estar **no início** das condições.
+* Define ações diferentes para dentro ou fora do horário comercial.
 
-#### Respostas Exatas
+#### ✅ Respostas Exatas
 
-* Exemplo: "1" ou "01"
-* A resposta deve ser idêntica ao configurado
-* Não reconhece variações como "quero 1"
+* Exemplo: “1” ou “01”.
+* A resposta precisa ser **idêntica** ao configurado.
 
-#### Contém Exato
+#### 🔍 Contém Exato
 
-* Procura palavras específicas na frase
-* Exemplo: Para "quero comprar", reconhece "Eu quero comprar um tênis"
+* Reconhece **frases completas**.
+  Exemplo: “Eu quero comprar um tênis”.
 
-#### Contém
+#### 🧠 Contém
 
-* Reconhece palavras ou partes de palavras
-* Exemplo: "compra" reconhece "comprando", "comprador"
+* Reconhece partes da frase.
+  Exemplo: “comprando”, “comprador” → reconhece “compra”.
 
-#### Qualquer Resposta
+#### ✳️ Qualquer Resposta
 
-* **Posicionamento**: Sempre por último
-* Captura qualquer resposta não prevista nas condições anteriores
+* Sempre posicionada **por último**.
+* Captura qualquer resposta não reconhecida.
 
-#### Dentro/Fora do Horário personalizado
+#### ⏰ Dentro/Fora de Horário Personalizado
 
-* Pode colocar conforme horário configurado execute alguma ação
+* Define ações específicas conforme horários configurados manualmente.
 
-#### Comparação variavel
+#### 🧮 Comparação de Variáveis
 
-* Varios tipos comparação de variavel, como se existe, compara com valores fixos ou outros variaveis
+* Permite comparar valores fixos, variáveis existentes ou verificar se uma variável foi definida.
 
-### Tratamento de Respostas Inesperadas
+---
 
-Se nenhuma condição for atendida, o bot responderá com: "Desculpe! Não entendi sua resposta. Vamos tentar novamente! Escolha uma opção válida." (Esta mensagem pode ser personalizada nas configurações)
+### ⚠️ Respostas Inesperadas
 
-## Configurações
+Se nenhuma condição for atendida, o bot enviará:
 
-<figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
+> “Desculpe! Não entendi sua resposta. Vamos tentar novamente! Escolha uma opção válida.”
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+*(Essa mensagem pode ser personalizada nas configurações.)*
 
-Mensagem de saudação (Fila/Usuário)
+---
 
-* Envia uma mensagem quando transfere ticket
+## ⚙️ Configurações Gerais
 
-Se nenhuma resposta esperada for enviada
+<figure><img src="../../.gitbook/assets/image (10).png"></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png"></figure>
 
-* Mensagem será enviada se nenhuma das condições forem cumpridas
+**Opções disponíveis:**
 
-Ausência de resposta
+* **Mensagem de saudação (Fila/Usuário):** enviada ao transferir ticket.
+* **Se nenhuma resposta for enviada:** mensagem padrão caso nenhuma condição seja cumprida.
+* **Ausência de resposta:** define ação após determinado tempo sem interação.
+* **Máximo de tentativas do bot:** define o que fazer se o cliente não responder corretamente.
+* Outras configurações podem ser ajustadas conforme necessidade.
 
-* Caso cliente não responder determinado tempo o que fazer o com o ticket
+---
 
-Máximo de Tentativas do Bot
+## 🧠 Exemplos Práticos de Fluxos
 
-* Caso não cumpris condições o que fazer ticket
+### 1️⃣ Fluxo com Horário de Atendimento
 
-Entre outras configurações verificar
-
-## Exemplos Práticos de Fluxos
-
-### 1. Fluxo com Horário de Atendimento
-
-Ideal para empresas com plantão de emergência
+Ideal para empresas com **plantão ou suporte emergencial**.
 
 ![print](horario1.jpg) ![print](horario2.jpg)
 
-[Download do Fluxo de Exemplo](horario_de_atendimento.json)
+[Baixar exemplo](horario_de_atendimento.json)
 
-### 2. Fluxo com Variáveis Dinâmicas
+---
 
-Permite personalizar mensagens com dados do cliente
+### 2️⃣ Fluxo com Variáveis Dinâmicas
 
-[Download do Fluxo de Exemplo](exemplo_fluxo_usando_novas_variaveis.json)
+Permite personalizar mensagens com **dados do cliente**.
 
-#### Exemplo de Uso:
+[Baixar exemplo](exemplo_fluxo_usando_novas_variaveis.json)
 
-```
-Template da mensagem:
+**Exemplo de uso:**
+
+```text
+Template:
 Por favor, confirme se seu endereço é {{endereco}}?
 1 - Sim
 2 - Não
 
-Mensagem enviada ao cliente:
+Mensagem enviada:
 Por favor, confirme se seu endereço é Rua Marechal Deodoro, 11?
 1 - Sim
 2 - Não
 ```
 
-### 3. Fluxo de Agendamento com Cal.com
+---
 
-Sistema integrado com [https://cal.com/](https://cal.com/)
+### 3️⃣ Fluxo de Agendamento com Cal.com
+
+Integração com [https://cal.com/](https://cal.com/)
 
 ![print](barbearia.jpg)
 
-[Download do Fluxo de Exemplo](agendamentobarbearia.json)
+[Baixar exemplo](agendamentobarbearia.json)
 
 ![print](barbeariabotao.jpeg)
 
-[Download do Fluxo de Exemplo com botões](agendamentobarbeariabotao.json)
+[Baixar exemplo com botões](agendamentobarbeariabotao.json)
 
-### 4. Fluxo sobre whazing com lista, botão e links
+---
 
-[Download do Fluxo de Exemplo](exemplo_whazing.json)
+### 4️⃣ Fluxo sobre Whazing (lista, botão e links)
 
-### 5. Exemplo fluxo usando HTTP Request e compara valor variavel
+[Baixar exemplo](exemplo_whazing.json)
 
-* Exemplo abaixo verifica se existe variavel cidade, caso exista responde com variavel cidade e estado. Caso não existe pergunta o cep e faz consulta pelo nome cidade e estado caso consulta tenha sucesso grava o valor variaveis cidade e estado. Neste exemplo sendo usado funções Http Request, Comparação variavel e Forçar executar condições
+---
 
-[Download do Fluxo de Exemplo](exemplo_http_request.json)
+### 5️⃣ Fluxo com HTTP Request e Comparação de Variável
 
-### 6. Exemplo fluxo que cria teste api SaaS
+Exemplo que valida **CEP e cidade** via API.
 
-* Exemplo que usa HTTP Request e api SaaS para gerar teste para cliente
+[Baixar exemplo](exemplo_http_request.json)
 
-[Download do Fluxo de Exemplo](exemplo_teste_whazing.json)
+---
 
-### 7. Usar Somente bot para mandar mensagem de boas vindas.
+### 6️⃣ Fluxo para Teste de API SaaS
 
-* Exemplo somente envia mensagem de boas vindas e já coloca cliente em determinada fila.&#x20;
+Usa **HTTP Request** para gerar teste automático para o cliente.
 
-[Download do Fluxo de Exemplo](boas_vindas.json)
+[Baixar exemplo](exemplo_teste_whazing.json)
 
-Como funciona "Forçar executar condições" faz executar condição que somente temos qualquer resposta. Assim fazendo enviar mensagem e encaminhar fila.
+---
 
-Você pode estar colocando também tags no contato, entre outros. O "Forçar executar condições" tornar muito útil avançando etapas do bot automaticamente.
+### 7️⃣ Fluxo de Boas-vindas Simples
 
-### 7. Selecionar fila conforme palavra chave
+Envia mensagem de boas-vindas e direciona o cliente para uma fila.
 
-[Download do Fluxo de Exemplo](bot_por_palavra_chat.json)
+[Baixar exemplo](boas_vindas.json)
 
-Novamente usando "Forçar executar condições" podemos fazer bot ir determinada fila conforme mensagem dele se tiver integração na fila e ativar "Inicia Integração ao transferir" ele ja inicia a integração
+> Usa “Forçar executar condições” para simular uma resposta automática e avançar o fluxo.
 
-### 8. Exemplo HTTP request api https://www.cpfhub.io/
+---
 
-[Download do Fluxo de Exemplo](consulta_cpf.json)
+### 8️⃣ Seleção de Fila por Palavra-chave
 
-Exemplo uso HTTP Request para consulta api do cpfhub o token no exemplo tem limite de uso e pode não estár mais funcionando melhor cadastrar e trocar token para testar
+[Baixar exemplo](bot_por_palavra_chat.json)
+
+Permite enviar o cliente para uma fila específica conforme a palavra digitada.
+Com “Iniciar Integração ao transferir”, o sistema já ativa a integração automaticamente.
+
+---
+
+### 9️⃣ Consulta de CPF via API
+
+[Baixar exemplo](consulta_cpf.json)
+
+Usa a API pública [cpfhub.io](https://www.cpfhub.io/).
+
+> O token do exemplo é limitado; recomenda-se gerar um novo para testes.
