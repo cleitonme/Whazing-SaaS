@@ -2,6 +2,8 @@
 
 ### Locais escolhe qual bot será usado e prioridades
 
+Atenção: caso fila que esteja marcada no canal tiver alguma integração o bot não será acionado
+
 Atualmente, há 4 critérios que determinam qual bot será usado para novos tickets. Esses critérios estão listados abaixo em ordem de prioridade:
 
 1 - Lane do CRM Todos os contatos associados a uma lane específica do CRM. Ao enviar uma mensagem para o número do sistema, caso não haja tickets abertos ou pendentes, o bot configurado para essa lane será acionado.
