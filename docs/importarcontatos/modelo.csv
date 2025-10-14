@@ -1,2 +1,4 @@
-nome;numero;email
-User;5551900000;email@email.com
+nome;numero;email;empresa;aniversario;cargo;cidade;observacoes
+João Silva;5551900000001;joao@email.com;Empresa ABC;15/03/1990;Gerente;São Paulo;Cliente VIP
+Maria Santos;5551900000002;maria@email.com;Tech Solutions;22/08/1985;Desenvolvedora;Rio de Janeiro;Contato técnico
+Pedro Costa;5551900000003;pedro@email.com;Comércio Ltda;10/12/1992;Vendedor;Belo Horizonte;Interessado em produtos
