@@ -271,3 +271,9 @@ Sistema integrado com [https://cal.com/](https://cal.com/)
 Como funciona "Forçar executar condições" faz executar condição que somente temos qualquer resposta. Assim fazendo enviar mensagem e encaminhar fila.
 
 Você pode estar colocando também tags no contato, entre outros. O "Forçar executar condições" tornar muito útil avançando etapas do bot automaticamente.
+
+### 7. Selecionar fila conforme palavra chave
+
+{% file src="../../.gitbook/assets/bot_por_palavra_chat (2).json" %}
+
+Novamente usando "Forçar executar condições" podemos fazer bot ir determinada fila conforme mensagem dele se tiver integração na fila e ativar "Inicia Integração ao transferir" ele ja inicia a integração
