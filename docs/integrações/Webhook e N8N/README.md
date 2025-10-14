@@ -2,29 +2,45 @@
 
 ## 🌐 **WebHook - Visão Geral**
 
-O sistema Whazing oferece suporte a WebHooks de duas maneiras:
+O sistema **Whazing** oferece suporte a **WebHooks** de duas maneiras principais:
 
-**Fila**
+### 🧩 **1. Pela Fila**
 
-**Cadastro - Filas/integrações - Integrações**
+**Caminho:** `Cadastro → Filas/Integrações → Integrações`
 
-**Adiciona tipo N8N/Webhook, preencha nome identificar, url tipo post e N8N API KEY. Apos salve agora clique em filas edite uma ou crie uma nova, integração marque a que você acabou criar e caso queira webhook seja acionado imediamente ao transferir aquela fila pelo bot ou atendimento manual marque opção "**&#x49;nicia Integração ao transferir", caso não marca evento será enviado na próxima mensagem recebida ou enviada quando ticket fizer parte daquela fila.
+1. Adicione um novo tipo de integração do tipo **N8N/Webhook**.
+2. Preencha os campos:
 
-C**anal - Configurações - Canais/API - Configurações do canal**
+   * **Nome** (para identificação)
+   * **URL** (tipo `POST`)
+   * **N8N API KEY** (opcional, mas recomendada)
+3. Salve a integração.
+4. Em seguida, acesse o menu **Filas**, edite uma fila existente ou crie uma nova.
+5. No campo **Integração**, selecione a que você acabou de criar.
+6. Se desejar que o WebHook seja acionado **imediatamente ao transferir** o ticket para essa fila (seja pelo bot ou atendimento manual), marque a opção **“Iniciar integração ao transferir”**.
 
-**Marcar** Ativar Webhook
+   * Caso **não marque**, o evento será enviado somente na próxima mensagem recebida ou enviada enquanto o ticket fizer parte dessa fila.
 
-Colocar url do N8N deve ser url tipo POST e marcar tipo de evento será enviado caso não marcar nenhum nao será enviado nenhum evento. N8N API KEY opcional util para validar origem do webhook evitar falsos webhook em caso descoberta url publica
+---
 
+### 🔧 **2. Pelo Canal**
 
+**Caminho:** `Configurações → Canais/API → Configurações do canal`
 
-***
+1. Marque a opção **Ativar Webhook**.
+2. Informe a **URL do N8N** (tipo `POST`).
+3. Selecione os **tipos de eventos** que deseja enviar.
 
-### 🔔 O que é um WebHook?
+   * Caso nenhum seja marcado, **nenhum evento será enviado**.
+4. (Opcional) Informe a **N8N API KEY**, que pode ser usada para **validar a origem do webhook**, evitando requisições falsas caso a URL seja descoberta publicamente.
 
-Um **WebHook** é uma funcionalidade que permite que sistemas externos recebam **notificações automáticas** sempre que determinados eventos ocorrem no **Whazing** — como a criação de tickets, envio ou recebimento de mensagens, e muito mais.
+---
 
-Em vez de você precisar consultar o Whazing periodicamente para saber se algo mudou, o Whazing envia essas atualizações em **tempo real** diretamente para o seu servidor.
+### 🔔 **O que é um WebHook?**
+
+Um **WebHook** é uma funcionalidade que permite que sistemas externos recebam **notificações automáticas em tempo real** sempre que determinados eventos acontecem no **Whazing** — como criação de tickets, envio ou recebimento de mensagens, transferências e muito mais.
+
+Em vez de consultar periodicamente o Whazing para verificar mudanças, seu sistema é **notificado automaticamente** assim que algo ocorre.
 
 **Exemplos de eventos enviados:**
 
@@ -34,45 +50,46 @@ Em vez de você precisar consultar o Whazing periodicamente para saber se algo m
 * Transferência de ticket
 * Fechamento de ticket
 
-***
+---
 
-### 🔄 Diferença entre WebHook e API
+### 🔄 **Diferença entre WebHook e API**
 
-* **WebHook**:\
-  Serve para **receber informações** do Whazing assim que elas acontecem, sem precisar fazer solicitações manuais.\
-  ➔ **Exemplo**: Seu sistema é avisado automaticamente quando um novo ticket é criado.
-* **API**:\
-  Deve ser utilizada sempre que for necessário **alterar informações** no Whazing.\
-  ➔ **Exemplo**: Enviar uma mensagem, alterar o status de um ticket ou atualizar dados de um contato.
+| Tipo        | Função principal                             | Exemplo de uso                                               |
+| ----------- | -------------------------------------------- | ------------------------------------------------------------ |
+| **WebHook** | Receber informações do Whazing em tempo real | Ser notificado sobre novas mensagens ou alterações           |
+| **API**     | Enviar ou alterar informações no Whazing     | Enviar mensagens, atualizar contatos, mudar status de ticket |
 
-***
+**Resumo:**
 
-## 🚀 Resumo
+* 🔔 **WebHook** → O Whazing envia informações para você.
+* 🧭 **API** → Você envia informações para o Whazing.
 
-| Recurso     | Função                           | Exemplo de Uso                           |
-| ----------- | -------------------------------- | ---------------------------------------- |
-| **WebHook** | Receber notificações automáticas | Ser avisado sobre mensagens ou mudanças  |
-| **API**     | Realizar alterações no sistema   | Enviar mensagens, mudar status de ticket |
+---
 
-***
+> 📢 **Importante:**
+> Para usar WebHooks e APIs corretamente, é essencial configurar os **endpoints** do seu sistema para receber os dados enviados pelo Whazing.
 
-> 📢 **Importante:** Para utilizar WebHooks e APIs corretamente, é necessário configurar os endpoints no seu sistema para receber os dados enviados pelo Whazing.
+---
 
-## Modelos para estudo
+## 📚 **Modelos para Estudo**
 
-* [Baixe e importe o exemplo de fluxo compatível com o Whazing](../../integra%C3%A7%C3%B5es/Webhook%20e%20N8N/Modelo_Whazing_n8n.json).
-* [Baixe e importe o exemplo de fluxo compatível com o Whazing](../../integra%C3%A7%C3%B5es/Webhook%20e%20N8N/modelo_com_alguns_endpoints.json).
+* [Baixe e importe o exemplo de fluxo compatível com o Whazing](../../integra%C3%A7%C3%B5es/Webhook%20e%20N8N/Modelo_Whazing_n8n.json)
+* [Baixe e importe o modelo com exemplos de endpoints adicionais](../../integra%C3%A7%C3%B5es/Webhook%20e%20N8N/modelo_com_alguns_endpoints.json)
 
-Obrigado Elizeu Garcez e Ricardo Schonfelder Filho por compartilhar modelos
+> 🙌 Agradecimento especial a **Elizeu Garcez** e **Ricardo Schonfelder Filho** por compartilharem os modelos.
 
-**NODE WHAZING PARA N8N**
+---
 
-Atenção sempre bom da conferida documentação da api pode não ter todos endpoints no node
+## 🧠 **Node Whazing para N8N**
 
-[https://www.npmjs.com/package/n8n-nodes-whazing](https://www.npmjs.com/package/n8n-nodes-whazing)
+Recomenda-se sempre consultar a **documentação oficial da API**, pois o pacote pode não conter todos os endpoints disponíveis.
 
-{% embed url="https://youtu.be/To1x6wZAI1s" %}
+📦 [https://www.npmjs.com/package/n8n-nodes-whazing](https://www.npmjs.com/package/n8n-nodes-whazing)
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+---
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+{% embed url="[https://youtu.be/To1x6wZAI1s](https://youtu.be/To1x6wZAI1s)" %}
+
+<figure><img src="../../../.gitbook/assets/image.png" alt="Exemplo de fluxo N8N integrado ao Whazing"><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt="Configuração de WebHook no Whazing"><figcaption></figcaption></figure>
