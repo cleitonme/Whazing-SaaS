@@ -44,7 +44,9 @@ Em termos simples: são funcionalidades que deixam a conversa mais automática e
 | Adicional: 1 canal                |                **R$ 5,00 / mês** |
 | Adicional: 10 canais              |               **R$ 35,00 / mês** |
 | Adicional: 20 canais              |               **R$ 60,00 / mês** |
-| Adicional: 40 canais              |              **R$ 100,00 / mês** |
+| Adicional: 30 canais              |               **R$ 80,00 / mês** |
+| Adicional: 40 canais              |              **R$ 95,00 / mês** |
+| Adicional: 50 canais              |              **R$ 105,00 / mês** |
 
 > Observação: **cada canal precisa de um token de acesso**
 
