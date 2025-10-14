@@ -264,3 +264,8 @@ Sistema integrado com [https://cal.com/](https://cal.com/)
 
 ### 7. Usar Somente bot para mandar mensagem de boas vindas.
 
+* Exemplo somente envia mensagem de boas vindas e já coloca cliente em determinada fila.&#x20;
+
+{% file src="../../.gitbook/assets/boas_vindas.json" %}
+
+Como funciona "Forçar executar condições" faz executar condição que somente temos qualquer resposta. Assim fazendo enviar mensagem e encaminhar fila.
