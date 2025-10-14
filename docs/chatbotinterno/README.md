@@ -261,3 +261,6 @@ Sistema integrado com [https://cal.com/](https://cal.com/)
 * Exemplo que usa HTTP Request e api SaaS para gerar teste para cliente
 
 [Download do Fluxo de Exemplo](exemplo_teste_whazing.json)
+
+### 7. Usar Somente bot para mandar mensagem de boas vindas.
+
