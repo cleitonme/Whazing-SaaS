@@ -31,7 +31,7 @@
     * [Modulo para notificação PerfexCRM](docs/integracoes/perfexcrm.md)
     * [API Whazing](docs/integracoes/api.md)
     * [Como Configurar Wavoip](docs/integracoes/configurar_wavoip.md)
-    * [Como Configurar Transcrição de Áudio](docs/integracoes/transcricao_audio.md)
+    * [🎧 Como Configurar Transcrição de Áudio](docs/integracoes/transcricao_audio.md)
     * [Discador SIP](docs/integracoes/discador-sip.md)
     * [Recepção inteligente](docs/integracoes/recepcao-inteligente.md)
   * [Problemas no Whazing?](docs/problemas-no-whazing/README.md)
