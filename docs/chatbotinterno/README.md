@@ -277,3 +277,9 @@ Você pode estar colocando também tags no contato, entre outros. O "Forçar exe
 [Download do Fluxo de Exemplo](bot_por_palavra_chat.json)
 
 Novamente usando "Forçar executar condições" podemos fazer bot ir determinada fila conforme mensagem dele se tiver integração na fila e ativar "Inicia Integração ao transferir" ele ja inicia a integração
+
+### 8. Exemplo HTTP request api https://www.cpfhub.io/
+
+[Download do Fluxo de Exemplo](consulta_cpf.json)
+
+Exemplo uso HTTP Request para consulta api do cpfhub o token no exemplo tem limite de uso e pode não estár mais funcionando melhor cadastrar e trocar token para testar

@@ -1,0 +1,226 @@
+{
+	"name": "consulta cpf",
+	"nodeList": [
+		{
+			"id": "start",
+			"name": "Início",
+			"type": "start",
+			"left": "26px",
+			"top": "100px",
+			"ico": "mdi-play",
+			"viewOnly": true,
+			"status": "success",
+			"style": {}
+		},
+		{
+			"id": "configurations",
+			"name": "Configurações",
+			"type": "configurations",
+			"left": "340px",
+			"top": "100px",
+			"viewOnly": true,
+			"ico": "mdi-alert-circle-outline",
+			"configurations": {
+				"notOptionsSelectMessage": {
+					"message": "",
+					"stepReturn": "A"
+				},
+				"notResponseMessage": {
+					"time": 10,
+					"type": 1,
+					"destiny": "",
+					"message": ""
+				},
+				"welcomeMessage": {
+					"message": ""
+				},
+				"maxRetryBotMessage": {
+					"number": 3,
+					"type": 1,
+					"destiny": ""
+				},
+				"outOpenHours": {
+					"type": 1,
+					"destiny": ""
+				},
+				"farewellMessage": {
+					"message": ""
+				},
+				"autoDistributeTickets": "N"
+			}
+		},
+		{
+			"id": "nodeC",
+			"name": "Boas vindas!",
+			"type": "node",
+			"left": "26px",
+			"top": "301px",
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "{{greeting}} seja bem vindo."
+					},
+					"id": "1115a111-9b9a-4827-8a0c-8de73102ffe1"
+				},
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "🤖 Certo! Preciso do seu CPF — envie apenas os números, sem pontos ou traços, ok?"
+					},
+					"id": "3a782efa-7f4e-47c6-9166-73efd7e3ff73"
+				}
+			],
+			"conditions": [
+				{
+					"type": "US",
+					"condition": [],
+					"id": "704fbef2-8e4c-44fd-ae7b-8c68e30857ea",
+					"customfield": "cpf",
+					"action": 0,
+					"nextStepId": "bdbc4eb7-ce36-4e47-a8a6-54b37a1cccb1"
+				}
+			],
+			"actions": []
+		},
+		{
+			"id": "bdbc4eb7-ce36-4e47-a8a6-54b37a1cccb1",
+			"name": "consulta",
+			"type": "node",
+			"left": "450.5px",
+			"top": "248.5px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "VAR_NOT_EQUALS_VALUE",
+					"condition": [],
+					"id": "8274824c-cd0c-4d69-a8f9-bda0c2ce6de9",
+					"varName": "resultadoconsultacpf",
+					"varValue": "true",
+					"action": 0,
+					"nextStepId": "248bda9e-2b93-4a18-9880-a46d7cbf8181"
+				},
+				{
+					"type": "VAR_EQUALS_VALUE",
+					"condition": [],
+					"id": "32079e3f-36e3-4383-b376-a2f2938dc6af",
+					"varValue": "true",
+					"varName": "resultadoconsultacpf",
+					"action": 0,
+					"nextStepId": "f8dd7a7e-3c50-4383-8c05-cbb3d98e5ae7"
+				}
+			],
+			"interactions": [
+				{
+					"type": "WebhookField",
+					"data": {
+						"webhook": "{\n  \"method\": \"GET\",\n  \"url\": \"https://api.cpfhub.io/cpf/{{cpf}}\",\n  \"params\": {},\n  \"headers\": {\n    \"x-api-key\": \"48570bc8dd9b31d2160a836fc3d3a2f67d2ee3ddb332155dddc376d677e6cb4c\",\n    \"Accept\": \"application/json\"\n  },\n  \"timeout\": 30000,\n  \"variables\": {\n    \"resultadoconsultacpf\": {\n      \"path\": \"success\",\n      \"type\": \"boolean\"\n    },\n    \"nomeconsulta\": {\n      \"path\": \"data.name\",\n      \"type\": \"string\"\n    },\n    \"genero\": {\n      \"path\": \"data.gender\",\n      \"type\": \"string\"\n    },\n    \"day\": {\n      \"path\": \"data.day\",\n      \"type\": \"string\"\n    },\n    \"month\": {\n      \"path\": \"data.month\",\n      \"type\": \"string\"\n    },\n    \"year\": {\n      \"path\": \"data.year\",\n      \"type\": \"string\"\n    }\n  }\n}"
+					},
+					"id": "9be084d2-2411-4795-9caa-4b4bba4a9fac"
+				},
+				{
+					"type": "ExecuteConditions",
+					"data": {
+						"time": "10"
+					},
+					"id": "570a31e1-c3aa-49d4-8e68-375c2593d551"
+				}
+			]
+		},
+		{
+			"id": "248bda9e-2b93-4a18-9880-a46d7cbf8181",
+			"name": "erro consulta",
+			"type": "node",
+			"left": "797px",
+			"top": "92px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "US",
+					"condition": [],
+					"id": "bfe0600a-8c10-4ca9-a1c4-769c3f378efb",
+					"action": 3,
+					"closeTicket": "atendimento finalizado",
+					"nextStepId": null,
+					"userIdDestination": null,
+					"queueId": null,
+					"chatFlowId": null
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Houve um erro na consulta"
+					},
+					"id": "47998827-4d80-45ce-bd64-f2213da4693d"
+				}
+			]
+		},
+		{
+			"id": "f8dd7a7e-3c50-4383-8c05-cbb3d98e5ae7",
+			"name": "sucesso consulta",
+			"type": "node",
+			"left": "800.5px",
+			"top": "281.5px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "US",
+					"condition": [],
+					"id": "c987d6b7-ced2-4c9f-8017-420bee55a34b",
+					"action": 3,
+					"closeTicket": "finalizado",
+					"nextStepId": null,
+					"userIdDestination": null,
+					"queueId": null,
+					"chatFlowId": null
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Nome do cpf consultado é {{nomeconsulta}}\nSeu genero {{genero}}\nSua data de nascimento é {{day}}/{{month}}/{{year}}"
+					},
+					"id": "92003782-f0bc-49b0-a612-49f321c63545"
+				}
+			]
+		}
+	],
+	"lineList": [
+		{
+			"from": "start",
+			"to": "nodeC",
+			"paintStyle": {
+				"strokeWidth": 3,
+				"stroke": "#5c67f2"
+			}
+		},
+		{
+			"from": "nodeC",
+			"to": "bdbc4eb7-ce36-4e47-a8a6-54b37a1cccb1",
+			"label": null
+		},
+		{
+			"from": "bdbc4eb7-ce36-4e47-a8a6-54b37a1cccb1",
+			"to": "248bda9e-2b93-4a18-9880-a46d7cbf8181",
+			"label": null
+		},
+		{
+			"from": "bdbc4eb7-ce36-4e47-a8a6-54b37a1cccb1",
+			"to": "f8dd7a7e-3c50-4383-8c05-cbb3d98e5ae7",
+			"label": null
+		}
+	],
+	"action": 0,
+	"userId": 1,
+	"celularTeste": null,
+	"isActive": true,
+	"AcceptTransfer": true,
+	"AcceptKanban": true,
+	"id": null
+}
