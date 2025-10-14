@@ -2,7 +2,21 @@
 
 ## 🌐 **WebHook - Visão Geral**
 
-O sistema Whazing oferece suporte a WebHooks de duas maneiras: **por fila** ou **por canal**.
+O sistema Whazing oferece suporte a WebHooks de duas maneiras:
+
+**Fila**
+
+**Cadastro - Filas/integrações - Integrações**
+
+**Adiciona tipo N8N/Webhook, preencha nome identificar, url tipo post e N8N API KEY. Apos salve agora clique em filas edite uma ou crie uma nova, integração marque a que você acabou criar e caso queira webhook seja acionado imediamente ao transferir aquela fila pelo bot ou atendimento manual marque opção "**&#x49;nicia Integração ao transferir", caso não marca evento será enviado na próxima mensagem recebida ou enviada quando ticket fizer parte daquela fila.
+
+C**anal - Configurações - Canais/API - Configurações do canal**
+
+**Marcar** Ativar Webhook
+
+Colocar url do N8N deve ser url tipo POST e marcar tipo de evento será enviado caso não marcar nenhum nao será enviado nenhum evento. N8N API KEY opcional util para validar origem do webhook evitar falsos webhook em caso descoberta url publica
+
+
 
 ***
 
