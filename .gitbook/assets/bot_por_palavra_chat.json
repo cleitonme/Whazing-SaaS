@@ -1,0 +1,105 @@
+{
+	"name": "bot por palavra chat",
+	"nodeList": [
+		{
+			"id": "start",
+			"name": "Início",
+			"type": "start",
+			"left": "26px",
+			"top": "100px",
+			"ico": "mdi-play",
+			"viewOnly": true,
+			"status": "success",
+			"style": {}
+		},
+		{
+			"id": "configurations",
+			"name": "Configurações",
+			"type": "configurations",
+			"left": "340px",
+			"top": "100px",
+			"viewOnly": true,
+			"ico": "mdi-alert-circle-outline",
+			"configurations": {
+				"notOptionsSelectMessage": {
+					"message": "",
+					"stepReturn": "A"
+				},
+				"notResponseMessage": {
+					"time": 10,
+					"type": 1,
+					"destiny": "",
+					"message": ""
+				},
+				"welcomeMessage": {
+					"message": ""
+				},
+				"maxRetryBotMessage": {
+					"number": 3,
+					"type": 1,
+					"destiny": ""
+				},
+				"outOpenHours": {
+					"type": 1,
+					"destiny": ""
+				},
+				"farewellMessage": {
+					"message": ""
+				},
+				"autoDistributeTickets": "N"
+			}
+		},
+		{
+			"id": "nodeC",
+			"name": "Boas vindas!",
+			"type": "node",
+			"left": "26px",
+			"top": "301px",
+			"interactions": [
+				{
+					"type": "ExecuteConditions",
+					"data": {
+						"time": "0"
+					},
+					"id": "532b346e-bf5a-42cf-86be-fc0e04ebdb76"
+				}
+			],
+			"conditions": [
+				{
+					"type": "Contain2",
+					"condition": [
+						"whazing"
+					],
+					"id": "1540fc48-5f7a-4ea4-96d7-20e1c9e9d7a0",
+					"action": 1
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"n8n"
+					],
+					"id": "f2872ce6-dd28-47d1-babd-73739b213379",
+					"action": 1
+				}
+			],
+			"actions": []
+		}
+	],
+	"lineList": [
+		{
+			"from": "start",
+			"to": "nodeC",
+			"paintStyle": {
+				"strokeWidth": 3,
+				"stroke": "#5c67f2"
+			}
+		}
+	],
+	"action": 0,
+	"userId": 1,
+	"celularTeste": null,
+	"isActive": true,
+	"AcceptTransfer": true,
+	"AcceptKanban": true,
+	"id": null
+}

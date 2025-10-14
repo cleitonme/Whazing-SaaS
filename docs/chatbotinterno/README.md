@@ -269,3 +269,5 @@ Sistema integrado com [https://cal.com/](https://cal.com/)
 {% file src="../../.gitbook/assets/boas_vindas.json" %}
 
 Como funciona "Forçar executar condições" faz executar condição que somente temos qualquer resposta. Assim fazendo enviar mensagem e encaminhar fila.
+
+Você pode estar colocando também tags no contato, entre outros. O "Forçar executar condições" tornar muito útil avançando etapas do bot automaticamente.
