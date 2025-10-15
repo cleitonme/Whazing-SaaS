@@ -18,4 +18,4 @@ Elas ficam no meu - Cadastros - Filas/Integrações
 
 ![print](canal.png)
 
-### Para integrações entender áudio necessário ter transcrição ativa verificar documentação "Como Configurar Transcrição de Áudio"
+### Para integrações entender áudio necessário ter transcrição ativa verificar documentação [Como Configurar Transcrição de Áudio](../integracoes/transcricao_audio.md)
