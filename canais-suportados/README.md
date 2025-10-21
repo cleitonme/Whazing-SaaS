@@ -52,7 +52,7 @@ Usar cupom desconto: whazing
 <figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 * [**WhatsApp Oficial**](api-oficial/)
-  * Ativação por canal: **R$ 120,00**
+  * Ativação por canal: **R$ 150,00**
   * Mensalidade: **R$ 50,00 por canal conectado**
 * [**Instagram**](facebook-e-instagram-via-hub/)
   * Sem taxa de ativação
