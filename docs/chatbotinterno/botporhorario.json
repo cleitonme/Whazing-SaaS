@@ -1,0 +1,551 @@
+{
+	"name": "botporhorario",
+	"nodeList": [
+		{
+			"id": "start",
+			"name": "Início",
+			"type": "start",
+			"left": "26px",
+			"top": "100px",
+			"ico": "mdi-play",
+			"viewOnly": true,
+			"status": "success",
+			"style": {}
+		},
+		{
+			"id": "configurations",
+			"name": "Configurações",
+			"type": "configurations",
+			"left": "340px",
+			"top": "100px",
+			"viewOnly": true,
+			"ico": "mdi-alert-circle-outline",
+			"configurations": {
+				"notOptionsSelectMessage": {
+					"message": "Por favor selecione uma opção do menu",
+					"stepReturn": "A"
+				},
+				"notResponseMessage": {
+					"time": 20,
+					"type": 1,
+					"destiny": 21,
+					"message": ""
+				},
+				"welcomeMessage": {
+					"message": ""
+				},
+				"maxRetryBotMessage": {
+					"number": 3,
+					"type": 1,
+					"destiny": 21
+				},
+				"outOpenHours": {
+					"type": 1,
+					"destiny": 21
+				},
+				"farewellMessage": {
+					"message": ""
+				},
+				"autoDistributeTickets": "N"
+			}
+		},
+		{
+			"id": "nodeC",
+			"name": "Boas vindas!",
+			"type": "node",
+			"left": "26px",
+			"top": "301px",
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Olá {{name}} seja bem vindo ao Grupo...."
+					},
+					"id": "22e914e9-ea34-4dc5-bc27-9851f0f977ea"
+				},
+				{
+					"type": "DinamicButtonsField",
+					"data": {
+						"type": "dinamic_button",
+						"text": "A melhor Farmácia de Manipulação do Brasil",
+						"footerText": "Por gentileza escolha opção do Menu",
+						"choices": [
+							{
+								"displayText": "Manipulação",
+								"id": "Manipulação",
+								"type": "reply"
+							},
+							{
+								"displayText": "PDV",
+								"id": "PDV",
+								"type": "reply"
+							}
+						]
+					},
+					"id": "556f9b41-8e52-4b0d-8082-9ce92b15c03b"
+				}
+			],
+			"conditions": [
+				{
+					"type": "Contain2",
+					"condition": [
+						"Manipulação"
+					],
+					"id": "50ee987b-683f-437a-98f9-8fb4f5d4c671",
+					"action": 0,
+					"nextStepId": "70ee8ee8-fe13-43c4-9f8e-02b607021b84"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"PDV"
+					],
+					"id": "0dc65825-56ae-4d6b-ab05-5b87cc82e81b",
+					"action": 0,
+					"nextStepId": "3b8562fa-b178-4311-974e-2f8ae8486bd9"
+				}
+			],
+			"actions": []
+		},
+		{
+			"id": "70ee8ee8-fe13-43c4-9f8e-02b607021b84",
+			"name": "Manipulaçao",
+			"type": "node",
+			"left": "534px",
+			"top": "244px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "Contain2",
+					"condition": [
+						"Retirar na loja"
+					],
+					"id": "bc1e07f9-b481-4187-9c11-5c95a5b445df",
+					"action": 0,
+					"nextStepId": "2cfe360d-3bd7-442c-ad4b-9fa596672f4f"
+				},
+				{
+					"type": "Contain2",
+					"condition": [
+						"Tele-entrega"
+					],
+					"id": "d1ddbe3e-a20a-4f3f-a743-5ab6b34acc7e",
+					"action": 0,
+					"queueId": null,
+					"nextStepId": "ffeabffd-6efe-4e50-bb3e-1002705a2a91",
+					"userIdDestination": null,
+					"closeTicket": null
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Informamos que orçamentos terão validade de 3 dias úteis.\n\n*Prezados clientes, informamos que estamos operando com pagamento no ato dos pedidos.*\n\n*Após a confirmação do pagamento seu pedido será encaminhado para a produção em nosso laboratórios*\n\n*Agradecemos sua compreensão.*"
+					},
+					"id": "c1fd1143-7f59-4b7a-951c-9de9baa11b87"
+				},
+				{
+					"type": "DelayField",
+					"data": {
+						"time": "5"
+					},
+					"id": "719cab6e-0175-4c12-9299-0d24cce9e8b4"
+				},
+				{
+					"type": "DinamicButtonsField",
+					"data": {
+						"type": "dinamic_button",
+						"text": "Olá! Como você prefere receber seu pedido?",
+						"footerText": "",
+						"choices": [
+							{
+								"displayText": "Tele-entrega",
+								"id": "Tele-entrega",
+								"type": "reply"
+							},
+							{
+								"displayText": "Retirar na loja",
+								"id": "Retirar na loja",
+								"type": "reply"
+							}
+						]
+					},
+					"id": "31fad825-d667-4358-ab88-39c66332bb72"
+				}
+			],
+			"sourceId": "start",
+			"targetId": "nodeC"
+		},
+		{
+			"id": "2cfe360d-3bd7-442c-ad4b-9fa596672f4f",
+			"name": "retirada loja",
+			"type": "node",
+			"left": "1008px",
+			"top": "132px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "US",
+					"condition": [],
+					"id": "a4666e61-e74f-428f-9455-f1b5bdeb791a",
+					"action": 0,
+					"queueId": null,
+					"nextStepId": "20939e3f-98bd-464b-9f71-51b5e733ad75",
+					"userIdDestination": null,
+					"closeTicket": null
+				}
+			],
+			"interactions": [
+				{
+					"type": "SendLocationField",
+					"data": {
+						"longitude": "-0000",
+						"latitude": "-0000",
+						"name": "Farmácia de Manipulação",
+						"address": "R. da farmacia"
+					},
+					"id": "eb6cfc20-1d1f-488b-bb5e-e254e452270a"
+				},
+				{
+					"type": "ExecuteConditions",
+					"data": {
+						"time": "5"
+					},
+					"id": "ecc9c25e-e6db-40e4-895f-43b3fa19388d"
+				}
+			],
+			"sourceId": "70ee8ee8-fe13-43c4-9f8e-02b607021b84",
+			"targetId": "ffeabffd-6efe-4e50-bb3e-1002705a2a91"
+		},
+		{
+			"id": "3b8562fa-b178-4311-974e-2f8ae8486bd9",
+			"name": "PDV",
+			"type": "node",
+			"left": "524px",
+			"top": "429px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "VAR_EXISTS",
+					"condition": [],
+					"id": "340c8be2-0dcf-4254-b1ff-048cea467086",
+					"varName": "CNPJ",
+					"action": 0,
+					"queueId": null,
+					"nextStepId": "20939e3f-98bd-464b-9f71-51b5e733ad75",
+					"userIdDestination": null,
+					"closeTicket": null
+				},
+				{
+					"type": "VAR_NOT_EXISTS",
+					"condition": [],
+					"id": "5c76f254-31e7-4a5a-afb9-e0bb03b7d2c8",
+					"varName": "CNPJ",
+					"action": 0,
+					"nextStepId": "fd86fd48-ad51-4774-bc1d-f1ebda236784"
+				}
+			],
+			"interactions": [
+				{
+					"type": "ExecuteConditions",
+					"data": {
+						"time": "1"
+					},
+					"id": "ea30e3c7-6ead-4195-b605-58ba9efb9507"
+				}
+			]
+		},
+		{
+			"id": "fd86fd48-ad51-4774-bc1d-f1ebda236784",
+			"name": "perguntar CNPJ",
+			"type": "node",
+			"left": "846px",
+			"top": "426px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "US",
+					"condition": [],
+					"id": "7172723b-f502-4d7e-b3ee-58bebe336165",
+					"action": 0,
+					"customfield": "CNPJ",
+					"nextStepId": "6ae19ab4-5a8a-4135-972f-6e626b332dc9"
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Qual seu CNPJ?"
+					},
+					"id": "02dffe3f-539d-400b-933b-3b3c37ba3ee1"
+				}
+			]
+		},
+		{
+			"id": "6ae19ab4-5a8a-4135-972f-6e626b332dc9",
+			"name": "pergunta razão social",
+			"type": "node",
+			"left": "1136px",
+			"top": "423px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "US",
+					"condition": [],
+					"id": "73cad3ef-b89a-48ff-a02e-64e0f24abc5e",
+					"customfield": "razaosocial",
+					"action": 0,
+					"queueId": null,
+					"nextStepId": "20939e3f-98bd-464b-9f71-51b5e733ad75",
+					"userIdDestination": null,
+					"closeTicket": null
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Qual sua Razão Social?"
+					},
+					"id": "1f1e4f5f-2422-46f4-9455-5457654018cc"
+				}
+			]
+		},
+		{
+			"id": "20939e3f-98bd-464b-9f71-51b5e733ad75",
+			"name": "horario atendimento",
+			"type": "node",
+			"left": "1595px",
+			"top": "188px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "CUSTOM_SCHEDULE_IN",
+					"condition": [],
+					"id": "a4af2dce-3b6b-4b02-b76b-c064feb78fe3",
+					"diasSemana": [
+						{
+							"value": "ter",
+							"label": "Terça-Feira"
+						},
+						{
+							"value": "qua",
+							"label": "Quarta-Feira"
+						},
+						{
+							"value": "qui",
+							"label": "Quinta-Feira"
+						},
+						{
+							"value": "sex",
+							"label": "Sexta-Feira"
+						},
+						{
+							"value": "seg",
+							"label": "Segunda-Feira"
+						}
+					],
+					"horarioInicio": "09:00",
+					"horarioFim": "18:30",
+					"action": 1,
+					"queueId": 21,
+					"nextStepId": null,
+					"userIdDestination": null,
+					"closeTicket": null,
+					"queueMessage": "Em breve um atendente irá lhe atender"
+				},
+				{
+					"type": "CUSTOM_SCHEDULE_IN",
+					"condition": [],
+					"id": "4130afc0-1b5d-481e-94e6-11f7197cb608",
+					"diasSemana": [
+						{
+							"value": "sab",
+							"label": "Sábado"
+						}
+					],
+					"horarioInicio": "09:00",
+					"horarioFim": "12:30",
+					"action": 1,
+					"queueId": 21,
+					"nextStepId": null,
+					"userIdDestination": null,
+					"closeTicket": null,
+					"queueMessage": "Em breve um atendente irá lhe atender"
+				},
+				{
+					"type": "CUSTOM_SCHEDULE_OUT",
+					"condition": [],
+					"id": "741c28c7-3d11-4084-a2a2-d2e7ad8b9dff",
+					"diasSemana": [
+						{
+							"value": "ter",
+							"label": "Terça-Feira"
+						},
+						{
+							"value": "qua",
+							"label": "Quarta-Feira"
+						},
+						{
+							"value": "qui",
+							"label": "Quinta-Feira"
+						},
+						{
+							"value": "sex",
+							"label": "Sexta-Feira"
+						},
+						{
+							"value": "seg",
+							"label": "Segunda-Feira"
+						}
+					],
+					"horarioInicio": "09:00",
+					"horarioFim": "18:30",
+					"action": 1,
+					"queueId": 21,
+					"nextStepId": null,
+					"userIdDestination": null,
+					"closeTicket": null,
+					"queueMessage": "Nosso horário de atendimento.\nDe segunda a sexta das 09:00 as 18:00\nSábado das 09:00 as 12:30\n\nDeixe sua mensagem que um atendente te retornara!"
+				},
+				{
+					"type": "CUSTOM_SCHEDULE_OUT",
+					"condition": [],
+					"id": "4340e257-3bad-4f5b-9a2c-e77215d046ef",
+					"diasSemana": [
+						{
+							"value": "sab",
+							"label": "Sábado"
+						}
+					],
+					"horarioInicio": "09:00",
+					"horarioFim": "12:30",
+					"action": 1,
+					"queueId": 21,
+					"nextStepId": null,
+					"userIdDestination": null,
+					"closeTicket": null,
+					"queueMessage": "Nosso horário de atendimento.\nDe segunda a sexta das 09:00 as 18:00\nSábado das 09:00 as 12:30\n\nDeixe sua mensagem que um atendente te retornara!"
+				}
+			],
+			"interactions": [
+				{
+					"type": "ExecuteConditions",
+					"data": {
+						"time": "5"
+					},
+					"id": "f48b3c18-f086-4a42-a268-e99db7a75fae"
+				}
+			]
+		},
+		{
+			"id": "ffeabffd-6efe-4e50-bb3e-1002705a2a91",
+			"name": "tele entrega",
+			"type": "node",
+			"left": "1014px",
+			"top": "4px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "US",
+					"condition": [],
+					"id": "b8dbbfdf-0628-436a-8ccc-11f2dca0fee5",
+					"action": 0,
+					"nextStepId": "20939e3f-98bd-464b-9f71-51b5e733ad75"
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "📦 Entregas\n\nTrabalhamos com empresas terceirizadas de motoboy para realizar nossas entregas.\n➡️ Horários de entrega:\n\t•\tSegunda a sexta-feira\n\t•\tManhã: 9h30 às 15h\n\t•\tTarde: 14h às 19h\n\n⚠️ Não conseguimos garantir um horário exato, apenas dentro desses períodos.\n\nSe você precisa de uma entrega em horário específico, também oferecemos a opção de Moto Uber:\n\t•\tO cliente chama o Moto Uber no aplicativo, no horário que desejar.\n\t•\tNo dia agendado para retirada do seu pedido, é só nos enviar aqui pelo WhatsApp o nome do motoboy que irá retirar. Assim, conseguimos liberar sua encomenda com segurança.\n\n✨ Assim, você escolhe a forma mais prática para receber seus produtos!"
+					},
+					"id": "f3c060a0-92d7-4fcd-a3cb-ea0b752d56ed"
+				},
+				{
+					"type": "ExecuteConditions",
+					"data": {
+						"time": "5"
+					},
+					"id": "5a4a03a2-36f3-4f1d-a667-9cdb6c4357f6"
+				}
+			]
+		}
+	],
+	"lineList": [
+		{
+			"from": "start",
+			"to": "nodeC",
+			"paintStyle": {
+				"strokeWidth": 3,
+				"stroke": "#5c67f2"
+			}
+		},
+		{
+			"from": "nodeC",
+			"to": "70ee8ee8-fe13-43c4-9f8e-02b607021b84",
+			"label": null
+		},
+		{
+			"from": "70ee8ee8-fe13-43c4-9f8e-02b607021b84",
+			"to": "2cfe360d-3bd7-442c-ad4b-9fa596672f4f",
+			"label": null
+		},
+		{
+			"from": "nodeC",
+			"to": "3b8562fa-b178-4311-974e-2f8ae8486bd9",
+			"label": null
+		},
+		{
+			"from": "3b8562fa-b178-4311-974e-2f8ae8486bd9",
+			"to": "fd86fd48-ad51-4774-bc1d-f1ebda236784",
+			"label": null
+		},
+		{
+			"from": "fd86fd48-ad51-4774-bc1d-f1ebda236784",
+			"to": "6ae19ab4-5a8a-4135-972f-6e626b332dc9",
+			"label": null
+		},
+		{
+			"from": "2cfe360d-3bd7-442c-ad4b-9fa596672f4f",
+			"to": "20939e3f-98bd-464b-9f71-51b5e733ad75",
+			"label": null
+		},
+		{
+			"from": "6ae19ab4-5a8a-4135-972f-6e626b332dc9",
+			"to": "20939e3f-98bd-464b-9f71-51b5e733ad75",
+			"label": null
+		},
+		{
+			"from": "3b8562fa-b178-4311-974e-2f8ae8486bd9",
+			"to": "20939e3f-98bd-464b-9f71-51b5e733ad75",
+			"label": null
+		},
+		{
+			"from": "ffeabffd-6efe-4e50-bb3e-1002705a2a91",
+			"to": "20939e3f-98bd-464b-9f71-51b5e733ad75",
+			"label": null
+		},
+		{
+			"from": "70ee8ee8-fe13-43c4-9f8e-02b607021b84",
+			"to": "ffeabffd-6efe-4e50-bb3e-1002705a2a91",
+			"label": null
+		}
+	],
+	"action": 0,
+	"userId": 47,
+	"celularTeste": null,
+	"isActive": true,
+	"AcceptTransfer": true,
+	"AcceptKanban": true,
+	"id": null
+}

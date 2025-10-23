@@ -336,3 +336,14 @@ Com “Iniciar Integração ao transferir”, o sistema já ativa a integração
 Usa a API pública [cpfhub.io](https://www.cpfhub.io/).
 
 > O token do exemplo é limitado; recomenda-se gerar um novo para testes.
+
+---
+
+### 10️⃣ Bot muda comportamento conforme horario
+
+[Baixar exemplo](botporhorario.json)
+
+Esse modelo apresenta diversos exemplos de como o bot interno pode ser utilizado.
+De acordo com o horário em que o cliente entra em contato, ele envia automaticamente uma mensagem informando o horário de atendimento.
+Se o cliente escolher a opção **“Retirar na loja”**, o bot envia a **localização da loja**.
+Além disso, o bot solicita o **CNPJ do cliente** e salva o valor em uma **variável** — caso essa informação já exista, o atendimento é encaminhado diretamente para a equipe.
