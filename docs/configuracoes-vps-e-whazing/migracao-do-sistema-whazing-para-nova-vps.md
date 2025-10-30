@@ -22,7 +22,7 @@ description: >-
 #### 1. Avisar clientes e suporte
 
 * [ ] Avisar clientes que o sistema ficará indisponível.
-* [ ] Enviar mensagem para **48 99941-6725** solicitando:
+* [ ] Enviar mensagem para **+55 48 3197-0599*** solicitando:
   * Liberação da licença premium na nova VPS.
   * Confirmação da janela de manutenção.
 
