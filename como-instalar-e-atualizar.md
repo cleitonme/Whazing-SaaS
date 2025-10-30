@@ -3,11 +3,13 @@
 ### 🔹 Antes de começar
 
 1. Crie **dois subdomínios** e aponte-os para o **IP da sua VPS**:
-   * Frontend → `whazing.seusite.com.br`
-   * Backend → `backend.seusite.com.br`
+   * Frontend → `bot.seusite.com.br`
+   * Backend → `api.seusite.com.br`
 2. **Verifique a propagação do domínio** em [dnschecker.org](https://dnschecker.org).
    * Se usar **Cloudflare**, desative o **proxy (nuvem laranja)**.
    * O IP da sua VPS deve aparecer em todas as validações.
+
+*bot e api sugestão podes colocar endereço que achar melhor
 
 ⚠️ Só continue quando os subdomínios estiverem resolvendo corretamente.
 
