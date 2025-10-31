@@ -1,6 +1,6 @@
 # Changelog e Atualizações
 
-### 🚀 Versão 2.13.1 BETA - Changelog
+### 🚀 Versão 2.13.1 Final - Changelog
 
 - bug beta - Desloga acessar grupos com usuarios não admin
 - Forçar executar condições do bot pega ultima mensagem do cliente para condições - util para fazer bot por palavra chave por exemplo
