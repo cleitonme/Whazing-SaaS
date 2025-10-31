@@ -59,7 +59,40 @@ reboot
 curl -sSL instalar.whazing.com.br | sudo bash
 ```
 
-Use opção 1 e siga as instruções da tela
+#### Caso passo 5 apresentar erro baixar instalador manualmente
+
+1 - acessar pasta root
+```bash
+cd /root/
+```
+
+2 - baixar git
+
+```bash
+apt install git
+```
+
+3 - baixar instalador
+```bash
+git clone https://github.com/cleitonme/Whazing-SaaS.instalador.git whazinginstalador
+```
+
+4 - Da permisão
+```bash
+sudo chmod +x ./whazinginstalador/whazing
+```
+
+5 - Acessar pasta
+```bash
+cd ./whazinginstalador
+```
+
+6 - Executar
+```bash
+./whazing
+```
+
+A opção 1 que faz instalação so seguir instruções da tela
 
 ***
 
