@@ -38,8 +38,6 @@ Em termos simples: são funcionalidades que deixam a conversa mais automática e
 
 | Plano / Pacote                    |                            Preço |
 | --------------------------------- | -------------------------------: |
-| Whazing Grátis — 6 meses          |                     **R$ 50,00** |
-| Whazing Grátis — 1 ano            |                    **R$ 100,00** |
 | Whazing Premium — 1 canal (teste) | **Grátis (1 canal para testar)** |
 | Adicional: 1 canal                |                **R$ 5,00 / mês** |
 | Adicional: 10 canais              |               **R$ 35,00 / mês** |
@@ -49,6 +47,7 @@ Em termos simples: são funcionalidades que deixam a conversa mais automática e
 | Adicional: 50 canais              |              **R$ 105,00 / mês** |
 
 > Observação: **cada canal precisa de um token de acesso**
+> Observação: **Api plus somente para clientes versão premium**
 
 ***
 
