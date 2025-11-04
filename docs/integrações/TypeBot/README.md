@@ -58,6 +58,12 @@ Adicione os comandos abaixo em um Bubble de texto:
     ```bash
     #{ "queueId":"1", "userId":"1" }
     ```
+*   Comando para transferir para ChatBOT INTERNO (lembre-se de trocar o ID):
+
+    ```bash
+    #{ "chatbotId": "1" }
+    ```
+
 *   Parar o Typebot (não precisa trocar o 1):
 
     ```bash

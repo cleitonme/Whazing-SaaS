@@ -401,6 +401,18 @@ Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar c
 * **Método**: GET
 * **Endpoint**: `/ticket/{ticketId}`
 
+#### 8. Atualizar Fila do Ticket
+
+* **Método**: POST
+* **Endpoint**: `/updatechatbot`
+
+```json
+{
+  "ticketId": 4,
+  "chatbotId": 1
+}
+```
+
 ### Mensagens Interativas
 
 #### 1. Mensagem com Botões
@@ -794,7 +806,7 @@ Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar c
                 "displayText": "telefone",
                 "id": "",
                 "type": "call",
-                "phoneNumber": "554899416725"
+                "phoneNumber": "554831970599"
             },
             {
                 "displayText": "site",

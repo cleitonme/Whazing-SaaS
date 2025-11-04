@@ -1,5 +1,77 @@
 # Changelog e Atualizações
 
+### 🚀 Versão 2.14.0 BETA – Changelog
+
+#### 🐞 Correções de Bugs
+
+* Corrigido erro ao **exportar relatório de tickets** em Excel.
+* Corrigido problema onde **novos contatos não salvavam etiquetas**.
+* Corrigidos **erros nos relatórios de avaliações**, que exibiam dados incorretos.
+* Corrigido problema de **cor do texto em modo escuro** nos títulos das colunas.
+
+#### ⚙️ Melhorias Gerais
+
+* Adicionada lógica de **retry no download de arquivos (API Plus)**.
+* O sistema agora **respeita o limite de download configurado** no painel SaaS.
+* Adicionada **configuração para exibir reações como respostas**.
+* **Chamadas recebidas** agora abrem automaticamente um ticket e **acionam integrações e bots**.
+
+#### 💼 Painel SaaS
+
+* Nova opção para **selecionar quais canais estarão disponíveis**, oferecendo maior flexibilidade para exibir apenas os canais que a empresa deseja utilizar.
+* Adicionada **nova configuração de notificação de pagamento**.
+
+#### 🆕 Novo Canal – Wuzapi (WhatsMeow)
+
+* Nova API **mais leve e independente**, executada em serviço separado, **melhorando o desempenho geral** do sistema.
+* Necessário **instalar o Docker separado** e **atualizar o sistema** — instruções disponíveis na documentação.
+* Assim como a API Baileys, o **Wuzapi também obedece ao limite de download configurado** no painel SaaS.
+
+#### 🔄 Migração de Canal WhatsApp
+
+* Agora é possível **migrar entre as 3 APIs (Baileys, API Plus e Wuzapi)** sem perder dados.
+
+#### 🤖 ChatBot e Integrações
+
+* Quando a **guia ChatBot estiver ativa**, apenas tickets relacionados ao chatbot serão exibidos.
+* Tickets originados de **integrações, IA ou TypeBot** seguem a regra da configuração *“Não visualizar Tickets no ChatBot”*.
+* No **editor de ChatBot**, ao clicar em “Voltar”, o sistema perguntará se deseja salvar as alterações.
+* Novo comando no **TypeBot** para **transferir ChatBot interno**.
+* **Nova API:** endpoint para **transferência de ChatBot interno**.
+* Na listagem de ChatBots, agora é exibido o **ID do ChatBot** para facilitar uso via API ou TypeBot.
+
+#### ⭐ Avaliações
+
+* Ajustes nas **configurações de avaliações**, agora disponíveis apenas para **canais de texto**.
+
+#### 👥 Contatos
+
+* **Otimização na abertura e edição de contatos**, carregando dados de forma mais rápida.
+* Na tela de atendimento, **contatos recebidos** agora possuem **botão direto para abrir ticket**.
+
+#### 🔔 Notificações
+
+* Nova configuração para **selecionar o som da notificação** (7 opções de áudio ou modo silencioso).
+* Adicionado controle de **ajuste de volume das notificações**.
+
+#### 📱 API Oficial
+
+* Agora com suporte a **templates contendo vídeos, localização, documentos e botões com link**.
+
+#### 💬 Chat Interno
+
+* Adicionadas **badges de contagem** de mensagens não lidas nas abas de usuários e grupos.
+* Após enviar mensagem com *Enter*, o foco retorna automaticamente ao campo de texto para facilitar a digitação contínua.
+
+#### 🧩 Tela de Atendimento
+
+* **Otimizada a listagem de tickets** para melhor desempenho — recomenda-se testar com diferentes filtros e tipos de usuários, pois era uma área propensa a bugs.
+* **Melhoria no carregamento das mensagens**, resultando em uma experiência mais fluida.
+
+#### 💳 Plano Vencido
+
+* Usuários comuns **não visualizam mais valores ou mensalidades** na área financeira quando o plano está vencido.
+
 ### 🚀 Versão 2.13.1 Final - Changelog
 
 - bug beta - Desloga acessar grupos com usuarios não admin

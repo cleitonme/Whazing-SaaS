@@ -582,6 +582,42 @@
 					"response": []
 				},
 				{
+					"name": "SetChatBot",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{token}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"ticketId\": 6934,\n    \"chatbotId\": 62\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{base_url}}/updatechatbot",
+							"host": [
+								"{{base_url}}"
+							],
+							"path": [
+								"updatechatbot"
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "SetTicketInfo",
 					"request": {
 						"auth": {
