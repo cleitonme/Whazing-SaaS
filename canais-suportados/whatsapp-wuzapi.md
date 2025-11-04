@@ -1,6 +1,6 @@
-# **WhatsApp WuzAPI**
+# **WhatsApp Wuzapi (WhatsMeow)**
 
-A **WuzAPI** é recomendada no lugar da **Baileys**, pois é **mais leve**, **estável** e **garante melhor desempenho do sistema**.
+A **Wuzapi (WhatsMeow)** é recomendada no lugar da **Baileys**, pois é **mais leve**, **estável** e **garante melhor desempenho do sistema**.
 
 ---
 
