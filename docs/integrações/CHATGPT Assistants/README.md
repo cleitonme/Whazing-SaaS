@@ -36,3 +36,7 @@ Resumo: a IA só responde uma vez a cada intervalo definido, mesmo que o cliente
 - **Modelos ElevenLabs**: Selecione modelo de voz para usar
 
 Obs: no site chatgpt "Response format" text
+
+### Para transferir humano atendimento deve instruir no prompt
+
+"Quando a resposta requer uma transferência para o setor de atendimento, ou caso cliente solicite para transferir para outro setor ou para atendimento humano, comece sua resposta com 'Ação: Transferir para o setor de atendimento'."
