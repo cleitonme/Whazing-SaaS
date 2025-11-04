@@ -17,6 +17,7 @@ O sistema suporta diferentes tipos de canais de atendimento, cada um com suas ca
 ### ✅ API Não Oficial (gratuita)
 
 * **WhatsApp (Baileys)** ou [**Telegram**](telegram.md)
+* [WhatsApp Wuzapi (WhatsMeow)](whatsapp-wuzapi.md)
 * Sem custo por canal
 * Sem limite de usuários ou canais (limitado apenas pela capacidade da VPS)
 
@@ -106,18 +107,18 @@ Usar cupom desconto: whazing
 
 🔄 **Resumo:**
 
-* Quem quer **custo zero** → usa API Não Oficial (Baileys / Telegram).
+* Quem quer **custo zero** → usa API Não Oficial (WhatsMeow/Baileys / Telegram).
 * Quem quer **mais recursos e estabilidade** → usa API PLUS.
 * Quem busca **oficialidade, reputação e escalabilidade** → usa API Oficial (Meta, Hub NotificaMe ou Connection Hub).
 
 📊 Comparativo dos Canais (Informação Adicional)
 
-| Canal                                             | Tipo     | Custo                              | Recursos Principais                | Vantagens                          |
-| ------------------------------------------------- | -------- | ---------------------------------- | ---------------------------------- | ---------------------------------- |
-| **API Não Oficial** (Baileys / Telegram)          | Gratuita | R$ 0,00                            | Envio de mensagens básicas         | Sem custo                          |
-| **API PLUS** (Não Oficial Premium)                | Paga     | Baixo custo por canal              | Botões, listas, links, localização | Estável, leve na VPS               |
-| **Hub NotificaMe** (WhatsApp, IG, FB, Webchat)    | Paga     | Ativação + mensalidade R$ 50/canal | Recursos oficiais (via hub)        | Suporte multiplataforma            |
-| **Hub ConnectionHub** (WhatsApp, IG, FB, Webchat) | Paga     | mensalidade R$ 25/canal            | Recursos oficiais (via hub)        | Suporte multiplataforma            |
-| **API Oficial Meta (WABA)**                       | Paga     | Conforme uso da API (Meta)         | Templates, botões, multimídia      | Oficial, maior garantia, escalável |
+| Canal                                                                                                     | Tipo     | Custo                              | Recursos Principais                | Vantagens                          |
+| --------------------------------------------------------------------------------------------------------- | -------- | ---------------------------------- | ---------------------------------- | ---------------------------------- |
+| <p><strong>API Não Oficial</strong> (WhatsApp Baileys / </p><p>WhatsApp Wuzapi - WhatsMeow/ Telegram)</p> | Gratuita | R$ 0,00                            | Envio de mensagens básicas         | Sem custo                          |
+| **API PLUS** (Não Oficial Premium)                                                                        | Paga     | Baixo custo por canal              | Botões, listas, links, localização | Estável, leve na VPS               |
+| **Hub NotificaMe** (WhatsApp, IG, FB, Webchat)                                                            | Paga     | Ativação + mensalidade R$ 50/canal | Recursos oficiais (via hub)        | Suporte multiplataforma            |
+| **Hub ConnectionHub** (WhatsApp, IG, FB, Webchat)                                                         | Paga     | mensalidade R$ 25/canal            | Recursos oficiais (via hub)        | Suporte multiplataforma            |
+| **API Oficial Meta (WABA)**                                                                               | Paga     | Conforme uso da API (Meta)         | Templates, botões, multimídia      | Oficial, maior garantia, escalável |
 
 ***

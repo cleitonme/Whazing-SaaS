@@ -10,11 +10,11 @@ Em contas revendas - Cadastre seu cliente
 
 Depois logue conta do mesmo e canais gerenciar canais cadastre canal Facebook ou Instagram. Clique cadeado verde para ativar a mesma onde será enviado site do canal para conectar a conta.
 
-<figure><img src="../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (24) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (31).png" alt=""><figcaption></figcaption></figure>
 
-Em contas minha conta - copia o Access Token e cole no campo token do Connection Hub do whazing.&#x20;
+Em contas minha conta - copia o Access Token e cole no campo token do Connection Hub do whazing.
 
 <figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 

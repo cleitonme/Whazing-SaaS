@@ -82,7 +82,7 @@
   * [🎛️ Botão Coringa](modulo-saas/botao-coringa.md)
   * [Envio WhatsApp aviso fatura em aberto](modulo-saas/envio-whatsapp-aviso-fatura-em-aberto.md)
 * [📡 Canais Disponíveis](canais-suportados/README.md)
-  * [WhatsApp WuzAPI](canais-suportados/whatsapp-wuzapi.md)
+  * [WhatsApp Wuzapi (WhatsMeow)](canais-suportados/whatsapp-wuzapi.md)
   * [WhatsApp API PLUS](canais-suportados/whatsapp_api_plus.md)
   * [API Oficial do WhatsApp (Meta)](canais-suportados/api-oficial-do-whatsapp-meta.md)
   * [Instagram, Facebook via ConnectionHub](canais-suportados/instagram-facebook-via-connectionhub.md)

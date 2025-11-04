@@ -2,8 +2,6 @@
 
 Lembre-se campanha tem riscos altos de ban aconselhamos uso de números descartáveis caso queira adquirir números descartáveis aquecidos com preço justo acesse [https://disparo.whazing.com.br](https://disparo.whazing.com.br/)
 
-
-
 ⚠️ Atualmente, as campanhas estão disponíveis apenas para o canal **WhatsApp**.
 
 ***
@@ -47,8 +45,6 @@ Quando terminar, clique em **Listar Campanhas** para voltar à tela anterior.
 2. Clique em **Programar Envio**.
 3. A campanha será executada automaticamente na data e horário definidos.
 
-
-
 <figure><img src="../../.gitbook/assets/image (9) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
@@ -59,8 +55,7 @@ Você pode **personalizar suas mensagens** utilizando informações cadastradas 
 
 📷 _Exemplo de Informações Adicionais:_
 
-![](<../../.gitbook/assets/informacoesadicionais (1).jpg>)\
-
+![](../../.gitbook/assets/informacoesadicionais.jpg)\\
 
 *   Exemplo 1:
 
@@ -170,4 +165,3 @@ Se não quiser mais receber mensagens, pode escolher abaixo:
 ***
 
 ***
-

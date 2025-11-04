@@ -31,9 +31,9 @@ Envia automaticamente propaganda em:\
 • Follow-ups\
 • Campanhas
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (3) (1) (2).png" alt=""><figcaption></figcaption></figure>
 
 Versão Premium 💎\
 Sem anúncios.\
@@ -42,4 +42,3 @@ Entregas limpas, sem propaganda adicional.
 ## Quer revender? Temos desconto de acordo quantidade VPS contratada.
 
 Para adquirir premium acesse o site [https://loja.whazing.com.br/](https://loja.whazing.com.br/) ou Whatsapp +55 48 3197-0599
-
