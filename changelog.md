@@ -4,12 +4,12 @@
 
 - bug - Editar mensagem rapidas com anexo
 
-Botão painel SaaS reniciar backend
-Liberado campanha e Follow-up Wuzapi
+- Botão painel SaaS reniciar backend
+- Liberado campanha e Follow-up Wuzapi
 
-Mudança no sistema de validação de licença
+- Mudança no sistema de validação de licença
 Caso houver erro validar ou foi deixado pagar ele não volta para free automaticamente exibindo anuncios. Ele não vai enviar mensagens exibindo um erro no log e no painel SaaS informando problema de licenca com botão para voltar versão free(voltando enviar mensagens e mostrar anuncios) ou reniciar whazing para tentar validar licenca novamente.
-- Essa alteração devidos problemas teve na contabo que causou erro validar licença (problema não era sistema licenca e sim na VPS - nem uso contato :))
+Essa alteração devidos problemas teve na contabo que causou erro validar licença (problema não era sistema licenca e sim na VPS - nem uso contato :))
 Não correndo mais risco caso problema de licença ele volte exibir anuncios imediatamente
 
 ### 🚀 Versão 2.14.0 BETA – Changelog
