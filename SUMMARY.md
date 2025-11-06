@@ -94,6 +94,7 @@
   * [Instagram, facebook e webchat via NotificaMe](canais-suportados/facebook-e-instagram-via-hub/README.md)
     * [Responder Comentários Instagram - HUB NotificaMe](canais-suportados/facebook-e-instagram-via-hub/responder-comentarios-instagram.md)
   * [Guia de Conexão do TELEGRAM](canais-suportados/telegram.md)
+  * [Migração entre apis não oficiais](canais-suportados/migracao-entre-apis-nao-oficiais.md)
 * [Demonstração](demonstracao.md)
 * [Whitelabel](whitelabel.md)
 * [Principais Recursos do Sistema](principais-recursos-do-sistema.md)
