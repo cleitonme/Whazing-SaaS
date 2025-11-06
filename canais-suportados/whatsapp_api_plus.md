@@ -43,11 +43,10 @@ Em termos simples: são funcionalidades que deixam a conversa mais automática e
 | Adicional: 10 canais              |               **R$ 35,00 / mês** |
 | Adicional: 20 canais              |               **R$ 60,00 / mês** |
 | Adicional: 30 canais              |               **R$ 80,00 / mês** |
-| Adicional: 40 canais              |              **R$ 95,00 / mês** |
+| Adicional: 40 canais              |               **R$ 95,00 / mês** |
 | Adicional: 50 canais              |              **R$ 105,00 / mês** |
 
-> Observação: **cada canal precisa de um token de acesso**
-> Observação: **Api plus somente para clientes versão premium**
+> Observação: **cada canal precisa de um token de acesso** Observação: **Api plus somente para clientes versão premium**
 
 ***
 
@@ -80,28 +79,6 @@ Em termos simples: são funcionalidades que deixam a conversa mais automática e
 * Cobrança imediata: **R$ 10,00** (2 × R$ 5,00) — pago no ato.
 * No dia 15 (vencimento da VPS), o mesmo valor pode aparecer **na fatura da VPS** (R$ 10,00) — resultado: **R$ 20,00** pagos em um curto período.
 * **Resultado:** dias anteriores ao vencimento não são descontados — paga valor cheio sempre.
-
-***
-
-***
-
-### 🔄 Migração de Canal (Passo a passo detalhado e seguro)
-
-> Use esta sequência para trocar entre **Plus** e **Baileys** sem perder dados.
-
-#### Checklist rápido (faça antes)
-
-* [ ] Avise a equipe/usuários do painel que haverá manutenção.
-* [ ] Verifique se ninguém está usando ativamente chats importantes.
-
-#### Passos para migrar (detalhado)
-
-1. **Desconectar o WhatsApp** atual (no painel).
-   * Por que: evita que mensagens novas sejam vinculadas ao canal antigo.
-2. **Editar o canal** no painel e **alterar o tipo** (de Plus para Baileys ou vice-versa).
-3. **Gerar novo QR Code**
-4. **Conectar**: abra o WhatsApp no celular, escaneie o QR Code.
-5. **Validar**: confirme que as mensagens chegam e que o perfil está correto.
 
 ***
 
