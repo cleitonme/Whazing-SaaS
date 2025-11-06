@@ -38,6 +38,7 @@
     * [❗ Erro no sistema: \[ioredis\] Unhandled error event: Error: connect ECONNREFUSED](docs/problemas-no-whazing/reinstalar_redis.md)
     * [Meu sistema não abre](docs/problemas-no-whazing/meu_sistema_nao_abre.md)
     * [Como Forçar a Atualização do SSL](docs/problemas-no-whazing/problemas_com_ssl.md)
+    * [An error occurred while validating the license.](docs/problemas-no-whazing/an-error-occurred-while-validating-the-license..md)
   * [Configurações VPS e Whazing](docs/configuracoes-vps-e-whazing/README.md)
     * [Dedifir tempo login expira manualmente](docs/configuracoes-vps-e-whazing/validade_autenticacao.md)
     * [Como Configurar Proxy para Conexões do WhatsApp](docs/configuracoes-vps-e-whazing/proxytodascontas_whatsapp.md)
