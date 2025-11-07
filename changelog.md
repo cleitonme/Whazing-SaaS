@@ -1,5 +1,9 @@
 # Changelog e Atualizações
 
+### 🚀 Versão 2.13.1 Baileys Update - 07/11/2025
+
+- bug baileys - update versão baileys erro leitura qrcode
+
 ### 🚀 Versão 2.14.1 BETA – Changelog
 
 - bug - Editar mensagem rapidas com anexo
