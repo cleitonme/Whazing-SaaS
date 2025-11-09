@@ -1,5 +1,14 @@
 # Changelog e Atualizações
 
+### 🚀 Versão 2.14.2 BETA – Changelog
+
+- Wuzapi, Api plus e baileys - mais formatos mensagens mapeados recebidos api oficial botão, template
+- Indicação de tipo disposito enviado mensagem (android-ios-web)
+- Otimização chatinterno carregamento paginado para grande numeros mensagens não tornar lento
+- Otimização tela atendimento
+
+- Baileys atualizada
+
 ### 🚀 Versão 2.13.1 Baileys Update - 07/11/2025
 
 - bug baileys - update versão baileys erro leitura qrcode
