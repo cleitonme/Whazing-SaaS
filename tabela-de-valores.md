@@ -26,7 +26,7 @@
 | Plano Premium **6 meses ou mais**                 | 🆓 **Instalação grátis** |
 | Planos menores                                    |      💸 **R$ 50,00**     |
 | Instalação versão gratuita                        |     💸 **R$ 100,00**     |
-| Instalação adicional (Typebot + N8N na mesma VPS) |     💸 **R$ 100,00**     |
+| Instalação adicional (Typebot ou N8N na mesma VPS) |     💸 **R$ 100,00** cada    |
 
 > 🧠 **Observação:**
 > A instalação é **opcional** — todo o material necessário está disponível no repositório oficial.
