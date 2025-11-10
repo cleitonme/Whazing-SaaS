@@ -230,7 +230,7 @@ services:
     networks:
       - typebot_rede
     ports:
-      - 8080:3000
+      - 8082:3000
     environment:
       - DATABASE_URL=postgresql://postgres:Admin33Admin77@postgres:5432/postgres
       - ENCRYPTION_SECRET=7Rl2NKGhkMUHRV0dtRg8hD2YNopCrAeH
@@ -286,7 +286,7 @@ chatbotapi.webconfiavel.com.br {
 }
 
 chatbot.webconfiavel.com.br {
-    reverse_proxy 127.0.0.1:8080
+    reverse_proxy 127.0.0.1:8082
     request_body {
         max_size 200MB
     }
