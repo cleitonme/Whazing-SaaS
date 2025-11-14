@@ -1,5 +1,19 @@
 # Changelog e Atualizações
 
+### 🚀 Versão 2.14.3 BETA – Changelog
+
+- bug - relatorios ligações foi quebrado alguma atualização a listagem de colunas
+
+- Mensagens enviadas api não oficial baileys, api plus e wuzapi atualiza hora envio mensagem depois envio para melhor consistencia de horarios entre sistema e horario aplicativo
+- quebra de linha mensagem feriado
+- troca de tela atendimento respeita configuração anteorior da assinatura
+- Novo relatorio estatisticas por contato
+- Novo relatorio estatisticas por fila
+- Sincronizar grupos
+- Suporte Meta Pixel, Google Tag Manager e Google Ads ID na tela login e sigup
+- Mais algumas limpezas alterações objetivo trazer mais desempenho frontend
+- Ajustes tela atendimento para aparecer todas abas - abertos, pendentes, fechados e chatbot sem gerar rolagem
+
 ### 🚀 Versão 2.14.2 BETA – Changelog
 
 - Wuzapi, Api plus e baileys - mais formatos mensagens mapeados recebidos api oficial botão, template
