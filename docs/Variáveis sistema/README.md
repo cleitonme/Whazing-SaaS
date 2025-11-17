@@ -82,7 +82,7 @@ Essas variáveis já estão disponíveis no sistema e não precisam ser cadastra
 * Nome completo do contato → `{{name}}`
 * Número do contato → `{{phoneNumber}}`
 * E-mail do contato → `{{email}}`
-* Saudação (PT) → `{{gretting}}`
+* Saudação (PT) → `{{greting}}`
 * Saudação (ES) → `{{greetingEs}}`
 * Saudação (EN) → `{{greetingEn}}`
 * Saudação (alternativa) → `{{ms}}`
@@ -102,7 +102,7 @@ As campanhas também suportam variáveis para personalizar mensagens em massa.
 
 Variáveis disponíveis:
 
-* Saudação (PT) → `{{gretting}}`
+* Saudação (PT) → `{{greting}}`
 * Saudação (ES) → `{{greetingEs}}`
 * Saudação (EN) → `{{greetingEn}}`
 * Primeiro nome → `{{firstName}}`
