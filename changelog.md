@@ -1,5 +1,9 @@
 # Changelog e Atualizações
 
+### 🚀 Versão 2.14.4 BETA – Changelog
+
+- wuzapi melhorias exibição erro ao enviar mensagens e força reinciar conexão tentativa recuperação caso falha envio por desconexão
+
 ### 🚀 Versão 2.14.3 BETA – Changelog
 
 - bug - relatorios ligações foi quebrado alguma atualização a listagem de colunas
