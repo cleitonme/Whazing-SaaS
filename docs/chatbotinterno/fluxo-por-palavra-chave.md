@@ -1,9 +1,5 @@
 # Fluxo por palavra chave
 
-Aqui está uma versão melhorada e mais clara da sua documentação:
-
-***
-
 #### Regras para acionar chatbot por palavra-chave na **primeira mensagem**
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
