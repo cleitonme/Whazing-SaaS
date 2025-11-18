@@ -1,5 +1,9 @@
 # Changelog e Atualizações
 
+### 🚀 Versão 2.14.5 BETA – Changelog
+
+- wuzapi - aumentado tempo de resposta aguardar confirmação envio mensagem - causa mensagens duplicadas em grupos maiores
+
 ### 🚀 Versão 2.14.4 BETA – Changelog
 
 - wuzapi melhorias exibição erro ao enviar mensagens e força reinciar conexão tentativa recuperação caso falha envio por desconexão
