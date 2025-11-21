@@ -2,6 +2,8 @@
 
 Solicite painel conosco Whatsapp +55 48 3197-0599 R$ 25,00 por canal
 
+Compra Minima de 5 CANAIS para liberação imediatada. Caso queira aguardar pode ser feito pacotes com outros usuarios até formar compra minima.
+
 Para adquirir acesse o site [https://loja.whazing.com.br/](https://loja.whazing.com.br/) ou Whatsapp +55 48 3197-0599
 
 URL painel: [https://app.connectionhub.com.br/](https://app.connectionhub.com.br/)
