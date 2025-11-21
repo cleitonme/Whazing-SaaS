@@ -1,5 +1,9 @@
 # Changelog e Atualizações
 
+### 🚀 Versão 2.14.6 BETA – Changelog
+
+- bug wuzapi - Responder proprias mensagens
+
 ### 🚀 Versão 2.14.5 BETA – Changelog
 
 - wuzapi - aumentado tempo de resposta aguardar confirmação envio mensagem - causa mensagens duplicadas em grupos maiores
