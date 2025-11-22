@@ -1,6 +1,6 @@
 # API Whazing
 
-![print](../api/whazing.png)
+![print](<../../.gitbook/assets/whazing (1).png>)
 
 * Faça o [download do arquivo modelo](../api/apiizing.json)
 
@@ -53,8 +53,7 @@ Authorization: Bearer seu-token-aqui
 }
 ```
 
-- Pode ser usado numero ticket em canais que não tem número telefone como instagram
-
+* Pode ser usado numero ticket em canais que não tem número telefone como instagram
 * **Método**: POST
 * **Endpoint**: `/`
 * **Content-Type**: application/json
@@ -82,8 +81,7 @@ Authorization: Bearer seu-token-aqui
 }
 ```
 
-- Pode ser usado numero ticket em canais que não tem número telefone como instagram
-
+* Pode ser usado numero ticket em canais que não tem número telefone como instagram
 * **Método**: POST
 * **Endpoint**: `/`
 * **Content-Type**: multipart/form-data
@@ -636,6 +634,7 @@ Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar c
 ***
 
 ## API PLUS
+
 > **Todos os endpoints abaixo utilizam:**
 >
 > * **Método**: POST

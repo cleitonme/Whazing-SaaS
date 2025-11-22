@@ -16,9 +16,9 @@ Siga estes passos simples para configurar uma mensagem de boas-vindas:
 
 1.  Na tela **Empresa**, copie os dados exatamente como aparecem na tela de API. Veja o exemplo abaixo:
 
-    ![print](<../docs/mensagem boas vindas teste/telaapi.png>)
+    ![print](../.gitbook/assets/telaapi.png)
 
-    ![print](<../docs/mensagem boas vindas teste/telaempresas.png>)
+    ![print](../.gitbook/assets/telaempresas.png)
 
 ### Variáveis Disponíveis na Mensagem
 

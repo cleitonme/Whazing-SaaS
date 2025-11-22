@@ -6,7 +6,7 @@
 2. Clique no ícone de lápis para **editar** o canal desejado.
 3. Localize a opção **Habilitar Avaliação de Atendimento** e ative-a.
 
-![print](../avaliação/canal.png)
+![print](<../../.gitbook/assets/canal (3).png>)
 
 ## **Campos para Configuração**
 
@@ -56,4 +56,4 @@ Avaliações em canais que suporta plus\_whatsapp e api oficial é possível env
 3. Caso válido, recebe: "Obrigado por compartilhar sua opinião!"
 4. A equipe pode visualizar a avaliação nos relatórios para analisar desempenho.
 
-![print](../avaliação/relatorio.png)
+![print](../../.gitbook/assets/relatorio.png)

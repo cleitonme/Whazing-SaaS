@@ -15,28 +15,28 @@ Usar cupom desconto: whazing
 
 *   **Apenas Instagram**: selecione **"Instagram V2 | Oficial"**.
 
-    ![Print da tela](<../../docs/Facebook e Instagram via HUB/instagram.png>)
+    ![Print da tela](../../.gitbook/assets/instagram.png)
 *   **Apenas Facebook**: selecione **"Facebook | Oficial"**.
 
-    ![Print da tela](<../../docs/Facebook e Instagram via HUB/facebook.png>)
+    ![Print da tela](../../.gitbook/assets/facebook.png)
 *   **Para usar ambos (Instagram e Facebook)**: selecione **"Facebook / Instagram | Oficial"**.
 
-    ![Print da tela](<../../docs/Facebook e Instagram via HUB/facebookinstagram.png>)
+    ![Print da tela](../../.gitbook/assets/facebookinstagram.png)
 *   O sistema também suporta **WebChat**.
 
-    ![Print da tela](<../../docs/Facebook e Instagram via HUB/webchat.png>)
+    ![Print da tela](../../.gitbook/assets/webchat.png)
 
 ## Integração com o Whazing
 
 1.  Após conectar o canal no Hub, copie o **token gerado**.
 
-    ![Print da tela](<../../docs/Facebook e Instagram via HUB/telatoken.png>)
+    ![Print da tela](../../.gitbook/assets/telatoken.png)
 2.  Acesse o **Whazing**:
 
     * Navegue até **Configurações** > **Canais** > **Token Hub**.
     * Cole o **token copiado** do Hub e cadastre-o.
 
-    ![Print da tela](<../../docs/Facebook e Instagram via HUB/whazing.png>)
+    ![Print da tela](../../.gitbook/assets/whazing.png)
 3. Agora, basta **adicionar o canal** e escolher o **Hub**.
 
 ### ⚠️ Observações importantes

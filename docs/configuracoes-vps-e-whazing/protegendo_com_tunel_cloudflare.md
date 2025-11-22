@@ -16,7 +16,7 @@
    * Se a instalação for bem-sucedida, o túnel aparecerá na seção "Connectors".
    * Clique em "Próxima" para continuar.
 
-![print](../protegendo_com_tunel_cloudflare/backend.png)
+![print](../../.gitbook/assets/backend.png)
 
 4. **Configuração do Backend**:
    * Nesta tela, configure o domínio do seu backend:
@@ -26,7 +26,7 @@
    * Na lista de túneis, clique nos três pontos ao lado do túnel e selecione "Configurar".
    * Adicione o nome do host público.
 
-![print](../protegendo_com_tunel_cloudflare/frontend.png)
+![print](../../.gitbook/assets/frontend.png)
 
 5. **Configuração do Frontend**:
    * Nesta tela, configure o domínio do seu frontend:

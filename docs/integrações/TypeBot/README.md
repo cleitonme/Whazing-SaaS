@@ -1,6 +1,6 @@
 # Configurar Typebot
 
-![print](configurartypebot.png) ![print](configurarwhazingtype.png)
+![print](../../../.gitbook/assets/configurartypebot.png) ![print](../../../.gitbook/assets/configurarwhazingtype.png)
 
 1. **URL Integração**: Pegue a URL na publicação do Typebot, não coloque a última `/` conforme exemplo acima.
 2. **Typebot - Slug**: Nome que aparece depois na URL quando você publica. Ver exemplo acima.
@@ -26,7 +26,7 @@
 
 ## Exemplo
 
-> <img src="informacoesadicionais.jpg" alt="print" data-size="original">
+> <img src="broken-reference" alt="print" data-size="original">
 
 1.  Usando a variável abaixo, o valor retornado será "0985786468528":
 
@@ -63,7 +63,6 @@ Adicione os comandos abaixo em um Bubble de texto:
     ```bash
     #{ "chatbotId": "1" }
     ```
-
 *   Parar o Typebot (não precisa trocar o 1):
 
     ```bash
@@ -240,16 +239,6 @@ phoneNumber: 5511999999999
 
 ## Exemplo de fluxo para importar no Typebot
 
-{% file src="../../../.gitbook/assets/exemplo_alterar_informacao_adicional.json" %}
-
-{% file src="../../../.gitbook/assets/exemplo_de_lista.json" %}
-
-{% file src="../../../.gitbook/assets/exemplo2_alterar_informacao_adicional.json" %}
-
-{% file src="../../../.gitbook/assets/exemplo-fluxo-typebot.json" %}
-
-{% file src="../../../.gitbook/assets/typebot_ixc_by_Claudemir_Todo_Bom.json" %}
-
 ## Como Compartilhar Fluxo com o Cliente
 
-![print](compartilharfluxo.png)
+![print](../../../.gitbook/assets/compartilharfluxo.png)

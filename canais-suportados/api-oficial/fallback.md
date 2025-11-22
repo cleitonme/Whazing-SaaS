@@ -10,12 +10,12 @@ Se a mensagem falhar na API oficial, o sistema tentará reenviá-la usando o **w
 * O sistema tentará o envio pela **API oficial**.\
   Se falhar, o ícone mudará para um "X", indicando a rejeição da mensagem:
 
-![Mensagem rejeitada](<../../docs/API OFICIAL/fallback/mensagemrejeitada.png>)
+![Mensagem rejeitada](broken-reference)
 
 * Se o canal estiver configurado com o **wwebjs** ou **Baileys**, o sistema tentará o reenvio por ele.\
   Se for bem-sucedido, o ícone será atualizado para um **globo**, indicando que foi enviado via wwebjs ou baileys:
 
-![Enviado via wwebjs](<../../docs/API OFICIAL/fallback/wwjs.png>)
+![Enviado via wwebjs](../../.gitbook/assets/wwjs.png)
 
 * Caso opção _Ignorar Mensagens Enviadas fora do aplicativo_ estiver desativado vai aparecer mensagem novamente.
 
@@ -82,7 +82,7 @@ docker run -d \
 
 1. Vá até **Canais** e clique no ícone de edição:
 
-![Edição de canal](<../../docs/API OFICIAL/fallback/canalconfig.png>)
+![Edição de canal](../../.gitbook/assets/canalconfig.png)
 
 2. Preencha a URL da API do wwebjs.\
    Se estiver rodando no mesmo servidor, use `http://127.0.0.1:porta`.\
@@ -91,7 +91,7 @@ docker run -d \
 4. Se configurado corretamente, um botão novo aparecerá.\
    Dê **F5** na página, se necessário, para atualizar.
 
-![Botão aparecerá](<../../docs/API OFICIAL/fallback/canal.png>)
+![Botão aparecerá](<../../.gitbook/assets/canal (5).png>)
 
 5. Clique em **Conectar** para iniciar a conexão.\
    Depois disso, aparecerá o botão para exibir o **QR Code**.
@@ -103,7 +103,7 @@ Após conectar, a página será atualizada e o botão mudará para **Desconectar
 
 ## Como configurar via baileys
 
-![baileys](<../../docs/API OFICIAL/fallback/baileys.png>)
+![baileys](../../.gitbook/assets/baileys.png)
 
 * Selecione o canal queira mensagem saia, esse canal será usado para enviar mensagem e para chamadas pelo wavoip caso tenha apikey
 

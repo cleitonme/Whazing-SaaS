@@ -11,25 +11,25 @@
    * Não deve ler qrcode conexão será pelo whazing
 4. **Copie o Token**
    * Basta copiar.\
-     ![wavoip2](../Configurar_wavoip/wavoip2.png)
+     ![wavoip2](../../.gitbook/assets/wavoip2.png)
 5. **Acesse a lista de canais**
    * Localize o canal desejado na lista disponível.
 6. **Edite as configurações do canal**
    * Cole o token no campo apropriado.
    * Em seguida, clique em "Salvar".\
-     ![Canal](../Configurar_wavoip/canal.png)
+     ![Canal](<../../.gitbook/assets/canal (1).png>)
 7. **Para realizar uma ligação**
    * Abra um ticket e você verá o botão de telefone na parte superior do ticket. Clique nele para iniciar a ligação.
 8. **Receber chamadas e gravação**
    * Garanta que esteja habilitada nas configurações para receber e gravar chamadas
 
-![Canal](../Configurar_wavoip/wavoip.png)
+![Canal](../../.gitbook/assets/wavoip.png)
 
 ***
 
 ## Necessário liberar o canal pro usuario no cadastro usuarios
 
-![liberar](../Configurar_wavoip/liberar.png)
+![liberar](../../.gitbook/assets/liberar.png)
 
 ## Dica Especial
 

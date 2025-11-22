@@ -18,17 +18,17 @@ Um sistema para gestão de atendimento multicanais centralizado.
 
 ## Screenshots
 
-> <img src="screenshots/saas.png" alt="print" data-size="original">
+> <img src=".gitbook/assets/saas.png" alt="print" data-size="original">
 
-> <img src="screenshots/atendimento.png" alt="print" data-size="original">
+> <img src=".gitbook/assets/atendimento.png" alt="print" data-size="original">
 
-> <img src="screenshots/solicitarteste.png" alt="print" data-size="original">
+> <img src=".gitbook/assets/solicitarteste.png" alt="print" data-size="original">
 
-> <img src="screenshots/kanban.png" alt="print" data-size="original">
+> <img src=".gitbook/assets/kanban.png" alt="print" data-size="original">
 
-> <img src="screenshots/white.png" alt="print" data-size="original">
+> <img src=".gitbook/assets/white.png" alt="print" data-size="original">
 
-> <img src="screenshots/dashboard.png" alt="print" data-size="original">
+> <img src=".gitbook/assets/dashboard.png" alt="print" data-size="original">
 
 ## Instalando
 

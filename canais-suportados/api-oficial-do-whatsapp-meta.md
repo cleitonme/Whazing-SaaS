@@ -6,7 +6,7 @@ description: >-
 
 # API Oficial do WhatsApp (Meta)
 
-#### ⚠️ Considerações importantes  <a href="#consideracoes-importantes" id="consideracoes-importantes"></a>
+#### ⚠️ Considerações importantes <a href="#consideracoes-importantes" id="consideracoes-importantes"></a>
 
 * A API oficial **não oferece suporte a grupos**.
 * O envio de templates está configurado ➤ [Tabela oficial de preços da Meta](https://business.whatsapp.com/products/platform-pricing?lang=pt_BR\&country=Brasil\&currency=D%C3%B3lar%20\(USD\)\&category=Utilit%C3%A1rios)
@@ -67,7 +67,7 @@ description: >-
 
 ### 6️⃣ Adicionar Canal no Whazing
 
-<figure><img src="../.gitbook/assets/whazing.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/whazing (5).png" alt=""><figcaption></figcaption></figure>
 
 1. No Whazing, vá em **Adicionar Canal**.
 2. Selecione a opção **WABA API Oficial**.
@@ -75,7 +75,7 @@ description: >-
 
 <figure><img src="../.gitbook/assets/configuracaoapi.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/configuracaoapi (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
 📌 Também será necessário copiar do painel da Meta:
 
@@ -106,7 +106,10 @@ description: >-
 1. Acesse **Ferramentas > Registrar Telefone**.
 2.
 
-    <figure><img src="../.gitbook/assets/registrartelefone.png" alt=""><figcaption></figcaption></figure>
+```
+<figure><img src="../.gitbook/assets/registrartelefone.png" alt=""><figcaption></figcaption></figure>
+```
+
 3. Digite um **PIN de 6 dígitos** (caso já tenha usado um PIN antes, utilize o mesmo).
 
 ***
@@ -128,8 +131,6 @@ Para garantir o funcionamento contínuo, gere um **Token Permanente**.
 ***
 
 ✅ **Pronto! Seu Whazing está integrado com a API Oficial do WhatsApp (Meta).**
-
-
 
 ### 📊 Limites da API Oficial <a href="#limites-da-api-oficial" id="limites-da-api-oficial"></a>
 

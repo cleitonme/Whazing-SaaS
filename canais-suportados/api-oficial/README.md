@@ -35,14 +35,14 @@ Usar cupom desconto: whazing
 ### ✅ Whazing tem suporte às mensagens especiais da API OFICIAL
 
 * **Botões (até 3)**\
-  ![print](<../../docs/API OFICIAL/botao.png>)
+  ![print](../../.gitbook/assets/botao.png)
 * **Lista**\
-  ![print](<../../docs/API OFICIAL/lista.png>)\
-  ![print](<../../docs/API OFICIAL/lista2.png>)
+  ![print](../../.gitbook/assets/lista.png)\
+  ![print](../../.gitbook/assets/lista2.png)
 * **Links com informações**\
-  ![print](<../../docs/API OFICIAL/links.png>)
+  ![print](../../.gitbook/assets/links.png)
 * **Solicitar localização**\
-  ![print](<../../docs/API OFICIAL/solicitarlocalizacao.png>)
+  ![print](../../.gitbook/assets/solicitarlocalizacao.png)
 
 ***
 
@@ -68,13 +68,13 @@ Usar cupom desconto: whazing
 2. Imagens PNG com fundo transparente podem apresentar **alterações**, pois o WhatsApp converte para JPEG.
 3. Mensagens fora do modelo só são entregues **dentro da janela de 24 horas** desde a última mensagem do cliente.
 
-![print](<../../docs/API OFICIAL/limites.png>)
+![print](../../.gitbook/assets/limites.png)
 
 ***
 
 ## ❌ Por que minha mensagem enviada tem um “X” vermelho?
 
-![print](<../../docs/API OFICIAL/mensagemrejeitada.png>)
+![print](../../.gitbook/assets/mensagemrejeitada.png)
 
 * Isso ocorre quando:
   * A mensagem é enviada **fora da janela de 24 horas**, ou
