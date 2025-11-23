@@ -1,6 +1,6 @@
 # API Whazing
 
-![print](<../../.gitbook/assets/whazing (1).png>)
+![print](broken-reference)
 
 * Faça o [download do arquivo modelo](../api/apiizing.json)
 

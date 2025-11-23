@@ -6,7 +6,7 @@ Nas configurações tem nova opção onde você pode configurar, depois configur
 
 Sugestão de Prompt Corrija o texto a seguir em português brasileiro, mantendo o conteúdo original. Apenas melhore a ortografia, gramática e fluidez, sem adicionar, remover ou alterar informações. Retorne somente o texto corrigido, pronto para ser enviado ao cliente e inclua ocasionalmente algum emoji.
 
-![print](<../../.gitbook/assets/botao (1).png>)
+![print](broken-reference)
 
 Após configurado aparece tela atendimento aparece o botão acima, e abaixo resultado após melhoria
 

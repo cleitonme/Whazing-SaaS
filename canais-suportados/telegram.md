@@ -37,6 +37,6 @@
 * Copie esse token e utilize para **cadastrar o canal no Whazing**.
 
 1. ![print](../.gitbook/assets/token.png)\
-   ![print](<../.gitbook/assets/whazing (4).png>)
+   ![print](broken-reference)
 
 ⚠️ **Importante:** Todas as mensagens devem ser enviadas para o **bot que você criou** para que apareçam no sistema Whazing.

@@ -6,7 +6,7 @@
 2. Clique no ícone de lápis para **editar** o canal desejado.
 3. Localize a opção **Habilitar Avaliação de Atendimento** e ative-a.
 
-![print](<../../.gitbook/assets/canal (3).png>)
+![print](broken-reference)
 
 ## **Campos para Configuração**
 

@@ -2,7 +2,7 @@
 
 ## Passo 1: Configurar a Integração
 
-![print](<../../../.gitbook/assets/telaintegracao (1).png>)
+![print](broken-reference)
 
 * **Model**: Selecione o modelo de linguagem (Groq ou ChatGPT).
 * **Prompt**: Escreva como a IA deve atender o cliente e agir.

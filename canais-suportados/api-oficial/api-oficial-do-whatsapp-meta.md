@@ -67,13 +67,13 @@ description: >-
 
 ### 6️⃣ Adicionar Canal no Whazing
 
-<figure><img src="../.gitbook/assets/whazing (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/whazing (5).png" alt=""><figcaption></figcaption></figure>
 
 1. No Whazing, vá em **Adicionar Canal**.
 2. Selecione a opção **WABA API Oficial**.
 3. Cole o **Token de Acesso** gerado anteriormente.
 
-<figure><img src="../.gitbook/assets/configuracaoapi.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/configuracaoapi.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
 
@@ -83,7 +83,7 @@ description: >-
 * **ID da Conta do WhatsApp Business**
 * **Versão da API** (ex: `v22.0` ou a mais recente disponível).
 
-<figure><img src="../.gitbook/assets/whazing2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/whazing2.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -97,7 +97,7 @@ description: >-
 4. Clique em **Verificar e Salvar**.
 5. Role a página até encontrar a opção **messages** e altere para **Assinado**.
 
-<figure><img src="../.gitbook/assets/ativarmessages.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/ativarmessages.png" alt=""><figcaption></figcaption></figure>
 
 ***
 

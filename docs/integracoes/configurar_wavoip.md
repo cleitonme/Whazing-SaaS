@@ -17,7 +17,7 @@
 6. **Edite as configurações do canal**
    * Cole o token no campo apropriado.
    * Em seguida, clique em "Salvar".\
-     ![Canal](<../../.gitbook/assets/canal (1).png>)
+     ![Canal](broken-reference)
 7. **Para realizar uma ligação**
    * Abra um ticket e você verá o botão de telefone na parte superior do ticket. Clique nele para iniciar a ligação.
 8. **Receber chamadas e gravação**

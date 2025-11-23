@@ -5,7 +5,7 @@
 1. **Acesse a lista de canais**
    * Localize o canal desejado na lista.
 2. **Edite as configurações do canal**
-   * Clique no ícone de configurações ao lado do canal. ![Canal](<../../.gitbook/assets/canal (2).png>)
+   * Clique no ícone de configurações ao lado do canal. ![Canal](broken-reference)
 3. **Ative a transcrição de áudio**
    * Habilite a opção **"Converter áudio em texto"**.
 4. **Adicione a API Key da Groq**

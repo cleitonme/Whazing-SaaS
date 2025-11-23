@@ -54,7 +54,7 @@ Usar cupom desconto: whazing
 
 <figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
-* [**WhatsApp Oficial**](api-oficial/)
+* [**WhatsApp Oficial**](api-oficial/api-oficial/)
   * Ativação por canal: **R$ 150,00**
   * Mensalidade: **R$ 50,00 por canal conectado**
 * [**Instagram**](facebook-e-instagram-via-hub/)
@@ -103,7 +103,7 @@ Usar cupom desconto: whazing
 * Possibilidade de escalabilidade empresarial
 
 ⚠️ Requer configuração no **Facebook Developers** e geração de **Token Permanente**.\
-👉 Veja o guia completo: [Manual de Integração com a API Oficial do WhatsApp (Meta)](api-oficial-do-whatsapp-meta.md)
+👉 Veja o guia completo: [Manual de Integração com a API Oficial do WhatsApp (Meta)](api-oficial/api-oficial-do-whatsapp-meta.md)
 
 ***
 

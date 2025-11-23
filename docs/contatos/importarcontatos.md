@@ -61,7 +61,7 @@ Maria Silva;55999999999;maria@email.com;ACME Ltda;10/10/1990;Gerente;Florianópo
 
 📸 Exemplo da tela de importação:
 
-![print](<../../.gitbook/assets/whazing (2).png>)
+![print](broken-reference)
 
 ***
 
