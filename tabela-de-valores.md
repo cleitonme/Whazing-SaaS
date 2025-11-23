@@ -69,4 +69,4 @@ Exibe anúncios do Whazing e envia automaticamente propagandas em:
 
 ## 🚀 **Como Adquirir**
 
-💻 **Acesse:** [https://loja.whazing.com.br/](https://loja.whazing.com.br/) 📱 **WhatsApp:** +55 48 3197-0599
+💻 **Acesse:** [https://loja.whazing.com.br/](https://loja.whazing.com.br/) 📱 **WhatsApp:** +55 48 3197-0877 ou +55 48 3197-0599

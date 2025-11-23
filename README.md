@@ -62,4 +62,4 @@ whazing
 
 ## Adquirir Versão Premium
 
-Para adquirir a versao premium whatsapp +55 48 3197-0599
+Para retirar anuncios e adquirindo versão Premium Whatsapp +55 48 3197-0877 ou +55 48 3197-0599

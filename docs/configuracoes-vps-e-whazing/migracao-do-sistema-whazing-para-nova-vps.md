@@ -13,7 +13,7 @@ description: >-
 * Durante a migração o sistema ficará **fora do ar**.
 * **Mensagens recebidas nesse período não serão registradas.**
 * Avise seus clientes com antecedência.
-* Antes de iniciar, **contate o suporte no Whatsapp +55 48 3197-0599** para liberar a licença premium na nova VPS.
+* Antes de iniciar, **contate o suporte no Whatsapp +55 48 3197-0877 ou +55 48 3197-0599** para liberar a licença premium na nova VPS.
 
 ***
 
