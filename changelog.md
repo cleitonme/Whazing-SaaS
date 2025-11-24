@@ -1,5 +1,9 @@
 # Changelog e Atualizações
 
+### 🚀 Versão 2.14.7 FINAL – Changelog
+
+- api oficial - suporte template com variavel no header
+
 ### 🚀 Versão 2.14.6 BETA – Changelog
 
 - bug wuzapi - Responder proprias mensagens
