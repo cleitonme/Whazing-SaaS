@@ -4,6 +4,7 @@
 
 O uso de um proxy nas conexões do WhatsApp pode aumentar a segurança e melhorar o controle das comunicações.
 
+Somente canal Baileys
 ---
 
 ### **Passo a Passo para Configuração no Linux (Exemplo com o Bitvise)**
