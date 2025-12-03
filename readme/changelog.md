@@ -2,58 +2,51 @@
 
 ### 🚀 Versão 2.14.7 FINAL – Changelog
 
-- api oficial - suporte template com variavel no header
+* api oficial - suporte template com variavel no header
 
 ### 🚀 Versão 2.14.6 BETA – Changelog
 
-- bug wuzapi - Responder proprias mensagens
+* bug wuzapi - Responder proprias mensagens
 
 ### 🚀 Versão 2.14.5 BETA – Changelog
 
-- wuzapi - aumentado tempo de resposta aguardar confirmação envio mensagem - causa mensagens duplicadas em grupos maiores
+* wuzapi - aumentado tempo de resposta aguardar confirmação envio mensagem - causa mensagens duplicadas em grupos maiores
 
 ### 🚀 Versão 2.14.4 BETA – Changelog
 
-- wuzapi melhorias exibição erro ao enviar mensagens e força reinciar conexão tentativa recuperação caso falha envio por desconexão
+* wuzapi melhorias exibição erro ao enviar mensagens e força reinciar conexão tentativa recuperação caso falha envio por desconexão
 
 ### 🚀 Versão 2.14.3 BETA – Changelog
 
-- bug - relatorios ligações foi quebrado alguma atualização a listagem de colunas
-
-- Mensagens enviadas api não oficial baileys, api plus e wuzapi atualiza hora envio mensagem depois envio para melhor consistencia de horarios entre sistema e horario aplicativo
-- quebra de linha mensagem feriado
-- troca de tela atendimento respeita configuração anteorior da assinatura
-- Novo relatorio estatisticas por contato
-- Novo relatorio estatisticas por fila
-- Sincronizar grupos
-- Suporte Meta Pixel, Google Tag Manager e Google Ads ID na tela login e sigup
-- Mais algumas limpezas alterações objetivo trazer mais desempenho frontend
-- Ajustes tela atendimento para aparecer todas abas - abertos, pendentes, fechados e chatbot sem gerar rolagem
+* bug - relatorios ligações foi quebrado alguma atualização a listagem de colunas
+* Mensagens enviadas api não oficial baileys, api plus e wuzapi atualiza hora envio mensagem depois envio para melhor consistencia de horarios entre sistema e horario aplicativo
+* quebra de linha mensagem feriado
+* troca de tela atendimento respeita configuração anteorior da assinatura
+* Novo relatorio estatisticas por contato
+* Novo relatorio estatisticas por fila
+* Sincronizar grupos
+* Suporte Meta Pixel, Google Tag Manager e Google Ads ID na tela login e sigup
+* Mais algumas limpezas alterações objetivo trazer mais desempenho frontend
+* Ajustes tela atendimento para aparecer todas abas - abertos, pendentes, fechados e chatbot sem gerar rolagem
 
 ### 🚀 Versão 2.14.2 BETA – Changelog
 
-- Wuzapi, Api plus e baileys - mais formatos mensagens mapeados recebidos api oficial botão, template
-- Indicação de tipo disposito enviado mensagem (android-ios-web)
-- Otimização chatinterno carregamento paginado para grande numeros mensagens não tornar lento
-- Otimização tela atendimento
-
-- Baileys atualizada
+* Wuzapi, Api plus e baileys - mais formatos mensagens mapeados recebidos api oficial botão, template
+* Indicação de tipo disposito enviado mensagem (android-ios-web)
+* Otimização chatinterno carregamento paginado para grande numeros mensagens não tornar lento
+* Otimização tela atendimento
+* Baileys atualizada
 
 ### 🚀 Versão 2.13.1 Baileys Update - 07/11/2025
 
-- bug baileys - update versão baileys erro leitura qrcode
+* bug baileys - update versão baileys erro leitura qrcode
 
 ### 🚀 Versão 2.14.1 BETA – Changelog
 
-- bug - Editar mensagem rapidas com anexo
-
-- Botão painel SaaS reniciar backend
-- Liberado campanha e Follow-up Wuzapi
-
-- Mudança no sistema de validação de licença
-Caso houver erro validar ou foi deixado pagar ele não volta para free automaticamente exibindo anuncios. Ele não vai enviar mensagens exibindo um erro no log e no painel SaaS informando problema de licenca com botão para voltar versão free(voltando enviar mensagens e mostrar anuncios) ou reniciar whazing para tentar validar licenca novamente.
-Essa alteração devidos problemas teve na contabo que causou erro validar licença (problema não era sistema licenca e sim na VPS - nem uso contato :))
-Não correndo mais risco caso problema de licença ele volte exibir anuncios imediatamente
+* bug - Editar mensagem rapidas com anexo
+* Botão painel SaaS reniciar backend
+* Liberado campanha e Follow-up Wuzapi
+* Mudança no sistema de validação de licença Caso houver erro validar ou foi deixado pagar ele não volta para free automaticamente exibindo anuncios. Ele não vai enviar mensagens exibindo um erro no log e no painel SaaS informando problema de licenca com botão para voltar versão free(voltando enviar mensagens e mostrar anuncios) ou reniciar whazing para tentar validar licenca novamente. Essa alteração devidos problemas teve na contabo que causou erro validar licença (problema não era sistema licenca e sim na VPS - nem uso contato :)) Não correndo mais risco caso problema de licença ele volte exibir anuncios imediatamente
 
 ### 🚀 Versão 2.14.0 BETA – Changelog
 
@@ -89,7 +82,7 @@ Não correndo mais risco caso problema de licença ele volte exibir anuncios ime
 #### 🤖 ChatBot e Integrações
 
 * Quando a **guia ChatBot estiver ativa**, apenas tickets relacionados ao chatbot serão exibidos.
-* Tickets originados de **integrações, IA ou TypeBot** seguem a regra da configuração *“Não visualizar Tickets no ChatBot”*.
+* Tickets originados de **integrações, IA ou TypeBot** seguem a regra da configuração _“Não visualizar Tickets no ChatBot”_.
 * No **editor de ChatBot**, ao clicar em “Voltar”, o sistema perguntará se deseja salvar as alterações.
 * Novo comando no **TypeBot** para **transferir ChatBot interno**.
 * **Nova API:** endpoint para **transferência de ChatBot interno**.
@@ -116,7 +109,7 @@ Não correndo mais risco caso problema de licença ele volte exibir anuncios ime
 #### 💬 Chat Interno
 
 * Adicionadas **badges de contagem** de mensagens não lidas nas abas de usuários e grupos.
-* Após enviar mensagem com *Enter*, o foco retorna automaticamente ao campo de texto para facilitar a digitação contínua.
+* Após enviar mensagem com _Enter_, o foco retorna automaticamente ao campo de texto para facilitar a digitação contínua.
 
 #### 🧩 Tela de Atendimento
 
@@ -129,93 +122,98 @@ Não correndo mais risco caso problema de licença ele volte exibir anuncios ime
 
 ### 🚀 Versão 2.13.1 Final - Changelog
 
-- bug beta - Desloga acessar grupos com usuarios não admin
-- Forçar executar condições do bot pega ultima mensagem do cliente para condições - util para fazer bot por palavra chave por exemplo
-- Liberado PWA gira tela
+* bug beta - Desloga acessar grupos com usuarios não admin
+* Forçar executar condições do bot pega ultima mensagem do cliente para condições - util para fazer bot por palavra chave por exemplo
+* Liberado PWA gira tela
 
 ### 🚀 Versão 2.13.0 BETA - Changelog
 
 Tela Atendimento
-- ticket atendimento por ia e typebot mostra na aba chatbot caso ativa
-- suporte encaminhar localização
-- Opção abrir novo ticket mais rapidamente, pelo telefone ou buscando contato
-- Scroll mensagens aparece data mensagem semelhante whatsapp web
-- Scroll lista tickets força carregar mais tickets
-- Mostra hora mensagem foi deletada
 
-- Grupos
-- Marcar contatos
-- Se tiver lista contatos mostrar nome contato marcado - lista mensagens
+* ticket atendimento por ia e typebot mostra na aba chatbot caso ativa
+* suporte encaminhar localização
+* Opção abrir novo ticket mais rapidamente, pelo telefone ou buscando contato
+* Scroll mensagens aparece data mensagem semelhante whatsapp web
+* Scroll lista tickets força carregar mais tickets
+* Mostra hora mensagem foi deletada
+* Grupos
+* Marcar contatos
+* Se tiver lista contatos mostrar nome contato marcado - lista mensagens
 
 Chat Interno
-- Alterações visuais
-- Responder mensagem
-- Reagir
-- Deletar mensagem
-- Editar Mensagem
+
+* Alterações visuais
+* Responder mensagem
+* Reagir
+* Deletar mensagem
+* Editar Mensagem
 
 Integração
-- Recepção inteligente suporte gemini
-- Integração x bot interno - Interno passa ter prioridade sobre bot interno caso tenha integração bot interno não sera ativado
-Exemplo: Caso selecionado no canal uma fila que tem integração e um ChatBot. O chatbot não será ativado. Prioridade: 1 - Integração, 2 - ChatBot
-- Cadastro fila nova configuração - Iniciar a transferir (com essa configuração ativa quando transferindo ticket para um que tem integração ativada ele executa integração imediatamente)
 
+* Recepção inteligente suporte gemini
+* Integração x bot interno - Interno passa ter prioridade sobre bot interno caso tenha integração bot interno não sera ativado Exemplo: Caso selecionado no canal uma fila que tem integração e um ChatBot. O chatbot não será ativado. Prioridade: 1 - Integração, 2 - ChatBot
+* Cadastro fila nova configuração - Iniciar a transferir (com essa configuração ativa quando transferindo ticket para um que tem integração ativada ele executa integração imediatamente)
 
 Painel SaaS
-- Card numero usuarios online
-- Botão reniciar conexão modal whatsapp
-- Modal whatsapp coluna ultima atualização whatsapp
-- Modal whatsapp botão desconectar canal
-- Status Redis ajudar caso erros dele
-- Mais botões coringa, 2 abre nova aba e 2 iframe
-- Nova configuração envio mensagem aviso vencimento, será enviado 7 dias antes, 3 dias antes, 1 dia antes e no dia vencimento.
+
+* Card numero usuarios online
+* Botão reniciar conexão modal whatsapp
+* Modal whatsapp coluna ultima atualização whatsapp
+* Modal whatsapp botão desconectar canal
+* Status Redis ajudar caso erros dele
+* Mais botões coringa, 2 abre nova aba e 2 iframe
+* Nova configuração envio mensagem aviso vencimento, será enviado 7 dias antes, 3 dias antes, 1 dia antes e no dia vencimento.
 
 Pagina ajuda
-- Alterado layout iframe para ocupar pagina toda
+
+* Alterado layout iframe para ocupar pagina toda
 
 Configuração canais
-- Melhoria na exibição erros na geração qrcode api plus - botão separado gerar qrcode e pairing code
-- baileys - detectar se tentar conectar mesmo numero mais de uma vez bugando instalação
-- Api Plus e Baileys - Nova opção marcar status de presença essa opção voltar notificar celular mas tem limitações verificar nas configurações
+
+* Melhoria na exibição erros na geração qrcode api plus - botão separado gerar qrcode e pairing code
+* baileys - detectar se tentar conectar mesmo numero mais de uma vez bugando instalação
+* Api Plus e Baileys - Nova opção marcar status de presença essa opção voltar notificar celular mas tem limitações verificar nas configurações
 
 Contatos
-- Somente admin e supervisor pode ignorar contato ou desativar bot
-- Opção desativar integrações de determinado contato
-- Planilha importar contatos suportar criar campos informações adicionais
 
-Telegram 
-- Suporte grupos telegram
+* Somente admin e supervisor pode ignorar contato ou desativar bot
+* Opção desativar integrações de determinado contato
+* Planilha importar contatos suportar criar campos informações adicionais
+
+Telegram
+
+* Suporte grupos telegram
 
 Relatorio Tickets
-- Valor Negociação kanban
+
+* Valor Negociação kanban
 
 Carteira
-- Nova configuração para ocultar contatos sem carteira definida
-Como funciona
-Com essa opção ativada, caso contato não tiver carteira definida não sera exibido na lista do perfil usuario e supervisor de fila caso opção "Ignorar carteira - Listar todos contatos" do cadastro usuarios esteja desativa
-Supervidor Geral e Admin ve todos contatos
+
+* Nova configuração para ocultar contatos sem carteira definida Como funciona Com essa opção ativada, caso contato não tiver carteira definida não sera exibido na lista do perfil usuario e supervisor de fila caso opção "Ignorar carteira - Listar todos contatos" do cadastro usuarios esteja desativa Supervidor Geral e Admin ve todos contatos
 
 Api
-- Suporte Envio usando ticketId, como funciona no lugar number usar parametro ticketId, usado para canais como telegram nao tem numero
+
+* Suporte Envio usando ticketId, como funciona no lugar number usar parametro ticketId, usado para canais como telegram nao tem numero
 
 Motivos de encerramento
-- Possibilidade separar motivos encerramento por fila
+
+* Possibilidade separar motivos encerramento por fila
 
 Mensagem despedida
-- Nova coluna identificar mensagem
+
+* Nova coluna identificar mensagem
 
 #### 🚀 Versão 2.12.3.0 Final - Changelog
 
-- bug grava baileys -
-Descoberto bug grave da grande perda de mensagens atualização importante
-- bug baileys 2 -
-Mensagens enviadas por outros dispositivos(do numero ta conectado no whazing) em grupos aparece como mensagem recebida
+* bug grava baileys - Descoberto bug grave da grande perda de mensagens atualização importante
+* bug baileys 2 - Mensagens enviadas por outros dispositivos(do numero ta conectado no whazing) em grupos aparece como mensagem recebida
 
 #### 🚀 Versão 2.12.2.1 Final 03/10/25 - Changelog
 
 Baileys ler qrcode novamente
-- Update versão baileys - 
-O WhatsApp não está mais enviando acks. Isso é um enorme vetor de banimento. Por favor, aqueles que puderem atualizar para a rc5, façam isso pela segurança de suas contas.
+
+* Update versão baileys - O WhatsApp não está mais enviando acks. Isso é um enorme vetor de banimento. Por favor, aqueles que puderem atualizar para a rc5, façam isso pela segurança de suas contas.
 
 Para quem ainda está na versão 6.7.19, atualize para a nova release 6.7.20. Essa versão incluirá apenas esse patch e é um hotfix que desenvolvi para vocês.
 
@@ -363,7 +361,7 @@ Migração Baileys x PLUS
 
 👉 Garanta essa condição exclusiva cadastrando-se no link: [https://pushinpay.whazing.com.br](https://pushinpay.whazing.com.br/)
 
-[https://doc.whazing.com.br/modulo-saas/gateways-pagamentos/configurar-pushin-pay](modulo-saas/gateways-pagamentos/configurar-pushin-pay.md)
+[https://doc.whazing.com.br/modulo-saas/gateways-pagamentos/configurar-pushin-pay](../modulo-saas/gateways-pagamentos/configurar-pushin-pay.md)
 
 * bug - corrigido filtro relatório tickets primeira mensagem
 * Sugestão instalar PWA tela login

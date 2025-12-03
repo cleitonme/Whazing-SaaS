@@ -20,7 +20,7 @@ Entre na nossa comunidade para suporte e novidades. Aprenda como instalar e conf
 
 **Senha:** `123456`
 
-[Resumo de Recursos](principais-recursos-do-sistema.md)
+[Resumo de Recursos](readme/principais-recursos-do-sistema.md)
 
 **IMPORTANTE**:
 
