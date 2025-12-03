@@ -1,3 +1,7 @@
+---
+icon: telegram
+---
+
 # Guia de Conexão do TELEGRAM
 
 1. **📲 Acesse o Telegram**\

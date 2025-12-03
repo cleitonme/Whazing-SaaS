@@ -1,8 +1,12 @@
-# **WhatsApp Wuzapi (WhatsMeow)**
+---
+icon: whatsapp
+---
+
+# WhatsApp Wuzapi (WhatsMeow)
 
 A **Wuzapi (WhatsMeow)** é recomendada no lugar da **Baileys**, pois é **mais leve**, **estável** e **garante melhor desempenho do sistema**.
 
----
+***
 
 ### 🧩 **Instalação ou atualização do servidor**
 
@@ -24,19 +28,18 @@ Arquivo: /home/deploy/wuzapi.yaml
 ==============================
 ```
 
----
+***
 
 ### ⚙️ **Conexão no painel Whazing**
 
 1. Acesse o painel **Whazing → SaaS → Canais**
 2. Preencha os campos com:
-
    * **URL:** a exibida na instalação (exemplo: `http://127.0.0.1:8080`)
    * **Admin Token:** o token gerado (exemplo: `xeU2d47fSHxIM5pSdB4ua9C1y3E4k2`)
 
 💡 É possível **migrar entre as 3 APIs não oficiais** — **Baileys**, **API Plus** e **WuzAPI** — **sem perder dados**.
 
----
+***
 
 ### 🔁 **Reiniciar serviços**
 
@@ -58,7 +61,7 @@ docker container restart postgreswuzapi
 docker container restart rabbitmqwuzapi
 ```
 
----
+***
 
 ### 📜 **Ver logs dos contêineres**
 

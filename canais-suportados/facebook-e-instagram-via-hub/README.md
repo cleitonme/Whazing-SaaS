@@ -1,3 +1,7 @@
+---
+icon: hubspot
+---
+
 # Instagram, facebook e webchat via NotificaMe
 
 ## 🌐 Integração com Hub NotificaMe

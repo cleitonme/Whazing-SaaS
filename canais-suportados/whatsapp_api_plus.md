@@ -2,6 +2,7 @@
 description: >-
   A WhatsApp API PLUS é uma API não oficial, com recursos premium e maior
   estabilidade em comparação com a Baileys.
+icon: whatsapp
 ---
 
 # WhatsApp API PLUS
@@ -12,8 +13,7 @@ A **WhatsApp API PLUS** é uma **API não oficial** que conecta seu WhatsApp ao 
 
 ***
 
-⚠️ Recomendação Importante: WhatsApp Business
-É ALTAMENTE RECOMENDADO usar contas do WhatsApp Business em vez do WhatsApp normal para integração, o WhatsApp normal pode apresentar inconsistências, desconexões, limitações e instabilidades durante o uso com a nossa API.
+⚠️ Recomendação Importante: WhatsApp Business É ALTAMENTE RECOMENDADO usar contas do WhatsApp Business em vez do WhatsApp normal para integração, o WhatsApp normal pode apresentar inconsistências, desconexões, limitações e instabilidades durante o uso com a nossa API.
 
 ### ✅ Recursos principais (o que você pode usar)
 

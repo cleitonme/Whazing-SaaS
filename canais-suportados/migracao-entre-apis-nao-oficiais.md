@@ -1,5 +1,6 @@
 ---
 description: Instruções troca de api não oficiais sem perda de dados
+icon: square-whatsapp
 ---
 
 # Migração entre apis não oficiais

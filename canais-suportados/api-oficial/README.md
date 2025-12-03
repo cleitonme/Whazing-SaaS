@@ -1,3 +1,7 @@
+---
+icon: whatsapp
+---
+
 # Api Oficial
 
 Para conectar api oficial via whazing existe 2 métodos direto ou via HUB
