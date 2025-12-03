@@ -48,10 +48,10 @@ Essas prioridades determinam **qual bot será acionado** sempre que uma nova men
 
 ## 📚 Índice
 
-1. [Configuração de Fluxo](chatbotinterno.md#configuração-de-fluxo)
-2. [Ordem das Interações](chatbotinterno.md#ordem-das-interações)
-3. [Configuração de Condições](chatbotinterno.md#configuração-de-condições)
-4. [Exemplos Práticos de Fluxos](chatbotinterno.md#exemplos-práticos-de-fluxos)
+1. [Configuração de Fluxo](./#configuração-de-fluxo)
+2. [Ordem das Interações](./#ordem-das-interações)
+3. [Configuração de Condições](./#configuração-de-condições)
+4. [Exemplos Práticos de Fluxos](./#exemplos-práticos-de-fluxos)
 
 ***
 
@@ -251,7 +251,7 @@ Ideal para empresas com **plantão ou suporte emergencial**.
 
 <figure><img src="../../.gitbook/assets/image (14).avif" alt=""><figcaption></figcaption></figure>
 
-[Baixar exemplo](../../docs/chatbotinterno/horario_de_atendimento.json)
+[Baixar exemplo](horario_de_atendimento.json)
 
 ***
 
@@ -259,7 +259,7 @@ Ideal para empresas com **plantão ou suporte emergencial**.
 
 Permite personalizar mensagens com **dados do cliente**.
 
-[Baixar exemplo](../../docs/chatbotinterno/exemplo_fluxo_usando_novas_variaveis.json)
+[Baixar exemplo](exemplo_fluxo_usando_novas_variaveis.json)
 
 **Exemplo de uso:**
 
@@ -283,11 +283,11 @@ Integração com [https://cal.com/](https://cal.com/)
 
 <figure><img src="../../.gitbook/assets/image (15).avif" alt=""><figcaption></figcaption></figure>
 
-[Baixar exemplo](../../docs/chatbotinterno/agendamentobarbearia.json)
+[Baixar exemplo](agendamentobarbearia.json)
 
 <figure><img src="../../.gitbook/assets/image (16).avif" alt=""><figcaption></figcaption></figure>
 
-[Baixar exemplo com botões](../../docs/chatbotinterno/agendamentobarbeariabotao.json)
+[Baixar exemplo com botões](agendamentobarbeariabotao.json)
 
 
 
@@ -295,7 +295,7 @@ Integração com [https://cal.com/](https://cal.com/)
 
 ### 4️⃣ Fluxo sobre Whazing (lista, botão e links)
 
-[Baixar exemplo](../../docs/chatbotinterno/exemplo_whazing.json)
+[Baixar exemplo](exemplo_whazing.json)
 
 ***
 
@@ -303,7 +303,7 @@ Integração com [https://cal.com/](https://cal.com/)
 
 Exemplo que valida **CEP e cidade** via API.
 
-[Baixar exemplo](../../docs/chatbotinterno/exemplo_http_request.json)
+[Baixar exemplo](exemplo_http_request.json)
 
 ***
 
@@ -311,7 +311,7 @@ Exemplo que valida **CEP e cidade** via API.
 
 Usa **HTTP Request** para gerar teste automático para o cliente.
 
-[Baixar exemplo](../../docs/chatbotinterno/exemplo_teste_whazing.json)
+[Baixar exemplo](exemplo_teste_whazing.json)
 
 ***
 
@@ -319,7 +319,7 @@ Usa **HTTP Request** para gerar teste automático para o cliente.
 
 Envia mensagem de boas-vindas e direciona o cliente para uma fila.
 
-[Baixar exemplo](../../docs/chatbotinterno/boas_vindas.json)
+[Baixar exemplo](boas_vindas.json)
 
 > Usa “Forçar executar condições” para simular uma resposta automática e avançar o fluxo.
 
@@ -327,7 +327,7 @@ Envia mensagem de boas-vindas e direciona o cliente para uma fila.
 
 ### 8️⃣ Seleção de Fila por Palavra-chave
 
-[Baixar exemplo](../../docs/chatbotinterno/bot_por_palavra_chat.json)
+[Baixar exemplo](bot_por_palavra_chat.json)
 
 Permite enviar o cliente para uma fila específica conforme a palavra digitada. Com “Iniciar Integração ao transferir”, o sistema já ativa a integração automaticamente.
 
@@ -335,7 +335,7 @@ Permite enviar o cliente para uma fila específica conforme a palavra digitada. 
 
 ### 9️⃣ Consulta de CPF via API
 
-[Baixar exemplo](../../docs/chatbotinterno/consulta_cpf.json)
+[Baixar exemplo](consulta_cpf.json)
 
 Usa a API pública [cpfhub.io](https://www.cpfhub.io/).
 
@@ -345,6 +345,6 @@ Usa a API pública [cpfhub.io](https://www.cpfhub.io/).
 
 ### 1️⃣ 0️⃣ Bot muda comportamento conforme horario
 
-[Baixar exemplo](../../docs/chatbotinterno/botporhorario.json)
+[Baixar exemplo](botporhorario.json)
 
 Esse modelo apresenta diversos exemplos de como o bot interno pode ser utilizado. De acordo com o horário em que o cliente entra em contato, ele envia automaticamente uma mensagem informando o horário de atendimento. Se o cliente escolher a opção **“Retirar na loja”**, o bot envia a **localização da loja**. Além disso, o bot solicita o **CNPJ do cliente** e salva o valor em uma **variável** — caso essa informação já exista, o atendimento é encaminhado diretamente para a equipe.

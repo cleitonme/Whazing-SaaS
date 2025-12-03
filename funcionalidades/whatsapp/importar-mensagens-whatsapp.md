@@ -1,4 +1,8 @@
-# Importar mensagens WhatsApp
+---
+icon: up-from-bracket
+---
+
+# Importar mensagens Baileys
 
 Para api baileys possível importas até 30 dias mensagens na leitura do QRCODE e para api plus até 100 mensagens por contato(necessário criar ticket e fazer importação manualmente de cada contato)
 
