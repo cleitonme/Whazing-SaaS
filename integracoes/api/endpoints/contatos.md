@@ -1,3 +1,7 @@
+---
+icon: folder-user
+---
+
 # Contatos
 
 **1. Criar Contato**

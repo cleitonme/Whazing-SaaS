@@ -1,3 +1,7 @@
+---
+icon: code
+---
+
 # Exemplos de Código
 
 #### Python

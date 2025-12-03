@@ -1,3 +1,7 @@
+---
+icon: tickets-simple
+---
+
 # Tickets
 
 **1. Criar Ticket**

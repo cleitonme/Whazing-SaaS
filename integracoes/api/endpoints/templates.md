@@ -1,3 +1,7 @@
+---
+icon: display-code
+---
+
 # Templates
 
 **1. Template Simples**

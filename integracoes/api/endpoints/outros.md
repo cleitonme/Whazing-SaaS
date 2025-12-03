@@ -1,3 +1,7 @@
+---
+icon: angles-right
+---
+
 # Outros
 
 **1. Validar Número WhatsApp**
