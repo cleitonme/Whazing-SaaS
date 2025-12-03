@@ -1,4 +1,8 @@
-# Meu sistema não abre
+---
+icon: circle-exclamation
+---
+
+# Sistema não abre
 
 ### Meu sistema não está funcionando. O que fazer?
 
@@ -24,7 +28,7 @@ Se você enfrentar problemas no login, tente reiniciar o docker seguindo os pass
      * Caso utilize Cloudflare, não ative o proxy (ícone de nuvem laranja).
      * Ao verificar no **dnschecker.org**, o IP da sua VPS deve aparecer em todas as validações.
 2. **Verifique os logs do sistema**
-   * Consulte a documentação na seção [acessando\_logs](../../instalacao-and-vps/acessando_logs.md) para identificar possíveis erros.
+   * Consulte a documentação na seção [acessando\_logs](../instalacao-and-vps/acessando_logs.md) para identificar possíveis erros.
 3. **Reinstale o sistema**
    * Caso seja uma instalação nova, formate a VPS utilizando o sistema operacional recomendado **Ubuntu 22** e refaça a instalação.
 
@@ -37,7 +41,7 @@ Se você enfrentar problemas no login, tente reiniciar o docker seguindo os pass
 2. **Execute o atualizador novamente**
    * É possível que algum erro tenha ocorrido durante o processo de atualização.
 3. **Verifique os logs do sistema**
-   * Consulte a documentação na seção [acessando\_logs](../../instalacao-and-vps/acessando_logs.md) para investigar eventuais erros.
+   * Consulte a documentação na seção [acessando\_logs](../instalacao-and-vps/acessando_logs.md) para investigar eventuais erros.
 
 ***
 
@@ -45,7 +49,7 @@ Se você enfrentar problemas no login, tente reiniciar o docker seguindo os pass
 
 1. **Reinicie a VPS**
 2. **Verifique os logs do sistema**
-   * Acesse a documentação na seção [acessando\_logs](../../instalacao-and-vps/acessando_logs.md) para identificar problemas.
+   * Acesse a documentação na seção [acessando\_logs](../instalacao-and-vps/acessando_logs.md) para identificar problemas.
 3. **Execute a atualização**
 4. **Verifique o DNS**
    * Use [dnschecker.org](https://dnschecker.org) para confirmar a propagação.
@@ -59,7 +63,7 @@ Se você enfrentar problemas no login, tente reiniciar o docker seguindo os pass
 1. **Reinicie a VPS**
 2. **Conecte novamente o whatsapp**
 3. **Verifique os logs do sistema**
-   * Acesse a documentação na seção [acessando\_logs](../../instalacao-and-vps/acessando_logs.md) para identificar problemas.
+   * Acesse a documentação na seção [acessando\_logs](../instalacao-and-vps/acessando_logs.md) para identificar problemas.
 
 Obs: Caso log aparece erro no redis exemplo "\[ioredis] Unhandled error event: Error: connect ECONNREFUSED"
 
@@ -74,4 +78,4 @@ Acesse nosso grupo de suporte:\
 
 * Domínios de acesso
 * Resultados de comandos como _ping_
-* Logs relevantes [acessando\_logs](../../instalacao-and-vps/acessando_logs.md)
+* Logs relevantes [acessando\_logs](../instalacao-and-vps/acessando_logs.md)

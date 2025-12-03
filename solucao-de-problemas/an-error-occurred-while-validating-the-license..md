@@ -1,4 +1,9 @@
-# An error occurred while validating the license.
+---
+description: An error occurred while validating the license.
+icon: key
+---
+
+# Erro de Licença
 
 ## ❗ Erro ao validar a licença
 

@@ -1,8 +1,14 @@
-# ❗ Erro no sistema: \[ioredis] Unhandled error event: Error: connect ECONNREFUSED
+---
+description: 'Erro no sistema: [ioredis] Unhandled error event: Error: connect ECONNREFUSED'
+icon: rotate-right
+---
+
+# Reinstalar Redis
 
 Esse erro significa que o Redis (parte importante do sistema) não está funcionando corretamente ou não está aceitando conexões. Vamos resolver isso reinstalando o Redis.
 
 ***
+
 ## ✅ Reinstalar redis automatico
 
 ```bash
