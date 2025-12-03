@@ -65,9 +65,9 @@ Envia automaticamente propaganda em:\
 • Follow-ups\
 • Campanhas
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/UISFWlqiRJ8lgYWxwJL9" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/F8Sq1qDQZJQ0S4Le4NL4" alt=""><figcaption></figcaption></figure>
 
 **Versão Premium** 💎
 

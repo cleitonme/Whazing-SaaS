@@ -8,7 +8,7 @@ Lembre-se campanha tem riscos altos de ban aconselhamos uso de números descart�
 
 ### 🚀 Etapa 1: Configuração da Campanha
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/wyHSBWhCvjDz1npbZWyn" alt=""><figcaption></figcaption></figure>
 
 * **Nome da Campanha** → Identifique sua campanha. _(Apenas para organização interna, não interfere no envio)._
 * **Data e Hora de Início** → Defina quando a campanha será iniciada.
@@ -23,9 +23,9 @@ Depois de preencher todos os campos, clique em **Salvar** e siga para a próxima
 
 ### 👥 Etapa 2: Adicionando Contatos
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/6826LVhTyhktdyWcWZGA" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/yy9b8LPiBJGRhwF2wNP9" alt=""><figcaption></figcaption></figure>
 
 #### Incluir Contatos
 
@@ -55,7 +55,7 @@ Você pode **personalizar suas mensagens** utilizando informações cadastradas 
 
 📷 _Exemplo de Informações Adicionais:_
 
-![](broken-reference)\\
+![](/broken/files/oPufx0lRmStZgnMtH4wk)\\
 
 *   Exemplo 1:
 

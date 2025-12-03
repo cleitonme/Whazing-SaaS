@@ -75,7 +75,7 @@ description: >-
 
 <figure><img src="../../.gitbook/assets/configuracaoapi.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="broken-reference" alt=""><figcaption></figcaption></figure>
+<figure><img src="/broken/files/SEZo4s0Sef7rpJg99CNV" alt=""><figcaption></figcaption></figure>
 
 📌 Também será necessário copiar do painel da Meta:
 

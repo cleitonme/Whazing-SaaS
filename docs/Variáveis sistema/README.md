@@ -14,7 +14,7 @@ description: >-
 Essas variáveis utilizam os valores cadastrados em **Informações Adicionais do Contato**.
 
 📷 _Exemplo de cadastro:_\
-![](broken-reference)
+![](/broken/files/oPufx0lRmStZgnMtH4wk)
 
 **Exemplos**
 
@@ -65,12 +65,12 @@ Por favor, confirme se seu endereço é Rua Marechal Deodoro, 11?
 No **chatbot**, é possível salvar automaticamente a resposta do cliente como valor de uma variável.
 
 📷 _Exemplo de configuração:_\
-![](broken-reference)
+![](/broken/files/kNwHPYeyoqfcn6ajzMDP)
 
 📂 Arquivo de exemplo disponível:\
 Clique botão direito coloque salvar link como
 
-{% file src="broken-reference" %}
+{% file src="/broken/files/Rb6K1awPz3sLnv0NmNao" %}
 
 ***
 

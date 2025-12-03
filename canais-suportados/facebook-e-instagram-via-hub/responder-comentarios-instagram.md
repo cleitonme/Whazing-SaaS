@@ -2,7 +2,7 @@
 
 #### Novidade: Responda Comentários no Instagram com Mais Facilidade
 
-![print](../../.gitbook/assets/respondercomentario.png)
+![print](/broken/files/or5HMPDOgh5SQP7CeEeW)
 
 Agora você pode responder diretamente aos comentários recebidos no Instagram. Basta clicar na seta ao lado do texto do comentário para utilizar essa função.
 
@@ -22,6 +22,6 @@ Essa opção está disponível apenas para contatos **sem janela de conversa ati
 2. Clique no ícone de lápis para **editar o canal do Instagram**.
 3. Ative a opção **"Enviar Direct automático após comentário"**.
 
-![print](../../.gitbook/assets/direct.png)
+![print](/broken/files/3B9QypGrsMg4tIKNvcJi)
 
 Depois, basta escrever a mensagem que será enviada automaticamente quando o comentário for recebido.

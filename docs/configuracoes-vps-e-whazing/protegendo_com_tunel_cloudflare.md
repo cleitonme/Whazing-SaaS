@@ -16,7 +16,7 @@
    * Se a instalação for bem-sucedida, o túnel aparecerá na seção "Connectors".
    * Clique em "Próxima" para continuar.
 
-![print](../../.gitbook/assets/backend.png)
+![print](/broken/files/JOPbAh0Dxp3nVW96FmK3)
 
 4. **Configuração do Backend**:
    * Nesta tela, configure o domínio do seu backend:
@@ -26,7 +26,7 @@
    * Na lista de túneis, clique nos três pontos ao lado do túnel e selecione "Configurar".
    * Adicione o nome do host público.
 
-![print](../../.gitbook/assets/frontend.png)
+![print](/broken/files/4IT4JTH8vtBsYtFutItl)
 
 5. **Configuração do Frontend**:
    * Nesta tela, configure o domínio do seu frontend:

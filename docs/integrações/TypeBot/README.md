@@ -1,6 +1,6 @@
 # Configurar Typebot
 
-![print](../../../.gitbook/assets/configurartypebot.png) ![print](../../../.gitbook/assets/configurarwhazingtype.png)
+![print](/broken/files/TKDXIEiBp1dhMfL7cZJV) ![print](/broken/files/EFwnuJdMF1RzAdkHLvx6)
 
 1. **URL Integração**: Pegue a URL na publicação do Typebot, não coloque a última `/` conforme exemplo acima.
 2. **Typebot - Slug**: Nome que aparece depois na URL quando você publica. Ver exemplo acima.
@@ -26,7 +26,7 @@
 
 ## Exemplo
 
-> <img src="broken-reference" alt="print" data-size="original">
+> <img src="/broken/files/z6ZzZKNv990y2VK5fYBi" alt="print" data-size="original">
 
 1.  Usando a variável abaixo, o valor retornado será "0985786468528":
 
@@ -241,4 +241,4 @@ phoneNumber: 5511999999999
 
 ## Como Compartilhar Fluxo com o Cliente
 
-![print](../../../.gitbook/assets/compartilharfluxo.png)
+![print](/broken/files/TaH6JzNxDgrb0PQNuV0V)

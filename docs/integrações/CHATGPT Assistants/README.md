@@ -11,7 +11,7 @@
 
 ## Configurar ChatGPT Assistant
 
-![print](../../../.gitbook/assets/telaintegracao.png)
+![print](/broken/files/CIlRSQG16vWDXuoEzV2l)
 
 1. **Fila**: Selecione a fila para a qual a IA deve transferir caso não consiga responder às perguntas ou resolver o problema. 2 **Mensagem de transferencia**: Mensagem será enviado cliente caso ele pedir falar com um humano
 2. **Intervalo (ms) entre mensagens**:
@@ -26,7 +26,7 @@ Resumo: a IA só responde uma vez a cada intervalo definido, mesmo que o cliente
 5. **ASSISTANT ID**: Identificação do assistente (começa com `asst_`). Obtenha seu ID [aqui](https://platform.openai.com/playground/assistants).
    * Ao criar o assistente, o formato da resposta deve ser **texto**.
 
-![print](../../../.gitbook/assets/openai.png)
+![print](/broken/files/MScEzzwpanxvjwplkqgI)
 
 ## Formato da Resposta da IA
 

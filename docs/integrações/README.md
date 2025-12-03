@@ -4,7 +4,7 @@
 
 Elas ficam no meu - Cadastros - Filas/Integrações
 
-![print](broken-reference)
+![print](/broken/files/JLAHHoKlbwtNT71ynQ0S)
 
 ### Para começar usar integrações
 
@@ -16,6 +16,6 @@ Elas ficam no meu - Cadastros - Filas/Integrações
 * Para integração ser executada imediatamente ao transferir atendimento marque opção "Inicia integração ao transferir" Agora ao transferir para aquela fila a integração será executada imediato.
 * Caso queira novo ticket já inicie naquela integração escolha a fila possui integração no canal
 
-![print](broken-reference)
+![print](/broken/files/xjFS2ANMh1cTiUzSAI4i)
 
 ### Para integrações entender áudio necessário ter transcrição ativa verificar documentação [Como Configurar Transcrição de Áudio](../integracoes/transcricao_audio.md)

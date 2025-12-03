@@ -1,6 +1,6 @@
 # Table of contents
 
-* [Whazing SaaS](README.md)
+* [Introdução](README.md)
 * [Documentação](docs/README.md)
   * [Módulos](docs/modulos/README.md)
     * [📢 Como Enviar Campanhas no Whazing](docs/modulos/campanha.md)

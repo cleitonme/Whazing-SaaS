@@ -12,7 +12,7 @@ O sistema utiliza **quatro critérios de prioridade** para definir **qual bot se
 
 Todos os contatos vinculados a uma _lane_ específica do CRM seguirão o bot configurado para ela. Ao enviar uma mensagem para o número do sistema, se **não houver tickets abertos ou pendentes**, o bot dessa _lane_ será acionado.
 
-![print](../../.gitbook/assets/crm.png)
+![print](/broken/files/minLLANXxyHVr5cqXi85)
 
 ***
 
@@ -28,7 +28,7 @@ Permite definir palavras que acionam um bot específico. Exemplo: se você cadas
 
 Cada canal pode ter um bot próprio. Quando o cliente envia uma mensagem para o número do sistema, caso **não existam tickets abertos ou pendentes**, o bot configurado nesse canal será utilizado.
 
-![print](../../.gitbook/assets/canais.png)
+![print](/broken/files/2jW2cgLCEEu6MnlYdqjt)
 
 ***
 
@@ -55,11 +55,11 @@ Essas prioridades determinam **qual bot será acionado** sempre que uma nova men
 
 A configuração do fluxo do chatbot é feita pela interface visual:
 
-![print](../../.gitbook/assets/montagembot.png)
+![print](/broken/files/0BkaiwzCmyfaHmNQogFx)
 
 ### 🔧 Elementos Básicos de Configuração
 
-![print](../../.gitbook/assets/configfluxo.png)
+![print](/broken/files/rd119Ke6iPb56FpoAMCU)
 
 A partir da versão **2.11.0**, estão disponíveis as seguintes interações:
 
@@ -113,20 +113,20 @@ A partir da versão **2.11.0**, estão disponíveis as seguintes interações:
 * Compatível com **API oficial** e **API Plus**.
 * Funciona parcialmente no **Baileys** (sem suporte oficial, pode parar a qualquer momento).
 
-![print](broken-reference) ![print](broken-reference)
+![print](/broken/files/lfUmZ5TksJ0zctniId7J) ![print](/broken/files/UtaHfKSKJk1wmHrOIXlL)
 
 ### 🔘 Enviar Botões
 
 * Compatível com **WhatsApp oficial**, **Facebook**, **Instagram** e **API Plus**.
 * Máximo de **3 botões**.
 
-![print](broken-reference)
+![print](/broken/files/7Y11em3xs3CNmw6oJEuh)
 
 ### 🔗 Botão com Link
 
 * Compatível com **API oficial** e **API Plus**.
 
-![print](broken-reference)
+![print](/broken/files/wopHxKUbKycXBiCIHF8o)
 
 ### 📍 Solicitar Localização
 
@@ -134,7 +134,7 @@ A partir da versão **2.11.0**, estão disponíveis as seguintes interações:
 * Útil para serviços de **entrega**.
 * Compatível com **API oficial** e **API Plus**.
 
-![print](broken-reference)
+![print](/broken/files/hH8Tr0LrscKeHFyBrANH)
 
 ### 🧩 Botão Dinâmico
 
@@ -142,7 +142,7 @@ A partir da versão **2.11.0**, estão disponíveis as seguintes interações:
 * Permite misturar tipos de botões: resposta, link, cópia, ligação, etc.
 * Alguns dispositivos pode aparecer mensagem não compativel
 
-![print](../../.gitbook/assets/dinamico.png)
+![print](/broken/files/7Y6PCknYfF29lR4PATrG)
 
 ### 🎠 Carrossel de Mídia
 
@@ -150,13 +150,13 @@ A partir da versão **2.11.0**, estão disponíveis as seguintes interações:
 * Envie várias imagens com botões interativos abaixo delas.
 * Alguns dispositivos pode aparecer mensagem não compativel
 
-![print](../../.gitbook/assets/carrossel1.png) ![print](../../.gitbook/assets/carrossel2.png)
+![print](/broken/files/sN7rSLuG3VBm0mupKP4A) ![print](/broken/files/cw03FYfxiInt1YUIYFBr)
 
 ***
 
 ## 🔄 Ordem das Interações
 
-![print](../../.gitbook/assets/configfluxo2.png)
+![print](/broken/files/8UKyU4zIsUrGQRWyYH0U)
 
 > ⚠️ **Importante:**
 >
@@ -167,7 +167,7 @@ A partir da versão **2.11.0**, estão disponíveis as seguintes interações:
 
 ## 🧩 Configuração de Condições
 
-![print](../../.gitbook/assets/condicoes.png)
+![print](/broken/files/uLZdarufUbe86czKwOrp)
 
 ### Tipos de Condições (em ordem de prioridade)
 
@@ -219,7 +219,7 @@ _(Essa mensagem pode ser personalizada nas configurações.)_
 
 <figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Opções disponíveis:**
 
@@ -237,7 +237,7 @@ _(Essa mensagem pode ser personalizada nas configurações.)_
 
 Ideal para empresas com **plantão ou suporte emergencial**.
 
-![print](../../.gitbook/assets/horario1.jpg) ![print](../../.gitbook/assets/horario2.jpg)
+![print](/broken/files/QL3S0qBAx4Pq966gU8IO) ![print](/broken/files/4zxdGteKgpx9M7Z21eVx)
 
 [Baixar exemplo](horario_de_atendimento.json)
 
@@ -269,11 +269,11 @@ Por favor, confirme se seu endereço é Rua Marechal Deodoro, 11?
 
 Integração com [https://cal.com/](https://cal.com/)
 
-![print](../../.gitbook/assets/barbearia.jpg)
+![print](/broken/files/QaZoDcrePPKJQcTVze9e)
 
 [Baixar exemplo](agendamentobarbearia.json)
 
-![print](../../.gitbook/assets/barbeariabotao.jpeg)
+![print](/broken/files/HPPVcDgFOVVvHOXmR5CT)
 
 [Baixar exemplo com botões](agendamentobarbeariabotao.json)
 

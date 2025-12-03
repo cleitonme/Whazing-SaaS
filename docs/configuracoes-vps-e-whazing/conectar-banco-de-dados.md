@@ -55,11 +55,11 @@ Se precisar acessar o banco de dados remotamente:
 
 🖼️ **Configuração do Banco de Dados**
 
-> <img src="../../.gitbook/assets/dadosbanco.png" alt="print" data-size="original">
+> <img src="/broken/files/64NXMzlrofA0OhwM7KKl" alt="print" data-size="original">
 
 🖼️ **Configuração SSH**
 
-> <img src="../../.gitbook/assets/dadosssh.png" alt="print" data-size="original">
+> <img src="/broken/files/IxUVkLlrJXYJgjWWURoh" alt="print" data-size="original">
 
 Agora você está pronto para acessar e gerenciar seu banco de dados PostgreSQL! 🚀
 

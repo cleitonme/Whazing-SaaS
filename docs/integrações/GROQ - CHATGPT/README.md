@@ -2,7 +2,7 @@
 
 ## Passo 1: Configurar a Integração
 
-![print](broken-reference)
+![print](/broken/files/sa3VIs9bKDYo9AfhiXwL)
 
 * **Model**: Selecione o modelo de linguagem (Groq ou ChatGPT).
 * **Prompt**: Escreva como a IA deve atender o cliente e agir.

@@ -1,6 +1,6 @@
 # API Whazing
 
-![print](broken-reference)
+![print](/broken/files/bWvt4QXCGQNJzkVgnynA)
 
 * Faça o [download do arquivo modelo](../api/apiizing.json)
 

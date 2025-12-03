@@ -5,14 +5,14 @@
 Certifique-se de que o plano no qual o cliente está cadastrado permite o uso de grupos.
 
 * **Modulo SaaS**: Veja na plataforma a disponibilidade para grupos.\
-  ![Plano](../../.gitbook/assets/plano.png)
+  ![Plano](/broken/files/jRySkJjHsSoo6NDciK03)
 
 ## 2. Desative a opção "Ignorar Mensagens de Grupo"
 
 Garanta que a configuração “Ignorar Mensagens de Grupo” esteja **desativada**.
 
 * **Onde encontrar**: Vá até as **Configurações** gerais.\
-  ![Configurações](../../.gitbook/assets/configuracoes.png)
+  ![Configurações](/broken/files/rFa8gex6CCjiShUKSDX0)
 
 ## 3. Ajuste a configuração do canal
 
@@ -21,7 +21,7 @@ No canal conectado, desative a opção **"Ignorar Grupos (necessário reiniciar 
 * **Passo a passo**:
   1. Acesse a lista de canais.
   2. Clique no ícone de lápis para editar.\
-     ![Canal](../../.gitbook/assets/canal.png)
+     ![Canal](/broken/files/xQT5LMLbjEtXvl7MNcAH)
   3. Após alterar, reinicie a conexão do canal.
 
 ***

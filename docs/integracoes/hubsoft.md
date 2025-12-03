@@ -13,7 +13,10 @@ Atenção:
 1. Acesse **Integrações** > clique em **Adicionar** e preencha os dados conforme mostrado na imagem abaixo:
 2.
 
-    <figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+```
+<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+```
+
 3. cadastrar dados para acesso Api Hubsoft
 
 ### Passo 2: Configurar Filas <a href="#passo-2-configurar-filas" id="passo-2-configurar-filas"></a>
@@ -21,7 +24,10 @@ Atenção:
 1. Acesse **Cadastros** > **Filas** > clique em **Adicionar** e preencha os dados conforme mostrado na imagem abaixo:
 2.
 
-    <figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+```
+<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
+```
+
 3. Na integração, selecione a opção criada no passo anterior.
 
 ### Passo 3: Criar o Chatbot <a href="#passo-3-criar-o-chatbot" id="passo-3-criar-o-chatbot"></a>
@@ -37,7 +43,7 @@ Telas do Hubsoft
 
 Criar usuário no icone de mais
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Preencher este dados
 

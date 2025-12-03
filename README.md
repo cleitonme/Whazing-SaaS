@@ -1,54 +1,61 @@
-# Whazing SaaS
+---
+description: Um sistema para gestão de atendimento multicanais centralizado.
+---
 
-Um sistema para gestão de atendimento multicanais centralizado.
+# Introdução
+
+#### Bem-vindo ao Whazing SaaS <a href="#bem-vindo-ao-whazing-saas" id="bem-vindo-ao-whazing-saas"></a>
+
+O Whazing é a solução completa para gerenciar múltiplos canais de atendimento em um só lugar.
+
+Entre na nossa comunidade para suporte e novidades. Aprenda como instalar e configurar o sistema. Link abaixo para acessar nosso grupo.
 
 [![Grupo do WhatsApp](https://img.shields.io/badge/WhatsApp-Grupo%20Whazing-brightgreen.svg)](https://grupo.whazing.com.br)
 
-## Demo do produto
+#### 🚀 Demo do Produto <a href="#demo-do-produto" id="demo-do-produto"></a>
 
 * [https://teste.whazing.com.br/](https://teste.whazing.com.br/)
-* usuario: admin@admin.com
-* senha: 123456
-* [Resumo Recursos](https://doc.whazing.com.br/principais-recursos-do-sistema)
+
+**Usuário:** `admin@admin.com`
+
+**Senha:** `123456`
+
+[Resumo de Recursos](principais-recursos-do-sistema.md)
 
 **IMPORTANTE**:
 
 * [Termos de USO](https://doc.whazing.com.br/termos-de-uso-da-plataforma)
 * [Contrato de Licença](https://doc.whazing.com.br/contrato-de-licenca-de-uso-de-software)
 
+#### 📦 Instalação Rápida <a href="#instalacao-rapida" id="instalacao-rapida"></a>
+
+Instalação super simples para pode ser instalado ou atualizado usando nosso instalador automático com simples comando
+
+```
+curl -sSL instalar.whazing.com.br | sudo bash
+```
+
+Para quem quiser mais controle pode fazer instalação manual conforme manual
+
 ## Screenshots
 
-> <img src=".gitbook/assets/saas.png" alt="print" data-size="original">
+<figure><img src=".gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-> <img src=".gitbook/assets/atendimento.png" alt="print" data-size="original">
+<figure><img src=".gitbook/assets/atendimento.png" alt=""><figcaption></figcaption></figure>
 
-> <img src=".gitbook/assets/solicitarteste.png" alt="print" data-size="original">
+<figure><img src=".gitbook/assets/kanban.png" alt=""><figcaption></figcaption></figure>
 
-> <img src=".gitbook/assets/kanban.png" alt="print" data-size="original">
+<figure><img src=".gitbook/assets/white.png" alt=""><figcaption></figcaption></figure>
 
-> <img src=".gitbook/assets/white.png" alt="print" data-size="original">
+<figure><img src=".gitbook/assets/dashboard.png" alt=""><figcaption></figcaption></figure>
 
-> <img src=".gitbook/assets/dashboard.png" alt="print" data-size="original">
+## Recomendação de VPS
 
-## Instalando
+Recomendamos uso de VPS nacionais como hostinger.&#x20;
 
-[https://doc.whazing.com.br/como-instalar-e-atualizar](https://doc.whazing.com.br/como-instalar-e-atualizar)
+Vps internacional tem [Hetzer](https://www.hetzner.com/), [Peramix](https://control.peramix.com/?affid=58), mas de preferencia VPS tempo resposta menor de 50ms
 
-Dados de Acesso
-
-admin@admin.com 123456
-
-* [Documentação oficial](https://doc.whazing.com.br)
-
-## Videos gravador por um cliente da prataforma
-
-* [Videos](https://www.youtube.com/@ZAPPRO-z4i/videos)
-* [Videos](https://www.youtube.com/watch?v=HFFFKtz7IgM)
-
-## Recomendação de VPS boa e barata
-
-* [Powerful cloud VPS & Web hosting.](https://control.peramix.com/?affid=58)
-* Cupom 25% desconto "WHAZING"
+* Cupom 25% desconto Peramix "WHAZING"
 
 ```bash
 WHAZING
@@ -60,6 +67,8 @@ WHAZING
 whazing
 ```
 
-## Adquirir Versão Premium
+#### 💎 Versão Premium <a href="#versao-premium" id="versao-premium"></a>
 
-Para retirar anuncios e adquirindo versão Premium Whatsapp +55 48 3197-0877 ou +55 48 3197-0599
+Adquira a versão Premium para remover anúncios.
+
+WhatsApp: \*\*[+55 48 3197-0877](https://wa.me/554831970877)\*\* ou \*\*[+55 48 3197-0599](https://wa.me/554831970599)\*\*

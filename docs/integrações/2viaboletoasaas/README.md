@@ -2,17 +2,17 @@
 
 ## Passo 1: Configurar Integração
 
-1. Acesse **Integrações** > clique em **Adicionar** e preencha os dados conforme mostrado na imagem abaixo: ![print](../../../.gitbook/assets/tela1.png)
+1. Acesse **Integrações** > clique em **Adicionar** e preencha os dados conforme mostrado na imagem abaixo: ![print](/broken/files/KxLXwlon7yusrVoMty19)
 2. Obtenha sua **Api Key** no site [Asaas](https://www.asaas.com/customerApiAccessToken/index).
 
 ## Passo 2: Configurar Filas
 
-1. Acesse **Cadastros** > **Filas** > clique em **Adicionar** e preencha os dados conforme mostrado na imagem abaixo: ![print](../../../.gitbook/assets/tela2.png)
+1. Acesse **Cadastros** > **Filas** > clique em **Adicionar** e preencha os dados conforme mostrado na imagem abaixo: ![print](/broken/files/x3onP0vFnsHhUKOP6oaA)
 2. Na integração, selecione a opção criada no passo anterior.
 
 ## Passo 3: Criar o Chatbot
 
-1. Crie um chatbot. Verifique a documentação para exemplos de como criar um chatbot. ![print](../../../.gitbook/assets/tela3.png)
+1. Crie um chatbot. Verifique a documentação para exemplos de como criar um chatbot. ![print](/broken/files/5GK448vKXK9YXIL1vTGV)
 
 ## Passo 4: Configurar Condições
 

@@ -27,7 +27,7 @@ Agora que você tem a senha de app, siga os passos para configurar o SMTP no Wha
 * **Porta SMTP:** `465`
 * **Habilitar SSL/TLS:** ✅ Ativado
 
-> <img src="../.gitbook/assets/email.png" alt="print" data-size="original">
+> <img src="/broken/files/wNEK2N214BJHYcmHqB9C" alt="print" data-size="original">
 
 ## 3. Conferindo as Configurações
 
