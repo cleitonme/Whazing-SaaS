@@ -4,7 +4,7 @@ description: >-
   características, custos e benefícios.
 ---
 
-# 📡 Canais Disponíveis
+# Canais Disponíveis
 
 ***
 
