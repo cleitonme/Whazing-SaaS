@@ -1,13 +1,19 @@
-# 📡 **Webhooks - Dados Enviados pelo WHAZING**
+---
+icon: square-up-right
+---
+
+# Webhook de Canal
+
+## 📡 **Webhooks - Dados Enviados pelo WHAZING**
 
 O WHAZING enviará requisições `POST` automaticamente toda vez que uma nova mensagem for **recebida** ou **enviada**.
 
-Cada tipo de evento enviará uma estrutura JSON específica.  
+Cada tipo de evento enviará uma estrutura JSON específica.\
 Se desejar sugerir o envio de novas informações, abra uma **issue** no repositório!
 
----
+***
 
-## 🆕 Evento: **Novo Ticket Criado pelo Usuário**
+### 🆕 Evento: **Novo Ticket Criado pelo Usuário**
 
 Enviado quando um **usuário cria um novo ticket**.
 
@@ -42,9 +48,9 @@ const dataToSend = {
 };
 ```
 
----
+***
 
-## 🆕 Evento: **Novo Ticket**
+### 🆕 Evento: **Novo Ticket**
 
 Enviado quando **um novo ticket é aberto**.
 
@@ -79,9 +85,9 @@ const dataToSend = {
 };
 ```
 
----
+***
 
-## 🔀 Evento: **Ticket Transferido**
+### 🔀 Evento: **Ticket Transferido**
 
 Enviado quando **um ticket é transferido** para outro setor ou usuário.
 
@@ -116,9 +122,9 @@ const dataToSend = {
 };
 ```
 
----
+***
 
-## ✅ Evento: **Ticket Fechado**
+### ✅ Evento: **Ticket Fechado**
 
 Enviado quando **um ticket é finalizado/encerrado**.
 
@@ -154,9 +160,9 @@ const dataToSend = {
 };
 ```
 
----
+***
 
-## 💬 Evento: **Mensagem Recebida ou Enviada**
+### 💬 Evento: **Mensagem Recebida ou Enviada**
 
 Enviado a cada **nova mensagem** (enviada ou recebida).
 
@@ -204,12 +210,12 @@ const dataToSend = {
 };
 ```
 
----
+***
 
-## 🔑 Sobre o Campo `apiConfig`
+### 🔑 Sobre o Campo `apiConfig`
 
-- O campo `apiConfig` é preenchido quando você configura a opção `externalKey` no ticket.
-- Ele permite associar uma **ID única** do seu sistema para facilitar a automação via Webhooks.
+* O campo `apiConfig` é preenchido quando você configura a opção `externalKey` no ticket.
+* Ele permite associar uma **ID única** do seu sistema para facilitar a automação via Webhooks.
 
 Exemplo:
 
@@ -219,14 +225,14 @@ Exemplo:
 }
 ```
 
----
+***
 
-# 🛠️ Observações
+## 🛠️ Observações
 
-- Todos os dados são enviados no formato `application/json`.
-- Recomendamos que o seu sistema esteja preparado para tratar os diferentes tipos de `Type` que serão recebidos.
-- Novos tipos de eventos podem ser adicionados no futuro. Acompanhe o repositório para atualizações!
+* Todos os dados são enviados no formato `application/json`.
+* Recomendamos que o seu sistema esteja preparado para tratar os diferentes tipos de `Type` que serão recebidos.
+* Novos tipos de eventos podem ser adicionados no futuro. Acompanhe o repositório para atualizações!
 
----
+***
 
 > Feito para tornar seu sistema ainda mais integrado com o WHAZING! 🚀

@@ -2,6 +2,7 @@
 description: >-
   A Recepção Inteligente é um recurso que utiliza IA (Inteligência Artificial)
   para realizar um pré-atendimento automático aos clientes.
+icon: bots
 ---
 
 # Recepção inteligente
@@ -37,7 +38,7 @@ Também é possível selecionar o **modelo de linguagem** desejado.
 
 #### 2. Definir API KEY
 
-Informe a chave de API do serviço escolhido (Groq,  ChatGPT ou Gemini).
+Informe a chave de API do serviço escolhido (Groq, ChatGPT ou Gemini).
 
 ***
 

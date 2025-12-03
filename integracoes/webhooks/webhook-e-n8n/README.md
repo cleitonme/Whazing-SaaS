@@ -1,3 +1,7 @@
+---
+icon: webhook
+---
+
 # Webhook e N8N
 
 ## 🌐 **WebHook - Visão Geral**
@@ -69,8 +73,8 @@ Em vez de consultar periodicamente o Whazing para verificar mudanças, seu siste
 
 ## 📚 **Modelos para Estudo**
 
-* [Baixe e importe o exemplo de fluxo compatível com o Whazing](../../integra%C3%A7%C3%B5es/Webhook%20e%20N8N/Modelo_Whazing_n8n.json)
-* [Baixe e importe o modelo com exemplos de endpoints adicionais](../../integra%C3%A7%C3%B5es/Webhook%20e%20N8N/modelo_com_alguns_endpoints.json)
+* [Baixe e importe o exemplo de fluxo compatível com o Whazing](../../../docs/integra%C3%A7%C3%B5es/Webhook%20e%20N8N/Modelo_Whazing_n8n.json)
+* [Baixe e importe o modelo com exemplos de endpoints adicionais](../../../docs/integra%C3%A7%C3%B5es/Webhook%20e%20N8N/modelo_com_alguns_endpoints.json)
 
 > 🙌 Agradecimento especial a **Elizeu Garcez** e **Ricardo Schonfelder Filho** por compartilharem os modelos.
 
@@ -84,6 +88,6 @@ Recomenda-se sempre consultar a **documentação oficial da API**, pois o pacote
 
 ***
 
-<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt="Exemplo de fluxo N8N integrado ao Whazing"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt="Exemplo de fluxo N8N integrado ao Whazing"><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1).png" alt="Configuração de WebHook no Whazing"><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt="Configuração de WebHook no Whazing"><figcaption></figcaption></figure>

@@ -1,6 +1,13 @@
-# Configurar Typebot
+---
+description: Configurar Typebot
+icon: user-robot
+---
 
-![print](/broken/files/TKDXIEiBp1dhMfL7cZJV) ![print](/broken/files/EFwnuJdMF1RzAdkHLvx6)
+# Typebot
+
+<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 1. **URL Integração**: Pegue a URL na publicação do Typebot, não coloque a última `/` conforme exemplo acima.
 2. **Typebot - Slug**: Nome que aparece depois na URL quando você publica. Ver exemplo acima.
@@ -26,7 +33,7 @@
 
 ## Exemplo
 
-> <img src="/broken/files/z6ZzZKNv990y2VK5fYBi" alt="print" data-size="original">
+> ![](<../../../.gitbook/assets/image (2).avif>)
 
 1.  Usando a variável abaixo, o valor retornado será "0985786468528":
 
@@ -235,10 +242,10 @@ phoneNumber: 5511999999999
 
 **IMPORTANTE**:
 
-* Veja como instalar o Typebot na mesma VPS que o Whazing [aqui](Comoinstalar.md).
+* Veja como instalar o Typebot na mesma VPS que o Whazing [aqui](comoinstalar.md).
 
 ## Exemplo de fluxo para importar no Typebot
 
 ## Como Compartilhar Fluxo com o Cliente
 
-![print](/broken/files/TaH6JzNxDgrb0PQNuV0V)
+<figure><img src="../../../.gitbook/assets/image (4).avif" alt=""><figcaption></figcaption></figure>

@@ -16,7 +16,7 @@ Essas variáveis utilizam os valores cadastrados em **Informações Adicionais d
 
 📷 _Exemplo de cadastro:_
 
-<figure><img src="../../.gitbook/assets/image.avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10).avif" alt=""><figcaption></figcaption></figure>
 
 
 

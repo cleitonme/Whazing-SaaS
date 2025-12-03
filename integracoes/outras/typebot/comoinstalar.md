@@ -1,12 +1,16 @@
-# Como instalar
+---
+icon: desktop-arrow-down
+---
+
+# Instalação Typebot
 
 ## Instalar Typebot mesma VPS WHAZING
 
-Tutorial com muitos detalhes então preste bastante atenção e veja o video que me baseado pra fazer o mesmo, para ajudar entender melhor os passos. Lembrando no video ele usa traefik e alteramos usar nginx para ser compativel mesma vps whazing
+Tutorial com muitos detalhes então preste bastante atenção e veja o vídeo que me baseado pra fazer o mesmo, para ajudar entender melhor os passos. Lembrando no vídeo ele usa traefik e alteramos usar caddy para ser compatível mesma vps whazing
 
-Baseado tutorial alterado para usar com ngnix: https://rwebtec.com.br/instalar-typebot-portainer-lucrar-vendendo-assinaturas/
+Baseado tutorial alterado para usar com caddy: https://rwebtec.com.br/instalar-typebot-portainer-lucrar-vendendo-assinaturas/
 
-### CRIAR SUBDOMINIO E APONTAR PARA O IP DA SUA VPS
+### CRIAR SUBDOMÍNIO E APONTAR PARA O IP DA SUA VPS
 
 Exemplo: chatbot.webconfiavel.com.br chatbotapi.webconfiavel.com.br minios3.webconfiavel.com.br s3.webconfiavel.com.br
 
@@ -149,8 +153,6 @@ s3.webconfiavel {
 sudo systemctl restart caddy
 ```
 
-
-
 . Agora acesse url minio "minios3.webconfiavel.com.br" - MINIO\_ROOT\_USER=rodnei - MINIO\_ROOT\_PASSWORD=Admin33Admin77
 
 * Dentro do minio siga instruções abaixo
@@ -217,7 +219,7 @@ networks:
 ```
 
 * Agora vamos voltar Portainer - "Stacks" - "Add Stack" - typebot\_builder
-* Web editor - Coloque conteudo abaixo - alterar com dados email, semelhante o que você fez antes etc para funcionar - no campos S3 vai colocar dados que você gerou acima
+* Web editor - Coloque conteúdo abaixo - alterar com dados email, semelhante o que você fez antes etc para funcionar - no campos S3 vai colocar dados que você gerou acima
 
 ```bash
 version: "3.7"
@@ -275,7 +277,7 @@ networks:
 sudo nano /etc/caddy/Caddyfile
 ```
 
-. Acrecentar a dados do typebot
+. Acrescentar a dados do typebot
 
 ```
 chatbotapi.webconfiavel.com.br {
@@ -311,9 +313,8 @@ Adicionar typebot Builder
 docker network connect bridge typebotbuilder
 ```
 
-Adicionar  Typebot Viewer
+Adicionar Typebot Viewer
 
 ```
 docker network connect bridge typebotviewer
 ```
-

@@ -63,7 +63,7 @@
 
 #### [**Integrações**](../integrações/)
 
-* Conecte o sistema com outras ferramentas como [ChatGPT,](<../integrações/GROQ - CHATGPT/>) [ChatGPT Assistent](<../integrações/CHATGPT Assistants/>), [Groq](<../integrações/GROQ - CHATGPT/>), [Typebot](../integrações/TypeBot/), [n8n](<../integrações/Webhook e N8N/>), [Api](./#api) entre outros.
+* Conecte o sistema com outras ferramentas como [ChatGPT,](../../integracoes/inteligencia-artificial/groq-chatgpt.md) [ChatGPT Assistent](../../integracoes/inteligencia-artificial/chatgpt-assistants.md), [Groq](../../integracoes/inteligencia-artificial/groq-chatgpt.md), [Typebot](../../integracoes/outras/typebot/), [n8n](../../integracoes/webhooks/webhook-e-n8n/), [Api](./#api) entre outros.
 
 #### **Etiquetas (Tags)**
 

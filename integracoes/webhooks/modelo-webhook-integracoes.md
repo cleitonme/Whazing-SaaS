@@ -1,12 +1,18 @@
-# 📬 **Webhook - Mensagens Recebidas ou Enviadas**
+---
+icon: square-up-right
+---
+
+# Webhook de Integrações
+
+## 📬 **Webhook - Mensagens Recebidas ou Enviadas**
 
 A cada **nova mensagem recebida ou enviada**, o WHAZING dispara automaticamente uma requisição `POST` para o seu endpoint configurado.
 
 Se desejar sugerir o envio de novos campos, abra uma **issue** no repositório!
 
----
+***
 
-## 📦 Estrutura dos Dados Enviados
+### 📦 Estrutura dos Dados Enviados
 
 ```javascript
 const dataToSend = {
@@ -56,11 +62,11 @@ const dataToSend = {
 };
 ```
 
----
+***
 
-## 🔑 Sobre o Campo `apiConfig`
+### 🔑 Sobre o Campo `apiConfig`
 
-O campo `apiConfig` é utilizado para identificar o ticket em **sistemas externos**.  
+O campo `apiConfig` é utilizado para identificar o ticket em **sistemas externos**.
 
 Ele é preenchido automaticamente quando você informa um valor no campo `externalKey` ao criar o ticket via API.
 
@@ -74,15 +80,15 @@ Ele é preenchido automaticamente quando você informa um valor no campo `extern
 
 Esse campo é extremamente útil para vincular o ticket a alguma operação ou registro no seu sistema próprio.
 
----
+***
 
-# 🛠️ Observações Importantes
+## 🛠️ Observações Importantes
 
-- Os dados são enviados no formato `application/json`.
-- Todos os webhooks ocorrem em tempo real.
-- Esteja preparado para receber múltiplos eventos em sequência.
-- Novos campos podem ser adicionados futuramente — recomendamos manter o parser do seu sistema flexível!
+* Os dados são enviados no formato `application/json`.
+* Todos os webhooks ocorrem em tempo real.
+* Esteja preparado para receber múltiplos eventos em sequência.
+* Novos campos podem ser adicionados futuramente — recomendamos manter o parser do seu sistema flexível!
 
----
+***
 
 > Conecte suas mensagens, tickets e automações em tempo real com o WHAZING! 🚀

@@ -6,7 +6,7 @@
 * usuário: [admin@admin.com](mailto:admin@admin.com)
 * senha: 123456
 
-<figure><img src=".gitbook/assets/image (6) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/image (6) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="/broken/files/xLeuB0ef1YwWQ9ZMFoo5" alt=""><figcaption></figcaption></figure>
 

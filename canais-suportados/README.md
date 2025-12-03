@@ -52,7 +52,7 @@ Cadastrar através da URL [https://hub.whazing.com.br/](https://hub.whazing.com.
 
 Usar cupom desconto: whazing
 
-<figure><img src="../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (5) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 * [**WhatsApp Oficial**](api-oficial/api-oficial/)
   * Ativação por canal: **R$ 150,00**
@@ -120,7 +120,7 @@ Usar cupom desconto: whazing
 | <p><strong>API Não Oficial</strong> (WhatsApp Baileys /</p><p>WhatsApp Wuzapi - WhatsMeow/ Telegram)</p> | Gratuita | R$ 0,00                            | Envio de mensagens básicas         | Sem custo                          |
 | **API PLUS** (Não Oficial Premium)                                                                       | Paga     | Baixo custo por canal              | Botões, listas, links, localização | Estável, leve na VPS               |
 | **Hub NotificaMe** (WhatsApp, IG, FB, Webchat)                                                           | Paga     | Ativação + mensalidade R$ 50/canal | Recursos oficiais (via hub)        | Suporte multiplataforma            |
-| **Hub ConnectionHub** (IG, FB)                                                        | Paga     | mensalidade R$ 25/canal            | Recursos oficiais (via hub)        | Suporte multiplataforma            |
+| **Hub ConnectionHub** (IG, FB)                                                                           | Paga     | mensalidade R$ 25/canal            | Recursos oficiais (via hub)        | Suporte multiplataforma            |
 | **API Oficial Meta (WABA)**                                                                              | Paga     | Conforme uso da API (Meta)         | Templates, botões, multimídia      | Oficial, maior garantia, escalável |
 
 ***

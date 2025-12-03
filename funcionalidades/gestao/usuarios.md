@@ -4,7 +4,7 @@ icon: users
 
 # Usuários
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Essa tela cadastro usuários
 
@@ -12,7 +12,7 @@ Essa tela cadastro usuários
 
 Essa opção definir qual canal usuários terá acesso para abrir um ticket ou agendar mensagem. Se não tiver nenhum canal definido apresenta mensagem de erro "Você não tem permissão acesso nenhum canal"
 
-<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 Caso tenha configurado wavoip defini permissão de acesso ao serviço pelo usuário
 

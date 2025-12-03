@@ -16,7 +16,7 @@ O sistema utiliza **quatro critérios de prioridade** para definir **qual bot se
 
 Todos os contatos vinculados a uma _lane_ específica do CRM seguirão o bot configurado para ela. Ao enviar uma mensagem para o número do sistema, se **não houver tickets abertos ou pendentes**, o bot dessa _lane_ será acionado.
 
-<figure><img src="../../.gitbook/assets/image (7).avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (7) (1).avif" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -32,7 +32,7 @@ Permite definir palavras que acionam um bot específico. Exemplo: se você cadas
 
 Cada canal pode ter um bot próprio. Quando o cliente envia uma mensagem para o número do sistema, caso **não existam tickets abertos ou pendentes**, o bot configurado nesse canal será utilizado.
 
-<figure><img src="../../.gitbook/assets/image (8).avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (8) (1).avif" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -59,7 +59,7 @@ Essas prioridades determinam **qual bot será acionado** sempre que uma nova men
 
 A configuração do fluxo do chatbot é feita pela interface visual:
 
-<figure><img src="../../.gitbook/assets/image (9).avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1).avif" alt=""><figcaption></figcaption></figure>
 
 ### 🔧 Elementos Básicos de Configuração
 
@@ -166,7 +166,7 @@ A partir da versão **2.11.0**, estão disponíveis as seguintes interações:
 
 ## 🔄 Ordem das Interações
 
-<figure><img src="../../.gitbook/assets/image (10).avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (10) (1).avif" alt=""><figcaption></figcaption></figure>
 
 > ⚠️ **Importante:**
 >
@@ -229,7 +229,7 @@ _(Essa mensagem pode ser personalizada nas configurações.)_
 
 <figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Opções disponíveis:**
 

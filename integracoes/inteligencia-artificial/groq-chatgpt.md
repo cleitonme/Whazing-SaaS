@@ -1,13 +1,18 @@
-# Configurar Groq ou ChatGPT
+---
+description: Configurar Groq ou ChatGPT
+icon: message-bot
+---
+
+# Groq/ChatGPT
 
 ## Passo 1: Configurar a Integração
 
-![print](/broken/files/sa3VIs9bKDYo9AfhiXwL)
+<figure><img src="../../.gitbook/assets/image (1).avif" alt=""><figcaption></figcaption></figure>
 
 * **Model**: Selecione o modelo de linguagem (Groq ou ChatGPT).
 * **Prompt**: Escreva como a IA deve atender o cliente e agir.
 * **Fila**: Escolha a fila para a qual a IA deve transferir se não conseguir responder ou resolver o problema.
-* **Mensagem de transferencia**: Mensagem será enviado cliente caso ele pedir falar com um humano
+* **Mensagem de transferência**: Mensagem será enviado cliente caso ele pedir falar com um humano
 * **Intervalo (ms) entre mensagens**:
 
 Define o tempo de espera (em milissegundos) entre as respostas da IA. Por exemplo: 15000 ms significa 15 segundos.

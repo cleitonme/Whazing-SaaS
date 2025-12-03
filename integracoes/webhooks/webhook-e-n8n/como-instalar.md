@@ -1,4 +1,8 @@
-# Como Instalar
+---
+icon: sign-posts-wrench
+---
+
+# Instalação N8N
 
 ## Instalar N8N mesma VPS WHAZING
 
@@ -120,7 +124,7 @@ networks:
     name: n8n_rede
 ```
 
-. Editar arquivo caddy&#x20;
+. Editar arquivo caddy
 
 ```bash
 sudo nano /etc/caddy/Caddyfile
@@ -137,7 +141,7 @@ n8n.webconfiavel.com.br {
 }
 ```
 
-.&#x20;
+.
 
 Reiniciar o caddy
 
