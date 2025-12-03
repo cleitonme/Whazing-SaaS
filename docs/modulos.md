@@ -5,8 +5,8 @@
 #### **CRM**
 
 * **Kanban:** Organize visualmente os atendimentos de forma prática e intuitiva.
-* [**Chatbot na Lane**](../chatbotinterno/)**:** Configuração de um chatbot para contatos subsequentes com tickets fechados, substituindo o bot padrão do canal.
-* [**Follow-up**](follow-up.md): Usado para enviar mensagens automáticas para o cliente, quando marcada e cliente colocado nessa lane vai ser acionado envio de mensagens
+* [**Chatbot na Lane**](chatbotinterno/)**:** Configuração de um chatbot para contatos subsequentes com tickets fechados, substituindo o bot padrão do canal.
+* [**Follow-up**](modulos/follow-up.md): Usado para enviar mensagens automáticas para o cliente, quando marcada e cliente colocado nessa lane vai ser acionado envio de mensagens
 * **Posição na lista**: Ordem que lane aparece na lista
 
 #### **Chat Interno**
@@ -21,7 +21,7 @@
 
 * Módulo para designar tarefas a usuários da plataforma, incluindo prazos para execução.
 
-#### [**Despedida**](despedida.md)
+#### [**Despedida**](modulos/despedida.md)
 
 * Criação de mensagens pré prontas para enviar ao cliente ao finalizar o atendimento, quando solicitar finalizar ticket vai aparecer essa lista mensagens para ser enviada.
 
@@ -29,11 +29,11 @@
 
 * Agende mensagens para envio automático em datas programadas.
 
-#### [**Ajuda**](../../modulo-saas/criarajuda.md)
+#### [**Ajuda**](../modulo-saas/criarajuda.md)
 
 * Espaço para adicionar manuais de uso da plataforma, em formato de texto ou vídeos.
 
-#### [**SaaS**](../../modulo-saas/)
+#### [**SaaS**](../modulo-saas/)
 
 * Módulo exclusivo para Super Usuários, permitindo criar acessos, definir planos, configurar a plataforma, personalizar cores e gerenciar formas de pagamento.
 
@@ -51,7 +51,7 @@
 
 #### **Usuários**
 
-* Controle de acesso à plataforma, com níveis de permissão baseados nos perfis. Veja o documento "[Perfil Usuário"](../../funcionalidades/gestao/perfil_usuario.md) para mais detalhes.
+* Controle de acesso à plataforma, com níveis de permissão baseados nos perfis. Veja o documento "[Perfil Usuário"](../funcionalidades/gestao/perfil_usuario.md) para mais detalhes.
 
 #### **Equipes**
 
@@ -61,23 +61,23 @@
 
 * Organize e distribua atendimentos entre os atendentes ou setores da empresa, direcionando as mensagens para as equipes adequadas. Exemplo de filas: "Suporte", "Financeiro" ou "Falar com Atendente".
 
-#### [**Integrações**](../integrações/)
+#### [**Integrações**](/broken/pages/TItvrciesES0gq1JSC7r)
 
-* Conecte o sistema com outras ferramentas como [ChatGPT,](../../integracoes/inteligencia-artificial/groq-chatgpt.md) [ChatGPT Assistent](../../integracoes/inteligencia-artificial/chatgpt-assistants.md), [Groq](../../integracoes/inteligencia-artificial/groq-chatgpt.md), [Typebot](../../integracoes/outras/typebot/), [n8n](../../integracoes/webhooks/webhook-e-n8n/), [Api](./#api) entre outros.
+* Conecte o sistema com outras ferramentas como [ChatGPT,](../integracoes/inteligencia-artificial/groq-chatgpt.md) [ChatGPT Assistent](../integracoes/inteligencia-artificial/chatgpt-assistants.md), [Groq](../integracoes/inteligencia-artificial/groq-chatgpt.md), [Typebot](../integracoes/outras/typebot/), [n8n](../integracoes/webhooks/webhook-e-n8n/), [Api](modulos.md#api) entre outros.
 
 #### **Etiquetas (Tags)**
 
 * Categorize e identifique atendimentos ou clientes com tags específicas, como "Suporte Técnico", "Vendas" ou "Reclamação", para facilitar a organização e busca.
 
-#### [**Campanhas**](./#campanhas)
+#### [**Campanhas**](modulos.md#campanhas)
 
 * Envio de mensagens em massa para uma lista de contatos, com o objetivo de promover produtos, serviços ou informar novidades.
 
-#### [**Canais**](../../canais-suportados/)
+#### [**Canais**](../canais-suportados/)
 
 * Cadastro de canais para recebimento de mensagens. Canais suportados: WhatsApp, Instagram, Facebook, Telegram e Webchat (chat para sites).
 
-#### [**API**](./#api)
+#### [**API**](modulos.md#api)
 
 * Envio de mensagens através de sistemas externos, integrando funcionalidades.
 
@@ -85,7 +85,7 @@
 
 * Defina horários da empresa, alterando o comportamento do bot fora do expediente.
 
-#### [**Chatbot**](./#chat-interno)
+#### [**Chatbot**](modulos.md#chat-interno)
 
 * Criação de fluxos de atendimento automáticos personalizados.
 

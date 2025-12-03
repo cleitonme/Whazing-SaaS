@@ -1,4 +1,9 @@
-# 📲 Instalação do PWA e habilitação de notificações
+---
+description: Instalação do PWA e habilitação de notificações
+icon: mobile-retro
+---
+
+# PWA CELULAR
 
 A aplicação pode ser instalada como **PWA (Progressive Web App)** no celular, funcionando como se fosse um aplicativo normal.\
 Após instalar, é importante habilitar as **notificações WebPush** para receber alertas em tempo real.
@@ -75,7 +80,7 @@ Se não aparecer o aviso:
 * Em alguns aparelhos Android, o ícone vai para uma **pasta de apps**. Procure na gaveta de aplicativos.
 * No iPhone, verifique se não há **restrições de tela** (Ajustes > Tempo de Uso > Restrições).
 
-<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

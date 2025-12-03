@@ -2,7 +2,7 @@
 
 ![print](/broken/files/bWvt4QXCGQNJzkVgnynA)
 
-* Faça o [download do arquivo modelo](../api/apiizing.json)
+* Faça o [download do arquivo modelo](../docs/api/apiizing.json)
 
 ALGUNS ENDPOINTS NOVOS PODEM NÃO ESTAR NA DOCUMENTAÇÃO SEMPRE BAIXE MODELO POSTMAN
 
