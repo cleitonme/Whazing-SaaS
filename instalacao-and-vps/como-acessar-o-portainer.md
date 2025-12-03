@@ -3,9 +3,10 @@ description: >-
   O Portainer é uma interface gráfica para gerenciar containers Docker. Com ele,
   você pode criar, parar e monitorar serviços de forma simples, direto pelo
   navegador.
+icon: container-storage
 ---
 
-# 📌 Como acessar o Portainer
+# Portainer
 
 Este guia vai te mostrar como **acessar e configurar o Portainer em um servidor Ubuntu 22**, mesmo que você nunca tenha feito isso antes.
 

@@ -1,4 +1,9 @@
-# 🔁 Trocar o Domínio da Instalação Whazing
+---
+description: Trocar o Domínio da Instalação Whazing
+icon: globe
+---
+
+# Trocar Domínio
 
 > **Importante:** sempre use o usuário `deploy`.\
 > Quando for editar arquivos do sistema, use `sudo`.
