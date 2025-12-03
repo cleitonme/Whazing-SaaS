@@ -1,12 +1,15 @@
-# Como Configurar a Avaliação de Atendimento
+---
+description: Como Configurar a Avaliação de Atendimento
+icon: star
+---
+
+# Avaliação
 
 ## **Passos para Configuração**
 
 1. Acesse **Canais** na plataforma.
 2. Clique no ícone de lápis para **editar** o canal desejado.
 3. Localize a opção **Habilitar Avaliação de Atendimento** e ative-a.
-
-![print](/broken/files/hAshc1mawT0YHLufxJJJ)
 
 ## **Campos para Configuração**
 
@@ -56,4 +59,4 @@ Avaliações em canais que suporta plus\_whatsapp e api oficial é possível env
 3. Caso válido, recebe: "Obrigado por compartilhar sua opinião!"
 4. A equipe pode visualizar a avaliação nos relatórios para analisar desempenho.
 
-![print](/broken/files/L0oe0NzA30valN7xjMbh)
+<figure><img src="../../.gitbook/assets/image (1).avif" alt=""><figcaption></figcaption></figure>
