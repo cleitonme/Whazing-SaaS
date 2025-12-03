@@ -1,2 +1,0 @@
-# Contrato/termos
-

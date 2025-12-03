@@ -6,8 +6,6 @@
     * Trocar ícones, imagens e nome no painel
     * **Retirar referências ao nome Whazing** no sistema
 
-
-
     💼 Tenha seu próprio sistema de atendimento com a sua marca!
 
     Transforme-se em um provedor de soluções digitais com nossa plataforma SaaS de multiatendimento.\

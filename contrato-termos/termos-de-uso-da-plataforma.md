@@ -4,7 +4,7 @@
 
 Ao utilizar este software, você concorda com os termos e condições estabelecidos abaixo. Caso não concorde, não utilize o software. O uso contínuo do software indica sua aceitação integral destes termos.
 
----
+***
 
 #### 2. Validador de Licença
 
@@ -16,7 +16,7 @@ Nosso sistema inclui um validador de licença que coleta informações específi
 
 Essas informações são necessárias para garantir que a licença esteja em conformidade com os termos de uso.
 
----
+***
 
 #### 3. Versões do Software
 
@@ -35,7 +35,7 @@ Essas informações são necessárias para garantir que a licença esteja em con
 * Suporte individual, remoto ou personalizado poderá ser prestado **mediante cobrança adicional por hora técnica**.
 * Instalação, atualizações, configuração e manutenção são de **responsabilidade exclusiva do cliente**. Caso seja necessário apoio técnico nesses processos, haverá cobrança adicional.
 
----
+***
 
 #### 4. Custos Adicionais e Serviços de Terceiros
 
@@ -45,13 +45,11 @@ O cliente reconhece e concorda que determinados recursos do sistema dependem de 
 * Domínios, certificados SSL, e configurações de DNS;
 * Tokens de IA e serviços de inteligência artificial;
 * Serviços de envio de mensagens, integrações ou APIs de terceiros que cobram por uso;
-* Canais que exigem contratação separada para funcionamento — lista disponível em:
-  [https://doc.whazing.com.br/canais-suportados](https://doc.whazing.com.br/canais-suportados)
+* Canais que exigem contratação separada para funcionamento — lista disponível em: [https://doc.whazing.com.br/canais-suportados](https://doc.whazing.com.br/canais-suportados)
 
-Esses custos são de **responsabilidade exclusiva do cliente**.
-A desenvolvedora **não se responsabiliza** por valores cobrados, tarifas extras, mudanças de preço, limitações, instabilidades ou regras impostas por serviços externos.
+Esses custos são de **responsabilidade exclusiva do cliente**. A desenvolvedora **não se responsabiliza** por valores cobrados, tarifas extras, mudanças de preço, limitações, instabilidades ou regras impostas por serviços externos.
 
----
+***
 
 #### 5. Propriedade Intelectual e Medidas Legais
 
@@ -61,13 +59,13 @@ Todo o conteúdo, código-fonte, identidade visual, marca e demais elementos do 
 
 Qualquer tentativa de burlar o sistema de licenciamento, remover referências à marca **Whazing** ou distribuir versões não autorizadas será considerada violação grave e resultará em medidas legais, incluindo sanções civis e penais.
 
----
+***
 
 #### 6. Uso Responsável e Conformidade Legal
 
 O usuário concorda em utilizar o software de forma responsável, em conformidade com as leis aplicáveis, incluindo normas de privacidade e proteção de dados.
 
----
+***
 
 #### 7. Limitação de Responsabilidade
 
@@ -80,13 +78,13 @@ A empresa desenvolvedora **não se responsabiliza** por:
 
 A gestão da estrutura de TI e o cumprimento das leis aplicáveis são de responsabilidade do cliente.
 
----
+***
 
 #### 8. Alterações nos Termos
 
 Reservamo-nos o direito de alterar estes termos a qualquer momento, sem aviso prévio. É responsabilidade do usuário revisar periodicamente os termos de uso. O uso contínuo do software após alterações implica aceitação das novas condições.
 
----
+***
 
 #### 9. Aceitação Final
 
