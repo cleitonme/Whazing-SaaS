@@ -1,4 +1,8 @@
-# Para garantir melhor segurança e desempenho, vamos configurar o Whazing para rodar pelo Cloudflare
+---
+icon: shield-halved
+---
+
+# Túnel Cloudflare
 
 1. **Configuração do Domínio no Cloudflare**:
    * Certifique-se de que seu domínio está devidamente configurado no Cloudflare.
@@ -16,9 +20,9 @@
    * Se a instalação for bem-sucedida, o túnel aparecerá na seção "Connectors".
    * Clique em "Próxima" para continuar.
 
-![print](/broken/files/JOPbAh0Dxp3nVW96FmK3)
+<figure><img src="../.gitbook/assets/backend.png" alt=""><figcaption></figcaption></figure>
 
-4. **Configuração do Backend**:
+1. **Configuração do Backend**:
    * Nesta tela, configure o domínio do seu backend:
      * Tipo: "HTTP"
      * URL: "127.0.0.1:3000"
@@ -26,9 +30,9 @@
    * Na lista de túneis, clique nos três pontos ao lado do túnel e selecione "Configurar".
    * Adicione o nome do host público.
 
-![print](/broken/files/4IT4JTH8vtBsYtFutItl)
+<figure><img src="../.gitbook/assets/frontend.png" alt=""><figcaption></figcaption></figure>
 
-5. **Configuração do Frontend**:
+1. **Configuração do Frontend**:
    * Nesta tela, configure o domínio do seu frontend:
      * Tipo: "HTTP"
      * URL: "127.0.0.1:3333"

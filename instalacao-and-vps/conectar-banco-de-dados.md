@@ -1,4 +1,8 @@
-# Conectar ao Banco de Dados PostgreSQL
+---
+icon: database
+---
+
+# Banco de Dados
 
 ## 🔑 Como descobrir a senha do banco no Whazing
 

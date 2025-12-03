@@ -1,4 +1,8 @@
-# Manual de Backup e Restauração para Banco de Dados PostgreSQL no Docker
+---
+icon: download
+---
+
+# Backup
 
 ### Comando simplificado gera um backup banco de dados mesma pasta que comando executado
 
@@ -41,7 +45,7 @@ docker ps
 
 Anote o **CONTAINER ID** correspondente ao PostgreSQL, pois será necessário nos próximos comandos.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

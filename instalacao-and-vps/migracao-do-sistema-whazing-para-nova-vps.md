@@ -2,9 +2,10 @@
 description: >-
   Este manual explica passo a passo como migrar o sistema para outra VPS. Mesmo
   quem não tem experiência com servidores conseguirá seguir.
+icon: truck-container
 ---
 
-# Migração do Sistema Whazing para Nova VPS
+# Migração de VPS
 
 ***
 
@@ -22,7 +23,7 @@ description: >-
 #### 1. Avisar clientes e suporte
 
 * [ ] Avisar clientes que o sistema ficará indisponível.
-* [ ] Enviar mensagem para **+55 48 3197-0599*** solicitando:
+* [ ] Enviar mensagem para **+55 48 3197-0599**\* solicitando:
   * Liberação da licença premium na nova VPS.
   * Confirmação da janela de manutenção.
 
