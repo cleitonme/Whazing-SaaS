@@ -5,8 +5,8 @@
 #### **CRM**
 
 * **Kanban:** Organize visualmente os atendimentos de forma prática e intuitiva.
-* [**Chatbot na Lane**](../chatbotinterno/)**:** Configuração de um chatbot para contatos subsequentes com tickets fechados, substituindo o bot padrão do canal.
-* [**Follow-up**](follow-up.md): Usado para enviar mensagens automáticas para o cliente, quando marcada e cliente colocado nessa lane vai ser acionado envio de mensagens
+* [**Chatbot na Lane**](../../funcionalidades/automacao/chatbotinterno.md)**:** Configuração de um chatbot para contatos subsequentes com tickets fechados, substituindo o bot padrão do canal.
+* [**Follow-up**](../../funcionalidades/atendimento/follow-up.md): Usado para enviar mensagens automáticas para o cliente, quando marcada e cliente colocado nessa lane vai ser acionado envio de mensagens
 * **Posição na lista**: Ordem que lane aparece na lista
 
 #### **Chat Interno**
@@ -21,7 +21,7 @@
 
 * Módulo para designar tarefas a usuários da plataforma, incluindo prazos para execução.
 
-#### [**Despedida**](despedida.md)
+#### [**Despedida**](../../funcionalidades/atendimento/despedida.md)
 
 * Criação de mensagens pré prontas para enviar ao cliente ao finalizar o atendimento, quando solicitar finalizar ticket vai aparecer essa lista mensagens para ser enviada.
 

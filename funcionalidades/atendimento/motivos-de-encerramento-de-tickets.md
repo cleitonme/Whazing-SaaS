@@ -3,9 +3,10 @@ description: >-
   A funcionalidade de Motivo de Encerramento garante que, ao finalizar um
   ticket, o atendente seja obrigado a selecionar o motivo pelo qual o
   atendimento foi encerrado.
+icon: door-closed
 ---
 
-# 📊 Motivos de Encerramento de Tickets
+# Motivos de Encerramento
 
 Essa informação é fundamental para gerar relatórios e dashboards que ajudam a analisar o desempenho da equipe e identificar padrões.
 

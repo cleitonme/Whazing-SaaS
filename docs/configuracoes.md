@@ -9,12 +9,12 @@ Aqui você encontrará todas as opções de personalização para adaptar o aten
 
 ### 📋 Resumo Rápido
 
-| Seção                                             | Descrição                                           |
-| ------------------------------------------------- | --------------------------------------------------- |
-| [Configurações Gerais](./#configurações-gerais)   | Ajustes principais do sistema                       |
-| [Atendimento e Tickets](./#atendimento-e-tickets) | Gerenciamento de tickets, pendências e visibilidade |
-| [Controle de Acesso](./#controle-de-acesso)       | Restrições e permissões de usuários                 |
-| [CRM/Kanban](./#crmkanban)                        | Configurações específicas do módulo CRM e Kanban    |
+| Seção                                                           | Descrição                                           |
+| --------------------------------------------------------------- | --------------------------------------------------- |
+| [Configurações Gerais](configuracoes.md#configurações-gerais)   | Ajustes principais do sistema                       |
+| [Atendimento e Tickets](configuracoes.md#atendimento-e-tickets) | Gerenciamento de tickets, pendências e visibilidade |
+| [Controle de Acesso](configuracoes.md#controle-de-acesso)       | Restrições e permissões de usuários                 |
+| [CRM/Kanban](configuracoes.md#crmkanban)                        | Configurações específicas do módulo CRM e Kanban    |
 
 ***
 

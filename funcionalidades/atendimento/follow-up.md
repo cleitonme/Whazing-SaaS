@@ -1,3 +1,7 @@
+---
+icon: up
+---
+
 # Follow-up
 
 ## 📬 O que é Follow-up
@@ -43,7 +47,7 @@ Esse processo é essencial para aumentar suas chances de conversão e manter o c
 
 Acesse o menu **Configurações → Follow-up**.
 
-![print](/broken/files/3CBKbfBJcM3E5vBFhqUZ)
+<figure><img src="../../.gitbook/assets/image (2).avif" alt=""><figcaption></figcaption></figure>
 
 #### Campos disponíveis:
 
@@ -62,7 +66,7 @@ Acesse o menu **Configurações → Follow-up**.
 
 Acesse a tela de mensagens e adicione quantas forem necessárias:
 
-![print](/broken/files/pmbXWUDpAmAt5QOEx9Dt)
+<figure><img src="../../.gitbook/assets/image (3).avif" alt=""><figcaption></figcaption></figure>
 
 * **Mensagem:** Texto que será enviado ao cliente
 * **Offset:** Tempo de espera (em minutos) antes do envio
@@ -102,7 +106,7 @@ O offset será somado ao **horário real em que a mensagem anterior foi enviada*
 
 Na tela de organização você pode:
 
-![print](/broken/files/zQDQVfEaOh05jn5FDeTS)
+<figure><img src="../../.gitbook/assets/image (4).avif" alt=""><figcaption></figcaption></figure>
 
 * **Reordenar mensagens** (arrastando a ordem)
 * **Alterar o texto** das mensagens
@@ -155,7 +159,7 @@ Para retirar contato do follow-up use valor 0
 
 **Pela tela atendimento com nova opção**
 
-![print](/broken/files/4YsWcfgZE9hKZFsdWDGs)
+<figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
 #### Para acompanhar os envios acesse nos relatórios
 

@@ -1,12 +1,17 @@
-# Integração de IA para melhorar e sugerir mensagens no atendimento
+---
+description: Integração de IA para melhorar e sugerir mensagens no atendimento
+icon: wand-magic-sparkles
+---
 
-![print](/broken/files/fQXGr1xe2eA6KObr7woZ)
+# Melhorar Texto de Atendimento
+
+<figure><img src="../../.gitbook/assets/image (5).avif" alt=""><figcaption></figcaption></figure>
 
 Nas configurações tem nova opção onde você pode configurar, depois configurado ao preencher texto vai aparecer botão acima. Pode ser usado Groq ou Openai.
 
 Sugestão de Prompt Corrija o texto a seguir em português brasileiro, mantendo o conteúdo original. Apenas melhore a ortografia, gramática e fluidez, sem adicionar, remover ou alterar informações. Retorne somente o texto corrigido, pronto para ser enviado ao cliente e inclua ocasionalmente algum emoji.
 
-![print](/broken/files/Z3b6e2XvnNidCZUTWDAP)
+<figure><img src="../../.gitbook/assets/image (6).avif" alt=""><figcaption></figcaption></figure>
 
 Após configurado aparece tela atendimento aparece o botão acima, e abaixo resultado após melhoria
 

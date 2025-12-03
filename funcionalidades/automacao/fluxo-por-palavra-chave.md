@@ -1,4 +1,8 @@
-# Fluxo por palavra chave
+---
+icon: shuffle
+---
+
+# Fluxos por palavra chave
 
 #### Regras para acionar chatbot por palavra-chave na **primeira mensagem**
 
