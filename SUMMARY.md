@@ -57,6 +57,7 @@
     * [Variáveis do Sistema](funcionalidades/gestao/variaveis-sistema.md)
   * [PWA CELULAR](funcionalidades/instalacao-do-pwa-e-habilitacao-de-notificacoes.md)
 * [Integrações](integracoes/README.md)
+  * [Configuração](integracoes/configuracao.md)
   * [Inteligência Artificial](integracoes/inteligencia-artificial/README.md)
     * [ChatGPT Assistant](integracoes/inteligencia-artificial/chatgpt-assistants.md)
     * [Groq/ChatGPT](integracoes/inteligencia-artificial/groq-chatgpt.md)
