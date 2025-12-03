@@ -52,7 +52,7 @@ Por ID:
 }
 ```
 
-**3. Atualizar CRM do Contato**
+**3. Atualizar CRM do Contato - somente CRM COMPARTILHADO**
 
 * **Método**: POST
 * **Endpoint**: `/updatecrm`
