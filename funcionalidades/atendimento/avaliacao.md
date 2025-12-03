@@ -59,4 +59,4 @@ Avaliações em canais que suporta plus\_whatsapp e api oficial é possível env
 3. Caso válido, recebe: "Obrigado por compartilhar sua opinião!"
 4. A equipe pode visualizar a avaliação nos relatórios para analisar desempenho.
 
-<figure><img src="../../.gitbook/assets/image (1).avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).avif" alt=""><figcaption></figcaption></figure>

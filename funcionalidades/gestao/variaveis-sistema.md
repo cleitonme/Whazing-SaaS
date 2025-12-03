@@ -3,9 +3,10 @@ description: >-
   As variáveis permitem personalizar mensagens automaticamente, utilizando
   informações do contato, do ticket ou do usuário. Existem três tipos principais
   de variáveis: Dinâmicas, Fixas e TypeBOT.
+icon: dollar-sign
 ---
 
-# 📌 Variáveis do Sistema
+# Variáveis do Sistema
 
 ### 🔹 Tela de Atendimento - BOT INTERNO
 
@@ -13,8 +14,11 @@ description: >-
 
 Essas variáveis utilizam os valores cadastrados em **Informações Adicionais do Contato**.
 
-📷 _Exemplo de cadastro:_\
-![](/broken/files/oPufx0lRmStZgnMtH4wk)
+📷 _Exemplo de cadastro:_
+
+<figure><img src="../../.gitbook/assets/image.avif" alt=""><figcaption></figcaption></figure>
+
+
 
 **Exemplos**
 
@@ -64,13 +68,14 @@ Por favor, confirme se seu endereço é Rua Marechal Deodoro, 11?
 
 No **chatbot**, é possível salvar automaticamente a resposta do cliente como valor de uma variável.
 
-📷 _Exemplo de configuração:_\
-![](/broken/files/kNwHPYeyoqfcn6ajzMDP)
+📷 _Exemplo de configuração:_
+
+<figure><img src="../../.gitbook/assets/image (1).jpg" alt=""><figcaption></figcaption></figure>
 
 📂 Arquivo de exemplo disponível:\
 Clique botão direito coloque salvar link como
 
-{% file src="/broken/files/Rb6K1awPz3sLnv0NmNao" %}
+{% file src="../../.gitbook/assets/exemplo_fluxo_usando_novas_variaveis.json" %}
 
 ***
 

@@ -1,4 +1,9 @@
-# 📥 Como Importar Contatos Usando um Arquivo CSV no WHAZING
+---
+description: Como Importar Contatos Usando um Arquivo CSV no WHAZING
+icon: file-import
+---
+
+# Importar Contatos
 
 Facilite o cadastro em massa dos seus contatos no WHAZING utilizando um arquivo `.csv` no formato correto e atualizado.
 
@@ -6,7 +11,7 @@ Facilite o cadastro em massa dos seus contatos no WHAZING utilizando um arquivo 
 
 ## 🛠️ **1. Baixe e Edite o Arquivo Modelo**
 
-* 📥 Faça o [**download do arquivo modelo**](../importarcontatos/modelo.csv)
+* 📥 Faça o [**download do arquivo modelo**](../../docs/importarcontatos/modelo.csv)
 * 📝 Ao abrir o arquivo em um editor de texto (ex: **Bloco de Notas**, **Notepad++** ou **VS Code**), ele deve seguir o seguinte formato:
 
 ```csv
@@ -61,7 +66,7 @@ Maria Silva;55999999999;maria@email.com;ACME Ltda;10/10/1990;Gerente;Florianópo
 
 📸 Exemplo da tela de importação:
 
-![print](/broken/files/RHYuu3c26HrpXx0eEMzE)
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
