@@ -1,20 +1,23 @@
 # Changelog e Atualizações
 
-### 🚀 Versão 2.14.8 FINAL – Changelog
+### 🚀 Versão 2.14.8 — Changelog Final
+🐞 Correções de Bugs
 
-- bug -
-- Integrações 2 via boleto provedores e asaas e desbloqueio confiança.
-Não esta funcionando na api oficial devido limite caracteres botão e lista 20 caracteres.
+1. Integrações Boleto (Provedores, Asaas) + Desbloqueio de Confiança
 
-Palavras como "finalizar atendimento" já nao enviava botão. Decidi por equanto mandar como texto desativar botão lista para api oficial
+A API oficial do WhatsApp possui limite de caracteres (máx. 20) para botões e listas.
 
-- bug 2 -
+Textos como “finalizar atendimento” já não estavam sendo enviados corretamente.
 
-Integração hubSoft busca pix copia e cola
+Solução: botões e listas foram desativados temporariamente na API oficial. A mensagem agora é enviada como texto normal para garantir entrega.
 
-- bug 3 -
+2. Integração HubSoft – PIX Copia e Cola
 
-- sobreposição imagens tela atendimento ao abrir as mesmas
+Corrigido erro que impedia a busca correta do código PIX Copia e Cola.
+
+3. Sobreposição de imagens no atendimento
+
+Corrigido bug onde, ao clicar para ampliar uma imagem, o texto da conversa aumentava e ficava sobre a própria imagem, causando sobreposição e dificultando a visualização.
 
 ### 🚀 Versão 2.14.7 FINAL – Changelog
 
