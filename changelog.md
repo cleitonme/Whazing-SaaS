@@ -1,5 +1,21 @@
 # Changelog e Atualizações
 
+### 🚀 Versão 2.14.8 FINAL – Changelog
+
+- bug -
+- Integrações 2 via boleto provedores e asaas e desbloqueio confiança.
+Não esta funcionando na api oficial devido limite caracteres botão e lista 20 caracteres.
+
+Palavras como "finalizar atendimento" já nao enviava botão. Decidi por equanto mandar como texto desativar botão lista para api oficial
+
+- bug 2 -
+
+Integração hubSoft busca pix copia e cola
+
+- bug 3 -
+
+- sobreposição imagens tela atendimento ao abrir as mesmas
+
 ### 🚀 Versão 2.14.7 FINAL – Changelog
 
 * api oficial - suporte template com variavel no header
