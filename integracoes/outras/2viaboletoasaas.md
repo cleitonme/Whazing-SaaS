@@ -16,7 +16,7 @@ icon: barcode
 
 1. Acesse **Cadastros** > **Filas** > clique em **Adicionar** e preencha os dados conforme mostrado na imagem abaixo:
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/tela2 (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Na integração, selecione a opção criada no passo anterior.
 
@@ -24,7 +24,7 @@ icon: barcode
 
 1. Crie um chatbot. Verifique a documentação para exemplos de como criar um chatbot.
 
-<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/tela3 (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Passo 4: Configurar Condições
 

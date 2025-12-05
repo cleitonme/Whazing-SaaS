@@ -104,13 +104,9 @@ description: >-
 ### 8️⃣ Registrar Telefone no Whazing
 
 1. Acesse **Ferramentas > Registrar Telefone**.
-2.
+2. Digite um **PIN de 6 dígitos** (caso já tenha usado um PIN antes, utilize o mesmo).
 
-```
-<figure><img src="../.gitbook/assets/registrartelefone.png" alt=""><figcaption></figcaption></figure>
-```
-
-3. Digite um **PIN de 6 dígitos** (caso já tenha usado um PIN antes, utilize o mesmo).
+<figure><img src="../../.gitbook/assets/registrartelefone.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -131,6 +127,8 @@ Para garantir o funcionamento contínuo, gere um **Token Permanente**.
 ***
 
 ✅ **Pronto! Seu Whazing está integrado com a API Oficial do WhatsApp (Meta).**
+
+**Esse guia pode lhe ajudar também** [**https://blog.meujames.com/como-habilitar-seu-numero-api-oficial-whatsapp/**](https://blog.meujames.com/como-habilitar-seu-numero-api-oficial-whatsapp/)
 
 ### 📊 Limites da API Oficial <a href="#limites-da-api-oficial" id="limites-da-api-oficial"></a>
 
