@@ -87,7 +87,7 @@
     * [Transcrição de Áudio](integracoes/inteligencia-artificial/transcricao_audio.md)
     * [Recepção inteligente](integracoes/inteligencia-artificial/recepcao-inteligente.md)
   * [CRM & ERP](integracoes/crm-and-erp/README.md)
-    * [WooCommerce Login Whatsapp](integracoes/crm-and-erp/woocommerce-login-whatsapp.md)
+    * [WooCommerce](integracoes/crm-and-erp/woocommerce-login-whatsapp.md)
     * [PerfexCRM](integracoes/crm-and-erp/perfexcrm.md)
   * [Telefonia](integracoes/telefonia/README.md)
     * [Wavoip](integracoes/telefonia/configurar_wavoip.md)
