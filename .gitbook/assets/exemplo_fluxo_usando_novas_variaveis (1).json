@@ -1,0 +1,274 @@
+{
+	"name": "Exemplo uso campos adicionais",
+	"nodeList": [
+		{
+			"id": "start",
+			"name": "Início",
+			"type": "start",
+			"left": "26px",
+			"top": "100px",
+			"ico": "mdi-play",
+			"viewOnly": true,
+			"status": "success",
+			"style": {}
+		},
+		{
+			"id": "configurations",
+			"name": "Configurações",
+			"type": "configurations",
+			"left": "340px",
+			"top": "100px",
+			"viewOnly": true,
+			"ico": "mdi-alert-circle-outline",
+			"configurations": {
+				"notOptionsSelectMessage": {
+					"message": "",
+					"stepReturn": "A"
+				},
+				"notResponseMessage": {
+					"time": 10,
+					"type": 1,
+					"destiny": "",
+					"message": ""
+				},
+				"welcomeMessage": {
+					"message": ""
+				},
+				"maxRetryBotMessage": {
+					"number": 3,
+					"type": 1,
+					"destiny": ""
+				},
+				"outOpenHours": {
+					"type": 3,
+					"destiny": null
+				}
+			}
+		},
+		{
+			"id": "nodeC",
+			"name": "Boas vindas!",
+			"type": "node",
+			"left": "26px",
+			"top": "301px",
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "{{greeting}}, {{firstName}}"
+					},
+					"id": "b3ae55f3-20be-451b-a0e6-fdea8e20cac0"
+				},
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Seja bem vindo a prataforma Whazing.\nPor favor selecione uma opção do Menu.\n1 - Já Sou Cliente\n2 - Não sou Cliente"
+					},
+					"id": "22f018d1-d9bf-4df8-9926-6e831873370f"
+				}
+			],
+			"conditions": [
+				{
+					"type": "R",
+					"condition": [
+						"1"
+					],
+					"id": "74a1d699-1d2a-4709-b956-5f1814804cc3",
+					"action": 0,
+					"nextStepId": "612f96f5-4ee3-4d84-934b-757c5935be33"
+				},
+				{
+					"type": "Contain",
+					"condition": [
+						"Já Sou Cliente"
+					],
+					"id": "a799cc36-6c74-4f8d-ba84-154506b1f47f",
+					"action": 0,
+					"nextStepId": "612f96f5-4ee3-4d84-934b-757c5935be33"
+				},
+				{
+					"type": "R",
+					"condition": [
+						"2"
+					],
+					"id": "8393a28f-dd72-4b77-9f61-e7e723cd24c3",
+					"action": 0,
+					"nextStepId": "a90f0ce3-94b3-4930-b5eb-ae2ab12391b2"
+				},
+				{
+					"type": "Contain",
+					"condition": [
+						"Não sou Cliente"
+					],
+					"id": "ded53f2a-efc6-43f2-996a-27ee57814af5",
+					"action": 0,
+					"nextStepId": "a90f0ce3-94b3-4930-b5eb-ae2ab12391b2"
+				}
+			],
+			"actions": []
+		},
+		{
+			"id": "a90f0ce3-94b3-4930-b5eb-ae2ab12391b2",
+			"name": "perguntar cpf",
+			"type": "node",
+			"left": "452px",
+			"top": "222px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "US",
+					"condition": [],
+					"id": "306bdb38-4e4d-4d34-94c5-85c338b37043",
+					"customfield": "CPF",
+					"action": 0,
+					"nextStepId": "c4597da7-6b58-479b-87fc-517c483e34f4"
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Por favor prescisamos do seu CPF para cadastro."
+					},
+					"id": "f3d316db-32a2-4cae-b2d8-df55c305ca61"
+				},
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Qual seu CPF?"
+					},
+					"id": "ca9f528c-b449-47dc-9043-5f2197b0ac45"
+				}
+			]
+		},
+		{
+			"id": "612f96f5-4ee3-4d84-934b-757c5935be33",
+			"name": "Ja sou cliente",
+			"type": "node",
+			"left": "437px",
+			"top": "368px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "R",
+					"condition": [
+						"1",
+						"sim"
+					],
+					"id": "c0aaf640-b448-4b24-ba23-1ad618cdc92b",
+					"action": 1
+				},
+				{
+					"type": "R",
+					"condition": [
+						"2",
+						"não"
+					],
+					"id": "cfa45e8b-b40f-4601-b09b-7c9e83773db5",
+					"action": 0,
+					"nextStepId": "a90f0ce3-94b3-4930-b5eb-ae2ab12391b2"
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Confirme seu CPF é {{CPF}}?\n1 - Sim \n2 - Não"
+					},
+					"id": "d8e337be-9f8a-493e-8825-0a8a2f052b25"
+				}
+			]
+		},
+		{
+			"id": "c4597da7-6b58-479b-87fc-517c483e34f4",
+			"name": "resposta cpf",
+			"type": "node",
+			"left": "791px",
+			"top": "188px",
+			"state": "success",
+			"actions": [],
+			"conditions": [
+				{
+					"type": "R",
+					"condition": [
+						"1",
+						"sim"
+					],
+					"id": "9f648d00-c8aa-48cd-a7f6-5710e05456b8",
+					"action": 1
+				},
+				{
+					"type": "R",
+					"condition": [
+						"2",
+						"não"
+					],
+					"id": "5cd7c59d-f29d-42a3-9a13-8efafd0cd4bc",
+					"action": 0,
+					"nextStepId": "a90f0ce3-94b3-4930-b5eb-ae2ab12391b2"
+				}
+			],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Seu cpf é {{CPF}}?\n1 - Sim\n2 - Não"
+					},
+					"id": "1e744839-8115-4a2d-9f89-8893a4a80f99"
+				}
+			]
+		}
+	],
+	"lineList": [
+		{
+			"from": "start",
+			"to": "nodeC",
+			"paintStyle": {
+				"strokeWidth": 3,
+				"stroke": "#5c67f2"
+			}
+		},
+		{
+			"from": "nodeC",
+			"to": "612f96f5-4ee3-4d84-934b-757c5935be33",
+			"label": null
+		},
+		{
+			"from": "nodeC",
+			"to": "612f96f5-4ee3-4d84-934b-757c5935be33",
+			"label": null
+		},
+		{
+			"from": "nodeC",
+			"to": "a90f0ce3-94b3-4930-b5eb-ae2ab12391b2",
+			"label": null
+		},
+		{
+			"from": "nodeC",
+			"to": "a90f0ce3-94b3-4930-b5eb-ae2ab12391b2",
+			"label": null
+		},
+		{
+			"from": "a90f0ce3-94b3-4930-b5eb-ae2ab12391b2",
+			"to": "c4597da7-6b58-479b-87fc-517c483e34f4",
+			"label": null
+		},
+		{
+			"from": "c4597da7-6b58-479b-87fc-517c483e34f4",
+			"to": "a90f0ce3-94b3-4930-b5eb-ae2ab12391b2",
+			"label": null
+		},
+		{
+			"from": "612f96f5-4ee3-4d84-934b-757c5935be33",
+			"to": "a90f0ce3-94b3-4930-b5eb-ae2ab12391b2",
+			"label": null
+		}
+	],
+	"action": 0,
+	"userId": 1,
+	"celularTeste": null,
+	"isActive": true,
+	"id": null
+}

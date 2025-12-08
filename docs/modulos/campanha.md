@@ -30,7 +30,7 @@ Depois de preencher todos os campos, clique em **Salvar** e siga para a próxima
 
 <figure><img src="../../.gitbook/assets/campanha4 (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/campanha3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/campanha3 (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Incluir Contatos
 

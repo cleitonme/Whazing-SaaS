@@ -41,17 +41,17 @@ Para quem quiser mais controle pode fazer instalação manual conforme manual
 
 <figure><img src=".gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/atendimento.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/atendimento (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/kanban.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/kanban (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/white.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/white (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/dashboard.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/dashboard (1).png" alt=""><figcaption></figcaption></figure>
 
 ## Recomendação de VPS
 
-Recomendamos uso de VPS nacionais como hostinger.&#x20;
+Recomendamos uso de VPS nacionais como hostinger.
 
 Vps internacional tem [Hetzer](https://www.hetzner.com/), [Peramix](https://control.peramix.com/?affid=58), mas de preferencia VPS tempo resposta menor de 50ms
 

@@ -18,7 +18,7 @@ icon: circle-phone
 
     * Basta copiar.
 
-    <figure><img src="../../.gitbook/assets/image (7).avif" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (6) (2).avif" alt=""><figcaption></figcaption></figure>
 5. **Acesse a lista de canais**
    * Localize o canal desejado na lista disponível.
 6.  **Edite as configurações do canal**
@@ -29,11 +29,8 @@ icon: circle-phone
     <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 7. **Para realizar uma ligação**
    * Abra um ticket e você verá o botão de telefone na parte superior do ticket. Clique nele para iniciar a ligação.
-8.  **Receber chamadas e gravação**
-
-    * Garanta que esteja habilitada nas configurações para receber e gravar chamadas
-
-
+8. **Receber chamadas e gravação**
+   * Garanta que esteja habilitada nas configurações para receber e gravar chamadas
 
 <figure><img src="../../.gitbook/assets/image (8).avif" alt=""><figcaption></figcaption></figure>
 

@@ -20,7 +20,7 @@ icon: shield-halved
    * Se a instalação for bem-sucedida, o túnel aparecerá na seção "Connectors".
    * Clique em "Próxima" para continuar.
 
-<figure><img src="../.gitbook/assets/backend.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/backend (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Configuração do Backend**:
    * Nesta tela, configure o domínio do seu backend:
@@ -30,7 +30,7 @@ icon: shield-halved
    * Na lista de túneis, clique nos três pontos ao lado do túnel e selecione "Configurar".
    * Adicione o nome do host público.
 
-<figure><img src="../.gitbook/assets/frontend.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/frontend (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Configuração do Frontend**:
    * Nesta tela, configure o domínio do seu frontend:

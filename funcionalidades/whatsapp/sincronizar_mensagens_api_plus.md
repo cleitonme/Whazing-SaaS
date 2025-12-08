@@ -9,6 +9,6 @@ icon: arrows-rotate
 * Cadastrar contato - caso não tenha
 * Abrir novo ticket - caso não tenha algum aberto
 
-<figure><img src="../../.gitbook/assets/image (34).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/sinc (1).png" alt=""><figcaption></figcaption></figure>
 
 * Aparece pedindo quantidade de mensagens máximo 100, caso encontrar as mensagens elas começaram ser baixadas

@@ -11,7 +11,7 @@
 
 > ⚠️ **Atenção:** O valor da licença **não inclui VPS (servidor)**. A **contratação, manutenção e segurança** da VPS são de responsabilidade do cliente. 🚫 **Não vendemos VPS** — apenas a **licença de uso do sistema**.
 
-> 💡 **Dica:** Alguns canais exigem pagamento adicional para uso. Consulte a lista em [Canais Disponíveis](../canais-suportados/).
+> 💡 **Dica:** Alguns canais exigem pagamento adicional para uso. Consulte a lista em [Canais Disponíveis](canais-suportados/).
 
 ***
 
@@ -39,10 +39,6 @@ Exibe anúncios do Whazing e envia automaticamente propagandas em:
 * Mensagens agendadas
 * Follow-ups
 * Campanhas
-
-<figure><img src="../broken-reference" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../broken-reference" alt=""><figcaption></figcaption></figure>
 
 ***
 
