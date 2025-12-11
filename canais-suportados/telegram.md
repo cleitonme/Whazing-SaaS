@@ -14,7 +14,7 @@ icon: telegram
    \
    **Os bots oficiais do Telegram possuem um ✅ visto azul ao lado do nome**
 
-![print](/broken/files/KPo4fyKtU30PtJD5jOdh)
+![print](../docs/telegram/BotFather.png)
 
 ### ▶️ Ative o BotFather
 
@@ -40,7 +40,7 @@ icon: telegram
 * O BotFather fornecerá um **token de acesso**.
 * Copie esse token e utilize para **cadastrar o canal no Whazing**.
 
-1. ![print](/broken/files/vfbLeyFtc74bDGLxAvrx)\
-   ![print](/broken/files/gfpC8lh02N7dE6XdqPdT)
+1. ![print](../docs/telegram/token.png)\
+   ![print](../docs/telegram/whazing.png)
 
 ⚠️ **Importante:** Todas as mensagens devem ser enviadas para o **bot que você criou** para que apareçam no sistema Whazing.
