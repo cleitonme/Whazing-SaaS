@@ -25,7 +25,7 @@ Usar cupom desconto: whazing
     ![Print da tela](/broken/files/LjDi0in2HFpklGMAWP8d)
 *   **Para usar ambos (Instagram e Facebook)**: selecione **"Facebook / Instagram | Oficial"**.
 
-    ![Print da tela](/broken/files/kSfKAdIQTOQTMj4W6WRZ)
+    ![Print da tela](../../.gitbook/assets/webchat.png)
 *   O sistema também suporta **WebChat**.
 
     ![Print da tela](/broken/files/X9ZkStUkY1HhUMWyr0m5)
