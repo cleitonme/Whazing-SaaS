@@ -15,6 +15,6 @@ Sugestão de Prompt Corrija o texto a seguir em português brasileiro, mantendo 
 
 Após configurado aparece tela atendimento aparece o botão acima, e abaixo resultado após melhoria
 
-![print](/broken/files/7YlLO6elbV3IpVS6M3sK)
+![print](../melhorar_texto_atendimento/resultado.png)
 
 Obter key ChatGPT: [https://platform.openai.com/settings/organization/api-keys](https://platform.openai.com/settings/organization/api-keys)
