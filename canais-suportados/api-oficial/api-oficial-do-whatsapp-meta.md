@@ -75,8 +75,6 @@ description: >-
 
 <figure><img src="../../.gitbook/assets/configuracaoapi.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/configuracaoapi (1).png" alt=""><figcaption></figcaption></figure>
-
 📌 Também será necessário copiar do painel da Meta:
 
 * **ID do Número de Telefone**
