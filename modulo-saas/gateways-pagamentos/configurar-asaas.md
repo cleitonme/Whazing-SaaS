@@ -29,4 +29,4 @@ Siga os passos abaixo para configurar sua conta no Asaas e conectá-la ao Whazin
 📌 **Pronto!** Agora seu sistema está configurado para funcionar com o Asaas e o Whazing.
 
 > 🖼️ **Exemplo:** Veja a imagem abaixo para referência:\
-> ![print](/broken/files/ujhSm1VafoLppRcD6sIO)
+> ![print](<../../docs/Gateways pagamentos/assas.png>)
