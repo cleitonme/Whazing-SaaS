@@ -93,7 +93,8 @@ description: >-
    * **URL de Callback**
 3. Retorne ao painel da Meta, clique em **Configurar Webhook** e cole as informações.
 4. Clique em **Verificar e Salvar**.
-5. Role a página até encontrar a opção **messages** e altere para **Assinado**.
+6. Marque o maximos para Assinado, principalmente o de  **messages**.
+5. Não esqueça marcar **messages** ele principal.
 
 <figure><img src="../../.gitbook/assets/ativarmessages.png" alt=""><figcaption></figcaption></figure>
 
