@@ -10,7 +10,7 @@ Cadastrar através da URL [https://hub.whazing.com.br/](https://hub.whazing.com.
 
 Usar cupom desconto: whazing
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 🔹 Acesso ao Hub
 
@@ -20,18 +20,15 @@ Usar cupom desconto: whazing
 *   **Apenas Instagram**: selecione **"Instagram V2 | Oficial"**.
 
     ![Instagram V2](../../.gitbook/assets/instagram.png)
-	
 *   **Apenas Facebook**: selecione **"Facebook | Oficial"**.
 
     ![Facebook](../../.gitbook/assets/facebook.png)
 *   **Para usar ambos (Instagram e Facebook)**: selecione **"Facebook / Instagram | Oficial"**.
 
     ![Facebook/Instagram](../../.gitbook/assets/facebookinstagram.png)
-	
 *   O sistema também suporta **WebChat**.
 
     ![WebChat](../../.gitbook/assets/webchat.png)
-    
 
 ## Integração com o Whazing
 

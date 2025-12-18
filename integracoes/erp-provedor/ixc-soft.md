@@ -32,7 +32,7 @@ na url da integração preencha somente [https://ixc.whazing.com.br](https://www
 ## Passo 3: Criar o Chatbot
 
 1. Crie um chatbot. Verifique a documentação para exemplos de como criar um chatbot.
-2. &#x20;![print](../integrações/2viaboletoasaas/tela3.png)
+2.
 
 ## Passo 4: Configurar Condições
 

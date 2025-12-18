@@ -5,7 +5,7 @@ icon: user-robot
 
 # Typebot
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
@@ -33,7 +33,7 @@ icon: user-robot
 
 ## Exemplo
 
-> ![](<../../../.gitbook/assets/image (2).avif>)
+> <img src="../../../.gitbook/assets/image (2).avif" alt="" data-size="original">
 
 1.  Usando a variável abaixo, o valor retornado será "0985786468528":
 

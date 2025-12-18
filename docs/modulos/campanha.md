@@ -60,7 +60,7 @@ Você pode **personalizar suas mensagens** utilizando informações cadastradas 
 
 📷 _Exemplo de Informações Adicionais:_
 
-![Variaveis](<../Variáveis sistema/informacoesadicionais (1).jpg>)\\
+![Variaveis](<../../.gitbook/assets/informacoesadicionais (1).jpg>)\\
 
 *   Exemplo 1:
 
