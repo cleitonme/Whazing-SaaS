@@ -1,4 +1,4 @@
-# Solicitar Provedor de Tecnologia (Meta / WhatsApp Business)
+# Solicitar Provedor de Tecnologia
 
 ## 📌 O que é um Provedor de Tecnologia?
 
@@ -11,25 +11,21 @@ Um **Provedor de Tecnologia** é uma empresa ou plataforma autorizada pela Meta 
 
 O **Whazing** atua exatamente nesse papel, por isso é necessário solicitar essa aprovação.
 
----
+***
 
 ## ✅ Pré-requisitos (obrigatório antes de começar)
 
 Antes de iniciar o processo, **confira se você já possui**:
 
-1. ✅ Uma conta no **Meta for Developers**
-   Acesse: [https://developers.facebook.com](https://developers.facebook.com)
-
+1. ✅ Uma conta no **Meta for Developers** Acesse: [https://developers.facebook.com](https://developers.facebook.com)
 2. ✅ Um **aplicativo criado** dentro do Meta for Developers
-
 3. ✅ Pelo menos **1 número de WhatsApp conectado** ao aplicativo (API Oficial)
 
-👉 Caso ainda **não tenha feito essa etapa**, siga primeiro o guia:
-**API Oficial do WhatsApp (Meta)** → `api-oficial-do-whatsapp-meta.md`
+👉 Caso ainda **não tenha feito essa etapa**, siga primeiro o guia: [**API Oficial do WhatsApp (Meta)**](api-oficial-do-whatsapp-meta.md)
 
 ⚠️ **Importante:** sem um número conectado, não é possível gravar os vídeos exigidos pela Meta.
 
----
+***
 
 ## 🎥 Etapa obrigatória: gravação dos vídeos
 
@@ -39,12 +35,11 @@ A Meta exige **vídeos reais**, demonstrando o funcionamento da aplicação.
 
 Serão necessários **2 vídeos distintos**.
 
----
+***
 
-### 🎬 Vídeo 1 – Envio e resposta de mensagem (whatsapp_business_messaging)
+### 🎬 Vídeo 1 – Envio e resposta de mensagem (whatsapp\_business\_messaging)
 
-**Objetivo do vídeo:**
-Demonstrar que o Whazing consegue **enviar e receber mensagens** via API Oficial do WhatsApp.
+**Objetivo do vídeo:** Demonstrar que o Whazing consegue **enviar e receber mensagens** via API Oficial do WhatsApp.
 
 #### Como gravar:
 
@@ -65,12 +60,11 @@ Demonstrar que o Whazing consegue **enviar e receber mensagens** via API Oficial
 
 {% file src="../../.gitbook/assets/trocamensagem.mp4" %}
 
----
+***
 
-### 🎬 Vídeo 2 – Envio de template (whatsapp_business_management)
+### 🎬 Vídeo 2 – Envio de template (whatsapp\_business\_management)
 
-**Objetivo do vídeo:**
-Demonstrar que o sistema consegue **enviar templates aprovados pela Meta**.
+**Objetivo do vídeo:** Demonstrar que o sistema consegue **enviar templates aprovados pela Meta**.
 
 #### Como gravar:
 
@@ -89,7 +83,7 @@ Demonstrar que o sistema consegue **enviar templates aprovados pela Meta**.
 
 {% file src="../../.gitbook/assets/enviandotemplate.mp4" %}
 
----
+***
 
 ## 🧭 Etapa final: solicitar Provedor de Tecnologia
 
@@ -101,7 +95,7 @@ Agora que os vídeos estão prontos, siga os passos abaixo.
 2. Vá em **Meus Apps**
 3. Selecione o aplicativo já criado
 
----
+***
 
 ### 2️⃣ Acesse a área do WhatsApp
 
@@ -116,7 +110,7 @@ Você verá a opção:
 
 Clique nela.
 
----
+***
 
 ### 3️⃣ Analisar configurações do aplicativo
 
@@ -130,7 +124,7 @@ A Meta irá solicitar que você **complete todas as informações pendentes** do
 
 ⚠️ **Não deixe campos em branco**, isso causa reprovação.
 
----
+***
 
 ## 📝 Documentação em vídeo (parte mais importante)
 
@@ -138,16 +132,16 @@ Nesta etapa, a Meta pedirá **vídeos + explicação textual** para cada permiss
 
 Você deverá usar:
 
-* 🎥 Vídeo 1 → **whatsapp_business_messaging**
-* 🎥 Vídeo 2 → **whatsapp_business_management**
+* 🎥 Vídeo 1 → **whatsapp\_business\_messaging**
+* 🎥 Vídeo 2 → **whatsapp\_business\_management**
 
 Abaixo estão os **textos recomendados**, já prontos para copiar e colar.
 
----
+***
 
-## ✍️ Texto – whatsapp_business_messaging
+## ✍️ Texto – whatsapp\_business\_messaging
 
-O aplicativo **Whazing** utiliza a permissão **whatsapp_business_messaging** para possibilitar a comunicação entre empresas e seus clientes por meio da API oficial do WhatsApp Business, de forma segura, estável e integrada.
+O aplicativo **Whazing** utiliza a permissão **whatsapp\_business\_messaging** para possibilitar a comunicação entre empresas e seus clientes por meio da API oficial do WhatsApp Business, de forma segura, estável e integrada.
 
 A plataforma oferece um ambiente de **multiatendimento**, permitindo que múltiplos operadores realizem atendimentos simultâneos, com organização de conversas, histórico centralizado e controle por usuários ou equipes.
 
@@ -163,11 +157,11 @@ Como valor agregado, o Whazing aumenta a produtividade das empresas ao centraliz
 
 Essa permissão é essencial, pois sem ela o Whazing não conseguiria cumprir sua função principal: permitir que empresas se comuniquem de forma oficial, segura e em conformidade com as diretrizes da Meta, utilizando o WhatsApp Business como canal de atendimento.
 
----
+***
 
-## ✍️ Texto – whatsapp_business_management
+## ✍️ Texto – whatsapp\_business\_management
 
-O aplicativo **Whazing** utiliza a permissão **whatsapp_business_management** para gerenciar os ativos comerciais do WhatsApp Business pertencentes aos seus clientes, ou aos quais estes concedem acesso de forma explícita.
+O aplicativo **Whazing** utiliza a permissão **whatsapp\_business\_management** para gerenciar os ativos comerciais do WhatsApp Business pertencentes aos seus clientes, ou aos quais estes concedem acesso de forma explícita.
 
 Essa permissão é necessária para que a plataforma ofereça as seguintes funcionalidades:
 
@@ -182,7 +176,7 @@ O principal valor para o usuário é permitir que empresas configurem, administr
 
 Isso reduz o tempo operacional, melhora a gestão do atendimento e aumenta a eficiência dos processos. Essa permissão é indispensável para que o Whazing cumpra sua funcionalidade principal: centralizar, organizar e gerenciar, de forma segura e conforme as diretrizes da Meta, todos os ativos do WhatsApp Business das empresas atendidas.
 
----
+***
 
 ## ✅ Conclusão
 
@@ -195,7 +189,7 @@ Após preencher todas as informações, enviar os vídeos e textos:
 
 Se tudo estiver correto, o Whazing será aprovado como **Provedor de Tecnologia**.
 
----
+***
 
 📌 **Dica final:** reprovações normalmente acontecem por:
 
