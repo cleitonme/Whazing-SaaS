@@ -91,10 +91,11 @@ description: >-
 2. No Whazing, clique em **Gerar Token de Webhook** e copie:
    * **Token de Verificação**
    * **URL de Callback**
-3. Retorne ao painel da Meta, clique em **Configurar Webhook** e cole as informações.
-4. Clique em **Verificar e Salvar**.
-6. Marque o maximos para Assinado, principalmente o de  **messages**.
-5. Não esqueça marcar **messages** ele principal.
+3. **Salve o canal no whazing**
+4. Retorne ao painel da Meta, clique em **Configurar Webhook** e cole as informações.
+5. Clique em **Verificar e Salvar**.
+6. Marque o maximos para Assinado, principalmente o de **messages**.
+7. Não esqueça marcar **messages** ele principal.
 
 <figure><img src="../../.gitbook/assets/ativarmessages.png" alt=""><figcaption></figcaption></figure>
 
