@@ -13,8 +13,8 @@
 4. **Configure seu template**
    * **Cabeçalho**: se quiser usar uma imagem, selecione "Imagem" e envie o modelo.
    * **Corpo da mensagem**: insira o texto. Você pode usar variáveis como:
-     * `{{1}}` = `contact.name` → Nome do cliente
-     * `{{2}}` = `agente.first_name` → Nome do agente que envia a mensagem
+     * `{{1}}` = Nome do cliente
+     * `{{2}}` = Nome do agente que envia a mensagem
    * **Rodapé** (opcional): adicione um texto adicional.
    * **Botões** (opcional): insira botões personalizados, se desejar.
 5. **Pré-visualize e envie**
