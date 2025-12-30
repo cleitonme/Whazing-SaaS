@@ -29,3 +29,9 @@
 #### 🔄 Após a aprovação do template:
 
 Entre no canal na plataforma e clique em **"Sincronizar templates"** para que ele apareça no Whazing.
+
+Os templates estarão disponível na tela atendimento clicando no botão + ou opção campanha api oficial.
+
+***
+
+Site para ajudar gerar template [https://poli.digital/gerador-template-whatsapp/](https://poli.digital/gerador-template-whatsapp/)
