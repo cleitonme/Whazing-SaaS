@@ -108,6 +108,8 @@ description: >-
 
 <figure><img src="../../.gitbook/assets/registrartelefone.png" alt=""><figcaption></figcaption></figure>
 
+Esse processo somente faz 1 vez
+
 ***
 
 ### 9️⃣ Gerar Token Permanente
@@ -152,3 +154,15 @@ Para garantir o funcionamento contínuo, gere um **Token Permanente**.
 * A API **não valida** se o número possui WhatsApp, então:
   * O número deve estar correto (DDD + 9º dígito, quando necessário).
   * Deve respeitar a **janela de 24 horas**.
+
+Solução de problemas:
+
+Não recebe mensagem?
+
+Será webhook configurado certo tente configurar usando api meta
+
+{% embed url="https://www.postman.com/meta/whatsapp-business-platform/request/c6z3o8n/override-callback-url?tab=body" %}
+
+Consultar Url webhook configurada:
+
+[https://www.postman.com/meta/whatsapp-business-platform/request/l8ugxbv/get-phone-numbers?tab=auth](https://www.postman.com/meta/whatsapp-business-platform/request/l8ugxbv/get-phone-numbers?tab=auth)
