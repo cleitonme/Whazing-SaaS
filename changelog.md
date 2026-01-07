@@ -1,5 +1,10 @@
 # Changelog e Atualizações
 
+### 🚀 Versão 2.14.8 — 07/01/25
+
+- nova versão api wavoip
+
+
 ### 🚀 Versão 2.14.8 — Changelog Final
 🐞 Correções de Bugs
 
