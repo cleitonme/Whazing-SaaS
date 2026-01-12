@@ -11,7 +11,9 @@ icon: network-wired
 
 O uso de um proxy nas conexões do WhatsApp pode aumentar a segurança e melhorar o controle das comunicações.
 
-### Somente canal Baileys
+### Suporte canal Bayleys, Wuzapi
+
+O sistema valida se proxy valido para evitar erros conexão em caso problemas desativa proxy automatico configurando no canal.
 
 #### **Passo a Passo para Configuração no Linux (Exemplo com o Bitvise)**
 
@@ -26,6 +28,8 @@ O uso de um proxy nas conexões do WhatsApp pode aumentar a segurança e melhora
 ```bash
 # Configurar proxy para conexões do WhatsApp
 PROXY_URL=socks5://127.0.0.1:9150
+# Validar se proxy do .env e valido
+PROXY_URL_VALID=true
 ```
 
 * **Nota Importante**: Certifique-se de configurar corretamente o proxy e utilizar credenciais seguras, caso seja necessário.
