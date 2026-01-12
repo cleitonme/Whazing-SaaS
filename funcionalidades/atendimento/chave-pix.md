@@ -17,7 +17,7 @@ Acesse o menu:
 
 **Configurações → Canais → Gerenciar Chaves Pix**
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -31,7 +31,7 @@ O cadastro é simples e rápido.
 2. Preencha os **dados da Chave PIX**
    * Pode ser CPF, CNPJ, e-mail, telefone ou chave aleatória
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ✅ Após salvar, a chave estará pronta para uso.
 
@@ -41,7 +41,7 @@ O cadastro é simples e rápido.
 
 Depois de cadastrada, a Chave PIX ficará disponível **na tela de atendimento**, somente para **canais API PLUS**.
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### Para enviar ao cliente:
 
@@ -56,7 +56,7 @@ Depois de cadastrada, a Chave PIX ficará disponível **na tela de atendimento**
 
 A mensagem será enviada automaticamente neste formato padrão:
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

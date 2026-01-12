@@ -81,6 +81,7 @@
     * [Importar Contatos](funcionalidades/gestao/importarcontatos.md)
     * [Configurações](funcionalidades/gestao/configuracoes.md)
     * [Variáveis do Sistema](funcionalidades/gestao/variaveis-sistema.md)
+    * [Tarefas](funcionalidades/gestao/tarefas.md)
   * [PWA CELULAR](funcionalidades/instalacao-do-pwa-e-habilitacao-de-notificacoes.md)
 * [Integrações](integracoes/README.md)
   * [Configuração](integracoes/configuracao.md)
