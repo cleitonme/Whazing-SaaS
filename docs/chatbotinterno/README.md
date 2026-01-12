@@ -166,11 +166,9 @@ A partir da versão **2.11.0**, estão disponíveis as seguintes interações:
 
 * Exclusivo da **API Plus**.
 
-<figure><img src="chavepix1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/chavepix1.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="chavepix2.png" alt=""><figcaption></figcaption></figure>
-
-
+<figure><img src="../../.gitbook/assets/chavepix2.png" alt=""><figcaption></figcaption></figure>
 
 ## 🔄 Ordem das Interações
 
@@ -236,8 +234,6 @@ _(Essa mensagem pode ser personalizada nas configurações.)_
 ## ⚙️ Configurações Gerais
 
 <figure><img src="../../.gitbook/assets/image (10).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Opções disponíveis:**
 

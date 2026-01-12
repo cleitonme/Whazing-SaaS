@@ -51,6 +51,7 @@
       * [Grupos x API Oficial WhatsApp](canais-suportados/api-oficial/api-oficial/grupos.md)
     * [Como criar template](canais-suportados/api-oficial/criar_template.md)
     * [Solicitar Provedor de Tecnologia](canais-suportados/api-oficial/solicitar-provedor-de-tecnologia.md)
+    * [Configuração do WABA Incorporado (Coexistência)](canais-suportados/api-oficial/configuracao-do-waba-incorporado-coexistencia.md)
   * [WhatsApp Wuzapi (WhatsMeow)](canais-suportados/whatsapp-wuzapi.md)
   * [WhatsApp API PLUS](canais-suportados/whatsapp_api_plus.md)
   * [Instagram, Facebook via ConnectionHub](canais-suportados/instagram-facebook-via-connectionhub.md)
