@@ -1,37 +1,75 @@
----
-description: Disponível somente canais API PLUS
+## description: Disponível somente para canais API PLUS
+
+# 🔑 Chave PIX
+
+Esta funcionalidade permite **enviar uma Chave PIX diretamente pela tela de atendimento**, facilitando o envio de dados de pagamento ao cliente.
+
+> ⚠️ **Disponível apenas para canais do tipo API PLUS**
+
 ---
 
-# Chave PIX
+## 📍 Onde configurar
 
-Para cadastrar envio de chavepix pela tela atendimento\
-\
-Configurações - CANAIS - Gerenciar Chaves Pix
+Acesse o menu:
+
+**Configurações → Canais → Gerenciar Chaves Pix**
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-Muito simples coloque uma identificação chave pix para identificar mesmo atendimento e dados da chave
+---
+
+## ➕ Como cadastrar uma Chave PIX
+
+O cadastro é simples e rápido.
+
+1. Informe uma **identificação da chave**
+
+   * Serve apenas para organização interna
+   * Exemplo: *PIX Principal*, *PIX Loja Centro*, etc.
+
+2. Preencha os **dados da Chave PIX**
+
+   * Pode ser CPF, CNPJ, e-mail, telefone ou chave aleatória
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-Pronto depois cadastrada estará disponível na tela atendimento para canais da plus
+✅ Após salvar, a chave estará pronta para uso.
+
+---
+
+## 💬 Usando a Chave PIX no atendimento
+
+Depois de cadastrada, a Chave PIX ficará disponível **na tela de atendimento**, somente para **canais API PLUS**.
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-Somente selecionando chave e clicando em enviar&#x20;
+### Para enviar ao cliente:
+
+1. Selecione a **Chave PIX desejada**
+2. Clique em **Enviar**
 
 <figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
+---
 
+## 📄 Formato da mensagem enviada
 
-Fica nesse formato
+A mensagem será enviada automaticamente neste formato padrão:
 
 <figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-Caso colocar informações adicionais
+---
+
+## 📝 Informações adicionais (opcional)
+
+Se desejar, você pode adicionar **informações extras**, como:
+
+* Valor do pagamento
+* Descrição
+* Observações para o cliente
 
 <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-Resultado
+### Resultado final para o cliente:
 
 <figure><img src="../../.gitbook/assets/image (50).png" alt=""><figcaption></figcaption></figure>
