@@ -1,8 +1,9 @@
 ---
 description: Disponível somente para canais API PLUS
+icon: key
 ---
 
-# 🔑 Chave PIX
+# Chave PIX
 
 Esta funcionalidade permite **enviar uma Chave PIX diretamente pela tela de atendimento**, facilitando o envio de dados de pagamento ao cliente.
 
