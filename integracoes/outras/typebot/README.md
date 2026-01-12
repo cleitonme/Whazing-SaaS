@@ -240,6 +240,31 @@ phoneNumber: 5511999999999
 [item]
 ```
 
+* Criar Pix Button - API PLUS
+
+```bash
+[pixbutton]
+[pixKey]11071697000108[/pixKey]
+[pixName]Informeurer Informatica[/pixName]
+[pixType]CNPJ[/pixType]
+```
+
+* Criar Request Pagamento - API PLUS
+
+```bash
+[requestpayment]
+[amount]199.99[/amount]
+[text]Pedido #123 pronto para pagamento[/text]
+[pixKey]11071697000108[/pix]
+[pixName]Informeurer Informatica[/name]
+[pixType]CNPJ[/type]
+[paymentLink]CNPJ[/paymentLink]
+[title]Detalhes do pedido[/title]
+[footer]Loja Exemplo[/footer]
+[itemName]Assinatura Plano Ouro[/itemName]
+[boletoCode]34191.79001 01043.510047 91020.150008 5 91070026000[/boletoCode]
+```
+
 **IMPORTANTE**:
 
 * Veja como instalar o Typebot na mesma VPS que o Whazing [aqui](comoinstalar.md).
