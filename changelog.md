@@ -1,5 +1,249 @@
 # Changelog e Atualizações
 
+## 🚀 Versão 2.15.0 BETA – Changelog
+
+⚠️ **Atenção**
+
+🐞 **bug** – criando índices únicos para informações adicionais dos contatos, para não duplicar.
+Caso seja detectado repetidas, será apagada as mais antigas, mantida somente a mais recente criada.
+
+🐞 **bug** – aumento da quantidade de caracteres nas colunas da tabela **"PushSubscriptions"**, que causava erro em alguns dispositivos ao cadastrar push devido à quantidade de caracteres.
+
+🐞 **bug** – validação do campo tempo de fechamento do ticket bot.
+Deixar esse campo em branco faz com que nenhum bot feche atendimento automático.
+
+🐞 **bug** – listar último ticket fechado.
+Quando tem mais de um canal, só vai listar o ticket mais recente, não localizando conversa de outros canais.
+
+🐞 **bug** – reações em grupos sumirem.
+
+🐞 **bug** – controle de zoom atrás de mensagens rápidas.
+
+🐞 **bug** – segunda via de boleto Assas limitada aos próximos 6 meses, para não cortar boletos.
+
+🐞 **bug** – não exige mais telefone para poder editar contatos como hubs.
+
+---
+
+📝 **módulo avaliação**
+
+3 mensagens avaliação erradas volta abrir ticket
+Mensagens inválidas ficam registradas no ticket
+
+---
+
+📋 **módulo tarefas totalmente reformulado**
+
+* Estilo Kanban
+* Novos filtros
+* Novas etapas
+* Registro data alteração etapa
+* Nova configuração permite habilitar usuários comum possa criar tarefas para qualquer usuário
+* Nova tarefa criada por outro usuário manda mensagem no chat interno notificando a mesma
+* Atribuir tarefas a equipes
+  Configuração para usuário comum poder atribuir tarefas a equipes que ele não faz parte
+  Emite mensagem no chat interno nova tarefa
+
+---
+
+🔄 **Sincronização mensagem API Plus e Wuzapi**
+
+Vai solicitar JID e LID.
+Então contagem total de mensagens às vezes pode dar errado.
+Antes era solicitado somente JID, mas quando mensagem chegava como LID essas mensagens ficavam fora da sincronização.
+Achei melhor alterar.
+
+---
+
+🔌 **Wuzapi**
+
+Mudanças para compatibilidade com nova versão.
+Necessário atualizar WUAZAPI:
+
+```
+curl -sSL wuzapi.whazing.com.br | sudo bash
+```
+
+Suporte lista, botão, chave Pix, copy, call (somente chave, sem valor).
+(Somente minha versão, original não tem suporte)
+Sem garantia, use por sua conta e risco.
+
+---
+
+🔁 **Sincronizar mensagens todos contatos API Plus e Wuzapi**
+
+Esse processo é extremamente lento.
+Estará disponível somente quando estiver ativado plano importar mensagens.
+
+Na lista de canais vai ter opção sincronizar, onde coloca número de mensagens por contato (valor de 1 a 100).
+O sistema pega lista de contatos e busca no servidor Plus ou Wuzapi se possui alguma mensagem e baixa para o Whazing.
+
+Se tiver 1000 contatos, terá cerca de 2000 sincronizações.
+1000 JID e 1000 LID.
+
+---
+
+🌐 **API Plus**
+
+Suporte envio botão Pix, API, tela atendimento, Typebot, Bot Interno.
+(para tela de atendimento cadastrar chaves previamente na tela canais)
+
+---
+
+📡 **WABA API oficial**
+
+Ativando webhook:
+
+* template message_template_components_update
+* message_template_quality_update
+* message_template_status_update
+* template_category_update
+* template_correct_category_detection
+
+Ao receber, sistema vai sincronizar templates automaticamente com novas alterações.
+
+Melhoria busca última mensagem enviada para aviso 24 horas.
+
+2 novas opções ferramentas canais:
+1 – exibir informações do canal
+2 – atualizar URL webhook
+
+Renderizar templates enviados via API ou campanha.
+Suporte conexão TechProvider com embed.
+
+Caso mensagem X (-1) tenha retorno ACK, consultar informações de retorno.
+Caso tenha, vai aparecer onde tem opção responder.
+
+Valida dados JSON botão e lista para evitar erros de envio.
+Template hello_word retirado da lista.
+
+Suporte conexão via cadastro incorporado com suporte coeexistencia, necessario techprovider
+
+---
+
+🔐 **Baileys, Wuzapi**
+
+Suporte usar proxy configurado no `.env`.
+(proxy do `.env` não valida se está funcionando)
+
+[https://doc.whazing.com.br/docs/configuracoes-vps-e-whazing/proxytodascontas_whatsapp](https://doc.whazing.com.br/docs/configuracoes-vps-e-whazing/proxytodascontas_whatsapp)
+
+Prioridade proxy banco, se não tiver vai tentar do `.env`.
+
+`PROXY_URL_VALID=true`
+Com essa configuração ele vai validar proxy.
+Caso falhar, não vai usar.
+
+Vocês devem sempre verificar logs, pois como o canal conecta pode parecer falso positivo
+(vocês acham que está usando proxy, mas não).
+
+`PROXY_URL_VALID` somente para Baileys e Wuzapi.
+A API Plus tem regras próprias, se tiver erro de proxy usa deles automaticamente.
+
+---
+
+📞 **Opção ligação**
+
+Opção ligação não abrir tickets.
+
+---
+
+🖥️ **Tela atendimento**
+
+Opção desativar bot interno daquele ticket quando abre atendimento que está no meio do bot
+(vai ficar aqueles ícones de baixo editar lado direito).
+
+Filtro admin usuário exibe foto se usuário está online.
+Filtro cliente aguardando resposta (somente filtra abertos).
+
+➕ Colocado atalho adicionar anotação no ticket também.
+
+📝 **Anotação Ticket**
+
+Possibilidade marcar usuários.
+Ao marcar, eles recebem mensagem no chat interno com anotação feita.
+
+Possibilidade marcar equipes no chat interno.
+
+Cache input mensagem: troca de ticket mantém mensagem.
+
+---
+
+💬 **Chat Interno**
+
+Admin e supervisores podem acessar conversas de todos usuários.
+
+---
+
+🤖 **Chat Bot interno + horário atendimento + Integração IA**
+
+Ao transferir uma fila, aciona horário de atendimento enviando mensagem, caso configurado.
+
+
+🤖 **Bot Interno**
+
+Espaço construção bot dinâmico se ajusta à quantidade de nodes.
+
+Suporte envio de arquivos com legenda.
+
+---
+
+🔗 **Integração Assas, Hubsoft, SGP e IXC**
+
+Exibe informações na lista de tickets se está bot, usa filtro bot.
+Possível selecionar se deve usar botão, lista e botão copy, tornando mais dinâmico.
+
+Integração 2ª via boleto provedores.
+Caso não consiga fazer desbloqueio de confiança, não transfere mais atendimento direto da mensagem:
+"Desculpe! 😕 Não consegui completar o desbloqueio da sua conexão."
+
+Depois mostra opção finalizar atendimento ou falar com atendente.
+
+Integração 2ª via boletos SGP trocado endpoint para trazer todos boletos em aberto.
+
+---
+
+👥 **Contatos**
+
+No cadastro opção **"Validar se o número possui WhatsApp"**.
+Permite desativar validação contatos permitindo cadastrar mesmo não tendo WhatsApp.
+Cuidado – isso pode causar problemas se iniciar conversa com esses contatos.
+
+---
+
+📊 **CRM / Kanban**
+
+Reestruturado layout.
+
+---
+
+🎨 Muitas mudanças no layout, não vou especificar.
+⚠️ Muitas mudanças, algumas esqueci de documentar.
+
+---
+
+🔧 **Canais HUB**
+
+Liberado campo para editar token do canal, facilitando caso de manutenção.
+Ao reiniciar canais, ele força configurar webhook para casos de perda.
+
+---
+
+🧩 **Painel SAAS**
+
+Configuração Admin Wuzapi.
+Gera token automaticamente ao cadastrar novo canal Plus ou fazer migração.
+
+🔑 **Gerenciamento de Tokens Plus**
+
+Cadastra tokens adquiridos dos servers do Whazing.
+Cliente cadastrar novo canal ou migrar vai usar um dos tokens disponíveis.
+Caso não encontre, vai dar erro.
+
+📱 **Canais WhatsApp Plus Cadastrados**
+
+Objetivo de ver quais canais cadastrados e, se precisar, alterar token ou server do canal.
+
 ### 🚀 Versão 2.14.8 — 07/01/25
 
 - nova versão api wavoip
