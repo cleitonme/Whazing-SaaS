@@ -10,7 +10,7 @@ Cadastrar através da URL [https://hub.whazing.com.br/](https://hub.whazing.com.
 
 Usar cupom desconto: whazing
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 🔹 Acesso ao Hub
 
@@ -45,7 +45,7 @@ Usar cupom desconto: whazing
 
 ### ⚠️ Observações importantes
 
-* ** Atenção: O token deve pertencer à conta, não ao canal.
+* \*\* Atenção: O token deve pertencer à conta, não ao canal.
 * **Não é possível iniciar conversas pelo Hub**.
 * A interação **só pode começar** após o cliente entrar em contato primeiro.
 * Você tem 24 horas para responder as mensagens, depois fecha janela de conversa
