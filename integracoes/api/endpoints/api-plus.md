@@ -224,3 +224,38 @@ icon: play
   }
 }
 ```
+
+#### 7. Enviar pix
+
+```json
+{
+  "number": "{{number}}",
+  "contents": {
+    "type": "pixbutton",
+    "pixKey": "11071697000108",
+    "pixName": "Informeurer Informatica",
+    "pixType": "CNPJ" //pixType aceita: CPF, CNPJ, PHONE, EMAIL, EVP (case insensitive)
+  }
+}
+```
+
+#### 8. Enviar solicitacao pagamento
+
+```json
+{
+  "number": "{{number}}",
+  "contents": {
+    "type": "requestpayment",
+    "amount": 199.99, //obrigatorio
+    "text": "Pedido #123 pronto para pagamento",
+    "pixKey": "11071697000108",
+    "pixName": "Informeurer Informatica",
+    "pixType": "CNPJ", //pixType aceita: CPF, CNPJ, PHONE, EMAIL, EVP (case insensitive)
+    //"paymentLink": "https://pagamentos.exemplo.com/checkout/abc", //somente provedores homologados whatsapp lista documentacao
+    "title": "Detalhes do pedido",
+    "footer": "Loja Exemplo",
+    "itemName": "Assinatura Plano Ouro",
+ "boletoCode": "34191.79001 01043.510047 91020.150008 5 91070026000"
+  }
+}
+```
