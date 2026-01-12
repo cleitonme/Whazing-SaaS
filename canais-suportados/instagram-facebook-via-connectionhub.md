@@ -25,3 +25,10 @@ Em contas minha conta - copia o Access Token e cole no campo token do Connection
 Depois clicar adicionar canal selecionar Connection Hub e depois canal cadastrado
 
 <figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+
+### ⚠️ Observações importantes
+
+* ** Atenção: O token deve pertencer à conta, não ao canal.
+* **Não é possível iniciar conversas pelo Hub**.
+* A interação **só pode começar** após o cliente entrar em contato primeiro.
+* Você tem 24 horas para responder as mensagens, depois fecha janela de conversa
