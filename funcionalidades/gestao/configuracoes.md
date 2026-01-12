@@ -95,6 +95,29 @@ Aqui você encontrará todas as opções de personalização para adaptar o aten
 
 ***
 
+## 📝 Módulo de Tarefas
+
+As configurações abaixo controlam como os usuários podem criar e direcionar tarefas dentro do sistema.
+
+### ✅ Opções Disponíveis
+
+* 👤 **Permitir que usuários criem tarefas para outros usuários**
+  Ao ativar esta opção, os usuários poderão criar tarefas e atribuí-las diretamente a outros usuários do sistema.
+  Ideal para delegar atividades entre atendentes, supervisores ou setores.
+
+* 👥 **Permitir que usuários criem tarefas para outras equipes**
+  Ao ativar esta opção, os usuários poderão criar tarefas direcionadas para equipes diferentes da sua.
+  Essa configuração facilita a comunicação e a colaboração entre equipes, como atendimento, financeiro ou suporte técnico.
+
+---
+
+### 📌 Observações Importantes
+
+* 🔒 Caso essas opções estejam desativadas, o usuário só poderá criar tarefas para si mesmo ou para sua própria equipe.
+* 🧩 Recomendado habilitar essas funções apenas se sua operação trabalhar com colaboração entre usuários ou equipes.
+* ⚙️ As permissões de acesso dos usuários continuam sendo respeitadas, conforme o perfil configurado.
+
+
 ## 📌 Notas Finais
 
 * 📉 Bases muito grandes podem afetar a performance do CRM e da tela de atendimento. Ajuste os limites conforme sua estrutura.
