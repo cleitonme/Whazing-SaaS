@@ -56,6 +56,7 @@
   * [WhatsApp API PLUS](canais-suportados/whatsapp_api_plus/README.md)
     * [Gerenciamento de Tokens Plus](canais-suportados/whatsapp_api_plus/gerenciamento-de-tokens-plus.md)
     * [Geração automática TOKEN](canais-suportados/whatsapp_api_plus/geracao-automatica-token.md)
+    * [Canais WhatsApp Plus Cadastrados](canais-suportados/whatsapp_api_plus/canais-whatsapp-plus-cadastrados.md)
   * [Instagram, Facebook via ConnectionHub](canais-suportados/instagram-facebook-via-connectionhub.md)
   * [Instagram, facebook e webchat via NotificaMe](canais-suportados/facebook-e-instagram-via-hub/README.md)
     * [Responder Comentários Instagram - HUB NotificaMe](canais-suportados/facebook-e-instagram-via-hub/responder-comentarios-instagram.md)
