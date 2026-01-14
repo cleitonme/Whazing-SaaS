@@ -13,6 +13,7 @@
 4. **Configure seu template**
    * **Cabeçalho**: se quiser usar uma imagem, selecione "Imagem" e envie o modelo.
    * **Corpo da mensagem**: insira o texto. Você pode usar variáveis como:
+   * Use Tipo de variável Número
      * `{{1}}` = Nome do cliente
      * `{{2}}` = Nome do agente que envia a mensagem
    * **Rodapé** (opcional): adicione um texto adicional.
