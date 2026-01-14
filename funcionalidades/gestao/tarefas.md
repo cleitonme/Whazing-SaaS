@@ -6,7 +6,7 @@ icon: clipboard-list
 
 O módulo de **Tarefas** permite organizar atividades internas, atribuindo responsabilidades a usuários ou equipes, com definição de **prazo**, **prioridade** e **acompanhamento do andamento**.
 
-![](<../../.gitbook/assets/image (2) (1) (1) (1).png>)
+![](<../../.gitbook/assets/image (2) (1) (1) (1) (1).png>)
 
 ***
 
@@ -21,7 +21,7 @@ Ao criar uma tarefa, você pode:
 
 Quando uma tarefa é criada para outro usuário ou equipe, uma **notificação é enviada automaticamente no chat interno**, garantindo que todos sejam informados.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -44,7 +44,7 @@ Administradores e supervisores podem:
 * 📝 Criar tarefas para **qualquer usuário ou equipe**
 * ⚙️ Definir se usuários comuns podem criar tarefas para outros usuários ou equipes através das **Configurações do sistema**
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

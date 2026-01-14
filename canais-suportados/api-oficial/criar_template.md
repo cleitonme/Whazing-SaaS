@@ -31,8 +31,42 @@
 
 Entre no canal na plataforma e clique em **"Sincronizar templates"** para que ele apareça no Whazing.
 
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 Os templates estarão disponível na tela atendimento clicando no botão + ou opção campanha api oficial.
 
 ***
 
 Site para ajudar gerar template [https://poli.digital/gerador-template-whatsapp/](https://poli.digital/gerador-template-whatsapp/)
+
+#### Enviar template tela atendimento:
+
+Estara disponível na tela atendimento, com ticket aberto clique no + - enviar template
+
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+Seleciona categoria do template
+
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+Selecione o template
+
+<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+
+Ira aparecer um preview template e os campos editaveis para preencher
+
+<figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+
+So preencher dados e clicar em enviar
+
+#### Enviar Campanha tela atendimento:
+
+No cadastro campanhas tem aba API OFICIAL será semelhante envio tela atendimento você seleciona whatsapp, o template preenche dados, unica diferença no final aparece configurar nome da campanha, data e hora iniciar e tempo entre mensagens
+
+<figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
+
+Após cadastrar campanha clique botão listar contatos da campanha
+
+<figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
+
+Adicione os mesmos e depois volte clique para programar envio.

@@ -26,7 +26,7 @@ O processo é bem simples:
 2. Informe o **token**
 3. Selecione o **servidor**
 
-<figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (3) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -50,7 +50,7 @@ O processo é bem simples:
 * Verificar quais tokens estão **em uso**
 * Identificar tokens **disponíveis**
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

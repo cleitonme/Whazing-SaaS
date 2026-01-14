@@ -50,7 +50,7 @@ Quando terminar, clique em **Listar Campanhas** para voltar à tela anterior.
 2. Clique em **Programar Envio**.
 3. A campanha será executada automaticamente na data e horário definidos.
 
-<figure><img src="../../.gitbook/assets/image (9) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
