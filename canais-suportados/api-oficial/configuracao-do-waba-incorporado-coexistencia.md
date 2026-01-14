@@ -64,7 +64,7 @@ Cadastrar [https://bot.seusite.com.br/#/conectarwaba](https://bot.seusite.com.br
 
 Sempre trocando bot.seusite.com.br pelo url do seu frontend
 
-<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -157,11 +157,11 @@ Com todas essas etapas concluídas:
 2. Acesse **Canais**
 3. Clique em **Adicionar canal**
 
-<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 4. Clique em **Conectar WABA**
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

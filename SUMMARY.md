@@ -54,6 +54,7 @@
     * [⚠️ Limitações e Erros](canais-suportados/api-oficial/limitacoes-e-erros.md)
   * [WhatsApp Wuzapi (WhatsMeow)](canais-suportados/whatsapp-wuzapi.md)
   * [WhatsApp API PLUS](canais-suportados/whatsapp_api_plus/README.md)
+    * [Gerenciamento de Tokens Plus](canais-suportados/whatsapp_api_plus/gerenciamento-de-tokens-plus.md)
     * [Geração automática TOKEN](canais-suportados/whatsapp_api_plus/geracao-automatica-token.md)
   * [Instagram, Facebook via ConnectionHub](canais-suportados/instagram-facebook-via-connectionhub.md)
   * [Instagram, facebook e webchat via NotificaMe](canais-suportados/facebook-e-instagram-via-hub/README.md)

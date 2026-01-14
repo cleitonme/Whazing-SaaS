@@ -4,6 +4,8 @@ icon: key
 
 # Geração automática TOKEN
 
+Esta configuração está disponível no painel SaaS na aba canais
+
 Com essa configuração ativada, ao **cadastrar um novo canal**, o sistema irá:
 
 1. Gerar automaticamente um **token no seu servidor UazAPI**
@@ -32,7 +34,7 @@ Com apenas esses dois dados, o sistema já consegue criar e registrar os tokens 
 
 ***
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
