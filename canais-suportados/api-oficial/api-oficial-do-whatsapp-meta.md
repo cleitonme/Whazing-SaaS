@@ -134,28 +134,112 @@ Para garantir o funcionamento contínuo, gere um **Token Permanente**.
 
 
 
-Solução de problemas:
+Perfeito 👍
+Segue o texto **reorganizado, mais didático e pronto para publicação no GitBook**, mantendo **todas as telas, links e contexto técnico**, mas com leitura fácil para leigos.
 
-Pelo WHAZING:
 
-Ferramentas - Informações da conta
+# 🛠️ Solução de Problemas
 
-Essa tela exibi todos dados da conta e urls de webhook configuradas
+Esta seção ajuda a identificar e corrigir **problemas comuns de recebimento de mensagens** e **configuração de Webhook** na API Oficial do WhatsApp usando o **Whazing**.
+
+
+## 🔍 Verificando informações pelo WHAZING
+
+### 📌 Caminho no sistema
+
+Acesse no Whazing - Na tela de Canais:
+
+**Ferramentas → Informações da Conta**
+
+Essa tela exibe:
+
+* 📄 Dados gerais da conta
+* 📞 Informações do número conectado
+* 🔗 **URLs de Webhook configuradas**
+* ⚙️ Detalhes técnicos usados pela API Oficial
 
 <figure><img src="../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
 
-Ferramentas - Atualizar URL WebHook
+➡️ Utilize essa tela para confirmar se:
 
-Vai configurar automaticamente para webhook do whazing. Caso seja versão mais antiga sistema não tenha informações acima acesso pelo postman.
+* O número está corretamente vinculado
+* O Webhook está preenchido
+* As informações da conta estão atualizadas
 
-Pelo Postman:
+---
 
-Não recebe mensagem?
+## 🔄 Atualizando o Webhook pelo WHAZING
 
-Será webhook configurado certo tente configurar usando api meta
+### 📌 Caminho no sistema
 
-{% embed url="https://www.postman.com/meta/whatsapp-business-platform/request/c6z3o8n/override-callback-url?tab=body" %}
+**Ferramentas → Atualizar URL Webhook**
 
-Consultar Url webhook configurada: Verique url aparece em Webhook (WBA). Ela tem prioridade em relação da aplicação caso tenha as duas.
+Essa opção:
+
+* Configura automaticamente o **Webhook oficial do Whazing**
+* Garante que os eventos (mensagens, status, erros) sejam recebidos corretamente
+
+> ⚠️ Importante
+> Em versões **mais antigas do sistema**, essa opção pode não estar disponível.
+> Nesse caso, a configuração deve ser feita **manualmente via Postman**.
+
+---
+
+## 📡 Configuração e testes pelo Postman
+
+### ❓ Não está recebendo mensagens?
+
+O problema mais comum é **Webhook configurado incorretamente** ou apontando para outra aplicação.
+
+### 🔧 Tente configurar o Webhook diretamente pela API da Meta
+
+Utilize a requisição oficial no Postman para **sobrescrever (override)** a URL do Webhook:
+
+{% embed url="[https://www.postman.com/meta/whatsapp-business-platform/request/c6z3o8n/override-callback-url?tab=body](https://www.postman.com/meta/whatsapp-business-platform/request/c6z3o8n/override-callback-url?tab=body)" %}
+
+Essa requisição força a API da Meta a usar a URL informada como Webhook principal.
+
+---
+
+## 🔍 Verificando qual Webhook está ativo
+
+É possível consultar qual URL de Webhook está realmente configurada no número.
+
+### Passo importante
+
+* Verifique o campo **Webhook (WBA)**
+* Se existir uma URL nesse campo:
+
+  * ⚠️ **Ela tem prioridade** sobre o Webhook configurado na aplicação
+  * Mesmo que o Whazing esteja configurado corretamente, ele **não receberá eventos**
+
+### Consulta via Postman
+
+Utilize a requisição abaixo para consultar os números e seus Webhooks configurados:
 
 [https://www.postman.com/meta/whatsapp-business-platform/request/l8ugxbv/get-phone-numbers?tab=auth](https://www.postman.com/meta/whatsapp-business-platform/request/l8ugxbv/get-phone-numbers?tab=auth)
+
+---
+
+## ✅ Checklist rápido de solução
+
+Antes verifique:
+
+* ✔️ Webhook aparece corretamente em **Ferramentas → Informações da Conta**
+* ✔️ Não existe outro Webhook configurado em **Webhook (WBA)**
+* ✔️ URL do Webhook está pública e acessível
+* ✔️ Webhook foi atualizado pelo Whazing ou via Postman
+* ✔️ Eventos de mensagem estão habilitados na Meta
+
+---
+
+## 📌 Dica importante
+
+Sempre que:
+
+* Trocar domínio
+* Migrar servidor
+* Restaurar backup
+* Alterar configurações da conta Meta
+
+➡️ **Atualize novamente o Webhook**, pois a Meta pode manter URLs antigas ativas.
