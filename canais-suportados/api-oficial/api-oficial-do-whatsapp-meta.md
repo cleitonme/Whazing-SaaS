@@ -6,7 +6,9 @@ description: >-
 
 # API Oficial do WhatsApp (Meta)
 
-#### ⚠️ Considerações importantes <a href="#consideracoes-importantes" id="consideracoes-importantes"></a>
+## API Oficial do WhatsApp (Meta)
+
+**⚠️ Considerações importantes**
 
 * A API oficial **não oferece suporte a grupos**.
 * O envio de templates está configurado ➤ [Tabela oficial de preços da Meta](https://business.whatsapp.com/products/platform-pricing?lang=pt_BR\&country=Brasil\&currency=D%C3%B3lar%20\(USD\)\&category=Utilit%C3%A1rios)
@@ -16,11 +18,11 @@ description: >-
 
 ***
 
-## ✅ Manual de Integração com a API Oficial do WhatsApp (Meta)
+### ✅ Manual de Integração com a API Oficial do WhatsApp (Meta)
 
 ***
 
-### 1️⃣ Acessar o Painel da Meta
+#### 1️⃣ Acessar o Painel da Meta
 
 1. Entre em: [https://developers.facebook.com/](https://developers.facebook.com/)
 2. Faça login com sua conta do **Facebook**.
@@ -29,7 +31,7 @@ description: >-
 
 ***
 
-### 2️⃣ Configurar o WhatsApp
+#### 2️⃣ Configurar o WhatsApp
 
 * No painel de **Produtos**, localize **WhatsApp** e clique em **Configurar**.
 *   Escolha a empresa vinculada à sua conta.
@@ -39,7 +41,7 @@ description: >-
 
 ***
 
-### 3️⃣ Ajustes Iniciais do Aplicativo
+#### 3️⃣ Ajustes Iniciais do Aplicativo
 
 1. Acesse **Configurações do App > Básico**.
 2. Preencha os campos obrigatórios:
@@ -50,7 +52,7 @@ description: >-
 
 ***
 
-### 4️⃣ Configurar a API do WhatsApp
+#### 4️⃣ Configurar a API do WhatsApp
 
 1. No menu lateral, vá em **WhatsApp > Configuração da API**.
 2. Na etapa 5, clique em **Adicionar Número de Telefone**.
@@ -58,14 +60,14 @@ description: >-
 
 ***
 
-### 5️⃣ Gerar Token Temporário
+#### 5️⃣ Gerar Token Temporário
 
 * Ainda na tela de configuração da API, clique em **Gerar Token de Acesso Temporário**.
 * Copie o token gerado (ele será usado no Whazing).
 
 ***
 
-### 6️⃣ Adicionar Canal no Whazing
+#### 6️⃣ Adicionar Canal no Whazing
 
 <figure><img src="../../.gitbook/assets/whazing (5).png" alt=""><figcaption></figcaption></figure>
 
@@ -79,13 +81,13 @@ description: >-
 
 * **ID do Número de Telefone**
 * **ID da Conta do WhatsApp Business**
-* **Versão da API** (ex: `v22.0` ou a mais recente disponível).
+* **Versão da API** (ex: `v23.0` ou a mais recente disponível).
 
 <figure><img src="../../.gitbook/assets/whazing2.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-### 7️⃣ Configurar Webhook
+#### 7️⃣ Configurar Webhook
 
 1. No painel da Meta, acesse **WhatsApp > Configuração da API > Etapa 3: Configure Webhooks**.
 2. No Whazing, clique em **Gerar Token de Webhook** e copie:
@@ -101,18 +103,18 @@ description: >-
 
 ***
 
-### 8️⃣ Registrar Telefone no Whazing
+#### 8️⃣ Registrar Telefone no Whazing
+
+<figure><img src="../../.gitbook/assets/image (56).png" alt=""><figcaption></figcaption></figure>
 
 1. Acesse **Ferramentas > Registrar Telefone**.
 2. Digite um **PIN de 6 dígitos** (caso já tenha usado um PIN antes, utilize o mesmo).
-
-<figure><img src="../../.gitbook/assets/registrartelefone.png" alt=""><figcaption></figcaption></figure>
 
 Esse processo somente faz 1 vez
 
 ***
 
-### 9️⃣ Gerar Token Permanente
+#### 9️⃣ Gerar Token Permanente
 
 ⚠️ O token temporário expira em algumas horas.\
 Para garantir o funcionamento contínuo, gere um **Token Permanente**.
@@ -122,7 +124,7 @@ Para garantir o funcionamento contínuo, gere um **Token Permanente**.
 
 ***
 
-### 🔟 Atualizar Token no Whazing
+#### 🔟 Atualizar Token no Whazing
 
 * No Whazing, edite o canal criado e substitua o **Token de Acesso** temporário pelo **Token Permanente**.
 
@@ -132,22 +134,19 @@ Para garantir o funcionamento contínuo, gere um **Token Permanente**.
 
 **Esse guia pode lhe ajudar também** [**https://blog.meujames.com/como-habilitar-seu-numero-api-oficial-whatsapp/**](https://blog.meujames.com/como-habilitar-seu-numero-api-oficial-whatsapp/)
 
+Perfeito 👍 Segue o texto **reorganizado, mais didático e pronto para publicação no GitBook**, mantendo **todas as telas, links e contexto técnico**, mas com leitura fácil para leigos.
 
-
-Perfeito 👍
-Segue o texto **reorganizado, mais didático e pronto para publicação no GitBook**, mantendo **todas as telas, links e contexto técnico**, mas com leitura fácil para leigos.
-
-
-# 🛠️ Solução de Problemas
+## 🛠️ Solução de Problemas
 
 Esta seção ajuda a identificar e corrigir **problemas comuns de recebimento de mensagens** e **configuração de Webhook** na API Oficial do WhatsApp usando o **Whazing**.
 
+### 🔍 Verificando informações pelo WHAZING
 
-## 🔍 Verificando informações pelo WHAZING
-
-### 📌 Caminho no sistema
+#### 📌 Caminho no sistema
 
 Acesse no Whazing - Na tela de Canais:
+
+<figure><img src="../../.gitbook/assets/image (55).png" alt=""><figcaption></figcaption></figure>
 
 **Ferramentas → Informações da Conta**
 
@@ -166,11 +165,11 @@ Essa tela exibe:
 * O Webhook está preenchido
 * As informações da conta estão atualizadas
 
----
+***
 
-## 🔄 Atualizando o Webhook pelo WHAZING
+### 🔄 Atualizando o Webhook pelo WHAZING
 
-### 📌 Caminho no sistema
+#### 📌 Caminho no sistema
 
 **Ferramentas → Atualizar URL Webhook**
 
@@ -179,49 +178,44 @@ Essa opção:
 * Configura automaticamente o **Webhook oficial do Whazing**
 * Garante que os eventos (mensagens, status, erros) sejam recebidos corretamente
 
-> ⚠️ Importante
-> Em versões **mais antigas do sistema**, essa opção pode não estar disponível.
-> Nesse caso, a configuração deve ser feita **manualmente via Postman**.
+> ⚠️ Importante Em versões **mais antigas do sistema**, essa opção pode não estar disponível. Nesse caso, a configuração deve ser feita **manualmente via Postman**.
 
----
+***
 
-## 📡 Configuração e testes pelo Postman
+### 📡 Configuração e testes pelo Postman
 
-### ❓ Não está recebendo mensagens?
+#### ❓ Não está recebendo mensagens?
 
 O problema mais comum é **Webhook configurado incorretamente** ou apontando para outra aplicação.
 
-### 🔧 Tente configurar o Webhook diretamente pela API da Meta
+#### 🔧 Tente configurar o Webhook diretamente pela API da Meta
 
 Utilize a requisição oficial no Postman para **sobrescrever (override)** a URL do Webhook:
 
-{% embed url="[https://www.postman.com/meta/whatsapp-business-platform/request/c6z3o8n/override-callback-url?tab=body](https://www.postman.com/meta/whatsapp-business-platform/request/c6z3o8n/override-callback-url?tab=body)" %}
-
 Essa requisição força a API da Meta a usar a URL informada como Webhook principal.
 
----
+***
 
-## 🔍 Verificando qual Webhook está ativo
+### 🔍 Verificando qual Webhook está ativo
 
 É possível consultar qual URL de Webhook está realmente configurada no número.
 
-### Passo importante
+#### Passo importante
 
 * Verifique o campo **Webhook (WBA)**
 * Se existir uma URL nesse campo:
-
   * ⚠️ **Ela tem prioridade** sobre o Webhook configurado na aplicação
   * Mesmo que o Whazing esteja configurado corretamente, ele **não receberá eventos**
 
-### Consulta via Postman
+#### Consulta via Postman
 
 Utilize a requisição abaixo para consultar os números e seus Webhooks configurados:
 
 [https://www.postman.com/meta/whatsapp-business-platform/request/l8ugxbv/get-phone-numbers?tab=auth](https://www.postman.com/meta/whatsapp-business-platform/request/l8ugxbv/get-phone-numbers?tab=auth)
 
----
+***
 
-## ✅ Checklist rápido de solução
+### ✅ Checklist rápido de solução
 
 Antes verifique:
 
@@ -231,9 +225,9 @@ Antes verifique:
 * ✔️ Webhook foi atualizado pelo Whazing ou via Postman
 * ✔️ Eventos de mensagem estão habilitados na Meta
 
----
+***
 
-## 📌 Dica importante
+### 📌 Dica importante
 
 Sempre que:
 
