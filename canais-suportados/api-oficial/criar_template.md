@@ -145,6 +145,8 @@ No cadastro de **Campanhas**, existe a aba **API OFICIAL**.
 
 O processo é muito parecido com o envio pela tela de atendimento:
 
+Dentro da abaixa *API OFICIAL* clique no botão adicionar
+
 * Seleciona o WhatsApp
 * Escolhe o template
 * Preenche as variáveis
