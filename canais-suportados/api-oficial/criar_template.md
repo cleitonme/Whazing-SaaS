@@ -139,7 +139,7 @@ Basta preencher os dados e clicar em **Enviar**.
 
 ---
 
-## 📣 Enviar campanha pela tela de atendimento (API Oficial)
+## 📣 Enviar campanha (API Oficial)
 
 No cadastro de **Campanhas**, existe a aba **API OFICIAL**.
 
