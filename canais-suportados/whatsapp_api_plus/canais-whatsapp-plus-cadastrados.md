@@ -1,4 +1,8 @@
-# 📱 Canais WhatsApp Plus Cadastrados
+---
+icon: display-code
+---
+
+# Canais WhatsApp Plus Cadastrados
 
 Essa opção exibe a **lista de todos os canais WhatsApp Plus cadastrados no sistema**, facilitando a **localização, conferência e manutenção** dos canais.
 
@@ -14,7 +18,7 @@ Ela é especialmente útil quando for necessário **ajustar alguma informação*
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
----
+***
 
 ## ✅ Benefícios
 
