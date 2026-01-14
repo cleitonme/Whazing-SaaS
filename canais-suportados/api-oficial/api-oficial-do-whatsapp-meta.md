@@ -136,12 +136,26 @@ Para garantir o funcionamento contínuo, gere um **Token Permanente**.
 
 Solução de problemas:
 
+Pelo WHAZING:
+
+Ferramentas - Informações da conta
+
+Essa tela exibi todos dados da conta e urls de webhook configuradas
+
+<figure><img src="../../.gitbook/assets/image (54).png" alt=""><figcaption></figcaption></figure>
+
+Ferramentas - Atualizar URL WebHook
+
+Vai configurar automaticamente para webhook do whazing. Caso seja versão mais antiga sistema não tenha informações acima acesso pelo postman.
+
+Pelo Postman:
+
 Não recebe mensagem?
 
 Será webhook configurado certo tente configurar usando api meta
 
 {% embed url="https://www.postman.com/meta/whatsapp-business-platform/request/c6z3o8n/override-callback-url?tab=body" %}
 
-Consultar Url webhook configurada:
+Consultar Url webhook configurada: Verique url aparece em Webhook (WBA). Ela tem prioridade em relação da aplicação caso tenha as duas.
 
 [https://www.postman.com/meta/whatsapp-business-platform/request/l8ugxbv/get-phone-numbers?tab=auth](https://www.postman.com/meta/whatsapp-business-platform/request/l8ugxbv/get-phone-numbers?tab=auth)
