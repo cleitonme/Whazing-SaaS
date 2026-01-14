@@ -62,34 +62,6 @@ Usar cupom desconto: whazing
 
 ***
 
-## 📊 Limites da API Oficial
-
-1. Para iniciar uma conversa, é necessário usar uma **mensagem de modelo**, que precisa de aprovação da Meta.
-2. Imagens PNG com fundo transparente podem apresentar **alterações**, pois o WhatsApp converte para JPEG.
-3. Mensagens fora do modelo só são entregues **dentro da janela de 24 horas** desde a última mensagem do cliente.
-
-![print](../../../.gitbook/assets/limites.png)
-
-***
-
-## ❌ Por que minha mensagem enviada tem um “X” vermelho?
-
-![print](../../../.gitbook/assets/mensagemrejeitada.png)
-
-* Isso ocorre quando:
-  * A mensagem é enviada **fora da janela de 24 horas**, ou
-  * O conteúdo está em **formato não aceito pela Meta**.
-
-***
-
-## ✉️ Envio de mensagens com API oficial via Whazing
-
-* Funciona com envio de **mensagens e arquivos**, assim como na API não oficial.
-* A API **não valida** se o número possui WhatsApp, então:
-  * O número deve estar correto (DDD + 9º dígito, quando necessário).
-  * Deve respeitar a **janela de 24 horas**.
-* Novo endpoint disponível para **envio de botões**.
-
 ***
 
 ## 🚀 Quero iniciar conversa **sem usar templates da Meta**

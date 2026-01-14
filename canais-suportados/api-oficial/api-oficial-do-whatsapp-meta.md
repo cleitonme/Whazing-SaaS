@@ -134,13 +134,6 @@ Para garantir o funcionamento contínuo, gere um **Token Permanente**.
 
 
 
-### ✉️ Envio de mensagens com API oficial via Whazing <a href="#envio-de-mensagens-com-api-oficial-via-whazing" id="envio-de-mensagens-com-api-oficial-via-whazing"></a>
-
-* Funciona com envio de **mensagens e arquivos**, assim como na API não oficial.
-* A API **não valida** se o número possui WhatsApp, então:
-  * O número deve estar correto (DDD + 9º dígito, quando necessário).
-  * Deve respeitar a **janela de 24 horas**.
-
 Solução de problemas:
 
 Não recebe mensagem?

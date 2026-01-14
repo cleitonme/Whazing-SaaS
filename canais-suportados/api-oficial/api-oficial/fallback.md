@@ -1,3 +1,7 @@
+---
+description: Somente disponível via hub
+---
+
 # Modo Fallback
 
 Caso você esteja utilizando a API oficial (com leitura de QR Code e manutenção de sessão via aplicativo), o sistema contará com um **modo fallback**.\

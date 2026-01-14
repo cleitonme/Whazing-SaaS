@@ -1,6 +1,13 @@
 # Limitações e Erros
 
-#### 📊 Limites da API Oficial <a href="#limites-da-api-oficial" id="limites-da-api-oficial"></a>
+## ✉️ Envio de mensagens com API oficial via Whazing
+
+* Funciona com envio de **mensagens e arquivos**, assim como na API não oficial.
+* A API **não valida** se o número possui WhatsApp, então:
+  * O número deve estar correto (DDD + 9º dígito, quando necessário).
+  * Deve respeitar a **janela de 24 horas**.
+
+📊 Limites da API Oficial
 
 1. Para iniciar uma conversa, é necessário usar uma **mensagem de modelo**, que precisa de aprovação da Meta.
 2. Imagens PNG com fundo transparente podem apresentar **alterações**, pois o WhatsApp converte para JPEG.
