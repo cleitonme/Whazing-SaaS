@@ -27,7 +27,7 @@ Possui alterar tipo api não oficial usada sem perda de dados conforme [instruç
 
 ### ✅ API Não Oficial Premium (paga)
 
-* [**WhatsApp API PLUS**](whatsapp_api_plus.md)\*
+* [**WhatsApp API PLUS**](whatsapp_api_plus/)\*
 * API não oficial, mas com recursos avançados
 
 📌 Recursos disponíveis:

@@ -16,4 +16,4 @@ Você pode usar esses endpoints para integrar diretamente com seu sistema, criar
 
 Para ativar acesse Painel SaaS - API
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
