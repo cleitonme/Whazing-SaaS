@@ -15,3 +15,5 @@
     ✅ Atenda WhatsApp, Instagram, Facebook e muito mais\
     ✅ Modelo pronto para revenda: foco total no seu crescimento
 * 🚀 Comece agora a gerar renda com um sistema de atendimento completo, fácil de gerenciar e pronto para escalar!
+
+<figure><img src=".gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
