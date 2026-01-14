@@ -42,9 +42,27 @@ Esses dados devem ser cadastrados em:
 
 ⚠️ Aproveite para:
 
-* Cadastrar os **domínios do aplicativo**
+* Cadastrar os **domínios do aplicativo,**
+
+**Exemplo: https://bot.seusite.com.br**
+
 * Adicionar a **plataforma** no final da página
-* Configurar o **Login do Facebook para Empresas**, incluindo os domínios do seu sistema
+
+Em **Login do Facebook para Empresas - Configurações**
+
+**Login do Facebook para Empresas**
+
+Domínios permitidos para o SDK do JavaScript:
+
+* Cadastrar os **domínios do aplicativo,**
+
+**Exemplo: https://bot.seusite.com.br**
+
+**Importante em "**&#x55;RIs de redirecionamento do OAuth válidos"
+
+Cadastrar [https://bot.seusite.com.br/#/conectarwaba](https://bot.seusite.com.br/#/conectarwaba)
+
+Sempre trocando bot.seusite.com.br pelo url do seu frontend
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
