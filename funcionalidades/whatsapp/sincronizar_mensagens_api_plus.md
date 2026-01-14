@@ -1,42 +1,112 @@
+## icon: arrows-rotate
+
+# 🔄 Sincronizar Mensagens – API PLUS (WuzApi)
+
+Esta função permite **sincronizar mensagens antigas que não foram importadas automaticamente para o Whazing** após a leitura do QR Code.
+
+> ⚠️ **Importante**
+>
+> * Apenas mensagens que **já existem no servidor da API Plus ou WuzApi** podem ser sincronizadas.
+> * Essa opção **não substitui a importação via Baileys**.
+> * Caso precise importar todo o histórico inicial, utilize **Baileys** e, após a importação, **migre para API Plus**.
+
 ---
-icon: arrows-rotate
+
+## 📌 Onde é possível sincronizar mensagens
+
+Existem **duas formas de sincronização** disponíveis no sistema:
+
+1. **Sincronizar mensagens de todos os contatos (via Canal)**
+2. **Sincronizar mensagens de um contato específico (via Ticket)**
+
 ---
 
-# SINCRONIZAR MENSAGENS - API PLUS - WuzApi
+## 🔐 Requisito do plano
 
-\*Somente mensagens que não entraram no sistema após leitura QRcode. Sincronizar com mensagens gravadas no servidor da plus que whazing não baixou. Caso queira importar mensagens use baileys depois da importação migre para Plus
+Para sincronizar mensagens **diretamente pelos canais**, é obrigatório que o plano tenha o recurso:
 
-Existe 2 locais podem ser sincronizadas mensagens dentros tickets e para todos contatos nos canais
+✅ **Importar Mensagens**
 
-Para canais tem que o plano ter "Importar Mensagens"&#x20;
+Sem esse recurso ativo, a opção não ficará disponível.
 
-🔁 **Sincronizar mensagens todos contatos API Plus e Wuzapi**
+---
 
-Esse processo é extremamente lento. Estará disponível somente quando estiver ativado plano importar mensagens.
+## 🔁 Sincronizar mensagens de **todos os contatos** (Canal)
 
-Na lista de canais vai ter opção sincronizar, onde coloca número de mensagens por contato (valor de 1 a 100). O sistema pega lista de contatos e busca no servidor Plus ou Wuzapi se possui alguma mensagem e baixa para o Whazing.
+> ⏳ **Atenção:**
+> Esse processo é **extremamente lento**, principalmente em contas com muitos contatos.
 
-Se tiver 1000 contatos, terá cerca de 2000 sincronizações. 1000 JID e 1000 LID.
+### Como funciona
 
+* O sistema percorre **todos os contatos cadastrados**
+* Para cada contato, ele verifica no servidor da **API Plus ou WuzApi** se existem mensagens antigas
+* Caso existam, as mensagens são baixadas e salvas no Whazing
 
+📊 **Exemplo prático**
+Se você tiver **1.000 contatos**, o sistema fará aproximadamente:
 
-Acessa Configurações - Canais
+* **1.000 sincronizações de JID**
+* **1.000 sincronizações de LID**
+  ➡️ Total aproximado: **2.000 sincronizações**
 
-Com canal conectado terá opção
+---
+
+### Passo a passo
+
+1. Acesse:
+   **Configurações → Canais**
+2. Com o canal **conectado**, aparecerá a opção **Sincronizar mensagens**
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-Preencha quantidade de mensagem que deseja sincronizar e clique em salvar será processo demorado, não sera informações que esta fazendo somente pode acompanhar verificando que novos tickets será criados.&#x20;
+3. Informe a **quantidade de mensagens por contato**
 
+   * Valor mínimo: **1**
+   * Valor máximo: **100**
+4. Clique em **Salvar** para iniciar a sincronização
 
+> ⏳ Durante o processo:
+>
+> * Não há barra de progresso ou status em tempo real
+> * O acompanhamento é feito observando a **criação de novos tickets** no sistema
 
-Para sincronizar somente contato especifico
+---
 
-* Cadastrar contato - caso não tenha
-* Abrir novo ticket - caso não tenha algum aberto
+## 🎯 Sincronizar mensagens de **um contato específico**
+
+Essa opção é ideal quando você precisa recuperar mensagens de **apenas um contato**, sem impactar todo o sistema.
+
+### Pré-requisitos
+
+* ✅ O contato precisa estar **cadastrado**
+* ✅ Deve existir um **ticket aberto** para esse contato
+
+### Passo a passo
+
+1. Cadastre o contato (caso ainda não exista)
+2. Abra um novo ticket (se não houver nenhum ativo)
+3. No ticket, clique na opção de **Sincronizar mensagens**
 
 <figure><img src="../../.gitbook/assets/sinc (1).png" alt=""><figcaption></figcaption></figure>
 
-* Aparece pedindo quantidade de mensagens máximo 100, caso encontrar as mensagens elas começaram ser baixadas
+4. Informe a **quantidade máxima de mensagens**
+
+   * Limite: **até 100 mensagens**
+5. Confirme a ação
+
+📥 Se houver mensagens disponíveis no servidor, elas **começarão a ser baixadas automaticamente** para o ticket.
+
+---
+
+## ✅ Resumo rápido
+
+* 🔄 Sincronização busca mensagens **já existentes** na API Plus ou WuzApi
+* 🚫 Não substitui importação completa via Baileys
+* 🧾 Pode ser feita:
+
+  * Para **todos os contatos** (via Canal)
+  * Para **um contato específico** (via Ticket)
+* ⏳ Processo lento e sem progresso visual
+* 🔐 Recurso disponível apenas em planos com **Importar Mensagens**
