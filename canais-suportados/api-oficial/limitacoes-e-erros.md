@@ -35,3 +35,14 @@ Outro exemplo
 
 <figure><img src="../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
+Limitações coexistência
+
+A API Oficial do WhatsApp funciona **exclusivamente** após autenticação via QR Code, porém possui uma limitação importante: **não suporta interações com grupos**.
+
+Para whatsapp muitas mensagens não é recomendada
+
+Para manter a compatibilidade com o app WhatsApp Business, os números de telefone comerciais que estão em uso no app WhatsApp Business e na API de Nuvem têm a taxa de transferência fixa de 20 mps.
+
+Entre outras limitações verificar documentação oficial da meta abaixo
+
+[https://developers.facebook.com/documentation/business-messaging/whatsapp/embedded-signup/onboarding-business-app-users/](https://developers.facebook.com/documentation/business-messaging/whatsapp/embedded-signup/onboarding-business-app-users/)

@@ -48,7 +48,6 @@
     * [API Oficial do WhatsApp (Meta)](canais-suportados/api-oficial/api-oficial-do-whatsapp-meta.md)
     * [Whatsapp API OFICIAL VIA HUB](canais-suportados/api-oficial/api-oficial/README.md)
       * [Modo Fallback](canais-suportados/api-oficial/api-oficial/fallback.md)
-      * [Grupos x API Oficial WhatsApp](canais-suportados/api-oficial/api-oficial/grupos.md)
     * [Como criar template](canais-suportados/api-oficial/criar_template.md)
     * [Solicitar Provedor de Tecnologia](canais-suportados/api-oficial/solicitar-provedor-de-tecnologia.md)
     * [Configuração do WABA Incorporado (Coexistência)](canais-suportados/api-oficial/configuracao-do-waba-incorporado-coexistencia.md)
