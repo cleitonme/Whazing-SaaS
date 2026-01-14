@@ -16,11 +16,17 @@ Dados devem ser colocados e da api somente ir no whazing em Configurações - Ca
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
+Para envio mensagem PerfexCRM cadastro cliente você deve criar um contato com nome, email e telefone esse que será usado para enviar notificação, cliente pode ter mais de um contato. Para envio automatico voce deve configurar cron do perfexcrm, no proprio perfexcrm nas configuração cron você configura os envios.
+
+{% embed url="https://help.perfexcrm.com/setup-cron-job/" %}
+
+
+
 Modulo colocar whazing em um Iframe Perfex CRM
 
 [https://github.com/cleitonme/Whazing-SaaS/raw/refs/heads/main/docs/perfexcrm/modulo%20colocar%20iframe%20whazing%20no%20perfexcrm.zip](https://github.com/cleitonme/Whazing-SaaS/raw/refs/heads/main/docs/perfexcrm/modulo%20colocar%20iframe%20whazing%20no%20perfexcrm.zip)
 
-Caso queira para PERFEX CRM uma integração pix custo super baixo temos modulo do Pushin Pay
+Caso queira para PERFEX CRM uma integração pix custo super baixo temos modulo do Pushin Pay e Infinitepay
 
 💸 **Pushin Pay no Perfex CRM** Cada transação Pix tem **taxa fixa de apenas R$ 0,30** – valor definitivo, não é promoção!
 
