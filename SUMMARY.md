@@ -83,6 +83,7 @@
     * [Variáveis do Sistema](funcionalidades/gestao/variaveis-sistema.md)
     * [Tarefas](funcionalidades/gestao/tarefas.md)
   * [PWA CELULAR](funcionalidades/instalacao-do-pwa-e-habilitacao-de-notificacoes.md)
+  * [Anotação Tickets](funcionalidades/anotacao-tickets.md)
 * [Integrações](integracoes/README.md)
   * [Configuração](integracoes/configuracao.md)
   * [Inteligência Artificial](integracoes/inteligencia-artificial/README.md)
