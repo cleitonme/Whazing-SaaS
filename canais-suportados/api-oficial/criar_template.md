@@ -1,72 +1,181 @@
-# Como criar template
+# 📄 Como criar Templates do WhatsApp (API Oficial)
 
-#### ✅ Como criar meus templates no Meta?
+Os **templates do WhatsApp** são mensagens pré-aprovadas pelo Meta, obrigatórias para iniciar conversas ou enviar campanhas pela **API Oficial**.
 
-1. **Acesse seu Facebook Business**\
-   Clique no link abaixo para acessar a área de criação de templates:\
-   👉 [https://business.facebook.com/latest/whatsapp\_manager/message\_templates](https://business.facebook.com/latest/whatsapp_manager/message_templates)
-2. **Escolha a Business Manager (BM)**\
-   Se você tiver mais de uma, selecione a BM desejada para criar o template.
-3. **Clique em "Criar Modelo"**
-   * Escolha a **categoria**, **nome** e **idioma** do template.
-   * Clique em **"Continuar"**.
-4. **Configure seu template**
-   * **Cabeçalho**: se quiser usar uma imagem, selecione "Imagem" e envie o modelo.
-   * **Corpo da mensagem**: insira o texto. Você pode usar variáveis como:
-   * Use Tipo de variável Número
-     * `{{1}}` = Nome do cliente
-     * `{{2}}` = Nome do agente que envia a mensagem
-   * **Rodapé** (opcional): adicione um texto adicional.
-   * **Botões** (opcional): insira botões personalizados, se desejar.
-5. **Pré-visualize e envie**
-   * Verifique se o texto está correto.
-   * Clique em **"Enviar"**, depois em **"Confirmar"**.
-   * Quando aparecer a segunda mensagem, clique em **"Concluir"**.
-6. **Aguarde a aprovação do Meta**\
-   Assim que o status do template aparecer como **"Ativo"**, ele estará disponível na plataforma.
+Abaixo você aprende **como criar**, **aprovar**, **sincronizar** e **enviar** seus templates no Whazing.
 
-***
+---
 
-#### 🔄 Após a aprovação do template:
+## ✅ Como criar meus templates no Meta
 
-Entre no canal na plataforma e clique em **"Sincronizar templates"** para que ele apareça no Whazing.
+### 1️⃣ Acesse o Gerenciador de Templates do WhatsApp
+
+Entre no Facebook Business pelo link abaixo:
+
+👉 [https://business.facebook.com/latest/whatsapp_manager/message_templates](https://business.facebook.com/latest/whatsapp_manager/message_templates)
+
+---
+
+### 2️⃣ Escolha a Business Manager (BM)
+
+Caso você possua mais de uma BM (Business Manager), selecione aquela que deseja usar para criar o template.
+
+---
+
+### 3️⃣ Clique em **“Criar Modelo”**
+
+Nesta etapa você deve informar:
+
+* **Categoria** do template
+* **Nome** do template
+* **Idioma**
+
+Depois, clique em **“Continuar”**.
+
+---
+
+### 4️⃣ Configure o template
+
+Agora você vai montar a mensagem que será enviada aos clientes.
+
+#### 🖼 Cabeçalho (opcional)
+
+* Se desejar usar uma imagem, selecione **“Imagem”**
+* Envie a imagem que será exibida no topo da mensagem
+
+#### 📝 Corpo da mensagem
+
+* Escreva o texto principal do template
+* Você pode usar **variáveis numéricas**, que serão preenchidas no momento do envio
+
+Exemplo de variáveis:
+
+* `{{1}}` → Nome do cliente
+* `{{2}}` → Nome do atendente ou agente que envia a mensagem
+
+> ⚠️ Importante: sempre utilize **Tipo de variável: Número**
+
+#### 🔻 Rodapé (opcional)
+
+* Texto adicional, como avisos ou informações complementares
+
+#### 🔘 Botões (opcional)
+
+* Você pode adicionar botões de ação, como links ou respostas rápidas
+
+---
+
+### 5️⃣ Pré-visualize e envie para aprovação
+
+* Confira se o texto está correto
+* Clique em **“Enviar”**
+* Depois em **“Confirmar”**
+* Quando aparecer a segunda mensagem, clique em **“Concluir”**
+
+---
+
+### 6️⃣ Aguarde a aprovação do Meta
+
+O Meta irá analisar o template.
+Quando o status aparecer como **“Ativo”**, ele já poderá ser utilizado.
+
+---
+
+## 🔄 Após a aprovação do template
+
+Após o template ficar **Ativo**, é necessário sincronizá-lo no Whazing:
+
+1. Acesse o **canal do WhatsApp** na plataforma
+2. Clique em **“Sincronizar templates”**
+
+Assim, o template ficará disponível para envio.
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-Os templates estarão disponível na tela atendimento clicando no botão + ou opção campanha api oficial.
+---
 
-***
+## 📥 Onde os templates ficam disponíveis
 
-Site para ajudar gerar template [https://poli.digital/gerador-template-whatsapp/](https://poli.digital/gerador-template-whatsapp/)
+Os templates aprovados podem ser usados em dois locais:
 
-#### Enviar template tela atendimento:
+* ✔️ **Tela de Atendimento**
+* ✔️ **Campanhas (API Oficial)**
 
-Estara disponível na tela atendimento, com ticket aberto clique no + - enviar template
+---
+
+## ✉️ Enviar template pela tela de atendimento
+
+Com um ticket aberto:
+
+1. Clique no botão **“+”**
+2. Selecione **Enviar Template**
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
-Seleciona categoria do template
+---
+
+### 1️⃣ Selecione a categoria do template
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
-Selecione o template
+---
+
+### 2️⃣ Selecione o template desejado
 
 <figure><img src="../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
 
-Ira aparecer um preview template e os campos editaveis para preencher
+---
+
+### 3️⃣ Preencha os campos do template
+
+Será exibido:
+
+* Um **preview da mensagem**
+* Campos editáveis para preencher as variáveis (`{{1}}`, `{{2}}`, etc.)
 
 <figure><img src="../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
 
-So preencher dados e clicar em enviar
+Basta preencher os dados e clicar em **Enviar**.
 
-#### Enviar Campanha tela atendimento:
+---
 
-No cadastro campanhas tem aba API OFICIAL será semelhante envio tela atendimento você seleciona whatsapp, o template preenche dados, unica diferença no final aparece configurar nome da campanha, data e hora iniciar e tempo entre mensagens
+## 📣 Enviar campanha pela tela de atendimento (API Oficial)
+
+No cadastro de **Campanhas**, existe a aba **API OFICIAL**.
+
+O processo é muito parecido com o envio pela tela de atendimento:
+
+* Seleciona o WhatsApp
+* Escolhe o template
+* Preenche as variáveis
+
+🔔 **Diferença principal**:
+No final do processo você poderá configurar:
+
+* Nome da campanha
+* Data e hora de início
+* Tempo entre mensagens
 
 <figure><img src="../../.gitbook/assets/image (7).png" alt=""><figcaption></figcaption></figure>
 
-Após cadastrar campanha clique botão listar contatos da campanha
+---
+
+### 📋 Adicionar contatos à campanha
+
+Após cadastrar a campanha:
+
+1. Clique em **Listar contatos da campanha**
 
 <figure><img src="../../.gitbook/assets/image (8).png" alt=""><figcaption></figcaption></figure>
 
-Adicione os mesmos e depois volte clique para programar envio.
+2. Adicione os contatos desejados
+3. Volte para a campanha
+4. Clique para **Programar o envio**
+
+---
+
+## 🔗 Ferramenta para ajudar a criar templates
+
+Você pode usar o site abaixo para gerar ideias e estruturar seus templates:
+
+👉 [https://poli.digital/gerador-template-whatsapp/](https://poli.digital/gerador-template-whatsapp/)
