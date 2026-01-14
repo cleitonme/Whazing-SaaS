@@ -46,6 +46,8 @@ Esses dados devem ser cadastrados em:
 * Adicionar a **plataforma** no final da página
 * Configurar o **Login do Facebook para Empresas**, incluindo os domínios do seu sistema
 
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 ## 🆔 Criando o ID da Configuração
