@@ -159,7 +159,7 @@ Com todas essas etapas concluídas:
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
-1. Clique em **Conectar WABA**
+4. Clique em **Conectar WABA**
 
 <figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
