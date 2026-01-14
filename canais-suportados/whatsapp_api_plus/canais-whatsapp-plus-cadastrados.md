@@ -1,8 +1,24 @@
-# Canais WhatsApp Plus Cadastrados
+# 📱 Canais WhatsApp Plus Cadastrados
 
-Esta opção lista todos canais plus cadastrados para facilitar localização e manutenção. Caso prescise trocar uma key ou de servidor ou arrumar algum dado cadastrado errado\
+Essa opção exibe a **lista de todos os canais WhatsApp Plus cadastrados no sistema**, facilitando a **localização, conferência e manutenção** dos canais.
+
+Ela é especialmente útil quando for necessário **ajustar alguma informação**, como:
+
+* 🔑 Trocar uma **key/token**
+* 🌐 Alterar o **servidor**
+* ✏️ Corrigir algum **dado cadastrado incorretamente**
+
 <br>
 
 <figure><img src="../../.gitbook/assets/image (62).png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+---
+
+## ✅ Benefícios
+
+* Visão geral de todos os canais Plus
+* Facilidade para manutenção e ajustes rápidos
+* Agilidade na administração dos canais
+* Menos erros operacionais no dia a dia
