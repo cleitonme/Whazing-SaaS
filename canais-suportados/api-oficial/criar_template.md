@@ -4,7 +4,7 @@
 
 1. **Acesse seu Facebook Business**\
    Clique no link abaixo para acessar a área de criação de templates:\
-   👉 [business.facebook.com/wa/manage/message-templates](https://business.facebook.com/wa/manage/message-templates/)
+   👉 [https://business.facebook.com/latest/whatsapp\_manager/message\_templates](https://business.facebook.com/latest/whatsapp_manager/message_templates)
 2. **Escolha a Business Manager (BM)**\
    Se você tiver mais de uma, selecione a BM desejada para criar o template.
 3. **Clique em "Criar Modelo"**
