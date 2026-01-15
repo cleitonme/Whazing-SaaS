@@ -234,7 +234,6 @@ Ao reiniciar canais, ele força configurar webhook para casos de perda.
 
 - Troca icone botões coringa
 - Botão coringa por empresa
-- Opção desativar apis não oficiais da empresa
 
 Configuração Admin Wuzapi.
 Gera token automaticamente ao cadastrar novo canal Plus ou fazer migração.
