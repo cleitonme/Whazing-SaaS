@@ -14,6 +14,7 @@ description: >-
 4. Preencha os campos:
    * 🏷️ **Nome do botão** → o texto que será exibido no menu.
    * 🔗 **Link do botão** → endereço do site que será aberto ao clicar.
+   * Icone - Icone que ira aparecer no menu
 
 ***
 
@@ -22,3 +23,11 @@ description: >-
 ***
 
 <figure><img src="../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+Caso queira menu diferente somente empresa especifica, na aba empresas acesse opção configurar menu
+
+<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+
+Assim somente aparece aquela empresa você poderá colocar icone personalizado e url especifica para ela
