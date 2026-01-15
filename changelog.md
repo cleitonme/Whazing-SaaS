@@ -216,6 +216,7 @@ Cuidado – isso pode causar problemas se iniciar conversa com esses contatos.
 Reestruturado layout.
 
 ---
+- Mudança carregamento e salvamento fluxo chat interno, com indicação loading principamente fluxo mais pesados dava impressão travado sem retorno visual
 
 🎨 Muitas mudanças no layout, não vou especificar.
 ⚠️ Muitas mudanças, algumas esqueci de documentar.
@@ -230,6 +231,10 @@ Ao reiniciar canais, ele força configurar webhook para casos de perda.
 ---
 
 🧩 **Painel SAAS**
+
+- Troca icone botões coringa
+- Botão coringa por empresa
+- Opção desativar apis não oficiais da empresa
 
 Configuração Admin Wuzapi.
 Gera token automaticamente ao cadastrar novo canal Plus ou fazer migração.
