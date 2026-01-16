@@ -1,8 +1,3 @@
----
-icon: circle-exclamation
----
-```
-
 # 🚨 Sistema não abre ou não funciona
 
 Se o sistema **não abre**, **parou de funcionar** ou apresenta erros, siga este guia passo a passo.
