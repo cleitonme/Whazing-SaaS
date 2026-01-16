@@ -1,135 +1,231 @@
 ---
 icon: circle-exclamation
 ---
+```
 
-# Sistema não abre
+# 🚨 Sistema não abre ou não funciona
 
-### Meu sistema não está funcionando. O que fazer?
+Se o sistema **não abre**, **parou de funcionar** ou apresenta erros, siga este guia passo a passo.
+A maioria dos problemas está relacionada a **falta de espaço**, **DNS**, **containers parados** ou **atualização incompleta**.
 
-Minha VPS Tem espaço?
+---
 
-Você sabia que falta de espaço pode fazer sistema não funcionar
+## ❓ Meu sistema não está funcionando. O que fazer primeiro?
 
+### 1️⃣ Verifique se sua VPS tem espaço livre
+
+Quando a VPS fica sem espaço, o sistema pode:
+
+* Não abrir
+* Parar de enviar mensagens
+* Travar o backend
+* Não salvar arquivos
+
+### 🔍 Como verificar o espaço da VPS
+
+No terminal da VPS, execute:
+
+```bash
 df -h
+```
 
-Saber espaço ocupado
+Esse comando mostra o uso do disco.
 
-<figure><img src="../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (67).png" alt=""><figcaption>Exemplo de uso do disco</figcaption></figure>
 
-#### Valor importante tem analisar mounted /, no exemplo acima ta 82% uso
+### ⚠️ Atenção ao campo **Mounted on /**
 
-Soluções
+* O valor mais importante é o da linha `/`
+* Se estiver acima de **80%**, já é considerado **crítico**
+* No exemplo da imagem, o uso está em **82%**, o que pode causar falhas no sistema
 
-Aumentar o espaço, verificar empresa contratata essa possibilidade
+---
 
-Opção 2
+## 🛠️ Como resolver falta de espaço
 
-Apagar arquivos mais antigos ou de logs
+### ✅ Opção 1: Aumentar o disco da VPS
 
-pasta log
+Verifique com a empresa onde você contratou a VPS se é possível aumentar o espaço em disco.
 
+---
+
+### ✅ Opção 2: Apagar arquivos antigos (opção mais comum)
+
+#### 📂 Limpar arquivos de log (recomendado)
+
+Os logs podem crescer muito com o tempo.
+
+📁 Caminho da pasta de logs:
+
+```
 /home/deploy/whazing/backend/logs
+```
 
-pelo terminal acessar
+No terminal:
 
+```bash
 cd /home/deploy/whazing/backend/logs
+rm * -Rf
+```
 
-rm \* -Rf
+👉 Isso **não apaga dados do sistema**, apenas registros antigos.
 
-Pasta public onde tem arquivos de imagens, videos, fotos.
+---
 
+#### 📂 Limpar arquivos de mídia (imagens, vídeos, áudios)
+
+📁 Pasta onde ficam os arquivos enviados:
+
+```
 /home/deploy/whazing/backend/public/
+```
 
-Arquivos estão organizados por id da empresa exemplo 1, 2 3, e dentro da pasta organizado por data exemplo "202510"
+Estrutura:
 
-Dicas verificar consumo por pasta:
+* Pastas por **ID da empresa** (1, 2, 3...)
+* Dentro delas, pastas por **data** (exemplo: `202510`)
 
-Na pasta que queira consultar digite
+---
 
+### 🔎 Verificar quais pastas estão ocupando mais espaço
+
+Entre na pasta desejada e execute:
+
+```bash
 du -h --max-depth=1
+```
 
-Exemplo 2 somente acima de 1GB
+Para mostrar apenas pastas acima de **1GB**:
 
-du -h --max-depth=1 | grep -E '^\[0-9.]+G'
+```bash
+du -h --max-depth=1 | grep -E '^[0-9.]+G'
+```
 
-<figure><img src="../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (68).png" alt=""><figcaption>Pastas com alto consumo</figcaption></figure>
 
-Apagar pasta especifica
+---
 
+### 🗑️ Apagar uma pasta específica
+
+Exemplo: apagar a pasta `202510`:
+
+```bash
 sudo rm 202510/ -Rf
+```
 
-#### Erro: Backend não consegu
+⚠️ **Atenção:** apague apenas pastas antigas que você tenha certeza que não precisa mais.
 
-#### &#x20;logar
+---
 
-Se você enfrentar problemas no login, tente reiniciar o docker seguindo os passos abaixo:
+## 🔐 Erro: Backend não consegue logar
 
-1.  Renicie os proscessos:
+Se o sistema abre, mas não faz login ou apresenta erro no backend:
 
-    ```bash
-    docker container restart whazing-backend
-    ```
+### 🔄 Reinicie os containers
 
-    ```bash
-    docker container restart whazing-frontend
-    ```
+```bash
+docker container restart whazing-backend
+```
 
-#### Instalação nova
+```bash
+docker container restart whazing-frontend
+```
 
-1. **Acabei de instalar e o sistema não abre**
-   * Certifique-se de que o DNS está correto.
-   * Utilize [dnschecker.org](https://dnschecker.org) para verificar a propagação.
-     * Caso utilize Cloudflare, não ative o proxy (ícone de nuvem laranja).
-     * Ao verificar no **dnschecker.org**, o IP da sua VPS deve aparecer em todas as validações.
-2. **Verifique os logs do sistema**
-   * Consulte a documentação na seção [acessando\_logs](../instalacao-and-vps/acessando_logs.md) para identificar possíveis erros.
-3. **Reinstale o sistema**
-   * Caso seja uma instalação nova, formate a VPS utilizando o sistema operacional recomendado **Ubuntu 22** e refaça a instalação.
+Depois disso, aguarde alguns segundos e teste novamente.
 
-***
+---
 
-#### Acabei de atualizar
+## 🆕 Instalação nova e o sistema não abre
 
-1. **Você fez o snapshot da VPS conforme recomendado?**
-   * Caso tenha feito, retorne ao backup.
-2. **Execute o atualizador novamente**
-   * É possível que algum erro tenha ocorrido durante o processo de atualização.
-3. **Verifique os logs do sistema**
-   * Consulte a documentação na seção [acessando\_logs](../instalacao-and-vps/acessando_logs.md) para investigar eventuais erros.
+### 1️⃣ Verifique o DNS
 
-***
+* Confirme se o domínio aponta para o **IP da VPS**
+* Use: [https://dnschecker.org](https://dnschecker.org)
 
-#### O sistema parou de funcionar "do nada"
+⚠️ Se usar **Cloudflare**:
 
-1. **Reinicie a VPS**
-2. **Verifique os logs do sistema**
-   * Acesse a documentação na seção [acessando\_logs](../instalacao-and-vps/acessando_logs.md) para identificar problemas.
-3. **Execute a atualização**
-4. **Verifique o DNS**
-   * Use [dnschecker.org](https://dnschecker.org) para confirmar a propagação.
-     * Caso utilize Cloudflare, não ative o proxy (ícone de nuvem laranja).
-     * O IP da VPS deve aparecer em todas as validações no **dnschecker.org**.
-5. **Certifique-se de que o SSL está correto**
-   * Consulte a documentação na seção [Problemas com SSL](problemas_com_ssl.md) para maiores detalhes.
+* **Não ative o proxy** (nuvem laranja deve ficar desativada)
+* O IP da VPS deve aparecer em **todas as regiões**
 
-#### Meu sistema não envia ou recebe mensagens
+---
 
-1. **Reinicie a VPS**
-2. **Conecte novamente o whatsapp**
-3. **Verifique os logs do sistema**
-   * Acesse a documentação na seção [acessando\_logs](../instalacao-and-vps/acessando_logs.md) para identificar problemas.
+### 2️⃣ Verifique os logs do sistema
 
-Obs: Caso log aparece erro no redis exemplo "\[ioredis] Unhandled error event: Error: connect ECONNREFUSED"
+Consulte a documentação:
+👉 [Acessando logs](../instalacao-and-vps/acessando_logs.md)
 
-### Necessário reinstalar o mesmo - Verificar documentação "reinstalar\_redis" [reinstalar\_redis](reinstalar_redis.md)
+---
 
-#### Grupo de suporte
+### 3️⃣ Reinstale o sistema (último caso)
 
-Acesse nosso grupo de suporte:\
-[https://grupo.whazing.com.br](https://grupo.whazing.com.br)
+* Formate a VPS
+* Utilize **Ubuntu 22**
+* Refaça toda a instalação conforme a documentação oficial
 
-**Informe o máximo de informações possíveis**, como:
+---
 
-* Domínios de acesso
-* Resultados de comandos como _ping_
-* Logs relevantes [acessando\_logs](../instalacao-and-vps/acessando_logs.md)
+## 🔄 Acabei de atualizar e deu problema
+
+1️⃣ Você fez **snapshot / backup** da VPS antes de atualizar?
+
+* Se sim, restaure o backup
+
+2️⃣ Execute o **atualizador novamente**
+
+* Pode ter ocorrido erro durante o processo
+
+3️⃣ Verifique os logs
+👉 [Acessando logs](../instalacao-and-vps/acessando_logs.md)
+
+---
+
+## ⚡ O sistema parou de funcionar “do nada”
+
+Siga esta ordem:
+
+1️⃣ Reinicie a VPS
+2️⃣ Verifique os logs
+3️⃣ Execute a atualização
+4️⃣ Verifique o DNS no [https://dnschecker.org](https://dnschecker.org)
+5️⃣ Confirme se o SSL está funcionando corretamente
+👉 [Problemas com SSL](problemas_com_ssl.md)
+
+---
+
+## 📵 Sistema não envia ou não recebe mensagens
+
+1️⃣ Reinicie a VPS
+2️⃣ Reconecte o WhatsApp no sistema
+3️⃣ Verifique os logs
+
+👉 [Acessando logs](../instalacao-and-vps/acessando_logs.md)
+
+---
+
+### ⚠️ Erro comum no log (Redis)
+
+Se aparecer algo como:
+
+```
+[ioredis] Unhandled error event: Error: connect ECONNREFUSED
+```
+
+👉 É necessário **reinstalar o Redis**
+Consulte a documentação:
+🔗 [Reinstalar Redis](reinstalar_redis.md)
+
+---
+
+## 🆘 Grupo de suporte
+
+Se mesmo após seguir todos os passos o problema continuar:
+
+👉 Acesse o grupo de suporte:
+🔗 [https://grupo.whazing.com.br](https://grupo.whazing.com.br)
+
+### Envie o máximo de informações possíveis:
+
+* Domínios utilizados
+* Resultado de comandos como `ping`
+* Logs do sistema
+  👉 [Acessando logs](../instalacao-and-vps/acessando_logs.md)
