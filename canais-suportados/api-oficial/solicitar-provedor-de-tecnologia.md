@@ -110,7 +110,11 @@ Você verá a opção:
 
 Clique nela.
 
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+
 ***
+
+Provedor de tecnologia independente mais informações pode consultar [https://developers.facebook.com/documentation/business-messaging/whatsapp/embedded-signup/overview](https://developers.facebook.com/documentation/business-messaging/whatsapp/embedded-signup/overview)
 
 ### 3️⃣ Analisar configurações do aplicativo
 

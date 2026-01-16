@@ -99,7 +99,7 @@ Caso queira que o **Botão Coringa apareça apenas para uma empresa específica*
 
 ***
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption><p>Configuração de menu por empresa</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Configuração de menu por empresa</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Personalização do Botão Coringa por empresa</p></figcaption></figure>
 

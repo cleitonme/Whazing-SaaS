@@ -1,9 +1,12 @@
-# 🚨 Sistema não abre ou não funciona
-
-Se o sistema **não abre**, **parou de funcionar** ou apresenta erros, siga este guia passo a passo.
-A maioria dos problemas está relacionada a **falta de espaço**, **DNS**, **containers parados** ou **atualização incompleta**.
-
 ---
+icon: circle-exclamation
+---
+
+# 🚨 Sistema não abre
+
+Se o sistema **não abre**, **parou de funcionar** ou apresenta erros, siga este guia passo a passo. A maioria dos problemas está relacionada a **falta de espaço**, **DNS**, **containers parados** ou **atualização incompleta**.
+
+***
 
 ## ❓ Meu sistema não está funcionando. O que fazer primeiro?
 
@@ -26,7 +29,7 @@ df -h
 
 Esse comando mostra o uso do disco.
 
-<figure><img src="../.gitbook/assets/image (67).png" alt=""><figcaption>Exemplo de uso do disco</figcaption></figure>
+<figure><img src="../.gitbook/assets/image (67).png" alt=""><figcaption><p>Exemplo de uso do disco</p></figcaption></figure>
 
 ### ⚠️ Atenção ao campo **Mounted on /**
 
@@ -34,7 +37,7 @@ Esse comando mostra o uso do disco.
 * Se estiver acima de **80%**, já é considerado **crítico**
 * No exemplo da imagem, o uso está em **82%**, o que pode causar falhas no sistema
 
----
+***
 
 ## 🛠️ Como resolver falta de espaço
 
@@ -42,7 +45,7 @@ Esse comando mostra o uso do disco.
 
 Verifique com a empresa onde você contratou a VPS se é possível aumentar o espaço em disco.
 
----
+***
 
 ### ✅ Opção 2: Apagar arquivos antigos (opção mais comum)
 
@@ -65,7 +68,7 @@ rm * -Rf
 
 👉 Isso **não apaga dados do sistema**, apenas registros antigos.
 
----
+***
 
 #### 📂 Limpar arquivos de mídia (imagens, vídeos, áudios)
 
@@ -80,7 +83,7 @@ Estrutura:
 * Pastas por **ID da empresa** (1, 2, 3...)
 * Dentro delas, pastas por **data** (exemplo: `202510`)
 
----
+***
 
 ### 🔎 Verificar quais pastas estão ocupando mais espaço
 
@@ -96,9 +99,9 @@ Para mostrar apenas pastas acima de **1GB**:
 du -h --max-depth=1 | grep -E '^[0-9.]+G'
 ```
 
-<figure><img src="../.gitbook/assets/image (68).png" alt=""><figcaption>Pastas com alto consumo</figcaption></figure>
+<figure><img src="../.gitbook/assets/image (68).png" alt=""><figcaption><p>Pastas com alto consumo</p></figcaption></figure>
 
----
+***
 
 ### 🗑️ Apagar uma pasta específica
 
@@ -110,7 +113,7 @@ sudo rm 202510/ -Rf
 
 ⚠️ **Atenção:** apague apenas pastas antigas que você tenha certeza que não precisa mais.
 
----
+***
 
 ## 🔐 Erro: Backend não consegue logar
 
@@ -128,7 +131,7 @@ docker container restart whazing-frontend
 
 Depois disso, aguarde alguns segundos e teste novamente.
 
----
+***
 
 ## 🆕 Instalação nova e o sistema não abre
 
@@ -142,14 +145,13 @@ Depois disso, aguarde alguns segundos e teste novamente.
 * **Não ative o proxy** (nuvem laranja deve ficar desativada)
 * O IP da VPS deve aparecer em **todas as regiões**
 
----
+***
 
 ### 2️⃣ Verifique os logs do sistema
 
-Consulte a documentação:
-👉 [Acessando logs](../instalacao-and-vps/acessando_logs.md)
+Consulte a documentação: 👉 [Acessando logs](../instalacao-and-vps/acessando_logs.md)
 
----
+***
 
 ### 3️⃣ Reinstale o sistema (último caso)
 
@@ -157,7 +159,7 @@ Consulte a documentação:
 * Utilize **Ubuntu 22**
 * Refaça toda a instalação conforme a documentação oficial
 
----
+***
 
 ## 🔄 Acabei de atualizar e deu problema
 
@@ -169,33 +171,25 @@ Consulte a documentação:
 
 * Pode ter ocorrido erro durante o processo
 
-3️⃣ Verifique os logs
-👉 [Acessando logs](../instalacao-and-vps/acessando_logs.md)
+3️⃣ Verifique os logs 👉 [Acessando logs](../instalacao-and-vps/acessando_logs.md)
 
----
+***
 
 ## ⚡ O sistema parou de funcionar “do nada”
 
 Siga esta ordem:
 
-1️⃣ Reinicie a VPS
-2️⃣ Verifique os logs
-3️⃣ Execute a atualização
-4️⃣ Verifique o DNS no [https://dnschecker.org](https://dnschecker.org)
-5️⃣ Confirme se o SSL está funcionando corretamente
-👉 [Problemas com SSL](problemas_com_ssl.md)
+1️⃣ Reinicie a VPS 2️⃣ Verifique os logs 3️⃣ Execute a atualização 4️⃣ Verifique o DNS no [https://dnschecker.org](https://dnschecker.org) 5️⃣ Confirme se o SSL está funcionando corretamente 👉 [Problemas com SSL](problemas_com_ssl.md)
 
----
+***
 
 ## 📵 Sistema não envia ou não recebe mensagens
 
-1️⃣ Reinicie a VPS
-2️⃣ Reconecte o WhatsApp no sistema
-3️⃣ Verifique os logs
+1️⃣ Reinicie a VPS 2️⃣ Reconecte o WhatsApp no sistema 3️⃣ Verifique os logs
 
 👉 [Acessando logs](../instalacao-and-vps/acessando_logs.md)
 
----
+***
 
 ### ⚠️ Erro comum no log (Redis)
 
@@ -205,22 +199,18 @@ Se aparecer algo como:
 [ioredis] Unhandled error event: Error: connect ECONNREFUSED
 ```
 
-👉 É necessário **reinstalar o Redis**
-Consulte a documentação:
-🔗 [Reinstalar Redis](reinstalar_redis.md)
+👉 É necessário **reinstalar o Redis** Consulte a documentação: 🔗 [Reinstalar Redis](reinstalar_redis.md)
 
----
+***
 
 ## 🆘 Grupo de suporte
 
 Se mesmo após seguir todos os passos o problema continuar:
 
-👉 Acesse o grupo de suporte:
-🔗 [https://grupo.whazing.com.br](https://grupo.whazing.com.br)
+👉 Acesse o grupo de suporte: 🔗 [https://grupo.whazing.com.br](https://grupo.whazing.com.br)
 
 ### Envie o máximo de informações possíveis:
 
 * Domínios utilizados
 * Resultado de comandos como `ping`
-* Logs do sistema
-  👉 [Acessando logs](../instalacao-and-vps/acessando_logs.md)
+* Logs do sistema 👉 [Acessando logs](../instalacao-and-vps/acessando_logs.md)

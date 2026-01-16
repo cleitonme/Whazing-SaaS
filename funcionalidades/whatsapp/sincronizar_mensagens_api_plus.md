@@ -57,9 +57,9 @@ Sem esse recurso ativo, a opção não ficará disponível.
 1. Acesse: **Configurações → Canais**
 2. Com o canal **conectado**, aparecerá a opção **Sincronizar mensagens**
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 3. Informe a **quantidade de mensagens por contato**
    * Valor mínimo: **1**

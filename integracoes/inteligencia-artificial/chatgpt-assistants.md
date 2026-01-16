@@ -15,7 +15,7 @@ icon: chatgpt
 
 ## Configurar ChatGPT Assistant
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. **Fila**: Selecione a fila para a qual a IA deve transferir caso não consiga responder às perguntas ou resolver o problema. 2 **Mensagem de transferência**: Mensagem será enviado cliente caso ele pedir falar com um humano
 2. **Intervalo (ms) entre mensagens**:

@@ -124,7 +124,7 @@
       * [Outros](integracoes/api/endpoints/outros.md)
     * [Exemplos de Código](integracoes/api/exemplos-de-codigo.md)
 * [Solução de Problemas](solucao-de-problemas/README.md)
-  * [Sistema não abre](solucao-de-problemas/meu_sistema_nao_abre.md)
+  * [🚨 Sistema não abre](solucao-de-problemas/meu_sistema_nao_abre.md)
   * [Problemas com SSL](solucao-de-problemas/problemas_com_ssl.md)
   * [Erro de Licença](solucao-de-problemas/an-error-occurred-while-validating-the-license..md)
   * [Reinstalar Redis](solucao-de-problemas/reinstalar_redis.md)
