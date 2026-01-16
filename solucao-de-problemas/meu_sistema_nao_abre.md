@@ -6,7 +6,61 @@ icon: circle-exclamation
 
 ### Meu sistema não está funcionando. O que fazer?
 
-#### Erro: Backend não consegue logar
+Minha VPS Tem espaço?
+
+Você sabia que falta de espaço pode fazer sistema não funcionar
+
+df -h
+
+Saber espaço ocupado
+
+<figure><img src="../.gitbook/assets/image (67).png" alt=""><figcaption></figcaption></figure>
+
+#### Valor importante tem analisar mounted /, no exemplo acima ta 82% uso
+
+Soluções
+
+Aumentar o espaço, verificar empresa contratata essa possibilidade
+
+Opção 2
+
+Apagar arquivos mais antigos ou de logs
+
+pasta log
+
+/home/deploy/whazing/backend/logs
+
+pelo terminal acessar
+
+cd /home/deploy/whazing/backend/logs
+
+rm \* -Rf
+
+Pasta public onde tem arquivos de imagens, videos, fotos.
+
+/home/deploy/whazing/backend/public/
+
+Arquivos estão organizados por id da empresa exemplo 1, 2 3, e dentro da pasta organizado por data exemplo "202510"
+
+Dicas verificar consumo por pasta:
+
+Na pasta que queira consultar digite
+
+du -h --max-depth=1
+
+Exemplo 2 somente acima de 1GB
+
+du -h --max-depth=1 | grep -E '^\[0-9.]+G'
+
+<figure><img src="../.gitbook/assets/image (68).png" alt=""><figcaption></figcaption></figure>
+
+Apagar pasta especifica
+
+sudo rm 202510/ -Rf
+
+#### Erro: Backend não consegu
+
+#### &#x20;logar
 
 Se você enfrentar problemas no login, tente reiniciar o docker seguindo os passos abaixo:
 
