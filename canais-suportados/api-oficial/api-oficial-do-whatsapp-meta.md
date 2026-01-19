@@ -134,8 +134,6 @@ Para garantir o funcionamento contínuo, gere um **Token Permanente**.
 
 **Esse guia pode lhe ajudar também** [**https://blog.meujames.com/como-habilitar-seu-numero-api-oficial-whatsapp/**](https://blog.meujames.com/como-habilitar-seu-numero-api-oficial-whatsapp/)
 
-Perfeito 👍 Segue o texto **reorganizado, mais didático e pronto para publicação no GitBook**, mantendo **todas as telas, links e contexto técnico**, mas com leitura fácil para leigos.
-
 ## 🛠️ Solução de Problemas
 
 Esta seção ajuda a identificar e corrigir **problemas comuns de recebimento de mensagens** e **configuração de Webhook** na API Oficial do WhatsApp usando o **Whazing**.
