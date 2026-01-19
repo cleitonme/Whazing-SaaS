@@ -188,6 +188,14 @@ Essa opção:
 
 O problema mais comum é **Webhook configurado incorretamente** ou apontando para outra aplicação.
 
+#### Inscreva-se em um WABA
+
+Utilize a requisição oficial no Postman para Inscreva seu aplicativo
+
+{% embed url="https://www.postman.com/meta/whatsapp-business-platform/request/13382743-9c1bc24e-3553-4be1-9817-4084bfac7b5d?tab=overview" %}
+
+[https://developers.facebook.com/community/threads/728867380278968/](https://developers.facebook.com/community/threads/728867380278968/)
+
 #### 🔧 Tente configurar o Webhook diretamente pela API da Meta
 
 Utilize a requisição oficial no Postman para **sobrescrever (override)** a URL do Webhook:
