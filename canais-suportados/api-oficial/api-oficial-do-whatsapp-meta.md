@@ -192,6 +192,8 @@ O problema mais comum é **Webhook configurado incorretamente** ou apontando par
 
 Utilize a requisição oficial no Postman para **sobrescrever (override)** a URL do Webhook:
 
+[https://www.postman.com/meta/whatsapp-business-platform/request/13382743-d9da58cd-7fc6-4dbc-a7cc-756d13c3c25a?tab=body](https://www.postman.com/meta/whatsapp-business-platform/request/13382743-d9da58cd-7fc6-4dbc-a7cc-756d13c3c25a?tab=body)
+
 Essa requisição força a API da Meta a usar a URL informada como Webhook principal.
 
 ***
