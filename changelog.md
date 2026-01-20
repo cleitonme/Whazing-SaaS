@@ -1,5 +1,9 @@
 # Changelog e Atualizações
 
+### 🚀 Versão 2.14.8 — 20/01/26
+
+- bug - alteração endpoint download midea da api oficial
+
 ## 🚀 Versão 2.15.0 BETA – Changelog
 
 ⚠️ **Atenção**
@@ -248,7 +252,7 @@ Caso não encontre, vai dar erro.
 
 Objetivo de ver quais canais cadastrados e, se precisar, alterar token ou server do canal.
 
-### 🚀 Versão 2.14.8 — 07/01/25
+### 🚀 Versão 2.14.8 — 07/01/26
 
 - nova versão api wavoip
 
