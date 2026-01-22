@@ -265,6 +265,16 @@ phoneNumber: 5511999999999
 [boletoCode]34191.79001 01043.510047 91020.150008 5 91070026000[/boletoCode]
 ```
 
+* Criar enviar localizacao - baileys, plus, oficial, wuzapi
+
+```bash
+[locationMessage]
+[longitude]-46.6866186[longitude]
+[latitude]-23.5788957[latitude]
+[name]Google São Paulo[name]
+[address]Av. Brig. Faria Lima, 3477 - 18º Andar - Itaim Bibi, São Paulo - SP, 04538-133[address]
+```
+
 **IMPORTANTE**:
 
 * Veja como instalar o Typebot na mesma VPS que o Whazing [aqui](comoinstalar.md).

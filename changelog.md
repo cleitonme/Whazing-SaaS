@@ -1,5 +1,18 @@
 # Changelog e Atualizações
 
+## 🚀 Versão 2.15.1 BETA – Changelog
+
+- Mais ajustes layout
+- Novo modelo seleção emojis mais atual
+- Comando envio localizacao typebot
+- Nova integração 2 via boleto e desbloqueio confiança atlaz
+- Nova integração 2 via boleto ReceitaNET
+- Nova configuração desativar desbloqueio de segurança no 2 via boleto 
+- Nova integração abertura chamado atlaz
+- Webhook atlaz envio mensagens
+- Integrações 2 via passam ter ramdom sleep entre 2s a 6s mensagens.
+- 2 via hubsoft, SGP e IXC agora envia pdf boleto quando disponivel
+
 ### 🚀 Versão 2.14.8 — 20/01/26
 
 - bug - alteração endpoint download midea da api oficial
