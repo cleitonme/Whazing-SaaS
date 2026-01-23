@@ -6,10 +6,6 @@ description: Suporte 2ª via de boletos e desbloqueio de confiança
 
 ⚠️ **Atenção importante** Antes de encaminhar o atendimento para a fila integrada, **é obrigatório solicitar o CPF ou CNPJ do cliente**. A integração do TSMX SGP **espera receber essa informação** para realizar a consulta correta.
 
-Além disso, utilize sempre:
-
-* **App:** `chatbot` (valor fixo – orientação do suporte)
-
 ***
 
 ### Passo 1: Configurar Integração
