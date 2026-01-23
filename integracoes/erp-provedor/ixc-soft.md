@@ -1,40 +1,147 @@
----
-description: Suporte 2 via de boletos e desbloqueio de confiança
----
+## description: Suporte à 2ª via de boletos e desbloqueio de confiança (IXC Soft)
 
 # IXC Soft
 
-## Você deve colocar perguntar cpf ou cnpj do cliente ao encaminhar fila a integração espera receber essa informação
+Este tutorial explica, de forma **simples e passo a passo**, como configurar a integração do **IXC Soft** no Whazing para:
 
-## Passo 1: Configurar Integração
+* 📄 **2ª via de boletos**
+* 🔓 **Desbloqueio de confiança**
 
-Atenção:
+⚠️ **Importante:** ao encaminhar o atendimento para a fila da integração, o bot **deve obrigatoriamente solicitar o CPF ou CNPJ do cliente**, pois é essa informação que a integração espera receber.
 
-Exemplo domínio [https://ixc.whazing.com.br/webservice/v1](https://www.flashnetprovedor.com.br/webservice/v1)
 
-na url da integração preencha somente [https://ixc.whazing.com.br](https://www.flashnetprovedor.com.br/webservice/v1), não colocar valor depois /
+---
 
-1. Acesse **Integrações** > clique em **Adicionar** e preencha os dados conforme mostrado na imagem abaixo:
-2. ![](<../../.gitbook/assets/image (14).png>)
-3. cadastrar dados para acesso Api IXC e liberar ip da vps abaixo segue prints tela configuração no ixc
+## 📌 O que você vai precisar
 
-## Passo 2: Configurar Filas
+* Acesso ao **IXC Soft** com permissão de API
+* Dados de acesso à **API do IXC**
+* IP da VPS liberado no IXC
+* Acesso ao **Whazing** com permissão para criar integrações, filas e bot
 
-1. Acesse **Cadastros** > **Filas** > clique em **Adicionar** e preencha os dados conforme mostrado na imagem abaixo:
-2. ![](<../../.gitbook/assets/image (15).png>)
+---
 
-3. Na integração, selecione a opção criada no passo anterior.
+## 1️⃣ Configurar a Integração no Whazing
 
-## Passo 3: Criar o Chatbot
+Acesse no Whazing:
 
-1. Crie um chatbot. Verifique a documentação para exemplos de como criar um chatbot.
-2.
+**Cadastro → Filas - Integrações → Integrações**
 
-## Passo 4: Configurar Condições
+Clique em **Adicionar** e selecione a integração do **IXC Soft**.
 
-1. Nas **Condições**, configure para rotear para a fila criada anteriormente e adicione uma mensagem solicitando o CPF ou CNPJ do cliente.
+<figure><img src="../../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
-Telas do IXC
+### 🌐 URL da integração
+
+⚠️ Atenção total neste ponto (erro comum):
+
+Exemplo de domínio do IXC:
+
+```
+https://ixc.whazing.com.br/webservice/v1
+```
+
+Na **URL da integração**, preencha **somente**:
+
+```
+https://ixc.whazing.com.br
+```
+
+* ❌ Não inclua `/webservice/v1`
+* ❌ Não coloque `/` no final
+
+### 🔐 Credenciais da API IXC
+
+* Preencha os dados de acesso da **API do IXC**
+* No painel do IXC, libere o **IP da sua VPS** para acesso à API
+
+(As telas abaixo mostram onde configurar isso no IXC)
+
+---
+
+## 2️⃣ Opções da Integração (muito importante)
+
+Essas opções controlam o comportamento da integração:
+
+### 🔓 Desbloqueio de Confiança
+
+* Quando ativado:
+
+  * Ao solicitar o boleto, o cliente é **automaticamente desbloqueado por confiança** no IXC
+
+### 💬 Tipo de interação (Lista / Botões / Copiar e colar)
+
+* Defina conforme o canal utilizado
+* Exemplos:
+
+  * WhatsApp: suporta **listas e botões**
+  * Telegram: **não suporta botões reply**
+
+⚠️ Se selecionar uma opção que o canal não suporta, a mensagem **não será entregue**.
+
+---
+
+## 3️⃣ Configurar as Filas
+
+Agora vamos criar a fila que utilizará a integração.
+
+Acesse:
+
+**Cadastro → Filas → Adicionar**
+
+Preencha os dados conforme a imagem abaixo:
+
+<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
+
+### ⚙️ Ajustes importantes da fila
+
+* Marque a opção **Usar integração**
+* Selecione a integração do **IXC Soft** criada no passo anterior
+* ❌ Não utilize essa mesma fila como fila de erro
+
+---
+
+## 4️⃣ Criar o Chatbot
+
+Agora crie ou edite o chatbot responsável pelo atendimento.
+
+* O bot deve **transferir o atendimento** para a fila da integração
+* Antes da transferência, exiba uma mensagem solicitando:
+
+👉 **CPF ou CNPJ do cliente**
+
+Exemplo de mensagem:
+
+> “Para localizar seus boletos, por favor informe seu CPF ou CNPJ.”
+
+---
+
+## 5️⃣ Configurar as Condições do Bot
+
+Nas **Condições** do chatbot:
+
+1. Configure para **rotear o atendimento** para a fila criada
+2. Garanta que o cliente tenha informado o **CPF ou CNPJ** antes do envio
+
+Essa informação é essencial para que o IXC retorne os boletos corretamente.
+
+---
+
+## 6️⃣ Funcionamento final (como o cliente vê)
+
+O fluxo funciona da seguinte forma:
+
+1. O cliente conversa com o bot
+2. Informa o **CPF ou CNPJ**
+3. O sistema consulta o IXC automaticamente
+4. Os boletos são listados
+5. Se configurado, o cliente é **desbloqueado por confiança**
+
+---
+
+## 🖥️ Telas de configuração no IXC
+
+As imagens abaixo mostram onde configurar permissões e dados no painel do IXC:
 
 <figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
@@ -46,4 +153,10 @@ Telas do IXC
 
 <figure><img src="../../.gitbook/assets/image (20).png" alt=""><figcaption></figcaption></figure>
 
-Obrigado André Alves Magalhães pelo apoio
+---
+
+✅ **Pronto!** A integração do **IXC Soft** está configurada e funcionando.
+
+Você pode ajustar mensagens, tipo de interação e regras de desbloqueio conforme o seu fluxo de atendimento.
+
+🙏 **Agradecimento especial** a **André Alves Magalhães** pelo apoio.
