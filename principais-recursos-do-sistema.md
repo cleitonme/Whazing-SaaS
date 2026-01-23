@@ -41,6 +41,8 @@ description: >-
 * **Integração com IXC Soft:** 2 via de boletos e desbloqueio de confiança
 * **Integração com TSMX SGP:** 2 via de boletos e desbloqueio de confiança
 * **Integração com HubSoft:** 2 via de boletos e desbloqueio de confiança
+* **Integração com Atlaz:** 2 via de boletos, desbloqueio de confiança, abertura de chamados e Disparo WhatsApp
+* **Integração com ReceitaNET:** 2 via de boletos
 * **Integração Recepção inteligente:** Bot com uso ia faz atendimento inicial e faz encaminhamento fila ou finaliza atendimento. Suporte OpenAI, groq e Gemini.
 * **CRM**: Organize tarefas e processos visualmente.
 * **Relatório de Tickets**: Gere relatórios detalhados de atendimento.
