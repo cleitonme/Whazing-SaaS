@@ -1,9 +1,5 @@
 # 2ª Via de Boleto (Atlaz)
 
-Este tutorial foi feito **para iniciantes**, explicando passo a passo como configurar a integração de **2ª via de boleto** no Whazing usando o painel da Atlaz.
-
-⚠️ **Importante:** as imagens não foram alteradas, pois servem como referência visual dentro do sistema.
-
 ---
 
 ## 📌 O que você vai precisar
