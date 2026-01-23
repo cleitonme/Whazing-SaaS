@@ -47,9 +47,17 @@ Utilize exatamente a URL abaixo:
 * Escolha uma fila para atendimento humano caso ocorra algum erro
 * ❌ **Não utilize a mesma fila da integração**
 
-### 🔐 API Key
+🔐 API Key
 
-* Cole aqui o **token da API ReceitaNET** fornecido pelo suporte
+Cole aqui o token da API ReceitaNET fornecido pelo suporte
+
+🧩 App
+
+Preencha este campo com o valor:
+
+chatbot
+
+ℹ️ Conforme orientação do suporte da ReceitaNET, este campo deve sempre ser utilizado como chatbot para funcionamento correto da integração.
 
 ---
 
