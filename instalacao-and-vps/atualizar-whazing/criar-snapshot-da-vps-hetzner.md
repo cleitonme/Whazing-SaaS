@@ -30,7 +30,7 @@ Os **Snapshots** permitem criar uma cópia instantânea do disco do seu servidor
 3. Insira um nome para o snapshot que facilite a identificação (ex.: `antes-atualizacao-22-08`).
 4. Confirme e aguarde a criação do snapshot.
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

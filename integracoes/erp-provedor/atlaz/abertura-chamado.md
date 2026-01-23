@@ -1,13 +1,13 @@
-# Abertura de Chamado (Atlaz)
+# Abertura Chamado
 
----
+***
 
 ## 📌 O que você vai precisar
 
 * Acesso ao **painel da Atlaz** (usaremos o painel demo como exemplo)
 * Acesso ao **Whazing** com permissão para criar integrações, filas e bot
 
----
+***
 
 ## 1️⃣ Acessando o painel da Atlaz
 
@@ -17,7 +17,7 @@ No painel da Atlaz, siga o caminho:
 
 **Painel → Configurações → Recursos**
 
-<figure><img src="../../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ### 🔑 Copiar o Token da API
 
@@ -25,7 +25,7 @@ No painel da Atlaz, siga o caminho:
 * Copie esse token
 * Guarde, pois ele será utilizado na configuração do Whazing
 
----
+***
 
 ## 2️⃣ Criando a integração no Whazing
 
@@ -39,7 +39,7 @@ Clique em **Adicionar** e selecione:
 
 👉 **Criar chamado Atlaz**
 
----
+***
 
 ## 3️⃣ Preenchendo os dados da integração
 
@@ -54,7 +54,7 @@ Preencha os campos abaixo com atenção:
 
 * No painel demo, utilize:
 
-**[https://demo.atlaz.com.br](https://demo.atlaz.com.br)**
+[**https://demo.atlaz.com.br**](https://demo.atlaz.com.br)
 
 ⚠️ **Muito importante:**
 
@@ -70,27 +70,20 @@ Preencha os campos abaixo com atenção:
 
 * Cole aqui o **token da API** copiado do painel da Atlaz
 
----
+***
 
 ### ⏱️ Configurações de tempo
 
 Essas opções controlam como e quando o cliente pode abrir novos chamados:
 
-* **Intervalo de horas para novo chamado**
-  Define quantas horas o assinante deve aguardar para abrir outro chamado.
+* **Intervalo de horas para novo chamado** Define quantas horas o assinante deve aguardar para abrir outro chamado.
+* **Tempo permitido entre registros de chamados** Evita abertura excessiva de chamados em curto período.
+* **Intervalo (ms) entre mensagens** Tempo entre o envio de mensagens automáticas.
+*   **Tempo de espera para unir mensagens do cliente** Se o cliente digitar a mensagem em partes (mensagem “picotada”), o sistema aguarda esse tempo para **juntar tudo em um único chamado**.
 
-* **Tempo permitido entre registros de chamados**
-  Evita abertura excessiva de chamados em curto período.
+    👉 Recomendado: **15000 ms (15 segundos)** — valor mínimo indicado.
 
-* **Intervalo (ms) entre mensagens**
-  Tempo entre o envio de mensagens automáticas.
-
-* **Tempo de espera para unir mensagens do cliente**
-  Se o cliente digitar a mensagem em partes (mensagem “picotada”), o sistema aguarda esse tempo para **juntar tudo em um único chamado**.
-
-  👉 Recomendado: **15000 ms (15 segundos)** — valor mínimo indicado.
-
----
+***
 
 ## 4️⃣ Opções adicionais da integração
 
@@ -100,7 +93,6 @@ Algumas opções podem ser ativadas conforme o canal utilizado.
 
 * Depende do canal/API utilizada
 * Exemplos:
-
   * WhatsApp: suporta botões e listas
   * Telegram: **não suporta botões reply**
 
@@ -108,7 +100,7 @@ Algumas opções podem ser ativadas conforme o canal utilizado.
 
 <figure><img src="../../../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
 
----
+***
 
 ## 5️⃣ Criando a fila da integração
 
@@ -126,7 +118,7 @@ Agora vamos criar a fila que será responsável pela abertura do chamado.
 
 <figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
----
+***
 
 ## 6️⃣ Configurando o bot para enviar o cliente à fila
 
@@ -143,7 +135,7 @@ Exemplo de mensagem:
 
 <figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
----
+***
 
 ## 7️⃣ Arquivo de exemplo do bot
 
@@ -151,7 +143,7 @@ Você pode utilizar o arquivo abaixo como base para a configuração do bot:
 
 {% file src="../../../.gitbook/assets/boletoatlaz.json" %}
 
----
+***
 
 ## 8️⃣ Funcionamento final (como o cliente vê)
 
@@ -165,7 +157,7 @@ O fluxo funciona da seguinte forma:
 
 <figure><img src="../../../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
 
----
+***
 
 ✅ **Pronto!** A integração de **Abertura de Chamado Atlaz** está funcionando corretamente.
 
