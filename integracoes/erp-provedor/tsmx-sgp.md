@@ -75,7 +75,6 @@ Exemplo visual:
 #### Observações Importantes
 
 * CPF/CNPJ **não informado** = integração não retorna dados
-* Sempre utilizar **App = chatbot**
 * Conferir relação correta entre **botões, fila e integração**
 
 ***
