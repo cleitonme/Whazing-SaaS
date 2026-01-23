@@ -1,19 +1,17 @@
-# Desbloqueio de Confiança (Atlaz)
+# Desbloqueio de Confiança
 
----
+***
 
 ## 📌 O que você vai precisar
 
 * Acesso ao **painel da Atlaz** (usaremos o painel demo como exemplo)
 * Acesso ao **Whazing** com permissão para criar integrações e filas
 
----
+***
 
 ## 1️⃣ Acessando o painel da Atlaz
 
 Para este exemplo, utilizaremos o painel demo:
-
-{% embed url="[https://demo.atlaz.com.br/admin](https://demo.atlaz.com.br/admin)" %}
 
 No painel da Atlaz, siga o caminho:
 
@@ -27,7 +25,7 @@ No painel da Atlaz, siga o caminho:
 * Copie esse token
 * Guarde, pois ele será usado no Whazing
 
----
+***
 
 ## 2️⃣ Criando a integração no Whazing
 
@@ -39,11 +37,9 @@ Acesse:
 
 Clique em **Adicionar** e selecione:
 
-👉 **2ª via boleto Atlaz**
+👉 **Desbloqueio de confiança Atlaz**
 
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
-
----
+***
 
 ## 3️⃣ Preenchendo os dados da integração
 
@@ -52,13 +48,13 @@ Preencha os campos com atenção:
 ### 📝 Nome da integração
 
 * Escolha um nome para identificar essa integração no sistema
-* Exemplo: `Boleto Atlaz`
+* Exemplo: `Desbloqueio Confiança  Atlaz`
 
 ### 🌐 URL da integração
 
-* No painel demo, utilize:
+*   No painel demo, utilize:
 
-  **[https://demo.atlaz.com.br](https://demo.atlaz.com.br)**
+    [**https://demo.atlaz.com.br**](https://demo.atlaz.com.br)
 
 ⚠️ **Muito importante:**
 
@@ -74,31 +70,24 @@ Preencha os campos com atenção:
 
 * Cole aqui o **token da API** que você copiou no painel da Atlaz
 
----
+***
 
 ## 4️⃣ Opções adicionais da integração
 
 Algumas opções podem ser ativadas conforme sua necessidade:
 
-### ✅ Ativar Desbloqueio de Confiança
-
-* Quando ativado, ao solicitar o boleto:
-
-  * O cliente é automaticamente desbloqueado por confiança
-
-### 💬 Tipo de interação (lista, botões ou copiar/colar)
+### 💬 Tipo de interação (botões)
 
 * Essa opção depende da API/canal utilizado
 * Exemplos:
-
   * WhatsApp: geralmente suporta listas e botões
   * Telegram: **não suporta botões reply**
 
 ⚠️ Se ativar uma opção que o canal **não suporta**, a mensagem **não será entregue**.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (70).png" alt=""><figcaption></figcaption></figure>
 
----
+***
 
 ## 5️⃣ Criando a fila da integração
 
@@ -110,13 +99,13 @@ Agora vamos criar a fila que vai usar essa integração.
 
 ⚠️ Importante:
 
-* Deixe **desativada** a opção:
+*   Deixe **desativada** a opção:
 
-  **“Inicia integração ao transferir”**
+    **“Inicia integração ao transferir”**
 
 <figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
----
+***
 
 ## 6️⃣ Configurando o bot para enviar o cliente à fila
 
@@ -133,7 +122,7 @@ Exemplo de mensagem:
 
 <figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
----
+***
 
 ## 7️⃣ Arquivo de exemplo do bot
 
@@ -141,7 +130,7 @@ Você pode usar o arquivo abaixo como base para configuração do bot:
 
 {% file src="../../../.gitbook/assets/boletoatlaz.json" %}
 
----
+***
 
 ## 8️⃣ Funcionamento final (como o cliente vê)
 
@@ -150,10 +139,10 @@ Você pode usar o arquivo abaixo como base para configuração do bot:
 3. O sistema consulta automaticamente a Atlaz
 4. Os boletos disponíveis são listados para o cliente
 
-<figure><img src="../../../.gitbook/assets/image (6).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
 
----
+***
 
-✅ **Pronto!** Sua integração de **2ª via de boleto Atlaz** está funcionando.
+✅ **Pronto!** Sua integração de **Desbloqueio de confiança** está funcionando.
 
 Se quiser, você pode adaptar mensagens, filas e regras conforme o seu fluxo de atendimento.

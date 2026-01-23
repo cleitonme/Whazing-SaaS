@@ -112,6 +112,7 @@
     * [Atlaz](integracoes/erp-provedor/atlaz/README.md)
       * [2 Via Boleto](integracoes/erp-provedor/atlaz/2-via-boleto.md)
       * [Desbloqueio de Confiança](integracoes/erp-provedor/atlaz/desbloqueio-de-confianca.md)
+      * [Abertura Chamado](integracoes/erp-provedor/atlaz/abertura-chamado.md)
   * [Outras](integracoes/outras/README.md)
     * [Typebot](integracoes/outras/typebot/README.md)
       * [Instalação Typebot](integracoes/outras/typebot/comoinstalar.md)
