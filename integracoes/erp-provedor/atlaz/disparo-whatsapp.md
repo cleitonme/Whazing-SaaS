@@ -5,7 +5,7 @@
 * Acesso ao **painel da Atlaz** (usaremos o painel demo como exemplo)
 * Acesso ao **Whazing** com permissão para criar canais e integrações
 
----
+***
 
 ## 1️⃣ Criando o canal de WhatsApp no Whazing
 
@@ -25,9 +25,9 @@ Clique em **Adicionar** e selecione um canal de WhatsApp **API não oficial**.
 
 Outros tipos de canais **não são compatíveis** com este disparo.
 
-<figure><img src="../../../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (80).png" alt=""><figcaption></figcaption></figure>
 
-### 🔑 Copiar URL e Token
+🔑 Copiar URL e Token
 
 Após criar o canal:
 
@@ -36,7 +36,7 @@ Após criar o canal:
 
 Essas informações serão usadas no painel da Atlaz.
 
----
+***
 
 ## 2️⃣ Configurando o disparo no painel da Atlaz
 
@@ -77,7 +77,7 @@ https://testeapi.whazing.com.br/v1/api/external/e4b92f62-b8c7-41af-a8ab-40484051
 
 * Cole **exatamente** o token copiado do Whazing
 
----
+***
 
 ## 3️⃣ Testando o envio de mensagens
 
@@ -93,7 +93,7 @@ Abaixo do formulário, existem opções para:
 
 ⚠️ **Use com cautela**: envio exagerado pode resultar em bloqueio do número.
 
----
+***
 
 ## 4️⃣ Proteções contra bloqueio (importante)
 
@@ -104,7 +104,7 @@ Para ajudar a reduzir riscos:
 
 ⚠️ Atenção durante testes, pois a mensagem pode não ser reenviada dentro desse prazo.
 
----
+***
 
 ## 5️⃣ Comportamento por tipo de canal
 
@@ -112,12 +112,11 @@ Para ajudar a reduzir riscos:
 
 * As mensagens são enviadas no formato **copiar e colar**
 * Se houver boleto disponível:
-
   * O sistema envia automaticamente o **PDF do boleto** junto
 
 <figure><img src="../../../.gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
 
----
+***
 
 ✅ **Pronto!** O **Disparo de WhatsApp** está configurado e funcionando.
 
