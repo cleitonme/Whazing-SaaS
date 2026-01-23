@@ -21,11 +21,7 @@ na url da integração preencha somente [https://ixc.whazing.com.br](https://www
 ## Passo 2: Configurar Filas
 
 1. Acesse **Cadastros** > **Filas** > clique em **Adicionar** e preencha os dados conforme mostrado na imagem abaixo:
-2.
-
-```
-<figure><img src="../../.gitbook/assets/image (15).png" alt=""><figcaption></figcaption></figure>
-```
+2. ![](<../../.gitbook/assets/image (15).png>)
 
 3. Na integração, selecione a opção criada no passo anterior.
 
