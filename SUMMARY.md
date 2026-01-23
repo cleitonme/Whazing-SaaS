@@ -109,6 +109,8 @@
     * [IXC Soft](integracoes/erp-provedor/ixc-soft.md)
     * [HubSoft](integracoes/erp-provedor/hubsoft.md)
     * [TSMX SGP](integracoes/erp-provedor/tsmx-sgp.md)
+    * [Atlaz](integracoes/erp-provedor/atlaz/README.md)
+      * [2 Via Boleto](integracoes/erp-provedor/atlaz/2-via-boleto.md)
   * [Outras](integracoes/outras/README.md)
     * [Typebot](integracoes/outras/typebot/README.md)
       * [Instalação Typebot](integracoes/outras/typebot/comoinstalar.md)

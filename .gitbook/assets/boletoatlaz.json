@@ -1,0 +1,116 @@
+{
+	"name": "boletoatlaz",
+	"nodeList": [
+		{
+			"id": "start",
+			"name": "Início",
+			"type": "start",
+			"left": "26px",
+			"top": "100px",
+			"ico": "mdi-play",
+			"viewOnly": true,
+			"status": "success",
+			"style": {}
+		},
+		{
+			"id": "configurations",
+			"name": "Configurações",
+			"type": "configurations",
+			"left": "340px",
+			"top": "100px",
+			"viewOnly": true,
+			"ico": "mdi-alert-circle-outline",
+			"configurations": {
+				"notOptionsSelectMessage": {
+					"message": "",
+					"stepReturn": "A"
+				},
+				"notResponseMessage": {
+					"time": 10,
+					"type": 1,
+					"destiny": "",
+					"message": ""
+				},
+				"welcomeMessage": {
+					"message": ""
+				},
+				"maxRetryBotMessage": {
+					"number": 3,
+					"type": 1,
+					"destiny": ""
+				},
+				"outOpenHours": {
+					"type": 1,
+					"destiny": ""
+				},
+				"farewellMessage": {
+					"message": ""
+				},
+				"autoDistributeTickets": "N"
+			}
+		},
+		{
+			"id": "nodeC",
+			"name": "Boas vindas!",
+			"type": "node",
+			"left": "26px",
+			"top": "301px",
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "{{greeting}},  {{name}}\n\n1 - Atendimento\n2 - 2 Via Boleto"
+					},
+					"id": "a06c2ae7-a315-4bf7-876c-d2bafe1b0291"
+				}
+			],
+			"conditions": [
+				{
+					"type": "R",
+					"condition": [
+						"2"
+					],
+					"id": "95b909f0-a35a-4a25-97f1-24d87947875a",
+					"action": 1,
+					"queueId": 7,
+					"nextStepId": null,
+					"userIdDestination": null,
+					"closeTicket": null,
+					"chatFlowId": null,
+					"queueMessage": "Por favor digite seu CPF ou CNPj para obter segunda via de boleto"
+				},
+				{
+					"type": "R",
+					"condition": [
+						"1"
+					],
+					"id": "b52478b4-37e9-4df3-80ea-397e9958d19b",
+					"action": 1,
+					"queueId": 6,
+					"nextStepId": null,
+					"userIdDestination": null,
+					"closeTicket": null,
+					"chatFlowId": null
+				}
+			],
+			"actions": []
+		}
+	],
+	"lineList": [
+		{
+			"from": "start",
+			"to": "nodeC",
+			"paintStyle": {
+				"strokeWidth": 3,
+				"stroke": "#5c67f2"
+			}
+		}
+	],
+	"action": 0,
+	"userId": 1,
+	"celularTeste": null,
+	"isActive": true,
+	"AcceptTransfer": true,
+	"AcceptKanban": true,
+	"id": null
+}

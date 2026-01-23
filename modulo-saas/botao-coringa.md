@@ -20,7 +20,7 @@ O **Botão Coringa** é um recurso que permite adicionar um botão adicional no 
 
 ***
 
-<figure><img src="../.gitbook/assets/image (8) (1) (1) (1).png" alt=""><figcaption><p>Exemplo do Botão Coringa exibido no menu principal</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (8) (1) (1) (1) (1).png" alt=""><figcaption><p>Exemplo do Botão Coringa exibido no menu principal</p></figcaption></figure>
 
 ***
 
@@ -99,9 +99,9 @@ Caso queira que o **Botão Coringa apareça apenas para uma empresa específica*
 
 ***
 
-<figure><img src="../.gitbook/assets/image (1) (1).png" alt=""><figcaption><p>Configuração de menu por empresa</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (1) (1) (1).png" alt=""><figcaption><p>Configuração de menu por empresa</p></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/image (2).png" alt=""><figcaption><p>Personalização do Botão Coringa por empresa</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (2) (1).png" alt=""><figcaption><p>Personalização do Botão Coringa por empresa</p></figcaption></figure>
 
 ***
 

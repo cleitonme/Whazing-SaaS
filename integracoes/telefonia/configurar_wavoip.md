@@ -26,7 +26,7 @@ icon: circle-phone
     * Cole o token no campo apropriado.
     * Em seguida, clique em "Salvar".
 
-    <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 7. **Para realizar uma ligação**
    * Abra um ticket e você verá o botão de telefone na parte superior do ticket. Clique nele para iniciar a ligação.
 8. **Receber chamadas e gravação**

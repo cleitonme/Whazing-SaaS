@@ -8,7 +8,7 @@ icon: barcode
 
 1. Acesse **Integrações** > clique em **Adicionar** e preencha os dados conforme mostrado na imagem abaixo:
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 1. Obtenha sua **Api Key** no site [Asaas](https://www.asaas.com/customerApiAccessToken/index).
 
