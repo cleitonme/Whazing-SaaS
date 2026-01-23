@@ -11,8 +11,6 @@ Este tutorial explica, de forma **simples e passo a passo**, como configurar a i
 
 ⚠️ **Importante:** ao encaminhar o atendimento para a fila da integração, o bot **deve obrigatoriamente solicitar o CPF ou CNPJ do cliente**, pois é essa informação que a integração espera receber.
 
-As imagens **não foram alteradas**, pois servem como referência visual do sistema.
-
 ***
 
 ### 📌 O que você vai precisar
