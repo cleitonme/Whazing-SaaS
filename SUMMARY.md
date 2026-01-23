@@ -113,6 +113,7 @@
       * [2 Via Boleto](integracoes/erp-provedor/atlaz/2-via-boleto.md)
       * [Desbloqueio de Confiança](integracoes/erp-provedor/atlaz/desbloqueio-de-confianca.md)
       * [Abertura Chamado](integracoes/erp-provedor/atlaz/abertura-chamado.md)
+      * [Disparo WhatsApp](integracoes/erp-provedor/atlaz/disparo-whatsapp.md)
     * [ReceitaNET](integracoes/erp-provedor/receitanet.md)
   * [Outras](integracoes/outras/README.md)
     * [Typebot](integracoes/outras/typebot/README.md)
