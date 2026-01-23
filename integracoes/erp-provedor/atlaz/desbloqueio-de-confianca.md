@@ -137,7 +137,7 @@ Você pode usar o arquivo abaixo como base para configuração do bot:
 1. O cliente chega na fila da integração
 2. Digita o **CPF ou CNPJ**
 3. O sistema consulta automaticamente a Atlaz
-4. Os boletos disponíveis são listados para o cliente
+4. O sistema tentara fazer desbloqueio da internet
 
 <figure><img src="../../../.gitbook/assets/image (71).png" alt=""><figcaption></figcaption></figure>
 

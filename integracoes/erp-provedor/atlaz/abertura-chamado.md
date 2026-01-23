@@ -1,4 +1,4 @@
-# 2 Via Boleto
+# Abertura Chamado
 
 ***
 
@@ -37,9 +37,7 @@ Acesse:
 
 Clique em **Adicionar** e selecione:
 
-👉 **2ª via boleto Atlaz**
-
-<figure><img src="../../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+👉 **Criar chamado Atlaz**
 
 ***
 
@@ -50,7 +48,7 @@ Preencha os campos com atenção:
 ### 📝 Nome da integração
 
 * Escolha um nome para identificar essa integração no sistema
-* Exemplo: `Boleto Atlaz`
+* Exemplo: `Chamado Atlaz`
 
 ### 🌐 URL da integração
 
@@ -72,18 +70,23 @@ Preencha os campos com atenção:
 
 * Cole aqui o **token da API** que você copiou no painel da Atlaz
 
+Intervalo de horas para que o assinante possa criar um novo chamado
+
+Tempo permitido entre registros de chamados
+
+Intervalo (ms) entre mensagens
+
+Tempo espera para cliente digitar mais de uma mensagem. Exemplo se ele digitar mensagem, picotada ele vai esperar esse tempo unir as mensagens colocar chamado exemplo abaixo da entender melhor. Recomendado usar 15000, 15s minimo
+
 ***
 
 ## 4️⃣ Opções adicionais da integração
 
 Algumas opções podem ser ativadas conforme sua necessidade:
 
-### ✅ Ativar Desbloqueio de Confiança
 
-* Quando ativado, ao solicitar o boleto:
-  * O cliente é automaticamente desbloqueado por confiança
 
-### 💬 Tipo de interação (lista, botões ou copiar/colar)
+### 💬 Tipo de interação (botões)
 
 * Essa opção depende da API/canal utilizado
 * Exemplos:
@@ -92,7 +95,7 @@ Algumas opções podem ser ativadas conforme sua necessidade:
 
 ⚠️ Se ativar uma opção que o canal **não suporta**, a mensagem **não será entregue**.
 
-<figure><img src="../../../.gitbook/assets/image (3).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -144,12 +147,14 @@ Você pode usar o arquivo abaixo como base para configuração do bot:
 1. O cliente chega na fila da integração
 2. Digita o **CPF ou CNPJ**
 3. O sistema consulta automaticamente a Atlaz
-4. Os boletos disponíveis são listados para o cliente
+4. Solicitita informações para abertura do chamado
 
-<figure><img src="../../../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
+
+
 
 ***
 
-✅ **Pronto!** Sua integração de **2ª via de boleto Atlaz** está funcionando.
+✅ **Pronto!** Sua integração de **Abertura chamado Atlaz** está funcionando.
 
 Se quiser, você pode adaptar mensagens, filas e regras conforme o seu fluxo de atendimento.
