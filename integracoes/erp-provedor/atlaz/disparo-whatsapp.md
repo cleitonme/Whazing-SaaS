@@ -1,52 +1,124 @@
 # Disparo WhatsApp
 
-### 📌 O que você vai precisar <a href="#o-que-voce-vai-precisar" id="o-que-voce-vai-precisar"></a>
+## 📌 O que você vai precisar
 
 * Acesso ao **painel da Atlaz** (usaremos o painel demo como exemplo)
-* Acesso ao **Whazing** com permissão para criar integrações e filas
+* Acesso ao **Whazing** com permissão para criar canais e integrações
 
-***
+---
 
-### 1️⃣ Acessando o painel do whazing <a href="#id-1-acessando-o-painel-da-atlaz" id="id-1-acessando-o-painel-da-atlaz"></a>
+## 1️⃣ Criando o canal de WhatsApp no Whazing
 
-Acesse configurações - "Canais - Api" - API
+Primeiro, vamos configurar o canal de WhatsApp no Whazing.
 
-Crie adicionar e seleciona um canal whatsapp api não oficial, somente é suportado canais tipo Baileys, Wuzapi e Plus
+Acesse:
+
+**Configurações → Canais - API → API**
+
+Clique em **Adicionar** e selecione um canal de WhatsApp **API não oficial**.
+
+⚠️ **Canais suportados:**
+
+* Baileys
+* Wuzapi
+* Plus
+
+Outros tipos de canais **não são compatíveis** com este disparo.
 
 <figure><img src="../../../.gitbook/assets/image (77).png" alt=""><figcaption></figcaption></figure>
 
-Copie a URL e o Token
+### 🔑 Copiar URL e Token
 
+Após criar o canal:
 
+* Copie a **URL da API**
+* Copie o **Token**
 
-2
+Essas informações serão usadas no painel da Atlaz.
 
-Para este exemplo, utilizaremos o painel demo:
+---
+
+## 2️⃣ Configurando o disparo no painel da Atlaz
+
+Para este exemplo, utilizaremos o painel demo da Atlaz.
 
 No painel da Atlaz, siga o caminho:
 
-**Painel → Configurações → Whatsapp**
+**Painel → Configurações → WhatsApp**
 
 <figure><img src="../../../.gitbook/assets/image (78).png" alt=""><figcaption></figcaption></figure>
 
-Escolha serviço "Genérico"
+### ⚙️ Configurações principais
 
-Intervalos entre envios "coloque 60 segundos", intervalos muitos curtos aumenta a chance de ban
+Preencha os campos conforme abaixo:
 
-URL do Webhook \*: preencha url api e no final coloque /atlaz como exemplo print acima
+#### 🔧 Serviço
 
-[https://testeapi.whazing.com.br/v1/api/external/e4b92f62-b8c7-41af-a8ab-404840510fd7/atlaz](https://testeapi.whazing.com.br/v1/api/external/e4b92f62-b8c7-41af-a8ab-404840510fd7/atlaz)\
-\
-Token \*: preencha exatamente token copiado do whazing
+* Selecione: **Genérico**
 
-Pronto sistema esta pronto enviar mensagem podes usar opção enviar whatsapp teste\
-\
-Embaixo tem opções para configurar mensagens e habilitar e desativar elas.
+#### ⏱️ Intervalo entre envios
 
-Use com cautela uso exagerado pode levar a ban
+* Configure para: **60 segundos**
 
-O whazing armazena por 1 hora mensagem enviada e não deixa enviar mesma mensagem novamente, para ajudar evitar bloqueios. Atenção hora testes.
+⚠️ Intervalos muito curtos **aumentam o risco de banimento** do número.
 
-Canal plus, ele enviar com copia e cola. Caso boleto esteja disponível enviara pdf também.\
-\
-![](<../../../.gitbook/assets/image (79).png>)
+#### 🌐 URL do Webhook
+
+* Cole a **URL da API** copiada do Whazing
+* No final da URL, adicione **`/atlaz`**
+
+Exemplo:
+
+```
+https://testeapi.whazing.com.br/v1/api/external/e4b92f62-b8c7-41af-a8ab-404840510fd7/atlaz
+```
+
+#### 🔐 Token
+
+* Cole **exatamente** o token copiado do Whazing
+
+---
+
+## 3️⃣ Testando o envio de mensagens
+
+Após salvar as configurações:
+
+* O sistema já estará pronto para enviar mensagens
+* Utilize a opção **Enviar WhatsApp Teste** para validar a integração
+
+Abaixo do formulário, existem opções para:
+
+* Configurar mensagens automáticas
+* Habilitar ou desabilitar envios
+
+⚠️ **Use com cautela**: envio exagerado pode resultar em bloqueio do número.
+
+---
+
+## 4️⃣ Proteções contra bloqueio (importante)
+
+Para ajudar a reduzir riscos:
+
+* O Whazing **armazena por 1 hora** as mensagens enviadas
+* Durante esse período, **não permite enviar a mesma mensagem novamente** para o mesmo número
+
+⚠️ Atenção durante testes, pois a mensagem pode não ser reenviada dentro desse prazo.
+
+---
+
+## 5️⃣ Comportamento por tipo de canal
+
+### 📲 Canal Plus
+
+* As mensagens são enviadas no formato **copiar e colar**
+* Se houver boleto disponível:
+
+  * O sistema envia automaticamente o **PDF do boleto** junto
+
+<figure><img src="../../../.gitbook/assets/image (79).png" alt=""><figcaption></figcaption></figure>
+
+---
+
+✅ **Pronto!** O **Disparo de WhatsApp** está configurado e funcionando.
+
+Você pode ajustar mensagens, intervalos e regras conforme sua estratégia, sempre com cuidado para evitar bloqueios.
