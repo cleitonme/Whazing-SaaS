@@ -1,0 +1,2 @@
+# Desbloqueio de Confiança
+
