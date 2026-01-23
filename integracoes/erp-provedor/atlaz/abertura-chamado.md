@@ -1,17 +1,17 @@
-# Abertura Chamado
+# Abertura de Chamado (Atlaz)
 
-***
+---
 
 ## 📌 O que você vai precisar
 
 * Acesso ao **painel da Atlaz** (usaremos o painel demo como exemplo)
-* Acesso ao **Whazing** com permissão para criar integrações e filas
+* Acesso ao **Whazing** com permissão para criar integrações, filas e bot
 
-***
+---
 
 ## 1️⃣ Acessando o painel da Atlaz
 
-Para este exemplo, utilizaremos o painel demo:
+Para este exemplo, utilizaremos o painel demo da Atlaz.
 
 No painel da Atlaz, siga o caminho:
 
@@ -23,15 +23,15 @@ No painel da Atlaz, siga o caminho:
 
 * Localize o **Token da API**
 * Copie esse token
-* Guarde, pois ele será usado no Whazing
+* Guarde, pois ele será utilizado na configuração do Whazing
 
-***
+---
 
 ## 2️⃣ Criando a integração no Whazing
 
 Agora vamos configurar a integração dentro do Whazing.
 
-Acesse:
+Acesse o menu:
 
 **Cadastro → Filas - Integrações → Integrações**
 
@@ -39,11 +39,11 @@ Clique em **Adicionar** e selecione:
 
 👉 **Criar chamado Atlaz**
 
-***
+---
 
 ## 3️⃣ Preenchendo os dados da integração
 
-Preencha os campos com atenção:
+Preencha os campos abaixo com atenção:
 
 ### 📝 Nome da integração
 
@@ -52,9 +52,9 @@ Preencha os campos com atenção:
 
 ### 🌐 URL da integração
 
-*   No painel demo, utilize:
+* No painel demo, utilize:
 
-    [**https://demo.atlaz.com.br**](https://demo.atlaz.com.br)
+**[https://demo.atlaz.com.br](https://demo.atlaz.com.br)**
 
 ⚠️ **Muito importante:**
 
@@ -63,98 +63,110 @@ Preencha os campos com atenção:
 
 ### 🔄 Fila de transferência (em caso de erro)
 
-* Escolha uma fila para atendimento humano caso ocorra erro
+* Escolha uma fila para atendimento humano caso ocorra algum erro
 * ❌ **Não utilize a mesma fila da integração**
 
 ### 🔐 API Key
 
-* Cole aqui o **token da API** que você copiou no painel da Atlaz
+* Cole aqui o **token da API** copiado do painel da Atlaz
 
-Intervalo de horas para que o assinante possa criar um novo chamado
+---
 
-Tempo permitido entre registros de chamados
+### ⏱️ Configurações de tempo
 
-Intervalo (ms) entre mensagens
+Essas opções controlam como e quando o cliente pode abrir novos chamados:
 
-Tempo espera para cliente digitar mais de uma mensagem. Exemplo se ele digitar mensagem, picotada ele vai esperar esse tempo unir as mensagens colocar chamado exemplo abaixo da entender melhor. Recomendado usar 15000, 15s minimo
+* **Intervalo de horas para novo chamado**
+  Define quantas horas o assinante deve aguardar para abrir outro chamado.
 
-***
+* **Tempo permitido entre registros de chamados**
+  Evita abertura excessiva de chamados em curto período.
+
+* **Intervalo (ms) entre mensagens**
+  Tempo entre o envio de mensagens automáticas.
+
+* **Tempo de espera para unir mensagens do cliente**
+  Se o cliente digitar a mensagem em partes (mensagem “picotada”), o sistema aguarda esse tempo para **juntar tudo em um único chamado**.
+
+  👉 Recomendado: **15000 ms (15 segundos)** — valor mínimo indicado.
+
+---
 
 ## 4️⃣ Opções adicionais da integração
 
-Algumas opções podem ser ativadas conforme sua necessidade:
-
-
+Algumas opções podem ser ativadas conforme o canal utilizado.
 
 ### 💬 Tipo de interação (botões)
 
-* Essa opção depende da API/canal utilizado
+* Depende do canal/API utilizada
 * Exemplos:
-  * WhatsApp: geralmente suporta listas e botões
+
+  * WhatsApp: suporta botões e listas
   * Telegram: **não suporta botões reply**
 
-⚠️ Se ativar uma opção que o canal **não suporta**, a mensagem **não será entregue**.
+⚠️ Se ativar uma opção que o canal **não suporta**, a mensagem **não será entregue ao cliente**.
 
 <figure><img src="../../../.gitbook/assets/image (73).png" alt=""><figcaption></figcaption></figure>
 
-***
+---
 
 ## 5️⃣ Criando a fila da integração
 
-Agora vamos criar a fila que vai usar essa integração.
+Agora vamos criar a fila que será responsável pela abertura do chamado.
 
 1. Crie uma nova **Fila**
 2. Marque a opção **Usar integração**
-3. Selecione a integração que você acabou de criar
+3. Selecione a integração criada anteriormente
 
 ⚠️ Importante:
 
-*   Deixe **desativada** a opção:
+* Deixe **desativada** a opção:
 
-    **“Inicia integração ao transferir”**
+**“Inicia integração ao transferir”**
 
 <figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
 
-***
+---
 
 ## 6️⃣ Configurando o bot para enviar o cliente à fila
 
 No fluxo do seu bot:
 
-* Configure para **transferir o atendimento** para a fila criada
-* Defina uma mensagem ao transferir, solicitando:
+* Configure para **transferir o atendimento** para a fila da integração
+* Defina uma mensagem solicitando:
 
 👉 **CPF ou CNPJ do cliente**
 
 Exemplo de mensagem:
 
-> “Para localizar seus boletos, por favor informe seu CPF ou CNPJ.”
+> “Para abrir seu chamado, por favor informe seu CPF ou CNPJ.”
 
 <figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
 
-***
+---
 
 ## 7️⃣ Arquivo de exemplo do bot
 
-Você pode usar o arquivo abaixo como base para configuração do bot:
+Você pode utilizar o arquivo abaixo como base para a configuração do bot:
 
 {% file src="../../../.gitbook/assets/boletoatlaz.json" %}
 
-***
+---
 
 ## 8️⃣ Funcionamento final (como o cliente vê)
 
-1. O cliente chega na fila da integração
-2. Digita o **CPF ou CNPJ**
-3. O sistema consulta automaticamente a Atlaz
-4. Solicitita informações para abertura do chamado
+O fluxo funciona da seguinte forma:
+
+1. O cliente é direcionado para a fila da integração
+2. Informa o **CPF ou CNPJ**
+3. O sistema valida os dados na Atlaz
+4. O cliente responde às perguntas necessárias
+5. O chamado é aberto automaticamente
 
 <figure><img src="../../../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
 
+---
 
+✅ **Pronto!** A integração de **Abertura de Chamado Atlaz** está funcionando corretamente.
 
-***
-
-✅ **Pronto!** Sua integração de **Abertura chamado Atlaz** está funcionando.
-
-Se quiser, você pode adaptar mensagens, filas e regras conforme o seu fluxo de atendimento.
+Você pode personalizar mensagens, filas e regras de tempo conforme o seu fluxo de atendimento.
