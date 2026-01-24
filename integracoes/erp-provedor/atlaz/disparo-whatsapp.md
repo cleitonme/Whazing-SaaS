@@ -95,17 +95,6 @@ Abaixo do formulário, existem opções para:
 
 ***
 
-## 4️⃣ Proteções contra bloqueio (importante)
-
-Para ajudar a reduzir riscos:
-
-* O Whazing **armazena por 1 hora** as mensagens enviadas
-* Durante esse período, **não permite enviar a mesma mensagem novamente** para o mesmo número
-
-⚠️ Atenção durante testes, pois a mensagem pode não ser reenviada dentro desse prazo.
-
-***
-
 ## 5️⃣ Comportamento por tipo de canal
 
 ### 📲 Canal Plus
