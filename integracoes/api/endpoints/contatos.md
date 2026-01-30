@@ -148,3 +148,37 @@ Pode ser usado "number": "5511999999999" ou "contactId": "5219" para localizar c
   "ignore": false
 }
 ```
+
+**5. Atualizar Followup do Contato**
+
+* **Método**: POST
+* **Endpoint**: `/updatefollowup`
+
+Por número:
+
+```json
+{
+  "number": "5511999999999",
+  "followup": 1
+}
+```
+
+Por contactId:
+
+```json
+{
+  "contactId": 3397,
+  "followup": 8
+}
+```
+
+Por ticketId:
+
+```json
+{
+  "ticketId": 2881,
+  "followup": 19
+}
+```
+
+Para retirar contato do follow-up use valor 0
