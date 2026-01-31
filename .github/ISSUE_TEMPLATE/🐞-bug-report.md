@@ -1,6 +1,6 @@
 ---
 name: "\U0001F41E Bug Report"
-about: "\U0001F41E Bug Report"
+about: Usar para reportar bugs
 title: ''
 labels: ''
 assignees: ''
