@@ -1,5 +1,5 @@
 ---
-name: Bug report
+name: "\U0001F41E Bug Report"
 about: "\U0001F41E Bug Report"
 title: ''
 labels: ''
