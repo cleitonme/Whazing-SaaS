@@ -1,6 +1,6 @@
 ---
 name: "\U0001F680 Solicitação de Novo Recurso"
-about: "\U0001F680 Solicitação de Novo Recurso"
+about: 'Usar para solicitar novos recursos '
 title: ''
 labels: ''
 assignees: ''
