@@ -1,57 +1,134 @@
 ---
 icon: hubspot
+
+# WhatsApp, Instagram, Facebook e WebChat via NotificaMe
+
+Este guia explica **passo a passo**, de forma simples, como integrar **WhatsApp, Instagram, Facebook e WebChat** ao **Whazing** usando o **Hub NotificaMe**.
+Ele foi pensado para **leigos**, então siga a ordem sem pular etapas. As **imagens são importantes** e ajudam a confirmar se você está no lugar certo.
+
 ---
 
-# Whatsapp, Instagram, facebook e webchat via NotificaMe
+## ✅ O que este sistema suporta
 
-## Nosso sistema homologado para whatsapp, instagram, facebook e webchat outros canais podem funcionar mas não foram homologados.
+Nosso sistema é **homologado oficialmente** para os seguintes canais:
 
-Para conectar canais pode verificar documentação oficial da notifica me
+* WhatsApp
+* Instagram
+* Facebook
+* WebChat
 
-[https://hub.notificame.com.br/docs/#/users?id=-whatsapp](https://hub.notificame.com.br/docs/#/users?id=-whatsapp)
+> Outros canais até podem funcionar, mas **não são homologados**, então não garantimos funcionamento total.
 
-## 🌐 Integração com Hub NotificaMe
+Se quiser mais detalhes técnicos sobre cada canal, consulte a documentação oficial da NotificaMe:
 
-Cadastrar através da URL [https://hub.whazing.com.br/](https://hub.whazing.com.br/)​
+👉 [https://hub.notificame.com.br/docs/#/users?id=-whatsapp](https://hub.notificame.com.br/docs/#/users?id=-whatsapp)
 
-Usar cupom desconto: whazing
+---
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+## 🌐 Criando sua conta no Hub NotificaMe
 
-### 🔹 Acesso ao Hub
+1. Acesse o site de cadastro:
+   👉 [https://hub.whazing.com.br/](https://hub.whazing.com.br/)
 
-1. Acesse o site: [https://hub.notificame.com.br/](https://hub.notificame.com.br/)
-2. Escolha a opção correta de acordo com o canal desejado:
+2. No cadastro, utilize o **cupom de desconto**:
 
-*   **Apenas Instagram**: selecione **"Instagram V2 | Oficial"**.
+   **`whazing`**
 
-    ![Instagram V2](../../.gitbook/assets/instagram.png)
-*   **Apenas Facebook**: selecione **"Facebook | Oficial"**.
+3. Conclua o cadastro normalmente.
 
-    ![Facebook](../../.gitbook/assets/facebook.png)
-*   **Para usar ambos (Instagram e Facebook)**: selecione **"Facebook / Instagram | Oficial"**.
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt="Tela de cadastro NotificaMe"><figcaption></figcaption></figure>
 
-    ![Facebook/Instagram](../../.gitbook/assets/facebookinstagram.png)
-*   O sistema também suporta **WebChat**.
+---
 
-    ![WebChat](../../.gitbook/assets/webchat.png)
+## 🔑 Acesso ao Hub NotificaMe
 
-## Integração com o Whazing
+Após criar sua conta:
 
-1.  Após conectar o canal no Hub, copie o **token gerado**.
+1. Acesse o Hub:
+   👉 [https://hub.notificame.com.br/](https://hub.notificame.com.br/)
 
-    ![Token](../../.gitbook/assets/telatoken.png)
-2.  Acesse o **Whazing**:
+2. Agora você deve **escolher o canal correto**, de acordo com o que deseja usar.
 
-    * Navegue até **Configurações** > **Canais** > **Token Hub**.
-    * Cole o **token copiado** do Hub e cadastre-o.
+### 📸 Usar apenas Instagram
 
-    ![Adicionar Canal](../../.gitbook/assets/tokennotificame.png)
-3. Agora, basta **adicionar o canal** e escolher o **Hub**.
+* Selecione a opção **"Instagram V2 | Oficial"**
 
-### ⚠️ Observações importantes
+![Instagram V2](../../.gitbook/assets/instagram.png)
 
-* \*\* Atenção: O token deve pertencer à conta, não ao canal.
-* **Não é possível iniciar conversas pelo Hub**.
-* A interação **só pode começar** após o cliente entrar em contato primeiro.
-* Você tem 24 horas para responder as mensagens, depois fecha janela de conversa
+---
+
+### 📘 Usar apenas Facebook
+
+* Selecione a opção **"Facebook | Oficial"**
+
+![Facebook](../../.gitbook/assets/facebook.png)
+
+---
+
+### 📘📸 Usar Facebook e Instagram juntos
+
+* Selecione a opção **"Facebook / Instagram | Oficial"**
+
+![Facebook/Instagram](../../.gitbook/assets/facebookinstagram.png)
+
+---
+
+### 💬 Usar WebChat
+
+* O sistema também permite integração com **WebChat**
+
+![WebChat](../../.gitbook/assets/webchat.png)
+
+---
+
+## 🔗 Conectando o Hub ao Whazing
+
+Depois de conectar o canal desejado no Hub, siga estes passos:
+
+### 1️⃣ Copiar o Token do Hub
+
+* O Hub irá gerar um **TOKEN** automaticamente
+* **Copie esse token**, você vai usá-lo no Whazing
+
+![Token](../../.gitbook/assets/telatoken.png)
+
+---
+
+### 2️⃣ Cadastrar o Token no Whazing
+
+1. Acesse o **Whazing**
+2. Vá até:
+   **Configurações → Canais → Token Hub**
+3. Cole o **token copiado** do Hub
+4. Salve o cadastro
+
+![Adicionar Canal](../../.gitbook/assets/tokennotificame.png)
+
+---
+
+### 3️⃣ Adicionar o canal
+
+* Após salvar o token, basta **adicionar o canal** normalmente
+* Na escolha do provedor, selecione **Hub NotificaMe**
+
+---
+
+## ⚠️ Observações importantes (leia com atenção)
+
+* 🔐 **O token é da conta**, não de um canal específico
+* 🚫 **Não é possível iniciar conversas pelo Hub**
+* 👤 O cliente **precisa enviar a primeira mensagem**
+* ⏰ Após a primeira mensagem do cliente, você tem **24 horas para responder**
+* ❌ Se passar das 24 horas sem resposta, a **janela de conversa é fechada**
+
+---
+
+## ✅ Pronto!
+
+Se você seguiu todos os passos:
+
+* O canal estará conectado
+* As mensagens recebidas aparecerão no Whazing
+* Você poderá responder normalmente dentro do prazo permitido
+
+Se algo não funcionar, revise as imagens e confirme se o **canal escolhido no Hub é o correto**.
