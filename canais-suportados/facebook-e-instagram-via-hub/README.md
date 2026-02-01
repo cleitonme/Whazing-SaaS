@@ -2,7 +2,13 @@
 icon: hubspot
 ---
 
-# Instagram, facebook e webchat via NotificaMe
+# Whatsapp, Instagram, facebook e webchat via NotificaMe
+
+## Nosso sistema homologado para whatsapp, instagram, facebook e webchat outros canais podem funcionar mas não foram homologados.
+
+Para conectar canais pode verificar documentação oficial da notifica me
+
+[https://hub.notificame.com.br/docs/#/users?id=-whatsapp](https://hub.notificame.com.br/docs/#/users?id=-whatsapp)
 
 ## 🌐 Integração com Hub NotificaMe
 
