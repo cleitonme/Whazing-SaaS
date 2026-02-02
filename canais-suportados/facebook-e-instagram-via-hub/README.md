@@ -1,12 +1,4 @@
 ---
-icon: hubspot
-
-# WhatsApp, Instagram, Facebook e WebChat via NotificaMe
-
-Este guia explica **passo a passo**, de forma simples, como integrar **WhatsApp, Instagram, Facebook e WebChat** ao **Whazing** usando o **Hub NotificaMe**.
-Ele foi pensado para **leigos**, então siga a ordem sem pular etapas. As **imagens são importantes** e ajudam a confirmar se você está no lugar certo.
-
----
 
 ## ✅ O que este sistema suporta
 
