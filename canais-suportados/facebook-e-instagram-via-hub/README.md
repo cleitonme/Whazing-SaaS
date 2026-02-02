@@ -34,37 +34,13 @@ Após criar sua conta:
 1. Acesse o Hub: 👉 [https://hub.notificame.com.br/](https://hub.notificame.com.br/)
 2. Agora você deve **escolher o canal correto**, de acordo com o que deseja usar.
 
-#### 📸 Usar apenas Instagram
-
-* Selecione a opção **"Instagram V2 | Oficial"**
-
-***
-
-#### 📘 Usar apenas Facebook
-
-* Selecione a opção **"Facebook | Oficial"**
-
-***
-
-#### 📘📸 Usar Facebook e Instagram juntos
-
-* Selecione a opção **"Facebook / Instagram | Oficial"**
-
-***
-
-#### 💬 Usar WebChat
-
-* O sistema também permite integração com **WebChat**
-
-***
-
 ### 🔗 Conectando o Hub ao Whazing
 
 Depois de conectar o canal desejado no Hub, siga estes passos:
 
 #### 1️⃣ Copiar o Token do Hub
 
-* O Hub irá gerar um **TOKEN** automaticamente
+* Copie o token que fica topo tela lado nome de cadastro: Account :
 * **Copie esse token**, você vai usá-lo no Whazing
 
 ***
