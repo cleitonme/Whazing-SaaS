@@ -9,7 +9,7 @@ icon: key
 
 **Mensagem de erro:**
 
-> `An error occurred while validating the license.`
+> `An error occurred while validating the license`
 
 ***
 
