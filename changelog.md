@@ -1,5 +1,19 @@
 # Changelog e Atualizações
 
+## 🚀 Versão 2.15.2 BETA – Changelog
+
+- Ajustes layout
+- Mudança webhook atlaz que vem informação pix em campo errado, fazendo não funcionar copia e cola
+- Novo modelo mensagens rápidas
+- Liberado envio MP4 canal Instagram
+- Aumentado tempo tentativas downloads para evitar erro download
+- Alterado Wuzapi erro mensagem imcompativel para aguardar 2 minutos antes de aparecer para garantir mensagem real não chegou mesmo evitando falsos erros
+- Wuzapi suporte download XML
+- Recepção inteligente - Caso IA retorne tem muitos arquivos ou arquivos grandes e não gere resposta sistema tenta novamente somente com as mensagens de texto
+- IXC - Lista contratos para selecionar quando tem mais um
+
+- Update baileys versão - Ler QRCODE novamente
+
 ## 🚀 Versão 2.15.1 BETA – Changelog
 
 - Mais ajustes layout
