@@ -1,5 +1,12 @@
 # Changelog e Atualizações
 
+## 🚀 Versão 2.15.4 BETA – Changelog
+- bug - correção bug beta reação baileys
+
+- Novo discador wavoip - oficial deles
+- Baileys necessário ler qrcode no wavoip tambem
+- ajustes Layout
+
 ## 🚀 Versão 2.15.3 BETA – Changelog
 
 - Recepcão inteligente - Melhora validacao ticket caso ticket estivese aberto a IA continuava interragindo mandando mensagem caso acontece algum erro retry. Ou se ticket fosse aberto meio atendimento da IA.
