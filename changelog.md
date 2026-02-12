@@ -1,11 +1,18 @@
 # Changelog e Atualizações
 
+## 🚀 Versão 2.15.5 BETA – Changelog
+- bug - colocado delay sincronização mensagens acaba criando multiplos tickets por receber muitas mensagens de uma vez
+- ajustes layout
+- Mensagens rapidas, modelo antigo e novo junto. Ao clicar / abre novo e fechado fica os botões acredito assim agrada todo mundo.
+
+
 ## 🚀 Versão 2.15.4 BETA – Changelog
 - bug - correção bug beta reação baileys
 
 - Novo discador wavoip - oficial deles
 - Baileys necessário ler qrcode no wavoip tambem
 - ajustes Layout
+- Opção desativar bot na tela atendimento esta disponivel agora para integrações também
 
 ## 🚀 Versão 2.15.3 BETA – Changelog
 
