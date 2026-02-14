@@ -1,5 +1,8 @@
 # Changelog e Atualizações
 
+## 🚀 Versão 2.15.6 FINAL – Changelog
+- ajustes layout
+
 ## 🚀 Versão 2.15.5 BETA – Changelog
 - bug - colocado delay sincronização mensagens acaba criando multiplos tickets por receber muitas mensagens de uma vez
 - ajustes layout
