@@ -23,6 +23,8 @@ Esse arquivo contém **todas as informações de conexão com o banco de dados**
 
 ***
 
+## Você pode conectar diretamente ou via ssh. Diretamente deve abrir porta 5432 ou desativar o firewall UFW (não recomendado) recomendados conectar via SSH
+
 ## 1. Baixar o Programa para Acessar o Banco de Dados
 
 Para acessar o PostgreSQL, usaremos o programa **DBeaver**.
@@ -37,7 +39,7 @@ Para acessar o PostgreSQL, usaremos o programa **DBeaver**.
 
 ### 3. Preencher os Dados de Conexão
 
-* **Host**: IP da sua VPS
+* **Host**: IP da sua VPS (caso for desativar firewall ou abrir porta 5432, senão usar localhost)
 * **Porta**: `5432`
 * **Banco de Dados**: `postgres`
 * **Usuário**: `whazing`
@@ -47,7 +49,7 @@ Para acessar o PostgreSQL, usaremos o programa **DBeaver**.
 
 Para visualizar todos os bancos disponíveis, ative a opção correspondente dentro do **DBeaver**.
 
-## 5. Configurar Acesso via SSH (se necessário)
+## 5. Configurar Acesso via SSH (recomendado)
 
 Se precisar acessar o banco de dados remotamente:
 
@@ -59,11 +61,11 @@ Se precisar acessar o banco de dados remotamente:
 
 🖼️ **Configuração do Banco de Dados**
 
->
+<figure><img src="../.gitbook/assets/image (81).png" alt=""><figcaption></figcaption></figure>
 
 🖼️ **Configuração SSH**
 
->
+<figure><img src="../.gitbook/assets/image (82).png" alt=""><figcaption></figcaption></figure>
 
 Agora você está pronto para acessar e gerenciar seu banco de dados PostgreSQL! 🚀
 

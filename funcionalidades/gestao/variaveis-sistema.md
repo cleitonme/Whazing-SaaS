@@ -18,8 +18,6 @@ Essas variáveis utilizam os valores cadastrados em **Informações Adicionais d
 
 <figure><img src="../../.gitbook/assets/image (10).avif" alt=""><figcaption></figcaption></figure>
 
-
-
 **Exemplos**
 
 *   Se o contato tiver `CPF = 0985786468528`:
@@ -75,7 +73,7 @@ No **chatbot**, é possível salvar automaticamente a resposta do cliente como v
 📂 Arquivo de exemplo disponível:\
 Clique botão direito coloque salvar link como
 
-{% file src="../../.gitbook/assets/exemplo_fluxo_usando_novas_variaveis.json" %}
+{% file src="../../.gitbook/assets/exemplo_fluxo_usando_novas_variaveis (1).json" %}
 
 ***
 
