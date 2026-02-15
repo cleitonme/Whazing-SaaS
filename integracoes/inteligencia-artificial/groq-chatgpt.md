@@ -5,6 +5,8 @@ icon: message-bot
 
 # Groq/ChatGPT
 
+## <mark style="color:$danger;">**Importante: Descontinuado usar recepção inteligente**</mark>
+
 ## Passo 1: Configurar a Integração
 
 <figure><img src="../../.gitbook/assets/image (1).avif" alt=""><figcaption></figcaption></figure>

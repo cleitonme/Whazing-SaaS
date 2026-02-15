@@ -4,6 +4,8 @@ icon: chatgpt
 
 # ChatGPT Assistant
 
+## <mark style="color:$danger;">**Importante: Descontinuado usar recepção inteligente**</mark>
+
 ## Por que escolher essa integração?
 
 * Você obterá uma IA mais ajustada para melhores resultados.
