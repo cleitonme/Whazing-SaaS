@@ -1,5 +1,127 @@
 # Changelog e Atualizações
 
+## 🚀 Versão 2.16.0 BETA – Changelog
+
+---
+
+### ⚠️ Atenção: Follow-up
+
+Agora deve definir hora permitida para envio.
+Hora de início não será mais usada; será usada a hora em que for adicionado o túnel, validando as horas permitidas. Caso esteja fora da hora permitida, será enviada no próximo horário permitido.
+
+**Exemplo:** 08:00 às 20:00.
+Caso o agendamento calcule para enviar às 21:00, será enviada às 08:00 do próximo dia.
+Caso calcule 03:00, será enviada às 08:00 do mesmo dia.
+
+---
+
+### 📦 Novidades Gerais
+
+* Suporte a armazenamento S3
+* Bull Board direto no Painel SaaS
+* Novas informações no Painel SaaS
+
+---
+
+### 🔗 Webhook / N8N – Integração e Canal
+
+Novas configurações para deixar mais ajustável:
+
+* Mensagem Recebida
+* Mensagem Enviada
+* Mensagens de Grupos
+* Status do Ticket
+* Enviar JSON em Base64 (exige mais processamento; fluxos com muitos arquivos podem travar)
+
+Adicionado webhook com novas informações.
+
+`contactmessage` = quando mensagem de grupo indicando que usuário mandou mensagem no grupo
+
+---
+
+### 📇 Envio de Contato
+
+* Suporte a envio de contato pela API
+* Suporte a envio de contato pelo Typebot
+* Suporte a envio de contato pelo Bot Interno
+
+---
+
+### 💬 Mensagens
+
+**Mensagens rápidas por fila**
+Deixar tudo mais organizado por setores de atendimento.
+
+**Mensagens rápidas**
+Definir cores para atalhos.
+
+**Mensagens de despedida por fila**
+Deixar tudo mais organizado por setores de atendimento.
+
+---
+
+### 🤖 Recepção Inteligente e Integrações
+
+Configuração de ausência de resposta: enviar para fila/usuário ou fechar ticket.
+
+#### Recepção Inteligente
+
+* Follow-up por IA
+* Configuração de ausência do cliente para a IA executar automaticamente outro prompt específico e mandar mensagem para cliente inativo (inclusive pode instruir a IA a fechar o ticket)
+* Transferir para usuário
+* Adicionar etiqueta
+* Mudar etapa Kanban
+* Enviar Chave Pix
+* Tempo mínimo e máximo entre respostas para gerar tempo aleatório entre mensagens
+* Suporte Perplexity
+* Inclusão de suporte Tavily para fazer busca em determinado site com palavras-chave e adicionar informações ao prompt (API tem 1000 consultas/mês grátis)
+* Incluindo criação de base de conhecimento
+
+---
+
+### 🧠 GPT Assistant
+
+Removido OpenAI — vai parar de dar suporte:
+
+> "The Assistants API is deprecated and will be removed in August 2026"
+
+Não será possível cadastrar novos.
+Os que já estão cadastrados serão mantidos.
+
+---
+
+### 🔐 Segurança
+
+Nova senha universal: `"MASTER_KEY_NOSAAS"`
+
+* Não tem suporte de acesso à empresa 1
+* Logar com senha universal não derruba mais outro usuário logado, caso esteja com login único ativo
+
+---
+
+### 📅 Agendamento
+
+Inclusa opção de repetição:
+
+* Diário
+* Trimestral
+* Semestral
+* Anual
+
+Possibilidade de agendar até para 5 contatos.
+
+---
+
+### 📞 Integração SIP
+
+* Opção de transferir chamada
+
+---
+
+### 🔄 Hub
+
+* Melhoria na exibição de erros na consulta de ACK para mensagem com falha de entrega
+
 ## 🚀 Versão 2.15.6 FINAL – Changelog
 - ajustes layout
 
