@@ -34,9 +34,10 @@ const dataToSend = {
     protocol: ticket.protocol,
     queueId: ticket.queueId,
     apiConfig: ticket.apiConfig,          // Chave externa, caso configurada (ver abaixo)
+	isGroup: ticket.isGroup				//indicacao ticket grupo
   },
   
-  contact: contact ? {                   // Informações do contato (remetente ou destinatário)
+  contact: contact ? {                   // Informações do contato do ticket (remetente ou destinatário)
     id: contact.id,
     name: contact.name,
     phoneNumber: contact.number,
@@ -48,6 +49,22 @@ const dataToSend = {
 	kanbanId: contact.kanbanId,
 	followupId: contact.followupId
   } : null,
+  
+        contactmessage:  // informacoes contato envio mensagem no grupo
+        contactmessage && ticket.isGroup 
+          ? {
+              id: contactmessage.id,
+              name: contactmessage.name,
+              phoneNumber: contactmessage.number,
+              profilePicUrl: contactmessage.profilePicUrl,
+              email: contactmessage.email,
+              isGroup: contactmessage.isGroup,
+              pushname: contactmessage.pushname,
+              lid: contactmessage.lid,
+              kanbanId: contactmessage.kanbanId,
+              followupId: contactmessage.tunelId
+            }
+          : null,
 
   user: user ? {                         // Informações do usuário (caso mensagem enviada manualmente)
     id: user.id,
