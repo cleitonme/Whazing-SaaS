@@ -275,6 +275,14 @@ phoneNumber: 5511999999999
 [address]Av. Brig. Faria Lima, 3477 - 18º Andar - Itaim Bibi, São Paulo - SP, 04538-133[address]
 ```
 
+* Enviar Contato - baileys, plus, oficial, wuzapi
+
+```bash
+[contact]
+[displayName]nome do contato[/displayName]
+[telephone]551195248458[/telephone]
+```
+
 **IMPORTANTE**:
 
 * Veja como instalar o Typebot na mesma VPS que o Whazing [aqui](comoinstalar.md).
