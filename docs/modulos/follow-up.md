@@ -53,12 +53,18 @@ Acesse o menu **Configurações → Follow-up**.
 
 * **Nome:** Nome interno do modelo (aparece nos relatórios e no painel)
 * **Conexão WhatsApp:** Define por qual conexão a mensagem será enviada
-* **Hora de Início:** Define o horário fixo em que o envio será programado
+* **Hora de Início:** Define o horário fixo em que o envio será programado(antes da versão 2.6)
+* **Horário Inicial Permitido para Envio:**  Definir horario inicial permitido para envio da mensagem (a partir versão  2.60)
+* **Horário Final Permitido para Envio:**  Definir horario final permitido para envio da mensagem (a partir versão  2.60)
 
-⚠️ **Importante sobre o horário de início:**
+⚠️ **Importante sobre o horário de início: (antes da versão 2.60)**
 
 * Se o cliente for adicionado **antes do horário definido** (ex: 09:00, e o horário é 10:00), a primeira mensagem será enviada **no mesmo dia às 10:00**
 * Se o cliente for adicionado **após o horário definido** (ex: 13:00, e o horário é 10:00), o envio será **no dia seguinte às 10:00**
+
+⚠️ **Importante sobre Intervalo Permitido: (A partir da versão 2.60)**
+
+**Exemplo:** 08:00 às 20:00. Caso o agendamento calcule para enviar às 21:00, será enviada às 08:00 do próximo dia. Caso calcule 03:00, será enviada às 08:00 do mesmo dia.
 
 ***
 
