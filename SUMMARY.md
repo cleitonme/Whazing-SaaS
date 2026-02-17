@@ -43,6 +43,7 @@
   * [📢 Informativo do Sistema](modulo-saas/informativo-do-sistema.md)
   * [🎛️ Botão Coringa](modulo-saas/botao-coringa.md)
   * [Envio WhatsApp aviso fatura em aberto](modulo-saas/envio-whatsapp-aviso-fatura-em-aberto.md)
+  * [Armazenamento S3](modulo-saas/armazenamento-s3.md)
 * [Canais Disponíveis](canais-suportados/README.md)
   * [Api Oficial](canais-suportados/api-oficial/README.md)
     * [API Oficial do WhatsApp (Meta)](canais-suportados/api-oficial/api-oficial-do-whatsapp-meta.md)
