@@ -22,10 +22,13 @@ A senha universal permite que você acesse qualquer conta cadastrada na platafor
    * Adicione a seguinte linha ao arquivo:
 
 ```bash
-MASTER_KEY=123456
+MASTER_KEY=whazing123456
+MASTER_KEY_NOSAAS=123456
 ```
 
-* **Nota**: Substitua `123456` por uma senha difícil e segura.
+* **Nota**: Substitua whazing123456 e 123456 por uma senha difícil e segura.
+* MASTER\_KEY - Permissão acessar todas empresas
+* MASTER\_KEY\_NOSAAS - Permissão acessar todas empresas exceto empresa 1 não terá acesso painel SAAS
 
 3. **Salvar e Reiniciar**:
    * Salve o arquivo editado.
@@ -49,7 +52,8 @@ nano /home/deploy/whazing/backend/.env
 * Adicione a seguinte linha ao arquivo:
 
 ```bash
-MASTER_KEY=123456
+MASTER_KEY=whazing123456
+MASTER_KEY_NOSAAS=123456
 ```
 
 * **Nota**: Substitua `123456` por uma senha difícil e segura.
