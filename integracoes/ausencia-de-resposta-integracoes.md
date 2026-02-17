@@ -4,7 +4,7 @@ icon: hourglass
 
 # Ausência de Resposta nas Integrações
 
-Algumas integrações possuem um recurso automático para quando o cliente **para de responder**.
+Algumas integrações possuem um recurso automático para quando o cliente **para de responder**. Versão whazing mínima 2.16.0
 
 Esse recurso está disponível nas integrações:
 
