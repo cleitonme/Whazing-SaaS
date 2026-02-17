@@ -98,6 +98,7 @@
       * [Follow-up na Recepção Inteligente](integracoes/inteligencia-artificial/recepcao-inteligente/follow-up-recepcao-inteligente.md)
       * [Etiquetas Automáticas e Kanban com IA](integracoes/inteligencia-artificial/recepcao-inteligente/etiquetas-automaticas-e-kanban-com-ia.md)
       * [Botão Pix Automático no Atendimento](integracoes/inteligencia-artificial/recepcao-inteligente/botao-pix-automatico-no-atendimento.md)
+      * [Base de Conhecimento](integracoes/inteligencia-artificial/recepcao-inteligente/base-de-conhecimento.md)
   * [CRM & ERP](integracoes/crm-and-erp/README.md)
     * [WooCommerce](integracoes/crm-and-erp/woocommerce-login-whatsapp.md)
     * [PerfexCRM](integracoes/crm-and-erp/perfexcrm.md)
