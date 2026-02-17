@@ -11,6 +11,13 @@ description: >-
 * **Painel SaaS**: Gerencie empresas, usuários, planos e configurações em um único painel.
 * **White Label**: Personalize com sua marca, cores e identidade visual.
 * **Planos**: Crie e gerencie planos comerciais.
+* **Integração Bancária (Receber Valores Planos)**
+  * Efi
+  * Mercado Pago
+  * Asaas
+  * InfinitePay
+  * Stripe
+  * PIX, cartão e bolet
 * **Menu Ajuda**: Acesso rápido a tutoriais e suporte.
 * **Multi Idioma**: Português, Inglês e Espanhol.
 * **Controle de Horário de Login**: Restrinja acesso fora do expediente.
@@ -121,21 +128,13 @@ Ideal para empresas que desejam escalar o atendimento sem aumentar equipe.
 
 ***
 
-### 💳 Integrações Financeiras
+### Integrações ERP PROVEDORES
 
-* **Integração Bancária (Receber Valores Planos)**
-  * Efi
-  * Mercado Pago
-  * Asaas
-  * InfinitePay
-  * Stripe
-  * PIX, cartão e boleto
-* **2ª via Asaas**
-* **IXC Soft**
-* **TSMX SGP**
-* **HubSoft**
-* **Atlaz**
-* **ReceitaNET**
+* **IXC Soft**: 2ª via de boletos e desbloqueio de confiança.
+* **TSMX SGP**: 2ª via de boletos e desbloqueio de confiança.
+* **HubSoft**: 2ª via de boletos e desbloqueio de confiança.
+* **Atlaz**: 2ª via de boletos, desbloqueio de confiança, abertura de chamados e disparo WhatsApp.
+* **ReceitaNET**: 2ª via de boletos.
 
 ***
 
@@ -153,10 +152,13 @@ Ideal para empresas que desejam escalar o atendimento sem aumentar equipe.
 
 ### 🔗 Integrações e API
 
-* **API Própria**
-* **WebHook - N8N**
-* **Integração TypeBot**
-* Integração com n8n e PerfexCRM
+* API Própria
+* WebHook
+* TypeBot
+* N8N
+* PerfexCRM
+* WooCommerce
+* 2 Via Boleto Assas
 
 ***
 
