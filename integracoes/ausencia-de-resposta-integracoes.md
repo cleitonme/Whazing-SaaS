@@ -1,4 +1,8 @@
-# ⏳ Ausência de Resposta nas Integrações
+---
+icon: hourglass
+---
+
+# Ausência de Resposta nas Integrações
 
 Algumas integrações possuem um recurso automático para quando o cliente **para de responder**.
 
@@ -13,22 +17,22 @@ Ele serve para evitar que atendimentos fiquem **parados e esquecidos** no sistem
 
 <figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
----
+***
 
-# ⚙️ Como funciona?
+## ⚙️ Como funciona?
 
 Você define um **tempo limite de espera**.
 
-### Exemplo:
+#### Exemplo:
 
 Se você configurar **20 minutos**:
 
 * Caso o cliente fique **20 minutos sem responder**
 * O sistema executará automaticamente uma ação
 
----
+***
 
-# 🔄 Quais ações podem ser executadas?
+## 🔄 Quais ações podem ser executadas?
 
 Você pode configurar para o sistema:
 
@@ -44,9 +48,9 @@ Essa mensagem pode ser algo como:
 
 > “Encerramos o atendimento por falta de resposta. Caso precise, estamos à disposição.”
 
----
+***
 
-# 🚨 Por que isso é importante?
+## 🚨 Por que isso é importante?
 
 Sem essa configuração:
 
@@ -55,5 +59,4 @@ Sem essa configuração:
 * Relatórios ficam incorretos
 * Operadores podem perder novos atendimentos
 
-⚠️ **Recomendação:**
-Sempre configure um tempo de ausência para manter seu atendimento organizado e automático.
+⚠️ **Recomendação:** Sempre configure um tempo de ausência para manter seu atendimento organizado e automático.
