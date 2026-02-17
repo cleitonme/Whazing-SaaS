@@ -1,4 +1,8 @@
-# ☁️ Armazenamento S3
+---
+icon: cloud
+---
+
+# Armazenamento S3
 
 A partir da **Versão 2.6.0**, o sistema passa a suportar **armazenamento externo via S3** (como AWS S3, Backblaze B2, MinIO, entre outros).
 
@@ -16,20 +20,19 @@ Esse recurso é utilizado para armazenar:
 * O sistema usa as credenciais configuradas para acessar os arquivos.
 * Se você alterar as credenciais depois, poderá **perder acesso aos arquivos já armazenados**.
 
----
+***
 
-# 📦 Tutorial: Configurando o Backblaze B2
+## 📦 Tutorial: Configurando o Backblaze B2
 
 Neste exemplo vamos utilizar o **Backblaze B2**, que é compatível com S3.
 
-Acesse e crie sua conta em:
-👉 [https://www.backblaze.com](https://www.backblaze.com)
+Acesse e crie sua conta em: 👉 [https://www.backblaze.com](https://www.backblaze.com)
 
 <figure><img src="../.gitbook/assets/image (84).png" alt=""><figcaption></figcaption></figure>
 
----
+***
 
-# 🪣 Passo 1 – Criar um Bucket (Balde)
+## 🪣 Passo 1 – Criar um Bucket (Balde)
 
 Após entrar no painel:
 
@@ -37,28 +40,27 @@ Clique em **Criar um Balde (Create Bucket)**
 
 Preencha da seguinte forma:
 
-### 🔹 Balde Nome Exclusivo
+#### 🔹 Balde Nome Exclusivo
 
-Escolha um nome único.
-⚠️ Esse nome será usado como **Bucket Name dentro do Whazing**.
+Escolha um nome único. ⚠️ Esse nome será usado como **Bucket Name dentro do Whazing**.
 
-### 🔹 Arquivos de segmento
+#### 🔹 Arquivos de segmento
 
 Selecione: **Privado**
 
-### 🔹 Default Encryption
+#### 🔹 Default Encryption
 
 Deixe: **Desativado**
 
-### 🔹 Object Lock
+#### 🔹 Object Lock
 
 Deixe: **Desativado**
 
 Depois clique em **Criar um Balde**
 
----
+***
 
-## 🔎 Após criar o Bucket
+### 🔎 Após criar o Bucket
 
 Localize o campo **Endpoint**.
 
@@ -66,7 +68,7 @@ Você precisará dele para configurar no Whazing.
 
 <figure><img src="../.gitbook/assets/image (87).png" alt=""><figcaption></figcaption></figure>
 
-### 📌 Como identificar a Região
+#### 📌 Como identificar a Região
 
 Exemplo de endpoint:
 
@@ -80,9 +82,9 @@ A **Região** que deve ser usada no Whazing é:
 us-east-005
 ```
 
----
+***
 
-# 🔑 Passo 2 – Criar as Credenciais de Acesso
+## 🔑 Passo 2 – Criar as Credenciais de Acesso
 
 Agora vamos criar as chaves de acesso.
 
@@ -94,16 +96,15 @@ No menu lateral, clique em:
 
 Preencha assim:
 
-### 🔹 Name of Key
+#### 🔹 Name of Key
 
 Escolha um nome (ex: `whazing-s3`)
 
-### 🔹 Allow access to Bucket(s)
+#### 🔹 Allow access to Bucket(s)
 
-Selecione o bucket criado anteriormente
-ou deixe **All** se preferir.
+Selecione o bucket criado anteriormente ou deixe **All** se preferir.
 
-### 🔹 Type of Access
+#### 🔹 Type of Access
 
 Selecione: **Read and Write**
 
@@ -111,27 +112,25 @@ Selecione: **Read and Write**
 
 Clique em **Create Key**
 
----
+***
 
-## 📋 Anote as informações geradas
+### 📋 Anote as informações geradas
 
 Após criar, o sistema mostrará duas informações importantes:
 
-### 🔹 keyID
+#### 🔹 keyID
 
-→ Este valor será usado no Whazing como:
-**Access Key ID**
+→ Este valor será usado no Whazing como: **Access Key ID**
 
-### 🔹 applicationKey
+#### 🔹 applicationKey
 
-→ Este valor será usado no Whazing como:
-**Secret Access Key**
+→ Este valor será usado no Whazing como: **Secret Access Key**
 
 ⚠️ Guarde essas informações em local seguro.
 
----
+***
 
-# ⚙️ Passo 3 – Configurar no Whazing
+## ⚙️ Passo 3 – Configurar no Whazing
 
 Agora vá no:
 
@@ -141,17 +140,19 @@ Preencha os campos com:
 
 * Bucket Name → Nome do balde criado
 * Região → Exemplo: `us-east-005`
+* Endpoint → s3.us-east-005.backblazeb2.com
 * Access Key ID → keyID
 * Secret Access Key → applicationKey
-* Endpoint → s3.us-east-005.backblazeb2.com
 
-### ✅ Habilitar:
+#### ✅ Habilitar:
 
 ✔ **Force Path Style**
 
----
+<figure><img src="../.gitbook/assets/image (88).png" alt=""><figcaption></figcaption></figure>
 
-# ✅ Finalizando
+***
+
+## ✅ Finalizando
 
 Após salvar:
 
