@@ -8,134 +8,190 @@ icon: up
 
 Em **vendas**, **follow-up** significa **acompanhar o cliente após o primeiro contato**, com os seguintes objetivos:
 
-* Esclarecer dúvidas
-* Reforçar a proposta enviada
-* Superar possíveis objeções
-* Fechar a venda
-* Ou manter o relacionamento para oportunidades futuras
+* Esclarecer dúvidas  
+* Reforçar a proposta enviada  
+* Superar possíveis objeções  
+* Fechar a venda  
+* Ou manter o relacionamento para oportunidades futuras  
 
 Esse processo é essencial para aumentar suas chances de conversão e manter o cliente engajado.
 
-***
+---
 
-### 📌 Exemplos práticos de follow-up em vendas
+## 📌 Exemplos práticos de follow-up em vendas
 
-1.  **Após o envio de um orçamento:**
+1. **Após o envio de um orçamento:**
 
-    > “Olá! Tudo certo? Só passando para saber se teve tempo de analisar a proposta que enviei ontem. Posso te ajudar com alguma dúvida?”
-2.  **Após uma demonstração do produto:**
+> “Olá! Tudo certo? Só passando para saber se teve tempo de analisar a proposta que enviei ontem. Posso te ajudar com alguma dúvida?”
 
-    > “Gostou da apresentação? Fico à disposição para ajustar a proposta ou tirar dúvidas!”
-3.  **Cliente que pediu tempo para pensar:**
+2. **Após uma demonstração do produto:**
 
-    > “Você comentou que precisava de alguns dias para decidir. Posso te ajudar com mais alguma informação?”
+> “Gostou da apresentação? Fico à disposição para ajustar a proposta ou tirar dúvidas!”
 
-***
+3. **Cliente que pediu tempo para pensar:**
 
-### ✅ Boas práticas de follow-up
+> “Você comentou que precisava de alguns dias para decidir. Posso te ajudar com mais alguma informação?”
+
+---
+
+## ✅ Boas práticas de follow-up
 
 * Seja **ágil**, mas sem exagerar (evite ser insistente)
 * Mantenha a **mensagem personalizada** (use nome e contexto do cliente)
-* Envie mensagens com **propósito claro** (ex: promoção, vencimento, bônus, novidade)
-*   Defina **próximos passos objetivos**
+* Envie mensagens com **propósito claro**
+* Defina **próximos passos objetivos**
 
-    > Ex: “Posso te ligar amanhã às 10h para alinharmos a proposta?”
+> Exemplo: “Posso te ligar amanhã às 10h para alinharmos a proposta?”
 
-***
+---
 
-## ⚙️ Como cadastrar um modelo de Follow-up no sistema
+# ⚙️ Configuração do Follow-up no Sistema
 
-Acesse o menu **Configurações → Follow-up**.
+Acesse:
+
+**Configurações → Follow-up**
 
 <figure><img src="../../.gitbook/assets/image (2) (1).avif" alt=""><figcaption></figcaption></figure>
 
-#### Campos disponíveis:
+---
+
+# 🔄 Importante: Mudança a partir da versão 2.6.0
+
+A partir da **versão 2.6.0**, o sistema passou a utilizar **intervalo de horário permitido para envio**, substituindo o comportamento fixo da "Hora de Início".
+
+Para quem ainda está em versões anteriores, o funcionamento antigo continua explicado abaixo.
+
+---
+
+## 🧩 Campos disponíveis
 
 * **Nome:** Nome interno do modelo (aparece nos relatórios e no painel)
 * **Conexão WhatsApp:** Define por qual conexão a mensagem será enviada
-* **Hora de Início:** Define o horário fixo em que o envio será programado(antes da versão 2.6)
-* **Horário Inicial Permitido para Envio:**  Definir horario inicial permitido para envio da mensagem (a partir versão  2.60)
-* **Horário Final Permitido para Envio:**  Definir horario final permitido para envio da mensagem (a partir versão  2.60)
 
-⚠️ **Importante sobre o horário de início: (antes da versão 2.60)**
+### 🔹 Antes da versão 2.6.0
 
-* Se o cliente for adicionado **antes do horário definido** (ex: 09:00, e o horário é 10:00), a primeira mensagem será enviada **no mesmo dia às 10:00**
-* Se o cliente for adicionado **após o horário definido** (ex: 13:00, e o horário é 10:00), o envio será **no dia seguinte às 10:00**
+* **Hora de Início:** Define o horário fixo em que o envio será programado.
 
-⚠️ **Importante sobre Intervalo Permitido: (A partir da versão 2.60)**
+### 🔹 A partir da versão 2.6.0
 
-**Exemplo:** 08:00 às 20:00. Caso o agendamento calcule para enviar às 21:00, será enviada às 08:00 do próximo dia. Caso calcule 03:00, será enviada às 08:00 do mesmo dia.
+* **Horário Inicial Permitido para Envio**
+* **Horário Final Permitido para Envio**
 
-***
+Agora o sistema trabalha com **janela de envio permitida**.
 
-### ✉️ Cadastrar mensagens
+---
+
+# 🕒 Funcionamento por versão
+
+---
+
+## 📌 🔵 Antes da versão 2.6.0 (Hora Fixa)
+
+⚠️ O envio sempre respeita um horário fixo definido.
+
+**Exemplo: Hora de início = 10:00**
+
+* Se o cliente for adicionado às **09:00** → envia no mesmo dia às **10:00**
+* Se for adicionado às **13:00** → envia no dia seguinte às **10:00**
+
+---
+
+## 📌 🟢 A partir da versão 2.6.0 (Janela Permitida)
+
+Agora você define um intervalo, por exemplo:
+
+```
+
+08:00 às 20:00
+
+````
+
+O sistema calcula o envio normalmente pelo offset, porém:
+
+* Se calcular envio para **21:00** → será enviado às **08:00 do dia seguinte**
+* Se calcular envio para **03:00** → será enviado às **08:00 do mesmo dia**
+* Se estiver dentro do intervalo → envia normalmente
+
+✅ Isso evita disparos fora do horário comercial.
+
+---
+
+# ✉️ Cadastrar mensagens
 
 Acesse a tela de mensagens e adicione quantas forem necessárias:
 
 <figure><img src="../../.gitbook/assets/image (3) (1).avif" alt=""><figcaption></figcaption></figure>
 
-* **Mensagem:** Texto que será enviado ao cliente
-* **Offset:** Tempo de espera (em minutos) antes do envio
-* **Arquivo:** (Opcional) Anexo para envio junto com a mensagem
+Campos:
 
-***
+* **Mensagem:** Texto enviado ao cliente
+* **Offset:** Tempo de espera (em minutos)
+* **Arquivo:** (Opcional) Anexo da mensagem
 
-#### ⏱️ Como funciona o "Offset"
+---
 
-**Primeira mensagem:**
+# ⏱️ Como funciona o Offset
 
-* Hora de início: `10:00`
+## 📌 Primeira mensagem
+
+Exemplo:
+
+* Horário base: `10:00`
 * Offset: `10`
-* Resultado: mensagem será enviada às **10:10**
 
-> Offset em minutos a partir da **hora inicial definida no modelo**
+Resultado: envio às **10:10**
 
-Se o offset for `7200` (5 dias), a mensagem será enviada **5 dias depois às 10:00**
+> O offset é sempre calculado em minutos.
 
-***
+Se o offset for `7200` (5 dias), será enviado **5 dias depois no horário base**.
 
-**Próximas mensagens:**
+---
 
-O offset será somado ao **horário real em que a mensagem anterior foi enviada**.
+## 📌 Próximas mensagens
 
-**Exemplo:**
+O sistema sempre calcula com base na **hora real em que a mensagem anterior foi enviada**.
+
+Exemplo:
 
 * Mensagem anterior enviada em `10/07/2025 às 12:10`
-* Offset da próxima: `60` minutos
-* Próxima mensagem será enviada em **10/07/2025 às 13:10**
+* Offset da próxima: `60`
 
-> O sistema sempre calcula o próximo envio baseado na hora real da última mensagem.
+Próxima mensagem: **10/07/2025 às 13:10**
 
-***
+---
 
-### ✏️ Organizar e editar mensagens
+# ✏️ Organizar e editar mensagens
 
 Na tela de organização você pode:
 
 <figure><img src="../../.gitbook/assets/image (4) (1).avif" alt=""><figcaption></figcaption></figure>
 
-* **Reordenar mensagens** (arrastando a ordem)
-* **Alterar o texto** das mensagens
-* **Modificar o tempo (offset)**
-* **Excluir mensagens** que não quiser mais usar
+* Reordenar mensagens
+* Editar textos
+* Alterar offsets
+* Excluir mensagens
 
-### Como colocar cliente começar enviar
+---
 
-**Via api com novo endpoint**
+# ▶️ Como iniciar Follow-up para um cliente
 
-* **Método**: POST
-* **Endpoint**: `/updatefollowup`
+---
 
-Por número:
+## 🔌 Via API (novo endpoint)
+
+**Método:** POST  
+**Endpoint:** `/updatefollowup`
+
+### Por número
 
 ```json
 {
   "number": "5511999999999",
   "followup": 1
 }
-```
+````
 
-Por contactId:
+### Por contactId
 
 ```json
 {
@@ -144,7 +200,7 @@ Por contactId:
 }
 ```
 
-Por ticketId:
+### Por ticketId
 
 ```json
 {
@@ -153,20 +209,42 @@ Por ticketId:
 }
 ```
 
-Para retirar contato do follow-up use valor 0
+✅ Para remover do follow-up, utilize:
 
-**Via Typebot usando gatilho**
+```json
+{
+  "followup": 0
+}
+```
 
-*   Comando para adicionar contato em um Follow-up - (lembre-se de trocar o ID) - Para Retirar usar id 0:
+---
 
-    ```bash
-    #{ "followupId": "1" }
-    ```
+## 🤖 Via Typebot (gatilho)
 
-**Pela tela atendimento com nova opção**
+Para adicionar:
+
+```bash
+#{ "followupId": "1" }
+```
+
+Para remover:
+
+```bash
+#{ "followupId": "0" }
+```
+
+---
+
+## 💬 Pela tela de atendimento
+
+Nova opção disponível no atendimento:
 
 <figure><img src="../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
 
-#### Para acompanhar os envios acesse nos relatórios
+---
+
+# 📊 Relatórios de Follow-up
+
+Para acompanhar os envios, acesse os relatórios:
 
 <figure><img src="../../.gitbook/assets/image (13).png" alt=""><figcaption></figcaption></figure>
