@@ -139,6 +139,23 @@ icon: message
 }
 ```
 
+**8. Enviar Contato**
+
+* **Método**: POST
+* **Endpoint**: `/sendcontact`
+* **Content-Type**: application/json
+
+```json
+{
+  "number": "{{number}}",
+  "contents": {
+    "type": "contact",
+    "displayName": "nome do contato",
+    "telephone": "551195248458"
+  }
+}
+```
+
 #### Mensagens Interativas
 
 **1. Mensagem com Botões**
