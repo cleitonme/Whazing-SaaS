@@ -6,76 +6,182 @@ description: >-
 
 # Principais Recursos do Sistema
 
-* **Painel SaaS**: Gerencie todas as suas configurações e dados em um único painel.
-* **Chat Interno**: Ferramenta para comunicação interna entre membros da equipe.
-* **Solicitar Teste e Esqueci a Senha**: Funções disponíveis na página de login para novos usuários e recuperação de senha.
-* **Planos**: Diferentes opções de planos para atender às suas necessidades.
+### 🏢 Estrutura SaaS
+
+* **Painel SaaS**: Gerencie empresas, usuários, planos e configurações em um único painel.
+* **White Label**: Personalize com sua marca, cores e identidade visual.
+* **Planos**: Crie e gerencie planos comerciais.
 * **Menu Ajuda**: Acesso rápido a tutoriais e suporte.
-* **Fechamento e Apagar Tickets em Massa**: Feche ou apague múltiplos tickets de uma vez.
-* **Integração Bancária**: Com Efi, Mercado Pago, Asaas, infinitepay e Stripe. Recebimento via PIX, cartão de crédito e boleto.
-* **Lista de Protocolos**: Acompanhe todas as suas interações e casos.
-* **Lista de Agendamentos**: Gerencie mensagens agendadas.
-* **Tela de Atendimento**: Vários filtros e separação por grupos para facilitar o gerenciamento dos atendimentos.
-* **Mensagens Rápidas com Anexos**: Envie mensagens rápidas com documentos, vídeos e outros arquivos.
-* **Importação de Mensagens do Celular**: Importe mensagens diretamente do seu celular.
-* **Importação de Contatos**: Importe seus contatos facilmente.
-* **Montagem de Bot estilo ChatFlow**: Crie bots com recursos como delay, envio de áudios, arquivos, webhooks, figurinhas, localização, botão(api oficial), lista(api oficial e api plus) entre outros.
-* **Envio de Mensagens Automáticas**: Aceite ou transfira tickets automaticamente.
-* **Sistema de Simulação de Digitação e Gravação**: Reduza a chance de bloqueios no WhatsApp.
-* **Mensagem de Despedida Personalizável**: Personalize a mensagem de despedida por usuário.
-* **Suporte a Facebook e Instagram**: Gerencie mensagens dessas plataformas via HUB (necessário pagar mensalidade por canal).
-* **Controle Horário de Login**: Não permita seu funcionário acesse sistema fora do expediente
-* **Horário de atendimento**: Horário de atendimento personalizável, por empresa, canal ou fila e personalização de feriados.
-* **Multi idioma**: Português, inglês e espanhol
-* **Suporte WhatsApp API Oficial**: Existe acesso direto e via HUB
-* **Suporte lista e botões**: Api não oficial plus com suporte a lista e botões
-* **Tarefas**: Gerencie tarefas e atividades.
-* **Avaliação de Atendimento**: Avalie o atendimento prestado.
-* **Transcrição de Áudio**: Transcreva mensagens de áudio.
-* **Integração WebHook - N8N**: Conecte-se a diferentes aplicativos e serviços.
-* **Integração TypeBot**: Construa bots mais avançados.
-* **Integração ChatGPT**: Responda mensagens e utilize ElevenLabs para respostas em áudio.
-* **Integração Groq e DeepSeek**: Responda mensagens com IA e utilize ElevenLabs.
-* **Integração Grok**: Responda mensagens com IA e utilize ElevenLabs.
-* **Integração para 2ª via de boleto Asaas**: Gerencie boletos com facilidade.
-* **Integração com IXC Soft:** 2 via de boletos e desbloqueio de confiança
-* **Integração com TSMX SGP:** 2 via de boletos e desbloqueio de confiança
-* **Integração com HubSoft:** 2 via de boletos e desbloqueio de confiança
-* **Integração com Atlaz:** 2 via de boletos, desbloqueio de confiança, abertura de chamados e Disparo WhatsApp
-* **Integração com ReceitaNET:** 2 via de boletos
-* **Integração Recepção inteligente:** Bot com uso ia faz atendimento inicial e faz encaminhamento fila ou finaliza atendimento. Suporte OpenAI, groq e Gemini.
-* **CRM**: Organize tarefas e processos visualmente.
-* **Relatório de Tickets**: Gere relatórios detalhados de atendimento.
-* **Geração de PDF de Atendimento**: Exporte atendimentos em formato PDF.
-* **Anotações em Tickets**: Adicione notas em tickets.
-* **Mensagens Separadas por Filas**: Organize mensagens por filas.
-* **Transferir Atendimento para ChatBot**: Mova atendimentos para bots.
-* **Wavoip**: Fazer e receber chamadas WhatsApp
-* **Discador Sip:** Integração servidor de voip compatível com WebRTC
-* **API**: Integre com outras plataformas como n8n e PerfexCrm
-* **Bot Por palavra chave**: De acordo com primeira mensagem cliente escolhe bot diferente
-* **White Label**: Personalize a plataforma com sua marca pelo painel.
-* **Motivo de Encerramento**:Ao encerrar um ticket, o usuário deverá escolher um motivo obrigatório, tornando rastreamento atendimentos mais precisos
-* **Follow-up**: Mantenha contato ativo com leads
+* **Multi Idioma**: Português, Inglês e Espanhol.
+* **Controle de Horário de Login**: Restrinja acesso fora do expediente.
+* **Horário de Atendimento**: Configure por empresa, canal ou fila (com feriados).
+* **Suporte a Armazenamento S3**: Armazene mídias e arquivos em servidor externo compatível.
 
-Versão Grátis 🆓\
-Exibe anúncios do Whazing.\
-Envia automaticamente propaganda em:\
-• Primeira mensagem de novos tickets\
-• Mensagens via API\
-• Mensagens agendadas\
-• Follow-ups\
-• Campanhas
+***
 
-<figure><img src=".gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### 💬 Atendimento e Gestão
 
-**Versão Premium** 💎
+* **Tela de Atendimento** com filtros avançados
+* **Lista de Protocolos**
+* **Mensagens Separadas por Filas**
+* **Fechamento e Exclusão em Massa**
+* **Motivo de Encerramento Obrigatório**
+* **Anotações Internas**
+* **Relatórios de Tickets**
+* **Exportação de Atendimento em PDF**
+* **Avaliação de Atendimento**
+* **CRM Visual**
+* **Tarefas**
+* **Follow-up Automático**
 
-* Sem anúncios.
-* Entregas limpas, sem propaganda adicional.
+***
 
-### Acesse Demo do produto para conhecer tudo
+### ⚡ Produtividade e Mensagens
 
-* [https://teste.whazing.com.br](https://teste.whazing.com.br/)
-* usuário: admin@admin.com
-* senha: 123456
+* **Mensagens Rápidas com Anexos**
+* **Mensagens Rápidas por Fila**
+* **Mensagem de Despedida por Usuário**
+* **Mensagem de Despedida por Fila**
+* **Importação de Mensagens do Celular**
+* **Importação de Contatos**
+
+#### 📅 Agendamento
+
+* Repetição:
+  * Diário
+  * Trimestral
+  * Semestral
+  * Anual
+* Envio para até 5 contatos simultaneamente
+
+***
+
+### 🤖 Bots e Automação
+
+* **Construtor de Bot estilo ChatFlow**
+  * Delay
+  * Áudios
+  * Arquivos
+  * Webhooks
+  * Figurinhas
+  * Localização
+  * Botões (API Oficial)
+  * Listas (API Oficial e API Plus)
+* **Bot por Palavra-Chave**
+* **Envio Automático de Mensagens**
+* **Transferência para ChatBot**
+* **Simulação de Digitação e Gravação**
+
+***
+
+## 🧠 Recepção Inteligente com IA
+
+A **Recepção Inteligente** é um módulo avançado de atendimento automático com Inteligência Artificial.
+
+Ela realiza o **primeiro atendimento do cliente**, entende o contexto da conversa e toma decisões automaticamente, reduzindo trabalho manual da equipe.
+
+#### O que ela pode fazer:
+
+* ✅ Responder dúvidas automaticamente
+* ✅ Classificar o atendimento
+* ✅ Adicionar ou remover etiquetas
+* ✅ Mover no Kanban
+* ✅ Transferir para fila específica
+* ✅ Transferir para usuário específico
+* ✅ Enviar PIX automaticamente
+* ✅ Enviar arquivos
+* ✅ Finalizar atendimento
+* ✅ Encaminhar para atendimento humano quando necessário
+* ✅ Suporte a áudio via ElevenLabs
+
+#### Compatível com múltiplas IAs:
+
+* OpenAI (ChatGPT)
+* Groq
+* Gemini
+* DeepSeek
+* Grok
+
+#### Benefícios:
+
+* Atendimento 24 horas
+* Redução de tempo de resposta
+* Organização automática das filas
+* Escalabilidade para alto volume
+* Redução de custos operacionais
+
+Ideal para empresas que desejam escalar o atendimento sem aumentar equipe.
+
+***
+
+### 🧠 Outras Integrações com IA
+
+* **Transcrição Automática de Áudio**
+* **Integração de IA para melhorar e sugerir mensagens no atendimento**
+
+***
+
+### 💳 Integrações Financeiras
+
+* **Integração Bancária (Receber Valores Planos)**
+  * Efi
+  * Mercado Pago
+  * Asaas
+  * InfinitePay
+  * Stripe
+  * PIX, cartão e boleto
+* **2ª via Asaas**
+* **IXC Soft**
+* **TSMX SGP**
+* **HubSoft**
+* **Atlaz**
+* **ReceitaNET**
+
+***
+
+### 📲 Canais Suportados
+
+* **WhatsApp API Oficial** (Direto ou via HUB)
+* **API Não Oficial Plus** (Lista e Botões)
+* **Webchat, Facebook e Instagram via HUB**
+* **Wavoip (Chamadas WhatsApp)**
+* **Discador SIP (WebRTC)**
+* **Transferência de Chamadas SIP**
+* **Chat Interno**
+
+***
+
+### 🔗 Integrações e API
+
+* **API Própria**
+* **WebHook - N8N**
+* **Integração TypeBot**
+* Integração com n8n e PerfexCRM
+
+***
+
+## 🆓 Versão Grátis
+
+* Exibe anúncios do Whazing
+* Propaganda automática em:
+  * Primeira mensagem
+  * API
+  * Agendamentos
+  * Follow-ups
+  * Campanhas
+
+***
+
+## 💎 Versão Premium
+
+* Sem anúncios
+* Entregas limpas
+* Experiência profissional completa
+
+***
+
+### 🔎 Acesse a Demo
+
+* https://teste.whazing.com.br
+* Usuário: admin@admin.com
+* Senha: 123456
