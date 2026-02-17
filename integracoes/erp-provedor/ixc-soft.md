@@ -30,7 +30,7 @@ Acesse no Whazing:
 
 Clique em **Adicionar** e selecione a integração do **IXC Soft**. Teremos boleto e uma separa somente desbloqueio de confiança
 
-<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 #### 🌐 URL da integração
 
@@ -90,7 +90,7 @@ Acesse:
 
 Preencha os dados conforme a imagem abaixo:
 
-<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### ⚙️ Ajustes importantes da fila
 

@@ -31,7 +31,7 @@ O cadastro é simples e rápido.
 2. Preencha os **dados da Chave PIX**
    * Pode ser CPF, CNPJ, e-mail, telefone ou chave aleatória
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ✅ Após salvar, a chave estará pronta para uso.
 

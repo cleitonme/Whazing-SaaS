@@ -109,7 +109,7 @@ Com um ticket aberto:
 1. Clique no botão **“+”**
 2. Selecione **Enviar Template**
 
-<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
