@@ -1,4 +1,4 @@
-# 🔁 Follow-up na Recepção Inteligente
+# Follow-up na Recepção Inteligente
 
 A partir da **versão 2.16.0**, a Recepção Inteligente permite configurar **mensagens automáticas de follow-up** quando o cliente para de responder.
 
@@ -11,37 +11,34 @@ Esse recurso ajuda a:
 
 <figure><img src="../../../.gitbook/assets/image (90).png" alt=""><figcaption></figcaption></figure>
 
----
+***
 
-# ⏱️ Como funciona o tempo de envio?
+## ⏱️ Como funciona o tempo de envio?
 
 No exemplo da imagem:
 
 * O follow-up será executado entre **60 a 180 minutos**
 * O envio acontece em **tempo aleatório dentro desse intervalo**
 
-✅ Isso torna o envio mais natural
-✅ Evita padrão fixo de disparo
-✅ Deixa a automação mais dinâmica
+✅ Isso torna o envio mais natural ✅ Evita padrão fixo de disparo ✅ Deixa a automação mais dinâmica
 
----
+***
 
-# 🤖 Como funciona o Prompt?
+## 🤖 Como funciona o Prompt?
 
 Durante a execução do follow-up, a IA utilizará **somente o prompt configurado nesse campo**.
 
-⚠️ Importante:
-O funcionamento correto depende do **modelo de IA utilizado**.
-Alguns modelos seguem instruções com mais precisão do que outros.
+⚠️ Importante: O funcionamento correto depende do **modelo de IA utilizado**. Alguns modelos seguem instruções com mais precisão do que outros.
 
----
+***
 
-# 📝 Exemplo de Prompt para Follow-up
+## 📝 Exemplo de Prompt para Follow-up
 
 Abaixo um modelo recomendado para controlar até **3 tentativas automáticas**:
 
----
+***
 
+```
 Quando receber mensagem do sistema sobre cliente sem responder, siga estas instruções:
 
 1. Analise o histórico de mensagens
@@ -94,10 +91,11 @@ REGRAS:
 - NÃO escreva "vou enviar", "aqui está", "segue"
 - Responda APENAS com a mensagem
 - Somente após enviar 3 mensagens se cliente não responder mais finalize o atendimento
+```
 
----
+***
 
-# 🎯 Objetivo dessa Configuração
+## 🎯 Objetivo dessa Configuração
 
 Se o cliente:
 
