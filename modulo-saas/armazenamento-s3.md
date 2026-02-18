@@ -19,6 +19,7 @@ Esse recurso é utilizado para armazenar:
 * Alguns arquivos ainda podem permanecer na pasta `public` da VPS.
 * O sistema usa as credenciais configuradas para acessar os arquivos.
 * Se você alterar as credenciais depois, poderá **perder acesso aos arquivos já armazenados**.
+* Sistema tem fallback caso houver erro salvar S3 ele salvará localmente
 
 ***
 
@@ -156,6 +157,7 @@ Preencha os campos com:
 
 Após salvar:
 
+* Reinicie o backend após alterar configurações, para aplicar
 * Novas mídias recebidas passarão a ser armazenadas no S3.
 * Arquivos antigos continuarão onde estavam.
 * Não altere as credenciais depois, para não perder acesso aos arquivos.
