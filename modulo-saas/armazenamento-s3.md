@@ -141,7 +141,7 @@ Preencha os campos com:
 
 * Bucket Name → Nome do balde criado
 * Região → Exemplo: `us-east-005`
-* Endpoint → s3.us-east-005.backblazeb2.com
+* Endpoint → https://s3.us-east-005.backblazeb2.com
 * Access Key ID → keyID
 * Secret Access Key → applicationKey
 
