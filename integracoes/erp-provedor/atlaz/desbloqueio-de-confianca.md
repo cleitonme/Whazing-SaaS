@@ -17,7 +17,7 @@ No painel da Atlaz, siga o caminho:
 
 **Painel → Configurações → Recursos**
 
-<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
 
 ### 🔑 Copiar o Token da API
 
@@ -103,7 +103,7 @@ Agora vamos criar a fila que vai usar essa integração.
 
     **“Inicia integração ao transferir”**
 
-<figure><img src="../../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -120,7 +120,7 @@ Exemplo de mensagem:
 
 > “Para localizar seus boletos, por favor informe seu CPF ou CNPJ.”
 
-<figure><img src="../../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

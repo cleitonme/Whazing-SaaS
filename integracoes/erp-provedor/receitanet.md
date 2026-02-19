@@ -1,12 +1,11 @@
-# 2ª Via de Boleto (ReceitaNET)
+# ReceitaNET
 
 ## 📌 O que você vai precisar
 
-* **Token da API ReceitaNET**
-  👉 Solicite esse token diretamente ao **suporte da ReceitaNET**
+* **Token da API ReceitaNET** 👉 Solicite esse token diretamente ao **suporte da ReceitaNET**
 * Acesso ao **Whazing** com permissão para criar integrações, filas e bot
 
----
+***
 
 ## 1️⃣ Criando a integração no Whazing
 
@@ -20,7 +19,7 @@ Clique em **Adicionar** e selecione:
 
 👉 **2ª via boleto ReceitaNet - ERP Provedor**
 
----
+***
 
 ## 2️⃣ Preenchendo os dados da integração
 
@@ -35,7 +34,7 @@ Preencha os campos com atenção:
 
 Utilize exatamente a URL abaixo:
 
-**[https://sistema.receitanet.net](https://sistema.receitanet.net)**
+[**https://sistema.receitanet.net**](https://sistema.receitanet.net)
 
 ⚠️ **Muito importante:**
 
@@ -59,7 +58,7 @@ chatbot
 
 ℹ️ Conforme orientação do suporte da ReceitaNET, este campo deve sempre ser utilizado como chatbot para funcionamento correto da integração.
 
----
+***
 
 ## 3️⃣ Opções adicionais da integração
 
@@ -69,7 +68,6 @@ Algumas opções podem ser ativadas conforme o canal utilizado pelo cliente.
 
 * Essa opção depende da API e do canal utilizado
 * Exemplos:
-
   * WhatsApp: suporta listas e botões
   * Telegram: **não suporta botões reply**
 
@@ -77,7 +75,7 @@ Algumas opções podem ser ativadas conforme o canal utilizado pelo cliente.
 
 <figure><img src="../../.gitbook/assets/image (75).png" alt=""><figcaption></figcaption></figure>
 
----
+***
 
 ## 4️⃣ Criando a fila da integração
 
@@ -93,9 +91,9 @@ Agora vamos criar a fila que será responsável pela consulta dos boletos.
 
 **“Inicia integração ao transferir”**
 
-<figure><img src="../../.gitbook/assets/image (4).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (4) (1).png" alt=""><figcaption></figcaption></figure>
 
----
+***
 
 ## 5️⃣ Configurando o bot para enviar o cliente à fila
 
@@ -110,9 +108,9 @@ Exemplo de mensagem:
 
 > “Para localizar seus boletos, por favor informe seu CPF ou CNPJ.”
 
-<figure><img src="../../.gitbook/assets/image (5).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (5) (1).png" alt=""><figcaption></figcaption></figure>
 
----
+***
 
 ## 6️⃣ Arquivo de exemplo do bot
 
@@ -120,7 +118,7 @@ Você pode utilizar o arquivo abaixo como base para a configuração do bot:
 
 {% file src="../../.gitbook/assets/boletoatlaz.json" %}
 
----
+***
 
 ## 7️⃣ Funcionamento final (como o cliente vê)
 
@@ -133,7 +131,7 @@ O fluxo funciona da seguinte forma:
 
 <figure><img src="../../.gitbook/assets/image (76).png" alt=""><figcaption></figcaption></figure>
 
----
+***
 
 ✅ **Pronto!** A integração de **2ª via de boleto ReceitaNET** está funcionando corretamente.
 

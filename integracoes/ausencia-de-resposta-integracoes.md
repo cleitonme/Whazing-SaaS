@@ -15,7 +15,7 @@ Esse recurso está disponível nas integrações:
 
 Ele serve para evitar que atendimentos fiquem **parados e esquecidos** no sistema.
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (14).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

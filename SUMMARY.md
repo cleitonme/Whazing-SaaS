@@ -127,6 +127,7 @@
     * [Typebot](integracoes/outras/typebot/README.md)
       * [Instalação Typebot](integracoes/outras/typebot/comoinstalar.md)
     * [Asaas - 2ª Via Boleto](integracoes/outras/2viaboletoasaas.md)
+    * [GLPI](integracoes/outras/glpi.md)
   * [API](integracoes/api/README.md)
     * [Introdução e Autenticação](integracoes/api/introducao-e-autenticacao.md)
     * [Endpoints](integracoes/api/endpoints/README.md)

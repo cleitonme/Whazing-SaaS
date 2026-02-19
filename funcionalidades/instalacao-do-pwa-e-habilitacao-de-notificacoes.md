@@ -80,7 +80,7 @@ Se não aparecer o aviso:
 * Em alguns aparelhos Android, o ícone vai para uma **pasta de apps**. Procure na gaveta de aplicativos.
 * No iPhone, verifique se não há **restrições de tela** (Ajustes > Tempo de Uso > Restrições).
 
-<figure><img src="../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/image (10) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
