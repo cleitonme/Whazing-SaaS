@@ -82,3 +82,79 @@ docker logs --tail 100 -f postgreswuzapi
 ```bash
 docker logs --tail 100 -f rabbitmqwuzapi
 ```
+
+Segue versão melhorada para **GitBook**, mais organizada, com correção de digitação, melhor explicação e mantendo seu conteúdo técnico intacto:
+
+---
+
+# 🗑️ Desinstalar WUZAPI
+
+Caso ocorra algum erro e você precise realizar uma **reinstalação limpa**, ou caso não utilize mais o WUZAPI, siga os passos abaixo para remover completamente a instalação.
+
+> ⚠️ **Importante:**
+> As mensagens já existentes no **Whazing** **não serão perdidas**, pois ficam armazenadas no banco principal do sistema.
+>
+> Se for instalar novamente, será necessário:
+>
+> * Ler novamente os **QR Codes**
+> * Atualizar o **Token no painel SaaS**
+
+---
+
+## 📂 1️⃣ Acessar diretório de instalação
+
+```bash
+cd /home/deploy
+```
+
+---
+
+## 🛑 2️⃣ Derrubar containers + remover volumes
+
+Esse comando remove:
+
+* Containers
+* Volumes
+* Containers órfãos
+
+```bash
+docker compose -f wuzapi.yaml down -v --remove-orphans
+```
+
+---
+
+## 🔎 3️⃣ Garantir que não restou nenhum container
+
+Verifique se ainda existe algum container ativo ou parado:
+
+```bash
+docker ps -a
+```
+
+Se ainda aparecer algum container do WUZAPI, remova manualmente:
+
+```bash
+docker rm -f wuzapi postgreswuzapi rabbitmqwuzapi
+```
+
+---
+
+## 🌐 4️⃣ Limpar redes órfãs
+
+```bash
+docker network prune -f
+```
+
+---
+
+## 🗂️ 5️⃣ Remover arquivo de configuração
+
+```bash
+rm wuzapi.yaml
+```
+
+---
+
+## ✅ Finalização
+
+Após esses passos, o WUZAPI estará completamente removido do servidor.
