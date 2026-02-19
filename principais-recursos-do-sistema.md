@@ -159,6 +159,7 @@ Ideal para empresas que desejam escalar o atendimento sem aumentar equipe.
 * PerfexCRM
 * WooCommerce
 * 2 Via Boleto Assas
+* GLPI
 
 ***
 
