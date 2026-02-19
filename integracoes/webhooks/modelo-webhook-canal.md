@@ -179,6 +179,7 @@ const dataToSend = {
   sendType: message.sendType,
   edited: message.edited,
   reactions: message.reactions,
+  dataJson: message.dataJson,
   ticket: {
     id: ticket.id,
     status: ticket.status,

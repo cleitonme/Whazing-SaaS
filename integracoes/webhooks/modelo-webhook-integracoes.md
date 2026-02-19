@@ -27,7 +27,7 @@ const dataToSend = {
   sendType: message.sendType,            // Tipo de envio (ex: "manual", "bot", "API")
   edited: message.edited,                // true = mensagem foi editada
   reactions: message.reactions,          // Reações associadas à mensagem (se houver)
-  
+  dataJson: message.dataJson,
   ticket: {                              // Informações do ticket associado
     id: ticket.id,
     status: ticket.status,

@@ -1,5 +1,15 @@
 # Changelog e Atualizações
 
+## 🚀 Versão 2.16.1 BETA – Changelog
+- bug - correção dtmf discador sip
+- bug - sobrescrita arquivos S3
+- bug - waba aparece mesmo se desativado SAAS
+- Contato ignorado server ligação tambem
+- Adiciona webhook coluna DataJson
+- Suporte abertura de chamados e consulta GLPI
+- Separado analise pasta public e S3 painel estatisticas
+
+
 ## 🚀 Versão 2.16.0 BETA – Changelog
 
 ---
