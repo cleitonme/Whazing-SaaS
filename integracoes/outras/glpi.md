@@ -92,36 +92,78 @@ Depois:
 
 ***
 
-## 👤 Gerar USER TOKEN
+## 👤 Gerar **User Token** (Usuário Global)
 
-O usuário precisa ter permissão para **criar chamados nas empresas desejadas**.
+Este usuário será responsável por **criar chamados nas empresas desejadas via API**.
 
-Acesse:
+⚠️ Recomendado criar **um usuário exclusivo para integração**, com acesso às empresas que poderão abrir chamados.
 
-> **Administração → Usuários**
+### 📌 Como gerar o token
 
-1. Abra o usuário que será utilizado
-2. No final da página, localize **API Token**
-3. Clique em **Re-gerar**
-4. Salve
+Acesse no GLPI:
 
-O token será exibido para uso no campo **User\_token** no Whazing.
+**Administração → Usuários**
+
+1. Abra o usuário que será utilizado na integração
+2. Role até o final da página
+3. Localize o campo **API Token**
+4. Clique em **Re-gerar**
+5. Salve
+
+O token será exibido.
+
+👉 Copie esse token e utilize no campo **`User_token`** no Whazing.
 
 ![](<../../.gitbook/assets/image (7).png>)
 
 ***
 
-## 👥 Regras Importantes de Usuário
+### 👥 Regras Importantes de Usuários
 
-Para que o chamado seja criado corretamente:
+Além do usuário com token (global), será necessário criar **usuários específicos por empresa** para permitir a identificação correta dos clientes.
 
-* O usuário deve ter **e-mail cadastrado ou telefone**
-* O sistema irá:
-  1. 🔍 Buscar pelo **WhatsApp do cliente**
-  2. Caso não encontre, buscar pelo **e-mail**
-  3. Se não existir, irá cadastrar automaticamente
+#### 🔹 1️⃣ Usuário com Token (Global)
 
-⚠️ No usuário, a **Entidade padrão** deve estar configurada corretamente com a empresa correspondente.
+* Terá acesso às empresas desejadas
+* Será utilizado **apenas para autenticação da API**
+* Deve possuir permissão para criar chamados
+
+***
+
+#### 🔹 2️⃣ Usuários por Empresa (Sem Token)
+
+Para que o sistema funcione corretamente:
+
+* Deve ser criado **um usuário para cada empresa**
+* Esses usuários **não precisam de API Token**
+* Devem estar vinculados à empresa (Entidade correta)
+
+***
+
+### 🔎 Como funciona a busca do cliente
+
+Quando o Whazing for criar um chamado, o sistema irá:
+
+1. 🔍 Buscar o cliente pelo **telefone (WhatsApp)**
+2. Caso não encontre, buscar pelo **e-mail**
+3. Se não existir, o cliente será **cadastrado automaticamente**
+
+***
+
+### ⚠️ Configuração Obrigatória
+
+No usuário vinculado à empresa:
+
+* A **Entidade padrão** deve estar configurada corretamente com a empresa correspondente
+* O usuário deve possuir:
+  * 📧 E-mail cadastrado **ou**
+  * 📱 Telefone cadastrado
+
+Sem essas configurações o chamado pode:
+
+* Ser criado na entidade errada
+* Não localizar o cliente corretamente
+* Falhar na criação automática
 
 ***
 
