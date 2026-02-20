@@ -51,9 +51,11 @@ Para quem quiser mais controle pode fazer instalação manual conforme manual
 
 ## Recomendação de VPS
 
-Recomendamos uso de VPS nacionais como hostinger.
+Recomendamos uso de VPS nacionais.
 
-Vps internacional tem [Hetzer](https://www.hetzner.com/), [Peramix](https://control.peramix.com/?affid=58), mas de preferencia VPS tempo resposta menor de 50ms
+Devido a grandes problemas acontecidos nos ultimos dias na hostinger não recomendamos uso dela.
+
+Vps internacional tem [Hetzer](https://www.hetzner.com/), [Peramix](https://control.peramix.com/?affid=58), mas de preferência VPS tempo resposta menor de 50ms
 
 * Cupom 25% desconto Peramix "WHAZING"
 
