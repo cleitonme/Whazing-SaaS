@@ -63,6 +63,32 @@ Vps internacional tem [Hetzer](https://www.hetzner.com/), [Peramix](https://cont
 WHAZING
 ```
 
+🚀 Whazing & Hostear: Sua VPS no Brasil com Teste Grátis!\
+Olá! A Whazing e a Hostear se uniram para trazer o que há de melhor em servidores VPS no Brasil, com uma condição que você não pode ignorar.\
+\
+🔥 TESTE GRATUITO POR 7 DIAS\
+Isso mesmo! Você testa toda a performance por uma semana sem pagar nada.\
+\
+❌ Sem dados de cartão de crédito.\
+\
+❌ Sem compromisso financeiro inicial.\
+\
+Gostou do serviço? É só assinar após o período de teste!\
+\
+💰 DESCONTOS EXCLUSIVOS\
+\
+Mensal: 30% OFF no 1º mês (Cupom: WHAZING).\
+\
+Recorrente: 10% OFF todo mês a partir do 2º mês (Cupom: WHAZING10).\
+\
+Anual: 50% OFF em novas aquisições (O melhor custo-benefício!).\
+\
+👉 Comece seu teste agora: [hostear.com.br/whazing](http://hostear.com.br/whazing)\
+\
+&#xNAN;_&#x4E;ota: Para validar o desconto de 10%, lembre-se de aplicar o cupom WHAZING10 no momento do pagamento da fatura._\
+\
+Hostear & Whazing: Potência brasileira ao seu alcance! ⚡
+
 ## Cupom desconto Wavoip
 
 ```bash
