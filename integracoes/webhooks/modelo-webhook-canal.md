@@ -168,27 +168,27 @@ Enviado a cada **nova mensagem** (enviada ou recebida).
 
 ```javascript
 const dataToSend = {
-  messageId: message.messageId,
-  messageBody: message.body,
-  timestamp: message.timestamp,
-  status: message.status,
-  fromMe: message.fromMe,
-  mediaType: message.mediaType,
-  mediaUrl: message.mediaUrl,
-  isDeleted: message.isDeleted,
-  sendType: message.sendType,
-  edited: message.edited,
-  reactions: message.reactions,
+  messageId: message.messageId,         // ID único da mensagem
+  messageBody: message.body,             // Texto da mensagem
+  timestamp: message.timestamp,          // Data/hora da mensagem (timestamp UNIX)
+  status: message.status,                // Status da mensagem (ex: "delivered", "read")
+  fromMe: message.fromMe,                // true = enviada por mim | false = recebida
+  mediaType: message.mediaType,          // Tipo de mídia (ex: "image", "video", "audio", "document")
+  mediaUrl: message.mediaUrl,            // URL para download da mídia (se aplicável)
+  isDeleted: message.isDeleted,          // true = mensagem apagada
+  sendType: message.sendType,            // Tipo de envio (ex: "manual", "bot", "API")
+  edited: message.edited,                // true = mensagem foi editada
+  reactions: message.reactions,          // Reações associadas à mensagem (se houver)
   dataJson: message.dataJson,
-  ticket: {
+  ticket: {                              // Informações do ticket associado
     id: ticket.id,
     status: ticket.status,
     protocol: ticket.protocol,
     queueId: ticket.queueId,
-    apiConfig: ticket.apiConfig,
+    apiConfig: ticket.apiConfig,          // Chave externa, caso configurada (ver abaixo)
 	isGroup: ticket.isGroup				//indicacao ticket grupo
   },
-  contact: contact ? {
+  contact: contact ? {                   // Informações do contato do ticket (remetente ou destinatário)
     id: contact.id,
     name: contact.name,
     phoneNumber: contact.number,
@@ -201,7 +201,7 @@ const dataToSend = {
 	followupId: contact.followupId
   } : null,
   
-            contactmessage:  // informacoes contato envio mensagem no grupo
+        contactmessage:  // informacoes contato envio mensagem no grupo
         contactmessage && ticket.isGroup 
           ? {
               id: contactmessage.id,
@@ -216,13 +216,13 @@ const dataToSend = {
               followupId: contactmessage.tunelId
             }
           : null,
-  
-  user: user ? {
+  user: user ? {                         // Informações do usuário (caso mensagem enviada manualmente)
     id: user.id,
     name: user.name,
     email: user.email,
   } : null,
-  whatsapp: {
+
+  whatsapp: {                            // Informações da conexão WhatsApp
     id: whatsapp.id,
     name: whatsapp.name,
   },
