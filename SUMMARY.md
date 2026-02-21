@@ -17,7 +17,7 @@
     * [📸 Criar Snapshot da VPS (Contabo)](instalacao-and-vps/atualizar-whazing/criar-snapshot-da-vps-contabo.md)
     * [📸 Criar Snapshot da VPS (Hetzner)](instalacao-and-vps/atualizar-whazing/criar-snapshot-da-vps-hetzner.md)
     * [📸 Criar Snapshot da VPS (Hostinger)](instalacao-and-vps/atualizar-whazing/criar-snapshot-da-vps-hostinger.md)
-    * [Criar Snapshot da VPS (Hostear)](instalacao-and-vps/atualizar-whazing/criar-snapshot-da-vps-hostear.md)
+    * [📸 Criar Snapshot da VPS (Hostear)](instalacao-and-vps/atualizar-whazing/criar-snapshot-da-vps-hostear.md)
   * [Banco de Dados](instalacao-and-vps/conectar-banco-de-dados.md)
   * [Backup](instalacao-and-vps/backup.md)
   * [Migração de VPS](instalacao-and-vps/migracao-do-sistema-whazing-para-nova-vps.md)

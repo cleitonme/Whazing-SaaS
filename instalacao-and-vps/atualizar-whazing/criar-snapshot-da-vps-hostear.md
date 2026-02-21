@@ -1,6 +1,11 @@
-# Criar Snapshot da VPS (Hostear)
+---
+description: >-
+  Este tutorial mostra como criar um snapshot (backup manual) da sua VPS na
+  Hostear, garantindo uma cópia de segurança antes de atualizações ou alterações
+  importantes no servidor.
+---
 
-Este tutorial mostra como criar um snapshot (backup manual) da sua VPS na **Hostear**, garantindo uma cópia de segurança antes de atualizações ou alterações importantes no servidor.
+# 📸 Criar Snapshot da VPS (Hostear)
 
 ## 1️⃣ Acessar o Painel Cloud
 
@@ -10,9 +15,9 @@ Acesse o painel Cloud da Hostear:
 
 Faça login utilizando o **usuário e senha** enviados para o seu e-mail no momento da contratação.
 
-<figure><img src="../../.gitbook/assets/image (93).png" alt=""><figcaption>Painel de login Cloud Hostear</figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (93).png" alt=""><figcaption><p>Painel de login Cloud Hostear</p></figcaption></figure>
 
----
+***
 
 ## 2️⃣ Acessar as Opções da VPS
 
@@ -21,9 +26,9 @@ Após entrar no painel:
 * Localize sua VPS na listagem.
 * Clique no ícone de **engrenagem** na coluna **Ação**.
 
-<figure><img src="../../.gitbook/assets/image (94).png" alt=""><figcaption>Menu de ações da VPS</figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (94).png" alt=""><figcaption><p>Menu de ações da VPS</p></figcaption></figure>
 
----
+***
 
 ## 3️⃣ Acessar a Área de Backups
 
@@ -31,9 +36,9 @@ No menu de opções:
 
 * Clique em **Backups**.
 
-<figure><img src="../../.gitbook/assets/image (95).png" alt=""><figcaption>Menu Backups</figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (95).png" alt=""><figcaption><p>Menu Backups</p></figcaption></figure>
 
----
+***
 
 ## 4️⃣ Criar o Backup (Snapshot)
 
@@ -44,16 +49,15 @@ Na tela de backups:
 
 Após clicar, o sistema iniciará o processo de snapshot da VPS.
 
-⚠️ **Importante:**
-Aguarde o processo finalizar antes de realizar qualquer alteração no servidor.
+⚠️ **Importante:** Aguarde o processo finalizar antes de realizar qualquer alteração no servidor.
 
 Você pode acompanhar o andamento em:
 
 * **Tarefas e Logs**
 
-<figure><img src="../../.gitbook/assets/image (96).png" alt=""><figcaption>Acompanhamento do processo de backup</figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (96).png" alt=""><figcaption><p>Acompanhamento do processo de backup</p></figcaption></figure>
 
----
+***
 
 ## 🔄 Restaurar um Backup (se necessário)
 
@@ -63,9 +67,9 @@ Caso precise restaurar um backup:
 * Na lista de backups disponíveis, localize o snapshot desejado.
 * No lado direito, clique no botão de ação correspondente para restaurar.
 
-<figure><img src="../../.gitbook/assets/image (97).png" alt=""><figcaption>Opção para restaurar backup</figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (97).png" alt=""><figcaption><p>Opção para restaurar backup</p></figcaption></figure>
 
----
+***
 
 ## ✅ Recomendação
 
