@@ -37,23 +37,102 @@ O sistema **Whazing** oferece suporte a **WebHooks** de duas maneiras principais
 
 ***
 
-### 🔔 **O que é um WebHook?**
+## 🔔 WebHook – O que é e como funciona
 
-Um **WebHook** é uma funcionalidade que permite que sistemas externos recebam **notificações automáticas em tempo real** sempre que determinados eventos acontecem no **Whazing** — como criação de tickets, envio ou recebimento de mensagens, transferências e muito mais.
+Um **WebHook** é um recurso que permite que outro sistema receba **notificações automáticas em tempo real** sempre que algo acontece no Whazing.
 
-Em vez de consultar periodicamente o Whazing para verificar mudanças, seu sistema é **notificado automaticamente** assim que algo ocorre.
+Ou seja:
 
-**Exemplos de eventos enviados:**
-
-* Nova mensagem recebida
-* Nova mensagem enviada
-* Criação de ticket
-* Transferência de ticket
-* Fechamento de ticket
+👉 Você **não precisa ficar consultando o sistema** para saber se houve mudança.\
+👉 O Whazing **avisa automaticamente** o seu sistema quando um evento acontece.
 
 ***
 
-### 🔄 **Diferença entre WebHook e API**
+### 📌 Exemplos de eventos que podem ser enviados
+
+O WebHook pode disparar notificações quando ocorrer:
+
+* ✅ Novo ticket criado
+* 🔄 Ticket transferido
+* ❌ Ticket fechado
+* 📩 Mensagem recebida
+* 📤 Mensagem enviada
+* 🟢 Tickets em aberto
+* 🟡 Tickets pendentes
+* 👥 Mensagens de grupos
+* 📦 Envio do JSON em Base64 _(atenção: exige mais processamento e pode impactar performance em fluxos com muitos arquivos)_
+
+***
+
+## 🎯 Entendendo a configuração:
+
+### **"Tickets em aberto" e "Tickets pendentes"**
+
+Essa configuração é **muito importante** e costuma gerar dúvidas.
+
+Ela define **de quais tickets você quer receber WebHook de mensagens**.
+
+#### 🔎 Como funciona na prática?
+
+O sistema verifica o **status do ticket** antes de enviar o WebHook de mensagem.
+
+#### 📌 Regra simples:
+
+* Se **"Tickets em aberto" estiver ativado** → você receberá WebHook das mensagens de tickets com status **Aberto**.
+* Se **"Tickets pendentes" estiver ativado** → você receberá WebHook das mensagens de tickets com status **Pendente**.
+* Se **os dois estiverem desativados** ❌ → você **não receberá nenhum WebHook de mensagem**.
+
+***
+
+### 🧠 Exemplo prático
+
+Imagine que:
+
+* Existe 1 ticket com status **Aberto**
+* Existe 1 ticket com status **Pendente**
+
+#### Cenário 1:
+
+✔ Tickets em aberto: ATIVADO\
+❌ Tickets pendentes: DESATIVADO
+
+👉 Você receberá WebHook **apenas das mensagens do ticket Aberto**
+
+***
+
+#### Cenário 2:
+
+❌ Tickets em aberto: DESATIVADO\
+✔ Tickets pendentes: ATIVADO
+
+👉 Você receberá WebHook **apenas das mensagens do ticket Pendente**
+
+***
+
+#### Cenário 3:
+
+❌ Tickets em aberto: DESATIVADO\
+❌ Tickets pendentes: DESATIVADO
+
+👉 Você **não receberá nenhum WebHook de mensagem**, mesmo que mensagens estejam chegando.
+
+***
+
+## ⚠️ Atenção Importante
+
+Se você ativar os eventos de:
+
+* 📩 Mensagem Recebida
+* 📤 Mensagem Enviada
+
+Mas deixar **Tickets em aberto e Tickets pendentes desativados**,\
+👉 **nenhuma mensagem será enviada para seu WebHook.**
+
+***
+
+***
+
+### &#x20;🔄 **Diferença entre WebHook e API**
 
 | Tipo        | Função principal                             | Exemplo de uso                                               |
 | ----------- | -------------------------------------------- | ------------------------------------------------------------ |
@@ -84,7 +163,7 @@ Em vez de consultar periodicamente o Whazing para verificar mudanças, seu siste
 
 Recomenda-se sempre consultar a **documentação oficial da API**, pois o pacote pode não conter todos os endpoints disponíveis.
 
-📦 [https://www.npmjs.com/package/n8n-nodes-whazing](https://www.npmjs.com/package/n8n-nodes-whazing)
+📦 [https://www.npmjs.com/package/n8n-nodes-whazing-api](https://www.npmjs.com/package/n8n-nodes-whazing-api)
 
 ***
 
