@@ -27,7 +27,7 @@ Aqui você encontrará todas as opções de personalização para adaptar o aten
 * 🔄 **Agrupar mensagens de tickets diferentes**\
   Exibe o histórico de mensagens anteriores no mesmo ticket. Ideal para consultas rápidas, mas pode ser desativado para manter setores separados.
 * 📂 **Visualizar apenas mensagens das filas que o usuário pertence**\
-  Usuários veem apenas as conversas das filas em que estão atribuídos, aumentando a privacidade.
+  Usuários veem apenas as conversas das filas em que estão atribuídos, aumentando a privacidade. Nota: com essa configuração ativada as mensagens serão substituídas por "Sem permissão ler essa mensagem".&#x20;
 * 🕵️ **Administrador e Supervisores em modo auditoria**\
   Acesso sem marcar conversas como lidas.
 * 🔒 **Não visualizar tickets privados atribuídos a outros usuários**\
@@ -101,22 +101,16 @@ As configurações abaixo controlam como os usuários podem criar e direcionar t
 
 ### ✅ Opções Disponíveis
 
-* 👤 **Permitir que usuários criem tarefas para outros usuários**
-  Ao ativar esta opção, os usuários poderão criar tarefas e atribuí-las diretamente a outros usuários do sistema.
-  Ideal para delegar atividades entre atendentes, supervisores ou setores.
+* 👤 **Permitir que usuários criem tarefas para outros usuários** Ao ativar esta opção, os usuários poderão criar tarefas e atribuí-las diretamente a outros usuários do sistema. Ideal para delegar atividades entre atendentes, supervisores ou setores.
+* 👥 **Permitir que usuários criem tarefas para outras equipes** Ao ativar esta opção, os usuários poderão criar tarefas direcionadas para equipes diferentes da sua. Essa configuração facilita a comunicação e a colaboração entre equipes, como atendimento, financeiro ou suporte técnico.
 
-* 👥 **Permitir que usuários criem tarefas para outras equipes**
-  Ao ativar esta opção, os usuários poderão criar tarefas direcionadas para equipes diferentes da sua.
-  Essa configuração facilita a comunicação e a colaboração entre equipes, como atendimento, financeiro ou suporte técnico.
-
----
+***
 
 ### 📌 Observações Importantes
 
 * 🔒 Caso essas opções estejam desativadas, o usuário só poderá criar tarefas para si mesmo ou para sua própria equipe.
 * 🧩 Recomendado habilitar essas funções apenas se sua operação trabalhar com colaboração entre usuários ou equipes.
 * ⚙️ As permissões de acesso dos usuários continuam sendo respeitadas, conforme o perfil configurado.
-
 
 ## 📌 Notas Finais
 
