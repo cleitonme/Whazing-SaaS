@@ -31,6 +31,9 @@ Você pode escolher qual provedor de IA utilizar:
 * **Groq**
 * **ChatGPT (OpenAI)**
 * **Gemini (Google)**
+* **Perplexity**
+* **DeepSeek**
+* **Grok xAI**
 
 Também é possível selecionar o **modelo de linguagem** desejado.
 
