@@ -108,6 +108,7 @@ Ela realiza o **primeiro atendimento do cliente**, entende o contexto da convers
 * Gemini
 * DeepSeek
 * Grok
+* Perplexity
 
 #### Benefícios:
 
