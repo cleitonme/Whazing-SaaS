@@ -1,4 +1,4 @@
-# 🚀 Guia de Instalação Whazing (Ubuntu 22)
+# 🚀 Instalação
 
 ### 🔹 Antes de começar
 
@@ -9,7 +9,7 @@
    * Se usar **Cloudflare**, desative o **proxy (nuvem laranja)**.
    * O IP da sua VPS deve aparecer em todas as validações.
 
-*bot e api sugestão podes colocar endereço que achar melhor
+\*bot e api sugestão podes colocar endereço que achar melhor
 
 ⚠️ Só continue quando os subdomínios estiverem resolvendo corretamente.
 
@@ -18,7 +18,7 @@
 ### 🔹 Requisitos mínimos
 
 * Ubuntu 22 (instalação limpa)
-* 8 GB de memória RAM
+* 4 GB de memória RAM
 * 2 subdomínios configurados (frontend e backend)
 
 ***
@@ -62,6 +62,7 @@ curl -sSL instalar.whazing.com.br | sudo bash
 #### Caso passo 5 apresentar erro baixar instalador manualmente
 
 1 - acessar pasta root
+
 ```bash
 cd /root/
 ```
@@ -73,21 +74,25 @@ apt install git
 ```
 
 3 - baixar instalador
+
 ```bash
 git clone https://github.com/cleitonme/Whazing-SaaS.instalador.git whazinginstalador
 ```
 
 4 - Da permisão
+
 ```bash
 sudo chmod +x ./whazinginstalador/whazing
 ```
 
 5 - Acessar pasta
+
 ```bash
 cd ./whazinginstalador
 ```
 
 6 - Executar
+
 ```bash
 ./whazing
 ```
