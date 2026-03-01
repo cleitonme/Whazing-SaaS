@@ -2,6 +2,10 @@
 
 ## 🧾 **Licença Premium (por VPS)**
 
+**🚀 1 Licença = Empresas Ilimitadas na Mesma VPS**
+
+O plano é cobrado por VPS, não por empresa. Com apenas 1 licença Premium você pode criar e gerenciar várias empresas/clientes na mesma instalação, conforme a capacidade da sua VPS.
+
 | Plano    | 💸 **Valor no Pix** | 💳 **Valor no Cartão** _(+10% taxa)_ |
 | -------- | :-----------------: | :----------------------------------: |
 | 1 mês    |       R$ 55,00      |               R$ 60,50               |
