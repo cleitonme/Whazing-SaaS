@@ -1,5 +1,11 @@
 # Changelog e Atualizações
 
+## 🚀 Versão 2.19.2 BETA – Changelog
+- bug - correção reacoes telegram
+- bug - Kanban Pro correção permissões da board Kanban Pro
+- bug - Novos relatorios kanban correção filtros
+- atualização novos endpoints infinitipay que vai mudar a partir 01/06/26
+
 ## 🚀 Versão 2.19.1 BETA – Changelog
 - bug - erro para download documentos com nome muito grande wuzapi 
 - Icones na lista de quadros
