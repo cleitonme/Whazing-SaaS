@@ -35,6 +35,11 @@ curl -sSL instalar.whazing.com.br | sudo bash
 
 Para quem quiser mais controle pode fazer instalação manual conforme manual
 
+📣 Quer receber novidades e comunicados oficiais do Whazing?
+
+Entre no nosso Telegram:\
+[Canal Oficial Whazing](https://t.me/whazing?utm_source=chatgpt.com)
+
 ## Screenshots
 
 <figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

@@ -189,3 +189,8 @@ Ideal para empresas que desejam escalar o atendimento sem aumentar equipe.
 * https://teste.whazing.com.br
 * Usuário: admin@admin.com
 * Senha: 123456
+
+📣 Quer receber novidades e comunicados oficiais do Whazing?
+
+Entre no nosso Telegram:\
+[Canal Oficial Whazing](https://t.me/whazing?utm_source=chatgpt.com)

@@ -22,3 +22,7 @@ Maioria das imagens no formato PNG que deve ser usadas ao selecionar arquivo sis
 
 <figure><img src=".gitbook/assets/trocalogos.png" alt=""><figcaption></figcaption></figure>
 
+📣 Quer receber novidades e comunicados oficiais do Whazing?
+
+Entre no nosso Telegram:\
+[Canal Oficial Whazing](https://t.me/whazing?utm_source=chatgpt.com)
