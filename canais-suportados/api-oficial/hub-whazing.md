@@ -105,3 +105,12 @@ Se aparecer, a integração está funcionando corretamente.
 
 ✅ **Integração concluída com sucesso**
 
+Para verificar se sua empresa já foi validada pela Meta, acesse as configurações do Business Manager em:
+
+[Business Settings - Informações da Empresa](https://business.facebook.com/settings/info?utm_source=chatgpt.com)
+
+Você também pode consultar o status diretamente pela plataforma do WhatsApp Business em:
+
+[WhatsApp Manager](https://business.facebook.com/wa/manage/home/?utm_source=chatgpt.com)
+
+Nessas páginas é possível verificar o status da verificação da empresa, documentos enviados e possíveis pendências da conta comercial.
