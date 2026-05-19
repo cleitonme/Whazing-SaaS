@@ -1,5 +1,8 @@
 # Changelog e Atualizações
 
+## 🚀 Versão 2.19.3 Final
+- update mudança release
+
 ## 🚀 Versão 2.19.2 BETA – Changelog
 - bug - correção reacoes telegram
 - bug - Kanban Pro correção permissões da board Kanban Pro
