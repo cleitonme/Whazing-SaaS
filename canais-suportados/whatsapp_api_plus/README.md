@@ -27,6 +27,73 @@ Em termos simples: são funcionalidades que deixam a conversa mais automática e
 
 ***
 
+### 🌍 Proxy Regional (Cidade) – Melhorando a localização da conexão WhatsApp
+
+O Proxy Regional (Cidade) permite definir uma cidade para que a conexão utilize um comportamento mais próximo da localização real do aparelho que fará a leitura do QR Code.\
+Isso ajuda o WhatsApp identificar a conexão como mais compatível com a região do dispositivo, tornando o comportamento mais natural e reduzindo possíveis inconsistências de localização.
+
+#### ✅ Exemplo recomendado
+
+Se o aparelho que irá ler o QR Code está no Paraná, o ideal é selecionar uma cidade próxima, como:
+
+* Curitiba
+* Londrina
+* Maringá
+
+Isso torna a conexão mais coerente com a localização do dispositivo.
+
+***
+
+### ⚙️ Como configurar Proxy Regional (Cidade)
+
+1. Com o canal desconectado, acesse:\
+   **Configurações → Canais/API**
+2. Clique em **Configurações** no canal desejado.
+3. Role a página até localizar:\
+   **Proxy Regional (Cidade)**
+4. Preencha o nome da cidade desejada.
+5. Clique em **Salvar**.
+6. Após salvar, realize novamente a leitura do QR Code.
+
+<figure><img src="../../.gitbook/assets/pluscidade.png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### ⚠️ Importante
+
+* É obrigatório possuir um **token válido** configurado na conexão.
+* Caso ocorra erro na busca da cidade, normalmente significa:
+  * Token inválido
+  * Servidor incorreto
+  * Proxy indisponível
+
+***
+
+### 💡 Dicas importantes
+
+* Prefira cidades grandes ou capitais próximas da localização real do aparelho.
+* Algumas cidades pequenas podem não estar disponíveis na base de proxies.
+* Caso a cidade não seja encontrada, tente utilizar uma cidade maior próxima da região.
+
+#### Exemplos
+
+* Interior do Paraná → usar Curitiba
+* Interior de Santa Catarina → usar Florianópolis
+* Interior de São Paulo → usar São Paulo
+
+***
+
+### 🔒 Recomendação
+
+Para obter melhor estabilidade e comportamento mais realista da conexão:
+
+* Configure o proxy antes de conectar o canal
+* Utilize cidade próxima do aparelho
+* Evite trocar cidade constantemente
+* Após alterar o proxy regional, gere um novo QR Code para conexão do WhatsApp
+
+***
+
 ### 🔎 Termos simples (Glossário rápido)
 
 * **Canal**: cada “conexão” do WhatsApp que você ativa no painel. Ex.: 1 conta WhatsApp = 1 canal.

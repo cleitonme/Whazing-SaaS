@@ -20,7 +20,7 @@ O sistema suporta diferentes tipos de canais de atendimento, cada um com suas ca
 
 ### ✅ API Não Oficial (gratuita)
 
-* **WhatsApp Baileys - Não recomendamos uso dessa api prefira WuzAPI**&#x20;
+* **WhatsApp Baileys - Não recomendamos uso dessa api prefira WuzAPI**
 * [WhatsApp Wuzapi (WhatsMeow)](whatsapp-wuzapi.md)
 * [**Telegram**](telegram.md)
 * Sem custo por canal
@@ -42,6 +42,7 @@ Possui alterar tipo api não oficial usada sem perda de dados conforme [instruç
 * Botão "Copiar e Colar"
 * Links
 * Solicitação de localização
+* Seleção cidade do proxy (para simular conexão está mesmo local que está aparelho celular)
 
 💡 Vantagens:
 
