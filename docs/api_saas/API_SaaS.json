@@ -2,1272 +2,284 @@
   "info": {
     "_postman_id": "03319d28-c5ce-46de-ac34-05f38e030ef3",
     "name": "API Whazing ADMIN",
-    "description": "Teste API Whazing",
-    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
-    "_exporter_id": "33969866"
+    "description": "API de administração do Whazing SaaS. Substitua as variáveis URL_ADMIN, API_ID e TOKEN_ADMIN nas configurações da coleção.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
-  "item": [
-    {
-      "name": "CriarEmpresa",
-      "protocolProfileBehavior": {
-        "disabledSystemHeaders": {
-          "content-type": true
-        }
-      },
-      "request": {
-        "auth": {
-          "type": "bearer",
-          "bearer": [
-            {
-              "key": "token",
-              "value": "{{TOKEN_ADMIN}}",
-              "type": "string"
-            }
-          ]
-        },
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json",
-            "type": "text"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "   {\r\n     \"name\": \"Test User\",\r\n     \"email\": \"test@example.com\",\r\n     \"password\": \"mudar123\",\r\n     \"tenantName\": \"Test Company\",\r\n     \"phone\": \"55555555555\",\r\n     \"plano\": \"1\",\r\n     \"timetest\": \"3\",\r\n     \"recurrence\": \"MENSAL\" //[\"MENSAL\", \"BIMESTRAL\", \"TRIMESTRAL\", \"SEMESTRAL\", \"ANUAL\"]\r\n   }"
-        },
-        "url": {
-          "raw": "{{URL_ADMIN}}/{{API_ID}}/createtenant",
-          "host": [
-            "{{URL_ADMIN}}"
-          ],
-          "path": [
-            "{{API_ID}}",
-            "createtenant"
-          ]
-        }
-      },
-      "response": [
-        {
-          "name": "CriarEmpresa",
-          "originalRequest": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "   {\r\n     \"name\": \"Test User\",\r\n     \"email\": \"test@example.com\",\r\n     \"password\": \"mudar123\",\r\n     \"tenantName\": \"Test Company\",\r\n     \"phone\": \"55555555555\",\r\n     \"plano\": \"1\",\r\n     \"timetest\": \"3\"\r\n   }"
-            },
-            "url": {
-              "raw": "{{URL_ADMIN}}/{{API_ID}}/createtenant",
-              "host": [
-                "{{URL_ADMIN}}"
-              ],
-              "path": [
-                "{{API_ID}}",
-                "createtenant"
-              ]
-            }
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": null,
-          "header": [
-            {
-              "key": "Access-Control-Allow-Credentials",
-              "value": "true"
-            },
-            {
-              "key": "Access-Control-Allow-Origin",
-              "value": "https://botteste.whazing.com.br"
-            },
-            {
-              "key": "Alt-Svc",
-              "value": "h3=\":443\"; ma=2592000"
-            },
-            {
-              "key": "Content-Length",
-              "value": "361"
-            },
-            {
-              "key": "Content-Security-Policy",
-              "value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;img-src 'self' data:;object-src 'none';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests;script-src 'self' https://botteste.whazing.com.br;frame-ancestors 'self' https://botteste.whazing.com.br"
-            },
-            {
-              "key": "Content-Type",
-              "value": "application/json; charset=utf-8"
-            },
-            {
-              "key": "Date",
-              "value": "Wed, 20 Aug 2025 22:47:20 GMT"
-            },
-            {
-              "key": "Etag",
-              "value": "W/\"169-RxvSh1p4vxsegede6ZSo06VJUeY\""
-            },
-            {
-              "key": "Expect-Ct",
-              "value": "max-age=0"
-            },
-            {
-              "key": "Referrer-Policy",
-              "value": "no-referrer"
-            },
-            {
-              "key": "Strict-Transport-Security",
-              "value": "max-age=15552000; includeSubDomains"
-            },
-            {
-              "key": "Vary",
-              "value": "Origin"
-            },
-            {
-              "key": "Via",
-              "value": "1.1 Caddy"
-            },
-            {
-              "key": "X-Content-Type-Options",
-              "value": "nosniff"
-            },
-            {
-              "key": "X-Dns-Prefetch-Control",
-              "value": "off"
-            },
-            {
-              "key": "X-Download-Options",
-              "value": "noopen"
-            },
-            {
-              "key": "X-Frame-Options",
-              "value": "SAMEORIGIN"
-            },
-            {
-              "key": "X-Permitted-Cross-Domain-Policies",
-              "value": "none"
-            },
-            {
-              "key": "X-Xss-Protection",
-              "value": "0"
-            }
-          ],
-          "cookie": [],
-          "body": "{\n    \"tenant\": {\n        \"id\": 38,\n        \"name\": \"Test Company\",\n        \"status\": \"active\",\n        \"phone\": \"55555555555\",\n        \"email\": \"test@example.com\",\n        \"planId\": 1,\n        \"dueDate\": \"2025-08-23T22:47:20.000Z\",\n        \"recurrence\": \"MENSAL\",\n        \"ownerId\": null\n    },\n    \"user\": {\n        \"id\": 42,\n        \"name\": \"Test User\",\n        \"email\": \"test@example.com\",\n        \"profile\": \"admin\",\n        \"allcontacts\": false,\n        \"singleLogin\": true,\n        \"profilePicture\": null,\n        \"profilePictureUrl\": null\n    }\n}"
-        }
-      ]
-    },
-    {
-      "name": "Listar todas empresas",
-      "protocolProfileBehavior": {
-        "disabledSystemHeaders": {
-          "content-type": true
-        }
-      },
-      "request": {
-        "auth": {
-          "type": "bearer",
-          "bearer": [
-            {
-              "key": "token",
-              "value": "{{TOKEN_ADMIN}}",
-              "type": "string"
-            }
-          ]
-        },
-        "method": "GET",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json",
-            "type": "text"
-          }
-        ],
-        "url": {
-          "raw": "{{URL_ADMIN}}/{{API_ID}}",
-          "host": [
-            "{{URL_ADMIN}}"
-          ],
-          "path": [
-            "{{API_ID}}"
-          ]
-        }
-      },
-      "response": [
-        {
-          "name": "Listar todas empresas",
-          "originalRequest": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              }
-            ],
-            "url": {
-              "raw": "{{URL_ADMIN}}/{{API_ID}}",
-              "host": [
-                "{{URL_ADMIN}}"
-              ],
-              "path": [
-                "{{API_ID}}"
-              ]
-            }
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": null,
-          "header": [
-            {
-              "key": "Access-Control-Allow-Credentials",
-              "value": "true"
-            },
-            {
-              "key": "Access-Control-Allow-Origin",
-              "value": "https://botteste.whazing.com.br"
-            },
-            {
-              "key": "Alt-Svc",
-              "value": "h3=\":443\"; ma=2592000"
-            },
-            {
-              "key": "Content-Length",
-              "value": "412"
-            },
-            {
-              "key": "Content-Security-Policy",
-              "value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;img-src 'self' data:;object-src 'none';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests;script-src 'self' https://botteste.whazing.com.br;frame-ancestors 'self' https://botteste.whazing.com.br"
-            },
-            {
-              "key": "Content-Type",
-              "value": "application/json; charset=utf-8"
-            },
-            {
-              "key": "Date",
-              "value": "Wed, 20 Aug 2025 22:47:54 GMT"
-            },
-            {
-              "key": "Etag",
-              "value": "W/\"19c-0NJymZNOKSbiiBniS6XpmjzPKU4\""
-            },
-            {
-              "key": "Expect-Ct",
-              "value": "max-age=0"
-            },
-            {
-              "key": "Referrer-Policy",
-              "value": "no-referrer"
-            },
-            {
-              "key": "Strict-Transport-Security",
-              "value": "max-age=15552000; includeSubDomains"
-            },
-            {
-              "key": "Vary",
-              "value": "Origin"
-            },
-            {
-              "key": "Via",
-              "value": "1.1 Caddy"
-            },
-            {
-              "key": "X-Content-Type-Options",
-              "value": "nosniff"
-            },
-            {
-              "key": "X-Dns-Prefetch-Control",
-              "value": "off"
-            },
-            {
-              "key": "X-Download-Options",
-              "value": "noopen"
-            },
-            {
-              "key": "X-Frame-Options",
-              "value": "SAMEORIGIN"
-            },
-            {
-              "key": "X-Permitted-Cross-Domain-Policies",
-              "value": "none"
-            },
-            {
-              "key": "X-Xss-Protection",
-              "value": "0"
-            }
-          ],
-          "cookie": [],
-          "body": "[\n    {\n        \"id\": 37,\n        \"name\": \"tedt\",\n        \"status\": \"active\",\n        \"ownerId\": 1,\n        \"planId\": 3,\n        \"phone\": \"(55)48999-416\",\n        \"email\": \"cleitonme22@gmail.com\",\n        \"dueDate\": \"2025-11-01T03:00:00.000Z\",\n        \"recurrence\": \"MENSAL\",\n        \"plan\": {\n            \"name\": \"dd\"\n        }\n    },\n    {\n        \"id\": 38,\n        \"name\": \"Test Company\",\n        \"status\": \"active\",\n        \"ownerId\": null,\n        \"planId\": 1,\n        \"phone\": \"55555555555\",\n        \"email\": \"test@example.com\",\n        \"dueDate\": \"2025-08-23T22:47:20.000Z\",\n        \"recurrence\": \"MENSAL\",\n        \"plan\": {\n            \"name\": \"Plano 1\"\n        }\n    }\n]"
-        }
-      ]
-    },
-    {
-      "name": "Listar Usuarios empresa",
-      "protocolProfileBehavior": {
-        "disabledSystemHeaders": {
-          "content-type": true
-        }
-      },
-      "request": {
-        "auth": {
-          "type": "bearer",
-          "bearer": [
-            {
-              "key": "token",
-              "value": "{{TOKEN_ADMIN}}",
-              "type": "string"
-            }
-          ]
-        },
-        "method": "GET",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json",
-            "type": "text"
-          }
-        ],
-        "url": {
-          "raw": "{{URL_ADMIN}}/{{API_ID}}/users/37",
-          "host": [
-            "{{URL_ADMIN}}"
-          ],
-          "path": [
-            "{{API_ID}}",
-            "users",
-            "37"
-          ]
-        }
-      },
-      "response": [
-        {
-          "name": "Listar Usuarios empresa",
-          "originalRequest": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              }
-            ],
-            "url": {
-              "raw": "{{URL_ADMIN}}/{{API_ID}}/users/37",
-              "host": [
-                "{{URL_ADMIN}}"
-              ],
-              "path": [
-                "{{API_ID}}",
-                "users",
-                "37"
-              ]
-            }
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": null,
-          "header": [
-            {
-              "key": "Access-Control-Allow-Credentials",
-              "value": "true"
-            },
-            {
-              "key": "Access-Control-Allow-Origin",
-              "value": "https://botteste.whazing.com.br"
-            },
-            {
-              "key": "Alt-Svc",
-              "value": "h3=\":443\"; ma=2592000"
-            },
-            {
-              "key": "Content-Length",
-              "value": "981"
-            },
-            {
-              "key": "Content-Security-Policy",
-              "value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;img-src 'self' data:;object-src 'none';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests;script-src 'self' https://botteste.whazing.com.br;frame-ancestors 'self' https://botteste.whazing.com.br"
-            },
-            {
-              "key": "Content-Type",
-              "value": "application/json; charset=utf-8"
-            },
-            {
-              "key": "Date",
-              "value": "Wed, 20 Aug 2025 22:48:21 GMT"
-            },
-            {
-              "key": "Etag",
-              "value": "W/\"3d5-gbSEDaKeab42Hwhioi5+mltFq2I\""
-            },
-            {
-              "key": "Expect-Ct",
-              "value": "max-age=0"
-            },
-            {
-              "key": "Referrer-Policy",
-              "value": "no-referrer"
-            },
-            {
-              "key": "Strict-Transport-Security",
-              "value": "max-age=15552000; includeSubDomains"
-            },
-            {
-              "key": "Vary",
-              "value": "Origin"
-            },
-            {
-              "key": "Via",
-              "value": "1.1 Caddy"
-            },
-            {
-              "key": "X-Content-Type-Options",
-              "value": "nosniff"
-            },
-            {
-              "key": "X-Dns-Prefetch-Control",
-              "value": "off"
-            },
-            {
-              "key": "X-Download-Options",
-              "value": "noopen"
-            },
-            {
-              "key": "X-Frame-Options",
-              "value": "SAMEORIGIN"
-            },
-            {
-              "key": "X-Permitted-Cross-Domain-Policies",
-              "value": "none"
-            },
-            {
-              "key": "X-Xss-Protection",
-              "value": "0"
-            }
-          ],
-          "cookie": [],
-          "body": "{\n    \"users\": [\n        {\n            \"profilePictureName\": null,\n            \"profilePictureUrl\": null,\n            \"id\": 41,\n            \"name\": \"testando\",\n            \"email\": \"cleitonme22@gmail.com\",\n            \"status\": \"offline\",\n            \"resetPassword\": \"\",\n            \"passwordHash\": \"$2a$08$mvlRSyPfH5CwfnEf8SitGOkLS7.fwlG6/gZIrGlhjGXgDidZm7QSe\",\n            \"tokenVersion\": 0,\n            \"profile\": \"admin\",\n            \"profilePicture\": null,\n            \"tenantId\": 37,\n            \"lastLogin\": \"2025-08-19T14:04:04.971Z\",\n            \"lastOnline\": \"2025-08-19T14:16:29.265Z\",\n            \"lastLogout\": \"2025-08-19T14:02:04.246Z\",\n            \"isOnline\": false,\n            \"allcontacts\": false,\n            \"singleLogin\": true,\n            \"lastSeen\": \"2025-08-19T14:15:00.357Z\",\n            \"isActive\": true,\n            \"kanbanOrder\": null,\n            \"configs\": {\n                \"filtrosAtendimento\": {\n                    \"searchParam\": \"\",\n                    \"pageNumber\": 1,\n                    \"status\": [\n                        \"open\",\n                        \"pending\"\n                    ],\n                    \"showAll\": true,\n                    \"count\": null,\n                    \"queuesIds\": [],\n                    \"withUnreadMessages\": false,\n                    \"isNotAssignedUser\": false,\n                    \"includeNotQueueDefined\": true\n                },\n                \"isDark\": false\n            },\n            \"loginSchedule\": null,\n            \"sipServer\": null,\n            \"sipPort\": null,\n            \"sipUsername\": null,\n            \"sipPassword\": null,\n            \"sipEnabled\": false,\n            \"createdAt\": \"2025-08-04T19:14:34.606Z\",\n            \"updatedAt\": \"2025-08-19T14:25:00.077Z\"\n        }\n    ]\n}"
-        }
-      ]
-    },
-    {
-      "name": "Listar Planos",
-      "protocolProfileBehavior": {
-        "disabledSystemHeaders": {
-          "content-type": true
-        }
-      },
-      "request": {
-        "auth": {
-          "type": "bearer",
-          "bearer": [
-            {
-              "key": "token",
-              "value": "{{TOKEN_ADMIN}}",
-              "type": "string"
-            }
-          ]
-        },
-        "method": "GET",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json",
-            "type": "text"
-          }
-        ],
-        "url": {
-          "raw": "{{URL_ADMIN}}/{{API_ID}}/plans",
-          "host": [
-            "{{URL_ADMIN}}"
-          ],
-          "path": [
-            "{{API_ID}}",
-            "plans"
-          ]
-        }
-      },
-      "response": [
-        {
-          "name": "Listar Usuarios empresa",
-          "originalRequest": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              }
-            ],
-            "url": {
-              "raw": "{{URL_ADMIN}}/{{API_ID}}/users/37",
-              "host": [
-                "{{URL_ADMIN}}"
-              ],
-              "path": [
-                "{{API_ID}}",
-                "users",
-                "37"
-              ]
-            }
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": null,
-          "header": [
-            {
-              "key": "Access-Control-Allow-Credentials",
-              "value": "true"
-            },
-            {
-              "key": "Access-Control-Allow-Origin",
-              "value": "https://botteste.whazing.com.br"
-            },
-            {
-              "key": "Alt-Svc",
-              "value": "h3=\":443\"; ma=2592000"
-            },
-            {
-              "key": "Content-Length",
-              "value": "981"
-            },
-            {
-              "key": "Content-Security-Policy",
-              "value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;img-src 'self' data:;object-src 'none';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests;script-src 'self' https://botteste.whazing.com.br;frame-ancestors 'self' https://botteste.whazing.com.br"
-            },
-            {
-              "key": "Content-Type",
-              "value": "application/json; charset=utf-8"
-            },
-            {
-              "key": "Date",
-              "value": "Wed, 20 Aug 2025 22:48:21 GMT"
-            },
-            {
-              "key": "Etag",
-              "value": "W/\"3d5-gbSEDaKeab42Hwhioi5+mltFq2I\""
-            },
-            {
-              "key": "Expect-Ct",
-              "value": "max-age=0"
-            },
-            {
-              "key": "Referrer-Policy",
-              "value": "no-referrer"
-            },
-            {
-              "key": "Strict-Transport-Security",
-              "value": "max-age=15552000; includeSubDomains"
-            },
-            {
-              "key": "Vary",
-              "value": "Origin"
-            },
-            {
-              "key": "Via",
-              "value": "1.1 Caddy"
-            },
-            {
-              "key": "X-Content-Type-Options",
-              "value": "nosniff"
-            },
-            {
-              "key": "X-Dns-Prefetch-Control",
-              "value": "off"
-            },
-            {
-              "key": "X-Download-Options",
-              "value": "noopen"
-            },
-            {
-              "key": "X-Frame-Options",
-              "value": "SAMEORIGIN"
-            },
-            {
-              "key": "X-Permitted-Cross-Domain-Policies",
-              "value": "none"
-            },
-            {
-              "key": "X-Xss-Protection",
-              "value": "0"
-            }
-          ],
-          "cookie": [],
-          "body": "{\n    \"users\": [\n        {\n            \"profilePictureName\": null,\n            \"profilePictureUrl\": null,\n            \"id\": 41,\n            \"name\": \"testando\",\n            \"email\": \"cleitonme22@gmail.com\",\n            \"status\": \"offline\",\n            \"resetPassword\": \"\",\n            \"passwordHash\": \"$2a$08$mvlRSyPfH5CwfnEf8SitGOkLS7.fwlG6/gZIrGlhjGXgDidZm7QSe\",\n            \"tokenVersion\": 0,\n            \"profile\": \"admin\",\n            \"profilePicture\": null,\n            \"tenantId\": 37,\n            \"lastLogin\": \"2025-08-19T14:04:04.971Z\",\n            \"lastOnline\": \"2025-08-19T14:16:29.265Z\",\n            \"lastLogout\": \"2025-08-19T14:02:04.246Z\",\n            \"isOnline\": false,\n            \"allcontacts\": false,\n            \"singleLogin\": true,\n            \"lastSeen\": \"2025-08-19T14:15:00.357Z\",\n            \"isActive\": true,\n            \"kanbanOrder\": null,\n            \"configs\": {\n                \"filtrosAtendimento\": {\n                    \"searchParam\": \"\",\n                    \"pageNumber\": 1,\n                    \"status\": [\n                        \"open\",\n                        \"pending\"\n                    ],\n                    \"showAll\": true,\n                    \"count\": null,\n                    \"queuesIds\": [],\n                    \"withUnreadMessages\": false,\n                    \"isNotAssignedUser\": false,\n                    \"includeNotQueueDefined\": true\n                },\n                \"isDark\": false\n            },\n            \"loginSchedule\": null,\n            \"sipServer\": null,\n            \"sipPort\": null,\n            \"sipUsername\": null,\n            \"sipPassword\": null,\n            \"sipEnabled\": false,\n            \"createdAt\": \"2025-08-04T19:14:34.606Z\",\n            \"updatedAt\": \"2025-08-19T14:25:00.077Z\"\n        }\n    ]\n}"
-        }
-      ]
-    },
-    {
-      "name": "alterar senha ususuario",
-      "protocolProfileBehavior": {
-        "disabledSystemHeaders": {
-          "content-type": true
-        }
-      },
-      "request": {
-        "auth": {
-          "type": "bearer",
-          "bearer": [
-            {
-              "key": "token",
-              "value": "{{TOKEN_ADMIN}}",
-              "type": "string"
-            }
-          ]
-        },
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json",
-            "type": "text"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "   {\r\n     \"userId\": \"41\",\r\n     \"password\": \"novasenha\"\r\n   }",
-          "options": {
-            "raw": {
-              "language": "json"
-            }
-          }
-        },
-        "url": {
-          "raw": "{{URL_ADMIN}}/{{API_ID}}/users",
-          "host": [
-            "{{URL_ADMIN}}"
-          ],
-          "path": [
-            "{{API_ID}}",
-            "users"
-          ]
-        }
-      },
-      "response": [
-        {
-          "name": "alterar senha ususuario",
-          "originalRequest": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "   {\r\n     \"userId\": \"41\",\r\n     \"password\": \"novasenha\"\r\n   }",
-              "options": {
-                "raw": {
-                  "language": "json"
-                }
-              }
-            },
-            "url": {
-              "raw": "{{URL_ADMIN}}/{{API_ID}}/users",
-              "host": [
-                "{{URL_ADMIN}}"
-              ],
-              "path": [
-                "{{API_ID}}",
-                "users"
-              ]
-            }
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": null,
-          "header": [
-            {
-              "key": "Access-Control-Allow-Credentials",
-              "value": "true"
-            },
-            {
-              "key": "Access-Control-Allow-Origin",
-              "value": "https://botteste.whazing.com.br"
-            },
-            {
-              "key": "Alt-Svc",
-              "value": "h3=\":443\"; ma=2592000"
-            },
-            {
-              "key": "Content-Length",
-              "value": "23"
-            },
-            {
-              "key": "Content-Security-Policy",
-              "value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;img-src 'self' data:;object-src 'none';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests;script-src 'self' https://botteste.whazing.com.br;frame-ancestors 'self' https://botteste.whazing.com.br"
-            },
-            {
-              "key": "Content-Type",
-              "value": "application/json; charset=utf-8"
-            },
-            {
-              "key": "Date",
-              "value": "Wed, 20 Aug 2025 22:48:52 GMT"
-            },
-            {
-              "key": "Etag",
-              "value": "W/\"17-UAdUlPhSCZRloHsANrkFeMaQ6u0\""
-            },
-            {
-              "key": "Expect-Ct",
-              "value": "max-age=0"
-            },
-            {
-              "key": "Referrer-Policy",
-              "value": "no-referrer"
-            },
-            {
-              "key": "Strict-Transport-Security",
-              "value": "max-age=15552000; includeSubDomains"
-            },
-            {
-              "key": "Vary",
-              "value": "Origin"
-            },
-            {
-              "key": "Via",
-              "value": "1.1 Caddy"
-            },
-            {
-              "key": "X-Content-Type-Options",
-              "value": "nosniff"
-            },
-            {
-              "key": "X-Dns-Prefetch-Control",
-              "value": "off"
-            },
-            {
-              "key": "X-Download-Options",
-              "value": "noopen"
-            },
-            {
-              "key": "X-Frame-Options",
-              "value": "SAMEORIGIN"
-            },
-            {
-              "key": "X-Permitted-Cross-Domain-Policies",
-              "value": "none"
-            },
-            {
-              "key": "X-Xss-Protection",
-              "value": "0"
-            }
-          ],
-          "cookie": [],
-          "body": "{\n    \"id\": 41,\n    \"tenantId\": 37\n}"
-        }
-      ]
-    },
-    {
-      "name": "Listar empresa id especifico",
-      "protocolProfileBehavior": {
-        "disableBodyPruning": true,
-        "disabledSystemHeaders": {
-          "content-type": true
-        }
-      },
-      "request": {
-        "auth": {
-          "type": "bearer",
-          "bearer": [
-            {
-              "key": "token",
-              "value": "{{TOKEN_ADMIN}}",
-              "type": "string"
-            }
-          ]
-        },
-        "method": "GET",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json",
-            "type": "text"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "   {\r\n     \"tenantId\": \"37\"\r\n   }"
-        },
-        "url": {
-          "raw": "{{URL_ADMIN}}/{{API_ID}}",
-          "host": [
-            "{{URL_ADMIN}}"
-          ],
-          "path": [
-            "{{API_ID}}"
-          ]
-        }
-      },
-      "response": [
-        {
-          "name": "Listar empresa id especifico",
-          "originalRequest": {
-            "method": "GET",
-            "header": [
-              {
-                "key": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "   {\r\n     \"tenantId\": \"37\"\r\n   }"
-            },
-            "url": {
-              "raw": "{{URL_ADMIN}}/{{API_ID}}",
-              "host": [
-                "{{URL_ADMIN}}"
-              ],
-              "path": [
-                "{{API_ID}}"
-              ]
-            }
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": null,
-          "header": [
-            {
-              "key": "Access-Control-Allow-Credentials",
-              "value": "true"
-            },
-            {
-              "key": "Access-Control-Allow-Origin",
-              "value": "https://botteste.whazing.com.br"
-            },
-            {
-              "key": "Alt-Svc",
-              "value": "h3=\":443\"; ma=2592000"
-            },
-            {
-              "key": "Content-Length",
-              "value": "202"
-            },
-            {
-              "key": "Content-Security-Policy",
-              "value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;img-src 'self' data:;object-src 'none';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests;script-src 'self' https://botteste.whazing.com.br;frame-ancestors 'self' https://botteste.whazing.com.br"
-            },
-            {
-              "key": "Content-Type",
-              "value": "application/json; charset=utf-8"
-            },
-            {
-              "key": "Date",
-              "value": "Wed, 20 Aug 2025 22:49:23 GMT"
-            },
-            {
-              "key": "Etag",
-              "value": "W/\"ca-4imTquz1U0XnJPgWdHve/pS+lZc\""
-            },
-            {
-              "key": "Expect-Ct",
-              "value": "max-age=0"
-            },
-            {
-              "key": "Referrer-Policy",
-              "value": "no-referrer"
-            },
-            {
-              "key": "Strict-Transport-Security",
-              "value": "max-age=15552000; includeSubDomains"
-            },
-            {
-              "key": "Vary",
-              "value": "Origin"
-            },
-            {
-              "key": "Via",
-              "value": "1.1 Caddy"
-            },
-            {
-              "key": "X-Content-Type-Options",
-              "value": "nosniff"
-            },
-            {
-              "key": "X-Dns-Prefetch-Control",
-              "value": "off"
-            },
-            {
-              "key": "X-Download-Options",
-              "value": "noopen"
-            },
-            {
-              "key": "X-Frame-Options",
-              "value": "SAMEORIGIN"
-            },
-            {
-              "key": "X-Permitted-Cross-Domain-Policies",
-              "value": "none"
-            },
-            {
-              "key": "X-Xss-Protection",
-              "value": "0"
-            }
-          ],
-          "cookie": [],
-          "body": "[\n    {\n        \"id\": 37,\n        \"name\": \"tedt\",\n        \"status\": \"active\",\n        \"ownerId\": 1,\n        \"planId\": 3,\n        \"phone\": \"(55)48999-416\",\n        \"email\": \"cleitonme22@gmail.com\",\n        \"dueDate\": \"2025-11-01T03:00:00.000Z\",\n        \"recurrence\": \"MENSAL\",\n        \"plan\": {\n            \"name\": \"dd\"\n        }\n    }\n]"
-        }
-      ]
-    },
-    {
-      "name": "renovar 1 mes",
-      "protocolProfileBehavior": {
-        "disabledSystemHeaders": {
-          "content-type": true
-        }
-      },
-      "request": {
-        "auth": {
-          "type": "bearer",
-          "bearer": [
-            {
-              "key": "token",
-              "value": "{{TOKEN_ADMIN}}",
-              "type": "string"
-            }
-          ]
-        },
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json",
-            "type": "text"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "   {\r\n     \"tenantId\": \"37\"\r\n   }"
-        },
-        "url": {
-          "raw": "{{URL_ADMIN}}/{{API_ID}}/addMonth",
-          "host": [
-            "{{URL_ADMIN}}"
-          ],
-          "path": [
-            "{{API_ID}}",
-            "addMonth"
-          ]
-        }
-      },
-      "response": [
-        {
-          "name": "renovar 1 mes",
-          "originalRequest": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "   {\r\n     \"tenantId\": \"37\"\r\n   }"
-            },
-            "url": {
-              "raw": "{{URL_ADMIN}}/{{API_ID}}/addMonth",
-              "host": [
-                "{{URL_ADMIN}}"
-              ],
-              "path": [
-                "{{API_ID}}",
-                "addMonth"
-              ]
-            }
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": null,
-          "header": [
-            {
-              "key": "Access-Control-Allow-Credentials",
-              "value": "true"
-            },
-            {
-              "key": "Access-Control-Allow-Origin",
-              "value": "https://botteste.whazing.com.br"
-            },
-            {
-              "key": "Alt-Svc",
-              "value": "h3=\":443\"; ma=2592000"
-            },
-            {
-              "key": "Content-Length",
-              "value": "179"
-            },
-            {
-              "key": "Content-Security-Policy",
-              "value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;img-src 'self' data:;object-src 'none';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests;script-src 'self' https://botteste.whazing.com.br;frame-ancestors 'self' https://botteste.whazing.com.br"
-            },
-            {
-              "key": "Content-Type",
-              "value": "application/json; charset=utf-8"
-            },
-            {
-              "key": "Date",
-              "value": "Wed, 20 Aug 2025 22:49:56 GMT"
-            },
-            {
-              "key": "Etag",
-              "value": "W/\"b3-/Os1BbRe5r1FRJQuk+V+0uo2Lqw\""
-            },
-            {
-              "key": "Expect-Ct",
-              "value": "max-age=0"
-            },
-            {
-              "key": "Referrer-Policy",
-              "value": "no-referrer"
-            },
-            {
-              "key": "Strict-Transport-Security",
-              "value": "max-age=15552000; includeSubDomains"
-            },
-            {
-              "key": "Vary",
-              "value": "Origin"
-            },
-            {
-              "key": "Via",
-              "value": "1.1 Caddy"
-            },
-            {
-              "key": "X-Content-Type-Options",
-              "value": "nosniff"
-            },
-            {
-              "key": "X-Dns-Prefetch-Control",
-              "value": "off"
-            },
-            {
-              "key": "X-Download-Options",
-              "value": "noopen"
-            },
-            {
-              "key": "X-Frame-Options",
-              "value": "SAMEORIGIN"
-            },
-            {
-              "key": "X-Permitted-Cross-Domain-Policies",
-              "value": "none"
-            },
-            {
-              "key": "X-Xss-Protection",
-              "value": "0"
-            }
-          ],
-          "cookie": [],
-          "body": "{\n    \"id\": 37,\n    \"name\": \"tedt\",\n    \"planId\": 3,\n    \"phone\": \"(55)48999-416\",\n    \"email\": \"cleitonme22@gmail.com\",\n    \"dueDate\": \"2025-12-01T03:00:00.000Z\",\n    \"recurrence\": \"MENSAL\",\n    \"status\": \"active\",\n    \"ownerId\": 1\n}"
-        }
-      ]
-    },
-    {
-      "name": "update empresa",
-      "protocolProfileBehavior": {
-        "disabledSystemHeaders": {
-          "content-type": true
-        }
-      },
-      "request": {
-        "auth": {
-          "type": "bearer",
-          "bearer": [
-            {
-              "key": "token",
-              "value": "{{TOKEN_ADMIN}}",
-              "type": "string"
-            }
-          ]
-        },
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json",
-            "type": "text"
-          }
-        ],
-        "body": {
-          "mode": "raw",
-          "raw": "   {\r\n     \"tenantId\": \"37\",\r\n     \"email\": \"test@example.com\",\r\n     \"tenantName\": \"Test Company\",\r\n     \"phone\": \"55555555555\",\r\n     \"plano\": \"1\",\r\n     \"dueDate\": \"2025-07-17T20:58\",\r\n     \"recurrence\": \"MENSAL\" //[\"MENSAL\", \"BIMESTRAL\", \"TRIMESTRAL\", \"SEMESTRAL\", \"ANUAL\"]\r\n   }"
-        },
-        "url": {
-          "raw": "{{URL_ADMIN}}/{{API_ID}}/updatetenant",
-          "host": [
-            "{{URL_ADMIN}}"
-          ],
-          "path": [
-            "{{API_ID}}",
-            "updatetenant"
-          ]
-        }
-      },
-      "response": [
-        {
-          "name": "update empresa",
-          "originalRequest": {
-            "method": "POST",
-            "header": [
-              {
-                "key": "Content-Type",
-                "value": "application/json",
-                "type": "text"
-              }
-            ],
-            "body": {
-              "mode": "raw",
-              "raw": "   {\r\n     \"tenantId\": \"37\",\r\n     \"email\": \"test@example.com\",\r\n     \"tenantName\": \"Test Company\",\r\n     \"phone\": \"55555555555\",\r\n     \"plano\": \"1\",\r\n     \"dueDate\": \"2025-07-17T20:58\"\r\n   }"
-            },
-            "url": {
-              "raw": "{{URL_ADMIN}}/{{API_ID}}/updatetenant",
-              "host": [
-                "{{URL_ADMIN}}"
-              ],
-              "path": [
-                "{{API_ID}}",
-                "updatetenant"
-              ]
-            }
-          },
-          "status": "OK",
-          "code": 200,
-          "_postman_previewlanguage": null,
-          "header": [
-            {
-              "key": "Access-Control-Allow-Credentials",
-              "value": "true"
-            },
-            {
-              "key": "Access-Control-Allow-Origin",
-              "value": "https://botteste.whazing.com.br"
-            },
-            {
-              "key": "Alt-Svc",
-              "value": "h3=\":443\"; ma=2592000"
-            },
-            {
-              "key": "Content-Length",
-              "value": "179"
-            },
-            {
-              "key": "Content-Security-Policy",
-              "value": "default-src 'self';base-uri 'self';block-all-mixed-content;font-src 'self' https: data:;img-src 'self' data:;object-src 'none';script-src-attr 'none';style-src 'self' https: 'unsafe-inline';upgrade-insecure-requests;script-src 'self' https://botteste.whazing.com.br;frame-ancestors 'self' https://botteste.whazing.com.br"
-            },
-            {
-              "key": "Content-Type",
-              "value": "application/json; charset=utf-8"
-            },
-            {
-              "key": "Date",
-              "value": "Wed, 20 Aug 2025 22:50:20 GMT"
-            },
-            {
-              "key": "Etag",
-              "value": "W/\"b3-2LMmWVb+F+OuFy9Q6BLcueEpV20\""
-            },
-            {
-              "key": "Expect-Ct",
-              "value": "max-age=0"
-            },
-            {
-              "key": "Referrer-Policy",
-              "value": "no-referrer"
-            },
-            {
-              "key": "Strict-Transport-Security",
-              "value": "max-age=15552000; includeSubDomains"
-            },
-            {
-              "key": "Vary",
-              "value": "Origin"
-            },
-            {
-              "key": "Via",
-              "value": "1.1 Caddy"
-            },
-            {
-              "key": "X-Content-Type-Options",
-              "value": "nosniff"
-            },
-            {
-              "key": "X-Dns-Prefetch-Control",
-              "value": "off"
-            },
-            {
-              "key": "X-Download-Options",
-              "value": "noopen"
-            },
-            {
-              "key": "X-Frame-Options",
-              "value": "SAMEORIGIN"
-            },
-            {
-              "key": "X-Permitted-Cross-Domain-Policies",
-              "value": "none"
-            },
-            {
-              "key": "X-Xss-Protection",
-              "value": "0"
-            }
-          ],
-          "cookie": [],
-          "body": "{\n    \"id\": 37,\n    \"name\": \"Test Company\",\n    \"status\": \"active\",\n    \"ownerId\": 1,\n    \"planId\": \"1\",\n    \"phone\": \"55555555555\",\n    \"email\": \"cleitonme22@gmail.com\",\n    \"dueDate\": \"2025-07-17T20:58\",\n    \"recurrence\": \"MENSAL\"\n}"
-        }
-      ]
-    }
+  "variable": [
+    { "key": "URL_ADMIN", "value": "https://SEU_BACKEND/v1/api/admin" },
+    { "key": "API_ID", "value": "SEU_API_ID" },
+    { "key": "TOKEN_ADMIN", "value": "SEU_BEARER_TOKEN" }
   ],
   "auth": {
     "type": "bearer",
-    "bearer": [
-      {
-        "key": "token",
-        "value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ0ZW5hbnRJZCI6MSwicHJvZmlsZSI6ImFkbWluIiwic2Vzc2lvbklkIjozNSwiaWF0IjoxNzQ0NjczNDU0LCJleHAiOjE4MDc3NDU0NTR9.HGM3Zx-Yx3sgm-G0TUoYGILFgUp2xr0_RTXbaAieItc",
-        "type": "string"
-      }
-    ]
+    "bearer": [{ "key": "token", "value": "{{TOKEN_ADMIN}}", "type": "string" }]
   },
-  "event": [
+  "item": [
     {
-      "listen": "prerequest",
-      "script": {
-        "type": "text/javascript",
-        "exec": [
-          ""
-        ]
-      }
+      "name": "🏢 Tenants",
+      "item": [
+        {
+          "name": "Criar Tenant",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"name\": \"Fulano de Tal\",\n  \"email\": \"fulano@exemplo.com\",\n  \"password\": \"mudar123\",\n  \"tenantName\": \"Empresa Exemplo\",\n  \"phone\": \"5548999990000\",\n  \"plano\": \"1\",\n  \"timetest\": \"7\",\n  \"recurrence\": \"MENSAL\",\n  \"status\": \"active\",\n  \"trial\": false,\n  \"affiliate\": false\n}"
+            },
+            "url": {
+              "raw": "{{URL_ADMIN}}/{{API_ID}}/createtenant",
+              "host": ["{{URL_ADMIN}}"],
+              "path": ["{{API_ID}}", "createtenant"]
+            },
+            "description": "Cria um novo tenant com usuário admin.\n\n**recurrence**: MENSAL | BIMESTRAL | TRIMESTRAL | SEMESTRAL | ANUAL\n**timetest**: dias de trial\n**status**: active | inactive"
+          }
+        },
+        {
+          "name": "Editar Tenant",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"tenantId\": \"23\",\n  \"tenantName\": \"Empresa Atualizada\",\n  \"email\": \"novo@exemplo.com\",\n  \"phone\": \"5548999990001\",\n  \"plano\": \"2\",\n  \"dueDate\": \"2026-06-01T00:00:00\",\n  \"recurrence\": \"TRIMESTRAL\",\n  \"status\": \"active\"\n}"
+            },
+            "url": {
+              "raw": "{{URL_ADMIN}}/{{API_ID}}/updatetenant",
+              "host": ["{{URL_ADMIN}}"],
+              "path": ["{{API_ID}}", "updatetenant"]
+            },
+            "description": "Atualiza dados do tenant. Ao alterar plano ou recorrência, as faturas abertas são recriadas automaticamente."
+          }
+        },
+        {
+          "name": "Listar Todos os Tenants",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL_ADMIN}}/{{API_ID}}",
+              "host": ["{{URL_ADMIN}}"],
+              "path": ["{{API_ID}}"]
+            },
+            "description": "Retorna todos os tenants cadastrados (exceto Tenant 1)."
+          }
+        },
+        {
+          "name": "Listar Tenant Específico",
+          "request": {
+            "method": "GET",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"tenantId\": \"23\"\n}"
+            },
+            "url": {
+              "raw": "{{URL_ADMIN}}/{{API_ID}}",
+              "host": ["{{URL_ADMIN}}"],
+              "path": ["{{API_ID}}"]
+            },
+            "description": "Envia tenantId no body para filtrar somente aquele tenant."
+          }
+        },
+        {
+          "name": "Adicionar 1 Mês",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"tenantId\": \"23\"\n}"
+            },
+            "url": {
+              "raw": "{{URL_ADMIN}}/{{API_ID}}/addMonth",
+              "host": ["{{URL_ADMIN}}"],
+              "path": ["{{API_ID}}", "addMonth"]
+            },
+            "description": "Adiciona exatamente 1 mês ao dueDate do tenant (independente da recorrência)."
+          }
+        }
+      ]
     },
+
     {
-      "listen": "test",
-      "script": {
-        "type": "text/javascript",
-        "exec": [
-          ""
-        ]
-      }
-    }
-  ],
-  "variable": [
-    {
-      "key": "URL_ADMIN",
-      "value": "https://bottesteapi.whazing.com.br/v1/api/admin"
+      "name": "👤 Usuários",
+      "item": [
+        {
+          "name": "Listar Usuários do Tenant",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL_ADMIN}}/{{API_ID}}/users/23",
+              "host": ["{{URL_ADMIN}}"],
+              "path": ["{{API_ID}}", "users", "23"]
+            },
+            "description": "Retorna todos os usuários ativos de um tenant."
+          }
+        },
+        {
+          "name": "Alterar Senha de Usuário",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"userId\": \"42\",\n  \"password\": \"novaSenha123\"\n}"
+            },
+            "url": {
+              "raw": "{{URL_ADMIN}}/{{API_ID}}/users",
+              "host": ["{{URL_ADMIN}}"],
+              "path": ["{{API_ID}}", "users"]
+            },
+            "description": "Altera a senha de qualquer usuário (exceto do Tenant 1). Mínimo 6 caracteres."
+          }
+        }
+      ]
     },
+
     {
-      "key": "API_ID",
-      "value": "CSKQA9dMMaqgmsquZywQBkkHMSEE6V"
+      "name": "📦 Planos",
+      "item": [
+        {
+          "name": "Listar Planos",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL_ADMIN}}/{{API_ID}}/plans",
+              "host": ["{{URL_ADMIN}}"],
+              "path": ["{{API_ID}}", "plans"]
+            },
+            "description": "Retorna todos os planos disponíveis ordenados pelo valor."
+          }
+        }
+      ]
     },
+
     {
-      "key": "TOKEN_ADMIN",
-      "value": "3G9h3aV9ZdBlRrMkPsW6D3HlWnOcad"
+      "name": "🧾 Faturas",
+      "item": [
+        {
+          "name": "Listar Todas as Faturas",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL_ADMIN}}/{{API_ID}}/invoices/23",
+              "host": ["{{URL_ADMIN}}"],
+              "path": ["{{API_ID}}", "invoices", "23"],
+              "query": [
+                { "key": "status", "value": "all", "description": "open | paid | (omitir = all)" }
+              ]
+            },
+            "description": "Retorna histórico completo de faturas do tenant.\n\nQuery `status`:\n- `open` → somente em aberto\n- `paid` → somente pagas\n- omitido → todas"
+          }
+        },
+        {
+          "name": "Faturas em Aberto (atalho)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{URL_ADMIN}}/{{API_ID}}/invoices/23/open",
+              "host": ["{{URL_ADMIN}}"],
+              "path": ["{{API_ID}}", "invoices", "23", "open"]
+            },
+            "description": "Atalho para listar somente faturas com status `open`, ordenadas por vencimento."
+          }
+        },
+        {
+          "name": "Gerar Pagamento / QR Code PIX",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"price\": 99.90\n}"
+            },
+            "url": {
+              "raw": "{{URL_ADMIN}}/{{API_ID}}/invoices/101/payment",
+              "host": ["{{URL_ADMIN}}"],
+              "path": ["{{API_ID}}", "invoices", "101", "payment"]
+            },
+            "description": "Gera cobrança via gateway configurado (Efi, Asaas, MercadoPago, Stripe, etc).\n\n**price** é opcional: se omitido usa o valor da fatura.\n\nResposta (varia por gateway):\n- URL: `{ urlPagamento: '...' }`\n- PIX: `{ qrcode: { qrcode: '...' }, valor: { original: 99.90 } }`"
+          }
+        },
+        {
+          "name": "Marcar como Paga (manual)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{URL_ADMIN}}/{{API_ID}}/invoices/101/paid",
+              "host": ["{{URL_ADMIN}}"],
+              "path": ["{{API_ID}}", "invoices", "101", "paid"]
+            },
+            "description": "Baixa manual de fatura sem passar pelo gateway.\n\nExecuta o mesmo fluxo dos webhooks:\n1. Marca fatura como `paid`\n2. Estende `dueDate` do tenant conforme recorrência\n3. Emite evento Socket para o frontend\n4. Envia mensagem de confirmação (se configurado)"
+          }
+        },
+        {
+          "name": "Criar Cobrança Avulsa",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"tenantId\": \"23\",\n  \"detail\": \"Taxa de implantação\",\n  \"value\": 150.00,\n  \"dueDate\": \"2025-12-31\",\n  \"recurrence\": \"MENSAL\"\n}"
+            },
+            "url": {
+              "raw": "{{URL_ADMIN}}/{{API_ID}}/invoices/create",
+              "host": ["{{URL_ADMIN}}"],
+              "path": ["{{API_ID}}", "invoices", "create"]
+            },
+            "description": "Cria uma fatura avulsa com valor e vencimento personalizados.\n\n`recurrence` é opcional — herda a recorrência do tenant se omitido.\n`detail` é opcional — usa nome do tenant por padrão."
+          }
+        },
+        {
+          "name": "Editar Fatura",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"detail\": \"Plano Pro - Corrigido\",\n  \"value\": 199.90,\n  \"dueDate\": \"2026-01-15\",\n  \"status\": \"open\"\n}"
+            },
+            "url": {
+              "raw": "{{URL_ADMIN}}/{{API_ID}}/invoices/101",
+              "host": ["{{URL_ADMIN}}"],
+              "path": ["{{API_ID}}", "invoices", "101"]
+            },
+            "description": "Atualiza campos de uma fatura. Todos os campos são opcionais.\n\nNão é possível editar faturas já pagas (exceto para reabrir com `status: open`)."
+          }
+        },
+        {
+          "name": "Excluir Fatura",
+          "request": {
+            "method": "DELETE",
+            "header": [],
+            "url": {
+              "raw": "{{URL_ADMIN}}/{{API_ID}}/invoices/101",
+              "host": ["{{URL_ADMIN}}"],
+              "path": ["{{API_ID}}", "invoices", "101"]
+            },
+            "description": "Remove a fatura permanentemente e reprocessa as faturas abertas do tenant via InvoiceCreateJob."
+          }
+        },
+        {
+          "name": "Recriar Faturas do Tenant",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{URL_ADMIN}}/{{API_ID}}/invoices/23/recreate",
+              "host": ["{{URL_ADMIN}}"],
+              "path": ["{{API_ID}}", "invoices", "23", "recreate"]
+            },
+            "description": "Deleta todas as faturas abertas do tenant e recria a partir do InvoiceCreateJob.\n\nUtil após alterar plano, recorrência ou data de vencimento."
+          }
+        }
+      ]
     }
   ]
 }
