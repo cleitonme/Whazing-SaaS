@@ -205,6 +205,54 @@ Nesse caso significa:
 
 ***
 
+### 🚀 Cadastro exclusivo para afiliados
+
+Painel SaaS conta com uma nova área chamada **Afiliados**, permitindo criar acessos exclusivos para parceiros acompanharem suas indicações de forma simples e organizada.
+
+Nesta área é possível:
+
+* Cadastrar afiliados
+* Gerar links de indicação
+* Acompanhar cliques nos links
+* Visualizar cadastros realizados através das indicações
+
+<figure><img src="../.gitbook/assets/saasafiliado.png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### 📝 Plano de Afiliado
+
+No cadastro de planos agora existe a opção:
+
+* **Plano de Afiliado**
+
+Quando esta opção estiver ativa:
+
+* Valores do plano ficam zerados
+* Sem acesso a canais
+* Sem acesso às funcionalidades do sistema
+* Vencimento automático definido para o ano **2099**
+
+Esse modelo foi criado especialmente para acessos exclusivos de afiliados acompanharem seus resultados.
+
+####
+
+<figure><img src="../.gitbook/assets/planoafiliado.png" alt=""><figcaption></figcaption></figure>
+
+***
+
+### 🌍 Cadastro público para afiliados
+
+Ao marcar um plano como **Público**, será exibido automaticamente um card na página de cadastro do sistema indicando este tipo de acesso para afiliados.
+
+Isso facilita o auto cadastro de parceiros diretamente pela página pública.
+
+####
+
+<figure><img src="../.gitbook/assets/cadastropublico.png" alt=""><figcaption></figcaption></figure>
+
+***
+
 ## ✔️ Resumo do funcionamento
 
 1️⃣ Administrador ativa o programa\
