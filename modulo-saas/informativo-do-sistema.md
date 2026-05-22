@@ -28,4 +28,14 @@ description: >-
 
 ***
 
+### ⚠️ Importante
+
+Ao clicar em **Enabled / Exibir informativo**, todos os usuários que estiverem online no sistema receberão automaticamente a notificação em tempo real.
+
+👉 Por isso, recomendamos ativar o informativo somente após o texto estar totalmente revisado e pronto para envio, evitando notificações incompletas ou mensagens em edição.
+
+<figure><img src="../.gitbook/assets/informativo.png" alt=""><figcaption></figcaption></figure>
+
+***
+
 ✅ Após configurado, o aviso será exibido de forma clara e visível para todos os usuários do sistema.
