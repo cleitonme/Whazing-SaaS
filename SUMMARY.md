@@ -75,7 +75,7 @@
   * [Migração entre apis não oficiais](canais-suportados/migracao-entre-apis-nao-oficiais.md)
 * [Funcionalidades](funcionalidades/README.md)
   * [Atendimento](funcionalidades/atendimento/README.md)
-    * [Avaliação](funcionalidades/atendimento/avaliacao.md)
+    * [Avaliação de Atendimento](funcionalidades/atendimento/avaliacao.md)
     * [Follow-up](docs/modulos/follow-up.md)
     * [Melhorar Texto de Atendimento](docs/configuracoes/melhorar_texto_atendimento.md)
     * [Despedida](docs/modulos/despedida.md)
