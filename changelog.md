@@ -1,5 +1,12 @@
 # Changelog e Atualizações
 
+## 🚀 Versão 2.20.1 BETA – Changelog
+- bug beta - botao enviar chat interno anexa arquivo no mobile
+- bug beta - obriga legenda em arquivos
+- bug beta - ajustes socket tela atendimento perdendo conexão - f5 receber novas mensagens
+- bug beta - ajustes algumas traducoes
+- nova configuração bot ativar e desativa verificar horario atendimento no bot
+
 ## 🚀 Versão 2.20.0 BETA – Changelog
 
 - Webhook para evento de mudança de status de canal no painel SaaS
