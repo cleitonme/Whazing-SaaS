@@ -112,6 +112,8 @@ A partir da versão **2.11.0**, estão disponíveis as seguintes interações:
 
 * Executa condições sem esperar uma nova mensagem. _Exemplo:_ fazer uma requisição HTTP, salvar o resultado e comparar a variável obtida.
 
+Faz bot verificar as condições sem aguardar nova mensagem cliente. Exemplo caso queira fazer bot somente envie mensagem boas vindas e já envie para alguma fila, sem esperar cliente responder.
+
 ### 🗂️ Adicionar Lista
 
 * Compatível com **API oficial** e **API Plus**.
