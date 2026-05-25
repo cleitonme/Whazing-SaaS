@@ -16,7 +16,7 @@ O sistema utiliza **quatro critérios de prioridade** para definir **qual bot se
 
 Todos os contatos vinculados a uma _lane_ específica do CRM seguirão o bot configurado para ela. Ao enviar uma mensagem para o número do sistema, se **não houver tickets abertos ou pendentes**, o bot dessa _lane_ será acionado.
 
-<figure><img src="../../.gitbook/assets/image (7) (1).avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (7) (1).avif" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -32,7 +32,7 @@ Permite definir palavras que acionam um bot específico. Exemplo: se você cadas
 
 Cada canal pode ter um bot próprio. Quando o cliente envia uma mensagem para o número do sistema, caso **não existam tickets abertos ou pendentes**, o bot configurado nesse canal será utilizado.
 
-<figure><img src="../../.gitbook/assets/image (8) (1).avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (8) (1).avif" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -59,11 +59,11 @@ Essas prioridades determinam **qual bot será acionado** sempre que uma nova men
 
 A configuração do fluxo do chatbot é feita pela interface visual:
 
-<figure><img src="../../.gitbook/assets/image (9) (1).avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1).avif" alt=""><figcaption></figcaption></figure>
 
 ### 🔧 Elementos Básicos de Configuração
 
-<figure><img src="../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (33).png" alt=""><figcaption></figcaption></figure>
 
 A partir da versão **2.11.0**, estão disponíveis as seguintes interações:
 
@@ -117,22 +117,22 @@ A partir da versão **2.11.0**, estão disponíveis as seguintes interações:
 * Compatível com **API oficial** e **API Plus**.
 * Funciona parcialmente no **Baileys** (sem suporte oficial, pode parar a qualquer momento).
 
-<figure><img src="../../.gitbook/assets/lista.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/lista.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/lista2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/lista2.png" alt=""><figcaption></figcaption></figure>
 
 ### 🔘 Enviar Botões
 
 * Compatível com **WhatsApp oficial**, **Facebook**, **Instagram** e **API Plus**.
 * Máximo de **3 botões**.
 
-<figure><img src="../../.gitbook/assets/botao.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/botao.png" alt=""><figcaption></figcaption></figure>
 
 ### 🔗 Botão com Link
 
 * Compatível com **API oficial** e **API Plus**.
 
-<figure><img src="../../.gitbook/assets/links.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/links.png" alt=""><figcaption></figcaption></figure>
 
 ### 📍 Solicitar Localização
 
@@ -140,7 +140,7 @@ A partir da versão **2.11.0**, estão disponíveis as seguintes interações:
 * Útil para serviços de **entrega**.
 * Compatível com **API oficial** e **API Plus**.
 
-<figure><img src="../../.gitbook/assets/solicitarlocalizacao.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/solicitarlocalizacao.png" alt=""><figcaption></figcaption></figure>
 
 ### 🧩 Botão Dinâmico
 
@@ -148,7 +148,7 @@ A partir da versão **2.11.0**, estão disponíveis as seguintes interações:
 * Permite misturar tipos de botões: resposta, link, cópia, ligação, etc.
 *   Alguns dispositivos pode aparecer mensagem não compatível
 
-    <figure><img src="../../.gitbook/assets/dinamico.png" alt=""><figcaption></figcaption></figure>
+    <figure><img src="../../../.gitbook/assets/dinamico.png" alt=""><figcaption></figcaption></figure>
 
 ### 🎠 Carrossel de Mídia
 
@@ -156,23 +156,23 @@ A partir da versão **2.11.0**, estão disponíveis as seguintes interações:
 * Envie várias imagens com botões interativos abaixo delas.
 * Alguns dispositivos pode aparecer mensagem não compatível
 
-<figure><img src="../../.gitbook/assets/carrossel1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/carrossel1.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-<figure><img src="../../.gitbook/assets/carrossel2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/carrossel2.png" alt=""><figcaption></figcaption></figure>
 
 ### 🔗 ChavePix
 
 * Exclusivo da **API Plus**.
 
-<figure><img src="../../.gitbook/assets/chavepix1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/chavepix1.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/chavepix2.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/chavepix2.png" alt=""><figcaption></figcaption></figure>
 
 ## 🔄 Ordem das Interações
 
-<figure><img src="../../.gitbook/assets/image (10) (1).avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1).avif" alt=""><figcaption></figcaption></figure>
 
 > ⚠️ **Importante:**
 >
@@ -183,7 +183,7 @@ A partir da versão **2.11.0**, estão disponíveis as seguintes interações:
 
 ## 🧩 Configuração de Condições
 
-<figure><img src="../../.gitbook/assets/image (11).avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (11).avif" alt=""><figcaption></figcaption></figure>
 
 ### Tipos de Condições (em ordem de prioridade)
 
@@ -233,15 +233,30 @@ _(Essa mensagem pode ser personalizada nas configurações.)_
 
 ## ⚙️ Configurações Gerais
 
-<figure><img src="../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (10) (1).png" alt=""><figcaption></figcaption></figure>
 
 **Opções disponíveis:**
 
 * **Mensagem de saudação (Fila/Usuário):** enviada ao transferir ticket.
-* **Se nenhuma resposta for enviada:** mensagem padrão caso nenhuma condição seja cumprida.
+* **Se nenhuma resposta for enviada:** mensagem padrão caso nenhuma condição seja cumprida. Caso nenhuma condição seja cumprida essa mensagem "Desculpe! Não entendi sua resposta. Vamos tentar novamente! Escolha uma opção válida.”
 * **Ausência de resposta:** define ação após determinado tempo sem interação.
 * **Máximo de tentativas do bot:** define o que fazer se o cliente não responder corretamente.
-* Outras configurações podem ser ajustadas conforme necessidade.
+*   #### Se estiver fora do horário de atendimento
+
+    Define o comportamento do bot quando o cliente enviar mensagens fora do horário configurado para atendimento.
+
+    * **Horário de atendimento ativado:**\
+      O sistema verificará o horário configurado. Caso esteja fora do horário, será executada a interação configurada para atendimento fora do expediente.
+    * **Horário de atendimento desativado:**\
+      O bot será executado normalmente em qualquer horário.
+* **Auto Distribuir Atendimento**\
+  Não: Desativado.&#x20;
+* Aleatória: Definirá o usuário de forma aleatória/randômica para os usuários da fila.&#x20;
+* Balanceada: Definirá o usuário com base na quantidade de atendimentos de cada usuário da fila. Usuário com menos atendimentos será escolhido. Obs: Aleatória ou Balanceada somente vai escolher com perfil Usuário e estiverem online
+* **Encerrar Atendimento**\
+  Caso o cliente digite algumas das informações esperadas, o atendimento será encerrado.
+* **Voltar ao Inicio!**\
+  Caso o cliente digite algumas das informações esperadas, o atendimento volta para etapa Boas Vindas!
 
 ***
 
@@ -251,11 +266,11 @@ _(Essa mensagem pode ser personalizada nas configurações.)_
 
 Ideal para empresas com **plantão ou suporte emergencial**.
 
-<figure><img src="../../.gitbook/assets/image (12).avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (12).avif" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (14).avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (14).avif" alt=""><figcaption></figcaption></figure>
 
-[Baixar exemplo](horario_de_atendimento.json)
+[Baixar exemplo](../../../docs/chatbotinterno/horario_de_atendimento.json)
 
 ***
 
@@ -263,7 +278,7 @@ Ideal para empresas com **plantão ou suporte emergencial**.
 
 Permite personalizar mensagens com **dados do cliente**.
 
-[Baixar exemplo](exemplo_fluxo_usando_novas_variaveis.json)
+[Baixar exemplo](../../../docs/chatbotinterno/exemplo_fluxo_usando_novas_variaveis.json)
 
 **Exemplo de uso:**
 
@@ -285,19 +300,19 @@ Por favor, confirme se seu endereço é Rua Marechal Deodoro, 11?
 
 Integração com [https://cal.com/](https://cal.com/)
 
-<figure><img src="../../.gitbook/assets/image (15).avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (15).avif" alt=""><figcaption></figcaption></figure>
 
-[Baixar exemplo](agendamentobarbearia.json)
+[Baixar exemplo](../../../docs/chatbotinterno/agendamentobarbearia.json)
 
-<figure><img src="../../.gitbook/assets/image (16).avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (16).avif" alt=""><figcaption></figcaption></figure>
 
-[Baixar exemplo com botões](agendamentobarbeariabotao.json)
+[Baixar exemplo com botões](../../../docs/chatbotinterno/agendamentobarbeariabotao.json)
 
 ***
 
 ### 4️⃣ Fluxo sobre Whazing (lista, botão e links)
 
-[Baixar exemplo](exemplo_whazing.json)
+[Baixar exemplo](../../../docs/chatbotinterno/exemplo_whazing.json)
 
 ***
 
@@ -305,7 +320,7 @@ Integração com [https://cal.com/](https://cal.com/)
 
 Exemplo que valida **CEP e cidade** via API.
 
-[Baixar exemplo](exemplo_http_request.json)
+[Baixar exemplo](../../../docs/chatbotinterno/exemplo_http_request.json)
 
 ***
 
@@ -313,7 +328,7 @@ Exemplo que valida **CEP e cidade** via API.
 
 Usa **HTTP Request** para gerar teste automático para o cliente.
 
-[Baixar exemplo](exemplo_teste_whazing.json)
+[Baixar exemplo](../../../docs/chatbotinterno/exemplo_teste_whazing.json)
 
 ***
 
@@ -321,7 +336,7 @@ Usa **HTTP Request** para gerar teste automático para o cliente.
 
 Envia mensagem de boas-vindas e direciona o cliente para uma fila.
 
-[Baixar exemplo](boas_vindas.json)
+[Baixar exemplo](../../../docs/chatbotinterno/boas_vindas.json)
 
 > Usa “Forçar executar condições” para simular uma resposta automática e avançar o fluxo.
 
@@ -329,7 +344,7 @@ Envia mensagem de boas-vindas e direciona o cliente para uma fila.
 
 ### 8️⃣ Seleção de Fila por Palavra-chave
 
-[Baixar exemplo](bot_por_palavra_chat.json)
+[Baixar exemplo](../../../docs/chatbotinterno/bot_por_palavra_chat.json)
 
 Permite enviar o cliente para uma fila específica conforme a palavra digitada. Com “Iniciar Integração ao transferir”, o sistema já ativa a integração automaticamente.
 
@@ -337,7 +352,7 @@ Permite enviar o cliente para uma fila específica conforme a palavra digitada. 
 
 ### 9️⃣ Consulta de CPF via API
 
-[Baixar exemplo](consulta_cpf.json)
+[Baixar exemplo](../../../docs/chatbotinterno/consulta_cpf.json)
 
 Usa a API pública [cpfhub.io](https://www.cpfhub.io/).
 
@@ -347,6 +362,6 @@ Usa a API pública [cpfhub.io](https://www.cpfhub.io/).
 
 ### 1️⃣ 0️⃣ Bot muda comportamento conforme horario
 
-[Baixar exemplo](botporhorario.json)
+[Baixar exemplo](../../../docs/chatbotinterno/botporhorario.json)
 
 Esse modelo apresenta diversos exemplos de como o bot interno pode ser utilizado. De acordo com o horário em que o cliente entra em contato, ele envia automaticamente uma mensagem informando o horário de atendimento. Se o cliente escolher a opção **“Retirar na loja”**, o bot envia a **localização da loja**. Além disso, o bot solicita o **CNPJ do cliente** e salva o valor em uma **variável** — caso essa informação já exista, o atendimento é encaminhado diretamente para a equipe.

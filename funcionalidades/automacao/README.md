@@ -1,7 +1,7 @@
 # Automação
 
-{% content-ref url="../../docs/chatbotinterno/" %}
-[chatbotinterno](../../docs/chatbotinterno/)
+{% content-ref url="chatbotinterno/" %}
+[chatbotinterno](chatbotinterno/)
 {% endcontent-ref %}
 
 {% content-ref url="../../docs/chatbotinterno/fluxo-por-palavra-chave.md" %}
@@ -11,4 +11,3 @@
 {% content-ref url="../../docs/modulos/campanha.md" %}
 [campanha.md](../../docs/modulos/campanha.md)
 {% endcontent-ref %}
-
