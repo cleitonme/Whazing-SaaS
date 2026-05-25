@@ -4,7 +4,7 @@
 
 <figure><img src="../../../.gitbook/assets/novaetapabot.png" alt=""><figcaption></figcaption></figure>
 
-#### Configuração de Fluxo <a href="#configuracao-de-fluxo" id="configuracao-de-fluxo"></a>
+#### Fluxo <a href="#configuracao-de-fluxo" id="configuracao-de-fluxo"></a>
 
 Para abrir configurações nas etapas ou configurações clique nas engrenagem
 
@@ -30,14 +30,12 @@ Você adiciona etapa tabela de preços
 
 <figure><img src="../../../.gitbook/assets/tabelapreco.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../../.gitbook/assets/tabelamodal1.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/tabelapreco2.png" alt=""><figcaption></figcaption></figure>
 
 Nas interações etapa boas vindas você coloca um menu:
 
-Olá seja bem vindo barbearia Whazing
-
-1 - Tabela Preços&#x20;
-
+Olá Seja Bem Vindo Barbearia Whazing\
+1 - Tabela Preços\
 2 - Falar com atendente
 
 Nas condições você cria condição se cliente escrever "1" ir para etapa tabela preços.
@@ -46,11 +44,15 @@ Nas condições você cria condição se cliente escrever "1" ir para etapa tabe
 
 Assim cliente mandar mensagem ele recebe menu:
 
-1 - Tabela Preços 2 - Falar com atendente
+Olá Seja Bem Vindo Barbearia Whazing\
+1 - Tabela Preços\
+2 - Falar com atendente
 
 Caso ele responder 1 vai para etapa tabela de preços onde bot vai enviar
 
-Corte Cabelo R$ 30,00 Barba R$ 40,00
+Corte Cabelo R$ 30,00\
+Barba R$ 40,00\
+Digite #menu para voltar menu inicial
 
 Acima exemplo simples de uso iremos disponibilizar alguns modelos prontos para serem importando para conhecer melhor.
 
@@ -75,4 +77,18 @@ Caso não queria bot responda isso pode usar condições qualquer resposta
 Nesse caso qualquer resposta cliente o bot não faz nada.
 
 As condições são executadas pela ordem que aparece canto esquerdo então se colocar qualquer resposta antes próximas não serão executadas
+
+#### Configuração de Fluxo <a href="#configuracao-de-fluxo" id="configuracao-de-fluxo"></a>
+
+Para comando #menu funcionar devemos colocar nas configurações&#x20;
+
+<figure><img src="../../../.gitbook/assets/configuracoes.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../../.gitbook/assets/configuracaomenu.png" alt=""><figcaption></figcaption></figure>
+
+Assim qualquer etapa bot cliente digitar #menu automaticamente volta para etapa "boas vindas"
+
+Sempre começa no boas vindas a execução do bot
+
+{% file src="../../../.gitbook/assets/modelochat.json" %}
 

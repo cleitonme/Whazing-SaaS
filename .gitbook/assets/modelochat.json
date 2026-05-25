@@ -1,0 +1,145 @@
+{
+	"name": "modelochat",
+	"nodeList": [
+		{
+			"id": "start",
+			"name": "Início",
+			"type": "start",
+			"left": "26px",
+			"top": "100px",
+			"ico": "mdi-play",
+			"viewOnly": true,
+			"status": "success",
+			"style": {}
+		},
+		{
+			"id": "configurations",
+			"name": "Configurações",
+			"type": "configurations",
+			"left": "340px",
+			"top": "100px",
+			"viewOnly": true,
+			"ico": "mdi-alert-circle-outline",
+			"configurations": {
+				"notOptionsSelectMessage": {
+					"message": "",
+					"stepReturn": "A"
+				},
+				"notResponseMessage": {
+					"time": 10,
+					"type": 1,
+					"destiny": "",
+					"message": ""
+				},
+				"welcomeMessage": {
+					"message": ""
+				},
+				"maxRetryBotMessage": {
+					"number": 3,
+					"type": 1,
+					"destiny": ""
+				},
+				"outOpenHours": {
+					"type": 1,
+					"destiny": "",
+					"checkBusinessHours": "disabled"
+				},
+				"farewellMessage": {
+					"message": ""
+				},
+				"autoDistributeTickets": "N",
+				"returnToMenuWords": [
+					"#menu"
+				]
+			}
+		},
+		{
+			"id": "nodeC",
+			"name": "Boas vindas!",
+			"type": "node",
+			"left": "26px",
+			"top": "301px",
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Olá Seja Bem Vindo Barbearia Whazing\n1 - Tabela Preços \n2 - Falar com atendente"
+					},
+					"id": "7b7266de-5202-4692-8d7a-86c714b78acc"
+				}
+			],
+			"conditions": [
+				{
+					"type": "R",
+					"condition": [
+						"1"
+					],
+					"id": "3e855999-c0d0-47c9-855f-1290da4cf115",
+					"action": 0,
+					"nextStepId": "9cd36d2c-c95e-44c2-88fb-44984a37482f"
+				},
+				{
+					"type": "R",
+					"condition": [
+						"2"
+					],
+					"id": "c9e2a298-0f99-4998-a66f-07e9aaaad782",
+					"action": 1,
+					"queueId": 13,
+					"nextStepId": null,
+					"userIdDestination": null,
+					"closeTicket": null,
+					"chatFlowId": null
+				},
+				{
+					"type": "US",
+					"condition": [],
+					"id": "d6c8d47d-ed77-4874-8130-34198eafe942",
+					"action": 4
+				}
+			],
+			"actions": []
+		},
+		{
+			"id": "9cd36d2c-c95e-44c2-88fb-44984a37482f",
+			"name": "tabela de preços",
+			"type": "node",
+			"left": "527px",
+			"top": "245px",
+			"state": "success",
+			"actions": [],
+			"conditions": [],
+			"interactions": [
+				{
+					"type": "MessageField",
+					"data": {
+						"message": "Corte Cabelo R$ 30,00\nBarba R$ 40,00\nDigite #menu para voltar menu inicial"
+					},
+					"id": "a0d70588-77f5-48e1-ac76-d9f000908ca4"
+				}
+			]
+		}
+	],
+	"lineList": [
+		{
+			"from": "start",
+			"to": "nodeC",
+			"paintStyle": {
+				"strokeWidth": 3,
+				"stroke": "#5c67f2"
+			}
+		},
+		{
+			"from": "nodeC",
+			"to": "9cd36d2c-c95e-44c2-88fb-44984a37482f",
+			"label": null
+		}
+	],
+	"action": 0,
+	"userId": 1,
+	"celularTeste": null,
+	"isActive": true,
+	"AcceptTransfer": true,
+	"AcceptKanban": true,
+	"id": null
+}
