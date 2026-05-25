@@ -209,7 +209,7 @@ A partir da versão **2.11.0**, estão disponíveis as seguintes interações:
 #### ✳️ Qualquer Resposta
 
 * Sempre posicionada **por último**.
-* Captura qualquer resposta não reconhecida.
+* Captura qualquer resposta não reconhecida
 
 #### ⏰ Dentro/Fora de Horário Personalizado
 
@@ -228,6 +228,26 @@ Se nenhuma condição for atendida, o bot enviará:
 > “Desculpe! Não entendi sua resposta. Vamos tentar novamente! Escolha uma opção válida.”
 
 _(Essa mensagem pode ser personalizada nas configurações.)_
+
+***
+
+**Rotear para:**
+
+Essa configuração para selecionar o que acontece caso condição seja atendida. As condições estiverem abaixo serão ignoradas.
+
+**Etapa** - Selecione próxima etapa que para avançar no bot
+
+**Fila** - Encaminha atendimento para fila selecionada a partir desse momento ticket sai do bot e as condições e configurações feitas no bot não terão mais validade
+
+**Usuário** - Encaminha atendimento para usuário selecionado a partir desse momento ticket sai do bot e as condições e configurações feitas no bot não terão mais validade, caso ticket estiver sem fila ele continua sem.
+
+**Fila + Usuário** - Encaminha atendimento para fila e usuário selecionado a partir desse momento ticket sai do bot e as condições e configurações feitas no bot não terão mais validade
+
+**Fechar Ticket** - Finaliza automaticamente o ticket
+
+**Fazer Nada -** Não faz nada literalmente ideal para combinar com condição qualquer respostas caso não queria bot fique repetindo e enviando "Desculpe! Não entendi sua resposta. Vamos tentar novamente! Escolha uma opção válida." Lembre se for usar esse método coloque qualquer resposta por ultimo para não sobrepor outras condições
+
+**Fluxo** - Transferi para outro fluxo do chat bot ideal para não deixar fluxo principal muito grande para manutenção futuras ser mais fácil
 
 ***
 
