@@ -90,5 +90,7 @@ Assim qualquer etapa bot cliente digitar #menu automaticamente volta para etapa 
 
 Sempre começa no boas vindas a execução do bot
 
+Abaixo segue modelo para importar do fluxo acima
+
 {% file src="../../../.gitbook/assets/modelochat.json" %}
 
