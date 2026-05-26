@@ -54,7 +54,7 @@ Exemplo de prompt:
 Você é um assistente virtual especializado em atendimento ao cliente. 
 Seja sempre educado e prestativo. 
 Somente responda o que estiver no prompt e transfira para o setor adequado conforme as palavras-chave. 
-Se identificar que o atendimento deve ser finalizado, faça isso automaticamente.
+Se identificar que o atendimento deve ser finalizado, faça isso automaticamente
 ```
 
 ***
@@ -74,7 +74,7 @@ Se não souber algo, seja honesto sobre isso.
 #### 5. Parâmetros Avançados
 
 * **Máximo de tokens da resposta** → Limita o tamanho das respostas da IA.
-* **Temperatura da IA** → Define a criatividade da resposta (0 = respostas mais objetivas, 1 = respostas mais criativas).
+* **Temperatura da IA** → Define a criatividade da resposta (0 = respostas mais objetivas, 1 = respostas mais criativas). Dica: Use 0.1 a 0.3 quanto mais baixo menor chance da ia sair do script e inventar respostas.
 * **Histórico de mensagens** → Número de mensagens passadas que a IA deve considerar (recomendado: até 10).
 * **Intervalo entre mensagens** → Define quanto tempo a IA deve esperar para responder quando o cliente envia mensagens “picadas” (ex: primeiro manda "bom dia", depois manda o assunto).
 
