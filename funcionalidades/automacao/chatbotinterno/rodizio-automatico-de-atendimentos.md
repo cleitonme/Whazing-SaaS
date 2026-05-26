@@ -67,3 +67,9 @@ Você pode escolher como o sistema irá distribuir os atendimentos:
 2. Chatbot direciona para uma fila
 3. A fila contém os atendentes
 4. O sistema distribui automaticamente conforme o tipo configurado
+
+#### Abaixo exemplo fluxo <a href="#resumo-pratico" id="resumo-pratico"></a>
+
+Somente abrir boas vindas ir em condições e escolher fila que será encaminhada atendimentos. No fluxo tem força condições que faz automaticamente verificar sem esperar resposta do cliente.
+
+{% file src="../../../.gitbook/assets/modelorodizio.json" %}
