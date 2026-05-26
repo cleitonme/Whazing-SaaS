@@ -124,6 +124,7 @@
     * [Groq/ChatGPT](integracoes/inteligencia-artificial/groq-chatgpt.md)
     * [Transcrição de Áudio](integracoes/inteligencia-artificial/transcricao_audio.md)
     * [Recepção inteligente](integracoes/inteligencia-artificial/recepcao-inteligente/README.md)
+      * [Como ativar a integração](integracoes/inteligencia-artificial/recepcao-inteligente/como-ativar-a-integracao.md)
       * [Como criar instruções eficientes para Atendimento Automático com IA](integracoes/inteligencia-artificial/recepcao-inteligente/como-criar-instrucoes-eficientes-para-atendimento-automatico-com-ia.md)
       * [Follow-up na Recepção Inteligente](integracoes/inteligencia-artificial/recepcao-inteligente/follow-up-recepcao-inteligente.md)
       * [Etiquetas Automáticas e Kanban com IA](integracoes/inteligencia-artificial/recepcao-inteligente/etiquetas-automaticas-e-kanban-com-ia.md)
