@@ -1,5 +1,12 @@
 # Changelog e Atualizações
 
+## 🚀 Versão 2.20.2 BETA – Changelog
+- bug beta - identificação errada encaminhar mensagens
+- Nova configuração painel saas - Quando ativado, empresas que não possuem conexão WhatsApp não oficial própria utilizarão automaticamente a conexão da Empresa 01 para validar se um número possui WhatsApp.
+- api oficial melhoria - correção numero contato enviado novo cadastro pouco divergente gera 2 contatos
+- Painel conexão oficial mais informações para clientes e mudança versão embeed
+- Tela atendimento validação envio template campos em branco
+
 ## 🚀 Versão 2.20.1 BETA – Changelog
 - bug beta - botao enviar chat interno anexa arquivo no mobile
 - bug beta - obriga legenda em arquivos
