@@ -1538,6 +1538,114 @@
           "response": []
         },
         {
+          "name": "SendMessageAPIOficial botao header video",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"number\": \"{{number}}\",\n  \"contents\": {\n    \"type\": \"button\",\n    \"body\": {\n      \"text\": \"Texto do Botão\"\n    },\n    \"action\": {\n      \"buttons\": [\n        {\n          \"type\": \"reply\",\n          \"reply\": {\n            \"id\": \"1\",\n            \"title\": \"Botão 1\"\n          }\n        },\n        {\n          \"type\": \"reply\",\n          \"reply\": {\n            \"id\": \"2\",\n            \"title\": \"Botão 2\"\n          }\n        },\n        {\n          \"type\": \"reply\",\n          \"reply\": {\n            \"id\": \"3\",\n            \"title\": \"Botão 3\"\n          }\n        }\n      ]\n    },\n    \"header\": {\n      \"type\": \"video\",\n      \"video\": {\n        \"link\": \"https://file-examples.com/storage/fed3a3387d6a176f795469e/2017/04/file_example_MP4_480_1_5MG.mp4\"\n      }\n    }\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/apioficial",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "apioficial"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "SendMessageAPIOficial botao header documento",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"number\": \"{{number}}\",\n  \"contents\": {\n    \"type\": \"button\",\n    \"body\": {\n      \"text\": \"Texto do Botão\"\n    },\n    \"action\": {\n      \"buttons\": [\n        {\n          \"type\": \"reply\",\n          \"reply\": {\n            \"id\": \"1\",\n            \"title\": \"Botão 1\"\n          }\n        },\n        {\n          \"type\": \"reply\",\n          \"reply\": {\n            \"id\": \"2\",\n            \"title\": \"Botão 2\"\n          }\n        },\n        {\n          \"type\": \"reply\",\n          \"reply\": {\n            \"id\": \"3\",\n            \"title\": \"Botão 3\"\n          }\n        }\n      ]\n    },\n    \"header\": {\n      \"type\": \"document\",\n      \"document\": {\n        \"link\": \"https://file-examples.com/storage/fed3a3387d6a176f795469e/2017/10/file-sample_150kB.pdf\"\n      }\n    }\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/apioficial",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "apioficial"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "SendMessageAPIOficial botao headerimagem",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"number\": \"{{number}}\",\n  \"contents\": {\n    \"type\": \"button\",\n    \"body\": {\n      \"text\": \"Texto do Botão\"\n    },\n    \"action\": {\n      \"buttons\": [\n        {\n          \"type\": \"reply\",\n          \"reply\": {\n            \"id\": \"1\",\n            \"title\": \"Botão 1\"\n          }\n        },\n        {\n          \"type\": \"reply\",\n          \"reply\": {\n            \"id\": \"2\",\n            \"title\": \"Botão 2\"\n          }\n        },\n        {\n          \"type\": \"reply\",\n          \"reply\": {\n            \"id\": \"3\",\n            \"title\": \"Botão 3\"\n          }\n        }\n      ]\n    },\n    \"header\": {\n      \"type\": \"image\",\n      \"image\": {\n        \"link\": \"https://img.freepik.com/psd-gratuitas/ilustracao-de-renderizacao-3d-isolada-do-icone-do-google_47987-9777.jpg\"\n      }\n    }\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/apioficial",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "apioficial"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
           "name": "SendMessageAPIOficial lista",
           "request": {
             "auth": {
@@ -1591,6 +1699,114 @@
             "body": {
               "mode": "raw",
               "raw": "{\n    \"number\": \"{{number}}\",\n    \"contents\": {\n        \"type\": \"cta_url\",\n        \"header\": {\n            \"type\": \"text\",\n            \"text\": \"Datas Disponíveis\"\n        },\n        \"body\": {\n            \"text\": \"Toque no botão abaixo para ver as datas disponíveis.\"\n        },\n        \"footer\": {\n            \"text\": \"Datas sujeitas a alterações.\"\n        },\n        \"action\": {\n            \"name\": \"cta_url\",\n            \"parameters\": {\n                \"display_text\": \"Ver Datas\",\n                \"url\": \"SEU_LINK\"\n            }\n        }\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/apioficial",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "apioficial"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "SendMessageAPIOficial link imagem header",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"number\": \"{{number}}\",\n  \"contents\": {\n    \"type\": \"cta_url\",\n    \"header\": {\n      \"type\": \"image\",\n      \"image\": {\n        \"link\": \"https://img.freepik.com/psd-gratuitas/ilustracao-de-renderizacao-3d-isolada-do-icone-do-google_47987-9777.jpg\"\n      }\n    },\n    \"body\": {\n      \"text\": \"Toque no botão abaixo para ver as datas disponíveis.\"\n    },\n    \"footer\": {\n      \"text\": \"Datas sujeitas a alterações.\"\n    },\n    \"action\": {\n      \"name\": \"cta_url\",\n      \"parameters\": {\n        \"display_text\": \"Ver Datas\",\n        \"url\": \"SEU_LINK\"\n      }\n    }\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/apioficial",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "apioficial"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "SendMessageAPIOficial link video header",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"number\": \"{{number}}\",\n  \"contents\": {\n    \"type\": \"cta_url\",\n    \"header\": {\n      \"type\": \"video\",\n      \"video\": {\n        \"link\": \"https://file-examples.com/storage/fed3a3387d6a176f795469e/2017/04/file_example_MP4_480_1_5MG.mp4\"\n      }\n    },\n    \"body\": {\n      \"text\": \"Toque no botão abaixo para ver as datas disponíveis.\"\n    },\n    \"footer\": {\n      \"text\": \"Datas sujeitas a alterações.\"\n    },\n    \"action\": {\n      \"name\": \"cta_url\",\n      \"parameters\": {\n        \"display_text\": \"Ver Datas\",\n        \"url\": \"SEU_LINK\"\n      }\n    }\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/apioficial",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "apioficial"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "SendMessageAPIOficial link documento header",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"number\": \"{{number}}\",\n  \"contents\": {\n    \"type\": \"cta_url\",\n    \"header\": {\n      \"type\": \"document\",\n      \"document\": {\n        \"link\": \"https://file-examples.com/storage/fed3a3387d6a176f795469e/2017/10/file-sample_150kB.pdf\"\n      }\n    },\n    \"body\": {\n      \"text\": \"Toque no botão abaixo para ver as datas disponíveis.\"\n    },\n    \"footer\": {\n      \"text\": \"Datas sujeitas a alterações.\"\n    },\n    \"action\": {\n      \"name\": \"cta_url\",\n      \"parameters\": {\n        \"display_text\": \"Ver Datas\",\n        \"url\": \"SEU_LINK\"\n      }\n    }\n  }\n}",
               "options": {
                 "raw": {
                   "language": "json"
@@ -1867,6 +2083,42 @@
           "response": []
         },
         {
+          "name": "botao header imagem",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"number\": \"{{number}}\",\n  \"contents\": {\n    \"type\": \"button\",\n    \"body\": {\n      \"text\": \"Texto do Botão\"\n    },\n    \"action\": {\n      \"buttons\": [\n        {\n          \"type\": \"reply\",\n          \"reply\": {\n            \"id\": \"1\",\n            \"title\": \"Botão 1\"\n          }\n        },\n        {\n          \"type\": \"reply\",\n          \"reply\": {\n            \"id\": \"2\",\n            \"title\": \"Botão 2\"\n          }\n        },\n        {\n          \"type\": \"reply\",\n          \"reply\": {\n            \"id\": \"3\",\n            \"title\": \"Botão 3\"\n          }\n        }\n      ]\n    },\n    \"header\": {\n      \"type\": \"image\",\n      \"image\": {\n        \"link\": \"https://img.freepik.com/psd-gratuitas/ilustracao-de-renderizacao-3d-isolada-do-icone-do-google_47987-9777.jpg\"\n      }\n    }\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/apiplus",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "apiplus"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
           "name": "lista",
           "request": {
             "auth": {
@@ -1939,6 +2191,42 @@
           "response": []
         },
         {
+          "name": "link imagem header",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"number\": \"{{number}}\",\n  \"contents\": {\n    \"type\": \"cta_url\",\n    \"header\": {\n      \"type\": \"image\",\n      \"image\": {\n        \"link\": \"https://img.freepik.com/psd-gratuitas/ilustracao-de-renderizacao-3d-isolada-do-icone-do-google_47987-9777.jpg\"\n      }\n    },\n    \"body\": {\n      \"text\": \"Toque no botão abaixo para ver as datas disponíveis.\"\n    },\n    \"footer\": {\n      \"text\": \"Datas sujeitas a alterações.\"\n    },\n    \"action\": {\n      \"name\": \"cta_url\",\n      \"parameters\": {\n        \"display_text\": \"Ver Datas\",\n        \"url\": \"SEU_LINK\"\n      }\n    }\n  }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/apiplus",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "apiplus"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
           "name": "solicitar localizacao",
           "request": {
             "auth": {
@@ -1992,6 +2280,42 @@
             "body": {
               "mode": "raw",
               "raw": "{\n    \"number\": \"{{number}}\",\n    \"contents\": {\n        \"type\": \"dinamic_button\",\n        \"text\": \"top\",\n        \"footerText\": \"footer\",\n        \"choices\": [\n            {\n                \"displayText\": \"resposta\",\n                \"id\": \"resposta\",\n                \"type\": \"reply\"\n            },\n            {\n                \"displayText\": \"Copiar Chave PIX\",\n                \"id\": \"\",\n                \"type\": \"copy\",\n                \"copyText\": \"11071697000108\"\n            },\n            {\n                \"displayText\": \"telefone\",\n                \"id\": \"\",\n                \"type\": \"call\",\n                \"phoneNumber\": \"554899416725\"\n            },\n            {\n                \"displayText\": \"site\",\n                \"id\": \"\",\n                \"type\": \"url\",\n                \"url\": \"https://www.whazing.com.br\"\n            }\n        ]\n    }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "{{base_url}}/apiplus",
+              "host": [
+                "{{base_url}}"
+              ],
+              "path": [
+                "apiplus"
+              ]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "botao dinamico imagem header",
+          "request": {
+            "auth": {
+              "type": "bearer",
+              "bearer": [
+                {
+                  "key": "token",
+                  "value": "{{token}}",
+                  "type": "string"
+                }
+              ]
+            },
+            "method": "POST",
+            "header": [],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n    \"number\": \"{{number}}\",\n    \"contents\": {\n        \"type\": \"dinamic_button\",\n        \"text\": \"top\",\n        \"footerText\": \"footer\",\n        \"imageUrl\": \"https://img.freepik.com/psd-gratuitas/ilustracao-de-renderizacao-3d-isolada-do-icone-do-google_47987-9777.jpg\",\n        \"choices\": [\n            {\n                \"displayText\": \"resposta\",\n                \"id\": \"resposta\",\n                \"type\": \"reply\"\n            },\n            {\n                \"displayText\": \"Copiar Chave PIX\",\n                \"id\": \"\",\n                \"type\": \"copy\",\n                \"copyText\": \"11071697000108\"\n            },\n            {\n                \"displayText\": \"telefone\",\n                \"id\": \"\",\n                \"type\": \"call\",\n                \"phoneNumber\": \"554899416725\"\n            },\n            {\n                \"displayText\": \"site\",\n                \"id\": \"\",\n                \"type\": \"url\",\n                \"url\": \"https://www.whazing.com.br\"\n            }\n        ]\n    }\n}",
               "options": {
                 "raw": {
                   "language": "json"

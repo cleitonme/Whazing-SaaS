@@ -1,5 +1,15 @@
 # Changelog e Atualizações
 
+## 🚀 Versão 2.20.3 BETA – Changelog
+- bug api oficial - erro envio botão tipo link
+- NotificaMe - Novo canal testado suporte inicial tiktok - Obrigado Rodrigo Faria pelo apoio
+- painel SaaS - Opção setar canal para validar numero
+- Suporte header com imagem topo envio botões dinamicos plus
+- Suporte header com imagem topo envio botões api oficial e plus
+- Suporte header com video topo envio botões api oficial
+- Suporte header com documento topo envio botões api oficial
+
+
 ## 🚀 Versão 2.20.2 BETA – Changelog
 - bug beta - identificação errada encaminhar mensagens
 - Nova configuração painel saas - Quando ativado, empresas que não possuem conexão WhatsApp não oficial própria utilizarão automaticamente a conexão da Empresa 01 para validar se um número possui WhatsApp.
