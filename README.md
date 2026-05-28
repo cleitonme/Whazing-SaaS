@@ -84,21 +84,13 @@ Mensal: 30% OFF no 1º mês (Cupom: WHAZING).\
 \
 Recorrente: 10% OFF todo mês a partir do 2º mês (Cupom: WHAZING10).\
 \
-Anual: 50% OFF em novas aquisições (O melhor custo-benefício!).\
-\
 👉 Comece seu teste agora: [hostear.com.br/whazing](http://hostear.com.br/whazing)\
 \
-\&#xNAN;_Nota: Para validar o desconto de 10%, lembre-se de aplicar o cupom WHAZING10 no momento do pagamento da fatura._\
+&#xNAN;_&#x4E;ota: Para validar o desconto de 10%, lembre-se de aplicar o cupom WHAZING10 no momento do pagamento da fatura._\
 \
 Hostear & Whazing: Potência brasileira ao seu alcance! ⚡
 
-## Cupom desconto Wavoip
-
-```bash
-whazing
-```
-
-#### 💎 Versão Premium <a href="#versao-premium" id="versao-premium"></a>
+💎 **Versão Premium**
 
 Adquira a versão Premium para remover anúncios.
 
