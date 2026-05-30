@@ -1,5 +1,40 @@
 # Changelog e Atualizações
 
+## 🚀 Versão 2.20.4 BETA – Changelog
+
+### 🤖 Inteligência Artificial
+
+* Recurso **Melhorar Texto** reformulado na tela de atendimento.
+
+  * Agora abre uma janela de pré-visualização permitindo comparar o texto original com a sugestão gerada pela IA antes de aplicar as alterações.
+
+* Adicionado suporte a **Provedor Personalizado (OpenAI Compatible)**.
+
+  * Possibilidade de utilizar provedores compatíveis com a API OpenAI informando URL base e modelo personalizado.
+
+### 💬 Novos Recursos IA no Atendimento
+
+* **Perguntar sobre o Ticket**
+
+  * Consulte a IA sobre o contexto da conversa.
+  * Pode utilizar Bases de Conhecimento selecionadas para enriquecer as respostas.
+
+* **Resumir Conversa**
+
+  * Gera um resumo automático do atendimento.
+  * Inclui análise geral do contexto da conversa.
+
+* **Sugerir Resposta**
+
+  * Gera sugestões de resposta com base no histórico do ticket.
+  * Pode utilizar Bases de Conhecimento para respostas mais precisas e contextualizadas.
+
+### ⚙️ Configurações
+
+* Novos recursos de IA utilizam a mesma estrutura de provedores já existente no sistema.
+* Suporte a OpenAI, Groq, Gemini e provedores compatíveis com OpenAI.
+* Prompts configuráveis individualmente para cada funcionalidade.
+
 ## 🚀 Versão 2.20.3 BETA – Changelog
 - bug api oficial - erro envio botão tipo link
 - NotificaMe - Novo canal testado suporte inicial tiktok - Obrigado Rodrigo Faria pelo apoio
