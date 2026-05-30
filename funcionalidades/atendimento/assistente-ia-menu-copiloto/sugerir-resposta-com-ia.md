@@ -65,7 +65,7 @@ O prompt personalizado pode ser utilizado para:
 
 ### Utilizar Base de Conhecimento
 
-Quando ativado, a IA pesquisará informações na Base de Conhecimento antes de gerar a resposta.
+Quando ativado, a IA pesquisará informações na [Base de Conhecimento](../../../integracoes/inteligencia-artificial/recepcao-inteligente/base-de-conhecimento.md) antes de gerar a resposta.
 
 Isso permite que as sugestões sejam baseadas em procedimentos, políticas, produtos e informações oficiais cadastradas pela empresa.
 
