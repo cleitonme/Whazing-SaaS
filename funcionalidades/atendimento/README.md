@@ -8,8 +8,8 @@
 [follow-up.md](../../docs/modulos/follow-up.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../docs/configuracoes/melhorar_texto_atendimento.md" %}
-[melhorar\_texto\_atendimento.md](../../docs/configuracoes/melhorar_texto_atendimento.md)
+{% content-ref url="assistente-ia-menu-copiloto/melhorar_texto_atendimento.md" %}
+[melhorar\_texto\_atendimento.md](assistente-ia-menu-copiloto/melhorar_texto_atendimento.md)
 {% endcontent-ref %}
 
 {% content-ref url="../../docs/modulos/despedida.md" %}
@@ -19,4 +19,3 @@
 {% content-ref url="../../docs/modulos/motivos-de-encerramento-de-tickets.md" %}
 [motivos-de-encerramento-de-tickets.md](../../docs/modulos/motivos-de-encerramento-de-tickets.md)
 {% endcontent-ref %}
-
