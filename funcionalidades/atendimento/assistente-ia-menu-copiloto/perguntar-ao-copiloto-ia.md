@@ -133,7 +133,7 @@ Exemplo:
 
 #### Base de Conhecimento (opcional)
 
-Quando a opção **Usar Base de Conhecimento** estiver ativada, o sistema busca conteúdos relevantes utilizando a similaridade configurada e adiciona os trechos encontrados ao contexto enviado para a IA.
+Quando a opção [**Usar Base de Conhecimento**](../../../integracoes/inteligencia-artificial/recepcao-inteligente/base-de-conhecimento.md) estiver ativada, o sistema busca conteúdos relevantes utilizando a similaridade configurada e adiciona os trechos encontrados ao contexto enviado para a IA.
 
 Exemplo:
 
