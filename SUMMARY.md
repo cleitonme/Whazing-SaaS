@@ -81,6 +81,7 @@
     * [Assistente IA — Menu Copiloto](funcionalidades/atendimento/assistente-ia-menu-copiloto/README.md)
       * [Melhorar Texto de Atendimento](funcionalidades/atendimento/assistente-ia-menu-copiloto/melhorar_texto_atendimento.md)
       * [Perguntar ao Copiloto IA](funcionalidades/atendimento/assistente-ia-menu-copiloto/perguntar-ao-copiloto-ia.md)
+      * [Resumir Conversa com IA](funcionalidades/atendimento/assistente-ia-menu-copiloto/resumir-conversa-com-ia.md)
     * [Despedida](docs/modulos/despedida.md)
     * [Motivos de Encerramento](docs/modulos/motivos-de-encerramento-de-tickets.md)
     * [Chave PIX](funcionalidades/atendimento/chave-pix.md)
