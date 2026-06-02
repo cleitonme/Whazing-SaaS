@@ -149,6 +149,7 @@
       * [Módulo de Disparo de Mensagens (JSON)](integracoes/crm-and-erp/perfexcrm/modulo-de-disparo-de-mensagens-json.md)
       * [Whazing em Iframe no PerfexCRM](integracoes/crm-and-erp/perfexcrm/whazing-em-iframe-no-perfexcrm.md)
   * [Telefonia](integracoes/telefonia/README.md)
+    * [Servidor SIP para WhatsApp API Oficial](integracoes/telefonia/servidor-sip-para-whatsapp-api-oficial.md)
     * [Wavoip](integracoes/telefonia/configurar_wavoip.md)
     * [Discador SIP](integracoes/telefonia/discador-sip.md)
   * [Webhooks](integracoes/webhooks/README.md)
