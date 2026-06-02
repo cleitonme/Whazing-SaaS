@@ -7,16 +7,20 @@ O **Hub Whazing** permite conectar facilmente a **API Oficial do WhatsApp Busine
 💰 **Custo:** R$20,00 por mês\
 **Suporte Coexistência**
 
+### Dúvidas?
+
+Entre em contato pelo WhatsApp:
+
+📱 **+55 48 3197-0877**\
+📱 **+55 48 3197-0599**
+
+O atendimento inicial é realizado por um assistente virtual. Para falar com nossa equipe, basta enviar a mensagem **"Atendimento Humano"**.
+
 ***
 
 ### 1️⃣ Solicitar acesso ao Hub
 
 Primeiro, solicite seu acesso ao Hub Whazing.
-
-Entre em contato com o suporte pelo WhatsApp:
-
-* 📱 **+55 48 3197-0877**
-* 📱 **+55 48 3197-0599**
 
 Após solicitar, você receberá:
 
