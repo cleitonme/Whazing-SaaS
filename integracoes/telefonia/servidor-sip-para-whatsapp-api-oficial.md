@@ -65,7 +65,7 @@ Para utilizar o Servidor SIP é necessário:
 
 Acesse o WhatsApp Manager e verifique o limite diário disponível para sua conta:
 
-[https://business.facebook.com/wa/manage/home/](https://business.facebook.com/wa/manage/home/)
+{% embed url="https://business.facebook.com/wa/manage/home/" %}
 
 ### Limitações
 
@@ -79,8 +79,17 @@ Acesse o WhatsApp Manager e verifique o limite diário disponível para sua cont
 
 #### Documentação WhatsApp Calling
 
-[https://developers.facebook.com/documentation/business-messaging/whatsapp/calling](https://developers.facebook.com/documentation/business-messaging/whatsapp/calling)
+{% embed url="https://developers.facebook.com/documentation/business-messaging/whatsapp/calling" %}
 
 #### Tabela Oficial de Preços
 
-[https://developers.facebook.com/documentation/business-messaging/whatsapp/calling/pricing](https://developers.facebook.com/documentation/business-messaging/whatsapp/calling/pricing)
+{% embed url="https://developers.facebook.com/documentation/business-messaging/whatsapp/calling/pricing" %}
+
+### Dúvidas?
+
+Entre em contato pelo WhatsApp:
+
+📱 **+55 48 3197-0877**\
+📱 **+55 48 3197-0599**
+
+O atendimento inicial é realizado por um assistente virtual. Para falar com nossa equipe, basta enviar a mensagem **"Atendimento Humano"**.
