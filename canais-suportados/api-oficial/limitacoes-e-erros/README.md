@@ -1,6 +1,6 @@
 # ⚠️ Limitações e Erros
 
-#### ⚠️ Considerações importantes  <a href="#consideracoes-importantes" id="consideracoes-importantes"></a>
+#### ⚠️ Considerações importantes <a href="#consideracoes-importantes" id="consideracoes-importantes"></a>
 
 * A API oficial **não oferece suporte a grupos**.
 * A API oficial **não exibe a foto do contato**.
@@ -92,9 +92,9 @@ Quando uma mensagem aparece com um **“X” vermelho**, significa que ela **foi
 
 Quando o webhook está ativo, é possível visualizar o **motivo exato da rejeição** da mensagem.
 
-<figure><img src="../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (51).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (52).png" alt=""><figcaption></figcaption></figure>
 
 ➡️ Neste exemplo, o erro ocorreu porque foi enviado um **arquivo em formato não suportado**.
 
@@ -102,7 +102,7 @@ Quando o webhook está ativo, é possível visualizar o **motivo exato da rejei�
 
 ### Outro exemplo de erro retornado pela Meta
 
-<figure><img src="../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
