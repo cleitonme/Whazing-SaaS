@@ -69,6 +69,22 @@ Documentação:
 
 ***
 
+### Recomendação para APIs Não Oficiais
+
+Atualmente recomendamos a utilização da **Wuzapi** em vez de integrações baseadas em **Baileys**.
+
+O principal motivo é que a Wuzapi costuma apresentar:
+
+* Menor consumo de memória e processamento.
+* Melhor desempenho em servidores com muitos atendimentos.
+* Maior estabilidade em conexões de longa duração.
+* Menor ocorrência de erros relacionados à sincronização da sessão.
+* Atualizações frequentes para acompanhar mudanças do WhatsApp.
+
+Embora o Baileys continue disponível e possa funcionar adequadamente em diversos cenários, para novas instalações e novos canais recomendamos priorizar a utilização da Wuzapi.
+
+***
+
 ## Coex (API Oficial)
 
 Mesmo utilizando a API Oficial da Meta através do Coex, podem ocorrer situações de:

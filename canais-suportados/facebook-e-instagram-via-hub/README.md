@@ -1,4 +1,4 @@
-# Whatsapp, Instagram, facebook e webchat via NotificaMe
+# Whatsapp, Instagram, facebook, TikTok e Webchat via NotificaMe
 
 ### ✅ O que este sistema suporta
 
@@ -8,6 +8,7 @@ Nosso sistema é **homologado oficialmente** para os seguintes canais:
 * Instagram
 * Facebook
 * WebChat
+* TikTok
 
 > Outros canais até podem funcionar, mas **não são homologados**, então não garantimos funcionamento total.
 

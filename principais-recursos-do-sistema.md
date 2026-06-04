@@ -143,7 +143,7 @@ Ideal para empresas que desejam escalar o atendimento sem aumentar equipe.
 
 * **WhatsApp API Oficial** (Direto ou via HUB)
 * **API Não Oficial Plus** (Lista e Botões)
-* **Webchat, Facebook e Instagram via HUB**
+* **Tiktok, Webchat, Facebook e Instagram via HUB**
 * **Wavoip (Chamadas WhatsApp)**
 * **Discador SIP (WebRTC)**
 * **Transferência de Chamadas SIP**

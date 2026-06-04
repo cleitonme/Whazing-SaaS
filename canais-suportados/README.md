@@ -72,6 +72,9 @@ Usar cupom desconto: whazing
 * [**Webchat**](facebook-e-instagram-via-hub/)
   * Sem taxa de ativação
   * Mensalidade: **R$ 50,00 por canal conectado**
+* [**TikTok**](facebook-e-instagram-via-hub/)
+  * Ativação por canal: **R$ 50,00**
+  * Mensalidade: **R$ 50,00 por canal conectado**
 
 ***
 
