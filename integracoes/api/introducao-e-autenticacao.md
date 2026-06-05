@@ -10,6 +10,8 @@ Para fazer download acessa configurações - canais/api
 
 Na aba API, clique adicionar selecione canal quer usar e depois aparece botão postman para baixar
 
+[https://raw.githubusercontent.com/cleitonme/Whazing-SaaS/refs/heads/main/docs/api/apiizing.json](https://raw.githubusercontent.com/cleitonme/Whazing-SaaS/refs/heads/main/docs/api/apiizing.json)
+
 ### Autenticação
 
 Todas as requisições devem incluir o token Bearer no header:
