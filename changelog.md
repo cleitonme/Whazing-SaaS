@@ -22,8 +22,6 @@
 * Corrigido problema de duplicação de mensagens rápidas durante a criação.
 * Corrigido problema de visualização de templates em modo escuro nas telas de campanhas e agendamentos.
 
-
-
 ## 🚀 Versão 2.20.4 BETA – Changelog
 
 ### 🤖 Inteligência Artificial
