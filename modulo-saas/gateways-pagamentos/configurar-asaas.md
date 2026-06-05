@@ -1,6 +1,14 @@
 # Asaas
 
-Siga os passos abaixo para configurar sua conta no Asaas e conectá-la ao Whazing de forma simples:
+### 🎁 Ganhe R$ 50 de Bônus no Asaas
+
+Ainda não possui conta no Asaas?
+
+Cadastre-se através do nosso link de indicação e receba **R$ 50,00 de bônus** para utilizar na plataforma:
+
+👉 [https://www.asaas.com/r/MJVUJPJY](https://www.asaas.com/r/MJVUJPJY)
+
+Após criar sua conta, siga o guia de configuração abaixo para integrar o Asaas ao Whazing.
 
 ### 1️⃣ Acessar a Página de Integrações
 
