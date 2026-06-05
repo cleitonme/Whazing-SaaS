@@ -1,38 +1,56 @@
 {
   "info": {
-    "_postman_id": "03319d28-c5ce-46de-ac34-05f38e030ef3",
-    "name": "API Whazing ADMIN",
-    "description": "API de administração do Whazing SaaS. Substitua as variáveis URL_ADMIN, API_ID e TOKEN_ADMIN nas configurações da coleção.",
+    "_postman_id": "whazing-api-admin-v2",
+    "name": "Whazing - API Admin",
+    "description": "API Admin do Whazing. Autenticação via Bearer Token em todos os endpoints.\n\nVariáveis necessárias:\n- baseUrl: URL base da API (ex: https://app.whazing.com)\n- apiId: ID da API (obtido em Configurações > API Admin)\n- bearerToken: Token de autenticação (obtido em Configurações > API Admin)",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "variable": [
-    { "key": "URL_ADMIN", "value": "https://SEU_BACKEND/v1/api/admin" },
-    { "key": "API_ID", "value": "SEU_API_ID" },
-    { "key": "TOKEN_ADMIN", "value": "SEU_BEARER_TOKEN" }
+    {
+      "key": "baseUrl",
+      "value": "https://app.whazing.com",
+      "type": "string"
+    },
+    {
+      "key": "apiId",
+      "value": "SEU_API_ID_AQUI",
+      "type": "string"
+    },
+    {
+      "key": "bearerToken",
+      "value": "SEU_BEARER_TOKEN_AQUI",
+      "type": "string"
+    }
   ],
   "auth": {
     "type": "bearer",
-    "bearer": [{ "key": "token", "value": "{{TOKEN_ADMIN}}", "type": "string" }]
+    "bearer": [
+      {
+        "key": "token",
+        "value": "{{bearerToken}}",
+        "type": "string"
+      }
+    ]
   },
   "item": [
     {
-      "name": "🏢 Tenants",
+      "name": "Tenants",
       "item": [
         {
           "name": "Criar Tenant",
           "request": {
             "method": "POST",
             "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/createtenant",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "createtenant"]
+            },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"name\": \"Fulano de Tal\",\n  \"email\": \"fulano@exemplo.com\",\n  \"password\": \"mudar123\",\n  \"tenantName\": \"Empresa Exemplo\",\n  \"phone\": \"5548999990000\",\n  \"plano\": \"1\",\n  \"timetest\": \"7\",\n  \"recurrence\": \"MENSAL\",\n  \"status\": \"active\",\n  \"trial\": false,\n  \"affiliate\": false\n}"
-            },
-            "url": {
-              "raw": "{{URL_ADMIN}}/{{API_ID}}/createtenant",
-              "host": ["{{URL_ADMIN}}"],
-              "path": ["{{API_ID}}", "createtenant"]
-            },
-            "description": "Cria um novo tenant com usuário admin.\n\n**recurrence**: MENSAL | BIMESTRAL | TRIMESTRAL | SEMESTRAL | ANUAL\n**timetest**: dias de trial\n**status**: active | inactive"
+              "raw": "{\n  \"name\": \"Test User\",\n  \"email\": \"test@example.com\",\n  \"password\": \"mudar123\",\n  \"tenantName\": \"Test Company\",\n  \"phone\": \"55555555555\",\n  \"plano\": \"1\",\n  \"timetest\": \"3\",\n  \"recurrence\": \"MENSAL\"\n}",
+              "options": { "raw": { "language": "json" } }
+            }
           }
         },
         {
@@ -40,29 +58,27 @@
           "request": {
             "method": "POST",
             "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/updatetenant",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "updatetenant"]
+            },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"tenantId\": \"23\",\n  \"tenantName\": \"Empresa Atualizada\",\n  \"email\": \"novo@exemplo.com\",\n  \"phone\": \"5548999990001\",\n  \"plano\": \"2\",\n  \"dueDate\": \"2026-06-01T00:00:00\",\n  \"recurrence\": \"TRIMESTRAL\",\n  \"status\": \"active\"\n}"
-            },
-            "url": {
-              "raw": "{{URL_ADMIN}}/{{API_ID}}/updatetenant",
-              "host": ["{{URL_ADMIN}}"],
-              "path": ["{{API_ID}}", "updatetenant"]
-            },
-            "description": "Atualiza dados do tenant. Ao alterar plano ou recorrência, as faturas abertas são recriadas automaticamente."
+              "raw": "{\n  \"tenantId\": \"23\",\n  \"email\": \"test@example.com\",\n  \"tenantName\": \"Test Company\",\n  \"phone\": \"55555555555\",\n  \"plano\": \"1\",\n  \"dueDate\": \"2025-07-17T20:58\",\n  \"recurrence\": \"MENSAL\",\n  \"trial\": false\n}",
+              "options": { "raw": { "language": "json" } }
+            }
           }
         },
         {
-          "name": "Listar Todos os Tenants",
+          "name": "Listar Tenants",
           "request": {
             "method": "GET",
-            "header": [],
             "url": {
-              "raw": "{{URL_ADMIN}}/{{API_ID}}",
-              "host": ["{{URL_ADMIN}}"],
-              "path": ["{{API_ID}}"]
-            },
-            "description": "Retorna todos os tenants cadastrados (exceto Tenant 1)."
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}"]
+            }
           }
         },
         {
@@ -70,16 +86,16 @@
           "request": {
             "method": "GET",
             "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}"]
+            },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"tenantId\": \"23\"\n}"
-            },
-            "url": {
-              "raw": "{{URL_ADMIN}}/{{API_ID}}",
-              "host": ["{{URL_ADMIN}}"],
-              "path": ["{{API_ID}}"]
-            },
-            "description": "Envia tenantId no body para filtrar somente aquele tenant."
+              "raw": "{\n  \"tenantId\": \"23\"\n}",
+              "options": { "raw": { "language": "json" } }
+            }
           }
         },
         {
@@ -87,136 +103,138 @@
           "request": {
             "method": "POST",
             "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/addMonth",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "addMonth"]
+            },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"tenantId\": \"23\"\n}"
-            },
-            "url": {
-              "raw": "{{URL_ADMIN}}/{{API_ID}}/addMonth",
-              "host": ["{{URL_ADMIN}}"],
-              "path": ["{{API_ID}}", "addMonth"]
-            },
-            "description": "Adiciona exatamente 1 mês ao dueDate do tenant (independente da recorrência)."
+              "raw": "{\n  \"tenantId\": \"23\"\n}",
+              "options": { "raw": { "language": "json" } }
+            }
           }
         }
       ]
     },
-
     {
-      "name": "👤 Usuários",
+      "name": "Usuários",
       "item": [
         {
           "name": "Listar Usuários do Tenant",
           "request": {
             "method": "GET",
-            "header": [],
             "url": {
-              "raw": "{{URL_ADMIN}}/{{API_ID}}/users/23",
-              "host": ["{{URL_ADMIN}}"],
-              "path": ["{{API_ID}}", "users", "23"]
-            },
-            "description": "Retorna todos os usuários ativos de um tenant."
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/users/23",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "users", "23"]
+            }
           }
         },
         {
-          "name": "Alterar Senha de Usuário",
+          "name": "Atualizar Senha do Usuário",
           "request": {
             "method": "POST",
             "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/users",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "users"]
+            },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"userId\": \"42\",\n  \"password\": \"novaSenha123\"\n}"
-            },
-            "url": {
-              "raw": "{{URL_ADMIN}}/{{API_ID}}/users",
-              "host": ["{{URL_ADMIN}}"],
-              "path": ["{{API_ID}}", "users"]
-            },
-            "description": "Altera a senha de qualquer usuário (exceto do Tenant 1). Mínimo 6 caracteres."
+              "raw": "{\n  \"userId\": \"42\",\n  \"password\": \"novaSenha123\"\n}",
+              "options": { "raw": { "language": "json" } }
+            }
           }
         }
       ]
     },
-
     {
-      "name": "📦 Planos",
+      "name": "Planos",
       "item": [
         {
           "name": "Listar Planos",
           "request": {
             "method": "GET",
-            "header": [],
             "url": {
-              "raw": "{{URL_ADMIN}}/{{API_ID}}/plans",
-              "host": ["{{URL_ADMIN}}"],
-              "path": ["{{API_ID}}", "plans"]
-            },
-            "description": "Retorna todos os planos disponíveis ordenados pelo valor."
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/plans",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "plans"]
+            }
           }
         }
       ]
     },
-
     {
-      "name": "🧾 Faturas",
+      "name": "Faturas",
       "item": [
         {
-          "name": "Listar Todas as Faturas",
+          "name": "Listar Faturas (todas)",
           "request": {
             "method": "GET",
-            "header": [],
             "url": {
-              "raw": "{{URL_ADMIN}}/{{API_ID}}/invoices/23",
-              "host": ["{{URL_ADMIN}}"],
-              "path": ["{{API_ID}}", "invoices", "23"],
-              "query": [
-                { "key": "status", "value": "all", "description": "open | paid | (omitir = all)" }
-              ]
-            },
-            "description": "Retorna histórico completo de faturas do tenant.\n\nQuery `status`:\n- `open` → somente em aberto\n- `paid` → somente pagas\n- omitido → todas"
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/invoices/23",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "invoices", "23"]
+            }
           }
         },
         {
-          "name": "Faturas em Aberto (atalho)",
+          "name": "Listar Faturas (filtro status)",
           "request": {
             "method": "GET",
-            "header": [],
             "url": {
-              "raw": "{{URL_ADMIN}}/{{API_ID}}/invoices/23/open",
-              "host": ["{{URL_ADMIN}}"],
-              "path": ["{{API_ID}}", "invoices", "23", "open"]
-            },
-            "description": "Atalho para listar somente faturas com status `open`, ordenadas por vencimento."
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/invoices/23?status=open",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "invoices", "23"],
+              "query": [{ "key": "status", "value": "open", "description": "open | paid | all" }]
+            }
           }
         },
         {
-          "name": "Gerar Pagamento / QR Code PIX",
+          "name": "Faturas em Aberto",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/invoices/23/open",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "invoices", "23", "open"]
+            }
+          }
+        },
+        {
+          "name": "Gerar Pagamento / QR Code",
           "request": {
             "method": "POST",
             "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/invoices/456/payment",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "invoices", "456", "payment"]
+            },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"price\": 99.90\n}"
-            },
-            "url": {
-              "raw": "{{URL_ADMIN}}/{{API_ID}}/invoices/101/payment",
-              "host": ["{{URL_ADMIN}}"],
-              "path": ["{{API_ID}}", "invoices", "101", "payment"]
-            },
-            "description": "Gera cobrança via gateway configurado (Efi, Asaas, MercadoPago, Stripe, etc).\n\n**price** é opcional: se omitido usa o valor da fatura.\n\nResposta (varia por gateway):\n- URL: `{ urlPagamento: '...' }`\n- PIX: `{ qrcode: { qrcode: '...' }, valor: { original: 99.90 } }`"
+              "raw": "{\n  \"price\": 99.90\n}",
+              "options": { "raw": { "language": "json" } }
+            }
           }
         },
         {
-          "name": "Marcar como Paga (manual)",
+          "name": "Marcar como Paga",
           "request": {
             "method": "POST",
-            "header": [],
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
             "url": {
-              "raw": "{{URL_ADMIN}}/{{API_ID}}/invoices/101/paid",
-              "host": ["{{URL_ADMIN}}"],
-              "path": ["{{API_ID}}", "invoices", "101", "paid"]
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/invoices/456/paid",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "invoices", "456", "paid"]
             },
-            "description": "Baixa manual de fatura sem passar pelo gateway.\n\nExecuta o mesmo fluxo dos webhooks:\n1. Marca fatura como `paid`\n2. Estende `dueDate` do tenant conforme recorrência\n3. Emite evento Socket para o frontend\n4. Envia mensagem de confirmação (se configurado)"
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": { "raw": { "language": "json" } }
+            }
           }
         },
         {
@@ -224,16 +242,16 @@
           "request": {
             "method": "POST",
             "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/invoices/create",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "invoices", "create"]
+            },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"tenantId\": \"23\",\n  \"detail\": \"Taxa de implantação\",\n  \"value\": 150.00,\n  \"dueDate\": \"2025-12-31\",\n  \"recurrence\": \"MENSAL\"\n}"
-            },
-            "url": {
-              "raw": "{{URL_ADMIN}}/{{API_ID}}/invoices/create",
-              "host": ["{{URL_ADMIN}}"],
-              "path": ["{{API_ID}}", "invoices", "create"]
-            },
-            "description": "Cria uma fatura avulsa com valor e vencimento personalizados.\n\n`recurrence` é opcional — herda a recorrência do tenant se omitido.\n`detail` é opcional — usa nome do tenant por padrão."
+              "raw": "{\n  \"tenantId\": \"23\",\n  \"detail\": \"Taxa de implantação\",\n  \"value\": 150.00,\n  \"dueDate\": \"2025-12-31\",\n  \"recurrence\": \"MENSAL\"\n}",
+              "options": { "raw": { "language": "json" } }
+            }
           }
         },
         {
@@ -241,42 +259,235 @@
           "request": {
             "method": "PUT",
             "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/invoices/456",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "invoices", "456"]
+            },
             "body": {
               "mode": "raw",
-              "raw": "{\n  \"detail\": \"Plano Pro - Corrigido\",\n  \"value\": 199.90,\n  \"dueDate\": \"2026-01-15\",\n  \"status\": \"open\"\n}"
-            },
-            "url": {
-              "raw": "{{URL_ADMIN}}/{{API_ID}}/invoices/101",
-              "host": ["{{URL_ADMIN}}"],
-              "path": ["{{API_ID}}", "invoices", "101"]
-            },
-            "description": "Atualiza campos de uma fatura. Todos os campos são opcionais.\n\nNão é possível editar faturas já pagas (exceto para reabrir com `status: open`)."
+              "raw": "{\n  \"detail\": \"Nova descrição\",\n  \"value\": 199.90,\n  \"dueDate\": \"2026-01-15\",\n  \"status\": \"open\"\n}",
+              "options": { "raw": { "language": "json" } }
+            }
           }
         },
         {
           "name": "Excluir Fatura",
           "request": {
             "method": "DELETE",
-            "header": [],
             "url": {
-              "raw": "{{URL_ADMIN}}/{{API_ID}}/invoices/101",
-              "host": ["{{URL_ADMIN}}"],
-              "path": ["{{API_ID}}", "invoices", "101"]
-            },
-            "description": "Remove a fatura permanentemente e reprocessa as faturas abertas do tenant via InvoiceCreateJob."
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/invoices/456",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "invoices", "456"]
+            }
           }
         },
         {
-          "name": "Recriar Faturas do Tenant",
+          "name": "Recriar Faturas",
           "request": {
             "method": "POST",
-            "header": [],
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
             "url": {
-              "raw": "{{URL_ADMIN}}/{{API_ID}}/invoices/23/recreate",
-              "host": ["{{URL_ADMIN}}"],
-              "path": ["{{API_ID}}", "invoices", "23", "recreate"]
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/invoices/23/recreate",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "invoices", "23", "recreate"]
             },
-            "description": "Deleta todas as faturas abertas do tenant e recria a partir do InvoiceCreateJob.\n\nUtil após alterar plano, recorrência ou data de vencimento."
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": { "raw": { "language": "json" } }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "NFS-e - Dados Fiscais",
+      "item": [
+        {
+          "name": "Consultar Dados Fiscais",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/nfse/fiscal/23",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "nfse", "fiscal", "23"]
+            }
+          }
+        },
+        {
+          "name": "Atualizar Dados Fiscais",
+          "request": {
+            "method": "PUT",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/nfse/fiscal/23",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "nfse", "fiscal", "23"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"tenantFiscalName\": \"Empresa LTDA\",\n  \"cpfCnpj\": \"00.000.000/0001-00\",\n  \"fiscalEmail\": \"fiscal@empresa.com\",\n  \"fiscalMobilePhone\": \"11999999999\",\n  \"address\": \"Rua Exemplo\",\n  \"addressNumber\": \"100\",\n  \"complement\": \"Sala 1\",\n  \"province\": \"Centro\",\n  \"city\": \"São Paulo\",\n  \"state\": \"SP\",\n  \"postalCode\": \"01001000\",\n  \"invoiceEmissionEnabled\": true\n}",
+              "options": { "raw": { "language": "json" } }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "NFS-e - Consultas",
+      "item": [
+        {
+          "name": "Listar NFS-e (todas)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/nfse",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "nfse"]
+            }
+          }
+        },
+        {
+          "name": "Listar NFS-e (com filtros)",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/nfse?tenantId=23&status=AUTHORIZED&pageNumber=1&pageSize=20",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "nfse"],
+              "query": [
+                { "key": "tenantId", "value": "23", "description": "Filtrar por tenant" },
+                { "key": "status", "value": "AUTHORIZED", "description": "SCHEDULED | AUTHORIZED | CANCELED | ERROR" },
+                { "key": "invoiceId", "value": "", "description": "Filtrar por invoice", "disabled": true },
+                { "key": "startDate", "value": "", "description": "YYYY-MM-DD — filtro por effectiveDate", "disabled": true },
+                { "key": "endDate", "value": "", "description": "YYYY-MM-DD", "disabled": true },
+                { "key": "pageNumber", "value": "1" },
+                { "key": "pageSize", "value": "20" }
+              ]
+            }
+          }
+        },
+        {
+          "name": "Detalhe NFS-e",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/nfse/1",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "nfse", "1"]
+            }
+          }
+        },
+        {
+          "name": "NFS-e por Invoice",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/nfse/invoices/456",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "nfse", "invoices", "456"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "NFS-e - Emissão e Ciclo de Vida",
+      "item": [
+        {
+          "name": "Emitir NFS-e",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/nfse/invoices/456/schedule",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "nfse", "invoices", "456", "schedule"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"effectiveDate\": \"2025-12-31\"\n}",
+              "options": { "raw": { "language": "json" } }
+            }
+          }
+        },
+        {
+          "name": "Forçar Autorização NFS-e",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/nfse/1/authorize",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "nfse", "1", "authorize"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": { "raw": { "language": "json" } }
+            }
+          }
+        },
+        {
+          "name": "Cancelar NFS-e",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/nfse/1/cancel",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "nfse", "1", "cancel"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": { "raw": { "language": "json" } }
+            }
+          }
+        },
+        {
+          "name": "Sincronizar NFS-e",
+          "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "url": {
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/nfse/1/sync",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "nfse", "1", "sync"]
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{}",
+              "options": { "raw": { "language": "json" } }
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "NFS-e - Downloads",
+      "item": [
+        {
+          "name": "Download PDF",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/nfse/1/download/pdf",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "nfse", "1", "download", "pdf"]
+            }
+          }
+        },
+        {
+          "name": "Download XML",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "{{baseUrl}}/v1/api/admin/{{apiId}}/nfse/1/download/xml",
+              "host": ["{{baseUrl}}"],
+              "path": ["v1", "api", "admin", "{{apiId}}", "nfse", "1", "download", "xml"]
+            }
           }
         }
       ]

@@ -3019,6 +3019,45 @@
               "response": []
             },
             {
+              "name": "outros campos",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{token}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"title\": \"Lead qualificado — prioridade alta\",\n  \"description\": \"Descrição detalhada do card\",\n  \"priority\": \"high\",\n  \"columnId\": 1,\n  \"assigneeId\": 1,\n  \"teamId\": 1,\n  \"contactId\": 5,\n  \"ticketId\": 10,\n  \"dealValue\": \"1500.00\",\n  \"dueDate\": \"2026-06-30\",\n  \"startDate\": \"2026-06-04\",\n  \"estimatedHours\": 8,\n  \"loggedHours\": 2.5,\n  \"coverColor\": \"#f59e0b\",\n  \"coverImage\": null,\n  \"labelIds\": [1, 2, 3],\n  \"customFields\": {\n    \"campo1\": \"valor1\",\n    \"campo2\": 42\n  }\n}"
+                },
+                "url": {
+                  "raw": "{{base_url}}/kanbanpro/card/10",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "kanbanpro",
+                    "card",
+                    "10"
+                  ]
+                },
+                "description": "Atualiza campos de um card sem usar a lógica de bot.\nTodos os campos do body são opcionais."
+              },
+              "response": []
+            },
+            {
               "name": "Mover card para outra coluna",
               "request": {
                 "auth": {

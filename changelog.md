@@ -1,5 +1,29 @@
 # Changelog e Atualizações
 
+### 🚀 Versão 2.20.5 BETA – Changelog
+
+#### ✨ Novidades
+
+* Novo módulo financeiro no painel SaaS para melhor controle de entradas e saídas.
+* Emissão de NFS-e integrada ao Asaas.
+* Criação de faturas avulsas, que não alteram a data de vencimento do cliente.
+* Faturas avulsas não adicionam período de renovação quando são pagas.
+* Configuração do chatbot padrão movida para a tela de criação de chatbot, com explicações mais claras sobre seu funcionamento.
+* Exibição de alerta de atualização do Wuzapi no painel SaaS.
+* Adicionado horário de início e término para campanhas.
+
+#### 🔧 Melhorias
+
+* Empresas com o financeiro desativado não geram mais faturas automaticamente.
+* Em campanhas utilizando API Oficial, erros retornados pelo JSON de envio agora são exibidos na lista de contatos da campanha.
+
+#### 🐞 Correções
+
+* Corrigido problema de duplicação de mensagens rápidas durante a criação.
+* Corrigido problema de visualização de templates em modo escuro nas telas de campanhas e agendamentos.
+
+
+
 ## 🚀 Versão 2.20.4 BETA – Changelog
 
 ### 🤖 Inteligência Artificial
