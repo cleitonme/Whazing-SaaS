@@ -53,6 +53,7 @@
     * [Integração API — Envio de Mensagens e Alertas (Formato JSON)](modulo-saas/integracao-api-envio-de-mensagens-e-alertas/integracao-api-envio-de-mensagens-e-alertas-formato-json.md)
     * [Mensagem de boas vindas teste](modulo-saas/integracao-api-envio-de-mensagens-e-alertas/mensagem-boas-vindas-teste.md)
     * [Envio WhatsApp aviso fatura em aberto](modulo-saas/integracao-api-envio-de-mensagens-e-alertas/envio-whatsapp-aviso-fatura-em-aberto.md)
+  * [Emissão de NFS-e com Asaas](modulo-saas/emissao-de-nfs-e-com-asaas.md)
 * [Canais Disponíveis](canais-suportados/README.md)
   * [Api Oficial](canais-suportados/api-oficial/README.md)
     * [API Oficial do WhatsApp - FAQ Completo](canais-suportados/api-oficial/api-oficial-do-whatsapp-faq-completo.md)

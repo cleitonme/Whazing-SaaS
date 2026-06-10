@@ -40,11 +40,11 @@ O cliente poderá continuar utilizando o sistema até **13/05**.
 
 No painel SaaS:
 
-**Configurações → Configuração pagamento → Carência após vencimento**
+**Financeiro → Receitas → Configurações de pagamento**
 
 Defina a quantidade de dias desejada.
 
-<figure><img src="../../.gitbook/assets/configpagamento.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/confpagamento.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
