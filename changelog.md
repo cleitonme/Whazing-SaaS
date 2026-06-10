@@ -1,5 +1,15 @@
 # Changelog e Atualizações
 
+### 🚀 Versão 2.20.6 BETA – Changelogg
+* Correção e melhorias no chat interno, incluindo ajuste no carregamento das mensagens e no comportamento do scroll ao navegar para as mensagens mais recentes.
+* Melhorias no simulador de chatbot para tornar a experiência mais próxima do comportamento real do atendimento.
+* Ajustes na abertura rápida de tickets, com avisos e explicações mais claros quando o usuário não possui canais ou filas disponíveis.
+* Novo Gerador de Chatbot com IA. É necessário configurar a IA no painel SaaS. A qualidade do chatbot gerado pode variar conforme o modelo de IA selecionado.
+* Novo Gerador de Chatbot Simplificado (sem IA), com criação guiada passo a passo para facilitar a montagem de fluxos, substituindo opção adicionar chatbot.
+* Nova configuração no chatbot: opção para repetir a etapa atual após uma resposta inválida do cliente.
+* A mensagem padrão "Desculpe! Não entendi sua resposta. Vamos tentar novamente! Escolha uma opção válida." não é mais enviada automaticamente. Agora ela será enviada apenas se estiver configurada nas configuração do chatbot.
+* Reorganização e ajustes nos textos das configurações do chatbot para tornar a função de cada opção mais clara e intuitiva.
+
 ### 🚀 Versão 2.20.5 BETA – Changelog
 
 #### ✨ Novidades
@@ -11,7 +21,7 @@
 * Configuração do chatbot padrão movida para a tela de criação de chatbot, com explicações mais claras sobre seu funcionamento.
 * Exibição de alerta de atualização do Wuzapi no painel SaaS.
 * Adicionado horário de início e término para campanhas.
-
+g
 #### 🔧 Melhorias
 
 * Empresas com o financeiro desativado não geram mais faturas automaticamente.
