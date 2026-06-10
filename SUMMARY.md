@@ -54,6 +54,7 @@
     * [Mensagem de boas vindas teste](modulo-saas/integracao-api-envio-de-mensagens-e-alertas/mensagem-boas-vindas-teste.md)
     * [Envio WhatsApp aviso fatura em aberto](modulo-saas/integracao-api-envio-de-mensagens-e-alertas/envio-whatsapp-aviso-fatura-em-aberto.md)
   * [Emissão de NFS-e com Asaas](modulo-saas/emissao-de-nfs-e-com-asaas.md)
+  * [Gerador de Chatbot com IA](modulo-saas/gerador-de-chatbot-com-ia.md)
 * [Canais Disponíveis](canais-suportados/README.md)
   * [Api Oficial](canais-suportados/api-oficial/README.md)
     * [API Oficial do WhatsApp - FAQ Completo](canais-suportados/api-oficial/api-oficial-do-whatsapp-faq-completo.md)
