@@ -1,5 +1,13 @@
 # Changelog e Atualizações
 
+### 🚀 Versão 2.20.7 BETA – Changelog
+
+* Correção de bug: a nova configuração **"Repetir etapa após resposta inválida"** não executava o menu em determinadas situações.
+* Recepção Inteligente: adicionada opção para transferência automática para Chatbot.
+* Suporte inicial à nova API WhatsApp MultiWAAPI (Zapo e Baileys) — implementação em andamento.
+* Novo indicador visual da janela de 24 horas para APIs oficiais, exibido abaixo da foto do contato.
+* Informativos: ao serem ativados, agora disparam notificações Web Push para os usuários.
+
 ### 🚀 Versão 2.20.6 BETA – Changelogg
 * Correção e melhorias no chat interno, incluindo ajuste no carregamento das mensagens e no comportamento do scroll ao navegar para as mensagens mais recentes.
 * Melhorias no simulador de chatbot para tornar a experiência mais próxima do comportamento real do atendimento.
