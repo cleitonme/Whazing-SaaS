@@ -154,6 +154,62 @@ A Meta possui outras regras e limitações que podem variar conforme o tipo de c
 
 ***
 
+Você pode adicionar a seguinte seção na documentação da API Oficial (WABA) do Whazing:
+
+***
+
+## 🔗 Links Úteis para Suporte e Gestão da API Oficial (Meta WhatsApp)
+
+### Verificar Qualidade da Conta
+
+A Meta disponibiliza uma página para acompanhar a qualidade da conta, restrições, violações de políticas e possíveis limitações relacionadas ao WhatsApp Business.
+
+👉 [Meta Account Quality](https://www.facebook.com/accountquality?utm_source=chatgpt.com)
+
+***
+
+### Suporte Oficial da Meta para Parceiros e Tech Providers
+
+Caso seja necessário abrir um atendimento diretamente com a Meta, utilize o canal oficial de suporte empresarial:
+
+👉 [Meta Direct Support](https://business.facebook.com/direct-support?utm_source=chatgpt.com)
+
+#### Recomendação para Tech Providers
+
+Ao abrir um chamado:
+
+1. Selecione o **Business Manager (BM)** relacionado à sua conta.
+2. Escolha a opção **Fazer uma pergunta**.
+3. Selecione categorias relacionadas a:
+   * Tech Provider
+   * WhatsApp Business Platform (WABA)
+   * Integrações da API Oficial
+4. Descreva detalhadamente o problema, incluindo:
+   * ID da WABA
+   * ID do Número
+   * Business Manager (BM)
+   * Prints de erro (quando aplicável)
+   * Horário aproximado da ocorrência
+
+#### Quando utilizar este suporte
+
+* Erros de aprovação da WABA
+* Problemas de verificação empresarial
+* Restrições de envio
+* Bloqueios de qualidade
+* Limites de mensagens
+* Problemas com templates
+* Questões relacionadas ao programa Tech Provider
+* Problemas na API Oficial do WhatsApp
+
+> Este canal costuma ser o meio mais eficaz para suporte relacionado a contas Tech Provider e WhatsApp Business Platform (WABA).
+
+***
+
+💡 **Dica:** Antes de abrir um chamado, consulte a página de qualidade da conta. Muitas restrições e bloqueios já são exibidos diretamente no painel da Meta, agilizando o diagnóstico do problema.
+
+***
+
 ## ✅ Resumo rápido
 
 * ✔️ API Oficial é estável e segura
