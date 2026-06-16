@@ -1,5 +1,9 @@
 # Changelog e Atualizações
 
+### 🚀 Versão 2.20.8 Final – Changelog
+- melhor suporte canal instagram connection hub
+- Api Plus - atribuição proxy regional pelo ip que fez cadastro ou atualizacao canal, caso for definido manualmente não altera cidade escolhida
+
 ### 🚀 Versão 2.20.7 BETA – Changelog
 
 * Correção de bug: a nova configuração **"Repetir etapa após resposta inválida"** não executava o menu em determinadas situações.
