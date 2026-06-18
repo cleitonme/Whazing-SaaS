@@ -1,4 +1,4 @@
-# HUB Whazing
+# HUB Whazing API OFICIAL
 
 ## Conectar WhatsApp Oficial no Whazing (Hub Whazing)
 
@@ -85,7 +85,17 @@ Depois de salvar:
 
 ***
 
-### 8️⃣ Testar a conexão
+### 7️⃣ Atualizar Webhook
+
+Depois de salvar:
+
+1. Vá no menu **Ferramentas**.
+2. Clique em **Registrar telefone**
+3. Coloque uma senha numeral de 6 dígitos pode ser 123456
+
+***
+
+### Testar a conexão
 
 Pronto! 🎉
 
