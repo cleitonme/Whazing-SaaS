@@ -1,132 +1,178 @@
 # HUB Whazing API OFICIAL
 
-## Conectar WhatsApp Oficial no Whazing (Hub Whazing)
+O **Hub Whazing** permite conectar facilmente a **API Oficial do WhatsApp Business (WABA)** ao seu sistema Whazing.
 
-O **Hub Whazing** permite conectar facilmente a **API Oficial do WhatsApp Business** ao seu sistema. Estamos em teste BETA
-
-💰 **Custo:** R$20,00 por mês\
-**Suporte Coexistência**
+> ⚠️ Recurso em **BETA**
+>
+> 💰 **Mensalidade:** R$ 20,00 por número conectado
+>
+> ✅ Compatível com **Coexistência (Coex)**
 
 ***
 
-### 1️⃣ Solicitar acesso ao Hub
+## 1. Solicitar acesso ao Hub Whazing
 
-Primeiro, solicite seu acesso ao Hub Whazing.
+Antes de iniciar a configuração, solicite seu acesso ao Hub Whazing junto à nossa equipe.
 
-Após solicitar, você receberá:
+Após a liberação você receberá:
 
 * Usuário
 * Senha
-* URL do painel
+* URL de acesso ao painel
 
-Guarde essas informações.
+> Guarde essas informações, pois serão utilizadas durante todo o processo de configuração.
 
 ***
 
-### 2️⃣ Acessar o painel
+## 2. Acessar o painel do Hub
 
-1. Abra a **URL do painel** recebida.
-2. Digite seu **usuário**.
-3. Digite sua **senha**.
+1. Abra a URL recebida.
+2. Informe seu usuário.
+3. Informe sua senha.
 4. Clique em **Entrar**.
 
+Após o login, você terá acesso ao painel de gerenciamento do Hub Whazing.
+
 ***
 
-### 3️⃣ Conectar o WhatsApp Business
+## 3. Conectar o WhatsApp Business
 
-Dentro do painel:
+No painel do Hub:
 
 1. Clique em **Conectar WhatsApp Business**.
-
-O sistema irá redirecionar para o **Facebook/Meta** para autorização.
+2. Você será redirecionado para a página oficial da Meta (Facebook).
 
 ***
 
-### 4️⃣ Autorizar no Facebook
+## 4. Autorizar a integração na Meta
 
-Na tela do Facebook:
+Na tela da Meta:
 
-1. Faça login na sua conta.
-2. Selecione a **empresa correta**.
+1. Faça login na conta Facebook responsável pelo WhatsApp Business.
+2. Selecione a empresa correta.
 3. Escolha a opção:
 
-**Conectar um app do WhatsApp Business (para uso de Coex)**
+**Conectar um aplicativo do WhatsApp Business (Coexistência / Coex)**
 
-Siga os passos solicitados até finalizar.
+4. Siga todas as etapas apresentadas pela Meta.
+5. Conclua a autorização.
 
-***
-
-### 5️⃣ Conexão concluída
-
-Se tudo estiver correto, o sistema exibirá **conexão realizada com sucesso**.
-
-Serão geradas as informações necessárias para integração.
-
-<figure><img src="../../.gitbook/assets/image (105).png" alt=""><figcaption></figcaption></figure>
+> ⚠️ Certifique-se de selecionar a conta comercial correta para evitar problemas na vinculação do número.
 
 ***
 
-### 6️⃣ Configurar no Whazing
+## 5. Conexão concluída
 
-Agora vá até o **Whazing**.
+Após a autorização:
 
-1. Acesse **Canais**.
-2. Adicione um novo canal **WABA (WhatsApp Business API)**.
-3. Preencha com os **dados gerados no Hub**.
+✅ O Hub exibirá a mensagem de sucesso.
+
+Neste momento serão geradas automaticamente as credenciais necessárias para integração com o Whazing.
 
 ***
 
-### 7️⃣ Atualizar Webhook
+## 6. Configurar o canal no Whazing
 
-Depois de salvar:
+Agora acesse o Whazing:
 
-1. Vá no menu **Ferramentas**.
+1. Vá em **Canais**.
+2. Clique em **Adicionar Canal**.
+3. Selecione **WABA (WhatsApp Business API)**.
+4. Preencha os campos utilizando os dados gerados pelo Hub Whazing.
+5. Salve a configuração.
+
+***
+
+## 7. Atualizar o Webhook
+
+Após salvar o canal:
+
+1. Acesse o menu **Ferramentas**.
 2. Clique em **Atualizar Webhook**.
 
-***
-
-### 7️⃣ Atualizar Webhook
-
-Depois de salvar:
-
-1. Vá no menu **Ferramentas**.
-2. Clique em **Registrar telefone**
-3. Coloque uma senha numeral de 6 dígitos pode ser 123456
+Esta etapa é necessária para que a Meta envie eventos e mensagens corretamente para o Whazing.
 
 ***
 
-### Testar a conexão
+## 8. Registrar o telefone
+
+Ainda no menu **Ferramentas**:
+
+1. Clique em **Registrar Telefone**.
+2. Informe uma senha numérica de 6 dígitos.
+
+Exemplo:
+
+`123456`
+
+> ⚠️ Guarde esta senha. Ela poderá ser solicitada durante processos de validação ou gerenciamento do número.
+
+***
+
+## 9. Testar a conexão
 
 Pronto! 🎉
 
-Agora faça um teste:
+Agora realize um teste simples:
 
-1. Envie uma mensagem para o **número conectado**.
-2. Verifique se a mensagem aparece no **Whazing**.
+1. Envie uma mensagem para o número conectado.
+2. Acesse o Whazing.
+3. Verifique se a conversa foi criada automaticamente.
 
-Se aparecer, a integração está funcionando corretamente.
-
-***
-
-✅ **Integração concluída com sucesso**
-
-Para verificar se sua empresa já foi validada pela Meta, acesse as configurações do Business Manager em:
-
-[Business Settings - Informações da Empresa](https://business.facebook.com/settings/info?utm_source=chatgpt.com)
-
-Você também pode consultar o status diretamente pela plataforma do WhatsApp Business em:
-
-[WhatsApp Manager](https://business.facebook.com/wa/manage/home/?utm_source=chatgpt.com)
-
-Nessas páginas é possível verificar o status da verificação da empresa, documentos enviados e possíveis pendências da conta comercial.
+Se a mensagem aparecer no atendimento, a integração está funcionando corretamente.
 
 ***
 
-### Dúvidas?
+## ✅ Verificar validação da empresa na Meta
 
-Entre em contato pelo WhatsApp:
+Para confirmar se sua empresa já foi validada pela Meta, acesse:
 
-📱 **+55 48 3197-0877**\
-📱 **+55 48 3197-0599**
+**Business Manager**\
+→ Configurações da Empresa\
+→ Informações da Empresa
 
-O atendimento inicial é realizado por um assistente virtual. Para falar com nossa equipe, basta enviar a mensagem **"Atendimento Humano"**.
+Ou diretamente pelo:
+
+**WhatsApp Manager**
+
+Nessas páginas você poderá verificar:
+
+* Status da verificação da empresa
+* Documentos enviados
+* Aprovações pendentes
+* Restrições da conta comercial
+* Situação do número conectado
+
+***
+
+## Perguntas frequentes
+
+#### Preciso ter uma empresa validada pela Meta?
+
+Não necessariamente para iniciar o processo. Porém, algumas funcionalidades e limites de envio podem depender da validação da empresa.
+
+#### Posso utilizar Coexistência (Coex)?
+
+Sim. O Hub Whazing possui suporte para Coexistência.
+
+#### Quanto custa?
+
+O custo atual é de:
+
+**R$ 20,00 por mês por número conectado.**
+
+***
+
+## Suporte
+
+Em caso de dúvidas, entre em contato:
+
+📱 WhatsApp: +55 48 3197-0877
+
+📱 WhatsApp: +55 48 3197-0599
+
+O atendimento inicial é realizado por um assistente virtual.
+
+Para falar com nossa equipe, envie:
+
+**Atendimento Humano**
