@@ -98,6 +98,7 @@
       * [Criando as Etapas de atendimento](funcionalidades/automacao/chatbotinterno/criando-as-etapas-de-atendimento.md)
     * [Fluxos por palavra chave](docs/chatbotinterno/fluxo-por-palavra-chave.md)
     * [Campanhas](docs/modulos/campanha.md)
+    * [Agendamento de Status (Stories) WhatsApp](funcionalidades/automacao/agendamento-de-status-stories-whatsapp.md)
   * [WhatsApp](funcionalidades/whatsapp/README.md)
     * [Importar mensagens Baileys](funcionalidades/whatsapp/importar-mensagens-whatsapp.md)
     * [SINCRONIZAR MENSAGENS - API PLUS - WuzApi](funcionalidades/whatsapp/sincronizar_mensagens_api_plus.md)
