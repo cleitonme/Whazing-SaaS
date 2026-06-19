@@ -1,5 +1,15 @@
 # Changelog e Atualizações
 
+### 🚀 Versão 2.21.0 BETA – Changelog
+- Plus e Wuzapi - Agendamento (Status) Stories whatsapp (wuzapi somente funciona minha versão fazer update)
+- Envio audios aparece preview antes
+- api - novo endpoint manipular checklist do kanbanpro
+- botão tentar novamente caso erro envio x
+- Onboarding modelo prontos e wizard dashboard do usuario para facilitar usuarios novos
+- Tela canais tambem novas dicas e alterações para facilitar usuarios Novos
+- Tela usuarios tambem ajustes para usuarios iniciantes
+- Simulador chatbot melhorias na simulação deixar mais proxima do real
+
 ### 🚀 Versão 2.20.8 Final – Changelog
 - melhor suporte canal instagram connection hub
 - Api Plus - atribuição proxy regional pelo ip que fez cadastro ou atualizacao canal, caso for definido manualmente não altera cidade escolhida

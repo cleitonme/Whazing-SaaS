@@ -3136,6 +3136,888 @@
               "response": []
             }
           ]
+        },
+        {
+          "name": "Checklist",
+          "item": [
+            {
+              "name": "1. Listar checklists do card",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{token}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "GET",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/kanbanpro/cards/{{card_id}}/checklists",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "kanbanpro",
+                    "cards",
+                    "{{card_id}}",
+                    "checklists"
+                  ]
+                },
+                "description": "Retorna todos os itens de checklist de um card ordenados por position.\nNão requer body."
+              },
+              "response": [
+                {
+                  "name": "200 – OK",
+                  "originalRequest": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": [
+                        {
+                          "key": "token",
+                          "value": "{{token}}",
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{base_url}}/kanbanpro/cards/{{card_id}}/checklists",
+                      "host": [
+                        "{{base_url}}"
+                      ],
+                      "path": [
+                        "kanbanpro",
+                        "cards",
+                        "{{card_id}}",
+                        "checklists"
+                      ]
+                    },
+                    "description": "Retorna todos os itens de checklist de um card ordenados por position.\nNão requer body."
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "Text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"success\": true,\n  \"cardId\": 1,\n  \"total\": 3,\n  \"checklists\": [\n    {\n      \"id\": 10,\n      \"cardId\": 1,\n      \"text\": \"Revisar proposta\",\n      \"done\": false,\n      \"position\": 0,\n      \"assigneeId\": null,\n      \"dueDate\": null,\n      \"doneAt\": null,\n      \"doneBy\": null\n    },\n    {\n      \"id\": 11,\n      \"cardId\": 1,\n      \"text\": \"Enviar e-mail de follow-up\",\n      \"done\": true,\n      \"position\": 1,\n      \"assigneeId\": 5,\n      \"dueDate\": \"2025-06-30T00:00:00.000Z\",\n      \"doneAt\": \"2025-06-18T14:00:00.000Z\",\n      \"doneBy\": 5\n    },\n    {\n      \"id\": 12,\n      \"cardId\": 1,\n      \"text\": \"Agendar reunião\",\n      \"done\": false,\n      \"position\": 2,\n      \"assigneeId\": null,\n      \"dueDate\": null,\n      \"doneAt\": null,\n      \"doneBy\": null\n    }\n  ]\n}"
+                },
+                {
+                  "name": "404 – Card não encontrado",
+                  "originalRequest": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": [
+                        {
+                          "key": "token",
+                          "value": "{{token}}",
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "method": "GET",
+                    "header": [],
+                    "url": {
+                      "raw": "{{base_url}}/kanbanpro/cards/{{card_id}}/checklists",
+                      "host": [
+                        "{{base_url}}"
+                      ],
+                      "path": [
+                        "kanbanpro",
+                        "cards",
+                        "{{card_id}}",
+                        "checklists"
+                      ]
+                    },
+                    "description": "Retorna todos os itens de checklist de um card ordenados por position.\nNão requer body."
+                  },
+                  "status": "Not Found",
+                  "code": 404,
+                  "_postman_previewlanguage": "Text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"error\": true,\n  \"message\": \"Card não encontrado\"\n}"
+                }
+              ]
+            },
+            {
+              "name": "2. Criar item de checklist",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{token}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"text\": \"Revisar proposta comercial\",\n  \"assigneeId\": null,\n  \"dueDate\": null\n}"
+                },
+                "url": {
+                  "raw": "{{base_url}}/kanbanpro/cards/{{card_id}}/checklists",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "kanbanpro",
+                    "cards",
+                    "{{card_id}}",
+                    "checklists"
+                  ]
+                },
+                "description": "Cria um novo item de checklist no card.\n\nCampos:\n- text*      string        Obrigatório\n- assigneeId number|null   userId do responsável\n- dueDate    string|null   YYYY-MM-DD\n\nNota: o campo done é sempre false na criação — use o PUT para atualizar."
+              },
+              "response": [
+                {
+                  "name": "201 – Criado",
+                  "originalRequest": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": [
+                        {
+                          "key": "token",
+                          "value": "{{token}}",
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"text\": \"Revisar proposta comercial\",\n  \"assigneeId\": null,\n  \"dueDate\": null\n}"
+                    },
+                    "url": {
+                      "raw": "{{base_url}}/kanbanpro/cards/{{card_id}}/checklists",
+                      "host": [
+                        "{{base_url}}"
+                      ],
+                      "path": [
+                        "kanbanpro",
+                        "cards",
+                        "{{card_id}}",
+                        "checklists"
+                      ]
+                    },
+                    "description": "Cria um novo item de checklist no card.\n\nCampos:\n- text*      string        Obrigatório\n- assigneeId number|null   userId do responsável\n- dueDate    string|null   YYYY-MM-DD\n\nNota: o campo done é sempre false na criação — use o PUT para atualizar."
+                  },
+                  "status": "Created",
+                  "code": 201,
+                  "_postman_previewlanguage": "Text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"success\": true,\n  \"checklist\": {\n    \"id\": 42,\n    \"cardId\": 1,\n    \"text\": \"Revisar proposta comercial\",\n    \"done\": false,\n    \"position\": 3,\n    \"assigneeId\": null,\n    \"dueDate\": null,\n    \"doneAt\": null,\n    \"doneBy\": null,\n    \"createdAt\": \"2025-06-18T14:00:00.000Z\",\n    \"updatedAt\": \"2025-06-18T14:00:00.000Z\"\n  }\n}"
+                },
+                {
+                  "name": "400 – text obrigatório",
+                  "originalRequest": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": [
+                        {
+                          "key": "token",
+                          "value": "{{token}}",
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"text\": \"Revisar proposta comercial\",\n  \"assigneeId\": null,\n  \"dueDate\": null\n}"
+                    },
+                    "url": {
+                      "raw": "{{base_url}}/kanbanpro/cards/{{card_id}}/checklists",
+                      "host": [
+                        "{{base_url}}"
+                      ],
+                      "path": [
+                        "kanbanpro",
+                        "cards",
+                        "{{card_id}}",
+                        "checklists"
+                      ]
+                    },
+                    "description": "Cria um novo item de checklist no card.\n\nCampos:\n- text*      string        Obrigatório\n- assigneeId number|null   userId do responsável\n- dueDate    string|null   YYYY-MM-DD\n\nNota: o campo done é sempre false na criação — use o PUT para atualizar."
+                  },
+                  "status": "Bad Request",
+                  "code": 400,
+                  "_postman_previewlanguage": "Text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"error\": true,\n  \"message\": \"O campo text é obrigatório\"\n}"
+                },
+                {
+                  "name": "404 – Card não encontrado",
+                  "originalRequest": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": [
+                        {
+                          "key": "token",
+                          "value": "{{token}}",
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"text\": \"Revisar proposta comercial\",\n  \"assigneeId\": null,\n  \"dueDate\": null\n}"
+                    },
+                    "url": {
+                      "raw": "{{base_url}}/kanbanpro/cards/{{card_id}}/checklists",
+                      "host": [
+                        "{{base_url}}"
+                      ],
+                      "path": [
+                        "kanbanpro",
+                        "cards",
+                        "{{card_id}}",
+                        "checklists"
+                      ]
+                    },
+                    "description": "Cria um novo item de checklist no card.\n\nCampos:\n- text*      string        Obrigatório\n- assigneeId number|null   userId do responsável\n- dueDate    string|null   YYYY-MM-DD\n\nNota: o campo done é sempre false na criação — use o PUT para atualizar."
+                  },
+                  "status": "Not Found",
+                  "code": 404,
+                  "_postman_previewlanguage": "Text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"error\": true,\n  \"message\": \"Card não encontrado\"\n}"
+                }
+              ]
+            },
+            {
+              "name": "3. Atualizar item de checklist",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{token}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"text\": \"Revisar proposta comercial v2\",\n  \"done\": true,\n  \"assigneeId\": null,\n  \"dueDate\": \"2025-06-30\"\n}"
+                },
+                "url": {
+                  "raw": "{{base_url}}/kanbanpro/checklists/{{item_id}}",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "kanbanpro",
+                    "checklists",
+                    "{{item_id}}"
+                  ]
+                },
+                "description": "Atualiza campos de um item de checklist.\n\nTodos opcionais — envie apenas o que mudar:\n- text        string\n- done        boolean      Ao marcar true, registra doneAt e doneBy automaticamente (pelo service)\n- assigneeId  number|null\n- dueDate     string|null  YYYY-MM-DD\n\nO service verifica internamente se o card pertence ao tenant."
+              },
+              "response": [
+                {
+                  "name": "200 – OK",
+                  "originalRequest": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": [
+                        {
+                          "key": "token",
+                          "value": "{{token}}",
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"text\": \"Revisar proposta comercial v2\",\n  \"done\": true,\n  \"assigneeId\": null,\n  \"dueDate\": \"2025-06-30\"\n}"
+                    },
+                    "url": {
+                      "raw": "{{base_url}}/kanbanpro/checklists/{{item_id}}",
+                      "host": [
+                        "{{base_url}}"
+                      ],
+                      "path": [
+                        "kanbanpro",
+                        "checklists",
+                        "{{item_id}}"
+                      ]
+                    },
+                    "description": "Atualiza campos de um item de checklist.\n\nTodos opcionais — envie apenas o que mudar:\n- text        string\n- done        boolean      Ao marcar true, registra doneAt e doneBy automaticamente (pelo service)\n- assigneeId  number|null\n- dueDate     string|null  YYYY-MM-DD\n\nO service verifica internamente se o card pertence ao tenant."
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "Text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"success\": true,\n  \"checklist\": {\n    \"id\": 42,\n    \"cardId\": 1,\n    \"text\": \"Revisar proposta comercial v2\",\n    \"done\": true,\n    \"position\": 3,\n    \"assigneeId\": 5,\n    \"dueDate\": \"2025-06-30T00:00:00.000Z\",\n    \"doneAt\": \"2025-06-18T15:00:00.000Z\",\n    \"doneBy\": null,\n    \"updatedAt\": \"2025-06-18T15:00:00.000Z\"\n  }\n}"
+                },
+                {
+                  "name": "403 – Acesso negado",
+                  "originalRequest": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": [
+                        {
+                          "key": "token",
+                          "value": "{{token}}",
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"text\": \"Revisar proposta comercial v2\",\n  \"done\": true,\n  \"assigneeId\": null,\n  \"dueDate\": \"2025-06-30\"\n}"
+                    },
+                    "url": {
+                      "raw": "{{base_url}}/kanbanpro/checklists/{{item_id}}",
+                      "host": [
+                        "{{base_url}}"
+                      ],
+                      "path": [
+                        "kanbanpro",
+                        "checklists",
+                        "{{item_id}}"
+                      ]
+                    },
+                    "description": "Atualiza campos de um item de checklist.\n\nTodos opcionais — envie apenas o que mudar:\n- text        string\n- done        boolean      Ao marcar true, registra doneAt e doneBy automaticamente (pelo service)\n- assigneeId  number|null\n- dueDate     string|null  YYYY-MM-DD\n\nO service verifica internamente se o card pertence ao tenant."
+                  },
+                  "status": "Forbidden",
+                  "code": 403,
+                  "_postman_previewlanguage": "Text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"error\": true,\n  \"message\": \"Acesso negado\"\n}"
+                },
+                {
+                  "name": "404 – Item não encontrado",
+                  "originalRequest": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": [
+                        {
+                          "key": "token",
+                          "value": "{{token}}",
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "method": "PUT",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"text\": \"Revisar proposta comercial v2\",\n  \"done\": true,\n  \"assigneeId\": null,\n  \"dueDate\": \"2025-06-30\"\n}"
+                    },
+                    "url": {
+                      "raw": "{{base_url}}/kanbanpro/checklists/{{item_id}}",
+                      "host": [
+                        "{{base_url}}"
+                      ],
+                      "path": [
+                        "kanbanpro",
+                        "checklists",
+                        "{{item_id}}"
+                      ]
+                    },
+                    "description": "Atualiza campos de um item de checklist.\n\nTodos opcionais — envie apenas o que mudar:\n- text        string\n- done        boolean      Ao marcar true, registra doneAt e doneBy automaticamente (pelo service)\n- assigneeId  number|null\n- dueDate     string|null  YYYY-MM-DD\n\nO service verifica internamente se o card pertence ao tenant."
+                  },
+                  "status": "Not Found",
+                  "code": 404,
+                  "_postman_previewlanguage": "Text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"error\": true,\n  \"message\": \"Item de checklist não encontrado\"\n}"
+                }
+              ]
+            },
+            {
+              "name": "3a. Marcar como concluído (só done)",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{token}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "PUT",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"done\": true\n}"
+                },
+                "url": {
+                  "raw": "{{base_url}}/kanbanpro/checklists/{{item_id}}",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "kanbanpro",
+                    "checklists",
+                    "{{item_id}}"
+                  ]
+                },
+                "description": "Atalho — envia apenas `done` para marcar/desmarcar.\nSe done=true o service registra doneAt automaticamente.\nSe o checklist do card ficar 100% concluído, o VerificarAutomacaoService pode mover o card automaticamente (comportamento idêntico ao app)."
+              },
+              "response": []
+            },
+            {
+              "name": "4. Deletar item de checklist",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{token}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "DELETE",
+                "header": [],
+                "url": {
+                  "raw": "{{base_url}}/kanbanpro/checklists/{{item_id}}",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "kanbanpro",
+                    "checklists",
+                    "{{item_id}}"
+                  ]
+                },
+                "description": "Remove permanentemente o item.\nO controller valida que o card pai pertence ao tenant antes de chamar o service."
+              },
+              "response": [
+                {
+                  "name": "200 – OK",
+                  "originalRequest": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": [
+                        {
+                          "key": "token",
+                          "value": "{{token}}",
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "method": "DELETE",
+                    "header": [],
+                    "url": {
+                      "raw": "{{base_url}}/kanbanpro/checklists/{{item_id}}",
+                      "host": [
+                        "{{base_url}}"
+                      ],
+                      "path": [
+                        "kanbanpro",
+                        "checklists",
+                        "{{item_id}}"
+                      ]
+                    },
+                    "description": "Remove permanentemente o item.\nO controller valida que o card pai pertence ao tenant antes de chamar o service."
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "Text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"success\": true,\n  \"message\": \"Item removido com sucesso\"\n}"
+                },
+                {
+                  "name": "403 – Card de outro tenant",
+                  "originalRequest": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": [
+                        {
+                          "key": "token",
+                          "value": "{{token}}",
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "method": "DELETE",
+                    "header": [],
+                    "url": {
+                      "raw": "{{base_url}}/kanbanpro/checklists/{{item_id}}",
+                      "host": [
+                        "{{base_url}}"
+                      ],
+                      "path": [
+                        "kanbanpro",
+                        "checklists",
+                        "{{item_id}}"
+                      ]
+                    },
+                    "description": "Remove permanentemente o item.\nO controller valida que o card pai pertence ao tenant antes de chamar o service."
+                  },
+                  "status": "Forbidden",
+                  "code": 403,
+                  "_postman_previewlanguage": "Text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"error\": true,\n  \"message\": \"Acesso negado\"\n}"
+                },
+                {
+                  "name": "404 – Item não encontrado",
+                  "originalRequest": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": [
+                        {
+                          "key": "token",
+                          "value": "{{token}}",
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "method": "DELETE",
+                    "header": [],
+                    "url": {
+                      "raw": "{{base_url}}/kanbanpro/checklists/{{item_id}}",
+                      "host": [
+                        "{{base_url}}"
+                      ],
+                      "path": [
+                        "kanbanpro",
+                        "checklists",
+                        "{{item_id}}"
+                      ]
+                    },
+                    "description": "Remove permanentemente o item.\nO controller valida que o card pai pertence ao tenant antes de chamar o service."
+                  },
+                  "status": "Not Found",
+                  "code": 404,
+                  "_postman_previewlanguage": "Text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"error\": true,\n  \"message\": \"Item de checklist não encontrado\"\n}"
+                }
+              ]
+            },
+            {
+              "name": "5. Reordenar itens do checklist",
+              "request": {
+                "auth": {
+                  "type": "bearer",
+                  "bearer": [
+                    {
+                      "key": "token",
+                      "value": "{{token}}",
+                      "type": "string"
+                    }
+                  ]
+                },
+                "method": "POST",
+                "header": [
+                  {
+                    "key": "Content-Type",
+                    "value": "application/json"
+                  }
+                ],
+                "body": {
+                  "mode": "raw",
+                  "raw": "{\n  \"itemIds\": [14, 12]\n}"
+                },
+                "url": {
+                  "raw": "{{base_url}}/kanbanpro/cards/{{card_id}}/checklists/reorder",
+                  "host": [
+                    "{{base_url}}"
+                  ],
+                  "path": [
+                    "kanbanpro",
+                    "cards",
+                    "{{card_id}}",
+                    "checklists",
+                    "reorder"
+                  ]
+                },
+                "description": "Reordena os itens do checklist via ReordenarChecklistService.\n\n`itemIds` — array com todos os IDs do checklist na nova ordem desejada.\nO service usa UPDATE SET position = index WHERE id = X AND cardId = Y."
+              },
+              "response": [
+                {
+                  "name": "200 – OK",
+                  "originalRequest": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": [
+                        {
+                          "key": "token",
+                          "value": "{{token}}",
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"itemIds\": [14, 12]\n}"
+                    },
+                    "url": {
+                      "raw": "{{base_url}}/kanbanpro/cards/{{card_id}}/checklists/reorder",
+                      "host": [
+                        "{{base_url}}"
+                      ],
+                      "path": [
+                        "kanbanpro",
+                        "cards",
+                        "{{card_id}}",
+                        "checklists",
+                        "reorder"
+                      ]
+                    },
+                    "description": "Reordena os itens do checklist via ReordenarChecklistService.\n\n`itemIds` — array com todos os IDs do checklist na nova ordem desejada.\nO service usa UPDATE SET position = index WHERE id = X AND cardId = Y."
+                  },
+                  "status": "OK",
+                  "code": 200,
+                  "_postman_previewlanguage": "Text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"success\": true,\n  \"message\": \"Checklist reordenado com sucesso\"\n}"
+                },
+                {
+                  "name": "400 – itemIds inválido",
+                  "originalRequest": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": [
+                        {
+                          "key": "token",
+                          "value": "{{token}}",
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"itemIds\": [14, 12]\n}"
+                    },
+                    "url": {
+                      "raw": "{{base_url}}/kanbanpro/cards/{{card_id}}/checklists/reorder",
+                      "host": [
+                        "{{base_url}}"
+                      ],
+                      "path": [
+                        "kanbanpro",
+                        "cards",
+                        "{{card_id}}",
+                        "checklists",
+                        "reorder"
+                      ]
+                    },
+                    "description": "Reordena os itens do checklist via ReordenarChecklistService.\n\n`itemIds` — array com todos os IDs do checklist na nova ordem desejada.\nO service usa UPDATE SET position = index WHERE id = X AND cardId = Y."
+                  },
+                  "status": "Bad Request",
+                  "code": 400,
+                  "_postman_previewlanguage": "Text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"error\": true,\n  \"message\": \"itemIds deve ser um array não vazio\"\n}"
+                },
+                {
+                  "name": "404 – Card não encontrado",
+                  "originalRequest": {
+                    "auth": {
+                      "type": "bearer",
+                      "bearer": [
+                        {
+                          "key": "token",
+                          "value": "{{token}}",
+                          "type": "string"
+                        }
+                      ]
+                    },
+                    "method": "POST",
+                    "header": [
+                      {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                      }
+                    ],
+                    "body": {
+                      "mode": "raw",
+                      "raw": "{\n  \"itemIds\": [14, 12]\n}"
+                    },
+                    "url": {
+                      "raw": "{{base_url}}/kanbanpro/cards/{{card_id}}/checklists/reorder",
+                      "host": [
+                        "{{base_url}}"
+                      ],
+                      "path": [
+                        "kanbanpro",
+                        "cards",
+                        "{{card_id}}",
+                        "checklists",
+                        "reorder"
+                      ]
+                    },
+                    "description": "Reordena os itens do checklist via ReordenarChecklistService.\n\n`itemIds` — array com todos os IDs do checklist na nova ordem desejada.\nO service usa UPDATE SET position = index WHERE id = X AND cardId = Y."
+                  },
+                  "status": "Not Found",
+                  "code": 404,
+                  "_postman_previewlanguage": "Text",
+                  "header": [
+                    {
+                      "key": "Content-Type",
+                      "value": "application/json"
+                    }
+                  ],
+                  "cookie": [],
+                  "body": "{\n  \"error\": true,\n  \"message\": \"Card não encontrado\"\n}"
+                }
+              ]
+            }
+          ]
         }
       ]
     }
