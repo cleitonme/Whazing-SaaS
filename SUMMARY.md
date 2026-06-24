@@ -132,8 +132,6 @@
 * [Integrações](integracoes/README.md)
   * [Configuração](integracoes/configuracao.md)
   * [Inteligência Artificial](integracoes/inteligencia-artificial/README.md)
-    * [ChatGPT Assistant](integracoes/inteligencia-artificial/chatgpt-assistants.md)
-    * [Groq/ChatGPT](integracoes/inteligencia-artificial/groq-chatgpt.md)
     * [Transcrição de Áudio](integracoes/inteligencia-artificial/transcricao_audio.md)
     * [Recepção inteligente](integracoes/inteligencia-artificial/recepcao-inteligente/README.md)
       * [Como ativar a integração](integracoes/inteligencia-artificial/recepcao-inteligente/como-ativar-a-integracao.md)
