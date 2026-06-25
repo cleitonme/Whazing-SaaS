@@ -31,6 +31,8 @@ Jose Felipe Batista Ortiz - 55 34 9772-9922
 
 Hamilton Oliveira Batista - 55 18 99744-1369
 
+Leandro de Souza 55 11 98266-8277
+
 Ou verificar nossos parceiros [https://whazing.com.br/parceiros/](https://whazing.com.br/parceiros/)
 
 Sites referencias para testes e documentação ajustes servidor sip.
