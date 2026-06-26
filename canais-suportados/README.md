@@ -18,7 +18,7 @@ O sistema suporta diferentes tipos de canais de atendimento, cada um com suas ca
 
 ***
 
-### ✅ API Não Oficial (gratuita)
+### ✅ WhatsApp API Não Oficial (gratuita)
 
 * **WhatsApp Baileys - Não recomendamos uso dessa api prefira WuzAPI**
 * [WhatsApp Wuzapi (WhatsMeow)](whatsapp-wuzapi.md)
@@ -30,7 +30,7 @@ Possui alterar tipo api não oficial usada sem perda de dados conforme [instruç
 
 ***
 
-### ✅ API Não Oficial Premium (paga)
+### ✅ WhatsApp API Não Oficial Premium (paga)
 
 * [**WhatsApp API PLUS**](whatsapp_api_plus/)\*
 * API não oficial, mas com recursos avançados
@@ -52,7 +52,7 @@ Possui alterar tipo api não oficial usada sem perda de dados conforme [instruç
 
 ***
 
-### 💼 API Oficial via Hub NotificaMe (paga)
+### 💼 WhatsApp API Oficial via Hub NotificaMe (paga)
 
 Cadastrar através da URL [https://hub.whazing.com.br/](https://hub.whazing.com.br/)​
 
@@ -63,6 +63,7 @@ Usar cupom desconto: whazing
 * [**WhatsApp Oficial**](api-oficial/api-oficial/)
   * Ativação por canal: **R$ 150,00**
   * Mensalidade: **R$ 50,00 por canal conectado**
+  * **Suporte COEX**
 * [**Instagram**](facebook-e-instagram-via-hub/)
   * Sem taxa de ativação
   * Mensalidade: **R$ 50,00 por canal conectado**
@@ -103,10 +104,11 @@ Whatsapp
 
 ***
 
-### API Oficial da Meta (WABA)
+### WhatsApp API Oficial da Meta (WABA)
 
 * **WhatsApp Business API (Meta Oficial)**
 * Conexão direta com a **API Oficial da Meta**
+* **Suporte COEX (necessário tech provider)**
 * Total conformidade com as políticas do WhatsApp
 * Suporte a:
   * Mensagens template (HSM)
@@ -122,6 +124,40 @@ Whatsapp
 
 ⚠️ Requer configuração no **Facebook Developers** e geração de **Token Permanente**.\
 👉 Veja o guia completo: [Manual de Integração com a API Oficial do WhatsApp (Meta)](api-oficial/api-oficial-do-whatsapp-meta.md)
+
+***
+
+### 💬 WebChat
+
+O **WebChat** permite que os visitantes conversem com sua equipe diretamente pelo seu site, sem precisar instalar aplicativos ou utilizar um número de WhatsApp. Basta incorporar um pequeno script na página para disponibilizar um chat em tempo real aos seus clientes.
+
+#### ✅ Vantagens
+
+* Atendimento diretamente pelo seu site.
+* O cliente não precisa informar telefone.
+* Todas as conversas aparecem na mesma tela de atendimento do sistema.
+* Compatível com chatbot, Recepção Inteligente, filas, departamentos, atendentes e automações.
+* Personalização de cores, nome da empresa e mensagem de boas-vindas.
+* Fácil instalação através de um único código (script).
+
+#### 💰 Custos
+
+O **Whazing não cobra nenhuma taxa adicional pelo recurso de WebChat**.
+
+Você pode criar quantos WebChats desejar, respeitando apenas os limites da sua infraestrutura e da licença utilizada.
+
+> **Importante:** caso utilize um provedor HUB para o WebChat (como o Hub NotificaMe), poderão existir cobranças definidas pelo próprio provedor. Essas cobranças não são realizadas pelo Whazing. O whazing tem nativo não é necessário contratar hub.
+
+#### 🚀 Ideal para
+
+* Sites institucionais
+* Lojas virtuais
+* Landing Pages
+* Portais de suporte
+* Sistemas internos
+* Áreas do cliente
+
+O WebChat é uma excelente alternativa para clientes que preferem iniciar o atendimento diretamente pelo navegador, mantendo todas as conversas centralizadas na mesma plataforma juntamente com WhatsApp, Instagram, Facebook e demais canais suportados.
 
 ***
 
