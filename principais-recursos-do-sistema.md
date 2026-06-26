@@ -142,7 +142,9 @@ Ideal para empresas que desejam escalar o atendimento sem aumentar equipe.
 ### 📲 Canais Suportados
 
 * **WhatsApp API Oficial** (Direto ou via HUB)
-* **API Não Oficial Plus** (Lista e Botões)
+* **WhatsApp API Não Oficial Plus** (Lista e Botões)
+* **WhatsApp API Não Oficial Wuzapi, Baileys e ZAPO**
+* **WebChat**
 * **Tiktok, Webchat, Facebook e Instagram via HUB**
 * **Wavoip (Chamadas WhatsApp)**
 * **Discador SIP (WebRTC)**
