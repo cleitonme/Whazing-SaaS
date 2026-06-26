@@ -1,5 +1,25 @@
 # Changelog e Atualizações
 
+### 🚀 Versão 2.21.1 BETA – Changelog
+
+* Ignorar mensagens do bot (IA WhatsApp).
+* Integrações antigas com OpenAI e outros provedores foram removidas totalmente. Agora permanece apenas a Recepção Inteligente.
+* Novo componente para zoom de imagens na tela de atendimento.
+* Busca de mensagens no Chat Interno.
+* Recepção Inteligente: layout de configuração reformulado, com simulador para testes básicos da IA.
+* Onboarding: novas etapas para Kanban, Mensagens Rápidas, Mensagem de Despedida e Motivo de Fechamento.
+* Onboarding: etapas vazias são ignoradas automaticamente.
+* Onboarding: caso ocorra erro ao carregar os segmentos, o processo é encerrado automaticamente para evitar travamentos.
+* Nova opção para desativar o Onboarding.
+* Nova opção para importar feriados brasileiros no cadastro de feriados.
+* Nova configuração SaaS para habilitar a IA do Chatbot e validar o template do cliente ao criar ou editar uma empresa.
+* Suporte a HTML na descrição da ajuda, permitindo a inclusão de links.
+* Editor de descrição dos planos aprimorado.
+* Novo canal WebChat.
+* O WebChat pode ser utilizado como canal de suporte interno do sistema (configuração na tela White Label).
+* Possibilidade de ocultar as referências ao Whazing no painel SaaS para revenda White Label (consulte o suporte para instruções).
+* Nova configuração do canal para fechamento de tickets por palavra-chave (caso o cliente envie uma das palavras cadastradas, o ticket será finalizado automaticamente).
+
 ### 🚀 Versão 2.21.0 BETA – Changelog
 - Plus e Wuzapi - Agendamento (Status) Stories whatsapp (wuzapi somente funciona minha versão fazer update)
 - Envio audios aparece preview antes
