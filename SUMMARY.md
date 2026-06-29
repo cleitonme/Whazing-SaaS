@@ -156,6 +156,7 @@
     * [Servidor SIP para WhatsApp API Oficial](integracoes/telefonia/servidor-sip-para-whatsapp-api-oficial.md)
     * [Wavoip](integracoes/telefonia/configurar_wavoip.md)
     * [Discador SIP](integracoes/telefonia/discador-sip.md)
+    * [WaCalls](integracoes/telefonia/wacalls.md)
   * [Webhooks](integracoes/webhooks/README.md)
     * [Webhook e N8N](integracoes/webhooks/webhook-e-n8n/README.md)
       * [Instalação N8N](integracoes/webhooks/webhook-e-n8n/como-instalar.md)
