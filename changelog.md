@@ -1,5 +1,11 @@
 # Changelog e Atualizações
 
+### 🚀 Versão 2.21.2 BETA – Changelog
+- bug visual beta - pequeno ajuste formulario inicio nome e telefone webchat
+- bug beta - emoji webchat
+- Suporte a https://github.com/JotaDev66/WaCalls - ligação api não oficial grátis
+
+
 ### 🚀 Versão 2.21.1 BETA – Changelog
 
 * Ignorar mensagens do bot (IA WhatsApp).
