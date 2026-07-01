@@ -79,6 +79,7 @@
     * [Responder Comentários Instagram - HUB NotificaMe](canais-suportados/facebook-e-instagram-via-hub/responder-comentarios-instagram.md)
   * [Guia de Conexão do TELEGRAM](canais-suportados/telegram.md)
   * [Migração entre apis não oficiais](canais-suportados/migracao-entre-apis-nao-oficiais.md)
+  * [Como importar sua sessão do WhatsApp para o Whazing](canais-suportados/como-importar-sua-sessao-do-whatsapp-para-o-whazing.md)
 * [Funcionalidades](funcionalidades/README.md)
   * [Atendimento](funcionalidades/atendimento/README.md)
     * [Avaliação de Atendimento](funcionalidades/atendimento/avaliacao.md)
