@@ -1,5 +1,13 @@
 # Changelog e Atualizações
 
+### 🚀 Versão 2.21.3 BETA – Changelog
+- Wuzapi e Baileys - Suporte importar credencias do whatsapp web (necessario atualizar wuzapi)
+
+- bug layout tela cadadastro usuarios
+- Correção permissões wacall que faz usuario comum deslogar
+- Correção Wacall mais de uma vez lendo qrcode chamada recebida cai ao atender (atualizar wacall)
+- Wacall Transferencia entre usuarios a ligação (atualizar wacall)
+
 ### 🚀 Versão 2.21.2 BETA – Changelog
 - bug visual beta - pequeno ajuste formulario inicio nome e telefone webchat
 - bug beta - emoji webchat
