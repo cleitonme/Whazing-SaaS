@@ -18,11 +18,11 @@ Depois logue conta do mesmo e canais gerenciar canais cadastre canal Facebook ou
 
 Em meu perfil - copia o "accessToken (Bearer)" cole no campo token do Connection Hub do whazing.
 
-<figure><img src="../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
 
 Depois clicar adicionar canal selecionar Connection Hub e depois canal cadastrado
 
-<figure><img src="../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
 ### ⚠️ Observações importantes
 

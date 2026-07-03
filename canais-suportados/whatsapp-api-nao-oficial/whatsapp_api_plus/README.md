@@ -55,7 +55,7 @@ Isso torna a conexão mais coerente com a localização do dispositivo.
 5. Clique em **Salvar**.
 6. Após salvar, realize novamente a leitura do QR Code.
 
-<figure><img src="../../.gitbook/assets/pluscidade.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/pluscidade.png" alt=""><figcaption></figcaption></figure>
 
 ***
 

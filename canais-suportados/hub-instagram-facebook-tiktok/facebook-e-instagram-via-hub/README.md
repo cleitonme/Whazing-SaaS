@@ -44,7 +44,7 @@ Depois de conectar o canal desejado no Hub, siga estes passos:
 * Copie o token que fica topo tela lado nome de cadastro: Account :
 * **Copie esse token**, você vai usá-lo no Whazing
 
-<figure><img src="../../.gitbook/assets/localtokennotificame.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/localtokennotificame.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -55,7 +55,7 @@ Depois de conectar o canal desejado no Hub, siga estes passos:
 3. Cole o **token copiado** do Hub no campo NotificaME
 4. Salve o cadastro
 
-<figure><img src="../../.gitbook/assets/whazingtokennotificame.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/whazingtokennotificame.png" alt=""><figcaption></figcaption></figure>
 
 Caso não for configurado token corretamente dará erro
 

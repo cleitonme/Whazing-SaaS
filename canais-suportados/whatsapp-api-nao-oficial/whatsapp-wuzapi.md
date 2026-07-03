@@ -34,7 +34,7 @@ Arquivo: /home/deploy/wuzapi.yaml
 
 #### ⚙️ **Conexão no painel Whazing**
 
-<figure><img src="../.gitbook/assets/wuzapiconfig.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/wuzapiconfig.png" alt=""><figcaption></figcaption></figure>
 
 1. Acesse o painel **Whazing → SaaS → Canais**
 2. Preencha os campos com:

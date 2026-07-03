@@ -21,18 +21,18 @@ O sistema suporta diferentes tipos de canais de atendimento, cada um com suas ca
 ### ✅ WhatsApp API Não Oficial (gratuita)
 
 * **WhatsApp Baileys - Não recomendamos uso dessa api prefira WuzAPI**
-* [WhatsApp Wuzapi (WhatsMeow)](whatsapp-wuzapi.md)
+* [WhatsApp Wuzapi (WhatsMeow)](whatsapp-api-nao-oficial/whatsapp-wuzapi.md)
 * [**Telegram**](telegram.md)
 * Sem custo por canal
 * Sem limite de usuários ou canais (limitado apenas pela capacidade da VPS)
 
-Possui alterar tipo api não oficial usada sem perda de dados conforme [instruções](migracao-entre-apis-nao-oficiais.md)
+Possui alterar tipo api não oficial usada sem perda de dados conforme [instruções](whatsapp-api-nao-oficial/migracao-entre-apis-nao-oficiais.md)
 
 ***
 
 ### ✅ WhatsApp API Não Oficial Premium (paga)
 
-* [**WhatsApp API PLUS**](whatsapp_api_plus/)\*
+* [**WhatsApp API PLUS**](whatsapp-api-nao-oficial/whatsapp_api_plus/)\*
 * API não oficial, mas com recursos avançados
 
 📌 Recursos disponíveis:
@@ -64,16 +64,16 @@ Usar cupom desconto: whazing
   * Ativação por canal: **R$ 150,00**
   * Mensalidade: **R$ 50,00 por canal conectado**
   * **Suporte COEX**
-* [**Instagram**](facebook-e-instagram-via-hub/)
+* [**Instagram**](hub-instagram-facebook-tiktok/facebook-e-instagram-via-hub/)
   * Sem taxa de ativação
   * Mensalidade: **R$ 50,00 por canal conectado**
-* [**Facebook**](facebook-e-instagram-via-hub/)
+* [**Facebook**](hub-instagram-facebook-tiktok/facebook-e-instagram-via-hub/)
   * Sem taxa de ativação
   * Mensalidade: **R$ 50,00 por canal conectado**
-* [**Webchat**](facebook-e-instagram-via-hub/)
+* [**Webchat**](hub-instagram-facebook-tiktok/facebook-e-instagram-via-hub/)
   * Sem taxa de ativação
   * Mensalidade: **R$ 50,00 por canal conectado**
-* [**TikTok**](facebook-e-instagram-via-hub/)
+* [**TikTok**](hub-instagram-facebook-tiktok/facebook-e-instagram-via-hub/)
   * Ativação por canal: **R$ 50,00**
   * Mensalidade: **R$ 50,00 por canal conectado**
 
@@ -81,12 +81,12 @@ Usar cupom desconto: whazing
 
 ### 💼 API Oficial via Hub ConnectionHub (paga)
 
-[Facebook](instagram-facebook-via-connectionhub.md)
+[Facebook](hub-instagram-facebook-tiktok/instagram-facebook-via-connectionhub.md)
 
 * Sem taxa de ativação
 * Mensalidade: **R$ 25,00 por canal conectado**
 
-[Instagram](instagram-facebook-via-connectionhub.md)
+[Instagram](hub-instagram-facebook-tiktok/instagram-facebook-via-connectionhub.md)
 
 * Sem taxa de ativação
 * Mensalidade: **R$ 25,00 por canal conectado**
