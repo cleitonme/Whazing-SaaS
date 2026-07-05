@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "lastUpdated": "2026-07-01",
+  "currency": "USD",
+  "defaultMarket": "BR",
+  "platform": {
+    "monthlyFeeBrl": 0,
+    "perMessageFeeBrl": 0
+  },
+  "markets": {
+    "BR": {
+      "name": "Brasil",
+      "rates": {
+        "marketing": { "value": 0.0625, "effectiveFrom": "2026-07-01" },
+        "utility": { "value": 0.0068, "effectiveFrom": "2026-07-01" },
+        "authentication": { "value": 0.0068, "effectiveFrom": "2026-07-01" },
+        "authenticationInternational": { "value": null, "effectiveFrom": "2026-07-01" },
+        "service": { "value": 0, "effectiveFrom": "2026-07-01" }
+      },
+      "upcomingChanges": [
+        {
+          "category": "service",
+          "value": 0.0068,
+          "effectiveFrom": "2026-10-01",
+          "note": "A partir de 01/10/2026 as mensagens de servico (categoria service, sessao iniciada pelo cliente) passam a ser cobradas."
+        }
+      ]
+    }
+  }
+}
