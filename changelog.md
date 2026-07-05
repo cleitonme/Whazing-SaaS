@@ -1,5 +1,22 @@
 # Changelog e Atualizações
 
+### 🚀 Versão 2.21.5 FINAL – Changelog
+- api oficial - alterado alguns avisos falando cobrança mensagem meta
+- api oficial - relatorio e calculadora novos custos  api oficial para acompanhar mudanças
+- Endpoint qrcode retorna url para conexão pelo whatsappweb
+- Wacall - suporte importar sessão whatsapp web necessário atualizar ele
+- Melhorias sistema importação sessão whatsapp
+- Notificação claras ao conectar ou reniciar conexão eventos de conexão quando whatspp esta com restrição
+- Notificação quando envia mensagem para numero e seu numero tem restrição
+- bug - fotos grupos Wuzapi
+- bug - apagar canal com status agendado da erro
+- bug - apagar agendamento não atualiza na tela tem da f5 para atualizar
+
+### 🚀 Versão 2.21.4 BETA – Changelog
+- Plus - Suporte importar credenciais web
+- Nova extensão crome na loja google para facilitar instalação - Botão conectar web separado QRCODE. Fica la botao abre qrcode "Whatsapp WEB"
+Detecta se instalação ta instalada caso instalada faz quase todo processo so cliente conectar no whatsapp web. E se não tiver abre instruções como instalar. Se tiver ja conectado no web e extensão instalada clicar esperar faz tudo automatico.
+
 ### 🚀 Versão 2.21.3 BETA – Changelog
 - Wuzapi e Baileys - Suporte importar credencias do whatsapp web (necessario atualizar wuzapi)
 
