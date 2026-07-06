@@ -1,72 +1,180 @@
 # Tabela de Valores
 
-## 🧾 **Licença Premium (por VPS)**
+O Whazing está disponível em duas modalidades:
+
+- **Whazing Self-Hosted:** você utiliza sua própria VPS ou servidor.
+- **Whazing Gerenciado:** fornecemos uma VPS no Brasil totalmente configurada e gerenciada por nossa equipe.
+
+---
+
+# 🖥️ Whazing Self-Hosted
+
+Ideal para quem deseja hospedar o sistema em sua própria infraestrutura.
+
+## 🧾 Licença Premium (por VPS)
 
 **🚀 1 Licença = Empresas Ilimitadas na Mesma VPS**
 
-O plano é cobrado por VPS, não por empresa. Com apenas 1 licença Premium você pode criar e gerenciar várias empresas/clientes na mesma instalação, conforme a capacidade da sua VPS.
+A licença é cobrada por VPS, não por empresa. Você pode criar e gerenciar quantas empresas desejar na mesma instalação, respeitando os recursos disponíveis da sua infraestrutura.
 
-| Plano    | 💸 **Valor no Pix** | 💳 **Valor no Cartão** _(+10% taxa)_ |
-| -------- | :-----------------: | :----------------------------------: |
-| 1 mês    |       R$ 55,00      |               R$ 60,50               |
-| 3 meses  |      R$ 155,00      |               R$ 170,50              |
-| 6 meses  |      R$ 300,00      |               R$ 330,00              |
-| 12 meses |      R$ 500,00      |               R$ 550,00              |
+| Plano | 💸 Pix | 💳 Cartão (+10%) |
+|-------|:------:|:----------------:|
+| 1 mês | R$ 55,00 | R$ 60,50 |
+| 3 meses | R$ 155,00 | R$ 170,50 |
+| 6 meses | R$ 300,00 | R$ 330,00 |
+| 12 meses | R$ 500,00 | R$ 550,00 |
 
-> ⚠️ **Atenção:** O valor da licença **não inclui VPS (servidor)**. A **contratação, manutenção e segurança** da VPS são de responsabilidade do cliente. 🚫 **Não vendemos VPS** — apenas a **licença de uso do sistema**.
+### O que está incluso
 
-> 💡 **Dica:** Alguns canais exigem pagamento adicional para uso. Consulte a lista em [Canais Disponíveis](canais-suportados/).
+- Licença Premium do Whazing;
+- Atualizações do sistema;
+- Empresas ilimitadas na mesma VPS.
 
-***
+### Não incluso
 
-## ⚙️ **Serviços de Instalação**
+- VPS ou servidor;
+- Hospedagem;
+- Domínio;
+- Administração da infraestrutura;
+- Backup;
+- Monitoramento da VPS.
 
-| Descrição                                          |           Valor          |
-| -------------------------------------------------- | :----------------------: |
-| Plano Premium **6 meses ou mais**                  | 🆓 **Instalação grátis** |
-| Planos menores                                     |      💸 **R$ 50,00**     |
-| Instalação versão gratuita                         |     💸 **R$ 100,00**     |
-| Instalação adicional (Typebot ou N8N na mesma VPS) |   💸 **R$ 100,00** cada  |
+> A contratação e administração da infraestrutura são de responsabilidade do cliente.
 
-> 🧠 **Observação:** A instalação é **opcional** — todo o material necessário está disponível no repositório oficial. 🖥️ **Valores não incluem manutenção ou suporte técnico da VPS.**
+---
 
-***
+# ☁️ Whazing Gerenciado
 
-## 🆚 **Diferença entre as Versões**
+Ideal para quem deseja utilizar o Whazing sem precisar administrar servidores.
 
-### **Versão Grátis 🆓**
+Você recebe o sistema totalmente instalado em uma VPS localizada no Brasil. Toda a infraestrutura é administrada pela equipe do Whazing.
 
-Exibe anúncios do Whazing e envia automaticamente propagandas em:
+## Cloud Start
 
-* Primeira mensagem de novos tickets
-* Mensagens via API
-* Mensagens agendadas
-* Follow-ups
-* Campanhas
+### R$ 179,90/mês
 
-***
+**Infraestrutura**
 
-### **Versão Premium 💎**
+- 2 vCPUs
+- 4 GB RAM
+- SSD NVMe 80 GB
 
-✅ Sem anúncios. ✅ Entregas limpas e profissionais, sem propagandas automáticas. ✅ Mais performance e estabilidade.
+**Incluso**
 
-***
+- Licença Premium do Whazing
+- VPS Brasil
+- Instalação completa
+- Monitoramento
+- Manutenção da VPS
+- Backup periódico
+- 1 hora de suporte técnico mensal (mediante agendamento)
 
-## 🤝 **Revenda**
+---
 
-> 📦 **Quer revender?** Temos **descontos progressivos** conforme a quantidade de VPS licenciadas.
+## Cloud Pro
 
-***
+### R$ 229,90/mês
 
-## 💳 **Formas de Pagamento**
+**Infraestrutura**
 
-| Método                | Descrição                                           |
-| --------------------- | --------------------------------------------------- |
-| **Pix**               | Valor integral **sem taxas**                        |
-| **Cartão de crédito** | Acréscimo de **10% de taxa** sobre o valor do plano |
+- 3 vCPUs
+- 8 GB RAM
+- SSD NVMe 120 GB
 
-***
+**Incluso**
 
-## 🚀 **Como Adquirir**
+- Licença Premium do Whazing
+- VPS Brasil
+- Instalação completa
+- Monitoramento
+- Manutenção da VPS
+- Backup periódico
+- 1 hora de suporte técnico mensal (mediante agendamento)
 
-💻 **Acesse:** [https://loja.whazing.com.br/](https://loja.whazing.com.br/) 📱 **WhatsApp:** +55 48 3197-0877 ou +55 48 3197-0599
+---
+
+## Cloud Business
+
+### R$ 289,90/mês
+
+**Infraestrutura**
+
+- 4 vCPUs
+- 12 GB RAM
+- SSD NVMe 200 GB
+
+**Incluso**
+
+- Licença Premium do Whazing
+- VPS Brasil
+- Instalação completa
+- Monitoramento
+- Manutenção da VPS
+- Backup periódico
+- 1 hora de suporte técnico mensal (mediante agendamento)
+
+---
+
+### Importante
+
+- Não é disponibilizado acesso à VPS (SSH, Root, Console ou painel do provedor).
+- O registro de domínio não está incluso.
+- Caso necessário, disponibilizamos gratuitamente um subdomínio para acesso ao sistema (o nome não pode ser escolhido).
+
+---
+
+# ⚙️ Serviços
+
+| Serviço | Valor |
+|---------|:-----:|
+| Instalação (planos Self-Hosted menores que 6 meses) | R$ 50,00 |
+| Instalação Self-Hosted (6 meses ou mais) | Gratuita |
+| Instalação da versão gratuita | R$ 100,00 |
+| Instalação adicional (Typebot ou N8N) | R$ 100,00 cada |
+| Hora técnica | R$ 150,00 |
+
+> Os serviços de instalação são destinados exclusivamente aos planos Self-Hosted.
+
+---
+
+# 🆚 Diferença entre as versões
+
+## Versão Gratuita
+
+- Exibe anúncios do Whazing.
+- Envia propagandas automáticas em campanhas, API, follow-ups, mensagens agendadas e novos tickets.
+
+## Versão Premium
+
+- Sem anúncios.
+- Todas as funcionalidades Premium.
+- Atualizações contínuas.
+- Melhor desempenho e estabilidade.
+
+---
+
+# 🤝 Revenda
+
+Possui várias VPS?
+
+Temos descontos progressivos para parceiros conforme a quantidade de licenças Self-Hosted contratadas.
+
+---
+
+# 💳 Formas de Pagamento
+
+| Método | Descrição |
+|--------|-----------|
+| Pix | Sem taxas |
+| Cartão de crédito | Acréscimo de 10% |
+
+---
+
+# 🚀 Como contratar
+
+🌐 https://loja.whazing.com.br
+
+📱 WhatsApp
+
+- +55 48 3197-0877
+- +55 48 3197-0599
