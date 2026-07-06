@@ -69,7 +69,7 @@ Nessas páginas é possível consultar:
 * Pendências
 * Aprovações da Meta
 
-[https://business.facebook.com/wa/manage/home/?utm\_source](https://business.facebook.com/wa/manage/home/?utm_source=chatgpt.com)
+[https://business.facebook.com/wa/manage/home/?utm_source](https://business.facebook.com/wa/manage/home/?utm_source=chatgpt.com)
 
 ***
 
@@ -85,63 +85,60 @@ As cobranças são realizadas diretamente pela Meta.
 
 ***
 
-### Quem define os preços das conversas?
+### Quem define os preços das conversas e mensagens?
 
 A própria Meta.
 
 Os valores variam conforme:
 
 * País do destinatário
-* Categoria da conversa
-* Tipo da mensagem enviada
+* Categoria da mensagem (marketing, utilidade, autenticação, serviço, Meta Business Agent)
+* Tipo da mensagem enviada (template ou não-template)
 
 ***
 
 ### Onde posso consultar os preços oficiais?
 
-Os preços atualizados podem ser consultados diretamente na documentação oficial da Meta.
+Os preços atualizados podem ser consultados diretamente na documentação oficial da Meta:
 
-[https://whatsappbusiness.com/pt-br/products/platform-pricing/](https://whatsappbusiness.com/pt-br/products/platform-pricing/)
-
-***
-
-## Janela de Atendimento de 24 Horas
-
-### O que é a janela de 24 horas?
-
-Quando um cliente envia uma mensagem para sua empresa, é aberta uma janela de atendimento de 24 horas.
-
-Durante esse período você pode responder livremente.
+* Preços atuais: [https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing/](https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing/)
+* Mudanças futuras de cobrança (a partir de outubro/2026): [https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing/non-template-messages/](https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing/non-template-messages/)
 
 ***
 
-### O que posso enviar dentro da janela?
+### ⚠️ IMPORTANTE: Mudança na cobrança a partir de outubro de 2026
 
-Durante as 24 horas você pode enviar:
+A Meta anunciou um novo modelo de cobrança para mensagens que **não são Template**, ou seja, respostas enviadas dentro da janela de atendimento de 24 horas. Até então, esse tipo de mensagem não gerava cobrança de mensageria.
 
-* Texto
-* Imagens
-* Áudios
-* Vídeos
-* Documentos
-* Figurinhas
-* Mensagens interativas
+**O que muda:**
 
-Sem necessidade de Template.
+* **A partir de 1º de outubro de 2026** — passa a ser cobrado, por mensagem, o envio de **mensagens de serviço** (respostas dentro da janela de 24h). Essas mensagens não eram cobradas desde novembro de 2024.
+* **A partir de 1º de outubro de 2026** — passa a ser cobrado, por mensagem, o envio de **mensagens de utilidade (utility)** dentro da janela de 24h. Essas mensagens não eram cobradas desde julho de 2025.
+
+Ou seja: a partir de outubro/2026, **toda mensagem não-template enviada em resposta a um cliente passará a ter cobrança da Meta**.
 
 ***
 
-### O que acontece quando o cliente envia uma nova mensagem?
+### Como funciona a cobrança das mensagens de serviço e utilidade a partir de outubro de 2026?
 
-A janela é reiniciada automaticamente por mais 24 horas.
+* **Medidor:** por mensagem (igual ao modelo já usado para templates).
+* **Taxas:** serão as mesmas taxas já praticadas para mensagens de utilidade e autenticação, variando por país.
+* Não há níveis de volume (volume tiers) para mensagens de serviço — diferente de utilidade e autenticação, que continuam tendo essa possibilidade.
+* A Meta ainda vai publicar as taxas exatas que valerão a partir de outubro/2026 até **1º de setembro de 2026**.
 
 ***
 
-### O que acontece após as 24 horas?
+### A janela de entrada gratuita de 72 horas (Click to WhatsApp Ads) muda com isso?
 
-Após o encerramento da janela, não será possível iniciar contato com mensagens livres.
+Não.
 
-Será necessário utilizar um Template aprovado pela Meta.
+Mensagens enviadas dentro da janela gratuita de 72 horas (originadas de anúncios Click-to-WhatsApp ou botões de call-to-action do Facebook) continuam gratuitas quanto à entrega da mensagem.
+
+***
+
+### Quem paga essa cobrança: a Whazing ou o cliente final?
+
+Essas cobranças são feitas pela Meta diretamente à empresa dona da conta do WhatsApp Business (WABA), não estão incluídas no valor do plano contratado com a Whazing e não são cobradas pela Whazing.
 
 ***
 
@@ -173,7 +170,7 @@ Exemplos:
 
 Os valores normalmente variam entre US$ 0,01 e US$ 0,07 por conversa.
 
-O valor exato depende da categoria definida pela Meta e do país do destinatário.
+O valor exato depende da categoria definida pela Meta e do país do destinatário. Consulte sempre a documentação oficial de preços da Meta, pois os valores podem ser atualizados trimestralmente.
 
 ***
 
@@ -331,3 +328,11 @@ A API Oficial foi desenvolvida para operação multiusuário e atendimento em eq
 Sim.
 
 A API Oficial permite integrações através de APIs e Webhooks.
+
+***
+
+### A partir de outubro de 2026, atender um cliente pelo WhatsApp Oficial vai custar mais?
+
+Sim, potencialmente.
+
+Até setembro de 2026, responder um cliente dentro da janela de 24h (mensagem de serviço ou utilidade) não gera cobrança de mensageria. A partir de outubro de 2026, cada uma dessas mensagens passa a ter uma cobrança por mensagem, no mesmo padrão de preço já usado para templates de utilidade e autenticação. Recomendamos acompanhar a publicação das taxas oficiais pela Meta (prevista até 1º de setembro de 2026) para dimensionar o impacto no orçamento de mensageria.
