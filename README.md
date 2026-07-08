@@ -58,7 +58,9 @@ Recomendamos uso de VPS nacionais.
 
 Devido a grandes problemas acontecidos nos ultimos dias na hostinger não recomendamos uso dela.
 
-Vps internacional tem [Hetzer](https://www.hetzner.com/), [Peramix](https://control.peramix.com/?affid=58), mas de preferência VPS tempo resposta menor de 50ms
+Vps internacional tem [Hetzer](https://www.hetzner.com/) , mas de preferência VPS tempo resposta menor de 50ms
+
+Não compativel com VPS ARM
 
 * Cupom 25% desconto Peramix "WHAZING"
 
