@@ -1,7 +1,7 @@
 # Contrato de Licença de Uso de Software
-Versão 1.0
-Data de vigência: 16 de março de 2026
-Última atualização: 16 de março de 2026
+Versão 1.1
+Data de vigência: 08 de julho de 2026
+Última atualização: 08 de julho de 2026
 
 **Contrato de Licença de Uso de Software**
 
@@ -18,10 +18,10 @@ O objeto deste Contrato é a concessão de uma licença de uso do software, conf
 O Licenciante oferece a Versão Premium do software mediante o pagamento de uma taxa de licença. Os valores e planos disponíveis são os seguintes:
 
 * **Cada licença é válida para apenas uma VPS ou servidor.:**
-  * Plano 1 mês: R$ 55,00
-  * Plano 3 meses: R$ 155,00
-  * Plano 6 meses: R$ 300,00
-  * Plano 12 meses: R$ 500,00
+  * Plano 1 mês: R$ 60,00
+  * Plano 3 meses: R$ 170,00
+  * Plano 6 meses: R$ 330,00
+  * Plano 12 meses: R$ 550,00
 
 A licença premium concede ao Licenciado acesso ao software sem as limitações presentes na versão gratuita.
 

@@ -19,10 +19,10 @@ A licença é cobrada por VPS, não por empresa. Você pode criar e gerenciar qu
 
 | Plano | 💸 Pix | 💳 Cartão (+10%) |
 |-------|:------:|:----------------:|
-| 1 mês | R$ 55,00 | R$ 60,50 |
-| 3 meses | R$ 155,00 | R$ 170,50 |
-| 6 meses | R$ 300,00 | R$ 330,00 |
-| 12 meses | R$ 500,00 | R$ 550,00 |
+| 1 mês | R$ 60,00 | R$ 66,00 |
+| 3 meses | R$ 170,00 | R$ 187,00 |
+| 6 meses | R$ 330,00 | R$ 363,00 |
+| 12 meses | R$ 550,00 | R$ 605,00 |
 
 ### O que está incluso
 
@@ -51,7 +51,7 @@ Você recebe o sistema totalmente instalado em uma VPS localizada no Brasil. Tod
 
 ## Cloud Start
 
-### R$ 179,90/mês
+### R$ 189,90/mês
 
 **Infraestrutura**
 
@@ -73,7 +73,7 @@ Você recebe o sistema totalmente instalado em uma VPS localizada no Brasil. Tod
 
 ## Cloud Pro
 
-### R$ 229,90/mês
+### R$ 239,90/mês
 
 **Infraestrutura**
 
@@ -95,7 +95,7 @@ Você recebe o sistema totalmente instalado em uma VPS localizada no Brasil. Tod
 
 ## Cloud Business
 
-### R$ 289,90/mês
+### R$ 299,90/mês
 
 **Infraestrutura**
 
