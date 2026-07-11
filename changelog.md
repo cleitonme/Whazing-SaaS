@@ -1,5 +1,10 @@
 # Changelog e Atualizações
 
+### 🚀 Versão 2.21.6 FINAL – Changelog
+- bug - Correção bug kanban duplicar cards
+- bug - Ajustes cache fotos para atualizar mais rápido
+- validação nao deixar criar campanha template api oficial sem preencher todos campos
+
 ### 🚀 Versão 2.21.5 FINAL – Changelog
 - api oficial - alterado alguns avisos falando cobrança mensagem meta
 - api oficial - relatorio e calculadora novos custos  api oficial para acompanhar mudanças
