@@ -112,7 +112,7 @@ Exemplos corretos:
 3. **Salve o canal no whazing**
 4. Retorne ao painel da Meta, clique em **Configurar Webhook** e cole as informações.
 5. Clique em **Verificar e Salvar**.
-6. Marque o maximos para Assinado, principalmente o de **messages**.
+6. Marque o máximos para Assinado, principalmente o de **messages**.
 7. Não esqueça marcar **messages** ele principal.
 
 <figure><img src="../../.gitbook/assets/ativarmessages.png" alt=""><figcaption></figcaption></figure>
@@ -126,7 +126,14 @@ Exemplos corretos:
 1. Acesse **Ferramentas > Registrar Telefone**.
 2. Digite um **PIN de 6 dígitos** (caso já tenha usado um PIN antes, utilize o mesmo).
 
-Esse processo somente faz 1 vez
+🔐 **PIN de Verificação em Duas Etapas**
+
+Informe um **PIN de 6 dígitos numéricos**.
+
+* Se **você nunca configurou um PIN** para este número, **crie um PIN de 6 dígitos** (exemplo: **123456**).
+* Se **já configurou um PIN anteriormente**, informe **o mesmo PIN** utilizado na época.
+
+⚠️ **Importante:** Esse PIN é configurado **apenas uma vez** para cada número de WhatsApp Business. Caso ele já exista, será necessário informar exatamente o mesmo PIN para concluir a conexão.
 
 ***
 
