@@ -80,11 +80,24 @@ description: >-
 
 <figure><img src="../../.gitbook/assets/configuracaoapi.png" alt=""><figcaption></figcaption></figure>
 
-📌 Também será necessário copiar do painel da Meta:
+📌 **Também será necessário copiar exatamente como aparece no painel da Meta:**
 
 * **ID do Número de Telefone**
 * **ID da Conta do WhatsApp Business**
-* **Versão da API** (ex: `v23.0` ou a mais recente disponível).
+* **Versão da API** _(ex.: **v23.0**)_
+
+⚠️ **Importante:** No campo **Versão da API**, informe **exatamente** o valor exibido pela Meta, incluindo a letra **"v"** minúscula no início (ex.: **v23.0**, **v24.0**).
+
+**Não altere o formato.** Exemplos incorretos:
+
+* ❌ 23.0
+* ❌ V23.0
+* ❌ v 23.0
+
+Exemplos corretos:
+
+* ✅ v23.0
+* ✅ v24.0
 
 <figure><img src="../../.gitbook/assets/whazing2.png" alt=""><figcaption></figcaption></figure>
 
