@@ -89,7 +89,7 @@ Você recebe o sistema totalmente instalado em uma VPS localizada no Brasil. Tod
 - Monitoramento
 - Manutenção da VPS
 - Backup periódico
-- 1 hora de suporte técnico mensal (mediante agendamento)
+- 30 minutos de suporte técnico mensal (mediante agendamento)
 
 ---
 
@@ -111,7 +111,7 @@ Você recebe o sistema totalmente instalado em uma VPS localizada no Brasil. Tod
 - Monitoramento
 - Manutenção da VPS
 - Backup periódico
-- 1 hora de suporte técnico mensal (mediante agendamento)
+- 30 minutos de suporte técnico mensal (mediante agendamento)
 
 ---
 
