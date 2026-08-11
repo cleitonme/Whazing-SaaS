@@ -77,7 +77,7 @@ Agora acesse o Whazing:
 
 1. Vá em **Canais**.
 2. Clique em **Adicionar Canal**.
-3. Selecione **WABA (WhatsApp Business API)**.
+3. Selecione **WABA (WhatsApp API Oficial)**.
 4. Preencha os campos utilizando os dados gerados pelo Hub Whazing.
 5. Salve a configuração.
 
