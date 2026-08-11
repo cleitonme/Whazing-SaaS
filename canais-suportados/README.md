@@ -91,7 +91,7 @@ Usar cupom desconto: whazing
 * Sem taxa de ativação
 * Mensalidade: **R$ 25,00 por canal conectado**
 
-**\*ConnectionHub não suporta comentários em postagem somente direct**
+**Não suporta agendamento publicações de Feed, Stories e Reels do Instagram, comentários em publicações somente direct.**
 
 ***
 
