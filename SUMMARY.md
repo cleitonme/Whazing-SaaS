@@ -108,6 +108,7 @@
     * [Fluxos por palavra chave](docs/chatbotinterno/fluxo-por-palavra-chave.md)
     * [Campanhas](funcionalidades/automacao/campanha/README.md)
       * [Tracking Links](funcionalidades/automacao/campanha/tracking-links.md)
+      * [Formulários](funcionalidades/automacao/campanha/formularios.md)
     * [Agendamento de Status (Stories) WhatsApp](funcionalidades/automacao/agendamento-de-status-stories-whatsapp.md)
     * [Regras de Automação](funcionalidades/automacao/regras-de-automacao.md)
   * [WhatsApp](funcionalidades/whatsapp/README.md)
