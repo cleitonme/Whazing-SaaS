@@ -13,7 +13,7 @@ Lembre-se campanha tem riscos altos de ban aconselhamos uso de números descart�
 
 ### 🚀 Etapa 1: Configuração da Campanha
 
-<figure><img src="../../.gitbook/assets/image (17).avif" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (17).avif" alt=""><figcaption></figcaption></figure>
 
 * **Nome da Campanha** → Identifique sua campanha. _(Apenas para organização interna, não interfere no envio)._
 * **Data e Hora de Início** → Defina quando a campanha será iniciada.
@@ -28,9 +28,9 @@ Depois de preencher todos os campos, clique em **Salvar** e siga para a próxima
 
 ### 👥 Etapa 2: Adicionando Contatos
 
-<figure><img src="../../.gitbook/assets/campanha4.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/campanha4.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../../.gitbook/assets/campanha3.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/campanha3.png" alt=""><figcaption></figcaption></figure>
 
 #### Incluir Contatos
 
@@ -50,7 +50,7 @@ Quando terminar, clique em **Listar Campanhas** para voltar à tela anterior.
 2. Clique em **Programar Envio**.
 3. A campanha será executada automaticamente na data e horário definidos.
 
-<figure><img src="../../.gitbook/assets/image (9) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/image (9) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -60,7 +60,7 @@ Você pode **personalizar suas mensagens** utilizando informações cadastradas 
 
 📷 _Exemplo de Informações Adicionais:_
 
-![Variaveis](../../.gitbook/assets/informacoesadicionais.jpg)\\
+![Variaveis](../../../.gitbook/assets/informacoesadicionais.jpg)\\
 
 *   Exemplo 1:
 

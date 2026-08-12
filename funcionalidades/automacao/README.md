@@ -8,6 +8,6 @@
 [fluxo-por-palavra-chave.md](../../docs/chatbotinterno/fluxo-por-palavra-chave.md)
 {% endcontent-ref %}
 
-{% content-ref url="../../docs/modulos/campanha.md" %}
-[campanha.md](../../docs/modulos/campanha.md)
+{% content-ref url="campanha/" %}
+[campanha](campanha/)
 {% endcontent-ref %}
