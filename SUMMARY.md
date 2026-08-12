@@ -58,6 +58,7 @@
   * [Onboarding Inicial](modulo-saas/onboarding-inicial.md)
   * [Comunicados](modulo-saas/comunicados.md)
   * [Transcrição de Áudio](modulo-saas/transcricao-de-audio.md)
+  * [Configurar OAuth do Gmail para Canal EMAIL](modulo-saas/configurar-oauth-do-gmail-para-canal-email.md)
 * [Canais Disponíveis](canais-suportados/README.md)
   * [WhatsApp Api Oficial](canais-suportados/api-oficial/README.md)
     * [API Oficial do WhatsApp - FAQ Completo](canais-suportados/api-oficial/api-oficial-do-whatsapp-faq-completo.md)
