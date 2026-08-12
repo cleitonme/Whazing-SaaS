@@ -47,6 +47,8 @@ Antes de instalar, o servidor precisa ter:
 
 No servidor onde deseja instalar o serviço, execute:
 
+Caso use wallcalls outro serviço na porta 5000 mesma vps troque a porta da instalação
+
 ```bash
 docker run -d \
   --name transcreve-api \
