@@ -150,6 +150,8 @@ Ideal para empresas que desejam escalar o atendimento sem aumentar equipe.
 * **Discador SIP (WebRTC)**
 * **Transferência de Chamadas SIP**
 * **Chat Interno**
+* **SMS**
+* **EMAIL**
 
 ***
 
