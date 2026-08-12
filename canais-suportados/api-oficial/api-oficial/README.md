@@ -58,9 +58,9 @@ Para conectar verifique documentação oficial do HUB
 * **Via API**:
   * Envio de botões deve ser feito dentro da **janela de 24 horas** da Meta.
   * Postman com exemplos será disponibilizado.\
-    ➤ [Download do POSTMAN API](../../../docs/API%20OFICIAL/postman.json)
+    ➤ [Download do POSTMAN API](https://github.com/cleitonme/Whazing-SaaS/blob/main/docs/API%20OFICIAL/postman.json)
 * Modelo Typebot com botão e envio via HTTP request:\
-  ➤ [Typebot modelo com botão](../../../docs/API%20OFICIAL/typebotusobotao.json)
+  ➤ [Typebot modelo com botão](https://github.com/cleitonme/Whazing-SaaS/blob/main/docs/API%20OFICIAL/typebotusobotao.json)
 
 ***
 

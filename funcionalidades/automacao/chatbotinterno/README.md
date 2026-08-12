@@ -272,8 +272,8 @@ Essa configuração para selecionar o que acontece caso condição seja atendida
     * **Horário de atendimento desativado:**\
       O bot será executado normalmente em qualquer horário.
 * **Auto Distribuir Atendimento**\
-  Não: Desativado.&#x20;
-* Aleatória: Definirá o usuário de forma aleatória/randômica para os usuários da fila.&#x20;
+  Não: Desativado.
+* Aleatória: Definirá o usuário de forma aleatória/randômica para os usuários da fila.
 * Balanceada: Definirá o usuário com base na quantidade de atendimentos de cada usuário da fila. Usuário com menos atendimentos será escolhido. Obs: Aleatória ou Balanceada somente vai escolher com perfil Usuário e estiverem online
 * **Encerrar Atendimento**\
   Caso o cliente digite algumas das informações esperadas, o atendimento será encerrado.
@@ -292,7 +292,7 @@ Ideal para empresas com **plantão ou suporte emergencial**.
 
 <figure><img src="../../../.gitbook/assets/image (14).avif" alt=""><figcaption></figcaption></figure>
 
-[Baixar exemplo](../../../docs/chatbotinterno/horario_de_atendimento.json)
+[Baixar exemplo](https://github.com/cleitonme/Whazing-SaaS/blob/main/docs/chatbotinterno/horario_de_atendimento.json)
 
 ***
 
@@ -300,7 +300,7 @@ Ideal para empresas com **plantão ou suporte emergencial**.
 
 Permite personalizar mensagens com **dados do cliente**.
 
-[Baixar exemplo](../../../docs/chatbotinterno/exemplo_fluxo_usando_novas_variaveis.json)
+[Baixar exemplo](https://github.com/cleitonme/Whazing-SaaS/blob/main/docs/chatbotinterno/exemplo_fluxo_usando_novas_variaveis.json)
 
 **Exemplo de uso:**
 
@@ -324,17 +324,17 @@ Integração com [https://cal.com/](https://cal.com/)
 
 <figure><img src="../../../.gitbook/assets/image (15).avif" alt=""><figcaption></figcaption></figure>
 
-[Baixar exemplo](../../../docs/chatbotinterno/agendamentobarbearia.json)
+[Baixar exemplo](https://github.com/cleitonme/Whazing-SaaS/blob/main/docs/chatbotinterno/agendamentobarbearia.json)
 
 <figure><img src="../../../.gitbook/assets/image (16).avif" alt=""><figcaption></figcaption></figure>
 
-[Baixar exemplo com botões](../../../docs/chatbotinterno/agendamentobarbeariabotao.json)
+[Baixar exemplo com botões](https://github.com/cleitonme/Whazing-SaaS/blob/main/docs/chatbotinterno/agendamentobarbeariabotao.json)
 
 ***
 
 ### 4️⃣ Fluxo sobre Whazing (lista, botão e links)
 
-[Baixar exemplo](../../../docs/chatbotinterno/exemplo_whazing.json)
+[Baixar exemplo](https://github.com/cleitonme/Whazing-SaaS/blob/main/docs/chatbotinterno/exemplo_whazing.json)
 
 ***
 
@@ -342,7 +342,7 @@ Integração com [https://cal.com/](https://cal.com/)
 
 Exemplo que valida **CEP e cidade** via API.
 
-[Baixar exemplo](../../../docs/chatbotinterno/exemplo_http_request.json)
+[Baixar exemplo](https://github.com/cleitonme/Whazing-SaaS/blob/main/docs/chatbotinterno/exemplo_http_request.json)
 
 ***
 
@@ -350,7 +350,7 @@ Exemplo que valida **CEP e cidade** via API.
 
 Usa **HTTP Request** para gerar teste automático para o cliente.
 
-[Baixar exemplo](../../../docs/chatbotinterno/exemplo_teste_whazing.json)
+[Baixar exemplo](https://github.com/cleitonme/Whazing-SaaS/blob/main/docs/chatbotinterno/exemplo_teste_whazing.json)
 
 ***
 
@@ -358,7 +358,7 @@ Usa **HTTP Request** para gerar teste automático para o cliente.
 
 Envia mensagem de boas-vindas e direciona o cliente para uma fila.
 
-[Baixar exemplo](../../../docs/chatbotinterno/boas_vindas.json)
+[Baixar exemplo](https://github.com/cleitonme/Whazing-SaaS/blob/main/docs/chatbotinterno/boas_vindas.json)
 
 > Usa “Forçar executar condições” para simular uma resposta automática e avançar o fluxo.
 
@@ -366,7 +366,7 @@ Envia mensagem de boas-vindas e direciona o cliente para uma fila.
 
 ### 8️⃣ Seleção de Fila por Palavra-chave
 
-[Baixar exemplo](../../../docs/chatbotinterno/bot_por_palavra_chat.json)
+[Baixar exemplo](https://github.com/cleitonme/Whazing-SaaS/blob/main/docs/chatbotinterno/bot_por_palavra_chat.json)
 
 Permite enviar o cliente para uma fila específica conforme a palavra digitada. Com “Iniciar Integração ao transferir”, o sistema já ativa a integração automaticamente.
 
@@ -374,7 +374,7 @@ Permite enviar o cliente para uma fila específica conforme a palavra digitada. 
 
 ### 9️⃣ Consulta de CPF via API
 
-[Baixar exemplo](../../../docs/chatbotinterno/consulta_cpf.json)
+[Baixar exemplo](https://github.com/cleitonme/Whazing-SaaS/blob/main/docs/chatbotinterno/consulta_cpf.json)
 
 Usa a API pública [cpfhub.io](https://www.cpfhub.io/).
 
@@ -384,6 +384,6 @@ Usa a API pública [cpfhub.io](https://www.cpfhub.io/).
 
 ### 1️⃣ 0️⃣ Bot muda comportamento conforme horario
 
-[Baixar exemplo](../../../docs/chatbotinterno/botporhorario.json)
+[Baixar exemplo](https://github.com/cleitonme/Whazing-SaaS/blob/main/docs/chatbotinterno/botporhorario.json)
 
 Esse modelo apresenta diversos exemplos de como o bot interno pode ser utilizado. De acordo com o horário em que o cliente entra em contato, ele envia automaticamente uma mensagem informando o horário de atendimento. Se o cliente escolher a opção **“Retirar na loja”**, o bot envia a **localização da loja**. Além disso, o bot solicita o **CNPJ do cliente** e salva o valor em uma **variável** — caso essa informação já exista, o atendimento é encaminhado diretamente para a equipe.

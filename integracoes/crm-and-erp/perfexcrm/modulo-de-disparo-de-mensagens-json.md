@@ -22,7 +22,7 @@ Ideal para cobranças, lembretes, notificações e automações avançadas.
 
 ### 📦 Download do módulo
 
-👉 [https://github.com/cleitonme/Whazing-SaaS/blob/main/docs/perfexcrm/modulo%20notificacao%20para%20PerfexCRM%20%20compativel%20com%20api%20do%20whazing%20para%20envio%20json.zip](../../../docs/perfexcrm/modulo%20notificacao%20para%20PerfexCRM%20%20compativel%20com%20api%20do%20whazing%20para%20envio%20json.zip)
+👉 [https://github.com/cleitonme/Whazing-SaaS/blob/main/docs/perfexcrm/modulo%20notificacao%20para%20PerfexCRM%20%20compativel%20com%20api%20do%20whazing%20para%20envio%20json.zip](https://github.com/cleitonme/Whazing-SaaS/blob/main/docs/perfexcrm/modulo%20notificacao%20para%20PerfexCRM%20%20compativel%20com%20api%20do%20whazing%20para%20envio%20json.zip)
 
 ***
 

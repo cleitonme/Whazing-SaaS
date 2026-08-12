@@ -132,7 +132,7 @@ Mas deixar **Tickets em aberto e Tickets pendentes desativados**,\
 
 ***
 
-### &#x20;🔄 **Diferença entre WebHook e API**
+### 🔄 **Diferença entre WebHook e API**
 
 | Tipo        | Função principal                             | Exemplo de uso                                               |
 | ----------- | -------------------------------------------- | ------------------------------------------------------------ |
@@ -152,8 +152,8 @@ Mas deixar **Tickets em aberto e Tickets pendentes desativados**,\
 
 ## 📚 **Modelos para Estudo**
 
-* [Baixe e importe o exemplo de fluxo compatível com o Whazing](../../../docs/integra%C3%A7%C3%B5es/Webhook%20e%20N8N/Modelo_Whazing_n8n.json)
-* [Baixe e importe o modelo com exemplos de endpoints adicionais](../../../docs/integra%C3%A7%C3%B5es/Webhook%20e%20N8N/modelo_com_alguns_endpoints.json)
+* [Baixe e importe o exemplo de fluxo compatível com o Whazing](https://github.com/cleitonme/Whazing-SaaS/blob/main/docs/integra%C3%A7%C3%B5es/Webhook%20e%20N8N/Modelo_Whazing_n8n.json)
+* [Baixe e importe o modelo com exemplos de endpoints adicionais](https://github.com/cleitonme/Whazing-SaaS/blob/main/docs/integra%C3%A7%C3%B5es/Webhook%20e%20N8N/modelo_com_alguns_endpoints.json)
 
 > 🙌 Agradecimento especial a **Elizeu Garcez** e **Ricardo Schonfelder Filho** por compartilharem os modelos.
 

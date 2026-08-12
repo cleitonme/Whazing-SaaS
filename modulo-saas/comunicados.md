@@ -8,6 +8,8 @@ Você pode criar comunicados para **todas as empresas** ou selecionar empresas e
 
 É possível incluir **textos, imagens, botões e links**, além de definir quando o comunicado deve começar e deixar de ser exibido.
 
+<figure><img src="../.gitbook/assets/comunicado.png" alt=""><figcaption></figcaption></figure>
+
 ***
 
 ### 🎯 Para que serve?

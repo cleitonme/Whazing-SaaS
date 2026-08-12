@@ -11,7 +11,7 @@ Facilite o cadastro em massa dos seus contatos no WHAZING utilizando um arquivo 
 
 ## 🛠️ **1. Baixe e Edite o Arquivo Modelo**
 
-* 📥 Faça o [**download do arquivo modelo**](../../../docs/importarcontatos/modelo.csv)
+* 📥 Faça o [**download do arquivo modelo**](https://github.com/cleitonme/Whazing-SaaS/blob/main/docs/importarcontatos/modelo.csv)
 * 📝 Ao abrir o arquivo em um editor de texto (ex: **Bloco de Notas**, **Notepad++** ou **VS Code**), ele deve seguir o seguinte formato:
 
 ```csv
