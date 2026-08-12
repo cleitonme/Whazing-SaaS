@@ -114,6 +114,7 @@
     * [Agendamento de Publicações no Instagram](funcionalidades/automacao/agendamento-de-publicacoes-no-instagram.md)
     * [Automação de Comentários e Direct do Instagram](funcionalidades/automacao/automacao-de-comentarios-e-direct-do-instagram.md)
     * [Resposta Automática a Comentários do TikTok](funcionalidades/automacao/resposta-automatica-a-comentarios-do-tiktok.md)
+    * [Envio da Cópia do Atendimento por E-mail](funcionalidades/automacao/envio-da-copia-do-atendimento-por-e-mail.md)
   * [WhatsApp](funcionalidades/whatsapp/README.md)
     * [Importar mensagens Baileys](funcionalidades/whatsapp/importar-mensagens-whatsapp.md)
     * [SINCRONIZAR MENSAGENS - API PLUS - WuzApi](funcionalidades/whatsapp/sincronizar_mensagens_api_plus.md)
