@@ -4,6 +4,8 @@ icon: shuffle
 
 # Fluxos por palavra chave
 
+#### "Descontinuado substituido automação de entrada na versão 3.0.0"
+
 #### Regras para acionar chatbot por palavra-chave na **primeira mensagem**
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>

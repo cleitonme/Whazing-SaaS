@@ -104,6 +104,7 @@
     * [CHATBOT INTERNO](funcionalidades/automacao/chatbotinterno/README.md)
       * [Rodízio Automático de Atendimentos](funcionalidades/automacao/chatbotinterno/rodizio-automatico-de-atendimentos.md)
       * [Criando as Etapas de atendimento](funcionalidades/automacao/chatbotinterno/criando-as-etapas-de-atendimento.md)
+    * [Automação de Entrada](funcionalidades/automacao/automacao-de-entrada.md)
     * [Fluxos por palavra chave](docs/chatbotinterno/fluxo-por-palavra-chave.md)
     * [Campanhas](funcionalidades/automacao/campanha/README.md)
       * [Tracking Links](funcionalidades/automacao/campanha/tracking-links.md)
