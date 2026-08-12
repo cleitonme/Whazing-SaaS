@@ -85,6 +85,7 @@
     * [Whatsapp, Instagram, facebook, TikTok e Webchat via NotificaMe](canais-suportados/hub-instagram-facebook-tiktok/facebook-e-instagram-via-hub/README.md)
       * [Responder Comentários Instagram - HUB NotificaMe](canais-suportados/hub-instagram-facebook-tiktok/facebook-e-instagram-via-hub/responder-comentarios-instagram.md)
     * [Instagram, Facebook via ConnectionHub](canais-suportados/hub-instagram-facebook-tiktok/instagram-facebook-via-connectionhub.md)
+  * [SMS](canais-suportados/sms.md)
 * [Funcionalidades](funcionalidades/README.md)
   * [Atendimento](funcionalidades/atendimento/README.md)
     * [Avaliação de Atendimento](funcionalidades/atendimento/avaliacao.md)
