@@ -127,6 +127,7 @@
     * [Contatos](funcionalidades/gestao/contatos/README.md)
       * [Importar Contatos](funcionalidades/gestao/contatos/importarcontatos.md)
       * [Arquivos do Contato](funcionalidades/gestao/contatos/arquivos-do-contato.md)
+      * [Histórico de Mídias por Contato](funcionalidades/gestao/contatos/historico-de-midias-por-contato.md)
     * [Configurações](funcionalidades/gestao/configuracoes.md)
     * [Variáveis do Sistema](funcionalidades/gestao/variaveis-sistema.md)
     * [Tarefas](funcionalidades/gestao/tarefas.md)
