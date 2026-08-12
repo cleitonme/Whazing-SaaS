@@ -154,6 +154,7 @@
       * [Configuração de Resposta por Áudio](integracoes/inteligencia-artificial/recepcao-inteligente/configuracao-de-resposta-por-audio.md)
       * [Busca Semântica](integracoes/inteligencia-artificial/recepcao-inteligente/busca-semantica.md)
       * [Configurando Provedor de IA Personalizado (OpenAI Compatível)](integracoes/inteligencia-artificial/recepcao-inteligente/configurando-provedor-de-ia-personalizado-openai-compativel.md)
+      * [MCP e Ferramentas de IA](integracoes/inteligencia-artificial/recepcao-inteligente/mcp-e-ferramentas-de-ia.md)
   * [CRM & ERP](integracoes/crm-and-erp/README.md)
     * [WooCommerce](integracoes/crm-and-erp/woocommerce-login-whatsapp.md)
     * [PerfexCRM](integracoes/crm-and-erp/perfexcrm/README.md)
