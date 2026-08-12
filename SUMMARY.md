@@ -56,6 +56,7 @@
   * [Emissão de NFS-e com Asaas](modulo-saas/emissao-de-nfs-e-com-asaas.md)
   * [Gerador de Chatbot com IA](modulo-saas/gerador-de-chatbot-com-ia.md)
   * [Onboarding Inicial](modulo-saas/onboarding-inicial.md)
+  * [Comunicados](modulo-saas/comunicados.md)
 * [Canais Disponíveis](canais-suportados/README.md)
   * [WhatsApp Api Oficial](canais-suportados/api-oficial/README.md)
     * [API Oficial do WhatsApp - FAQ Completo](canais-suportados/api-oficial/api-oficial-do-whatsapp-faq-completo.md)

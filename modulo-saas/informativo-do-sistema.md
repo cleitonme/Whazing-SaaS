@@ -7,7 +7,11 @@ description: >-
 
 # 📢 Informativo do Sistema
 
+Descontinuado versão na versão 3.00 substituito por Comunicados
+
 <figure><img src="../.gitbook/assets/image (7) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+###
 
 ### 🔹 Exemplos de uso
 
