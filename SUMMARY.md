@@ -112,6 +112,7 @@
     * [Regras de Automação](funcionalidades/automacao/regras-de-automacao.md)
     * [Agendamento de Status (Stories) WhatsApp](funcionalidades/automacao/agendamento-de-status-stories-whatsapp.md)
     * [Agendamento de Publicações no Instagram](funcionalidades/automacao/agendamento-de-publicacoes-no-instagram.md)
+    * [Automação de Comentários e Direct do Instagram](funcionalidades/automacao/automacao-de-comentarios-e-direct-do-instagram.md)
   * [WhatsApp](funcionalidades/whatsapp/README.md)
     * [Importar mensagens Baileys](funcionalidades/whatsapp/importar-mensagens-whatsapp.md)
     * [SINCRONIZAR MENSAGENS - API PLUS - WuzApi](funcionalidades/whatsapp/sincronizar_mensagens_api_plus.md)
