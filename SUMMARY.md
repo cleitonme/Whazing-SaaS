@@ -109,6 +109,7 @@
     * [Campanhas](funcionalidades/automacao/campanha/README.md)
       * [Tracking Links](funcionalidades/automacao/campanha/tracking-links.md)
     * [Agendamento de Status (Stories) WhatsApp](funcionalidades/automacao/agendamento-de-status-stories-whatsapp.md)
+    * [Regras de Automação](funcionalidades/automacao/regras-de-automacao.md)
   * [WhatsApp](funcionalidades/whatsapp/README.md)
     * [Importar mensagens Baileys](funcionalidades/whatsapp/importar-mensagens-whatsapp.md)
     * [SINCRONIZAR MENSAGENS - API PLUS - WuzApi](funcionalidades/whatsapp/sincronizar_mensagens_api_plus.md)
