@@ -76,7 +76,7 @@ Também é possível configurar:
 * Serviços que poderão utilizar aquele provedor
 * Status do serviço
 
-<figure><img src="../.gitbook/assets/servicoia.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/servicoia.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -344,7 +344,7 @@ Esse ranking ajuda o administrador a identificar:
 * Custos estimados
 * Taxa de sucesso
 
-<figure><img src="../.gitbook/assets/relatorioia.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/relatorioia.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -442,7 +442,7 @@ Exemplo:
 
 > ⚠️ Use essa opção com cuidado, pois o consumo será realizado utilizando os recursos/tokens do SaaS.
 
-<figure><img src="../.gitbook/assets/servicoiaplano.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/servicoiaplano.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -591,7 +591,7 @@ Consumo atual: —
 
 ***
 
-<figure><img src="../.gitbook/assets/consumocliente.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/consumocliente.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -612,7 +612,7 @@ Quando ativado, o menu de IA aparece na tela de atendimento com recursos como:
 * Resumir conversa
 * Sugerir resposta
 
-<figure><img src="../.gitbook/assets/copilotiapropria.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/copilotiapropria.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
