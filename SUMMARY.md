@@ -59,6 +59,7 @@
   * [Comunicados](modulo-saas/comunicados.md)
   * [Transcrição de Áudio](modulo-saas/transcricao-de-audio.md)
   * [Configurar OAuth do Gmail para Canal EMAIL](modulo-saas/configurar-oauth-do-gmail-para-canal-email.md)
+  * [Controle de Espaço em Uso e Venda de Adicionais de Armazenamento](modulo-saas/controle-de-espaco-em-uso-e-venda-de-adicionais-de-armazenamento.md)
 * [Canais Disponíveis](canais-suportados/README.md)
   * [WhatsApp Api Oficial](canais-suportados/api-oficial/README.md)
     * [API Oficial do WhatsApp - FAQ Completo](canais-suportados/api-oficial/api-oficial-do-whatsapp-faq-completo.md)
