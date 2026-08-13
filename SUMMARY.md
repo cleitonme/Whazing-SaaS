@@ -63,6 +63,7 @@
   * [IA Integrada](modulo-saas/ia-integrada/README.md)
     * [Usando o 9Router como Provedor de IA no Whazing](modulo-saas/ia-integrada/usando-o-9router-como-provedor-de-ia-no-whazing/README.md)
       * [🔊 Dica Extra — Recepção Inteligente com Voz usando 9Router](modulo-saas/ia-integrada/usando-o-9router-como-provedor-de-ia-no-whazing/dica-extra-recepcao-inteligente-com-voz-usando-9router.md)
+  * [📞 WaCalls — Ativação Automática e Venda de Adicionais](modulo-saas/wacalls-ativacao-automatica-e-venda-de-adicionais.md)
 * [Canais Disponíveis](canais-suportados/README.md)
   * [WhatsApp Api Oficial](canais-suportados/api-oficial/README.md)
     * [API Oficial do WhatsApp - FAQ Completo](canais-suportados/api-oficial/api-oficial-do-whatsapp-faq-completo.md)
