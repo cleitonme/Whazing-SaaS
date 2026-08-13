@@ -20,7 +20,7 @@ Para criar ou gerenciar planos disponíveis para seus clientes:
 
 **Adicionar**
 
-<figure><img src="../.gitbook/assets/addplano.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/addplano.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -46,7 +46,7 @@ Exemplos:
 
 Descrição para aparecer cliente tela cadastro ou migração de plano. Aceita algumas personalização HTML, segue alguns exemplos abaixo para cadastro campo
 
-<figure><img src="../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
 ```
 <ul>
@@ -179,7 +179,7 @@ Permite **importar mensagens antigas do WhatsApp**.
 
 Essa função aparece quando o cliente **conecta o WhatsApp lendo o QR Code ou sincronização mensagem plus e WuzApi**.
 
-<figure><img src="../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -196,7 +196,7 @@ Para isso:
 2. Edite a empresa desejada
 3. No campo **Plano**, selecione o plano criado.
 
-<figure><img src="../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -212,9 +212,9 @@ As cobranças:
 * Aparecem na área **Financeiro** do cliente
 * São criadas **20 dias antes do vencimento**
 
-<figure><img src="../.gitbook/assets/planosclientepagar.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/planosclientepagar.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src="../.gitbook/assets/migracaoplanos.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/migracaoplanos.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -266,7 +266,7 @@ Para isso:
 2. Clique em **Ações**
 3. Acesse a área **Listar Faturar em Aberto**
 
-<figure><img src="../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (104).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
