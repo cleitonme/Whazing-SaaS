@@ -1,5 +1,191 @@
 # Changelog e Atualizações
 
+# 🚀 Versão 3.0.0 BETA – Changelog
+
+## ⚠️ Atenção
+
+* A configuração do canal **“Fechar ticket automaticamente e voltar para pendente”** foi descontinuada.
+* O módulo **Chatbot por palavra-chave** e o **Bot por Kanban Lane** foram descontinuados. **Salve os dados antes de atualizar caso utilize esses módulos.** Eles foram substituídos por um módulo mais completo.
+
+## 🚀 Principais novidades
+
+### Migração de tecnologia
+
+* Migração do **Vue 2 e Quasar 1 para Vue 3 e Quasar 2**, utilizando uma engine mais moderna, com melhorias de desempenho, correções de bugs e novos recursos.
+
+### Lista de Contatos
+
+* Ações em massa para etiquetas e carteira.
+* Validação de contatos.
+* Histórico de mídias por contato.
+* Perfil **Admin** e **Supervisor** acessam todos os históricos; outros perfis acessam somente os históricos das filas às quais têm acesso.
+* Modal de cadastro de contato com layout atualizado.
+
+### Novos Layouts
+
+* Editor ChatFlow.
+* Dashboard.
+* Chat interno.
+* Atendimento.
+* Painel SaaS.
+* Menu Cliente.
+* Cadastro de Usuários.
+
+### Kanban e Kanban PRO
+
+* Possibilidade de abrir o atendimento diretamente nessa tela, visualizar mensagens e responder sem sair do Kanban.
+* Atualização em tempo real via Socket quando outro usuário move um card, sem necessidade de atualizar a página.
+
+### Novos Canais
+
+* **SMS** – integração com https://witi.me/ e sistema de venda de créditos. Você pode utilizar seu cadastro e revender o envio de SMS para seus clientes, cadastrando pacotes de créditos diretamente pelo Whazing e gerando uma renda extra.
+* **E-mail**.
+
+### API Oficial
+
+* Suporte ao envio de PIX.
+
+## 🆕 Novos Módulos
+
+### Tracking Links
+
+* Links para rastreamento da origem do lead.
+
+### Formulários
+
+* Formulários para incorporar em sites ou utilizar por link direto para captura de leads.
+
+### Transcrição de Áudio
+
+* Suporte à API gratuita https://github.com/cleitonme/transcreveAPI, evitando a necessidade de configurar uma chave de transcrição por canal do cliente e tornando a configuração mais fácil para o usuário final.
+
+### Automação de Entrada
+
+* Escolha o destino de novos tickets para uma fila ou chatbot.
+* Novas opções de automação envolvendo:
+
+  * Tracking Link.
+  * Ads.
+  * Etiquetas.
+  * Kanban.
+  * Kanban PRO.
+  * Novos contatos.
+  * Palavras-chave, substituindo o módulo anterior.
+
+### Automação de Comentários
+
+* Respostas automáticas nos canais TikTok e Instagram para comentários, utilizando texto fixo ou IA (canal Notificame).
+
+### Regras de Automação
+
+* Novas regras para automatizar diversas ações do atendimento e auxiliar na operação.
+* Incluindo recursos de fechamento automático e retorno para pendente, substituindo a configuração anterior que foi descontinuada.
+
+### Agendamento de Publicações
+
+* Agendamento de publicações de **Feed, Stories e Reels do Instagram** (Hub Notificame).
+
+### WaCalls
+
+* Ativação automática.
+* Venda como adicional.
+
+### Testar API
+
+* Teste de APIs criadas visualmente.
+
+### Campanhas
+
+* Campanhas de e-mail e SMS.
+
+### Envio de Cópia do Atendimento por E-mail
+
+* Envio de uma cópia do atendimento por e-mail.
+
+### IA Integrada
+
+* Cadastre os provedores de IA que o SaaS disponibiliza para os clientes utilizarem sem precisar de uma conta própria.
+* Suporte para serviços como:
+
+  * Copilot.
+  * Smart Reception.
+  * Embeddings.
+* Associação dos serviços aos planos em **Planos**.
+* Venda de IA incluída nos planos ou através de adicionais.
+
+### Espaço em Uso
+
+* Controle do espaço utilizado pelas empresas nos planos.
+* Venda de espaço adicional.
+
+## 💬 Atendimento
+
+* Busca de contatos insensível a acentos.
+* Botão **Adicionar colaborador ao ticket**, permitindo que mais de um usuário atenda o mesmo ticket ao mesmo tempo.
+* Histórico de mídias por contato, com acesso conforme o perfil e as filas.
+* Transcrição de áudios enviados para texto.
+
+## 📚 Base de Conhecimento
+
+* Suporte ao envio simultâneo de múltiplos arquivos para a base de conhecimento.
+
+## 🎯 Onboarding
+
+* Preset de **Recepção Inteligente**.
+
+## 🔌 Integrações
+
+* Novo layout para cadastro e ativação das integrações.
+
+## 🤖 Recepção Inteligente
+
+* Novo layout de cadastro.
+* Suporte ao **Kanban PRO**.
+* Suporte à classificação de leads de **frio a quente**, em conjunto com o Kanban.
+* Configuração para utilizar o histórico do ticket ou do contato, considerando mensagens de tickets anteriores.
+* Suporte a provedores de voz compatíveis com a API da OpenAI, como **9router, Kokoro**, entre outros.
+* Suporte a **MCP** para utilização de bases de conhecimento, como exemplo o GitBook: https://doc.whazing.com.br/~gitbook/mcp
+
+## 📅 Agendamento de Status
+
+* Configuração para repetir.
+* Melhor visualização.
+
+## 📆 Agendamentos
+
+* Suporte ao envio de botões no **PLUS**.
+
+## 🔄 Follow-up
+
+* Nova configuração **“Cancelar Follow-up ao responder”**:
+
+  * Quando o cliente responder qualquer mensagem, as próximas etapas pendentes são canceladas automaticamente.
+  * Padrão: desativado.
+* Suporte a botões e templates.
+
+## 📊 Novos Relatórios
+
+* Tracking Link.
+* Meta Ads.
+
+## 🏢 Painel SaaS
+
+* Informativos removidos e substituídos pelo novo módulo **Central de Comunicação**.
+* Acesso a outras empresas pelo Painel SaaS no modo suporte.
+* Mais estatísticas das empresas.
+* Suporte para cadastrar tokens de IA no Painel SaaS e incluir IA na venda dos planos, facilitando a disponibilização das integrações para o cliente final.
+* Suporte à venda de adicionais nos planos, como:
+
+  * Campanhas.
+  * Espaço.
+  * IA.
+* O cliente pode comprar e ativar os adicionais automaticamente, sem necessidade de interação com o suporte.
+
+## 🔧 Outras mudanças
+
+* Muitas outras melhorias, correções e mudanças ainda não documentadas.
+
+
 ### 🚀 Versão 2.21.6 FINAL – Changelog
 - bug - Correção bug kanban duplicar cards
 - bug - Ajustes cache fotos para atualizar mais rápido
