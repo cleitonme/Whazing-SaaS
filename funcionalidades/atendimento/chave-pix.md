@@ -1,7 +1,5 @@
 ---
-description: >-
-  Disponível para envio nos canais WhatsApp Plus, Wuzapi e API Oficial
-  (WABA)
+description: Disponível para envio nos canais WhatsApp Plus, Wuzapi e API Oficial (WABA)
 icon: key
 ---
 
@@ -20,8 +18,6 @@ Acesse o menu:
 **Cadastros → Chaves Pix**
 
 Clique em **Cadastrar Chave Pix** para abrir o modal de cadastro.
-
-<figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

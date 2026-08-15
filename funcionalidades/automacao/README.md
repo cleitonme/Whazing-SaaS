@@ -8,8 +8,8 @@ Aqui você encontra tudo para automatizar o atendimento: **chatbots** (respostas
 [chatbotinterno](chatbotinterno/)
 {% endcontent-ref %}
 
-{% content-ref url="../../docs/chatbotinterno/fluxo-por-palavra-chave.md" %}
-[fluxo-por-palavra-chave.md](../../docs/chatbotinterno/fluxo-por-palavra-chave.md)
+{% content-ref url="/broken/pages/5T9LzzqCbpIg06GKEXs6" %}
+[Broken link](/broken/pages/5T9LzzqCbpIg06GKEXs6)
 {% endcontent-ref %}
 
 {% content-ref url="campanha/" %}

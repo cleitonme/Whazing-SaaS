@@ -126,7 +126,6 @@
       * [Criando as Etapas de Atendimento](funcionalidades/automacao/chatbotinterno/criando-as-etapas-de-atendimento.md)
     * [CHATBOT 3.0](funcionalidades/automacao/chatbotinterno-1/README.md)
       * [Rodízio Automático de Atendimentos](funcionalidades/automacao/chatbotinterno-1/rodizio-automatico-de-atendimentos.md)
-    * [Fluxos por palavra chave](docs/chatbotinterno/fluxo-por-palavra-chave.md)
     * [Automação de Entrada](funcionalidades/automacao/automacao-de-entrada.md)
     * [Regras de Automação](funcionalidades/automacao/regras-de-automacao.md)
     * [Mensagens Automáticas](funcionalidades/automacao/mensagens-automaticas.md)
