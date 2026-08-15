@@ -135,7 +135,7 @@ Após criar, o sistema mostrará duas informações importantes:
 
 Agora vá no:
 
-**Painel SaaS → Configurações → Armazenamento S3**
+**Painel SaaS → Integrações → Storage / Backblaze / S3**
 
 Preencha os campos com:
 
