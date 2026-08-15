@@ -1,7 +1,8 @@
 ---
 description: >-
   Este tutorial explica como criar e configurar planos dentro do painel SaaS,
-  definindo limites, funcionalidades e cobranças para os clientes do sistema.
+  definindo limites, funcionalidades, canais, serviços de IA e ciclos de
+  cobrança para os clientes do sistema.
 icon: face-tongue-money
 ---
 
@@ -12,13 +13,9 @@ icon: face-tongue-money
 Para criar ou gerenciar planos disponíveis para seus clientes:
 
 1. Acesse o **Painel SaaS**
-2. Clique em
-
-**Planos**
-
-3. Clique no botão:
-
-**Adicionar**
+2. Clique em **Comercial**
+3. Clique em **Planos**
+4. Clique no botão **Adicionar**
 
 <figure><img src="../../.gitbook/assets/addplano.png" alt=""><figcaption></figcaption></figure>
 
@@ -26,11 +23,36 @@ Para criar ou gerenciar planos disponíveis para seus clientes:
 
 ## 2. Criando um novo plano
 
-Ao clicar em **Adicionar**, será exibido o formulário de criação do plano.
+Ao clicar em **Adicionar**, será exibido o modal **Criar Plano** com todas as configurações do plano.
 
-Preencha as seguintes informações:
+***
 
-### Nome do Plano
+### Plano de Afiliado
+
+Opção utilizada para criar acessos exclusivos do **Programa de Afiliados**.
+
+**Quando ativado:**
+
+* Valores do plano ficam **zerados**
+* Sem canais disponíveis
+* Sem funcionalidades
+* Vencimento automático definido para o ano **2099**
+
+Esse modelo foi criado especialmente para que afiliados possam acompanhar seus resultados sem custo e sem acesso aos recursos do sistema.
+
+<figure><img src="../../.gitbook/assets/planoafiliado.png" alt=""><figcaption></figcaption></figure>
+
+Para mais detalhes, consulte:
+
+[Programa de Afiliados (Indique e Ganhe)](../programa-de-afiliados-indique-e-ganhe.md)
+
+***
+
+### Informações
+
+Aba de informações básicas do plano.
+
+#### Nome do Plano
 
 Nome que será exibido para os clientes.
 
@@ -42,9 +64,9 @@ Exemplos:
 
 ***
 
-### Descrição plano
+#### Descrição
 
-Descrição para aparecer cliente tela cadastro ou migração de plano. Aceita algumas personalização HTML, segue alguns exemplos abaixo para cadastro campo
+Descrição para aparecer na tela de cadastro ou migração de plano do cliente. Aceita algumas personalizações HTML, segue alguns exemplos abaixo para cadastro no campo:
 
 <figure><img src="../../.gitbook/assets/image.png" alt=""><figcaption></figcaption></figure>
 
@@ -86,7 +108,11 @@ Descrição para aparecer cliente tela cadastro ou migração de plano. Aceita a
 
 ***
 
-### Máximo de Usuários
+#### Adicionar item
+
+Na seção **Adicionar item** você define os limites do plano.
+
+##### Máx. Usuários
 
 Define **quantos atendentes podem utilizar o sistema** dentro desse plano.
 
@@ -96,9 +122,7 @@ Exemplo:
 * 5 usuários
 * 10 usuários
 
-***
-
-### Máximo de Conexões
+##### Máx. Conexões
 
 Define **quantos números de WhatsApp ou outros canais como facebook e instagram podem ser conectados ao sistema**.
 
@@ -108,91 +132,130 @@ Exemplo:
 * 3 conexões
 * 10 conexões
 
-***
+##### Limite de armazenamento (GB)
 
-### Valor Mensal
+Define o limite de armazenamento disponível para a empresa.
 
-Valor que será cobrado mensalmente do cliente.
+> 💡 **0 = armazenamento ilimitado**
 
 Exemplo:
 
-* 49,90
-* 99,90
-* 199,90
+* 5 GB
+* 10 GB
+* 0 (ilimitado)
 
 ***
 
-## 3. Configurando funcionalidades do plano
+### Funcionalidades
 
-Além dos limites de **usuários e conexões**, é possível definir quais funcionalidades estarão disponíveis para os clientes.
-
-### Funcionalidades disponíveis
-
-#### Público
-
-Define se o plano aparecerá na tela de solicitação de teste e migração planos no financeiro
-
-**Quando ativado:**
-
-* O plano aparece na lista de planos disponíveis
-* Pode ser usado para **teste automático e na migração**
-
-**Quando desativado:**
-
-* Plano fica **oculto**
-* Uso **somente interno**
-
-***
-
-#### Grupos
-
-Permite acesso a **grupos do WhatsApp**.
-
-Se desativado, o cliente não poderá utilizar grupos.
-
-***
+Nesta seção você define quais funcionalidades estarão disponíveis para os clientes do plano.
 
 #### Campanhas
 
-Permite envio de **campanhas em massa**.
+Permite liberar o envio de campanhas em massa conforme o tipo:
 
-Se desativado, o cliente não terá acesso opção campanha
+* **Campanhas WhatsApp** — libera o envio de campanhas pela API não oficial
+* **Campanhas Oficial** — libera o envio de campanhas pela API oficial (Meta)
+* **Campanhas Email** — libera o envio de campanhas por e-mail
+* **Campanhas SMS** — libera o envio de campanhas por SMS
 
-***
-
-#### Integrações
-
-Permite cadastrar integrações externas.
-
-Exemplos:
-
-* Webhooks
-* N8N
-* Typebot
-* Outras automações
+Se desativado, o cliente não terá acesso à opção de campanha correspondente.
 
 ***
 
-#### Importar Mensagens
+#### Canais Disponíveis
 
-Permite **importar mensagens antigas do WhatsApp**.
+Selecione quais canais o cliente poderá conectar ao sistema:
 
-Essa função aparece quando o cliente **conecta o WhatsApp lendo o QR Code ou sincronização mensagem plus e WuzApi**.
+* Whatsapp Api Oficial
+* Whatsapp WuzAPI
+* Whatsapp Plus
+* Whatsapp Baileys
+* Whatsapp Multi-WA
+* Connection Hub
+* NotificaMe Hub
+* Telegram
+* WebChat
+* E-mail
+* SMS
 
-<figure><img src="../../.gitbook/assets/image (101).png" alt=""><figcaption></figcaption></figure>
+Somente os canais marcados ficarão disponíveis para os clientes do plano.
 
 ***
 
-## 4. Vinculando plano a uma empresa
+#### WaCalls (Chamadas de Voz)
+
+Permite liberar o serviço de chamadas de voz via WhatsApp.
+
+* **Disponível** — habilita o recurso para o plano
+
+Depois existe o campo:
+
+* **Quantidade de acessos WaCalls** — quantidade de acessos incluídos no plano
+
+Exemplo:
+
+```
+1
+```
+
+> 💡 **Dica:** deixar a quantidade em `0` permite vender o WaCalls como **adicional** — o recurso fica disponível no plano, mas o acesso é contratado separadamente pelo cliente.
+
+Para mais detalhes, consulte:
+
+[WaCalls — Ativação Automática e Venda de Adicionais](../wacalls-ativacao-automatica-e-venda-de-adicionais.md)
+
+***
+
+### Serviços de IA
+
+Define se este plano usa a **IA compartilhada do SaaS** (sem o cliente configurar nada) para cada recurso.
+
+Para cada recurso, informe **qual serviço de IA atende** e o **limite mensal**:
+
+* **Copilot** — assistente de IA disponível no atendimento
+* **Smart Reception** — recepção/inteligência automática
+* **Embeddings** — busca semântica e base de conhecimento
+* **Resposta automática em redes sociais** — automação de respostas em redes sociais
+
+> 💡 Deixar o **Limite mensal** vazio significa **ilimitado**.
+
+Para mais detalhes, consulte:
+
+[IA Integrada](../ia-integrada/README.md)
+
+***
+
+### Ciclos de cobrança
+
+Nesta seção você define quais ciclos de cobrança estarão disponíveis para o plano e o valor de cada um.
+
+Cada ciclo pode ser **habilitado ou desabilitado** individualmente:
+
+* **Mensal** — informe o **Valor Mensal**
+
+  Exemplos:
+
+  * 49,90
+  * 99,90
+  * 199,90
+
+* **Bimestral** — desabilitado por padrão
+* **Trimestral** — desabilitado por padrão
+* **Semestral** — desabilitado por padrão
+* **Anual** — desabilitado por padrão
+
+Para habilitar um ciclo, basta ativá-lo e informar o valor correspondente.
+
+***
+
+## 3. Vinculando plano a uma empresa
 
 Após criar o plano, ele pode ser associado a uma empresa.
 
 Para isso:
 
-1. Acesse no painel SaaS menu:
-
-**Empresas**
-
+1. Acesse no painel SaaS o menu **Empresas**
 2. Edite a empresa desejada
 3. No campo **Plano**, selecione o plano criado.
 
@@ -200,7 +263,7 @@ Para isso:
 
 ***
 
-## 5. Cobranças automáticas
+## 4. Cobranças automáticas
 
 O sistema gera automaticamente as cobranças.
 
@@ -218,7 +281,7 @@ As cobranças:
 
 ***
 
-Importante
+> ⚠️ Importante
 
 Se você:
 
@@ -231,11 +294,21 @@ Basta aguardar.
 
 ***
 
-## 6. Períodos de cobrança
+## 5. Períodos de cobrança
 
-Atualmente o sistema suporta:
+O sistema suporta os seguintes ciclos de cobrança:
 
-✔ Cobrança **mensal, bimestral, trimestral, semestral e anual**
+✔ Mensal
+
+✔ Bimestral
+
+✔ Trimestral
+
+✔ Semestral
+
+✔ Anual
+
+Cada plano define quais ciclos estão habilitados e o valor de cada um na seção **Ciclos de cobrança**.
 
 Ainda **não possui suporte para:**
 
@@ -243,7 +316,7 @@ Ainda **não possui suporte para:**
 
 ***
 
-## 7. Baixa automática de pagamentos
+## 6. Baixa automática de pagamentos
 
 Para que pagamentos sejam baixados automaticamente no sistema, é necessário configurar **webhook do gateway de pagamento**.
 
@@ -253,7 +326,7 @@ Consulte a documentação correspondente.
 
 ***
 
-## 8. Baixa manual de faturas
+## 7. Baixa manual de faturas
 
 Caso necessário, também é possível:
 
@@ -274,12 +347,22 @@ Para isso:
 
 Agora você já sabe:
 
-✔ Criar planos\
-✔ Definir limites de usuários e conexões\
-✔ Configurar funcionalidades\
-✔ Associar planos a empresas\
+✔ Criar planos
+
+✔ Definir limites de usuários, conexões e armazenamento
+
+✔ Configurar funcionalidades e canais
+
+✔ Configurar WaCalls
+
+✔ Configurar serviços de IA
+
+✔ Definir ciclos de cobrança e valores
+
+✔ Associar planos a empresas
+
 ✔ Entender como funcionam as cobranças
 
 ***
 
-✅ Isso permite criar **diferentes níveis de plano para seus clientes**, organizando recursos e limites dentro do sistema.
+✅ Isso permite criar **diferentes níveis de plano para seus clientes**, organizando recursos, serviços e limites dentro do sistema.
