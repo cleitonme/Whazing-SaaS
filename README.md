@@ -10,6 +10,12 @@ O Whazing é a solução completa para gerenciar múltiplos canais de atendiment
 
 Entre na nossa comunidade para suporte e novidades. Aprenda como instalar e configurar o sistema. Link abaixo para acessar nosso grupo.
 
+#### 🗺️ Por onde começar? <a href="#por-onde-comecar" id="por-onde-comecar"></a>
+
+* 🚀 **Nunca usou o sistema?** Siga o guia [**Primeiros Passos — Configuração Inicial**](primeiros-passos.md), que mostra a ordem correta de configuração, do acesso ao primeiro teste.
+* 📖 **Não entendeu algum termo?** Consulte o [**Glossário de Termos**](glossario.md), que explica os conceitos em linguagem simples.
+* 💡 **Quer ver o que o sistema faz?** Veja os [Principais Recursos do Sistema](principais-recursos-do-sistema.md) ou teste a [Demo do Produto](#demo-do-produto) abaixo.
+
 #### 🚀 Demo do Produto <a href="#demo-do-produto" id="demo-do-produto"></a>
 
 * [https://teste.whazing.com.br/](https://teste.whazing.com.br/)
