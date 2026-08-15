@@ -51,17 +51,9 @@ Esse processo é essencial para aumentar suas chances de conversão e manter o c
 
 Acesse:
 
-**Configurações → Follow-up**
+**Automação e Integrações → Follow-up**
 
 <figure><img src="../../.gitbook/assets/image (2) (1).avif" alt=""><figcaption></figcaption></figure>
-
-***
-
-## 🔄 Importante: Mudança a partir da versão 2.6.0
-
-A partir da **versão 2.6.0**, o sistema passou a utilizar **intervalo de horário permitido para envio**, substituindo o comportamento fixo da "Hora de Início".
-
-Para quem ainda está em versões anteriores, o funcionamento antigo continua explicado abaixo.
 
 ***
 
@@ -69,38 +61,20 @@ Para quem ainda está em versões anteriores, o funcionamento antigo continua ex
 
 * **Nome:** Nome interno do modelo (aparece nos relatórios e no painel)
 * **Conexão WhatsApp:** Define por qual conexão a mensagem será enviada
+* **Cancelar Follow-up ao responder:** Quando o cliente responder qualquer mensagem, cancela automaticamente as próximas etapas pendentes. Padrão: **desativado**.
 
-#### 🔹 Antes da versão 2.6.0
-
-* **Hora de Início:** Define o horário fixo em que o envio será programado.
-
-#### 🔹 A partir da versão 2.6.0
+#### 🔹 Janela de envio permitida
 
 * **Horário Inicial Permitido para Envio**
 * **Horário Final Permitido para Envio**
 
-Agora o sistema trabalha com **janela de envio permitida**.
+O sistema trabalha com **janela de envio permitida**.
 
 ***
 
-## 🕒 Funcionamento por versão
+## 🕒 Funcionamento do envio (Janela Permitida)
 
-***
-
-### 📌 🔵 Antes da versão 2.6.0 (Hora Fixa)
-
-⚠️ O envio sempre respeita um horário fixo definido.
-
-**Exemplo: Hora de início = 10:00**
-
-* Se o cliente for adicionado às **09:00** → envia no mesmo dia às **10:00**
-* Se for adicionado às **13:00** → envia no dia seguinte às **10:00**
-
-***
-
-### 📌 🟢 A partir da versão 2.6.0 (Janela Permitida)
-
-Agora você define um intervalo, por exemplo:
+Você define um intervalo de horário permitido, por exemplo:
 
 ```
 
@@ -126,7 +100,7 @@ Acesse a tela de mensagens e adicione quantas forem necessárias:
 
 Campos:
 
-* **Mensagem:** Texto enviado ao cliente
+* **Mensagem:** Texto enviado ao cliente. Suporta **texto simples**, **templates**, **botões** e **arquivos**
 * **Offset:** Tempo de espera (em minutos)
 * **Arquivo:** (Opcional) Anexo da mensagem
 
