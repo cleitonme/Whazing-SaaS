@@ -2,6 +2,61 @@
 
 A qualidade das respostas da IA depende diretamente das instruções configuradas no prompt.
 
+***
+
+## 📍 Onde configurar
+
+A configuração do prompt fica na **aba Personalidade** da tela de edição da integração (**Automação e Integrações → IA e Integrações**).
+
+### 🧩 Modelo de atendimento
+
+Selecione um **modelo pronto por segmento** para preencher o prompt principal automaticamente:
+
+* Personalizado
+* Atendimento Geral
+* Clínica Médica
+* Advocacia
+* SaaS / Software
+* Pet Shop
+* Farmácia
+* Academia
+
+Você pode **trocar de modelo a qualquer momento** — ao selecionar, o prompt principal é preenchido com o modelo escolhido.
+
+***
+
+### 📝 Prompt Principal e Secundário
+
+* **Prompt Principal** — as instruções que definem como sua IA se comporta.
+* **Prompt Secundário (opcional)** — complementa o comportamento da IA.
+
+***
+
+### 🔧 Variáveis disponíveis
+
+O sistema insere automaticamente informações atuais no prompt, usando as variáveis:
+
+* `{{CURRENT_DATE}}` — data atual
+* `{{CURRENT_WEEKDAY}}` — dia da semana atual
+* `{{CURRENT_TIME}}` — horário atual
+
+Exemplo de uso no prompt:
+
+```
+Hoje é {{CURRENT_DATE}} ({{CURRENT_WEEKDAY}}).
+
+Horário atual:
+{{CURRENT_TIME}}
+```
+
+***
+
+### 🧪 Testar integração
+
+Após configurar o prompt, utilize o botão **Testar integração** para validar o comportamento da IA antes de colocar em produção.
+
+***
+
 Quanto mais claras forem as regras e exemplos fornecidos, mais a IA irá:
 
 * responder corretamente

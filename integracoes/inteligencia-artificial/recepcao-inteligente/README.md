@@ -54,6 +54,7 @@ Após criar, o botão **Editar** abre as **informações avançadas** em abas:
 | Aba | O que configura | Documentação |
 | --- | --- | --- |
 | **Personalidade** | Modelo de atendimento, prompt principal e secundário | [Instruções eficientes](como-criar-instrucoes-eficientes-para-atendimento-automatico-com-ia.md) |
+| **Comportamento** | Histórico de atendimentos anteriores e tempo de espera para resposta | [Comportamento](comportamento.md) |
 | **Automação** | Transferência por filas, usuários, chatbot, etiquetas, Kanban, arquivos e chave PIX | [Etiquetas e Kanban](etiquetas-automaticas-e-kanban-com-ia.md) · [Arquivos](envio-de-arquivos-via-ia.md) · [PIX](botao-pix-automatico-no-atendimento.md) |
 | **Conhecimento** | Base de conhecimento, busca na web, MCP e busca semântica | [Base de conhecimento](base-de-conhecimento.md) · [Busca na web](busca-na-web.md) · [MCP](mcp-e-ferramentas-de-ia.md) · [Busca semântica](busca-semantica.md) |
 | **Voz** | Respostas por áudio | [Resposta por áudio](configuracao-de-resposta-por-audio.md) |
@@ -70,7 +71,7 @@ Após criar, o botão **Editar** abre as **informações avançadas** em abas:
 * **Fila de fallback** — fila alternativa quando não há atendentes disponíveis ou ocorre erro.
 * **Mensagens personalizadas** — mensagem de transferência com ou sem usuários online.
 * **Parâmetros avançados** — máximo de tokens, temperatura e histórico de mensagens.
-* **Command Analyzer (IA 2)** — segunda IA que analisa a resposta da IA 1 e decide ações de sistema (transferir para fila/usuário, enviar arquivo, PIX, encerrar).
+* **Command Analyzer (IA 2)** — segunda IA que analisa a resposta da IA 1 e decide ações de sistema (transferir para fila/usuário, enviar arquivo, PIX, encerrar). A IA 1 autoriza a ação; a IA 2 escolhe o destino.
 
 ***
 

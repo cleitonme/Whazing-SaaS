@@ -79,7 +79,11 @@ Crie aqui:
 
 ### ⚙️ Passo 4 — Configurar no Whazing
 
-Agora vá até a **Recepção Inteligente** no sistema e preencha:
+Na integração (**Automação e Integrações → IA e Integrações**), escolha a opção:
+
+**Utilizar minha própria API**
+
+Depois, abra as **Configurações avançadas** e preencha os campos do provedor:
 
 #### Campos:
 

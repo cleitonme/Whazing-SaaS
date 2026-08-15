@@ -126,6 +126,27 @@ Na lista de integrações você encontra:
 * **Ativar** — reabre o wizard de ativação (fila, canais, confirmação) para ativar ou alterar os canais.
 * **Editar** — abre as **informações avançadas** com as abas:
 
+### 📋 Aba Geral
+
+A aba **Geral** mostra as informações da integração:
+
+* **Tipo** — Inteligência Artificial – Recepção Inteligente
+* **Nome da Integração** — o nome definido no cadastro
+* **Status** — "Sua integração está 100% pronta" com o resumo (IA compartilhada do sistema · Fila · canais vinculados)
+* **IA** — escolha entre **Utilizar IA disponibilizada pelo sistema** (recomendado) ou **Utilizar minha própria API**
+* **Testar integração** — botão para validar o funcionamento
+
+Resumo da integração:
+
+* IA compartilhada do sistema
+* Prompt principal preenchido
+* Base de conhecimento utilizada ou não
+* PIX utilizado ou não
+
+***
+
+### 🗂️ Abas de configuração
+
 | Aba | O que configura | Documentação |
 | --- | --- | --- |
 | **Geral** | Tipo, nome, IA (compartilhada do sistema ou própria) e teste | — |
@@ -136,6 +157,16 @@ Na lista de integrações você encontra:
 | **Voz** | Respostas por áudio (provedor, modelo e quando enviar áudio) | [Resposta por áudio](configuracao-de-resposta-por-audio.md) |
 | **Followup** | Follow-up automático e ausência de resposta | [Follow-up](follow-up-recepcao-inteligente.md) |
 | **Avançado** | Parâmetros técnicos (tokens, temperatura) e Command Analyzer (IA 2) | [Provedor personalizado](configurando-provedor-de-ia-personalizado-openai-compativel.md) |
+
+### 🤖 Command Analyzer (IA 2)
+
+Na aba **Avançado**, além dos **Parâmetros Técnicos** (máximo de tokens na resposta e temperatura), existe o **Command Analyzer (IA 2)**:
+
+* É uma **segunda IA** que analisa a resposta da IA 1 e o histórico/palavras-chave do cliente e decide ações de sistema (transferir para fila/usuário, enviar arquivo, PIX, encerrar).
+* A IA 1 **autoriza** a ação; a IA 2 **escolhe o destino**.
+* É **subordinada à IA 1** — em dúvida, não executa.
+
+> 💡 A IA 2 decide a ação com base na resposta da IA 1 (autorização) + histórico/palavras-chave do cliente (roteamento), e o backend valida/executa. **Padrão recomendado.**
 
 ***
 

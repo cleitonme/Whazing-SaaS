@@ -2,7 +2,13 @@
 
 O sistema pode adicionar automaticamente um **botão de pagamento via Pix** dentro do atendimento.
 
-Mas isso depende diretamente da **resposta gerada pela IA**.
+A configuração fica na **aba Automação** da tela de edição da integração, na seção **Configuração de envio da chave Pix**.
+
+> ⚠️ **Atenção:** use somente em canais compatíveis.
+
+Para ativar, habilite a opção:
+
+**Ativar envio da chave Pix**
 
 ***
 

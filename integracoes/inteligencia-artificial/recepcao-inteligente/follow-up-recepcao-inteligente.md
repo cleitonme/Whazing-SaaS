@@ -1,6 +1,6 @@
 # Follow-up na Recepção Inteligente
 
-A partir da **versão 2.16.0**, a Recepção Inteligente permite configurar **mensagens automáticas de follow-up** quando o cliente para de responder.
+A Recepção Inteligente permite configurar **mensagens automáticas de follow-up** quando o cliente para de responder.
 
 Esse recurso ajuda a:
 
@@ -9,26 +9,25 @@ Esse recurso ajuda a:
 * 🗂️ Evitar tickets esquecidos
 * 🔒 Encerrar atendimentos inativos de forma organizada
 
+A configuração fica na **aba Followup** da tela de edição da integração (**Automação e Integrações → IA e Integrações**).
+
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
-## ⏱️ Como funciona o tempo de envio?
+## ⏱️ Campos de tempo
 
-No exemplo da imagem:
+#### Tempo mínimo (min)
 
-* O follow-up será executado entre **60 a 180 minutos**
-* O envio acontece em **tempo aleatório dentro desse intervalo**
+Define o tempo mínimo para iniciar o follow-up automático.
 
-✅ Isso torna o envio mais natural ✅ Evita padrão fixo de disparo ✅ Deixa a automação mais dinâmica
+> 💡 Use `0` para **desativar** o follow-up automático.
 
-***
+#### Cliente sem resposta — Tempo de espera (minutos)
 
-## ⏱️ Como funciona horário permitido
+Define quanto tempo aguardar a resposta do cliente antes de executar a ação de follow-up.
 
-No exemplo da imagem:
-
-* O envio somente acontece em horário de 08:00 as 20:00 para evitar disparos noturnos
+> 💡 Use `0` para **desativar**.
 
 ***
 

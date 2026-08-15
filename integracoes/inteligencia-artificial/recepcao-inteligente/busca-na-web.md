@@ -21,13 +21,13 @@ O Tavily oferece até **1.000 consultas gratuitas por mês**.
 
 ## ⚙️ Passo 2 – Configurar no Sistema
 
-#### 🔎 Explicação dos campos
+Na integração, abra a aba **Conhecimento → Configuração de Busca Web**.
 
-* **enabled** → Ativa ou desativa a busca
-* **apiKey** → Sua chave do Tavily
-* **companyName** → Nome da empresa usado na busca
-* **maxResults** → Quantidade máxima de resultados
-* **allowedDomains** → Domínios permitidos para busca (mais seguro)
+#### 🔎 Campos disponíveis
+
+* **Habilitar Busca Web** → Ativa ou desativa a busca na web
+* **Chave API Tavily** → Sua chave do Tavily (obtenha gratuitamente em [tavily.com](https://tavily.com) — 1.000 buscas/mês)
+* **Nome da Empresa** → Adicionado automaticamente às buscas para melhor relevância
 
 ⚠️ Não use `https://` ou `www.` no domínio.
 
@@ -42,6 +42,28 @@ doc.whazing.com.br
 ```
 https://www.doc.whazing.com.br
 ```
+
+***
+
+### ⚙️ Configurações Avançadas
+
+* **Palavras que Acionam Busca** — quando o cliente usar estas palavras, a busca será acionada.
+
+  Ex.: `como`, `configurar`, `documentação`
+
+* **Termos Técnicos para Extrair** — termos importantes que serão extraídos da mensagem.
+
+  Ex.: `ixc`, `n8n`, `typebot`
+
+* **Palavras Genéricas para Remover** — palavras removidas da busca para torná-la mais específica.
+
+  Ex.: `como`, `fazer`, `qual`
+
+* **Domínios Permitidos** — apenas estes sites serão pesquisados. Deixe vazio para buscar em toda a web.
+
+  Ex.: `doc.site.com.br`
+
+* **Prompt Customizado (Opcional)** — deixe vazio para usar o prompt padrão. Use as variáveis do sistema.
 
 ***
 
@@ -73,9 +95,9 @@ search("ixc whazing")
 
 ## 📊 Parâmetros Importantes
 
-### 🔹 1. searchTriggerKeywords
+### 🔹 1. Palavras que Acionam Busca
 
-Palavras que ativam busca:
+Palavras que ativam a busca:
 
 * configurar
 * instalar
@@ -90,7 +112,7 @@ Teste sempre com mensagens reais dos seus clientes.
 
 ***
 
-### 🔹 2. technicalTerms
+### 🔹 2. Termos Técnicos para Extrair
 
 Liste termos técnicos que o sistema deve reconhecer:
 
@@ -105,7 +127,7 @@ Use nomes exatos sempre que possível.
 
 ***
 
-### 🔹 3. removeGenericWords
+### 🔹 3. Palavras Genéricas para Remover
 
 Remove palavras desnecessárias da busca:
 
@@ -122,7 +144,7 @@ Isso melhora a qualidade da pesquisa.
 
 ***
 
-### 🔹 4. allowedDomains
+### 🔹 4. Domínios Permitidos
 
 Sempre use domínios confiáveis.
 

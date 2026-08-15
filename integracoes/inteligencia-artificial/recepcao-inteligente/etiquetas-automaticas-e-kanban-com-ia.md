@@ -4,7 +4,9 @@ icon: tag
 
 # Etiquetas Automáticas e Kanban com IA
 
-Essa configuração permite disponibilizar para a IA:
+Essa configuração fica na **aba Automação** da tela de edição da integração (**Automação e Integrações → IA e Integrações**), nas seções **Configuração de Etiquetas** e **Automação de Kanban**.
+
+Ela permite disponibilizar para a IA:
 
 * ✅ **Etiquetas (Tags)**
 * ✅ **Etapas do Kanban**

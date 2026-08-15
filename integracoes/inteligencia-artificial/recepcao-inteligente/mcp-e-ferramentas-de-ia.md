@@ -1,6 +1,6 @@
 # MCP e Ferramentas de IA
 
-A partir da **versão 3.0**, a **Recepção Inteligente** passou a suportar o uso de **MCP (Model Context Protocol)**.
+A **Recepção Inteligente** suporta o uso de **MCP (Model Context Protocol)**.
 
 Com esse recurso, a Inteligência Artificial pode utilizar ferramentas externas configuradas no MCP para **pesquisar informações e consultar conteúdos disponíveis em outras fontes**.
 
@@ -42,9 +42,9 @@ Um exemplo de servidor MCP para documentação é:
 
 ## ⚙️ Como ativar
 
-Na configuração da **Recepção Inteligente**, procure pela seção:
+Na tela de edição da integração, abra a aba **Conhecimento** e procure pela seção:
 
-**Conhecimento MCP / Ferramentas de IA**
+**MCP / Ferramentas de IA**
 
 Ative a opção:
 

@@ -16,9 +16,9 @@ Além do **ElevenLabs**, você pode configurar provedores compatíveis, como **9
 
 ### ⚙️ Onde configurar
 
-A configuração do provedor de voz fica na área de configurações de **IA / Voz**, dependendo da configuração disponível no seu ambiente.
+A configuração do provedor de voz fica na **aba Voz** da tela de edição da integração (**Automação e Integrações → IA e Integrações**).
 
-Ao adicionar ou editar um provedor, selecione:
+Ao configurar o provedor, selecione:
 
 **Provedor de voz → OpenAI Compatible**
 
@@ -239,10 +239,7 @@ A principal vantagem é permitir maior flexibilidade na escolha do serviço de g
 
 Agora o sistema pode responder seus clientes com **áudio automático**, deixando o atendimento mais humano e dinâmico.
 
-A funcionalidade utiliza o serviço da **ElevenLabs** para gerar voz.
-
-👉 Para usar, você precisa de uma API Key:\
-[https://elevenlabs.io/app/developers/api-keys](https://elevenlabs.io/app/developers/api-keys)
+A funcionalidade utiliza o **provedor de voz configurado** (OpenAI Compatible, 9router, Kokoro etc.).
 
 ***
 
