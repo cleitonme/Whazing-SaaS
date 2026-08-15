@@ -10,4 +10,4 @@ Recursos de **IA** dentro do Whazing:
 ## 📍 Onde configurar
 
 * **Recepção Inteligente**: **Automação e Integrações → IA e Integrações** → **Adicionar** → **Inteligência Artificial – Recepção Inteligente**
-* **Transcrição de Áudio**: na edição do **canal**, ative a opção **"Converter áudio em texto"** e informe a API Key da Groq
+* **Transcrição de Áudio**: **Automação e Integrações → Transcrição de Áudio** (tela própria; escolha o canal, ative a transcrição e informe o token gratuito da Groq)
