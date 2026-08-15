@@ -15,8 +15,6 @@ A tela é exclusiva para os perfis **Admin** e **Supervisor**.
 * Clique em **Adicionar** para criar uma nova integração;
 * Clique no botão **"Como ativar a integração"** (ícone de interrogação) para ver as instruções dentro do próprio sistema.
 
-<figure><img src="../.gitbook/assets/image (35).png" alt=""><figcaption></figcaption></figure>
-
 ***
 
 ## 🧩 Passo 1 — Criar a integração (wizard)
@@ -25,10 +23,10 @@ A tela é exclusiva para os perfis **Admin** e **Supervisor**.
 2. Escolha o **tipo** da integração (Recepção Inteligente, Typebot, 2ª via de boletos, desbloqueio de confiança, chamados etc.);
 3. Siga o **assistente guiado**:
 
-| Tipo | Passos do wizard |
-| --- | --- |
+| Tipo                     | Passos do wizard                                                                        |
+| ------------------------ | --------------------------------------------------------------------------------------- |
 | **Recepção Inteligente** | Nome → Modelo → IA → Personalidade → Ações Automáticas → Fonte de Informações → Revisão |
-| **Demais integrações** | Nome → Configuração (dados de conexão) → Revisão |
+| **Demais integrações**   | Nome → Configuração (dados de conexão) → Revisão                                        |
 
 4. Ao finalizar, a integração aparece na lista como um cartão.
 
@@ -53,7 +51,7 @@ Logo após criar, o sistema abre automaticamente o assistente **"Vamos ativar su
 2. <Ação da integração>   (ex.: 2 Via Boleto, Desbloqueio Confiança, Abrir chamado)
 ```
 
-  Ao escolher a opção 2, o cliente é transferido para a fila da integração com uma mensagem pedindo o **CPF ou CNPJ** — informação obrigatória para essas integrações funcionarem.
+Ao escolher a opção 2, o cliente é transferido para a fila da integração com uma mensagem pedindo o **CPF ou CNPJ** — informação obrigatória para essas integrações funcionarem.
 
 ### 2️⃣ Canais
 
@@ -73,12 +71,12 @@ Pronto! A partir de agora, os **novos atendimentos** destes canais utilizam a su
 
 Cada cartão na lista possui 4 ações:
 
-| Ação | O que faz |
-| --- | --- |
-| 🚀 **Ativar** | Reabre o assistente de ativação (fila, canais e confirmação) |
-| ✏️ **Editar** | Abre as configurações avançadas da integração (dados de conexão, opções e "Ausência de Resposta") |
-| 📋 **Duplicar** | Cria uma cópia da integração com o nome "(cópia)" |
-| 🗑️ **Excluir** | Remove a integração (não é possível excluir integrações já usadas ou atribuídas a uma fila) |
+| Ação            | O que faz                                                                                         |
+| --------------- | ------------------------------------------------------------------------------------------------- |
+| 🚀 **Ativar**   | Reabre o assistente de ativação (fila, canais e confirmação)                                      |
+| ✏️ **Editar**   | Abre as configurações avançadas da integração (dados de conexão, opções e "Ausência de Resposta") |
+| 📋 **Duplicar** | Cria uma cópia da integração com o nome "(cópia)"                                                 |
+| 🗑️ **Excluir** | Remove a integração (não é possível excluir integrações já usadas ou atribuídas a uma fila)       |
 
 ***
 
