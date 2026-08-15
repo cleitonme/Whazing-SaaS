@@ -75,16 +75,17 @@ chatbot
 
 Após criar, o sistema abre o assistente **"Vamos ativar sua integração"**:
 
-1. **Fila** — escolha a **Fila de Atendimento Humano** e clique em **Gerar Bot**. O sistema cria automaticamente:
-   * A **fila da integração** (a opção **"Inicia Integração ao transferir"** fica desativada, pois a integração precisa do CPF/CNPJ antes);
-   * Um **chatbot com menu**:
+1.  **Fila** — escolha a **Fila de Atendimento Humano** e clique em **Gerar Bot**. O sistema cria automaticamente:
 
-   ```
-   1. Falar com Humano
-   2. <Ação da integração> (ex.: 2 Via Boleto ou Desbloqueio Confiança)
-   ```
+    * A **fila da integração** (a opção **"Inicia Integração ao transferir"** fica desativada, pois a integração precisa do CPF/CNPJ antes);
+    * Um **chatbot com menu**:
 
-   Ao escolher a opção 2, o cliente é transferido para a fila da integração com a mensagem pedindo o **CPF ou CNPJ**.
+    ```
+    1. Falar com Humano
+    2. <Ação da integração> (ex.: 2 Via Boleto ou Desbloqueio Confiança)
+    ```
+
+    Ao escolher a opção 2, o cliente é transferido para a fila da integração com a mensagem pedindo o **CPF ou CNPJ**.
 2. **Canais** — escolha em quais canais a integração será utilizada;
 3. **Confirmação** — finalize.
 
@@ -109,10 +110,6 @@ Após criar, o sistema abre o assistente **"Vamos ativar sua integração"**:
 As imagens abaixo mostram onde configurar as permissões no painel do SGP:
 
 <figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/image (6) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-<figure><img src="../../../.gitbook/assets/image (7) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 

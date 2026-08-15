@@ -35,22 +35,20 @@ Clique em **Adicionar** e selecione a integração do **HubSoft**:
 
 Siga o assistente (Nome → Configuração → Revisão) preenchendo os dados abaixo.
 
-<figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
 #### 🔐 Credenciais da API HubSoft (OAuth)
 
 Preencha os dados de acesso à **API do HubSoft**:
 
-| Campo | O que informar |
-| --- | --- |
-| **URL Integração** | URL base da sua API HubSoft (sem `/` no final) |
+| Campo                                       | O que informar                                                                     |
+| ------------------------------------------- | ---------------------------------------------------------------------------------- |
+| **URL Integração**                          | URL base da sua API HubSoft (sem `/` no final)                                     |
 | **Fila transferir caso ocorrer algum erro** | Fila de atendimento humano para casos de erro (não use a mesma fila da integração) |
-| **Client ID** | Gerado no painel do HubSoft |
-| **Client Secret** | Gerado no painel do HubSoft |
-| **Username** | Usuário da API no HubSoft |
-| **Password** | Senha da API no HubSoft |
-| **Grant Type** | Tipo de concessão OAuth informado pelo HubSoft |
-| **Dias de desbloqueio** | Quantos dias o desbloqueio por confiança fica liberado |
+| **Client ID**                               | Gerado no painel do HubSoft                                                        |
+| **Client Secret**                           | Gerado no painel do HubSoft                                                        |
+| **Username**                                | Usuário da API no HubSoft                                                          |
+| **Password**                                | Senha da API no HubSoft                                                            |
+| **Grant Type**                              | Tipo de concessão OAuth informado pelo HubSoft                                     |
+| **Dias de desbloqueio**                     | Quantos dias o desbloqueio por confiança fica liberado                             |
 
 > 💡 Essas informações são geradas dentro do painel do HubSoft.
 
@@ -81,16 +79,17 @@ Essas opções definem como a integração irá se comportar:
 
 Após criar, o sistema abre o assistente **"Vamos ativar sua integração"**:
 
-1. **Fila** — escolha a **Fila de Atendimento Humano** e clique em **Gerar Bot**. O sistema cria automaticamente:
-   * A **fila da integração** (a opção **"Inicia Integração ao transferir"** fica desativada, pois a integração precisa do CPF/CNPJ antes);
-   * Um **chatbot com menu**:
+1.  **Fila** — escolha a **Fila de Atendimento Humano** e clique em **Gerar Bot**. O sistema cria automaticamente:
 
-   ```
-   1. Falar com Humano
-   2. <Ação da integração> (ex.: 2 Via Boleto ou Desbloqueio Confiança)
-   ```
+    * A **fila da integração** (a opção **"Inicia Integração ao transferir"** fica desativada, pois a integração precisa do CPF/CNPJ antes);
+    * Um **chatbot com menu**:
 
-   Ao escolher a opção 2, o cliente é transferido para a fila da integração com a mensagem pedindo o **CPF ou CNPJ**.
+    ```
+    1. Falar com Humano
+    2. <Ação da integração> (ex.: 2 Via Boleto ou Desbloqueio Confiança)
+    ```
+
+    Ao escolher a opção 2, o cliente é transferido para a fila da integração com a mensagem pedindo o **CPF ou CNPJ**.
 2. **Canais** — escolha em quais canais a integração será utilizada;
 3. **Confirmação** — finalize.
 
