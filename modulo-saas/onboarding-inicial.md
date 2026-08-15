@@ -23,7 +23,7 @@ Da mesma forma, se já existir um canal conectado, o usuário seguirá utilizand
 
 ## Etapa 1 - Escolha do Segmento
 
-<figure><img src="../.gitbook/assets/segmentoonboard.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/onboarding.png" alt=""><figcaption></figcaption></figure>
 
 O primeiro passo consiste em selecionar o segmento da empresa.
 
@@ -178,9 +178,9 @@ Isso permite adaptar as sugestões de filas e etiquetas para diferentes segmento
 
 ## Onde Gerenciar os Modelos
 
-<figure><img src="../.gitbook/assets/saasonboarding.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../.gitbook/assets/onboardisaas.png" alt=""><figcaption></figcaption></figure>
 
-No painel SaaS existe uma área específica para gerenciamento dos modelos de Onboarding.
+No painel SaaS - Empresas - Onboarding
 
 Nela é possível:
 
