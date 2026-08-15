@@ -4,7 +4,7 @@ O Gerador de Chatbot com IA permite que seus clientes criem fluxos completos de 
 
 A IA é utilizada apenas para gerar o fluxo inicial do chatbot. Após a geração, o fluxo pode ser editado livremente pelo usuário no construtor visual.
 
-> Importante: A IA não será utilizada para responder mensagens dos clientes em canais como WhatsApp, Instagram, Facebook ou Telegram. Ela é usada exclusivamente para gerar a estrutura inicial do chatbot.
+> Importante: A IA não será utilizada para responder mensagens dos clientes em canais como WhatsApp, Instagram, Facebook ou Telegram. Ela é usada exclusivamente para gerar a estrutura inicial do chatbot e validar templates.
 
 ***
 
@@ -12,21 +12,38 @@ A IA é utilizada apenas para gerar o fluxo inicial do chatbot. Após a geraçã
 
 Acesse:
 
-**Painel SaaS → Configurações → Gerador de Chatbot com IA**
+**Painel SaaS → Inteligência Artificial → ChatBot Builder**
 
-Nesta tela estarão disponíveis as seguintes opções:
+Nesta tela:
+
+> Configure o construtor de chatbots da plataforma.
+
+### O que são os recursos de IA?
+
+Quando habilitados, seus clientes poderão utilizar inteligência artificial para acelerar a criação de chatbots e melhorar a qualidade dos templates enviados.
+
+A IA pode:
+
+* Gerar chatbots completos de atendimento com menus, transferências para filas e captura de dados
+* Analisar templates antes do envio, identificando possíveis problemas e aumentando as chances de aprovação
 
 ### Habilitar Gerador com IA
 
-Ative esta opção para permitir que os clientes utilizem a geração automática de chatbots.
+Exibe o botão **"Gerar com IA"** no construtor de chatbot dos tenants.
 
 <figure><img src="../.gitbook/assets/geradorchatbotiaconfig.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
+### Habilitar validação de templates com IA
+
+Ao criar ou editar um template, a IA analisará o conteúdo, estrutura e qualidade da mensagem, fornecendo sugestões de melhoria e indicando possíveis problemas que possam reduzir as chances de aprovação.
+
+***
+
 ### Provedor de IA
 
-Selecione o provedor de inteligência artificial que será utilizado para gerar os fluxos.
+Escolha o serviço de inteligência artificial que processará as solicitações.
 
 São suportados:
 
@@ -38,15 +55,19 @@ São suportados:
 
 ***
 
-### API Key
+### Chave de API
 
 Informe a chave de API do provedor selecionado.
 
-A chave será utilizada apenas para gerar os fluxos dos chatbots.
+> ⚠️ Chave secreta do provedor selecionado. Nunca compartilhe esta chave.
+
+A chave será utilizada apenas para gerar os fluxos dos chatbots e validar templates.
 
 ***
 
-### Modelo
+### Modelo de Linguagem
+
+> 💡 Apenas modelos com boa capacidade de geração de JSON estruturado são listados.
 
 Selecione o modelo de IA que será utilizado.
 
@@ -59,7 +80,7 @@ Selecione o modelo de IA que será utilizado.
 * Excelente para criação de fluxos
 * Pode ser um pouco mais lento dependendo da demanda
 
-**GPT OSS 120B (Groq)**
+**GPT OSS 120B (OpenAI)**
 
 * Gratuito
 * Muito rápido
