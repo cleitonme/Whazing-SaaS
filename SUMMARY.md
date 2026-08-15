@@ -6,6 +6,8 @@
 * [Demonstração](demonstracao.md)
   * [Whitelabel](whitelabel.md)
   * [Principais Recursos do Sistema](principais-recursos-do-sistema.md)
+* [🚀 Primeiros Passos (Configuração Inicial)](primeiros-passos.md)
+* [📖 Glossário de Termos](glossario.md)
 * [Tabela de Valores](tabela-de-valores.md)
 * [Contrato/Termos de Uso](contrato-termos/README.md)
   * [Contrato de Licença de Uso de Software](contrato-termos/contrato-de-licenca-de-uso-de-software.md)
