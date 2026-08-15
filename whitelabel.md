@@ -16,11 +16,9 @@
     ✅ Modelo pronto para revenda: foco total no seu crescimento
 * 🚀 Comece agora a gerar renda com um sistema de atendimento completo, fácil de gerenciar e pronto para escalar!
 
-<figure><img src=".gitbook/assets/image (2) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/whitelabel.png" alt=""><figcaption></figcaption></figure>
 
 Maioria das imagens no formato PNG que deve ser usadas ao selecionar arquivo sistema indica qual formato e tamanho recomendado. Se for enviado formato diferente o arquivo não é alterado. E teste janela anônima ou limpe cache.
-
-<figure><img src=".gitbook/assets/trocalogos.png" alt=""><figcaption></figcaption></figure>
 
 Você pode adicionar uma seção logo abaixo do bloco atual de **WhiteLabel**. Ela deixa claro que existe uma modalidade para revendedores que desejam ocultar completamente a marca Whazing.
 
@@ -59,6 +57,3 @@ Caso deseje utilizar o Whazing como sua própria plataforma de atendimento, entr
 
 Entre no nosso Telegram:\
 [Canal Oficial Whazing](https://t.me/whazing?utm_source=chatgpt.com)
-
-
-
