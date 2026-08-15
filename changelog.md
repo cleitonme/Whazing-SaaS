@@ -1400,7 +1400,7 @@ Migração Baileys x PLUS
 
 👉 Garanta essa condição exclusiva cadastrando-se no link: [https://pushinpay.whazing.com.br](https://pushinpay.whazing.com.br/)
 
-[https://doc.whazing.com.br/modulo-saas/gateways-pagamentos/configurar-pushin-pay](../modulo-saas/gateways-pagamentos/configurar-pushin-pay.md)
+[https://doc.whazing.com.br/modulo-saas/gateways-pagamentos/configurar-pushin-pay](modulo-saas/gateways-pagamentos/configurar-pushin-pay.md)
 
 - bug - corrigido filtro relatório tickets primeira mensagem
 - Sugestão instalar PWA tela login
