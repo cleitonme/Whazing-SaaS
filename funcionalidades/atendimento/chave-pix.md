@@ -1,5 +1,7 @@
 ---
-description: Disponível somente para canais API PLUS
+description: >-
+  Disponível para envio nos canais WhatsApp Plus, Wuzapi e API Oficial
+  (WABA)
 icon: key
 ---
 
@@ -7,7 +9,7 @@ icon: key
 
 Esta funcionalidade permite **enviar uma Chave PIX diretamente pela tela de atendimento**, facilitando o envio de dados de pagamento ao cliente.
 
-> ⚠️ **Disponível apenas para canais do tipo API PLUS**
+> ⚠️ **Disponível para envio nos canais WhatsApp Plus, Wuzapi e API Oficial (WABA)**
 
 ***
 
@@ -15,7 +17,9 @@ Esta funcionalidade permite **enviar uma Chave PIX diretamente pela tela de aten
 
 Acesse o menu:
 
-**Configurações → Canais → Gerenciar Chaves Pix**
+**Cadastros → Chaves Pix**
+
+Clique em **Cadastrar Chave Pix** para abrir o modal de cadastro.
 
 <figure><img src="../../.gitbook/assets/image (5) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -23,13 +27,14 @@ Acesse o menu:
 
 ### ➕ Como cadastrar uma Chave PIX
 
-O cadastro é simples e rápido.
+O cadastro é simples e rápido. No modal **Cadastrar Chave Pix**, preencha os campos:
 
-1. Informe uma **identificação da chave**
-   * Serve apenas para organização interna
+1. **Identificação** — serve apenas para organização interna
    * Exemplo: _PIX Principal_, _PIX Loja Centro_, etc.
-2. Preencha os **dados da Chave PIX**
+2. **Chave** — a chave PIX em si
    * Pode ser CPF, CNPJ, e-mail, telefone ou chave aleatória
+3. **Titular Conta** — nome do titular da conta
+4. **Tipo** — tipo da chave PIX
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -39,7 +44,7 @@ O cadastro é simples e rápido.
 
 ### 💬 Usando a Chave PIX no atendimento
 
-Depois de cadastrada, a Chave PIX ficará disponível **na tela de atendimento**, somente para **canais API PLUS**.
+Depois de cadastrada, a Chave PIX ficará disponível **na tela de atendimento** para envio nos canais **WhatsApp Plus**, **Wuzapi** e **API Oficial (WABA)**.
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
