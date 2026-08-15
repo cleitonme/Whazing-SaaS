@@ -18,6 +18,12 @@ Para utilizar seu e-mail do Gmail em aplicativos de terceiros, como o Whazing, v
 
 Agora que você tem a senha de app, siga os passos para configurar o SMTP no Whazing.
 
+Acesse:
+
+**Painel SaaS → Comunicação → Recuperação de Senha (SMTP)**
+
+Nessa tela estão as configurações de envio de e-mail para recuperação de senha.
+
 ### Configurações SMTP
 
 * **Servidor SMTP:** `smtp.gmail.com`
