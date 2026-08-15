@@ -25,9 +25,9 @@ Localize o item **Ocultar opção Bloquear Múltiplos Logins** e verifique o est
 
 Com a opção liberada no SaaS, acesse a empresa desejada e vá em:
 
-**Cadastros → Usuários e Equipe → (3 pontinhos do usuário) → Editar Usuário**
+**Cadastros → Usuários → (ícone de lápis ✏️ na linha do usuário) → Editar Usuário**
 
-Role até o campo **Bloquear Múltiplos Logins**.
+Na aba **Informações**, role até o campo **Bloquear Múltiplos Logins**.
 
 ***
 
@@ -46,10 +46,10 @@ O toggle aparece **cinza** — o usuário **pode** acessar o sistema em múltipl
 ## Resumo do fluxo
 
 ```
-SaaS → Configurações → Configurações Gerais
+Painel SaaS → Sistema → Configurações Gerais
   └── Ocultar opção Bloquear Múltiplos Logins → DESABILITADO
 
-Cadastros → Usuários e Equipe → Editar Usuário
+Cadastros → Usuários → Editar Usuário
   └── Bloquear Múltiplos Logins
         ├── ATIVADO (azul)   → bloqueia múltiplas sessões
         └── DESATIVADO (cinza) → permite múltiplas sessões
