@@ -20,7 +20,16 @@ A integração com o PIX EFI Bank pode ser feita de maneira simples. Siga este p
 
 ## Passo 3: Configurar PAINEL SaaS
 
-1. Com os dados em mãos, acesse a configuração do **PAINEL SaaS** e preencha as informações necessárias.
+1. Acesse **Painel SaaS → Comercial → Receitas**
+2. Em **Configurações de Pagamento**, no campo **Gateway de Pagamento**, selecione **EFI Bank**
+3. Preencha as informações:
+
+   - **Chave Client ID**
+   - **Chave Client Secret**
+   - **Chave PIX**
+   - **Certificado** — faça o upload do certificado da aplicação
+
+4. Utilize o botão **Enviar certificado EFI** para enviar o certificado.
 
 ## Nota sobre Faturas
 
