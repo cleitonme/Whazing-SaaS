@@ -1,8 +1,8 @@
-# Algumas permissões de usuários
+# Algumas Permissões de Usuários
 
 As permissões de cada usuário são gerenciadas a partir da tela **Configurações → Cadastros → Usuários**.
 
-<figure><img src="../../../.gitbook/assets/cadastrousuarios.png" alt=""><figcaption><p>Tela de Usuários — permissões acessadas pela Central de Atendimento (ícone de fone 🎧)</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/centralatendimento.png" alt=""><figcaption></figcaption></figure>
 
 Na coluna **Ações** de cada usuário, o botão com o ícone de **fone de ouvido** (🎧) abre a **Central de Atendimento** — o ponto único onde você gerencia todas as permissões do usuário:
 
@@ -12,8 +12,6 @@ Na coluna **Ações** de cada usuário, o botão com o ícone de **fone de ouvid
 * Logs de acesso
 * Ligações WhatsApp (WaCalls)
 * Ligações Wavoip
-
-<figure><img src="../../../.gitbook/assets/menupoermissoesusuario.png" alt=""><figcaption><p>Opções de permissões do usuário</p></figcaption></figure>
 
 Abaixo, cada permissão explicada em detalhes.
 
