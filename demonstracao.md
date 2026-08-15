@@ -1,9 +1,21 @@
 # Demonstração
 
-### Demo do produto
+Antes de instalar, você pode **testar o Whazing gratuitamente** na versão de demonstração, com todos os principais recursos disponíveis.
 
-* [https://teste.whazing.com.br/](https://teste.whazing.com.br/)
-* usuário: [admin@admin.com](mailto:admin@admin.com)
-* senha: 123456
+> ⚠️ **Atenção:** a demo é um **ambiente de teste compartilhado**. Não envie informações confidenciais e entenda que os dados podem ser alterados ou apagados a qualquer momento.
 
-<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+### 🚀 Demo do produto
+
+* Acesse: [https://teste.whazing.com.br/](https://teste.whazing.com.br/)
+* **Usuário:** `admin@admin.com`
+* **Senha:** `123456`
+
+<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+
+---
+
+### 👣 E depois de testar?
+
+* Quer instalar no seu servidor? Veja [Instalação & VPS](instalacao-and-vps/README.md).
+* Quer configurar o sistema passo a passo? Veja [Primeiros Passos — Configuração Inicial](primeiros-passos.md).
+* Quer saber tudo o que o sistema faz? Veja [Principais Recursos do Sistema](principais-recursos-do-sistema.md).
