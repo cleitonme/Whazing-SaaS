@@ -24,8 +24,6 @@ Ao adicionar ou editar um provedor, selecione:
 
 <figure><img src="../../../.gitbook/assets/openaicompatible.png" alt=""><figcaption></figcaption></figure>
 
-O print deve destacar os campos de **Preset, URL Base, API Key, Modelo, Voz, Formato do áudio e Velocidade**.
-
 ***
 
 ## 🔌 Configuração OpenAI Compatible
