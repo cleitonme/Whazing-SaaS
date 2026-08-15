@@ -120,7 +120,7 @@ Agora acesse o painel do sistema.
 Caminho:
 
 ```
-SaaS → Configurações → Proteção Anti-Bot (Turnstile)
+Painel SaaS → Segurança → Cloudflare Turnstile / Rate Limit
 ```
 
 Preencha:
