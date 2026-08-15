@@ -14,7 +14,7 @@ Pelo computador acesse [https://app.infinitepay.io](https://app.infinitepay.io)&
 
 <figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
 
-No whazing única informação iremos precisar é o Infinite Tag essa informação aparece ali depois $ no meu caso informeurer.
+No Whazing, acesse **Painel SaaS → Comercial → Receitas → Configurações de Pagamento**, selecione o gateway **InfinitePay** e informe o **Infinite Tag**. Essa informação aparece ali depois do `$` (no meu caso `informeurer`).
 
 Para ajustar taxas vá até configurações - Link integrado.&#x20;
 
