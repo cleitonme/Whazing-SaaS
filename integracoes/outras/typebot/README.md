@@ -5,6 +5,12 @@ icon: user-robot
 
 # Typebot
 
+## 📍 Onde configurar
+
+Acesse **Automação e Integrações → IA e Integrações**, clique em **Adicionar** e selecione **Typebot**. Siga o assistente (Nome → Configuração → Revisão) preenchendo os campos abaixo.
+
+Após criar, o assistente **"Vamos ativar sua integração"** cria automaticamente a fila (com **"Inicia Integração ao transferir"** ativa) e você escolhe os canais.
+
 <figure><img src="../../../.gitbook/assets/configurartypebot.png" alt=""><figcaption></figcaption></figure>
 
 <figure><img src="../../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
@@ -12,11 +18,15 @@ icon: user-robot
 1. **URL Integração**: Pegue a URL na publicação do Typebot, não coloque a última `/` conforme exemplo acima.
 2. **Typebot - Slug**: Nome que aparece depois na URL quando você publica. Ver exemplo acima.
 3. **Tempo em minutos para expirar uma conversa**: Tempo de inatividade que leva para o Whazing se desconectar do Typebot caso não haja mais interação do cliente.
-4. **Intervalo (ms) entre mensagens**: Tempo entre as respostas. 1000ms = 1 segundo.
-5. **Palavra que fecha ticket**: Comando que o cliente envia para fechar o ticket.
+4. **Palavra que fecha ticket**: Comando que o cliente envia para fechar o ticket.
+5. **Mensagem caso opção escolhida seja inválida**: Mensagem que o bot enviará caso não receba a resposta esperada (exemplo: o cliente envia texto quando a entrada esperada era um número).
 6. **Palavra que reinicia o Fluxo**: Comando que o cliente envia para voltar ao começo do fluxo do Typebot.
-7. **Mensagem caso opção escolhida seja inválida**: Mensagem que o bot enviará caso não receba a resposta esperada (exemplo: o cliente envia texto quando a entrada esperada era um número).
-8. **Mensagem ao reiniciar fluxo**: Mensagem que será enviada após o comando que reinicia o fluxo.
+7. **Mensagem ao reiniciar fluxo**: Mensagem que será enviada após o comando que reinicia o fluxo.
+8. **Título no uso de botão (até 3 botões)**: Título exibido quando a resposta usa botões — disponível para **API Oficial** e **API PLUS**.
+9. **Título no uso de lista (mais de 3 botões)**: Quando há mais de 3 botões, a mensagem vira um **menu em lista** — preencha o título da lista (API Oficial e API PLUS).
+10. **Subtítulo no uso de lista**: Subtítulo exibido no menu em lista (API Oficial e API PLUS).
+11. **Botão na lista**: Texto do botão usado no menu em lista (API Oficial e API PLUS).
+12. **Intervalo (ms) entre mensagens**: Tempo entre as respostas. 1000ms = 1 segundo.
 
 ## Variáveis do Typebot
 

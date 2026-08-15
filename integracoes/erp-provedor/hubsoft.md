@@ -9,16 +9,16 @@ Este tutorial explica, de forma **simples e passo a passo**, como configurar a i
 * 📄 **2ª via de boletos**
 * 🔓 **Desbloqueio de confiança**
 
-⚠️ **Importante:** ao encaminhar o atendimento para a fila da integração, o bot **deve obrigatoriamente solicitar o CPF ou CNPJ do cliente**, pois é essa informação que a integração espera receber.
+São **duas integrações separadas**: **2 via boleto HubSoft** e **Desbloqueio confiança HubSoft**.
 
 ***
 
 ### 📌 O que você vai precisar
 
 * Acesso ao **HubSoft** com permissão para API
-* Dados de acesso à **API do HubSoft**
+* **Credenciais OAuth** da API do HubSoft (Client ID, Client Secret, usuário, senha e Grant Type)
 * Usuário criado no HubSoft para integração
-* Acesso ao **Whazing** com permissão para criar integrações, filas e chatbot
+* Acesso ao **Whazing** com permissão para criar integrações (perfil Admin ou Supervisor)
 
 ***
 
@@ -26,18 +26,33 @@ Este tutorial explica, de forma **simples e passo a passo**, como configurar a i
 
 No Whazing, acesse:
 
-**Cadastro → Filas - Integrações → Integrações**
+**Automação e Integrações → IA e Integrações**
 
-Clique em **Adicionar** e selecione a integração do **HubSoft**.
+Clique em **Adicionar** e selecione a integração do **HubSoft**:
 
-Preencha os dados conforme mostrado na imagem abaixo:
+* **2 via boleto HubSoft** — para consulta e envio de boletos
+* **Desbloqueio confiança HubSoft** — somente para desbloqueio
+
+Siga o assistente (Nome → Configuração → Revisão) preenchendo os dados abaixo.
 
 <figure><img src="../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-#### 🔐 Credenciais da API HubSoft
+#### 🔐 Credenciais da API HubSoft (OAuth)
 
-* Preencha os dados de acesso à **API do HubSoft**
-* Essas informações são geradas dentro do painel do HubSoft
+Preencha os dados de acesso à **API do HubSoft**:
+
+| Campo | O que informar |
+| --- | --- |
+| **URL Integração** | URL base da sua API HubSoft (sem `/` no final) |
+| **Fila transferir caso ocorrer algum erro** | Fila de atendimento humano para casos de erro (não use a mesma fila da integração) |
+| **Client ID** | Gerado no painel do HubSoft |
+| **Client Secret** | Gerado no painel do HubSoft |
+| **Username** | Usuário da API no HubSoft |
+| **Password** | Senha da API no HubSoft |
+| **Grant Type** | Tipo de concessão OAuth informado pelo HubSoft |
+| **Dias de desbloqueio** | Quantos dias o desbloqueio por confiança fica liberado |
+
+> 💡 Essas informações são geradas dentro do painel do HubSoft.
 
 ***
 
@@ -45,10 +60,11 @@ Preencha os dados conforme mostrado na imagem abaixo:
 
 Essas opções definem como a integração irá se comportar:
 
-#### 🔓 Desbloqueio de Confiança
+#### 🔓 Ativar Desbloqueio de Confiança (somente na integração de boleto)
 
 * Quando ativado:
   * Ao solicitar o boleto, o cliente é **automaticamente desbloqueado por confiança** no HubSoft
+  * O campo **Dias de desbloqueio** define por quanto tempo
 
 #### 💬 Tipo de interação (Lista / Botões / Copiar e colar)
 
@@ -61,65 +77,38 @@ Essas opções definem como a integração irá se comportar:
 
 ***
 
-### 3️⃣ Configurar as Filas
+### 3️⃣ Ativar a integração
 
-Agora vamos criar a fila que utilizará a integração do HubSoft.
+Após criar, o sistema abre o assistente **"Vamos ativar sua integração"**:
 
-Acesse:
+1. **Fila** — escolha a **Fila de Atendimento Humano** e clique em **Gerar Bot**. O sistema cria automaticamente:
+   * A **fila da integração** (a opção **"Inicia Integração ao transferir"** fica desativada, pois a integração precisa do CPF/CNPJ antes);
+   * Um **chatbot com menu**:
 
-**Cadastro → Filas → Adicionar**
+   ```
+   1. Falar com Humano
+   2. <Ação da integração> (ex.: 2 Via Boleto ou Desbloqueio Confiança)
+   ```
 
-Preencha os dados conforme mostrado na imagem abaixo:
+   Ao escolher a opção 2, o cliente é transferido para a fila da integração com a mensagem pedindo o **CPF ou CNPJ**.
+2. **Canais** — escolha em quais canais a integração será utilizada;
+3. **Confirmação** — finalize.
 
-<figure><img src="../../.gitbook/assets/image (29).png" alt=""><figcaption></figcaption></figure>
-
-#### ⚙️ Ajustes importantes da fila
-
-* Marque a opção **Usar integração**
-* Selecione a integração do **HubSoft** criada anteriormente
-* ❌ Não utilize essa mesma fila como fila de erro
-
-***
-
-### 4️⃣ Criar o Chatbot
-
-Agora crie ou edite o chatbot responsável pelo atendimento.
-
-* O bot deve **transferir o atendimento** para a fila da integração
-* Antes da transferência, exiba uma mensagem solicitando:
-
-👉 **CPF ou CNPJ do cliente**
-
-Exemplo de mensagem:
-
-> “Para localizar seus boletos, por favor informe seu CPF ou CNPJ.”
-
-(Exemplo visual de chatbot)
-
-![](https://doc.whazing.com.br/~gitbook/image?url=https%3A%2F%2F858671661-files.gitbook.io%2F%7E%2Ffiles%2Fv0%2Fb%2Fgitbook-x-prod.appspot.com%2Fo%2Fspaces%252FL28BkT6aCze1NvvWNwS5%252Fuploads%252Fgit-blob-48f570295bea2ee68bff1fee7839ec512a51b87b%252Ftela3.png%3Falt%3Dmedia\&width=300\&dpr=4\&quality=100\&sign=35229649\&sv=2)
+> 💡 Quer usar seu próprio chatbot? Edite o fluxo do bot ou configure sua fila manualmente em **Cadastros → Filas** (campo **Integração**), transferindo o atendimento para ela **somente depois** de coletar o CPF/CNPJ.
 
 ***
 
-### 5️⃣ Configurar as Condições do Bot
-
-Nas **Condições** do chatbot:
-
-1. Configure para **rotear o atendimento** para a fila criada
-2. Garanta que o cliente tenha informado o **CPF ou CNPJ** antes da transferência
-
-Essa informação é essencial para que o HubSoft retorne os boletos corretamente.
-
-***
-
-### 6️⃣ Funcionamento final (como o cliente vê)
+### 4️⃣ Funcionamento final (como o cliente vê)
 
 O fluxo funciona da seguinte forma:
 
-1. O cliente conversa com o bot
-2. Informa o **CPF ou CNPJ**
-3. O sistema consulta o HubSoft automaticamente
-4. Os boletos são listados
-5. Se configurado, o cliente é **desbloqueado por confiança**
+1. O cliente conversa com o bot de identificação
+2. Escolhe a opção da integração (2ª via de boleto ou desbloqueio)
+3. O sistema solicita o **CPF ou CNPJ**
+4. O cliente informa os dados
+5. O sistema consulta o HubSoft automaticamente
+6. Os boletos são listados
+7. Se configurado, o cliente é **desbloqueado por confiança**
 
 ***
 
@@ -133,7 +122,7 @@ As imagens abaixo mostram como criar usuário e configurar a API no HubSoft:
 
 #### 📝 Preencher os dados do usuário
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
 #### ⚙️ Configuração da API
 

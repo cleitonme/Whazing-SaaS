@@ -1,11 +1,13 @@
 # 2 Via Boleto
 
+Este tutorial explica, de forma **simples e passo a passo**, como configurar a integração de **2ª via de boleto** da **Atlaz** no Whazing.
+
 ***
 
 ## 📌 O que você vai precisar
 
 * Acesso ao **painel da Atlaz** (usaremos o painel demo como exemplo)
-* Acesso ao **Whazing** com permissão para criar integrações e filas
+* Acesso ao **Whazing** com permissão para criar integrações (perfil Admin ou Supervisor)
 
 ***
 
@@ -33,11 +35,11 @@ Agora vamos configurar a integração dentro do Whazing.
 
 Acesse:
 
-**Cadastro → Filas - Integrações → Integrações**
+**Automação e Integrações → IA e Integrações**
 
 Clique em **Adicionar** e selecione:
 
-👉 **2ª via boleto Atlaz**
+👉 **2 via boleto Atlaz**
 
 <figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -45,7 +47,7 @@ Clique em **Adicionar** e selecione:
 
 ## 3️⃣ Preenchendo os dados da integração
 
-Preencha os campos com atenção:
+Siga o assistente (Nome → Configuração → Revisão) e preencha os campos com atenção:
 
 ### 📝 Nome da integração
 
@@ -54,9 +56,9 @@ Preencha os campos com atenção:
 
 ### 🌐 URL da integração
 
-*   No painel demo, utilize:
+* No painel demo, utilize:
 
-    [**https://demo.atlaz.com.br**](https://demo.atlaz.com.br)
+[**https://demo.atlaz.com.br**](https://demo.atlaz.com.br)
 
 ⚠️ **Muito importante:**
 
@@ -96,42 +98,28 @@ Algumas opções podem ser ativadas conforme sua necessidade:
 
 ***
 
-## 5️⃣ Criando a fila da integração
+## 5️⃣ Ativar a integração
 
-Agora vamos criar a fila que vai usar essa integração.
+Após criar, o sistema abre o assistente **"Vamos ativar sua integração"**:
 
-1. Crie uma nova **Fila**
-2. Marque a opção **Usar integração**
-3. Selecione a integração que você acabou de criar
+1. **Fila** — escolha a **Fila de Atendimento Humano** e clique em **Gerar Bot**. O sistema cria automaticamente:
+   * A **fila da integração** (a opção **"Inicia Integração ao transferir"** fica desativada, pois a integração precisa do CPF/CNPJ antes);
+   * Um **chatbot com menu**:
 
-⚠️ Importante:
+   ```
+   1. Falar com Humano
+   2. 2 Via Boleto
+   ```
 
-*   Deixe **desativada** a opção:
+   Ao escolher a opção 2, o cliente é transferido para a fila da integração com a mensagem pedindo o **CPF ou CNPJ**.
+2. **Canais** — escolha em quais canais a integração será utilizada;
+3. **Confirmação** — finalize.
 
-    **“Inicia integração ao transferir”**
-
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-***
-
-## 6️⃣ Configurando o bot para enviar o cliente à fila
-
-No fluxo do seu bot:
-
-* Configure para **transferir o atendimento** para a fila criada
-* Defina uma mensagem ao transferir, solicitando:
-
-👉 **CPF ou CNPJ do cliente**
-
-Exemplo de mensagem:
-
-> “Para localizar seus boletos, por favor informe seu CPF ou CNPJ.”
-
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+> 💡 Quer usar seu próprio chatbot? Edite o fluxo do bot ou configure sua fila manualmente em **Cadastros → Filas** (campo **Integração**), transferindo o atendimento para ela **somente depois** de coletar o CPF/CNPJ.
 
 ***
 
-## 7️⃣ Arquivo de exemplo do bot
+## 6️⃣ Arquivo de exemplo do bot
 
 Você pode usar o arquivo abaixo como base para configuração do bot:
 
@@ -139,12 +127,14 @@ Você pode usar o arquivo abaixo como base para configuração do bot:
 
 ***
 
-## 8️⃣ Funcionamento final (como o cliente vê)
+## 7️⃣ Funcionamento final (como o cliente vê)
 
-1. O cliente chega na fila da integração
-2. Digita o **CPF ou CNPJ**
-3. O sistema consulta automaticamente a Atlaz
-4. Os boletos disponíveis são listados para o cliente
+1. O cliente conversa com o bot de identificação
+2. Escolhe a opção **2 Via Boleto**
+3. O sistema solicita o **CPF ou CNPJ**
+4. O cliente informa os dados
+5. O sistema consulta automaticamente a Atlaz
+6. Os boletos disponíveis são listados para o cliente
 
 <figure><img src="../../../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
 

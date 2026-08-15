@@ -34,7 +34,7 @@ Na tela, há **duas abas**:
    * vincular a integração à fila, deixando-a **ativa automaticamente** (a opção **“Inicia Integração ao transferir”** já vem marcada para integrações N8N);
    * (opcional) permitir escolher os **canais** que serão associados a essa fila.
 
-> 💡 **Importante:** se você preferir, pode vincular a integração a uma fila **existente** por **Cadastro → Filas/Integrações → Filas** (editando a fila e selecionando a integração). A opção **“Inicia Integração ao transferir”** fica disponível na edição da fila.
+> 💡 **Importante:** se você preferir, pode vincular a integração a uma fila **existente** por **Cadastros → Filas** (editando a fila e selecionando a integração). A opção **“Inicia Integração ao transferir”** fica disponível na edição da fila.
 
 **Quando os eventos são enviados?**
 

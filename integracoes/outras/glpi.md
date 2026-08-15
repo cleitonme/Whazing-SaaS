@@ -16,7 +16,7 @@ A integração do **Whazing com o GLPI** permite:
 
 Acesse:
 
-> **Cadastro → Filas → Integrações**
+> **Automação e Integrações → IA e Integrações**
 
 Clique em **Adicionar**.
 
@@ -29,13 +29,13 @@ Você verá duas opções:
 
 ### 🆕 Criar Chamado GLPI
 
-Ao selecionar essa opção, haverá a configuração:
+Além dos dados de conexão, essa integração possui a configuração:
 
-#### ⏱ Intervalo entre Mensagens (ms)
+#### ⏱ Intervalo (ms) entre mensagens
 
 **Tempo de espera para unir mensagens do cliente**
 
-Se o cliente enviar várias mensagens em sequência (mensagens “picotadas”), o sistema aguarda esse tempo para **unificar tudo em um único chamado no GLPI**.
+Se o cliente enviar várias mensagens em sequência (mensagens "picotadas"), o sistema aguarda esse tempo para **unificar tudo em um único chamado no GLPI**.
 
 👉 **Recomendado: 15000 ms (15 segundos)** Este é o valor mínimo indicado para evitar múltiplos chamados desnecessários.
 
@@ -48,6 +48,8 @@ Para configurar a integração, você precisará informar:
 * 🌐 **URL da Integração**
 * 🔑 **APP TOKEN**
 * 👤 **USER TOKEN**
+
+No assistente, também é possível definir uma **fila de transferência** (usada em caso de erro) e ativar o envio por **botão** conforme o canal.
 
 ***
 
@@ -112,7 +114,7 @@ Acesse no GLPI:
 
 O token será exibido.
 
-👉 Copie esse token e utilize no campo **`User_token`** no Whazing.
+👉 Copie esse token e utilize no campo **USER Token** no Whazing.
 
 ![](<../../.gitbook/assets/image (7) (1).png>)
 
@@ -167,25 +169,31 @@ Sem essas configurações o chamado pode:
 
 ***
 
-## 🎯 Configurando a Fila
+## 🚀 Ativando a integração
 
-Defina uma fila para quando o cliente solicitar atendimento humano.
+Após criar a integração, o sistema abre o assistente **"Vamos ativar sua integração"**:
 
-<figure><img src="../../.gitbook/assets/image (9).png" alt=""><figcaption></figcaption></figure>
+1. **Fila** — escolha a **Fila de Atendimento Humano** e clique em **Gerar Bot**. O sistema cria automaticamente:
+   * A **fila da integração** com a opção **"Inicia Integração ao transferir"** **ativa** — a integração GLPI inicia automaticamente ao chegar um atendimento na fila;
+   * Um **chatbot com menu**:
 
-Depois:
+   ```
+   1. Falar com Humano
+   2. Abrir chamado (ou Consultar chamado)
+   ```
 
-1. Crie uma fila
-2. Vincule a integração GLPI
-3. Marque a opção **Iniciar ao transferir**
+2. **Canais** — escolha em quais canais a integração será utilizada;
+3. **Confirmação** — finalize.
 
 <figure><img src="../../.gitbook/assets/image (12).png" alt=""><figcaption></figcaption></figure>
+
+> 💡 **Configurando a fila manualmente:** em **Cadastros → Filas**, selecione a integração GLPI no campo **Integração** e mantenha a opção **"Inicia Integração ao transferir"** ativada.
 
 ***
 
 ### 🚀 Como funciona na prática
 
-Basta o **bot transferir o atendimento para essa fila**.
+Basta o cliente escolher a opção do chamado no bot (ou o **bot transferir o atendimento para a fila da integração**).
 
 Ao transferir:
 

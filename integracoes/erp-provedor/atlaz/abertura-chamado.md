@@ -1,11 +1,13 @@
 # Abertura Chamado
 
+Este tutorial explica, de forma **simples e passo a passo**, como configurar a integração de **Abertura de Chamado** da **Atlaz** no Whazing.
+
 ***
 
 ## 📌 O que você vai precisar
 
 * Acesso ao **painel da Atlaz** (usaremos o painel demo como exemplo)
-* Acesso ao **Whazing** com permissão para criar integrações, filas e bot
+* Acesso ao **Whazing** com permissão para criar integrações (perfil Admin ou Supervisor)
 
 ***
 
@@ -33,17 +35,17 @@ Agora vamos configurar a integração dentro do Whazing.
 
 Acesse o menu:
 
-**Cadastro → Filas - Integrações → Integrações**
+**Automação e Integrações → IA e Integrações**
 
 Clique em **Adicionar** e selecione:
 
-👉 **Criar chamado Atlaz**
+👉 **Criar Chamado Atlaz**
 
 ***
 
 ## 3️⃣ Preenchendo os dados da integração
 
-Preencha os campos abaixo com atenção:
+Siga o assistente (Nome → Configuração → Revisão) e preencha os campos abaixo com atenção:
 
 ### 📝 Nome da integração
 
@@ -76,12 +78,10 @@ Preencha os campos abaixo com atenção:
 
 Essas opções controlam como e quando o cliente pode abrir novos chamados:
 
-* **Intervalo de horas para novo chamado** Define quantas horas o assinante deve aguardar para abrir outro chamado.
-* **Tempo permitido entre registros de chamados** Evita abertura excessiva de chamados em curto período.
-* **Intervalo (ms) entre mensagens** Tempo entre o envio de mensagens automáticas.
-*   **Tempo de espera para unir mensagens do cliente** Se o cliente digitar a mensagem em partes (mensagem “picotada”), o sistema aguarda esse tempo para **juntar tudo em um único chamado**.
+* **Intervalo de horas para que o assinante possa criar um novo chamado** — define quantas horas o assinante deve aguardar para abrir outro chamado. Evita abertura excessiva de chamados em curto período.
+* **Intervalo (ms) entre mensagens** — tempo entre o envio de mensagens automáticas. Se o cliente digitar a mensagem em partes (mensagem "picotada"), o sistema aguarda esse tempo para **juntar tudo em um único chamado**.
 
-    👉 Recomendado: **15000 ms (15 segundos)** — valor mínimo indicado.
+  👉 Recomendado: **15000 ms (15 segundos)** — valor mínimo indicado.
 
 ***
 
@@ -102,42 +102,28 @@ Algumas opções podem ser ativadas conforme o canal utilizado.
 
 ***
 
-## 5️⃣ Criando a fila da integração
+## 5️⃣ Ativar a integração
 
-Agora vamos criar a fila que será responsável pela abertura do chamado.
+Após criar, o sistema abre o assistente **"Vamos ativar sua integração"**:
 
-1. Crie uma nova **Fila**
-2. Marque a opção **Usar integração**
-3. Selecione a integração criada anteriormente
+1. **Fila** — escolha a **Fila de Atendimento Humano** e clique em **Gerar Bot**. O sistema cria automaticamente:
+   * A **fila da integração** (a opção **"Inicia Integração ao transferir"** fica desativada, pois a integração precisa do CPF/CNPJ antes);
+   * Um **chatbot com menu**:
 
-⚠️ Importante:
+   ```
+   1. Falar com Humano
+   2. Abrir chamado
+   ```
 
-* Deixe **desativada** a opção:
+   Ao escolher a opção 2, o cliente é transferido para a fila da integração com a mensagem pedindo o **CPF ou CNPJ**.
+2. **Canais** — escolha em quais canais a integração será utilizada;
+3. **Confirmação** — finalize.
 
-**“Inicia integração ao transferir”**
-
-<figure><img src="../../../.gitbook/assets/image (4) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
-***
-
-## 6️⃣ Configurando o bot para enviar o cliente à fila
-
-No fluxo do seu bot:
-
-* Configure para **transferir o atendimento** para a fila da integração
-* Defina uma mensagem solicitando:
-
-👉 **CPF ou CNPJ do cliente**
-
-Exemplo de mensagem:
-
-> “Para abrir seu chamado, por favor informe seu CPF ou CNPJ.”
-
-<figure><img src="../../../.gitbook/assets/image (5) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+> 💡 Quer usar seu próprio chatbot? Edite o fluxo do bot ou configure sua fila manualmente em **Cadastros → Filas** (campo **Integração**), transferindo o atendimento para ela **somente depois** de coletar o CPF/CNPJ.
 
 ***
 
-## 7️⃣ Arquivo de exemplo do bot
+## 6️⃣ Arquivo de exemplo do bot
 
 Você pode utilizar o arquivo abaixo como base para a configuração do bot:
 
@@ -145,15 +131,17 @@ Você pode utilizar o arquivo abaixo como base para a configuração do bot:
 
 ***
 
-## 8️⃣ Funcionamento final (como o cliente vê)
+## 7️⃣ Funcionamento final (como o cliente vê)
 
 O fluxo funciona da seguinte forma:
 
-1. O cliente é direcionado para a fila da integração
-2. Informa o **CPF ou CNPJ**
-3. O sistema valida os dados na Atlaz
-4. O cliente responde às perguntas necessárias
-5. O chamado é aberto automaticamente
+1. O cliente conversa com o bot de identificação
+2. Escolhe a opção **Abrir chamado**
+3. O sistema solicita o **CPF ou CNPJ**
+4. O cliente informa os dados
+5. O sistema valida os dados na Atlaz
+6. O cliente responde às perguntas necessárias
+7. O chamado é aberto automaticamente
 
 <figure><img src="../../../.gitbook/assets/image (74).png" alt=""><figcaption></figcaption></figure>
 
