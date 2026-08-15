@@ -125,6 +125,7 @@
     * [Envio da Cópia do Atendimento por E-mail](funcionalidades/automacao/envio-da-copia-do-atendimento-por-e-mail.md)
     * [📅 Ausências por Fila](funcionalidades/automacao/ausencias-por-fila.md)
     * [Mensagens Automáticas](funcionalidades/automacao/mensagens-automaticas.md)
+    * [Encerramento por Palavra-chave](funcionalidades/automacao/encerramento-por-palavra-chave.md)
   * [WhatsApp](funcionalidades/whatsapp/README.md)
     * [Importar mensagens Baileys](funcionalidades/whatsapp/importar-mensagens-whatsapp.md)
     * [SINCRONIZAR MENSAGENS - API PLUS - WuzApi](funcionalidades/whatsapp/sincronizar_mensagens_api_plus.md)
