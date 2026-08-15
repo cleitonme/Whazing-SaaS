@@ -139,7 +139,7 @@ Faz bot verificar as condições sem aguardar nova mensagem cliente. Exemplo cas
 
 ## 🧩 Configuração de Condições
 
-<figure><img src="../../../.gitbook/assets/ordeminteracoes (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/ordeminteracoes.png" alt=""><figcaption></figcaption></figure>
 
 ### Tipos de Condições (em ordem de prioridade)
 

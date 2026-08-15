@@ -12,12 +12,10 @@ Acesse: **SaaS → Configurações → Configurações Gerais**
 
 Localize o item **Ocultar opção Bloquear Múltiplos Logins** e verifique o estado do toggle:
 
-<figure><img src="../../../.gitbook/assets/saas-configuracoes-gerais-ocultar-multiplos-logins.png" alt=""><figcaption>Configurações Gerais — toggle Ocultar opção Bloquear Múltiplos Logins desabilitado</figcaption></figure>
-
-| Estado do toggle | Comportamento |
-|---|---|
-| **Desabilitado** (cinza) | A opção aparece no cadastro de usuários das empresas ✅ |
-| **Habilitado** (azul) | A opção fica oculta — empresas não conseguem alterar a configuração |
+| Estado do toggle         | Comportamento                                                       |
+| ------------------------ | ------------------------------------------------------------------- |
+| **Desabilitado** (cinza) | A opção aparece no cadastro de usuários das empresas ✅              |
+| **Habilitado** (azul)    | A opção fica oculta — empresas não conseguem alterar a configuração |
 
 ⚠ **Atenção:** Se o toggle estiver habilitado (azul), a opção não aparecerá na tela de edição do usuário nas empresas. Deixe-o **desabilitado** para liberar o controle.
 
@@ -37,15 +35,11 @@ Role até o campo **Bloquear Múltiplos Logins**.
 
 O toggle aparece **azul** — o usuário **não consegue** logar em mais de um dispositivo ao mesmo tempo. Ao tentar abrir uma segunda sessão, a sessão anterior é encerrada.
 
-<figure><img src="../../../.gitbook/assets/usuario-bloquear-multiplos-logins-ativado.png" alt=""><figcaption>Bloquear Múltiplos Logins — habilitado (azul)</figcaption></figure>
-
 ***
 
 ### Bloqueio desativado
 
 O toggle aparece **cinza** — o usuário **pode** acessar o sistema em múltiplos dispositivos ou abas simultaneamente.
-
-<figure><img src="../../../.gitbook/assets/usuario-bloquear-multiplos-logins-desativado.png" alt=""><figcaption>Bloquear Múltiplos Logins — desabilitado (cinza)</figcaption></figure>
 
 ***
 

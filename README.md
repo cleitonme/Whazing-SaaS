@@ -14,7 +14,7 @@ Entre na nossa comunidade para suporte e novidades. Aprenda como instalar e conf
 
 * 🚀 **Nunca usou o sistema?** Siga o guia [**Primeiros Passos — Configuração Inicial**](primeiros-passos.md), que mostra a ordem correta de configuração, do acesso ao primeiro teste.
 * 📖 **Não entendeu algum termo?** Consulte o [**Glossário de Termos**](glossario.md), que explica os conceitos em linguagem simples.
-* 💡 **Quer ver o que o sistema faz?** Veja os [Principais Recursos do Sistema](principais-recursos-do-sistema.md) ou teste a [Demo do Produto](#demo-do-produto) abaixo.
+* 💡 **Quer ver o que o sistema faz?** Veja os [Principais Recursos do Sistema](principais-recursos-do-sistema.md) ou teste a [Demo do Produto](./#demo-do-produto) abaixo.
 
 #### 🚀 Demo do Produto <a href="#demo-do-produto" id="demo-do-produto"></a>
 
@@ -48,21 +48,21 @@ Entre no nosso Telegram:\
 
 ## Screenshots
 
-<figure><img src=".gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/painelsaas.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/atendimento.png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/telaatendimento.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (64).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/kanbanpro (1).png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/image (63).png" alt=""><figcaption></figcaption></figure>
+<figure><img src=".gitbook/assets/whitelabel.png" alt=""><figcaption></figcaption></figure>
 
-<figure><img src=".gitbook/assets/dashboard.png" alt=""><figcaption></figcaption></figure>
+
+
+<figure><img src=".gitbook/assets/dashboarad.png" alt=""><figcaption></figcaption></figure>
 
 ## Recomendação de VPS
 
 Recomendamos uso de VPS nacionais.
-
-Devido a grandes problemas acontecidos nos ultimos dias na hostinger não recomendamos uso dela.
 
 Vps internacional tem [Hetzer](https://www.hetzner.com/) , mas de preferência VPS tempo resposta menor de 50ms
 
@@ -94,7 +94,7 @@ Recorrente: 10% OFF todo mês a partir do 2º mês (Cupom: WHAZING10).\
 \
 👉 Comece seu teste agora: [hostear.com.br/whazing](http://hostear.com.br/whazing)\
 \
-&#xNAN;_&#x4E;ota: Para validar o desconto de 10%, lembre-se de aplicar o cupom WHAZING10 no momento do pagamento da fatura._\
+_&#x4E;ota: Para validar o desconto de 10%, lembre-se de aplicar o cupom WHAZING10 no momento do pagamento da fatura._\
 \
 Hostear & Whazing: Potência brasileira ao seu alcance! ⚡
 

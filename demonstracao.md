@@ -10,12 +10,10 @@ Antes de instalar, você pode **testar o Whazing gratuitamente** na versão de d
 * **Usuário:** `admin@admin.com`
 * **Senha:** `123456`
 
-<figure><img src=".gitbook/assets/image (6) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
-
----
+***
 
 ### 👣 E depois de testar?
 
-* Quer instalar no seu servidor? Veja [Instalação & VPS](instalacao-and-vps/README.md).
+* Quer instalar no seu servidor? Veja [Instalação & VPS](instalacao-and-vps/).
 * Quer configurar o sistema passo a passo? Veja [Primeiros Passos — Configuração Inicial](primeiros-passos.md).
 * Quer saber tudo o que o sistema faz? Veja [Principais Recursos do Sistema](principais-recursos-do-sistema.md).
