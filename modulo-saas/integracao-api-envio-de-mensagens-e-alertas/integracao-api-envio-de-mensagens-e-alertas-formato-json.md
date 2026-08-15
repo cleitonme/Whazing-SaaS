@@ -9,9 +9,28 @@ Esse recurso é ideal para integração com:
 
 ***
 
+## Onde configurar
+
+Acesse:
+
+**Painel SaaS → Comunicação → Notificações WhatsApp**
+
+Nessa tela:
+
+* **URL DA API** — informe a URL da API que receberá os envios
+* **Token** — informe o token da API
+
+***
+
 ## Configurações Disponíveis
 
-### Habilitar envio WhatsApp solicitar teste
+### Habilitar envio no formato JSON
+
+Com essa opção ativada, os dados enviados pela API serão no formato **JSON**, útil para integração com APIs de botões ou com a API oficial do WhatsApp (templates).
+
+***
+
+### Habilitar envio WhatsApp enviar solicitar teste
 
 Quando ativado, o sistema envia automaticamente uma mensagem de boas-vindas após o cadastro do teste.
 
@@ -42,9 +61,9 @@ Pode ser utilizado com:
 
 ### Habilitar envio WhatsApp confirmando pagamento
 
-Quando ativado, o sistema envia automaticamente uma mensagem após a confirmação do pagamento da fatura.
+Envia uma mensagem no WhatsApp após a confirmação do pagamento da fatura.
 
-Exemplos:
+Exemplos de uso:
 
 * Confirmação do pagamento
 * Liberação do sistema
@@ -53,25 +72,17 @@ Exemplos:
 
 ***
 
-## Ativar envio no formato JSON
+### Enviar mensagem WhatsApp ao cadastrar afiliado
 
-Ative a opção:
+Mensagem enviada quando um novo **afiliado** se cadastra pela página pública.
 
-### Habilitar envio no formato JSON
-
-Com essa opção ativada, os dados serão enviados para sua API exatamente no formato JSON configurado.
-
-Esse modo é recomendado para:
-
-* APIs com botões
-* API Oficial do WhatsApp
-* Templates Meta
+Usa as mesmas configurações de URL/token acima.
 
 ***
 
 ## URL da API
 
-Informe a URL correta do endpoint da integração.
+Informe a URL correta do endpoint da integração no campo **URL DA API**.
 
 ### Exemplos
 
@@ -86,6 +97,12 @@ https://urldaapi/apiplus
 ```
 https://urldaapi/apioficial
 ```
+
+***
+
+## Token da API
+
+Informe o token da API no campo **Token**. O token é utilizado para autenticar as requisições de envio.
 
 ***
 
