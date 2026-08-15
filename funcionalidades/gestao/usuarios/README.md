@@ -8,9 +8,9 @@ Nesta tela você cadastra as pessoas da sua equipe que vão usar o sistema (aten
 
 > 🔒 **Quem pode acessar esta tela?** Apenas usuários com perfil **Administrador** ou **Supervisor Geral**.
 >
-> 📍 **Onde fica?** Em **Configurações → Cadastros → Usuários**.
+> 📍 **Onde fica?** Em **Cadastros → Usuários**.
 
-<figure><img src="../../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Tela de cadastro de usuários</p></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/modalusuario.png" alt=""><figcaption></figcaption></figure>
 
 > 💡 **Antes de cadastrar usuários, crie as filas.** As filas definem quais conversas cada usuário pode ver. Veja [Organização de Atendimentos, Filas e Permissões de Usuários](../organizacao-de-atendimentos-filas-e-permissoes-de-usuarios.md).
 
@@ -25,16 +25,16 @@ No topo da tela você encontra:
 
 A lista de usuários mostra, para cada pessoa:
 
-| Coluna | O que mostra |
-| --- | --- |
-| **#** | Status online: ponto **verde** (online) ou **vermelho** (offline) |
-| **Foto** | Foto de perfil do usuário |
-| **Nome / E-mail** | Dados de identificação |
-| **Perfil** | Administrador, Supervisor Geral, Supervisor de Fila ou Usuário |
-| **Filas** | Filas às quais o usuário está vinculado |
-| **Canais** | Canais que o usuário pode usar |
-| **Status** | Situação da configuração do usuário |
-| **Ações** | Alertas, Central de Atendimento, editar e excluir |
+| Coluna            | O que mostra                                                      |
+| ----------------- | ----------------------------------------------------------------- |
+| **#**             | Status online: ponto **verde** (online) ou **vermelho** (offline) |
+| **Foto**          | Foto de perfil do usuário                                         |
+| **Nome / E-mail** | Dados de identificação                                            |
+| **Perfil**        | Administrador, Supervisor Geral, Supervisor de Fila ou Usuário    |
+| **Filas**         | Filas às quais o usuário está vinculado                           |
+| **Canais**        | Canais que o usuário pode usar                                    |
+| **Status**        | Situação da configuração do usuário                               |
+| **Ações**         | Alertas, Central de Atendimento, editar e excluir                 |
 
 ***
 
@@ -77,7 +77,7 @@ Clique em **Adicionar** e preencha os campos da aba **Informações**:
 * **Nome** — nome completo (mínimo 3 caracteres).
 * **E-mail** — usado para o login. Deve ser um e-mail válido.
 * **Senha** — obrigatória no cadastro. Deve ter **no mínimo 6 caracteres**, com **pelo menos uma letra maiúscula, uma letra minúscula e um número**.
-* **Perfil** — Administrador, Supervisor Geral, Supervisor de Fila ou Usuário (veja [Perfis de usuário](#perfis-de-usuario)).
+* **Perfil** — Administrador, Supervisor Geral, Supervisor de Fila ou Usuário (veja [Perfis de usuário](./#perfis-de-usuario)).
 * **Ignorar carteira — Listar todos contatos** — só aparece quando o perfil é **Usuário**. Quando ativado, o usuário visualiza **todos os contatos** mesmo com a carteira de clientes ativa. Normalmente usado para supervisores e gestores.
 * **Bloquear Múltiplos Logins** — impede que o usuário acesse o sistema em mais de um dispositivo ao mesmo tempo. Veja [Bloquear Múltiplos Logins](bloquear-multiplos-logins.md).
 
@@ -114,12 +114,12 @@ O botão de **excluir** (lixeira) está disponível **apenas para o perfil Admin
 
 ## 👥 Perfis de usuário
 
-| Perfil | Resumo |
-| --- | --- |
-| **Administrador** | Acesso completo a todas as funcionalidades do sistema. Recomendado apenas para proprietários, gestores ou responsáveis pela administração. |
-| **Supervisor Geral** | Acompanha toda a operação sem acesso total de administrador: vê todos os tickets, acessa relatórios, gerencia filas, campanhas, equipes, usuários (exceto administradores), ChatBots, CRM e pode reiniciar conexões do WhatsApp. Ideal para coordenadores e gerentes. |
-| **Supervisor de Fila** | Acompanha as conversas das filas das quais participa e monitora equipes. Não visualiza atendimentos privados de outros usuários. Ideal para líderes de equipe. |
-| **Usuário (Atendente)** | Perfil mais restrito: visualiza apenas os atendimentos permitidos pelas filas configuradas. É o perfil padrão dos operadores de atendimento. |
+| Perfil                  | Resumo                                                                                                                                                                                                                                                                |
+| ----------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Administrador**       | Acesso completo a todas as funcionalidades do sistema. Recomendado apenas para proprietários, gestores ou responsáveis pela administração.                                                                                                                            |
+| **Supervisor Geral**    | Acompanha toda a operação sem acesso total de administrador: vê todos os tickets, acessa relatórios, gerencia filas, campanhas, equipes, usuários (exceto administradores), ChatBots, CRM e pode reiniciar conexões do WhatsApp. Ideal para coordenadores e gerentes. |
+| **Supervisor de Fila**  | Acompanha as conversas das filas das quais participa e monitora equipes. Não visualiza atendimentos privados de outros usuários. Ideal para líderes de equipe.                                                                                                        |
+| **Usuário (Atendente)** | Perfil mais restrito: visualiza apenas os atendimentos permitidos pelas filas configuradas. É o perfil padrão dos operadores de atendimento.                                                                                                                          |
 
 👉 Detalhes completos: [Perfil de Usuário](../perfil_usuario.md)
 
