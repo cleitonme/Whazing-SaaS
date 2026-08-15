@@ -6,11 +6,13 @@ O painel SaaS possui integração via webhook para envio automático de eventos.
 
 #### ⚙️ Como configurar
 
-1. Acesse o painel SaaS
-2. Vá até **Webhook/API**
-3. Informe a URL do seu webhook (endpoint que irá receber os dados)
+1. Acesse **Painel SaaS → Integrações → Webhook / API**
+2. No campo **URL Webhook SaaS**, informe a URL do seu webhook (endpoint que irá receber os dados)
+3. Salve
 
 <figure><img src="../.gitbook/assets/webhookadmin.png" alt=""><figcaption></figcaption></figure>
+
+> 💡 Nessa mesma tela ficam as credenciais da API (**API ID** e **TOKEN ADMIN**), a opção **Habilitar API ADMIN** e o campo **N8N API Key SaaS** para integração com o N8N. Consulte a [📘 API SaaS](api_saas.md) para mais detalhes.
 
 ***
 
@@ -18,9 +20,9 @@ O painel SaaS possui integração via webhook para envio automático de eventos.
 
 Atualmente, o sistema possui os seguintes eventos:
 
-### ✅ Novo cliente de teste cadastrado
+### ✅ Webhook — Novo teste cadastrado
 
-Disparado quando um cadastro é feito pela página de teste (teste aberto).
+Dispara um evento quando um novo teste é cadastrado pela página de signup.
 
 #### 📦 Exemplo de Payload
 
@@ -46,9 +48,9 @@ Disparado quando um cadastro é feito pela página de teste (teste aberto).
 
 ***
 
-## 🔄 Evento de mudança de status de canal
+## 🔄 Webhook — Alteração de status do canal
 
-Disparado automaticamente quando um canal sofre alteração de status no painel SaaS.
+Dispara um evento sempre que o status de um canal for alterado.
 
 Exemplos:
 
