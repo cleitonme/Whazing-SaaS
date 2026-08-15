@@ -8,13 +8,17 @@ icon: star
 
 # Avaliação de Atendimento
 
+Solicite uma pesquisa de satisfação automaticamente após finalizar um atendimento.
+
 ## ⚙️ Passos para Configuração
 
-1. Acesse **Canais** na plataforma.
-2. Clique no ícone de lápis para editar o canal desejado.
-3. Localize a opção **Habilitar Avaliação de Atendimento** e ative-a.
+1. Acesse **Configurações de Atendimento → Avaliação de Atendimento**.
+2. No campo **Selecione o Canal**, escolha o canal onde deseja ativar a pesquisa de satisfação.
+3. Ative a opção **Ativar avaliação automática**.
 
 <figure><img src="../../.gitbook/assets/telahabilitaravaliacao.png" alt=""><figcaption></figcaption></figure>
+
+> 💡 A pesquisa é enviada automaticamente após o encerramento do atendimento. Você pode personalizar a mensagem enviada ao cliente.
 
 ***
 
@@ -24,9 +28,9 @@ Ao habilitar a avaliação de atendimento, você poderá configurar os seguintes
 
 ***
 
-### 1. Mensagem para Solicitar Avaliação
+### 1. Mensagem enviada ao cliente
 
-Mensagem enviada ao cliente solicitando uma nota para o atendimento.
+Mensagem enviada ao cliente solicitando uma nota para o atendimento. Digite a mensagem no campo.
 
 #### Exemplo
 
@@ -34,9 +38,9 @@ Mensagem enviada ao cliente solicitando uma nota para o atendimento.
 
 ***
 
-### 2. Mensagem Após o Cliente Avaliar
+### 2. Mensagem de agradecimento
 
-Texto enviado automaticamente após o cliente enviar uma avaliação válida.
+Texto enviado automaticamente após o cliente enviar uma avaliação válida. Digite a mensagem no campo.
 
 #### Exemplo
 
@@ -44,9 +48,9 @@ Texto enviado automaticamente após o cliente enviar uma avaliação válida.
 
 ***
 
-### 3. Mensagem para Avaliação Inválida
+### 3. Mensagem de avaliação inválida
 
-Mensagem enviada quando o cliente responder fora do formato esperado.
+Mensagem enviada quando o cliente responder fora do formato esperado. Digite a mensagem no campo.
 
 #### Exemplo
 
@@ -54,9 +58,9 @@ Mensagem enviada quando o cliente responder fora do formato esperado.
 
 ***
 
-### 4. Tempo em Minutos que Aguarda Cliente Avaliar
+### 4. Tempo de espera (minutos)
 
-Define por quanto tempo o sistema aguardará a resposta do cliente após solicitar a avaliação.
+Quanto tempo o sistema aguarda o cliente responder a avaliação.
 
 #### Exemplo
 
@@ -64,9 +68,9 @@ Define por quanto tempo o sistema aguardará a resposta do cliente após solicit
 
 ***
 
-### 5. Mensagem de Encerramento Caso o Prazo de Avaliação Seja Ultrapassado
+### 5. Mensagem quando o prazo expira
 
-Mensagem enviada quando o prazo configurado for atingido sem resposta do cliente.
+Mensagem enviada quando o prazo configurado for atingido sem resposta do cliente. Digite a mensagem no campo.
 
 > Caso o campo fique vazio, nenhuma mensagem será enviada.
 
@@ -76,9 +80,9 @@ Mensagem enviada quando o prazo configurado for atingido sem resposta do cliente
 
 ***
 
-### 6. Intervalo em Horas Entre as Solicitações de Avaliação
+### 6. Intervalo entre avaliações (horas)
 
-Define o tempo mínimo necessário para solicitar uma nova avaliação ao mesmo cliente.
+Tempo mínimo entre solicitações de avaliação para o mesmo cliente.
 
 #### Exemplo
 
@@ -86,9 +90,11 @@ Define o tempo mínimo necessário para solicitar uma nova avaliação ao mesmo 
 
 ***
 
-### ✅ Avaliação Voluntária (não bloqueia novo atendimento)
+### ✅ Avaliação voluntária
 
-Quando essa opção estiver ativada:
+Quando essa opção estiver ativada, se o cliente enviar uma mensagem que não seja uma nota válida, a avaliação será cancelada, a mensagem de avaliação inválida será enviada e um novo ticket será aberto automaticamente.
+
+Detalhes do funcionamento:
 
 * Caso o cliente envie uma mensagem que não seja uma nota válida, a avaliação será automaticamente cancelada.
 * O sistema enviará a mensagem de avaliação inválida configurada.
@@ -109,9 +115,11 @@ Essa funcionalidade evita que o cliente fique preso aguardando uma avaliação o
 
 ***
 
-### ✅ Solicitar Feedback Após Nota Baixa
+### ✅ Solicitar feedback após nota baixa
 
-Permite solicitar automaticamente um comentário adicional quando o cliente enviar uma nota abaixo ou igual ao limite configurado.
+Após o cliente dar uma nota abaixo do limite, o sistema envia uma mensagem pedindo o motivo.
+
+Detalhes do funcionamento:
 
 #### Campo de Configuração
 
@@ -149,7 +157,9 @@ O sistema enviará automaticamente uma mensagem solicitando mais detalhes sobre 
 
 ***
 
-## 📋 Enviar Formato de Lista
+## 📋 Formato de Lista
+
+Em canais compatíveis, envie a avaliação como uma **lista interativa com opções de 1 a 5**.
 
 Disponível para:
 
