@@ -1,5 +1,9 @@
 # Atendimento
 
+Aqui você encontra as ferramentas usadas **durante e depois** do atendimento: avaliação do cliente, follow-up, mensagens de despedida, motivos de encerramento, chave PIX e formatação de texto. Também está aqui o **Assistente IA (Copiloto)**, que ajuda o atendente com IA dentro da conversa.
+
+> 💡 **Nunca usou o sistema?** Veja [Primeiros Passos — Configuração Inicial](../../primeiros-passos.md) e o [Glossário](../../glossario.md).
+
 {% content-ref url="avaliacao.md" %}
 [avaliacao.md](avaliacao.md)
 {% endcontent-ref %}
