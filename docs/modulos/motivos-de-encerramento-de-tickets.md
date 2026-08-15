@@ -22,10 +22,16 @@ Essa informação é fundamental para gerar relatórios e dashboards que ajudam 
 
 ### 🔧 Como cadastrar um motivo
 
-1. Acesse o menu **Cadastros → Motivos de encerramento**.
-2. Clique em **Adicionar motivo**.
-3. Defina o **nome** do motivo e escolha uma **cor** para identificação.
-4. Defina para qual filas está disponível, lista será mostrada conforme fila que ticket estiver no momento do fechando, caso não definir fila mostra para todos
+1. Acesse **Configurações de Atendimento → Motivos de Encerramento**.
+2. Clique no botão de adicionar — será exibido o modal **Cadastrar Motivo**.
+3. Na seção **Informações do Motivo**, preencha os campos:
+
+   * **Nome do Motivo:** Nome que identificará o motivo.
+   * **Cor:** Cor utilizada para identificação do motivo (ex.: `#ffffff`).
+   * **Filas:** Selecione as filas onde este motivo estará disponível. Deixe vazio para disponibilizar em **todas as filas**.
+   * **Ativo:** Ative para disponibilizar o motivo.
+
+> 💡 A lista de motivos exibida no fechamento considera a **fila do ticket** no momento do encerramento. Motivos sem fila definida são mostrados para **todas as filas**.
 
 <figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
