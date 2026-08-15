@@ -16,7 +16,7 @@ Solicite uma pesquisa de satisfação automaticamente após finalizar um atendim
 2. No campo **Selecione o Canal**, escolha o canal onde deseja ativar a pesquisa de satisfação.
 3. Ative a opção **Ativar avaliação automática**.
 
-<figure><img src="../../.gitbook/assets/telahabilitaravaliacao.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/cadastraavaliacao.png" alt=""><figcaption></figcaption></figure>
 
 > 💡 A pesquisa é enviada automaticamente após o encerramento do atendimento. Você pode personalizar a mensagem enviada ao cliente.
 
@@ -199,7 +199,7 @@ Permite configurar as opções de avaliação que serão exibidas ao cliente.
 #### Exemplo
 
 * ⭐ Péssimo
-* ⭐⭐  Ruim
+* ⭐⭐ Ruim
 * ⭐⭐⭐ Regular
 * ⭐⭐⭐⭐ Bom
 * ⭐⭐⭐⭐⭐ Excelente
