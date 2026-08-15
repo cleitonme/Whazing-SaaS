@@ -156,7 +156,6 @@
     * [Tarefas](funcionalidades/gestao/tarefas.md)
     * [Anotação Tickets](funcionalidades/gestao/anotacao-tickets.md)
     * [Configurações do Atendimento](funcionalidades/gestao/configuracoes-do-atendimento.md)
-    * [Configurações](funcionalidades/gestao/configuracoes.md)
     * [Variáveis do Sistema](funcionalidades/gestao/variaveis-sistema.md)
   * [Kanban](funcionalidades/kanban.md)
   * [Kanban Pro](funcionalidades/kanban-pro/README.md)
