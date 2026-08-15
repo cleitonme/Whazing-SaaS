@@ -7,7 +7,7 @@ O **Botão Coringa** é um recurso que permite adicionar um botão adicional no 
 ### 🔧 Como configurar o Botão Coringa
 
 1. Acesse o **Painel SaaS**.
-2. Vá até o menu **Configurações**.
+2. Vá até o menu **Sistema → Atalhos de Menu**.
 3. Ative a opção **Exibir botão coringa**.
 4. Preencha os campos:
    * 🏷️ **Nome do botão** Texto que será exibido no menu principal.
