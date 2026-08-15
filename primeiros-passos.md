@@ -26,7 +26,7 @@ Siga os passos abaixo na ordem. Você pode pular os passos que não se aplicam a
 
 Abra o endereço do seu sistema (ex.: `https://seudominio.com.br`) e entre com o usuário e a senha do administrador.
 
-* Não consegue acessar? Veja [Sistema não abre](solucao-de-problemas/meu_sistema_nao_abre.md).
+* Não consegue acessar? Veja [Sistema não abre](solucao-de-problemas/sistema-nao-abre-ou-lento/sistema-nao-abre.md).
 * Ainda não instalou? Veja [Instalação & VPS](instalacao-and-vps/).
 
 ***
@@ -117,7 +117,7 @@ Crie mensagens que o sistema envia sozinho em momentos importantes do atendiment
 
 ## 🆘 Problemas comuns
 
-* **Mensagem não chega ou não envia:** veja [Mensagem não enviando](canais-suportados/whatsapp-api-nao-oficial/mensagem-nao-enviando.md) e [Perda de Mensagens e Problemas de Conexão](solucao-de-problemas/perda-de-mensagens-e-problemas-de-conexao.md).
+* **Mensagem não chega ou não envia:** veja [Mensagem não enviando](canais-suportados/whatsapp-api-nao-oficial/mensagem-nao-enviando.md) e [WhatsApp desconecta ou mensagens não chegam](solucao-de-problemas/whatsapp-e-mensagens/whatsapp-desconecta-ou-mensagens-nao-chegam.md).
 * **Usuário não vê as conversas:** confira as permissões e as filas do usuário (passo 3).
 * **Sistema lento ou não abre:** veja a [Solução de Problemas](solucao-de-problemas/).
 

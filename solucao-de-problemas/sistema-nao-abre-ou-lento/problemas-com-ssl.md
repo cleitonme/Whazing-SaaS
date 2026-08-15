@@ -2,7 +2,7 @@
 icon: expeditedssl
 ---
 
-# Problemas com SSL
+# Erro de certificado (SSL): o site não carrega
 
 ### Comando Rápido para Atualizar o SSL
 

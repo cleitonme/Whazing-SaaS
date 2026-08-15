@@ -179,4 +179,4 @@ Depois que o WhatsApp estiver conectado, siga esta sequência para deixar o aten
 3. **Configure mensagens automáticas** (saudação, despedida e transferência) — veja [Mensagens Automáticas](../../funcionalidades/automacao/mensagens-automaticas.md).
 4. **Crie um chatbot** para responder automaticamente — veja [Chatbot Interno](../../funcionalidades/automacao/chatbotinterno/README.md).
 5. **Importe as mensagens antigas** do WhatsApp, se quiser manter o histórico — veja [Importar mensagens Baileys](../../funcionalidades/whatsapp/importar-mensagens-whatsapp.md).
-6. **Nada funcionando?** Veja [Mensagem não enviando](mensagem-nao-enviando.md) e [Perda de Mensagens e Problemas de Conexão](../../solucao-de-problemas/perda-de-mensagens-e-problemas-de-conexao.md).
+6. **Nada funcionando?** Veja [Mensagem não enviando](mensagem-nao-enviando.md) e [WhatsApp desconecta ou mensagens não chegam](../../solucao-de-problemas/whatsapp-e-mensagens/whatsapp-desconecta-ou-mensagens-nao-chegam.md).

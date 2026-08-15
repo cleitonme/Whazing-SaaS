@@ -3,7 +3,7 @@ description: 'Erro no sistema: [ioredis] Unhandled error event: Error: connect E
 icon: rotate-right
 ---
 
-# Reinstalar Redis
+# Reinstalar o Redis
 
 Esse erro significa que o Redis (parte importante do sistema) não está funcionando corretamente ou não está aceitando conexões. Vamos resolver isso reinstalando o Redis.
 

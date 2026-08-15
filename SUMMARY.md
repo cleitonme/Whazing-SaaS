@@ -240,15 +240,19 @@
 ## Solução de Problemas
 
 * [Solução de Problemas](solucao-de-problemas/README.md)
-  * [Sistema não abre](solucao-de-problemas/meu_sistema_nao_abre.md)
-  * [Perda de Mensagens e Problemas de Conexão](solucao-de-problemas/perda-de-mensagens-e-problemas-de-conexao.md)
-  * [Problemas com SSL](solucao-de-problemas/problemas_com_ssl.md)
-  * [Erro de Licença](solucao-de-problemas/an-error-occurred-while-validating-the-license..md)
-  * [Reinstalar Redis](solucao-de-problemas/reinstalar_redis.md)
-  * [Como verificar erros no Console do Navegador (Google Chrome)](solucao-de-problemas/como-verificar-erros-no-console-do-navegador-google-chrome.md)
-  * [Diagnóstico de Lentidão em Servidores Linux com Docker](solucao-de-problemas/diagnostico-de-lentidao-em-servidores-linux-com-docker.md)
-  * [Instalação e Configuração do PgBouncer (Whazing)](solucao-de-problemas/instalacao-e-configuracao-do-pgbouncer-whazing.md)
-  * [🔥 Como verificar e reiniciar o Firewall (UFW) no Linux](solucao-de-problemas/como-verificar-e-reiniciar-o-firewall-ufw-no-linux.md)
+  * [WhatsApp e Mensagens](solucao-de-problemas/whatsapp-e-mensagens/README.md)
+    * [WhatsApp desconecta ou mensagens não chegam](solucao-de-problemas/whatsapp-e-mensagens/whatsapp-desconecta-ou-mensagens-nao-chegam.md)
+    * [Reinstalar o Redis](solucao-de-problemas/whatsapp-e-mensagens/reinstalar-redis.md)
+  * [O Sistema Não Abre ou Está Lento](solucao-de-problemas/sistema-nao-abre-ou-lento/README.md)
+    * [Sistema não abre ou parou de funcionar](solucao-de-problemas/sistema-nao-abre-ou-lento/sistema-nao-abre.md)
+    * [Sistema lento: como diagnosticar o servidor](solucao-de-problemas/sistema-nao-abre-ou-lento/diagnostico-de-lentidao-em-servidores-linux-com-docker.md)
+    * [Erro de certificado (SSL)](solucao-de-problemas/sistema-nao-abre-ou-lento/problemas-com-ssl.md)
+    * [Como verificar erros no Console do Navegador (Google Chrome)](solucao-de-problemas/sistema-nao-abre-ou-lento/como-verificar-erros-no-console-do-navegador-google-chrome.md)
+  * [Acesso e Licença](solucao-de-problemas/acesso-e-licenca/README.md)
+    * [Erro de licença](solucao-de-problemas/acesso-e-licenca/erro-de-licenca.md)
+  * [Servidor e Banco de Dados](solucao-de-problemas/servidor-e-banco-de-dados/README.md)
+    * [PgBouncer (banco de dados sobrecarregado)](solucao-de-problemas/servidor-e-banco-de-dados/instalacao-e-configuracao-do-pgbouncer-whazing.md)
+    * [Firewall (UFW) no Linux](solucao-de-problemas/servidor-e-banco-de-dados/como-verificar-e-reiniciar-o-firewall-ufw-no-linux.md)
 
 ## Histórico e Atualizações
 

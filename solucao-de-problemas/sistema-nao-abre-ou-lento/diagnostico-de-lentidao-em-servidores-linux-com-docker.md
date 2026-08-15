@@ -2,7 +2,7 @@
 icon: desktop
 ---
 
-# Diagnóstico de Lentidão em Servidores Linux com Docker
+# Sistema lento: como diagnosticar o servidor (Linux com Docker)
 
 Se o sistema estiver **lento, travando ou demorando para responder**, é importante verificar alguns pontos no servidor:
 

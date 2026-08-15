@@ -2,7 +2,7 @@
 icon: circle-exclamation
 ---
 
-# 🚨 Sistema não abre
+# 🚨 Sistema não abre ou parou de funcionar
 
 Se o sistema **não abre**, **parou de funcionar** ou apresenta erros, siga este guia passo a passo. A maioria dos problemas está relacionada a **falta de espaço**, **DNS**, **containers parados** ou **atualização incompleta**.
 
@@ -29,7 +29,7 @@ df -h
 
 Esse comando mostra o uso do disco.
 
-<figure><img src="../.gitbook/assets/image (67).png" alt=""><figcaption><p>Exemplo de uso do disco</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (67).png" alt=""><figcaption><p>Exemplo de uso do disco</p></figcaption></figure>
 
 ### ⚠️ Atenção ao campo **Mounted on /**
 
@@ -99,7 +99,7 @@ Para mostrar apenas pastas acima de **1GB**:
 du -h --max-depth=1 | grep -E '^[0-9.]+G'
 ```
 
-<figure><img src="../.gitbook/assets/image (68).png" alt=""><figcaption><p>Pastas com alto consumo</p></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (68).png" alt=""><figcaption><p>Pastas com alto consumo</p></figcaption></figure>
 
 ***
 
@@ -149,7 +149,7 @@ Depois disso, aguarde alguns segundos e teste novamente.
 
 ### 2️⃣ Verifique os logs do sistema
 
-Consulte a documentação: 👉 [Acessando logs](../instalacao-and-vps/acessando_logs.md)
+Consulte a documentação: 👉 [Acessando logs](../../instalacao-and-vps/acessando_logs.md)
 
 ***
 
@@ -171,7 +171,7 @@ Consulte a documentação: 👉 [Acessando logs](../instalacao-and-vps/acessando
 
 * Pode ter ocorrido erro durante o processo
 
-3️⃣ Verifique os logs 👉 [Acessando logs](../instalacao-and-vps/acessando_logs.md)
+3️⃣ Verifique os logs 👉 [Acessando logs](../../instalacao-and-vps/acessando_logs.md)
 
 ***
 
@@ -179,7 +179,7 @@ Consulte a documentação: 👉 [Acessando logs](../instalacao-and-vps/acessando
 
 Siga esta ordem:
 
-1️⃣ Reinicie a VPS 2️⃣ Verifique os logs 3️⃣ Execute a atualização 4️⃣ Verifique o DNS no [https://dnschecker.org](https://dnschecker.org) 5️⃣ Confirme se o SSL está funcionando corretamente 👉 [Problemas com SSL](problemas_com_ssl.md)
+1️⃣ Reinicie a VPS 2️⃣ Verifique os logs 3️⃣ Execute a atualização 4️⃣ Verifique o DNS no [https://dnschecker.org](https://dnschecker.org) 5️⃣ Confirme se o SSL está funcionando corretamente 👉 [Problemas com SSL](problemas-com-ssl.md)
 
 ***
 
@@ -187,7 +187,7 @@ Siga esta ordem:
 
 1️⃣ Reinicie a VPS 2️⃣ Reconecte o WhatsApp no sistema 3️⃣ Verifique os logs
 
-👉 [Acessando logs](../instalacao-and-vps/acessando_logs.md)
+👉 [Acessando logs](../../instalacao-and-vps/acessando_logs.md)
 
 ***
 
@@ -199,7 +199,7 @@ Se aparecer algo como:
 [ioredis] Unhandled error event: Error: connect ECONNREFUSED
 ```
 
-👉 É necessário **reinstalar o Redis** Consulte a documentação: 🔗 [Reinstalar Redis](reinstalar_redis.md)
+👉 É necessário **reinstalar o Redis** Consulte a documentação: 🔗 [Reinstalar o Redis](../whatsapp-e-mensagens/reinstalar-redis.md)
 
 ***
 
@@ -213,4 +213,4 @@ Se mesmo após seguir todos os passos o problema continuar:
 
 * Domínios utilizados
 * Resultado de comandos como `ping`
-* Logs do sistema 👉 [Acessando logs](../instalacao-and-vps/acessando_logs.md)
+* Logs do sistema 👉 [Acessando logs](../../instalacao-and-vps/acessando_logs.md)

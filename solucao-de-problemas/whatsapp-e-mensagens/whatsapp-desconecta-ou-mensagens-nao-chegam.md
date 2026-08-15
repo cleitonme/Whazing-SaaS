@@ -1,4 +1,4 @@
-# Perda de Mensagens e Problemas de Conexão
+# WhatsApp desconecta ou mensagens não chegam
 
 ### Visão Geral
 
@@ -121,7 +121,7 @@ Falhas ou corrupção de dados no Redis podem causar:
 
 Documentação:
 
-[https://doc.whazing.com.br/solucao-de-problemas/reinstalar\_redis](https://doc.whazing.com.br/solucao-de-problemas/reinstalar_redis)
+[https://doc.whazing.com.br/solucao-de-problemas/whatsapp-e-mensagens/reinstalar-redis](https://doc.whazing.com.br/solucao-de-problemas/whatsapp-e-mensagens/reinstalar-redis)
 
 ***
 
@@ -146,7 +146,7 @@ Servidores com recursos insuficientes ou sobrecarregados podem impactar diretame
 
 Documentação:
 
-[https://doc.whazing.com.br/solucao-de-problemas/diagnostico-de-lentidao-em-servidores-linux-com-docker](https://doc.whazing.com.br/solucao-de-problemas/diagnostico-de-lentidao-em-servidores-linux-com-docker)
+[https://doc.whazing.com.br/solucao-de-problemas/sistema-nao-abre-ou-lento/diagnostico-de-lentidao-em-servidores-linux-com-docker](https://doc.whazing.com.br/solucao-de-problemas/sistema-nao-abre-ou-lento/diagnostico-de-lentidao-em-servidores-linux-com-docker)
 
 ***
 

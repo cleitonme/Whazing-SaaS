@@ -1,4 +1,4 @@
-# Instalação e Configuração do PgBouncer (Whazing)
+# PgBouncer (banco de dados sobrecarregado): instalação e configuração
 
 O PgBouncer é um **gerenciador de conexões do PostgreSQL**. Ele ajuda a evitar travamentos e melhora o desempenho do sistema.
 
