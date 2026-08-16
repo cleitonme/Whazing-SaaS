@@ -58,7 +58,6 @@ docker run -d \
   -v transcreve-uploads:/transcreve-api/uploads \
   -v transcreve-logs:/transcreve-api/logs \
   --restart always \
-  --memory=2g \
   whazing/transcreveapi:latest
 ```
 
