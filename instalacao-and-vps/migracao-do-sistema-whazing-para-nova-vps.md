@@ -28,7 +28,7 @@ O processo correto é:
 **1. Instalar o sistema na nova VPS**
 
 * Acesse a nova VPS.
-* Siga o guia oficial de instalação: 👉 **Como instalar e atualizar**
+* Siga o guia oficial de instalação: 👉 [**Como instalar e atualizar**](https://doc.whazing.com.br/instalacao-and-vps/instalacao-and-vps/como-instalar-e-atualizar)
 * Finalize toda a instalação.
 * Confirme o IP público da nova VPS.
 
@@ -40,7 +40,7 @@ O processo correto é:
 
 Depois que a instalação estiver concluída:
 
-* Acesse **trial.whazing.com.br**.
+* Acesse [**trial.whazing.com.br**](https://trial.whazing.com.br).
 * Solicite a **liberação da licença Premium**.
 * Informe/valide o **IP da nova VPS**, quando solicitado.
 * Aguarde a liberação antes de continuar.
