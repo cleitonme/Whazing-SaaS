@@ -1,4 +1,4 @@
-# 🔥 Como verificar e reiniciar o Firewall (UFW) no Linux
+# Firewall (UFW) no Linux
 
 O UFW (Uncomplicated Firewall) é o firewall padrão das distribuições Ubuntu e Debian. Ele controla quais portas e serviços podem ser acessados pela internet.
 

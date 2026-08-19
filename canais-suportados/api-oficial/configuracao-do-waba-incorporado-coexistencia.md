@@ -60,6 +60,8 @@ Domínios permitidos para o SDK do JavaScript:
 
 **Importante em "**&#x55;RIs de redirecionamento do OAuth válidos"
 
+<figure><img src="../../.gitbook/assets/cadastrourloatuh.png" alt=""><figcaption></figcaption></figure>
+
 Cadastrar [https://bot.seusite.com.br/#/conectarwaba](https://bot.seusite.com.br/#/conectarwaba)
 
 Sempre trocando bot.seusite.com.br pelo url do seu frontend
