@@ -16,6 +16,8 @@ Entre na nossa comunidade para suporte e novidades. Aprenda como instalar e conf
 * 📖 **Não entendeu algum termo?** Consulte o [**Glossário de Termos**](glossario.md), que explica os conceitos em linguagem simples.
 * 💡 **Quer ver o que o sistema faz?** Veja os [Principais Recursos do Sistema](principais-recursos-do-sistema.md) ou teste a [Demo do Produto](./#demo-do-produto) abaixo.
 
+Canal telegram receber novidades e atualizações: [https://t.me/whazing](https://t.me/whazing)
+
 #### 🚀 Demo do Produto <a href="#demo-do-produto" id="demo-do-produto"></a>
 
 * [https://teste.whazing.com.br/](https://teste.whazing.com.br/)
