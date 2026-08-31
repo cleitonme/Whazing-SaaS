@@ -1,5 +1,25 @@
 # Changelog e Atualizações
 
+# 🚀 Versão 3.0.1 BETA – Changelog
+
+* Bug – Correções estéticas e ajustes de cores que ainda estavam fora do padrão White Label
+* Bug – Correção na configuração de avaliação por canal
+* Bug – Chat interno: erro ao carregar lista de usuários ou equipes, que exigia atualizar a página (F5)
+* Bug – Envio de e-mails para contatos que nunca haviam sido enviados
+* Bug – Melhorias na validação do Rate Limit
+* Bug – Melhorias na versão mobile ao iniciar um ticket pela tela de Atendimento
+* Bug – Correção no envio de novo e-mail
+* Bug – Kokoro: melhorias na configuração de voz
+* Chat interno – Exibição do Ticket ID nas mensagens encaminhadas para o Atendimento
+* Chat interno – Correção ao colar mensagens para evitar que sejam coladas no Atendimento errado
+* Assinatura de e-mail e outros locais que ainda exibiam a marca Whazing foram corrigidos
+* Recepção Inteligente – Suporte à configuração de fila na transferência para usuário
+* Correção no aviso de planos adicionais em campanhas que informava incorretamente que não estavam inclusos
+* Correção das estatísticas do painel SaaS, que não consideravam corretamente todos os canais
+* Correção no modal de pagamento, onde o espaço ultrapassado impedia a listagem dos adicionais
+* Recepção Inteligente – Correção para não realizar leitura de anotações internas
+* Bug – Correção ao duplicar Regras de Automação
+
 # 🚀 Versão 3.0.0 BETA – Changelog
 
 ## ⚠️ Atenção
