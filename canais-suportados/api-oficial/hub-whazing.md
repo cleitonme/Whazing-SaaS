@@ -4,7 +4,7 @@ O **Hub Whazing** permite conectar facilmente a **API Oficial do WhatsApp Busine
 
 > ⚠️ Recurso em **BETA**
 >
-> 💰 **Mensalidade:** R$ 20,00 por número conectado
+> 💰 **Mensalidade:** R$ 25,00 por número conectado
 >
 > ✅ Compatível com **Coexistência (Coex)**
 
