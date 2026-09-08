@@ -174,7 +174,7 @@ Temos descontos progressivos para parceiros conforme a quantidade de licenças S
 
 ## 🚀 Como contratar
 
-🌐 https://loja.whazing.com.br
+🌐 [https://loja.whazing.com.br](https://loja.whazing.com.br/)
 
 📱 WhatsApp
 
