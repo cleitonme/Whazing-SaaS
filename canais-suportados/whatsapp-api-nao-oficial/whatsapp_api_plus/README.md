@@ -164,9 +164,9 @@ R: Se comprou perto do vencimento, é possível que tenha sido cobrado na compra
 R: Não — **desconto só para pacotes oficiais** (10, 20, 40). No exemplo: 10 → R$ 35,00 + 1 → R$ 5,00 = R$ 40,00.
 
 **P: O que é “token” e onde pego?**\
-R: Token é uma chave gerada para conectar na api plus adquirir pelo Whatsapp +55 48 3197-0877 ou +55 48 3197-0599
+R: Token é uma chave gerada para conectar na api plus adquirir pela nossa loja [https://loja.whazing.com.br](https://loja.whazing.com.br/) após pagamento os tokens estaram disponivel em "**API Plus & Licenças" na loja indicando servidor e token para copiar**
 
-***
+<figure><img src="../../../.gitbook/assets/image (2).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
