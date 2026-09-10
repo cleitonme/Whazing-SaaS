@@ -80,28 +80,30 @@ Use o cupom de desconto:
 #### WhatsApp Oficial
 
 * Ativação por canal: **R$ 150,00**
-* Mensalidade: **R$ 50,00 por canal conectado**
+* Mensalidade: **R$ 50,00 por canal conectado (**&#x55;sando cupom whazing valor mensal)
 * Suporte COEX
+
+
 
 #### Instagram
 
 * Sem taxa de ativação
-* Mensalidade: **R$ 50,00 por canal conectado**
+* Mensalidade: **R$ 50,00 por canal conectado (**&#x55;sando cupom whazing valor mensal)
 
 #### Facebook
 
 * Sem taxa de ativação
-* Mensalidade: **R$ 50,00 por canal conectado**
+* Mensalidade: **R$ 50,00 por canal conectado (**&#x55;sando cupom whazing valor mensal)
 
 #### WebChat
 
 * Sem taxa de ativação
-* Mensalidade: **R$ 50,00 por canal conectado**
+* Mensalidade: **R$ 50,00 por canal conectado (**&#x55;sando cupom whazing valor mensal)
 
 #### TikTok
 
 * Ativação por canal: **R$ 50,00**
-* Mensalidade: **R$ 50,00 por canal conectado**
+* Mensalidade: **R$ 50,00 por canal conectado (**&#x55;sando cupom whazing valor mensal)
 
 > Os valores são referentes ao provedor e podem estar sujeitos a alterações.
 
@@ -114,12 +116,12 @@ O ConnectionHub permite utilizar canais oficiais de Facebook e Instagram.
 #### Facebook
 
 * Sem taxa de ativação;
-* Mensalidade: **R$ 25,00 por canal conectado**.
+* Mensalidade: **R$ 59,90 por canal conectado**.
 
 #### Instagram
 
 * Sem taxa de ativação;
-* Mensalidade: **R$ 25,00 por canal conectado**.
+* Mensalidade: **R$ 59,90 por canal conectado**.
 
 > **Limitação:** não suporta agendamento de publicações de Feed, Stories e Reels do Instagram. Comentários em publicações são suportados somente para Direct.
 
@@ -130,7 +132,7 @@ O ConnectionHub permite utilizar canais oficiais de Facebook e Instagram.
 #### WhatsApp
 
 * Sem taxa de ativação;
-* Mensalidade: **R$ 20,00 por canal conectado**.
+* Mensalidade: **R$ 25,00 por canal conectado**.
 
 ***
 
