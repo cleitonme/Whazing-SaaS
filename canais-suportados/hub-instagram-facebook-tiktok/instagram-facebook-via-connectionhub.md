@@ -4,15 +4,7 @@ icon: code-branch
 
 # Instagram, Facebook via ConnectionHub
 
-Solicite painel conosco Whatsapp +55 48 3197-0877 ou +55 48 3197-0599 R$ 25,00 por canal
-
-Compra Minima de 5 CANAIS para liberação imediatada. Caso queira aguardar pode ser feito pacotes com outros usuarios até formar compra minima.
-
-Para adquirir acesse o site [https://loja.whazing.com.br/](https://loja.whazing.com.br/) ou Whatsapp +55 48 3197-0599
-
-URL painel: [https://www.connectionhub.com.br/auth/login](https://www.connectionhub.com.br/auth/login)
-
-Em contas revendas - Cadastre seu cliente
+Para adquirir acesse o site oficial [https://www.connectionhub.com.br/](https://www.connectionhub.com.br/)
 
 Depois logue conta do mesmo e canais gerenciar canais cadastre canal Facebook ou Instagram. Clique tomada verde para ativar a mesma onde será enviado site do canal para conectar a conta.
 
