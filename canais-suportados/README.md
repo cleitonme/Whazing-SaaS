@@ -16,17 +16,17 @@ description: >-
 
 São opções de conexão sem custo adicional por canal.
 
-#### WhatsApp Baileys
-
-* WhatsApp API não oficial.
-* **Não recomendamos o uso do Baileys.**
-* Para novas instalações, recomendamos utilizar o **WuzAPI (WhatsMeow)**.
-
 #### WhatsApp WuzAPI (WhatsMeow)
 
 * API não oficial.
 * Sem custo por canal.
 * Boa alternativa para instalações que desejam utilizar WhatsApp sem API oficial.
+
+#### WhatsApp Baileys (desativada por padrão)
+
+* WhatsApp API não oficial.
+* **Não recomendamos o uso do Baileys.**
+* Para novas instalações, recomendamos utilizar o **WuzAPI (WhatsMeow)**.
 
 #### Telegram
 
