@@ -2,7 +2,7 @@
 
 Dentro da Agenda, cada **calendário** é uma agenda independente — com seus próprios profissionais, suas próprias permissões e seus próprios lembretes. Esta página explica como criar, organizar e controlar **quem pode usar** cada calendário.
 
-> 💡 Está com dúvida sobre a diferença entre *calendário*, *profissional* e *serviço*? Veja [Antes de começar](antes-de-comecar.md) — tem uma explicação simples de cada conceito.
+> 💡 Está com dúvida sobre a diferença entre _calendário_, _profissional_ e _serviço_? Veja [Antes de começar](antes-de-comecar.md) — tem uma explicação simples de cada conceito.
 
 ## 🧠 O que é um calendário (e por que criar mais de um)
 
@@ -24,7 +24,7 @@ Cada calendário tem um **nome** e uma **cor** — os agendamentos aparecem no c
 
 > ⚠️ A criação e edição de calendários é para **administradores e supervisores** do sistema — ou para usuários com papel **Admin** em um calendário específico.
 
-> **📸 Sugestão de print:** Aba "Calendários" da janela de configurações.
+<figure><img src="../../.gitbook/assets/novocalendario.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -36,8 +36,6 @@ Cada calendário tem um **nome** e uma **cor** — os agendamentos aparecem no c
 
 Pronto! O calendário surge na lista logo abaixo, já com a cor escolhida.
 
-> **📸 Sugestão de print:** Campo de criação de calendário com nome e cor.
-
 ***
 
 ## ✏️ O que dá para ajustar em cada calendário
@@ -47,7 +45,7 @@ Cada calendário aparece como uma **linha expansível** (clique na seta para abr
 * **Renomear** — clique no nome, edite e clique fora para salvar.
 * **Trocar a cor** — clique no círculo colorido e escolha outra.
 * **Ativar ou desativar** (chave liga/desliga) — um calendário desativado deixa de ser usado em novos agendamentos, mas mantém os antigos.
-* **Excluir** 🗑️ — o sistema pede confirmação: *"Deseja realmente excluir este calendário?"*
+* **Excluir** 🗑️ — o sistema pede confirmação: _"Deseja realmente excluir este calendário?"_
 
 > ⚠️ Excluir o calendário remove a agenda inteira — prefira **desativar** se quiser apenas tirá-la de circulação por um tempo.
 
@@ -57,7 +55,7 @@ Cada calendário aparece como uma **linha expansível** (clique na seta para abr
 
 Dentro do calendário aberto, a primeira seção é **Profissionais**. É aqui que você diz **quem atende nesta agenda**.
 
-> 💡 O profissional precisa existir antes — se a lista aparecer vazia com o aviso *"Nenhum profissional disponível. Cadastre um na aba Profissionais."*, cadastre-o primeiro na aba **Profissionais** (veja [Profissionais](profissionais.md)).
+> 💡 O profissional precisa existir antes — se a lista aparecer vazia com o aviso _"Nenhum profissional disponível. Cadastre um na aba Profissionais."_, cadastre-o primeiro na aba **Profissionais** (veja [Profissionais](profissionais.md)).
 
 **Como vincular:**
 
@@ -69,8 +67,6 @@ O nome do profissional aparece como uma etiqueta. Para **desvincular**, clique n
 
 > ⚠️ Um profissional desvinculado **some imediatamente** das opções de agendamento daquele calendário (inclusive no link público, no chatbot e na Recepção Inteligente). Os agendamentos antigos dele continuam no histórico.
 
-> **📸 Sugestão de print:** Seção "Profissionais" dentro de um calendário, com as etiquetas de vinculados.
-
 ***
 
 ## 🔐 Quem tem acesso ao calendário
@@ -79,11 +75,11 @@ Na seção **"Quem tem acesso a este calendário"** você controla **quais usuá
 
 ### Entenda os papéis
 
-| Papel | O que a pessoa pode fazer |
-| --- | --- |
-| **Visualizador** | Só **vê** os agendamentos. Não cria, não edita, não cancela |
-| **Editor** | Cria, edita e cancela agendamentos. Não pode mexer nas configurações |
-| **Admin** | Tudo o que o Editor faz **+** configura o calendário: renomear, trocar cor, vincular profissionais, configurar sincronização e gerenciar quem tem acesso |
+| Papel            | O que a pessoa pode fazer                                                                                                                                |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Visualizador** | Só **vê** os agendamentos. Não cria, não edita, não cancela                                                                                              |
+| **Editor**       | Cria, edita e cancela agendamentos. Não pode mexer nas configurações                                                                                     |
+| **Admin**        | Tudo o que o Editor faz **+** configura o calendário: renomear, trocar cor, vincular profissionais, configurar sincronização e gerenciar quem tem acesso |
 
 > 💡 **Administradores e supervisores do sistema** sempre têm acesso completo a todos os calendários, mesmo sem estar na lista de membros.
 
@@ -96,7 +92,7 @@ Na seção **"Quem tem acesso a este calendário"** você controla **quais usuá
 
 Cada membro aparece na lista com nome, e-mail e o papel — que pode ser **trocado a qualquer momento** direto na lista. Para remover o acesso, clique no 🗑️ ao lado.
 
-> **📸 Sugestão de print:** Seção "Quem tem acesso a este calendário" com a lista de membros e papéis.
+<figure><img src="../../.gitbook/assets/calendarioacesso.png" alt=""><figcaption></figcaption></figure>
 
 ### E quem não está na lista?
 

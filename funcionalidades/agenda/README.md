@@ -4,7 +4,7 @@ A **Agenda** é o módulo do Whazing feito para gerenciar **horários de atendim
 
 > 💡 A Agenda é um **recurso vendido separadamente nos planos** (adicional). Se o seu plano não inclui o módulo, a tela do sistema informa isso e oferece a contratação do adicional — veja mais em [💰 Disponibilidade do módulo](./#-disponibilidade-do-módulo).
 
-> **📸 Sugestão de print:** Tela inicial da Agenda, mostrando o calendário semanal com alguns agendamentos.
+<figure><img src="../../.gitbook/assets/agenda.png" alt=""><figcaption></figcaption></figure>
 
 ## 🎯 Para que serve
 
@@ -24,22 +24,20 @@ Qualquer empresa que atende com hora marcada, por exemplo:
 
 ## ✅ O que você pode fazer com a Agenda
 
-| Recurso | O que faz | Documentação |
-| --- | --- | --- |
-| **Agendamentos no painel** | Criar, editar, remarcar, cancelar e excluir agendamentos no calendário | [Como usar a Agenda](como-usar-a-agenda.md) |
-| **Calendários e permissões** | Criar agendas separadas e definir quem pode ver ou editar cada uma | [Calendários e Permissões](calendarios-e-permissoes.md) |
-| **Serviços** | Cadastrar os serviços e o tempo de duração de cada um | [Serviços](servicos.md) |
-| **Profissionais** | Cadastrar quem atende, seus serviços, horários e folgas | [Profissionais](profissionais.md) |
-| **Google Agenda / Outlook** | Conectar calendários externos e bloquear compromissos pessoais | [Google Agenda](google-agenda.md) |
-| **Lembretes** | Enviar mensagem automática no WhatsApp antes do atendimento | [Lembretes](lembretes.md) |
-| **Link público e Embed** | Deixar o cliente agendar sozinho pelo WhatsApp ou pelo seu site | [Link público e Embed](link-publico-e-embed.md) |
-| **Chatbot** | O bot conduz a conversa e agenda (ou cancela) automaticamente | [Agendamento pelo Chatbot](agendamento-pelo-chatbot.md) |
-| **Recepção Inteligente** | A IA consulta a agenda e agenda durante a conversa natural | [Agendamento pela Recepção Inteligente](agendamento-pela-recepcao-inteligente.md) |
-| **Tela de Atendimento** | O atendente agenda enquanto conversa com o cliente | [Agendamento pela tela de Atendimento](agendamento-pelo-atendimento.md) |
-| **Cancelamento** | Todas as formas de cancelar um agendamento | [Cancelamento de agendamentos](cancelamento-de-agendamentos.md) |
-| **Problemas comuns** | Soluções para as dúvidas mais frequentes | [Dúvidas e problemas comuns](duvidas-e-problemas-comuns.md) |
-
-> **📸 Sugestão de print:** Menu lateral do sistema com o item "Agenda" destacado.
+| Recurso                      | O que faz                                                              | Documentação                                                                      |
+| ---------------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
+| **Agendamentos no painel**   | Criar, editar, remarcar, cancelar e excluir agendamentos no calendário | [Como usar a Agenda](como-usar-a-agenda.md)                                       |
+| **Calendários e permissões** | Criar agendas separadas e definir quem pode ver ou editar cada uma     | [Calendários e Permissões](calendarios-e-permissoes.md)                           |
+| **Serviços**                 | Cadastrar os serviços e o tempo de duração de cada um                  | [Serviços](servicos.md)                                                           |
+| **Profissionais**            | Cadastrar quem atende, seus serviços, horários e folgas                | [Profissionais](profissionais.md)                                                 |
+| **Google Agenda / Outlook**  | Conectar calendários externos e bloquear compromissos pessoais         | [Google Agenda](google-agenda.md)                                                 |
+| **Lembretes**                | Enviar mensagem automática no WhatsApp antes do atendimento            | [Lembretes](lembretes.md)                                                         |
+| **Link público e Embed**     | Deixar o cliente agendar sozinho pelo WhatsApp ou pelo seu site        | [Link público e Embed](link-publico-e-embed.md)                                   |
+| **Chatbot**                  | O bot conduz a conversa e agenda (ou cancela) automaticamente          | [Agendamento pelo Chatbot](agendamento-pelo-chatbot.md)                           |
+| **Recepção Inteligente**     | A IA consulta a agenda e agenda durante a conversa natural             | [Agendamento pela Recepção Inteligente](agendamento-pela-recepcao-inteligente.md) |
+| **Tela de Atendimento**      | O atendente agenda enquanto conversa com o cliente                     | [Agendamento pela tela de Atendimento](agendamento-pelo-atendimento.md)           |
+| **Cancelamento**             | Todas as formas de cancelar um agendamento                             | [Cancelamento de agendamentos](cancelamento-de-agendamentos.md)                   |
+| **Problemas comuns**         | Soluções para as dúvidas mais frequentes                               | [Dúvidas e problemas comuns](duvidas-e-problemas-comuns.md)                       |
 
 ## 📚 Páginas desta seção
 
@@ -66,8 +64,6 @@ A Agenda é um **adicional vendido separadamente** nos planos, conforme a config
 Se o seu plano não incluir a Agenda, ao acessar o menu **Agenda** o sistema exibe a mensagem **"Recurso indisponível"** e um aviso laranja informando que **"Seu plano não inclui a agenda. Contrate um adicional para liberar."**, com o botão **Comprar adicional** para liberar o recurso na hora.
 
 > 💡 Depois de contratar o adicional, a tela da Agenda é liberada automaticamente, sem precisar recarregar o sistema.
-
-> **📸 Sugestão de print:** Aviso "Seu plano não inclui a agenda. Contrate um adicional para liberar."
 
 ***
 

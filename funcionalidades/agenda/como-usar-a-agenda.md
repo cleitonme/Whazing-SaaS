@@ -10,19 +10,17 @@ No menu lateral do sistema, clique em **Agenda** (ícone de calendário).
 
 A tela inicial já mostra o **calendário** com todos os agendamentos do período — na visão **Semana** por padrão.
 
-> **📸 Sugestão de print:** Tela inicial da Agenda com o calendário semanal visível.
-
 ***
 
 ## 🖥️ O que aparece na tela
 
-| Elemento | O que faz |
-| --- | --- |
-| **Seletor "Todos os calendários"** | Filtra o calendário para mostrar agendamentos de apenas um calendário específico |
-| **Botão "Novo agendamento"** | Abre o formulário para criar um agendamento |
-| **Ícone de seta com calendário** 📤 | Leva para a tela **Links de Agendamento** (link público e Embed) |
-| **Engrenagem ⚙️** | Abre as **"Configurações da agenda"** (calendários, profissionais, serviços, disponibilidade) |
-| **Navegação do calendário** | Botões ‹ › para mudar de período, botão **Hoje** para voltar ao dia atual e alternador **Mês / Semana / Dia** |
+| Elemento                            | O que faz                                                                                                     |
+| ----------------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| **Seletor "Todos os calendários"**  | Filtra o calendário para mostrar agendamentos de apenas um calendário específico                              |
+| **Botão "Novo agendamento"**        | Abre o formulário para criar um agendamento                                                                   |
+| **Ícone de seta com calendário** 📤 | Leva para a tela **Links de Agendamento** (link público e Embed)                                              |
+| **Engrenagem ⚙️**                   | Abre as **"Configurações da agenda"** (calendários, profissionais, serviços, disponibilidade)                 |
+| **Navegação do calendário**         | Botões ‹ › para mudar de período, botão **Hoje** para voltar ao dia atual e alternador **Mês / Semana / Dia** |
 
 ***
 
@@ -54,25 +52,25 @@ Existem duas formas:
 2. O formulário já abre com a **hora inicial preenchida** com o período que você selecionou.
 3. Preencha o restante e clique em **Salvar**.
 
-> ⚠️ Se ao clicar no calendário aparecer o aviso *"Você só tem acesso de visualização a esta agenda — não é possível criar agendamentos aqui"*, significa que você é apenas **Visualizador** daquele calendário. Veja [Calendários e Permissões](calendarios-e-permissoes.md#quem-tem-acesso-ao-calendário).
+> ⚠️ Se ao clicar no calendário aparecer o aviso _"Você só tem acesso de visualização a esta agenda — não é possível criar agendamentos aqui"_, significa que você é apenas **Visualizador** daquele calendário. Veja [Calendários e Permissões](calendarios-e-permissoes.md#quem-tem-acesso-ao-calendário).
 
 ### Campos do agendamento
 
-| Campo | Obrigatório? | O que é |
-| --- | --- | --- |
-| **Calendário** | ✅ Sim | Em qual calendário o agendamento será criado |
-| **Profissional** | ✅ Sim | Quem vai realizar o atendimento (aparecem só os vinculados ao calendário escolhido) |
-| **Cliente** | 🔶 Opcional | Busque o cliente cadastrado no sistema **por nome ou número**. Vincular o cliente permite que ele receba lembretes |
-| **Serviço** | 🔶 Opcional | O que será feito. Ao escolher, a **hora final é calculada sozinha** com base na duração do serviço |
-| **Hora inicial** | ✅ Sim | Data e hora de início do atendimento |
-| **Hora final** | ⚠️ Condicional | Obrigatória **se nenhum serviço for escolhido** (ex.: bloco de reunião). Se escolher serviço, o sistema preenche sozinho |
-| **Observação** | 🔶 Opcional | Anotações internas sobre o agendamento (ex.: "cliente pediu atendimento na porta") |
+| Campo            | Obrigatório?   | O que é                                                                                                                  |
+| ---------------- | -------------- | ------------------------------------------------------------------------------------------------------------------------ |
+| **Calendário**   | ✅ Sim          | Em qual calendário o agendamento será criado                                                                             |
+| **Profissional** | ✅ Sim          | Quem vai realizar o atendimento (aparecem só os vinculados ao calendário escolhido)                                      |
+| **Cliente**      | 🔶 Opcional    | Busque o cliente cadastrado no sistema **por nome ou número**. Vincular o cliente permite que ele receba lembretes       |
+| **Serviço**      | 🔶 Opcional    | O que será feito. Ao escolher, a **hora final é calculada sozinha** com base na duração do serviço                       |
+| **Hora inicial** | ✅ Sim          | Data e hora de início do atendimento                                                                                     |
+| **Hora final**   | ⚠️ Condicional | Obrigatória **se nenhum serviço for escolhido** (ex.: bloco de reunião). Se escolher serviço, o sistema preenche sozinho |
+| **Observação**   | 🔶 Opcional    | Anotações internas sobre o agendamento (ex.: "cliente pediu atendimento na porta")                                       |
 
 > 💡 **Serviço + profissional:** se o profissional tiver **serviços vinculados**, a lista mostra apenas esses serviços. Se ele não tiver nenhum vínculo, pode fazer **qualquer serviço**.
 
 Após salvar, aparece a mensagem **"Agendamento criado com sucesso!"** e o evento surge no calendário na cor do calendário escolhido.
 
-> **📸 Sugestão de print:** Formulário "Novo agendamento" com todos os campos.
+<figure><img src="../../.gitbook/assets/addagendamento.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -100,12 +98,12 @@ Ao soltar, o sistema salva e mostra **"Agendamento atualizado com sucesso!"**.
 
 Todo agendamento tem um dos status abaixo:
 
-| Status | Cor | Significado |
-| --- | --- | --- |
-| **Agendado** | Azul | Criado, aguardando o atendimento |
-| **Confirmado** | Verde-água | O cliente confirmou que vai (ex.: respondeu o lembrete) |
-| **Concluído** | Verde | O atendimento já aconteceu |
-| **Cancelado** | Vermelho | Foi cancelado — aparece **riscado e esmaecido** no calendário |
+| Status         | Cor        | Significado                                                   |
+| -------------- | ---------- | ------------------------------------------------------------- |
+| **Agendado**   | Azul       | Criado, aguardando o atendimento                              |
+| **Confirmado** | Verde-água | O cliente confirmou que vai (ex.: respondeu o lembrete)       |
+| **Concluído**  | Verde      | O atendimento já aconteceu                                    |
+| **Cancelado**  | Vermelho   | Foi cancelado — aparece **riscado e esmaecido** no calendário |
 
 ***
 
@@ -113,7 +111,7 @@ Todo agendamento tem um dos status abaixo:
 
 São ações diferentes — veja a página [Cancelamento de agendamentos](cancelamento-de-agendamentos.md) para o resumo completo:
 
-* **Cancelar** — o agendamento continua no calendário (aparece riscado), com o histórico preservado. O sistema pede confirmação: *"Deseja realmente cancelar este agendamento?"*.
+* **Cancelar** — o agendamento continua no calendário (aparece riscado), com o histórico preservado. O sistema pede confirmação: _"Deseja realmente cancelar este agendamento?"_.
 * **Excluir** — o agendamento some do calendário. O sistema avisa que **"Esta ação não pode ser desfeita."**
 
 Ambas as ações ficam disponíveis ao clicar no agendamento, exceto para agendamentos **Concluídos** ou **Cancelados**.
@@ -129,4 +127,6 @@ Se a [sincronização com Google Agenda/Outlook](google-agenda.md) estiver ativa
 * Clicando no compromisso, o sistema mostra de quando a quando é e em qual calendário externo ele está.
 * Esses compromissos **não podem ser editados por aqui** — só no Google Agenda ou no Outlook do próprio profissional.
 
-> **📸 Sugestão de print:** Evento "Compromisso pessoal" listrado no calendário.
+<figure><img src="../../.gitbook/assets/conectandogoogle.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/compromissopessoal.png" alt=""><figcaption></figcaption></figure>
