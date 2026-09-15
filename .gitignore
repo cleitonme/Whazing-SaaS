@@ -25,3 +25,4 @@ yarn-error.log
 backend/.wwebjs_auth/
 backend/newrelic_agent.log
 newrelic_agent.log
+.freebuff/project-id
