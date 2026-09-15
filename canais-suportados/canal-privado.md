@@ -10,7 +10,7 @@ O **Canal Privado** transforma um canal de atendimento em um canal **exclusivo p
 
 É assim que o sistema descreve esse recurso:
 
-> *"Restringe a visibilidade dos atendimentos deste canal a um único usuário"*
+> _"Restringe a visibilidade dos atendimentos deste canal a um único usuário"_
 
 Na prática, quando um canal é configurado como privado:
 
@@ -20,7 +20,7 @@ Na prática, quando um canal é configurado como privado:
 
 > 🔒 **O Canal Privado é exclusivo para o usuário proprietário. O canal fica oculto para os demais usuários — inclusive outros administradores e supervisores.**
 
-> **📸 Sugestão de print:** Tela de configuração do canal mostrando o card "Canal Privado" e o campo para escolher o proprietário.
+<figure><img src="../.gitbook/assets/canalprivado.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -38,15 +38,13 @@ Na prática, funciona assim:
 
 * ao escolher o proprietário, a lista **já mostra apenas os usuários administradores** — os demais usuários simplesmente não aparecem para seleção;
 * não é possível escolher um atendente comum ou um supervisor como proprietário;
-* o campo é **obrigatório**: se você ativar o Canal Privado e não escolher o proprietário, o sistema pede — *"Selecione um usuário proprietário para o canal privado"*.
+* o campo é **obrigatório**: se você ativar o Canal Privado e não escolher o proprietário, o sistema pede — _"Selecione um usuário proprietário para o canal privado"_.
 
 Essa regra existe para evitar que o canal fique "sem dono" — por exemplo, se a pessoa escolhida sair da empresa.
 
 O próprio sistema explica a regra ao lado do campo:
 
-> *"Somente este usuário verá os tickets deste canal, até que sejam transferidos. Só administradores podem ser escolhidos como dono."*
-
-> **📸 Sugestão de print:** Seleção do "Usuário Proprietário" mostrando que a lista contém apenas administradores.
+> _"Somente este usuário verá os tickets deste canal, até que sejam transferidos. Só administradores podem ser escolhidos como dono."_
 
 ***
 
@@ -64,12 +62,12 @@ Ou seja, o Canal Privado **não é** uma configuração onde todos continuam ven
 
 Veja como fica a visibilidade para cada tipo de usuário:
 
-| Usuário | Vê o Canal Privado? |
-| --- | --- |
+| Usuário                             | Vê o Canal Privado?                  |
+| ----------------------------------- | ------------------------------------ |
 | **Proprietário** (o dono escolhido) | ✅ Sim — é o único que vê normalmente |
-| **Outro administrador** | ❌ Não — mesmo sendo administrador |
-| **Supervisor** | ❌ Não |
-| **Atendente e demais usuários** | ❌ Não |
+| **Outro administrador**             | ❌ Não — mesmo sendo administrador    |
+| **Supervisor**                      | ❌ Não                                |
+| **Atendente e demais usuários**     | ❌ Não                                |
 
 ### 🚨 Não confunda "Administrador" com "acesso ao canal"
 
@@ -160,15 +158,13 @@ Clique na opção de **editar** do canal para abrir a janela de configuração.
 
 ### 4. Vá na aba "Configurações Avançadas"
 
-A configuração de Canal Privado fica dentro da aba **"Configurações Avançadas"**, no card **"Canal Privado"** — identificado com um ícone de cadeado 🔒, junto à descrição *"Restringe a visibilidade dos atendimentos deste canal a um único usuário"*.
-
-> **📸 Sugestão de print:** Card "Canal Privado" na aba "Configurações Avançadas".
+A configuração de Canal Privado fica dentro da aba **"Configurações Avançadas"**, no card **"Canal Privado"** — identificado com um ícone de cadeado 🔒, junto à descrição _"Restringe a visibilidade dos atendimentos deste canal a um único usuário"_.
 
 ### 5. Ative o Canal Privado
 
 Ligue a chave (toggle) **"Canal Privado"**.
 
-> ⚠️ **Somente administradores podem alterar esta configuração.** Se o usuário que estiver editando não for administrador, a chave fica bloqueada e o sistema mostra o aviso *"Apenas administradores podem alterar esta configuração"*.
+> ⚠️ **Somente administradores podem alterar esta configuração.** Se o usuário que estiver editando não for administrador, a chave fica bloqueada e o sistema mostra o aviso _"Apenas administradores podem alterar esta configuração"_.
 
 ### 6. Escolha o usuário proprietário
 
@@ -179,8 +175,6 @@ Ao ativar, o campo **"Usuário Proprietário"** aparece logo abaixo. Nele, escol
 ### 7. Salve
 
 Clique em **"Salvar"** na janela do canal. Pronto — a partir daquele momento, o canal fica visível **apenas para o proprietário escolhido**.
-
-> **📸 Sugestão de print:** Canal configurado como privado, mostrando a visão do proprietário.
 
 ***
 
@@ -203,8 +197,7 @@ Depois de salvar, o canal volta a aparecer normalmente para administradores e su
 
 ### Exemplo 1 — Canal exclusivo
 
-**Canal:** WhatsApp da Diretoria
-**Proprietário:** Administrador João
+**Canal:** WhatsApp da Diretoria **Proprietário:** Administrador João
 
 João consegue visualizar o canal e os atendimentos dele normalmente. Todos os demais usuários **não visualizam** o canal — ele simplesmente não aparece na lista deles.
 
@@ -269,6 +262,6 @@ Somente o **proprietário** definido na configuração tem acesso — ser admini
 
 ## 👣 Próximos passos
 
-* Gerencie quem usa o sistema e com qual perfil: [Usuários](../funcionalidades/gestao/usuarios/README.md).
+* Gerencie quem usa o sistema e com qual perfil: [Usuários](../funcionalidades/gestao/usuarios/).
 * Entenda a organização dos atendimentos e as permissões: [Organização de Atendimentos, Filas e Permissões de Usuários](../funcionalidades/gestao/organizacao-de-atendimentos-filas-e-permissoes-de-usuarios.md).
-* Conheça os demais recursos de canais: [Canais Disponíveis](README.md) e o [Modo Híbrido](modo-hibrido.md).
+* Conheça os demais recursos de canais: [Canais Disponíveis](./) e o [Modo Híbrido](modo-hibrido.md).
