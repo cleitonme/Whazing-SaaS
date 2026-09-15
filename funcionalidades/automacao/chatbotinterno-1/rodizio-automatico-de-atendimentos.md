@@ -12,6 +12,10 @@ O rodízio **não funciona sozinho** — ele depende de um **Chatbot configurado
 
 👉 Ou seja: O chatbot é responsável por direcionar o cliente, e a fila é responsável pela distribuição entre os atendentes.
 
+> 💡 **Novidade:** agora também é possível distribuir atendimentos **sem Chatbot**, ativando a [Distribuição Automática](../../gestao/distribuicao-automatica.md) diretamente na fila — para atendimentos que chegam direto a ela. O rodízio via chatbot continua funcionando normalmente para quem usa fluxos.
+
+> ⚙️ **Perfis participantes:** os perfis que podem receber atendimentos na distribuição (Aleatória/Balanceada) são definidos na **[Distribuição Automática](../../gestao/distribuicao-automatica.md)** da fila, e não mais apenas no perfil "Usuário".
+
 ***
 
 #### 🧩 Configuração necessária <a href="#configuracao-necessaria" id="configuracao-necessaria"></a>

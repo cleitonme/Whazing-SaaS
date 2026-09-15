@@ -67,6 +67,8 @@ Cada usuário só poderá visualizar as conversas das filas às quais ele perten
 
 Atendimentos sem fila somente admin e supervisor geral tem acesso
 
+> ⚙️ Quer que os novos atendimentos de uma fila já caiam direto para um atendente disponível, sem Chatbot? Veja a [Distribuição Automática](distribuicao-automatica.md).
+
 ***
 
 #### 🛠 Como separar atendimentos corretamente <a href="#como-separar-atendimentos-corretamente" id="como-separar-atendimentos-corretamente"></a>

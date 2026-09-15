@@ -159,6 +159,7 @@
     * [Liberar Grupos WhatsApp](funcionalidades/whatsapp/liberar_grupos_whatsapp.md)
   * [Gestão](funcionalidades/gestao/README.md)
     * [Organização de Atendimentos, Filas e Permissões de Usuários](funcionalidades/gestao/organizacao-de-atendimentos-filas-e-permissoes-de-usuarios.md)
+    * [Distribuição Automática](funcionalidades/gestao/distribuicao-automatica.md)
     * [Usuários](funcionalidades/gestao/usuarios/README.md)
       * [Algumas Permissões de Usuários](funcionalidades/gestao/usuarios/algumas-permissoes-usuarios.md)
       * [Bloquear Múltiplos Logins](funcionalidades/gestao/usuarios/bloquear-multiplos-logins.md)

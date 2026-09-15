@@ -14,8 +14,10 @@ O **ChatFlow** é o editor visual de chatbot do Whazing. Com ele você monta **f
 4. [Tipos de blocos (interações)](./#tipos-de-blocos-interações)
 5. [Ordem das Interações](./#ordem-das-interações)
 6. [Configuração de Condições](./#configuração-de-condições)
+   * [Sem resposta (inatividade)](./#sem-resposta-inatividade)
 7. [Conexões entre etapas](./#conexões-entre-etapas)
 8. [Configurações do bot](./#configurações-do-bot)
+   * [Ausência de resposta](./#ausência-de-resposta)
 9. [Variáveis](./#variáveis)
 10. [Testando o fluxo (Simulador)](./#testando-o-fluxo-simulador)
 11. [Automações (integrações)](./#automações-integrações)
@@ -311,13 +313,13 @@ O fluxo salva automaticamente. Use o botão **Testar** para simular a conversa a
 * Conduz a conversa sozinho (**profissional → serviço → data → horário → confirmação**) e cria o agendamento na **Agenda**, consultando a disponibilidade real — o bot nunca inventa horário.
 * Configurações: calendário, profissionais e serviços (Todos ou Selecionar), modo de apresentação (Automático/Texto/Lista/Botões), dias de busca e mensagens personalizáveis.
 * Tem **2 saídas fixas**: agendamento concluído com sucesso e não foi possível agendar (sem profissional, serviço ou horário disponível).
-* Requer o módulo **Agenda** configurado. Veja o guia completo: [Agendamento pelo Chatbot](../agenda/agendamento-pelo-chatbot.md).
+* Requer o módulo **Agenda** configurado. Veja o guia completo: [Agendamento pelo Chatbot](../../agenda/agendamento-pelo-chatbot.md).
 
 #### 🔍 Gerenciar Agendamento
 
 * Consulta os **agendamentos futuros do contato** e permite **cancelar** o que ele escolher — não cria nem altera agendamento.
 * Tem **4 saídas fixas**: cancelado, mantido, sem agendamento e falha.
-* Requer o módulo **Agenda** configurado. Veja o guia completo: [Agendamento pelo Chatbot](../agenda/agendamento-pelo-chatbot.md).
+* Requer o módulo **Agenda** configurado. Veja o guia completo: [Agendamento pelo Chatbot](../../agenda/agendamento-pelo-chatbot.md).
 
 ### 🔌 Integrações
 
@@ -417,6 +419,33 @@ As **condições** definem o que o bot faz com a resposta do cliente. Ao receber
 * Casa com **qualquer mensagem** do cliente.
 * Deve ser posicionada **por último**, para não sobrepor as outras condições.
 
+#### 💤 Sem resposta (inatividade)
+
+**O que é inatividade?** É quando o cliente **para de responder** ao Chatbot durante o tempo que você definiu. Por exemplo: se uma etapa estiver configurada com inatividade de **10 minutos** e o cliente ficar esse tempo sem responder **naquela etapa**, o bot executa a ação configurada para a inatividade.
+
+**Como configurar:**
+
+1. Na aba **Condições** da etapa, clique em **"Adicionar condição"**.
+2. No campo **"Se"**, escolha o tipo **"Sem resposta"**.
+3. Informe o **"Tempo sem resposta (minutos)"** — um número inteiro, **no mínimo 1**. Se o campo estiver vazio, o sistema sugere **10 minutos**.
+4. Escolha a ação em **"Rotear para"** (veja as opções disponíveis abaixo).
+
+O próprio sistema explica o funcionamento:
+
+> *"Executa a ação abaixo se o cliente ficar este tempo sem responder nesta etapa. Se responder antes, é cancelado. A verificação roda a cada ~5 minutos."*
+
+Em linguagem simples:
+
+* se o cliente **responder antes do prazo**, a inatividade é **cancelada** e o fluxo segue normalmente;
+* a verificação é feita pelo sistema **de ~5 em ~5 minutos** — portanto, o disparo pode levar alguns minutos além do tempo exato configurado;
+* ao escolher o tipo **"Sem resposta"**, se a ação atual não for válida para inatividade, o sistema ajusta automaticamente para **Fila**.
+
+> 💡 Cada etapa tem suas **próprias condições** — então você pode configurar tempos e ações de inatividade **diferentes em cada etapa** (ou não configurar em algumas). E, como sempre, vale a regra: a **primeira condição que "casar"** é a executada.
+
+No canvas, a conexão dessa condição aparece identificada como **"Sem resposta: 10 min → Fila"** (tempo configurado + ação escolhida).
+
+> **📸 Sugestão de print:** Aba "Condições" da etapa mostrando a condição "Sem resposta" com o tempo configurado.
+
 ***
 
 ### Rotear para (o que acontece quando a condição é atendida)
@@ -436,6 +465,8 @@ Ao atender uma condição, o bot executa a ação escolhida em **"Rotear para"**
 > 💡 **Mensagem de transferência:** além da mensagem informada na condição, o bot também envia a **"Mensagem de saudação (Fila/Usuário)"** configurada no nó Configurações sempre que transfere para fila ou usuário.
 
 > 💡 **Automação na fila:** se a fila de destino tiver uma **automação vinculada** (veja [Automações](./#automações-integrações)), o badge da integração aparece ao lado da condição, e a automação é **executada automaticamente** quando o atendimento é transferido para essa fila.
+
+> 💡 **Condição "Sem resposta":** quando o tipo da condição é **"Sem resposta"** (inatividade), as opções **"Etapa"** e **"Fazer Nada"** não aparecem em "Rotear para" — apenas **Fila**, **Usuário**, **Fila + Usuário**, **Fechar Ticket** e **Fluxo**. Ao escolher **Fluxo**, informe o **"Fluxo de destino"**: quando o cliente ficar o tempo configurado sem responder, o bot **transfere a conversa para o fluxo escolhido**, que passa a conduzir o atendimento a partir dali.
 
 ***
 
@@ -480,8 +511,12 @@ Ao clicar no nó **Configurações**, um **painel/modal** abre com as opções g
 
 * **Cliente sem resposta:** define o que fazer quando o cliente **não responde dentro do tempo** configurado.
   * **Tempo de espera (minutos)** — use `0` para desativar.
-  * **Ação** — encaminhar para **Fila**, para **Usuário**, ou **Fechar Ticket**.
+  * **Ação** — encaminhar para **Fila**, para **Usuário**, **Fechar Ticket**, ou **Fluxo de destino** (transferir para outro fluxo). Ao escolher **Fluxo de destino**, selecione na lista qual fluxo receberá o cliente: quando o prazo for atingido, o bot transfere a conversa para esse fluxo.
 * **Mensagem de ausência:** mensagem enviada automaticamente quando o prazo é atingido, antes do encaminhamento.
+
+> 💡 **Configuração geral x por etapa:** além desta configuração geral do bot, cada **etapa** pode ter sua própria condição **"Sem resposta"**, com tempo e ação individuais — veja [Sem resposta (inatividade)](./#sem-resposta-inatividade). Assim, uma etapa pode ter um tempo, outra pode ter outro, e uma etapa pode não ter regra nenhuma.
+
+> **📸 Sugestão de print:** Painel "Configurações" do bot na seção "Ausência de resposta" com a ação "Fluxo de destino" selecionada.
 
 ### ⚙️ Demais configurações
 
@@ -493,7 +528,7 @@ Ao clicar no nó **Configurações**, um **painel/modal** abre com as opções g
   * **Não** — distribuição automática desativada.
   * **Aleatória** — escolhe um usuário da fila de forma randômica.
   * **Balanceada** — escolhe o usuário da fila **com menos atendimentos ativos**.
-  * ⚠️ As opções Aleatória/Balanceada só consideram usuários com **perfil "Usuário"** e que estejam **online**.
+  * ⚙️ Os **perfis** que participam da distribuição são definidos na [Distribuição Automática](../../gestao/distribuicao-automatica.md) da fila — a nota exibida no próprio editor diz: "Os perfis que participam da distribuição são definidos na configuração de Distribuição Automática da fila (Central de Configurações > Atendimento), não aqui." Os usuários considerados precisam estar **online**.
 * **Encerrar Atendimento:** lista de **palavras** que, se digitadas pelo cliente, **encerram o atendimento**. Acompanhada da **mensagem de despedida** enviada ao cliente.
 * **Palavras-chave para reiniciar o atendimento:** lista de palavras (ex.: `#menu`) que fazem o bot **voltar para o início** (etapa Boas-vindas) a partir de qualquer etapa.
 * **Mensagem de saudação (Fila/Usuário):** mensagem enviada automaticamente **sempre que o bot transfere** o atendimento para uma fila ou usuário.
