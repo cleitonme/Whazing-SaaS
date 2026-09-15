@@ -22,6 +22,8 @@ Sim. É possível **migrar entre as 3 APIs não oficiais** (Baileys, API PLUS e 
 
 👉 [Migração entre APIs Não Oficiais](migracao-entre-apis-nao-oficiais.md)
 
+> 🔀 Quer combinar o envio entre a API Oficial e a Não Oficial do mesmo número? Veja o [Modo Híbrido](../modo-hibrido.md).
+
 ## 🆘 Problemas comuns
 
 * A mensagem não chega ou não envia: 👉 [Mensagem não enviando](mensagem-nao-enviando.md)

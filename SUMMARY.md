@@ -98,6 +98,7 @@
       * [WuzAPI não conecta ou não lê o QR Code](canais-suportados/whatsapp-api-nao-oficial/wuzapi-nao-conecta-ou-nao-ler-qrcode.md)
     * [Migração entre APIs Não Oficiais](canais-suportados/whatsapp-api-nao-oficial/migracao-entre-apis-nao-oficiais.md)
     * [Mensagem não enviando](canais-suportados/whatsapp-api-nao-oficial/mensagem-nao-enviando.md)
+  * [Modo Híbrido](canais-suportados/modo-hibrido.md)
   * [Guia de Conexão do Telegram](canais-suportados/telegram.md)
   * [HUB Instagram - Facebook - TikTok](canais-suportados/hub-instagram-facebook-tiktok/README.md)
     * [WhatsApp, Instagram, Facebook, TikTok e WebChat via NotificaMe](canais-suportados/hub-instagram-facebook-tiktok/facebook-e-instagram-via-hub/README.md)
