@@ -12,7 +12,7 @@
 
 > ⚠️ A aba Profissionais só aparece para **administradores e supervisores** do sistema.
 
-> **📸 Sugestão de print:** Aba "Profissionais" da janela de configurações.
+<figure><img src="../../.gitbook/assets/profissionais.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -24,8 +24,6 @@
 2. Clique no **botão +**.
 
 O profissional entra na lista. Cada linha é expansível (clique na seta) e mostra logo de cara se está **vinculado a um usuário** ou se **não está vinculado a nenhum usuário do sistema**.
-
-> **📸 Sugestão de print:** Cadastro de novo profissional com nome e vínculo opcional.
 
 ***
 
@@ -57,9 +55,7 @@ Dentro do cadastro do profissional (clique na seta da linha para abrir), a seç�
 
 O serviço aparece como uma etiqueta. Para **desvincular**, clique no **x** da etiqueta.
 
-> ⚠️ Se a lista aparecer vazia com o aviso *"Nenhum serviço disponível. Cadastre um na aba Serviços."*, cadastre o serviço primeiro — veja [Serviços](servicos.md).
-
-> **📸 Sugestão de print:** Seção "Serviços realizados" com as etiquetas de serviços vinculados.
+> ⚠️ Se a lista aparecer vazia com o aviso _"Nenhum serviço disponível. Cadastre um na aba Serviços."_, cadastre o serviço primeiro — veja [Serviços](servicos.md).
 
 ***
 
@@ -69,7 +65,7 @@ A aba **Disponibilidade** (a 4ª aba da janela de configurações) define **quan
 
 > ⚠️ **Nenhum profissional tem horário por padrão.** Se você não cadastrar disponibilidade, a agenda dele fica sem nenhum horário disponível — nem pelo link público, nem pelo chatbot, nem pela tela principal.
 
-> **📸 Sugestão de print:** Aba "Disponibilidade" com a seleção de profissional.
+<figure><img src="../../.gitbook/assets/agendahorario.png" alt=""><figcaption></figcaption></figure>
 
 ### Como cadastrar a disponibilidade
 
@@ -98,9 +94,7 @@ Embaixo da lista de horários fica a seção **Exceções** — perfeita para aq
 3. Preencha o **Motivo (opcional)** — ex.: "Feriado municipal". Ele aparece na lista para você lembrar por que bloqueou.
 4. Clique no **botão +**.
 
-A exceção entra na lista com data, período e motivo. Para **remover**, clique no 🗑️ — o sistema pede confirmação: *"Deseja realmente excluir esta exceção?"*.
-
-> **📸 Sugestão de print:** Cadastro de exceção com data, tipo e motivo.
+A exceção entra na lista com data, período e motivo. Para **remover**, clique no 🗑️ — o sistema pede confirmação: _"Deseja realmente excluir esta exceção?"_.
 
 ***
 
@@ -108,11 +102,11 @@ A exceção entra na lista com data, período e motivo. Para **remover**, clique
 
 Na linha de cada profissional você encontra:
 
-| Ação | Como funciona |
-| --- | --- |
-| **Renomear** | Clique no nome, edite e clique fora — salva automático |
-| **Ativar/Desativar** (chave) | Profissional desativado deixa de receber agendamentos e de aparecer nas escolhas de profissional (link público, chatbot, IA), mas mantém o histórico |
-| **Vincular/Desvincular usuário** | No seletor do lado direito da linha |
-| **Excluir** 🗑️ | Remove o cadastro; o sistema pede confirmação: *"Deseja realmente excluir este profissional?"* |
+| Ação                             | Como funciona                                                                                                                                        |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Renomear**                     | Clique no nome, edite e clique fora — salva automático                                                                                               |
+| **Ativar/Desativar** (chave)     | Profissional desativado deixa de receber agendamentos e de aparecer nas escolhas de profissional (link público, chatbot, IA), mas mantém o histórico |
+| **Vincular/Desvincular usuário** | No seletor do lado direito da linha                                                                                                                  |
+| **Excluir** 🗑️                  | Remove o cadastro; o sistema pede confirmação: _"Deseja realmente excluir este profissional?"_                                                       |
 
 > ⚠️ Prefira **desativar** em vez de excluir: o histórico de agendamentos do profissional continua legível e você pode reativá-lo depois.

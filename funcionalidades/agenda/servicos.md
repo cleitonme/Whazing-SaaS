@@ -12,9 +12,7 @@
 
 > ⚠️ A aba Serviços só aparece para **administradores e supervisores** do sistema.
 
-> **📸 Sugestão de print:** Aba "Serviços" da janela de configurações.
-
-***
+<figure><img src="../../.gitbook/assets/servicos.png" alt=""><figcaption></figcaption></figure>
 
 ## ➕ Como cadastrar um serviço
 
@@ -24,8 +22,6 @@
 2. Clique no **botão +**.
 
 Aparece a confirmação e o serviço entra na lista, já **ativo**.
-
-> **📸 Sugestão de print:** Cadastro de novo serviço com nome e duração.
 
 ### ⏱️ Por que a duração é tão importante
 
@@ -45,11 +41,11 @@ Se a duração for trocada para 1 hora, os horários passam a ser **09:00, 10:00
 
 Cada serviço na lista tem três controles, todos salvos **automaticamente** ao sair do campo:
 
-| Controle | O que faz |
-| --- | --- |
-| **Nome** (campo de texto) | Clique, edite e clique fora para salvar |
+| Controle                  | O que faz                                   |
+| ------------------------- | ------------------------------------------- |
+| **Nome** (campo de texto) | Clique, edite e clique fora para salvar     |
 | **Duração** (campo `min`) | Ajuste os minutos e clique fora para salvar |
-| **Chave liga/desliga** | Ativa ou desativa o serviço |
+| **Chave liga/desliga**    | Ativa ou desativa o serviço                 |
 
 ### 🔕 Desativar em vez de excluir
 
@@ -67,9 +63,9 @@ Não há botão de excluir serviço — em vez disso, use a chave para **desativ
 
 Os serviços não podem ter **nomes repetidos** — nem entre ativos, nem entre ativos e desativados. Se tentar cadastrar (ou renomear) um serviço com nome já usado, o sistema avisa:
 
-| Aviso | O que significa | O que fazer |
-| --- | --- | --- |
-| **Nome já existe (ativo)** | Já há um serviço ativo com esse nome | Escolha outro nome ou edite o existente |
+| Aviso                                          | O que significa                             | O que fazer                                                                                                                                 |
+| ---------------------------------------------- | ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nome já existe (ativo)**                     | Já há um serviço ativo com esse nome        | Escolha outro nome ou edite o existente                                                                                                     |
 | **Existe um serviço desativado com esse nome** | Você já teve um serviço assim e o desativou | O sistema **mostra o serviço desativado na lista** (destacado em laranja). Basta **ligar a chave dele** para reativar em vez de criar outro |
 
 > 💡 Esse segundo aviso é ótimo para quem desativou um serviço e depois precisou dele de volta: não precisa recriar do zero, é só reativar.

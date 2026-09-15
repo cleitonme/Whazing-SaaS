@@ -21,8 +21,6 @@ Existem **dois usos diferentes**, e um profissional pode usar os dois ao mesmo t
 * Cadastra-se no **calendário** da Agenda (dentro de **Configurações → Calendários**).
 * **O que faz:** os **agendamentos feitos aqui são criados no calendário externo** — o compromisso aparece no Google Calendar/Outlook da conta conectada.
 
-> **📸 Sugestão de print:** Seção de sincronização dentro do calendário e dentro do profissional.
-
 ***
 
 ## 🔌 Como conectar
@@ -35,11 +33,9 @@ O caminho é o mesmo para os dois tipos — o que muda é **onde** você clica:
 4. Clique em **"Conectar Google Calendar"** ou **"Conectar Outlook"** (o botão que aparece depende do que o administrador habilitou).
 5. Uma **janela de login** abre pedindo a conta externa (Google ou Microsoft). Faça login e **autorize** o acesso.
 
-Pronto! A seção passa a exibir **"Conectado como** seu@email**"**, indicando qual conta está vinculada.
+Pronto! A seção passa a exibir **"Conectado como** seu@email\*\*"\*\*, indicando qual conta está vinculada.
 
-> **📸 Sugestão de print:** Botões "Conectar Google Calendar" e "Conectar Outlook" na tela de configurações.
-
-> ⚠️ **A janela de login não abriu?** O navegador provavelmente bloqueou o pop-up. O próprio sistema avisa: *"Não consegui abrir a janela de login. Verifique se seu navegador está bloqueando pop-ups."* Libere os pop-ups para o site do sistema e tente de novo.
+> ⚠️ **A janela de login não abriu?** O navegador provavelmente bloqueou o pop-up. O próprio sistema avisa: _"Não consegui abrir a janela de login. Verifique se seu navegador está bloqueando pop-ups."_ Libere os pop-ups para o site do sistema e tente de novo.
 
 ***
 
@@ -47,7 +43,7 @@ Pronto! A seção passa a exibir **"Conectado como** seu@email**"**, indicando q
 
 A seção de sincronização mostra o estado direto no lugar:
 
-* **🟢 Conectado:** aparece o ícone de check verde + **"Conectado como** conta@email**"** + o nome do serviço (Google Calendar ou Outlook) + botão **Desconectar**.
+* **🟢 Conectado:** aparece o ícone de check verde + **"Conectado como** conta@email\*\*"\*\* + o nome do serviço (Google Calendar ou Outlook) + botão **Desconectar**.
 * **⚪ Não conectado:** aparecem os botões **Conectar Google Calendar** / **Conectar Outlook**.
 * **🔴 Erro:** se houver problema na conexão (por exemplo, senha trocada ou permissão revogada), uma mensagem de erro aparece nessa mesma seção.
 
@@ -57,11 +53,11 @@ A seção de sincronização mostra o estado direto no lugar:
 
 Na sincronização **por profissional** existe uma configuração extra: **"O que fazer quando tiver um compromisso pessoal no mesmo horário"** — ou seja, quando alguém tenta agendar na Agenda no mesmo horário de um compromisso pessoal do profissional no Google/Outlook.
 
-| Opção | O que acontece |
-| --- | --- |
-| **Bloquear o agendamento (padrão)** | Não deixa agendar no horário conflitante |
-| **Permitir, mas avisar quem está agendando** | Permite o agendamento, mas mostra o aviso *"Atenção: o profissional tem um compromisso pessoal no calendário externo nesse mesmo horário."* |
-| **Ignorar e permitir sem avisar** | Agenda normalmente, sem checar |
+| Opção                                        | O que acontece                                                                                                                              |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Bloquear o agendamento (padrão)**          | Não deixa agendar no horário conflitante                                                                                                    |
+| **Permitir, mas avisar quem está agendando** | Permite o agendamento, mas mostra o aviso _"Atenção: o profissional tem um compromisso pessoal no calendário externo nesse mesmo horário."_ |
+| **Ignorar e permitir sem avisar**            | Agenda normalmente, sem checar                                                                                                              |
 
 Essa configuração fica logo abaixo da conexão, dentro do cadastro do **profissional**.
 
@@ -79,6 +75,6 @@ Essa configuração fica logo abaixo da conexão, dentro do cadastro do **profis
 
 1. Abra a mesma seção **"Sincronização com Google Calendar/Outlook"** (no calendário ou no profissional).
 2. Clique em **Desconectar**.
-3. Confirme: *"Deseja realmente desconectar a sincronização de calendário deste profissional?"*.
+3. Confirme: _"Deseja realmente desconectar a sincronização de calendário deste profissional?"_.
 
 A conta é desvinculada e os botões de conexão voltam a aparecer. Os agendamentos já criados **continuam** na Agenda — apenas deixa de haver a ponte com o calendário externo.
