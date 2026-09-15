@@ -10,13 +10,13 @@ O **Modo Híbrido** permite utilizar a **API Oficial** e a **API Não Oficial** 
 
 É a forma como o sistema apresenta esse recurso:
 
-> *"Combine a API Oficial e a API Não Oficial no mesmo número, reduzindo custo sem perder confiabilidade."*
+> _"Combine a API Oficial e a API Não Oficial no mesmo número, reduzindo custo sem perder confiabilidade."_
 
 Na prática, você cria um **par de canais**: uma conexão oficial e uma conexão não oficial trabalhando juntas, como se fossem uma equipe só. Cada uma fica responsável por uma parte das mensagens enviadas.
 
 **Para que isso é útil?** A API Oficial tem recursos e confiabilidade que a Não Oficial não tem, mas cada mensagem enviada por ela tem custo. A API Não Oficial não tem custo por mensagem. Com o Modo Híbrido, é possível dividir os envios entre as duas — por exemplo, deixando as mensagens mais importantes na Oficial e o restante na Não Oficial.
 
-> **📸 Sugestão de print:** Tela de canais mostrando o botão "Modo Híbrido" na barra de ações.
+<figure><img src="../.gitbook/assets/modohibrido.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -24,12 +24,12 @@ Na prática, você cria um **par de canais**: uma conexão oficial e uma conexã
 
 Antes de pensar em ativar o Modo Híbrido, confira se você tem tudo abaixo:
 
-| Requisito | Detalhe |
-| --- | --- |
-| **1 canal Oficial compatível** | Um canal **WABA (API Oficial direta)** ou **WhatsApp via Hub** |
-| **1 canal Não Oficial compatível** | Um canal **Baileys**, **API Plus**, **WuzAPI** ou **MultiAPI** |
+| Requisito                          | Detalhe                                                                                     |
+| ---------------------------------- | ------------------------------------------------------------------------------------------- |
+| **1 canal Oficial compatível**     | Um canal **WABA (API Oficial direta)** ou **WhatsApp via Hub**                              |
+| **1 canal Não Oficial compatível** | Um canal **API Plus**, **WuzAPI**                                                           |
 | **O mesmo número nos dois canais** | O número conectado no canal Oficial precisa ser **exatamente o mesmo** do canal Não Oficial |
-| **Número em Coexistência (Coex)** | O número precisa estar conectado nas duas formas ao mesmo tempo (veja a explicação abaixo) |
+| **Número em Coexistência (Coex)**  | O número precisa estar conectado nas duas formas ao mesmo tempo (veja a explicação abaixo)  |
 
 ### O que é Coexistência (Coex)?
 
@@ -116,15 +116,13 @@ A configuração se chama **"Mensagens comuns"** e funciona assim:
 * O valor definido representa a parte da **API Oficial**. O resto complementa automaticamente na **API Não Oficial**.
 * O valor padrão é **50%**, ou seja, metade para cada lado.
 
-> **📸 Sugestão de print:** Formulário do par com o slider "Mensagens comuns" e as porcentagens exibidas.
-
 ### Regras fixas do envio
 
 Algumas regras **sempre** valem, independentemente da porcentagem:
 
 * 📄 **Templates oficiais sempre saem pela API Oficial** — mesmo que a porcentagem esteja baixa.
-* 👥 **Grupos sempre pela API Não Oficial** — você pode deixar essa opção ativada (já vem ativada por padrão, na opção *"Grupos sempre pela API não oficial"*).
-* 🛟 **Fallback (opcional):** se você ativar a opção *"Usar API oficial automaticamente se a não oficial estiver indisponível"*, o sistema passa a usar a API Oficial quando a Não Oficial estiver fora do ar. Essa opção também já vem ativada por padrão.
+* 👥 **Grupos sempre pela API Não Oficial** — você pode deixar essa opção ativada (já vem ativada por padrão, na opção _"Grupos sempre pela API não oficial"_).
+* 🛟 **Fallback (opcional):** se você ativar a opção _"Usar API oficial automaticamente se a não oficial estiver indisponível"_, o sistema passa a usar a API Oficial quando a Não Oficial estiver fora do ar. Essa opção também já vem ativada por padrão.
 
 ***
 
@@ -132,7 +130,7 @@ Algumas regras **sempre** valem, independentemente da porcentagem:
 
 ### 1. Verifique os canais
 
-Acesse a tela de **Canais** do sistema. Você precisa ter **pelo menos 1 canal Oficial compatível (WABA ou Hub)** e **1 canal Não Oficial compatível (Baileys, API Plus, WuzAPI ou MultiAPI)**.
+Acesse a tela de **Canais** do sistema. Você precisa ter **pelo menos 1 canal Oficial compatível (WABA ou Hub)** e **1 canal Não Oficial compatível (API Plus, WuzAPI)**.
 
 O botão **"Modo Híbrido"** só aparece na barra de ações da tela quando esses dois tipos de canal existem — e somente para o usuário **administrador**.
 
@@ -148,19 +146,15 @@ Certifique-se de que o número está conectado em **Coexistência (Coex)**. Se n
 
 Clique no botão **"Modo Híbrido"** na barra de ações da tela de Canais. A janela **"Modo Híbrido de Envio"** será aberta, mostrando a lista de pares já criados (se houver).
 
-> **📸 Sugestão de print:** Janela "Modo Híbrido de Envio" com a lista de pares.
-
 ### 5. Crie o par
 
 Clique em **"Novo par"**. O formulário de configuração será exibido.
 
-> **📸 Sugestão de print:** Formulário com o aviso de risco da conexão Não Oficial destacado.
-
 ### 6. Preencha as informações
 
-* **Nome:** um nome para identificar o par (exemplo sugerido pelo sistema: *"WhatsApp Comercial"*).
-* **Conexão oficial:** selecione o canal Oficial no menu. Se não houver nenhum disponível, o sistema avisa: *"Nenhuma conexão oficial (WABA/Hub) disponível."*
-* **Conexão não oficial:** selecione o canal Não Oficial. Se não houver nenhum disponível, o aviso é: *"Nenhuma conexão não oficial disponível."*
+* **Nome:** um nome para identificar o par (exemplo sugerido pelo sistema: _"WhatsApp Comercial"_).
+* **Conexão oficial:** selecione o canal Oficial no menu. Se não houver nenhum disponível, o sistema avisa: _"Nenhuma conexão oficial (WABA/Hub) disponível."_
+* **Conexão não oficial:** selecione o canal Não Oficial. Se não houver nenhum disponível, o aviso é: _"Nenhuma conexão não oficial disponível."_
 
 > 💡 Um canal que já está sendo usado em **outro par** não aparece na lista de opções — cada conexão pertence a apenas um par por vez.
 
@@ -175,7 +169,7 @@ Ajuste o slider **"Mensagens comuns"** para definir a parte da API Oficial. O co
 
 ### 9. Salve
 
-Clique em **"Salvar"**. Ao concluir, o sistema confirma: *"Par de canal salvo com sucesso."*
+Clique em **"Salvar"**. Ao concluir, o sistema confirma: _"Par de canal salvo com sucesso."_
 
 ### 10. Confira se ficou ativo
 
@@ -191,7 +185,7 @@ O par criado aparece na lista da janela "Modo Híbrido de Envio" com:
 ## ✏️ Editar ou excluir um par
 
 * **Editar:** clique no ícone de **lápis** ao lado do par na lista. O formulário abre preenchido com as configurações atuais — ajuste o que precisar e clique em **"Salvar"**.
-* **Excluir:** clique no ícone de **lixeira** ao lado do par. O sistema pede confirmação — *"Excluir par?"* — e avisa: *"As duas conexões voltam a operar separadamente. Esta ação não pode ser desfeita."*
+* **Excluir:** clique no ícone de **lixeira** ao lado do par. O sistema pede confirmação — _"Excluir par?"_ — e avisa: _"As duas conexões voltam a operar separadamente. Esta ação não pode ser desfeita."_
 
 Depois de excluir, as duas conexões **voltam a operar separadamente**, cada uma do jeito que funcionava antes do Modo Híbrido, e voltam a aparecer disponíveis para criar novos pares.
 
@@ -230,17 +224,17 @@ Os envios de mensagens comuns passam a ser divididos nessa proporção: cerca de
 O botão só aparece quando **as duas condições** são atendidas ao mesmo tempo:
 
 1. O usuário é **administrador**.
-2. Existe **pelo menos 1 canal Oficial compatível (WABA ou Hub)** **e** **pelo menos 1 canal Não Oficial compatível (Baileys, API Plus, WuzAPI ou MultiAPI)**.
+2. Existe **pelo menos 1 canal Oficial compatível (WABA ou Hub)** **e** **pelo menos 1 canal Não Oficial compatível (API Plus, WuzAPI )**.
 
 Ter dois canais do mesmo tipo não é suficiente — precisa haver um de cada tipo.
 
 ### "Tenho dois canais, mas a opção não aparece"
 
-Não basta ter dois canais: eles precisam ser dos **tipos compatíveis** — um Oficial (WABA ou Hub) e um Não Oficial (Baileys, API Plus, WuzAPI ou MultiAPI). Verifique também se você está acessando com um usuário **administrador**, pois o botão não aparece para outros perfis.
+Não basta ter dois canais: eles precisam ser dos **tipos compatíveis** — um Oficial (WABA ou Hub) e um Não Oficial (API Plus, WuzAPI). Verifique também se você está acessando com um usuário **administrador**, pois o botão não aparece para outros perfis.
 
 ### "Aparece 'Nenhuma conexão oficial disponível' ao criar o par"
 
-Isso acontece quando todas as conexões oficiais já estão sendo usadas em outros pares — ou quando não existe nenhuma conexão oficial. A mensagem exibida pelo sistema é: *"Nenhuma conexão oficial (WABA/Hub) disponível."* Cada conexão só pode pertencer a um par por vez.
+Isso acontece quando todas as conexões oficiais já estão sendo usadas em outros pares — ou quando não existe nenhuma conexão oficial. A mensagem exibida pelo sistema é: _"Nenhuma conexão oficial (WABA/Hub) disponível."_ Cada conexão só pode pertencer a um par por vez.
 
 ### "Estou usando números diferentes"
 
@@ -262,6 +256,6 @@ Porque a API Oficial não oferece suporte a grupos. No Modo Híbrido, os grupos 
 
 ## 👣 Próximos passos
 
-* Conheça as características de cada conexão: [WhatsApp API Oficial](api-oficial/README.md) e [WhatsApp API Não Oficial](whatsapp-api-nao-oficial/README.md).
+* Conheça as características de cada conexão: [WhatsApp API Oficial](api-oficial/) e [WhatsApp API Não Oficial](whatsapp-api-nao-oficial/).
 * Configurou o Modo Híbrido e as mensagens não estão saindo? Veja [Mensagem não enviando](whatsapp-api-nao-oficial/mensagem-nao-enviando.md).
 * Problemas de conexão com a API Oficial em Coexistência? Veja [COEX (API Oficial) – Problemas de Conexão e Reconexão](api-oficial/limitacoes-e-erros/coex-api-oficial-problemas-de-conexao-e-reconexao.md).
