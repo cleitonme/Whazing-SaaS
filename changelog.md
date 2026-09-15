@@ -1,5 +1,150 @@
 # Changelog e Atualizações
 
+# 🚀 Versão 3.1.0 BETA
+
+## 🔀 Modo Híbrido
+
+Configuração: mensagem sai pela não oficial. Com esse modo ativado, mensagens saem pelo canal conforme porcentagem. Quando o ticket entra no modo não oficial, todas as mensagens saem por ele.
+
+Use somente Coex, que é a conexão do mesmo número.
+
+---
+
+## 📅 Novo Módulo Agenda
+
+* Sincronização de agendas com Google Agenda, por profissional ou agenda total.
+* Cadastro de serviços e tempo de serviço para agendamento.
+* Vincula serviço ao profissional.
+* Vincula profissional à agenda.
+* Define horário de atendimento pelo profissional.
+* Controle de acesso por usuário à agenda.
+* Envio de lembrete de agendamento; o cliente pode cancelar ou confirmar o agendamento.
+* Link público ou Embed para incorporar o agendamento no site ou envio de link.
+* Agendamento e cancelamento via Chatbot.
+* Agendamento e cancelamento via Recepção Inteligente.
+* Agendamento pela tela de Atendimento.
+* Vendido avulso nos planos.
+
+---
+
+## 🔒 Canal Privado
+
+### Usuário Proprietário
+
+Somente este usuário verá os tickets deste canal, até que sejam transferidos.
+
+Só administradores podem ser escolhidos como dono.
+
+O canal fica oculto. Qualquer outro usuário somente verá o canal se for o dono.
+
+---
+
+## 📆 Novas Visualizações em Calendário
+
+* Módulo Agendamento: novo modo de visualização em modelo calendário.
+* Módulo Tarefas: novo modo de visualização em modelo calendário.
+
+---
+
+## 🔌 API
+
+* Novos endpoints de API para cliente, agendamento e mensagem.
+
+---
+
+## 💬 Webchat
+
+* Novo campo de e-mail.
+
+---
+
+## 📌 Menu Lateral
+
+Volta ao comportamento anterior da versão 2, com uma única diferença: agora é possível fixá-lo aberto.
+
+---
+
+## 📞 Chamadas
+
+* Suporte a chamadas de áudio e vídeo no chat interno.
+* Configuração de gravação de chamadas WaCalls.
+
+---
+
+## 🎥 Conferência
+
+* Nova opção de envio de link de conferência na tela de Atendimento, mais integrada ao sistema.
+
+---
+
+## 📍 Atendimento
+
+* Opção de fixar mensagem na tela de Atendimento.
+* Nova configuração para auto distribuir atendimento diretamente para a fila, sem precisar de bot.
+* Novas ações em massa na lista de Contatos.
+
+---
+
+## 🔄 Sincronização
+
+* Mudanças na sincronização de mensagens Plus e WuzAPI.
+
+---
+
+## 🤖 Chatbot
+
+* Na inatividade do Chatbot, é possível transferir para outro fluxo.
+* Nova opção individual por etapa para configurar a condição de inatividade.
+
+---
+
+## 📊 Saúde dos Números
+
+* Painel SaaS exibe a saúde dos números da API oficial na lista de empresas.
+* Lista de canais do cliente já exibe a saúde do número da API oficial.
+
+---
+
+## 💰 Canais Avulsos
+
+Melhoria na venda de canais adicionais avulsos, como:
+
+* Plus
+* WABA
+
+---
+
+## 📱 Cadastro de Canais
+
+* Novo modelo de cadastro de canais, mais simples para usuários iniciantes.
+
+---
+
+## 🔗 Hub Oficial
+
+* Suporte ao novo Hub oficial do Whazing MultiAPI, com conexão eficiente e automática, sem o cliente precisar sair do sistema.
+
+---
+
+## 💳 Pagamentos
+
+* Integração com Asaas somente via Pix.
+* Solicita CPF do cliente.
+* Gera o QR Code na hora, tornando o pagamento mais simples.
+
+---
+
+## 📞 WaCalls
+
+* Configuração de gravação de chamadas WaCalls.
+
+---
+
+## ⚙️ Regras de Automação
+
+* Nova configuração de limite máximo de execução.
+
+
 # 🚀 Versão 3.0.2 Final – Changelog
 
 ### ✨ Melhorias
