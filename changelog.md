@@ -1,10 +1,6 @@
-# Changelog e Atualizações
-
 ## Changelog e Atualizações
 
 ## 🚀 Versão 3.1.0 BETA
-
-
 
 * Baileys - Desativada descontinuado. Em ultimos casos quem quiser ativar possivel através .env
 
