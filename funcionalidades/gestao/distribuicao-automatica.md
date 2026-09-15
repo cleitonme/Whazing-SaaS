@@ -1,7 +1,3 @@
----
-icon: shuffle-variant
----
-
 # Distribuição Automática
 
 ## O que é a Distribuição Automática?
@@ -10,7 +6,7 @@ A **Distribuição Automática** faz com que o sistema escolha **automaticamente
 
 É assim que o sistema descreve esse recurso:
 
-> *"Quando ativada numa fila, o sistema escolhe automaticamente um usuário elegível (online, disponível e de um dos perfis selecionados) para receber cada novo atendimento — sem precisar escolher usuário por usuário."*
+> _"Quando ativada numa fila, o sistema escolhe automaticamente um usuário elegível (online, disponível e de um dos perfis selecionados) para receber cada novo atendimento — sem precisar escolher usuário por usuário."_
 
 Em linguagem simples: em vez de os atendimentos ficarem parados na fila esperando que alguém os aceite, o sistema **entrega cada atendimento diretamente para um atendente** que esteja disponível, seguindo o critério que você escolher (aleatório ou balanceado).
 
@@ -40,9 +36,7 @@ O atendimento vai para a fila **sem passar por nenhum fluxo**, e o sistema já o
 
 Se a mesma fila for alcançada por um Chatbot que também tenha o **"Auto Distribuir Atendimento"** configurado, **a configuração do bot prevalece**. Isso está avisado na própria tela do recurso:
 
-> *"A distribuição desta fila é usada quando o atendimento ainda não tiver um responsável definido por uma regra anterior, como um chatbot, uma integração, o canal privado ou a carteira do contato. Se esta fila também for alcançada por um chatbot com Auto Distribuir Atendimento configurado, a configuração do bot prevalece."*
-
-> **📸 Sugestão de print:** Tela principal da Distribuição Automática, mostrando a descrição do recurso e a seleção da fila.
+> _"A distribuição desta fila é usada quando o atendimento ainda não tiver um responsável definido por uma regra anterior, como um chatbot, uma integração, o canal privado ou a carteira do contato. Se esta fila também for alcançada por um chatbot com Auto Distribuir Atendimento configurado, a configuração do bot prevalece."_
 
 ***
 
@@ -86,17 +80,15 @@ Os candidatos são os usuários que atendem aos **três requisitos** ao mesmo te
 
 ## 🧭 Como configurar — passo a passo
 
-> 📌 A tela de configuração fica na **Central de Configurações**, na área de **Atendimento**, com o nome **"Distribuição Automática"**. Ela pode ser utilizada por usuários **administrador** e **supervisor**.
-
 ### 1. Acesse a configuração
 
-Abra a **Central de Configurações** e localize o card **"Distribuição Automática"** — identificado pela descrição *"Configure, por fila, quais perfis participam da distribuição automática de novos atendimentos (Aleatória ou Balanceada)."*
+Abra a Configurações de Atendimento e localize o card **"Distribuição Automática"** — identificado pela descrição _"Configure, por fila, quais perfis participam da distribuição automática de novos atendimentos (Aleatória ou Balanceada)."_
 
 ### 2. Selecione a fila
 
 No card **"Fila"**, escolha no campo **"Selecione a fila"** qual fila você quer configurar.
 
-> 💡 Não existe nenhuma fila cadastrada ainda? A própria tela avisa: *"Nenhuma fila cadastrada ainda. Cadastre uma fila para configurar a distribuição automática."* Nesse caso, cadastre a fila primeiro (veja [Organização de Atendimentos, Filas e Permissões de Usuários](organizacao-de-atendimentos-filas-e-permissoes-de-usuarios.md)).
+> 💡 Não existe nenhuma fila cadastrada ainda? A própria tela avisa: _"Nenhuma fila cadastrada ainda. Cadastre uma fila para configurar a distribuição automática."_ Nesse caso, cadastre a fila primeiro (veja [Organização de Atendimentos, Filas e Permissões de Usuários](organizacao-de-atendimentos-filas-e-permissoes-de-usuarios.md)).
 
 Ao selecionar a fila, o restante das opções aparece na tela, já preenchido com a configuração atual daquela fila.
 
@@ -114,16 +106,16 @@ O cartão selecionado ganha uma marca de ✓.
 
 No card **"Perfis que podem receber"**, marque os perfis que poderão receber os atendimentos distribuídos:
 
-| Perfil | O que é |
-| --- | --- |
-| **Administrador** | Usuário com acesso total ao sistema |
-| **Supervisor Geral** | Usuário que supervisiona a operação |
+| Perfil                 | O que é                                    |
+| ---------------------- | ------------------------------------------ |
+| **Administrador**      | Usuário com acesso total ao sistema        |
+| **Supervisor Geral**   | Usuário que supervisiona a operação        |
 | **Supervisor de Fila** | Usuário que supervisiona filas específicas |
-| **Usuário** | O atendente comum do atendimento |
+| **Usuário**            | O atendente comum do atendimento           |
 
-O sistema explica: *"Os atendimentos serão distribuídos entre usuários dos perfis selecionados que estiverem online e disponíveis. Não é necessário selecionar usuários individualmente."* — ou seja, você configura por **perfil**, e todos os usuários daquele perfil participam.
+O sistema explica: _"Os atendimentos serão distribuídos entre usuários dos perfis selecionados que estiverem online e disponíveis. Não é necessário selecionar usuários individualmente."_ — ou seja, você configura por **perfil**, e todos os usuários daquele perfil participam.
 
-> ⚠️ **Selecione ao menos um perfil.** Se nenhum for escolhido, a tela avisa: *"Selecione ao menos um perfil, ou a distribuição automática não terá nenhum candidato."* — e o botão **Salvar** fica desabilitado até você escolher um.
+> ⚠️ **Selecione ao menos um perfil.** Se nenhum for escolhido, a tela avisa: _"Selecione ao menos um perfil, ou a distribuição automática não terá nenhum candidato."_ — e o botão **Salvar** fica desabilitado até você escolher um.
 
 ### 5. (Opcional) Distribuir também em transferências
 
@@ -135,11 +127,11 @@ Lembre-se: transferências que já escolhem um usuário específico **nunca** s�
 
 Clique em **"Salvar"**. Ao concluir, o sistema confirma:
 
-> *"Configuração de distribuição automática salva com sucesso."*
+> _"Configuração de distribuição automática salva com sucesso."_
 
 A configuração passa a valer **na hora**, para os próximos atendimentos da fila.
 
-> **📸 Sugestão de print:** Configuração pronta, com o modo e os perfis selecionados e o botão "Salvar".
+<figure><img src="../../.gitbook/assets/distribuicaoautomatica.png" alt=""><figcaption></figcaption></figure>
 
 ### 7. Teste
 
@@ -193,7 +185,7 @@ Para confirmar que está funcionando:
 
 **Para que serve?** Gravar a configuração da fila.
 
-**O que acontece depois?** O sistema exibe a confirmação *"Configuração de distribuição automática salva com sucesso."* e a regra passa a valer para os próximos atendimentos.
+**O que acontece depois?** O sistema exibe a confirmação _"Configuração de distribuição automática salva com sucesso."_ e a regra passa a valer para os próximos atendimentos.
 
 ***
 
@@ -225,8 +217,6 @@ A empresa tem as filas **Vendas**, **Suporte** e **Financeiro**. Como a configur
 * **Financeiro** — modo **Balanceada**, perfis: **Usuário** e **Supervisor de Fila**.
 
 Cada fila distribui entre os seus próprios perfis participantes, independentemente das outras.
-
-> **📸 Sugestão de print:** Cartões de modo (Não / Aleatória / Balanceada) e o card "Perfis que podem receber" com perfis marcados.
 
 ***
 
@@ -268,7 +258,7 @@ Verifique, nesta ordem:
 
 ### "Não aparece nenhuma fila para selecionar"
 
-Nenhuma fila foi cadastrada ainda — a tela avisa: *"Nenhuma fila cadastrada ainda. Cadastre uma fila para configurar a distribuição automática."* Cadastre a fila primeiro.
+Nenhuma fila foi cadastrada ainda — a tela avisa: _"Nenhuma fila cadastrada ainda. Cadastre uma fila para configurar a distribuição automática."_ Cadastre a fila primeiro.
 
 ### "Não encontro a Distribuição Automática"
 
@@ -327,4 +317,4 @@ Sim. Nada muda no Chatbot. A única regra de convivência: se o bot também tive
 ## 👣 Próximos passos
 
 * Ainda não conhece filas e permissões? Comece por [Organização de Atendimentos, Filas e Permissões de Usuários](organizacao-de-atendimentos-filas-e-permissoes-de-usuarios.md).
-* Usa Chatbot e quer distribuir no fim do fluxo? Veja [CHATBOT 3.0 (ChatFlow)](../automacao/chatbotinterno-1/README.md) e o [Rodízio Automático de Atendimentos](../automacao/chatbotinterno-1/rodizio-automatico-de-atendimentos.md).
+* Usa Chatbot e quer distribuir no fim do fluxo? Veja [CHATBOT 3.0 (ChatFlow)](../automacao/chatbotinterno-1/) e o [Rodízio Automático de Atendimentos](../automacao/chatbotinterno-1/rodizio-automatico-de-atendimentos.md).
