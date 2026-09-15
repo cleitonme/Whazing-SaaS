@@ -152,7 +152,7 @@ Resumo da integração:
 | **Geral** | Tipo, nome, IA (compartilhada do sistema ou própria) e teste | — |
 | **Personalidade** | Modelo de atendimento e prompt principal/secundário | [Instruções eficientes](como-criar-instrucoes-eficientes-para-atendimento-automatico-com-ia.md) |
 | **Comportamento** | Histórico de atendimentos anteriores e tempo de espera para resposta | — |
-| **Automação** | Transferência por filas/palavras-chave, usuários, chatbot, etiquetas, Kanban, arquivos e chave PIX | [Etiquetas e Kanban](etiquetas-automaticas-e-kanban-com-ia.md) · [Arquivos](envio-de-arquivos-via-ia.md) · [PIX](botao-pix-automatico-no-atendimento.md) |
+| **Automação** | Transferência por filas/palavras-chave, usuários, chatbot, etiquetas, Kanban, arquivos, chave PIX e agendamento | [Etiquetas e Kanban](etiquetas-automaticas-e-kanban-com-ia.md) · [Arquivos](envio-de-arquivos-via-ia.md) · [PIX](botao-pix-automatico-no-atendimento.md) · [Agendamento pela IA](../../../funcionalidades/agenda/agendamento-pela-recepcao-inteligente.md) |
 | **Conhecimento** | Base de conhecimento, busca na web, MCP e correspondência semântica | [Base de conhecimento](base-de-conhecimento.md) · [Busca na web](busca-na-web.md) · [MCP](mcp-e-ferramentas-de-ia.md) · [Busca semântica](busca-semantica.md) |
 | **Voz** | Respostas por áudio (provedor, modelo e quando enviar áudio) | [Resposta por áudio](configuracao-de-resposta-por-audio.md) |
 | **Followup** | Follow-up automático e ausência de resposta | [Follow-up](follow-up-recepcao-inteligente.md) |

@@ -55,7 +55,7 @@ Após criar, o botão **Editar** abre as **informações avançadas** em abas:
 | --- | --- | --- |
 | **Personalidade** | Modelo de atendimento, prompt principal e secundário | [Instruções eficientes](como-criar-instrucoes-eficientes-para-atendimento-automatico-com-ia.md) |
 | **Comportamento** | Histórico de atendimentos anteriores e tempo de espera para resposta | [Comportamento](comportamento.md) |
-| **Automação** | Transferência por filas, usuários, chatbot, etiquetas, Kanban, arquivos e chave PIX | [Etiquetas e Kanban](etiquetas-automaticas-e-kanban-com-ia.md) · [Arquivos](envio-de-arquivos-via-ia.md) · [PIX](botao-pix-automatico-no-atendimento.md) |
+| **Automação** | Transferência por filas, usuários, chatbot, etiquetas, Kanban, arquivos, chave PIX e agendamento | [Etiquetas e Kanban](etiquetas-automaticas-e-kanban-com-ia.md) · [Arquivos](envio-de-arquivos-via-ia.md) · [PIX](botao-pix-automatico-no-atendimento.md) · [Agendamento pela IA](../../../funcionalidades/agenda/agendamento-pela-recepcao-inteligente.md) |
 | **Conhecimento** | Base de conhecimento, busca na web, MCP e busca semântica | [Base de conhecimento](base-de-conhecimento.md) · [Busca na web](busca-na-web.md) · [MCP](mcp-e-ferramentas-de-ia.md) · [Busca semântica](busca-semantica.md) |
 | **Voz** | Respostas por áudio | [Resposta por áudio](configuracao-de-resposta-por-audio.md) |
 | **Followup** | Follow-up automático e ausência de resposta | [Follow-up](follow-up-recepcao-inteligente.md) |

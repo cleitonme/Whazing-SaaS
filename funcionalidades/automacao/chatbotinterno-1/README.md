@@ -304,6 +304,21 @@ O fluxo salva automaticamente. Use o botão **Testar** para simular a conversa a
 * Adiciona o cliente a um **follow-up (funil)** ou o **remove** (opção "Remover cliente Follow-up").
 * Requer funis de follow-up cadastrados no sistema.
 
+### 📅 Agendamento
+
+#### 🗓️ Agendamento
+
+* Conduz a conversa sozinho (**profissional → serviço → data → horário → confirmação**) e cria o agendamento na **Agenda**, consultando a disponibilidade real — o bot nunca inventa horário.
+* Configurações: calendário, profissionais e serviços (Todos ou Selecionar), modo de apresentação (Automático/Texto/Lista/Botões), dias de busca e mensagens personalizáveis.
+* Tem **2 saídas fixas**: agendamento concluído com sucesso e não foi possível agendar (sem profissional, serviço ou horário disponível).
+* Requer o módulo **Agenda** configurado. Veja o guia completo: [Agendamento pelo Chatbot](../agenda/agendamento-pelo-chatbot.md).
+
+#### 🔍 Gerenciar Agendamento
+
+* Consulta os **agendamentos futuros do contato** e permite **cancelar** o que ele escolher — não cria nem altera agendamento.
+* Tem **4 saídas fixas**: cancelado, mantido, sem agendamento e falha.
+* Requer o módulo **Agenda** configurado. Veja o guia completo: [Agendamento pelo Chatbot](../agenda/agendamento-pelo-chatbot.md).
+
 ### 🔌 Integrações
 
 #### 🌐 HTTP Request
