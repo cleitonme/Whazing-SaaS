@@ -10,6 +10,8 @@ description: >-
 
 [Telera Whazing](https://telera.whazing.com.br/?utm_source=chatgpt.com)
 
+> 🔒 Precisa esconder um canal dos demais usuários do sistema? Conheça o [Canal Privado](canal-privado.md).
+
 ***
 
 ### 📱 WhatsApp API Não Oficial — Gratuita

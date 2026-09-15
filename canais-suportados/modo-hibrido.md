@@ -257,5 +257,6 @@ Porque a API Oficial não oferece suporte a grupos. No Modo Híbrido, os grupos 
 ## 👣 Próximos passos
 
 * Conheça as características de cada conexão: [WhatsApp API Oficial](api-oficial/) e [WhatsApp API Não Oficial](whatsapp-api-nao-oficial/).
+* Precisa esconder um canal dos demais usuários? Veja o [Canal Privado](canal-privado.md).
 * Configurou o Modo Híbrido e as mensagens não estão saindo? Veja [Mensagem não enviando](whatsapp-api-nao-oficial/mensagem-nao-enviando.md).
 * Problemas de conexão com a API Oficial em Coexistência? Veja [COEX (API Oficial) – Problemas de Conexão e Reconexão](api-oficial/limitacoes-e-erros/coex-api-oficial-problemas-de-conexao-e-reconexao.md).
