@@ -4,8 +4,8 @@ Aqui você encontra tudo para automatizar o atendimento: **chatbots** (respostas
 
 > 💡 **Nunca usou o sistema?** Veja [Primeiros Passos — Configuração Inicial](../../primeiros-passos.md) e o [Glossário](../../glossario.md).
 
-{% content-ref url="chatbotinterno/" %}
-[chatbotinterno](chatbotinterno/)
+{% content-ref url="/broken/pages/TGwWzzEM0Y8dp6I4bNLS" %}
+[Broken link](/broken/pages/TGwWzzEM0Y8dp6I4bNLS)
 {% endcontent-ref %}
 
 {% content-ref url="/broken/pages/5T9LzzqCbpIg06GKEXs6" %}

@@ -93,7 +93,7 @@ Crie mensagens que o sistema envia sozinho em momentos importantes do atendiment
 
 * **Avaliação de Atendimento** — peça uma nota ao cliente após cada atendimento: [Avaliação de Atendimento](funcionalidades/atendimento/avaliacao.md)
 * **Follow-up** — acompanhe o cliente automaticamente após o primeiro contato: [Follow-up](docs/modulos/follow-up.md)
-* **Horário de atendimento** — o sistema permite configurar o horário de atendimento por empresa, canal ou fila (com feriados), conforme descrito em [Principais Recursos](principais-recursos-do-sistema.md). O comportamento "fora do horário" é tratado dentro do [Chatbot Interno](funcionalidades/automacao/chatbotinterno/).
+* **Horário de atendimento** — o sistema permite configurar o horário de atendimento por empresa, canal ou fila (com feriados), conforme descrito em [Principais Recursos](principais-recursos-do-sistema.md). O comportamento "fora do horário" é tratado dentro do [Chatbot Interno](/broken/pages/TGwWzzEM0Y8dp6I4bNLS).
 
 ***
 
