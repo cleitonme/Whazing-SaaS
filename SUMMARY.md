@@ -95,6 +95,7 @@
       * [Geração Automática de Token](canais-suportados/whatsapp-api-nao-oficial/whatsapp_api_plus/geracao-automatica-token.md)
       * [Canais WhatsApp Plus Cadastrados](canais-suportados/whatsapp-api-nao-oficial/whatsapp_api_plus/canais-whatsapp-plus-cadastrados.md)
     * [WhatsApp Wuzapi (WhatsMeow)](canais-suportados/whatsapp-api-nao-oficial/whatsapp-wuzapi.md)
+      * [WuzAPI não conecta ou não lê o QR Code](canais-suportados/whatsapp-api-nao-oficial/wuzapi-nao-conecta-ou-nao-ler-qrcode.md)
     * [Migração entre APIs Não Oficiais](canais-suportados/whatsapp-api-nao-oficial/migracao-entre-apis-nao-oficiais.md)
     * [Mensagem não enviando](canais-suportados/whatsapp-api-nao-oficial/mensagem-nao-enviando.md)
   * [Guia de Conexão do Telegram](canais-suportados/telegram.md)

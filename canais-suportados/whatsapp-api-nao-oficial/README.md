@@ -25,6 +25,7 @@ Sim. É possível **migrar entre as 3 APIs não oficiais** (Baileys, API PLUS e 
 ## 🆘 Problemas comuns
 
 * A mensagem não chega ou não envia: 👉 [Mensagem não enviando](mensagem-nao-enviando.md)
+* A sessão da WuzAPI não conecta ou o QR Code não aparece: 👉 [WuzAPI não conecta ou não lê o QR Code](wuzapi-nao-conecta-ou-nao-ler-qrcode.md)
 * O WhatsApp desconecta com frequência: veja [WhatsApp desconecta ou mensagens não chegam](../../solucao-de-problemas/whatsapp-e-mensagens/whatsapp-desconecta-ou-mensagens-nao-chegam.md)
 
 ---
