@@ -1,5 +1,20 @@
 # Changelog e Atualizações
 
+# 🚀 Versão 3.0.2 Final – Changelog
+
+### ✨ Melhorias
+
+* **Canal de E-mail:** removida a validação obrigatória do certificado SSL/TLS para IMAP, POP e SMTP, melhorando a compatibilidade com servidores e hospedagens como cPanel.
+
+### 🐛 Correções de Bugs
+
+* **Agendamento do Instagram:** corrigido erro ao excluir agendamentos do Instagram.
+* **Alerta de espaço em uso:** corrigido o alerta exibido na lista de empresas. Quando a empresa contratava espaço adicional, o sistema continuava exibindo o alerta sem considerar o espaço contratado.
+* **Limite de IA dos planos:** corrigido o cálculo do limite de IA, que deve ser reiniciado na virada do mês. Também corrigida a informação exibida na lista do painel, que apresentava o vencimento do plano de forma incorreta.
+* **Painel SaaS:** corrigida a exibição duplicada do mesmo alerta.
+* **Canal Hub WhatsApp:** usuários não podem mais criar ou editar templates pelo canal `hub_whatsapp`. As opções de criação e edição ficam desativadas, permitindo apenas a visualização dos templates e evitando confusão sobre quais templates podem ser gerenciados pelo canal.
+
+
 # 🚀 Versão 3.0.1 BETA – Changelog
 
 * Bug – Correções estéticas e ajustes de cores que ainda estavam fora do padrão White Label
