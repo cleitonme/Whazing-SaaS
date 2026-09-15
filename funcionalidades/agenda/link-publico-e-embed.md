@@ -2,7 +2,7 @@
 
 O **link público** cria uma **página de agendamento** com a cara da sua empresa, onde o cliente marca horário **sozinho**, sem falar com ninguém. Você escolhe quais profissionais e serviços aparecem, personaliza as cores e depois **envia o link** por WhatsApp, redes sociais ou coloca o **QR Code** na recepção. Com o **Embed**, essa mesma página pode ficar **dentro do seu site**.
 
-O sistema resume bem: *"Crie uma página onde seus clientes marcam horário sozinhos, sem precisar falar com um atendente."*
+O sistema resume bem: _"Crie uma página onde seus clientes marcam horário sozinhos, sem precisar falar com um atendente."_
 
 ## 📍 Onde encontrar
 
@@ -12,7 +12,7 @@ O sistema resume bem: *"Crie uma página onde seus clientes marcam horário sozi
 
 > ⚠️ Na primeira vez, o sistema mostra um quadro azul explicando o recurso em 3 passos. Clique em **Entendi** para fechá-lo.
 
-> **📸 Sugestão de print:** Tela "Links de Agendamento" com o botão "Novo link".
+<figure><img src="../../.gitbook/assets/linksagendamento.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -22,17 +22,17 @@ A janela de criação tem **5 abas**. As duas informações obrigatórias ficam 
 
 ### 📋 Aba "Informações básicas"
 
-| Campo | Obrigatório? | Para que serve |
-| --- | --- | --- |
-| **Nome do link** | ✅ Sim | Para você identificar na lista (ex.: "Barbearia - Instagram") |
-| **Calendário** | ✅ Sim | De qual agenda sairão os horários. ⚠️ **Não pode ser trocado depois** — o sistema avisa que, se precisar mudar, será preciso excluir o link e criar outro |
-| **Profissionais que aparecem no link** | 🔶 Opcional | Escolha quem aparece. **Deixando vazio, entram todos os profissionais vinculados ao calendário** |
-| **Serviços que aparecem no link** | 🔶 Opcional | Escolha o que pode ser agendado. **Vazio = todos os serviços que os profissionais escolhidos oferecem** |
-| **Como chamar "Profissional" nesta página** | 🔶 Opcional | Personaliza o rótulo (ex.: "Médico", "Barbeiro", "Terapeuta") |
-| **Como chamar "Serviço" nesta página** | 🔶 Opcional | Ex.: consultório pode preferir "Consulta" ou "Procedimento" |
-| **Status** | — | **Ativo** (link funcionando) ou **Inativo** (página fora do ar) |
+| Campo                                       | Obrigatório? | Para que serve                                                                                                                                            |
+| ------------------------------------------- | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nome do link**                            | ✅ Sim        | Para você identificar na lista (ex.: "Barbearia - Instagram")                                                                                             |
+| **Calendário**                              | ✅ Sim        | De qual agenda sairão os horários. ⚠️ **Não pode ser trocado depois** — o sistema avisa que, se precisar mudar, será preciso excluir o link e criar outro |
+| **Profissionais que aparecem no link**      | 🔶 Opcional  | Escolha quem aparece. **Deixando vazio, entram todos os profissionais vinculados ao calendário**                                                          |
+| **Serviços que aparecem no link**           | 🔶 Opcional  | Escolha o que pode ser agendado. **Vazio = todos os serviços que os profissionais escolhidos oferecem**                                                   |
+| **Como chamar "Profissional" nesta página** | 🔶 Opcional  | Personaliza o rótulo (ex.: "Médico", "Barbeiro", "Terapeuta")                                                                                             |
+| **Como chamar "Serviço" nesta página**      | 🔶 Opcional  | Ex.: consultório pode preferir "Consulta" ou "Procedimento"                                                                                               |
+| **Status**                                  | —            | **Ativo** (link funcionando) ou **Inativo** (página fora do ar)                                                                                           |
 
-> **📸 Sugestão de print:** Aba "Informações básicas" preenchida.
+<figure><img src="../../.gitbook/assets/criacaolink.png" alt=""><figcaption></figcaption></figure>
 
 ### 🧾 Aba "Campos"
 
@@ -51,7 +51,7 @@ Deixa a página com a identidade visual da empresa:
 * **Como escolher a data** — **"Calendário completo (clicar no dia)"**, mais visual, ou **"Campo de data simples"**, mais compacto.
 * **Texto de boas-vindas (opcional)** — a frase que aparece no topo da página.
 * **Texto do botão** — o que estará escrito no botão de agendar (ex.: "Agendar horário").
-* **Mensagem de sucesso** — o que o cliente lê ao concluir. Se deixar vazio, usa o padrão: *"Recebemos seu agendamento, até breve!"*
+* **Mensagem de sucesso** — o que o cliente lê ao concluir. Se deixar vazio, usa o padrão: _"Recebemos seu agendamento, até breve!"_
 
 ### 💬 Aba "Verificação WhatsApp" (opcional)
 
@@ -76,14 +76,14 @@ O cliente não precisa de cadastro nem de senha. Basta abrir o endereço (ex.: `
 1. **Escolhe o serviço** — botões com o nome e a duração ("Corte masculino · 30min"). Se houver só um serviço, essa etapa já vem pronta.
 2. **Escolhe o profissional** — se houver mais de um, aparece a lista de botões. Só um? Etapa pula automático.
 3. **Escolhe a data** — no calendário visual (ou no campo de data, conforme a configuração). Dias passados não aparecem.
-4. **Escolhe o horário** — o sistema lista **somente horários realmente livres**, respeitando disponibilidade, exceções e compromissos externos. Sem horário, aparece *"Nenhum horário disponível nesta data."*
+4. **Escolhe o horário** — o sistema lista **somente horários realmente livres**, respeitando disponibilidade, exceções e compromissos externos. Sem horário, aparece _"Nenhum horário disponível nesta data."_
 5. **Preenche os dados** — **Seu nome**, **WhatsApp (com DDD)** e o **email** (se configurado).
 6. **Confirma** — clica no botão de agendar (com verificação WhatsApp ativa, digita antes o código de 6 dígitos recebido).
 7. **Pronto** — tela de **"Agendamento confirmado!"** com a mensagem de sucesso que você definiu, e o agendamento **cai direto na sua Agenda** 🎉
 
-> 💡 Se a página não abrir, o sistema mostra *"Link de agendamento indisponível"* — verifique se o link está **Ativo**.
+> 💡 Se a página não abrir, o sistema mostra _"Link de agendamento indisponível"_ — verifique se o link está **Ativo**.
 
-> **📸 Sugestão de print:** Página pública de agendamento completa (seleção de horários).
+<figure><img src="../../.gitbook/assets/paginapublica.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -99,14 +99,14 @@ Na aba **Instalação** (ou no botão de copiar da lista de links) está a **URL
 
 Cada link da lista tem:
 
-| Ação | O que faz |
-| --- | --- |
-| **Editar** ✏️ | Reabre a janela com todas as abas |
-| **Copiar URL pública** 📋 | Copia o endereço para enviar ao cliente |
-| **Copiar script** 📋 | Copia o código de incorporação (Embed) |
-| **Duplicar** | Cria uma cópia — ótimo para testar variações |
-| **Desativar/Ativar** ⏸️▶️ | Tira a página do ar sem apagar nada (e volta) |
-| **Excluir** 🗑️ | Remove o link; o sistema pede confirmação com o nome do link |
+| Ação                      | O que faz                                                    |
+| ------------------------- | ------------------------------------------------------------ |
+| **Editar** ✏️             | Reabre a janela com todas as abas                            |
+| **Copiar URL pública** 📋 | Copia o endereço para enviar ao cliente                      |
+| **Copiar script** 📋      | Copia o código de incorporação (Embed)                       |
+| **Duplicar**              | Cria uma cópia — ótimo para testar variações                 |
+| **Desativar/Ativar** ⏸️▶️ | Tira a página do ar sem apagar nada (e volta)                |
+| **Excluir** 🗑️           | Remove o link; o sistema pede confirmação com o nome do link |
 
 > ⚠️ Quando um link é **desativado** ou **excluído**, a página do cliente deixa de funcionar imediatamente. Os agendamentos já feitos continuam na Agenda.
 
@@ -127,10 +127,10 @@ O **Embed** (do inglês, "incorporar") é a forma de mostrar a **mesma página d
 
 ### Onde colocar
 
-1. **Cole o código** no lugar da página do seu site onde o agendamento deve aparecer (o sistema orienta: *"Use pra deixar o agendamento integrado dentro do seu próprio site — cole este código na página onde ele deve aparecer"*).
+1. **Cole o código** no lugar da página do seu site onde o agendamento deve aparecer (o sistema orienta: _"Use pra deixar o agendamento integrado dentro do seu próprio site — cole este código na página onde ele deve aparecer"_).
 2. Essa inserção normalmente é feita por **quem cuida do seu site** — pode pedir ao seu webmaster ou à empresa que administra o site. Em muitos editores de site (ex.: construtores visuais) basta colar em um bloco de "código personalizado/HTML".
 3. Salve a página e abra no navegador: a tela de agendamento aparece **dentro do seu site**, com as cores e serviços que você configurou.
 
 > 💡 O cliente não percebe que está "saindo" do seu site: escolhe serviço, profissional, data, horário e confirma ali mesmo. O agendamento cai na sua Agenda normalmente, igual ao link.
 
-> **📸 Sugestão de print:** Aba "Instalação" mostrando a URL pública, o QR Code e o script de incorporação.
+<figure><img src="../../.gitbook/assets/embed.png" alt=""><figcaption></figcaption></figure>

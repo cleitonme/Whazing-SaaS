@@ -11,7 +11,7 @@ Na tela de **Atendimento**, o atendente pode criar e acompanhar os agendamentos 
 
 > 💡 A aba **Agenda** só aparece para quem tem permissão: **admins e supervisores** veem sempre; usuários comuns veem se tiverem acesso a pelo menos um calendário (veja [Calendários e Permissões](calendarios-e-permissoes.md)).
 
-> **📸 Sugestão de print:** Painel do cliente no Atendimento com a aba "Agenda" destacada.
+<figure><img src="../../.gitbook/assets/telaatendimentoagendar.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -22,7 +22,9 @@ A aba mostra **todos os agendamentos do cliente** (de todos os calendários que 
 * **Próximos** — agendamentos de hoje em diante, do mais próximo ao mais distante.
 * **Anteriores** — agendamentos já passados.
 
-Cada item mostra o **serviço**, o **profissional**, a **data e hora** e uma etiqueta de **status** (Agendado, Confirmado, Concluído ou Cancelado). Ainda não existe agendamento para o cliente? A mensagem é *"Nenhum agendamento encontrado para este contato."*
+Cada item mostra o **serviço**, o **profissional**, a **data e hora** e uma etiqueta de **status** (Agendado, Confirmado, Concluído ou Cancelado). Ainda não existe agendamento para o cliente? A mensagem é _"Nenhum agendamento encontrado para este contato."_
+
+<figure><img src="../../.gitbook/assets/agendadado.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -33,23 +35,21 @@ Cada item mostra o **serviço**, o **profissional**, a **data e hora** e uma eti
 3. O formulário de agendamento abre **com o cliente já preenchido** — não precisa buscar: o sistema usa o contato da conversa.
 4. Complete os campos:
 
-| Campo | Obrigatório? | O que fazer |
-| --- | --- | --- |
-| **Calendário** | ✅ Sim | Escolha em qual agenda criar |
-| **Profissional** | ✅ Sim | Escolha quem vai atender (só aparecem os vinculados ao calendário) |
-| **Cliente** | — | **Já vem preenchido** com o contato do atendimento |
-| **Serviço** | 🔶 Opcional | Escolha o que será feito — a hora final é calculada sozinha pela duração do serviço |
-| **Hora inicial** | ✅ Sim | Data e hora do atendimento |
-| **Hora final** | ⚠️ Condicional | Obrigatória apenas se não escolher serviço |
-| **Observação** | 🔶 Opcional | Anotações internas |
+| Campo            | Obrigatório?   | O que fazer                                                                         |
+| ---------------- | -------------- | ----------------------------------------------------------------------------------- |
+| **Calendário**   | ✅ Sim          | Escolha em qual agenda criar                                                        |
+| **Profissional** | ✅ Sim          | Escolha quem vai atender (só aparecem os vinculados ao calendário)                  |
+| **Cliente**      | —              | **Já vem preenchido** com o contato do atendimento                                  |
+| **Serviço**      | 🔶 Opcional    | Escolha o que será feito — a hora final é calculada sozinha pela duração do serviço |
+| **Hora inicial** | ✅ Sim          | Data e hora do atendimento                                                          |
+| **Hora final**   | ⚠️ Condicional | Obrigatória apenas se não escolher serviço                                          |
+| **Observação**   | 🔶 Opcional    | Anotações internas                                                                  |
 
 5. Clique em **Salvar**.
 
 Aparece **"Agendamento criado com sucesso!"** e o agendamento entra na lista **Próximos** da aba. Se você tiver a tela da Agenda aberta em outro lugar, ele já aparece lá também — as duas telas se atualizam sozinhas.
 
 > 💡 **Vincular ao ticket:** o sistema registra que o agendamento foi criado a partir daquele atendimento, mantendo a relação entre conversa e agendamento.
-
-> **📸 Sugestão de print:** Formulário de agendamento aberto no Atendimento com o cliente já preenchido.
 
 ***
 
@@ -63,6 +63,8 @@ Clique em qualquer item das listas **Próximos** ou **Anteriores**:
 * Use **Excluir** 🗑️ para remover definitivamente (também com confirmação).
 
 > ⚠️ Botões de Cancelar/Excluir não aparecem para agendamentos **Concluídos** ou já **Cancelados**.
+
+<figure><img src="../../.gitbook/assets/editaragendamento.png" alt=""><figcaption></figcaption></figure>
 
 ***
 

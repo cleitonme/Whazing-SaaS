@@ -2,7 +2,7 @@
 
 Com a integração da **Recepção Inteligente** com a Agenda, a **IA passa a agendar de verdade** durante a conversa: ela consulta a **disponibilidade real** da sua agenda antes de responder — **nunca inventa horário** — e conduz a conversa de forma natural, entendendo profissional, serviço, data e horário direto da mensagem do cliente. Ela só confirma o agendamento depois de **revalidar** que o horário ainda está livre.
 
-A grande diferença para o [chatbot](agendamento-pelo-chatbot.md): aqui **não existe roteiro fixo**. O cliente escreve *"quero um corte com o João amanhã às 14h"* e a IA entende, confere a agenda e responde.
+A grande diferença para o [chatbot](agendamento-pelo-chatbot.md): aqui **não existe roteiro fixo**. O cliente escreve _"quero um corte com o João amanhã às 14h"_ e a IA entende, confere a agenda e responde.
 
 > ⚠️ **Antes de ativar:** a Agenda precisa estar configurada (calendário, serviços, profissionais e horários). Comece por [Antes de começar](antes-de-comecar.md) se necessário.
 
@@ -13,7 +13,7 @@ A grande diferença para o [chatbot](agendamento-pelo-chatbot.md): aqui **não e
 3. Abra a aba **Automação**.
 4. Expanda o card **"Agendamento pela IA"** (ícone de calendário).
 
-> **📸 Sugestão de print:** Card "Agendamento pela IA" na aba Automação.
+<figure><img src="../../.gitbook/assets/agendamentorecepcaointeligente.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -44,8 +44,8 @@ Acione a chave **"Permitir que a IA consulte a agenda e agende horários"**.
 
 Ajuste os termos que a IA usa ao falar com o cliente — útil quando "profissional" e "serviço" não combinam com o seu negócio:
 
-* **Em vez de "profissional"** — ex.: *médico*, *barbeiro*.
-* **Em vez de "serviço"** — ex.: *consulta*, *procedimento*.
+* **Em vez de "profissional"** — ex.: _médico_, _barbeiro_.
+* **Em vez de "serviço"** — ex.: _consulta_, _procedimento_.
 
 Deixando em branco, o sistema usa os termos padrão.
 
@@ -56,7 +56,7 @@ Deixando em branco, o sistema usa os termos padrão.
 ### 7. Cancelamento pela IA
 
 * Ligue **"Permitir que a IA consulte e cancele agendamentos do cliente"**.
-* Com ela ativa, o cliente pode pedir *"quero cancelar meu horário de amanhã"* e a IA localiza e cancela.
+* Com ela ativa, o cliente pode pedir _"quero cancelar meu horário de amanhã"_ e a IA localiza e cancela.
 * **"Mensagem quando o cancelamento falhar"** — enviada se o cancelamento não puder ser concluído no momento.
 
 ### 8. Opções avançadas (opcionais)
@@ -68,10 +68,10 @@ Deixando em branco, o sistema usa os termos padrão.
 
 ## 💬 Como fica a conversa do cliente
 
-* O cliente pede do jeito que quiser: *"tem horário com a Maria na quinta?"*
+* O cliente pede do jeito que quiser: _"tem horário com a Maria na quinta?"_
 * A IA **consulta a disponibilidade real** do dia e responde com opções que **existem**.
 * Cliente escolhe, a IA **revalida** o horário e **confirma o agendamento** — que cai na Agenda com o contato vinculado.
-* Para cancelar: *"quero cancelar a consulta de amanhã"* — a IA localiza o agendamento e cancela (se a opção estiver ativa).
+* Para cancelar: _"quero cancelar a consulta de amanhã"_ — a IA localiza o agendamento e cancela (se a opção estiver ativa).
 * O resto da conversa segue normal: transferência para fila, etiquetas, Kanban e as demais automações continuam funcionando.
 
 > 💡 **Requisitos e limites:** a integração usa o **calendário escolhido** na configuração. Profissionais e serviços marcados em "Selecionar" limitam o que a IA pode agendar; profissionais **desativados** e serviços **desativados** não entram. Se não existir horário na janela configurada, a IA avisa o cliente e segue a conversa.
@@ -83,5 +83,5 @@ Deixando em branco, o sistema usa os termos padrão.
 O agendamento feito pela IA é **idêntico** aos demais:
 
 * Aparece no **calendário** da Agenda (com o cliente vinculado).
-* Pode receber **[lembretes](lembretes.md)** com confirmação/cancelamento por palavra-chave.
+* Pode receber [**lembretes**](lembretes.md) com confirmação/cancelamento por palavra-chave.
 * Pode ser editado, remarcado ou cancelado pela equipe pelo painel ou pela [tela de Atendimento](agendamento-pelo-atendimento.md).
