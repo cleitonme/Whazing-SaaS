@@ -6,6 +6,8 @@ icon: message
 
 #### Mensagens
 
+> 💡 **Canais sem número de telefone** (como Instagram): os envios também podem usar o **número do ticket** (`ticketId`) no lugar do campo `number` — os exemplos abaixo mostram as duas formas.
+
 **1. Enviar Mensagem de Texto**
 
 * **Método**: POST
