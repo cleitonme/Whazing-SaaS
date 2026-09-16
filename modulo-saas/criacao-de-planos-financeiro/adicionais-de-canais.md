@@ -1,7 +1,3 @@
----
-icon: plus-circle
----
-
 # Canais Adicionais (venda aos seus clientes)
 
 Os **Canais Adicionais** são uma forma de você, **dono do SaaS**, vender canais extras aos **seus clientes** sem precisar mudar o plano deles.
@@ -20,7 +16,7 @@ O fluxo tem duas pontas — e as duas são suas:
 
 **Você (dono do SaaS) — configura a oferta:**
 
-* cria os adicionais de canal que quiser vender (isso é feito na página **[🛒 Adicionais](adicionais.md)**);
+* cria os adicionais de canal que quiser vender (isso é feito na página [**🛒 Adicionais**](adicionais.md));
 * define o **tipo** de cada adicional (WhatsApp Plus, WhatsApp Oficial, Instagram, Facebook ou canais em geral);
 * define o **valor** de cada um;
 * escolhe em quais planos o adicional fica disponível;
@@ -71,8 +67,6 @@ O caminho mais comum de contratação é **direto na tela de Canais**, quando o 
 
 No menu, acesse **Canais** e clique no botão de **adicionar novo canal**.
 
-> **📸 Sugestão de print:** tela de Canais com o botão de adicionar novo canal em destaque.
-
 ### 2. Escolha o canal no catálogo
 
 A tela **"Escolha o canal que deseja conectar"** mostra os canais disponíveis: WhatsApp, Instagram, Facebook e outros.
@@ -83,14 +77,14 @@ Ao escolher uma categoria, você verá as opções de conexão — por exemplo, 
 
 Cada canal mostra uma informação sobre a disponibilidade no seu plano:
 
-| Selo na tela | O que significa |
-|---|---|
-| Botão **"Usar este canal"** (sem aviso) | O canal está disponível dentro do plano do cliente. Conecta sem custo extra |
-| **"Adicionar por R$ X/mês"** | O limite para este tipo acabou, mas existe adicional disponível — clicando, o sistema oferece a contratação na hora |
-| **"É necessário aumentar seu limite de canais"** | O limite geral de canais do plano acabou. A contratação também é oferecida no clique |
-| **"Não disponível no seu plano"** | Este tipo de canal não foi disponibilizado no plano — nesse caso, o cliente procura o suporte |
+| Selo na tela                                     | O que significa                                                                                                     |
+| ------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------- |
+| Botão **"Usar este canal"** (sem aviso)          | O canal está disponível dentro do plano do cliente. Conecta sem custo extra                                         |
+| **"Adicionar por R$ X/mês"**                     | O limite para este tipo acabou, mas existe adicional disponível — clicando, o sistema oferece a contratação na hora |
+| **"É necessário aumentar seu limite de canais"** | O limite geral de canais do plano acabou. A contratação também é oferecida no clique                                |
+| **"Não disponível no seu plano"**                | Este tipo de canal não foi disponibilizado no plano — nesse caso, o cliente procura o suporte                       |
 
-> **📸 Sugestão de print:** catálogo de canais mostrando o selo "Adicionar por R$ X/mês" em um dos canais.
+<figure><img src="../../.gitbook/assets/whatsappadicional.png" alt=""><figcaption></figcaption></figure>
 
 ### 4. Clique em "Usar este canal"
 
@@ -112,8 +106,6 @@ Quando a contratação é necessária, o sistema mostra a tela **"Você atingiu 
 * **"Próxima renovação: R$ X"** — o valor cheio a partir da próxima renovação.
 
 Em seguida, ele clica em **"Continuar para pagamento"** e **"Confirmar compra"** — e a cobrança é gerada **no seu financeiro**, pelo gateway de pagamento que você configurou no sistema.
-
-> **📸 Sugestão de print:** tela "Liberar canal" com o total mensal e o botão "Continuar para pagamento".
 
 ### 📱 Formas de pagamento
 
@@ -182,14 +174,14 @@ O cliente também pode contratar **antes** de adicionar o canal — ou contratar
 Além da contratação durante a adição do canal, existe uma área própria onde o cliente contrata canais:
 
 1. O cliente acessa o menu **Financeiro**.
-2. Localiza a seção **"Canais adicionais"** — com a descrição *"Adicione mais canais ao seu plano quando precisar."*
+2. Localiza a seção **"Canais adicionais"** — com a descrição _"Adicione mais canais ao seu plano quando precisar."_
 3. Cada tipo de canal aparece em um card com:
    * O **preço por canal** (no formato **"R$ X / canal / mês"**) — o valor que **você definiu**;
    * A mensagem **"Seu plano permite {canal}."**;
    * A quantidade já contratada, quando houver — **"{quantidade} canal(is) contratado(s) — R$ X/mês"**.
 4. Ele clica em **"+ Adicionar canal"** no card do tipo desejado e segue a tela de confirmação e pagamento.
 
-> **📸 Sugestão de print:** seção "Canais adicionais" do Financeiro com os cards por tipo de canal.
+<figure><img src="../../.gitbook/assets/mensalidadecanais.png" alt=""><figcaption></figcaption></figure>
 
 > 💡 Os cards só aparecem para os tipos de canal que **você disponibilizou** para o plano do cliente — nada de opções que não funcionariam.
 
@@ -202,7 +194,7 @@ Além da contratação durante a adição do canal, existe uma área própria on
 Você criou um adicional do tipo **WhatsApp Oficial (WABA)** com o valor que definiu. A empresa cliente já usa os 3 canais do plano e quer conectar um **WhatsApp Oficial**.
 
 1. Em **Canais**, eles clicam em adicionar novo canal e escolhem **WhatsApp**.
-2. Selecionam **WhatsApp Oficial**. O card mostra **"Adicionar por R$ 49,90/mês"** *(valor de exemplo — o real é o que você cadastrou no adicional)*.
+2. Selecionam **WhatsApp Oficial**. O card mostra **"Adicionar por R$ 49,90/mês"** _(valor de exemplo — o real é o que você cadastrou no adicional)_.
 3. Ao clicar em **"Usar este canal"**, aparece a tela **"Liberar canal"** com o total e o valor proporcional do dia.
 4. Após **"Continuar para pagamento"** e o PIX, o adicional é liberado conforme a configuração que você definiu (na hora ou após o pagamento).
 5. A configuração do WhatsApp Oficial continua automaticamente — e o valor entra no **seu financeiro**. 🎉
@@ -217,7 +209,7 @@ O plano acabou **no geral** e também **no tipo WhatsApp Plus**. Ao tentar adici
 
 ### "Aparece 'Não disponível no seu plano'"
 
-Esse tipo de canal não foi disponibilizado no plano do cliente. Se você quer vender esse tipo, crie o adicional correspondente (página **[🛒 Adicionais](adicionais.md)**) e verifique se o plano dele tem o tipo habilitado com **"Ativar limite de canais por tipo"** ligado.
+Esse tipo de canal não foi disponibilizado no plano do cliente. Se você quer vender esse tipo, crie o adicional correspondente (página [**🛒 Adicionais**](adicionais.md)) e verifique se o plano dele tem o tipo habilitado com **"Ativar limite de canais por tipo"** ligado.
 
 ### "Não aparece a seção 'Canais adicionais' no Financeiro do cliente"
 
@@ -241,34 +233,45 @@ Ele repete a contratação pelo **Financeiro → Canais adicionais** (um clique 
 ## ❓ Perguntas frequentes
 
 #### Onde eu crio os adicionais de canal?
-Na página **[🛒 Adicionais](adicionais.md)**, aqui no módulo **Criação de Planos - Financeiro**. Você escolhe o tipo de canal, define o valor mensal e seleciona os planos em que ele fica disponível.
+
+Na página [**🛒 Adicionais**](adicionais.md), aqui no módulo **Criação de Planos - Financeiro**. Você escolhe o tipo de canal, define o valor mensal e seleciona os planos em que ele fica disponível.
 
 #### Quem define os preços dos canais adicionais?
+
 **Você.** Cada adicional tem o valor que você cadastrar. Por isso a oferta é sua — o preço que o cliente vê é o que aparece na tela de contratação.
 
 #### O Whazing vende canais direto para o meu cliente?
+
 Não. O Whazing fornece a estrutura para **você** criar e vender os adicionais aos seus clientes. A oferta, o preço e a cobrança são seus.
 
 #### O valor do canal adicional é igual para todos os tipos?
+
 Não precisa ser. **WhatsApp Plus**, **WhatsApp Oficial (WABA)**, **Instagram** e **Facebook** podem ter preços diferentes entre si — definidos por você. O preço de cada tipo aparece sempre na tela antes de o cliente confirmar.
 
 #### O que é o valor "pró-rata"?
+
 É a parte proporcional que o cliente paga pelo período atual. Se contratar no meio do mês, paga apenas os dias restantes. Na próxima renovação, o valor cheio entra na fatura.
 
 #### O cliente consegue usar o canal na hora da compra?
+
 Depende do campo **"Exigir pagamento antes de liberar"** do adicional. Se **desligado**, o canal fica disponível imediatamente e o pagamento é finalizado depois. Se **ligado**, a liberação acontece assim que o pagamento for confirmado.
 
 #### O cliente precisa pedir liberação ao suporte?
+
 Não. A contratação é feita por ele mesmo, dentro do sistema, para os adicionais que você disponibilizou. O suporte só é necessário nos casos de canal "Não disponível no seu plano".
 
 #### E se o cliente já tiver uma fatura em aberto desse adicional?
+
 O sistema reabre **a mesma fatura** para pagamento — não cria uma nova.
 
 #### O cliente pode contratar pelo Financeiro em vez de esperar o limite estourar?
+
 Sim. A seção **"Canais adicionais"** do **Financeiro** permite contratar a qualquer momento, mostrando preço por canal e o que já está contratado.
 
 #### O adicional aparece na mesma fatura do plano?
+
 Sim, o valor mensal do adicional entra junto com a cobrança recorrente do sistema.
 
 #### O que acontece se o cliente não pagar?
+
 Enquanto a fatura estiver em aberto, o acesso ao adicional segue o campo **"Exigir pagamento antes de liberar"**: nos adicionais com liberação imediata, o pagamento precisa ser finalizado para manter o acesso.

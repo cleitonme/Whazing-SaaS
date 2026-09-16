@@ -78,7 +78,7 @@ Entre os exemplos estão:
 
 Cada tipo possui uma finalidade diferente.
 
-> 💡 **Novidade:** além dos tipos listados acima, existem os **adicionais específicos por tipo de canal** — **WhatsApp Plus**, **WhatsApp Oficial (WABA)**, **Instagram** e **Facebook** — que permitem cobrar valores diferentes por tipo. Veja a seção [📱 Adicionais por tipo de canal](#adicionais-por-tipo-de-canal) mais abaixo.
+> 💡 **Novidade:** além dos tipos listados acima, existem os **adicionais específicos por tipo de canal** — **WhatsApp Plus**, **WhatsApp Oficial (WABA)**, **Instagram** e **Facebook** — que permitem cobrar valores diferentes por tipo. Veja a seção [📱 Adicionais por tipo de canal](adicionais.md#adicionais-por-tipo-de-canal) mais abaixo.
 
 ***
 
@@ -138,7 +138,7 @@ Novo limite:
 
 **3 canais**
 
-> 💡 Este é o adicional **genérico** de canais. Para vender canais com **valores diferentes por tipo** (WhatsApp Plus, WhatsApp Oficial, Instagram, Facebook), veja a seção [📱 Adicionais por tipo de canal](#adicionais-por-tipo-de-canal) abaixo.
+> 💡 Este é o adicional **genérico** de canais. Para vender canais com **valores diferentes por tipo** (WhatsApp Plus, WhatsApp Oficial, Instagram, Facebook), veja a seção [📱 Adicionais por tipo de canal](adicionais.md#adicionais-por-tipo-de-canal) abaixo.
 
 ***
 
@@ -159,7 +159,7 @@ O pagamento acontece no próprio fluxo — **PIX** (QR Code ou copiar e colar), 
 
 > 🎬 O guia completo do cliente, com o passo a passo das telas, está em:
 >
-> **[Canais Adicionais (venda aos seus clientes)](adicionais-de-canais.md)**
+> [**Canais Adicionais (venda aos seus clientes)**](adicionais-de-canais.md)
 
 <figure><img src="../../.gitbook/assets/compracanal.png" alt=""><figcaption></figcaption></figure>
 
@@ -178,7 +178,7 @@ Além do adicional genérico de **Canais**, o sistema permite criar adicionais *
 
 > 💡 **É a sua venda:** o adicional é criado no seu Painel SaaS, com o seu preço, e a cobrança entra no seu financeiro. O cliente contrata o que **você** disponibilizou.
 
-> **📸 Sugestão de print:** tela de criação de adicional mostrando a escolha do tipo de canal e o valor mensal.
+<figure><img src="../../.gitbook/assets/whatsappadicional.png" alt=""><figcaption></figcaption></figure>
 
 ### 🏷️ Como criar
 
@@ -186,7 +186,7 @@ O caminho é o mesmo de qualquer adicional (**Painel SaaS → Comercial → Adic
 
 Ao escolher um tipo de canal, o sistema mostra a dica na própria tela:
 
-> *"Este adicional libera canais extras somente deste tipo. Só terá efeito em planos com esse tipo de canal habilitado e 'Ativar limite de canais por tipo' ligado — mesmo que a quantidade inclusa seja 0. Caso contrário, use o adicional geral de Canais."*
+> _"Este adicional libera canais extras somente deste tipo. Só terá efeito em planos com esse tipo de canal habilitado e 'Ativar limite de canais por tipo' ligado — mesmo que a quantidade inclusa seja 0. Caso contrário, use o adicional geral de Canais."_
 
 ### ⚠️ Requisito no plano
 
@@ -197,7 +197,7 @@ Para o adicional de um tipo de canal funcionar, o plano da empresa precisa de **
 
 Se faltar um dos dois, o sistema **avisa na criação do adicional**:
 
-> *"Este adicional não terá efeito nos planos selecionados a seguir, pois eles não têm este tipo de canal habilitado ou não têm 'Ativar limite de canais por tipo' ligado: {planos}."*
+> _"Este adicional não terá efeito nos planos selecionados a seguir, pois eles não têm este tipo de canal habilitado ou não têm 'Ativar limite de canais por tipo' ligado: {planos}."_
 
 > 💡 **Quantidade inclusa = 0 é um valor válido!** Significa que o plano não inclui nenhum canal daquele tipo de graça — o cliente compra todos por adicional. Isso é um modelo comum para vender, por exemplo, WhatsApp Oficial sempre como adicional.
 
@@ -213,7 +213,7 @@ Detalhes que valem destacar:
 
 O passo a passo completo das telas do cliente está em:
 
-**[Canais Adicionais (venda aos seus clientes)](adicionais-de-canais.md)**
+[**Canais Adicionais (venda aos seus clientes)**](adicionais-de-canais.md)
 
 ***
 
