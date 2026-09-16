@@ -14,7 +14,7 @@ As APIs não oficiais conectam seu WhatsApp ao sistema **sem custo por mensagem*
 | ----------------------------------------------------- | ------------------------------------------------------------------------------ | ---------------------------------------------------------------------------------------------------- |
 | [**WhatsApp WuzAPI (WhatsMeow)**](whatsapp-wuzapi.md) | Conexão leve e estável, recomendada para novas instalações                     | **Recomendada para começar** — boa estabilidade e sem custo por canal                                |
 | [**WhatsApp API PLUS**](whatsapp_api_plus/)           | API não oficial **Premium**, com recursos extras (botões, listas, localização) | Quando você precisa de recursos interativos e mais estabilidade (exige token pago e licença Premium) |
-| **Baileys**                                           | Conexão básica, mais antiga                                                    | Não recomendada — o Whazing sugere usar a WuzAPI no lugar                                            |
+| **Baileys**                                           | Conexão básica, mais antiga                                                    | **Descontinuada — vem desativada por padrão.** Somente em últimos casos: ativação via arquivo `.env` do servidor (veja [Canais Suportados](../README.md)) |
 
 ## 🔁 Posso trocar de API depois?
 
