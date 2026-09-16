@@ -28,7 +28,7 @@ Conexão do WhatsApp feita pela **Meta** (empresa dona do WhatsApp). É a forma 
 
 ### API Não Oficial
 
-Conexão do WhatsApp feita por meios alternativos (ex.: WuzAPI, API PLUS, Baileys). Não tem custo por mensagem, mas pode ter instabilidade — por isso o Whazing recomenda usar o WhatsApp Business e seguir as boas práticas da documentação.
+Conexão do WhatsApp feita por meios alternativos (ex.: WuzAPI, API PLUS, Baileys — este último **descontinuado**). Não tem custo por mensagem, mas pode ter instabilidade — por isso o Whazing recomenda usar o WhatsApp Business e seguir as boas práticas da documentação.
 
 ### WABA
 
