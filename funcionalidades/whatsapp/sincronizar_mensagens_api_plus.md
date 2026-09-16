@@ -2,7 +2,7 @@
 icon: arrows-rotate
 ---
 
-# 🔄 Sincronizar Mensagens — API Plus e WuzAPI
+# Sincronizar Mensagens (API PLUS / WuzApi)
 
 ## O que é sincronizar mensagens?
 
@@ -14,7 +14,7 @@ Ela é útil quando você precisa trazer para o sistema conversas que acontecera
 >
 > A sincronização depende das mensagens que ainda estão disponíveis no servidor da API. Se uma mensagem não estiver mais disponível, ela não poderá ser importada.
 
----
+***
 
 ## ✅ Quem pode usar
 
@@ -28,19 +28,17 @@ Caso o plano não tenha o recurso, o sistema informa:
 
 > **"A sincronização de mensagens não está disponível no seu plano atual."**
 
----
+***
 
 ## 📍 Onde encontrar a sincronização
 
-1. Acesse **Configurações**.
+1. Acesse **Cadastro**.
 2. Entre em **Canais**.
 3. Localize o canal **API Plus** ou **WuzAPI**.
-4. Clique no menu de opções do canal, representado pelos **três pontinhos**.
+4. Clique em **Ferramentas**.
 5. Selecione **Sincronizar Mensagens**.
 
-> 📸 **Sugestão de print:** mostrar o menu do canal com a opção **Sincronizar Mensagens** destacada.
-
----
+***
 
 ## 📅 Escolhendo o período
 
@@ -55,14 +53,15 @@ O período máximo permitido é de **30 dias** por sincronização.
 
 Por exemplo:
 
-**Data inicial:** 01/09/2026
-**Data final:** 30/09/2026
+**Data inicial:** 01/09/2026 **Data final:** 30/09/2026
 
 Nesse caso, o sistema buscará as mensagens disponíveis dentro desse período.
 
 > ⚠️ Se precisar importar um período maior que 30 dias, será necessário realizar mais de uma sincronização.
 
----
+<figure><img src="../../.gitbook/assets/sincronizamensagen.png" alt=""><figcaption></figcaption></figure>
+
+***
 
 ## ⚠️ Regras das datas
 
@@ -76,7 +75,7 @@ O sistema verifica as datas antes de iniciar o processo.
 
 Corrija as datas para conseguir iniciar a sincronização.
 
----
+***
 
 ## 🚀 Como iniciar
 
@@ -89,7 +88,7 @@ Depois de escolher a **Data inicial** e a **Data final**:
 
 > ⚠️ A sincronização pode levar algum tempo, principalmente quando existem muitos contatos e mensagens no período selecionado.
 
----
+***
 
 ## 📊 Acompanhando o progresso
 
@@ -115,7 +114,7 @@ Dessa forma, você consegue acompanhar o processo sem precisar ficar verificando
 
 > 📸 **Sugestão de print:** mostrar uma sincronização em andamento com os contatos e mensagens processadas.
 
----
+***
 
 ## 🔄 Status da sincronização
 
@@ -145,7 +144,7 @@ A sincronização foi interrompida pelo usuário.
 
 Ocorreu algum problema durante o processo.
 
----
+***
 
 ## ⏸️ Pausar uma sincronização
 
@@ -157,7 +156,7 @@ Ao pausar:
 * As mensagens que já foram importadas permanecem no sistema.
 * A sincronização poderá ser continuada posteriormente.
 
----
+***
 
 ## ▶️ Continuar uma sincronização
 
@@ -167,7 +166,7 @@ O sistema retoma o processamento da sincronização.
 
 Não é necessário criar uma nova sincronização para continuar o processo pausado.
 
----
+***
 
 ## ❌ Cancelar uma sincronização
 
@@ -177,7 +176,7 @@ Se não quiser continuar o processo, utilize a opção **Cancelar sincronizaçã
 
 O cancelamento interrompe o restante do processo.
 
----
+***
 
 ## 🕘 Histórico de sincronizações
 
@@ -203,9 +202,7 @@ Caso nenhuma sincronização tenha sido realizada, o sistema informa:
 
 > **"Nenhuma sincronização realizada ainda."**
 
-> 📸 **Sugestão de print:** mostrar a área de **Histórico de sincronizações** com alguns registros.
-
----
+***
 
 ## ⚠️ Informações importantes
 
@@ -235,7 +232,7 @@ O tempo depende principalmente da quantidade de contatos e mensagens encontradas
 
 Quanto maior a quantidade de dados, maior poderá ser o tempo necessário para concluir o processo.
 
----
+***
 
 ## 🆘 Problemas comuns
 
@@ -247,7 +244,7 @@ Verifique:
 * Se o canal está conectado.
 * Se o seu plano possui o recurso **Importar Mensagens**.
 
----
+***
 
 ### O sistema informa que o recurso não está disponível no meu plano
 
@@ -255,7 +252,7 @@ Isso significa que o plano utilizado não possui o recurso **Importar Mensagens*
 
 Nesse caso, é necessário verificar com o administrador do sistema ou responsável pelo plano a disponibilidade desse recurso.
 
----
+***
 
 ### Poucas mensagens foram importadas
 
@@ -265,7 +262,7 @@ A sincronização busca somente as mensagens disponíveis dentro das datas infor
 
 Também pode acontecer de parte das mensagens não estar mais disponível no servidor da API.
 
----
+***
 
 ### Nenhuma mensagem foi importada
 
@@ -278,7 +275,7 @@ Verifique:
 
 Se o processo aparecer como **Erro**, tente realizar uma nova sincronização.
 
----
+***
 
 ### A sincronização está demorando
 
@@ -288,7 +285,7 @@ Acompanhe o **Progresso da sincronização**.
 
 Se necessário, você pode **pausar** o processo e continuar posteriormente.
 
----
+***
 
 ### Apareceu um erro ao consultar o progresso
 
@@ -296,7 +293,7 @@ Pode ser uma falha momentânea de comunicação.
 
 Aguarde alguns instantes e abra novamente a tela de sincronização para verificar o andamento.
 
----
+***
 
 ## 💡 Exemplo prático
 
@@ -308,8 +305,7 @@ Ela acessa:
 
 Depois seleciona:
 
-**Data inicial:** 01/09/2026
-**Data final:** 15/09/2026
+**Data inicial:** 01/09/2026 **Data final:** 15/09/2026
 
 Em seguida, clica em **Iniciar sincronização**.
 
@@ -319,7 +315,7 @@ Durante o processo, é possível acompanhar os contatos e mensagens processadas.
 
 Depois que terminar, o processo ficará registrado no **Histórico de sincronizações**.
 
----
+***
 
 ## ❓ Perguntas frequentes
 
@@ -329,7 +325,7 @@ Não.
 
 A sincronização é utilizada para buscar mensagens antigas que ainda estejam disponíveis no servidor da API.
 
----
+***
 
 ### Posso escolher qualquer período?
 
@@ -337,7 +333,7 @@ Você pode escolher o período desejado desde que ele respeite as regras do sist
 
 O limite é de **30 dias por sincronização** e a data final não pode estar no futuro.
 
----
+***
 
 ### Posso sincronizar mais de 30 dias?
 
@@ -349,7 +345,7 @@ Por exemplo:
 * 31/07 a 29/08
 * 30/08 a 28/09
 
----
+***
 
 ### Se eu pausar, as mensagens já importadas são perdidas?
 
@@ -357,7 +353,7 @@ Não.
 
 As mensagens que já foram importadas permanecem salvas no sistema.
 
----
+***
 
 ### Se eu cancelar, as mensagens já importadas são perdidas?
 
@@ -365,13 +361,13 @@ Não.
 
 O cancelamento interrompe o restante do processo, mas o que já foi importado permanece salvo.
 
----
+***
 
 ### A sincronização funciona em API Plus e WuzAPI?
 
 Sim. O recurso está disponível para os canais **API Plus** e **WuzAPI**.
 
----
+***
 
 ## ✅ Resumo rápido
 
