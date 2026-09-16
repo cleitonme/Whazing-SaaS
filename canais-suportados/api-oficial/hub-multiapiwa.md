@@ -1,7 +1,3 @@
----
-icon: hub
----
-
 # Hub MultiAPIWA (conexão integrada)
 
 O **Hub MultiAPIWA** é a forma mais simples de conectar o **WhatsApp Oficial (API Oficial / WABA)** ao Whazing.
@@ -22,13 +18,13 @@ Pense no Hub como um **atalho inteligente** para conectar canais oficiais.
 
 Para usar a API Oficial do WhatsApp, o sistema precisa de uma "ponte" entre o seu número e o Whazing. Existem duas formas de criar essa ponte:
 
-| | **App próprio** (forma tradicional) | **Hub MultiAPIWA** |
-|---|---|---|
-| Cadastro de aplicativo na Meta | ✅ Necessário (feito pelo administrador) | ❌ Desnecessário |
-| Preencher ID do app, chave secreta etc. | ✅ Necessário | ❌ Desnecessário |
-| Copiar tokens e configurar webhook | ✅ Necessário | ❌ Automático |
-| Tela de conexão | Configurações técnicas em vários lugares | **Dentro do Whazing, em poucos cliques** |
-| Cobrança | Sem cobrança extra por ponte | **R$ 25,00/mês por canal** |
+|                                         | **App próprio** (forma tradicional)      | **Hub MultiAPIWA**                       |
+| --------------------------------------- | ---------------------------------------- | ---------------------------------------- |
+| Cadastro de aplicativo na Meta          | ✅ Necessário (feito pelo administrador)  | ❌ Desnecessário                          |
+| Preencher ID do app, chave secreta etc. | ✅ Necessário                             | ❌ Desnecessário                          |
+| Copiar tokens e configurar webhook      | ✅ Necessário                             | ❌ Automático                             |
+| Tela de conexão                         | Configurações técnicas em vários lugares | **Dentro do Whazing, em poucos cliques** |
+| Cobrança                                | Sem cobrança extra por ponte             | **R$ 25,00/mês por canal**               |
 
 Em resumo: **com o Hub, o Whazing faz o trabalho técnico por você.**
 
@@ -66,8 +62,6 @@ O processo acontece **inteiramente dentro do Whazing**. Siga o passo a passo:
 
 No menu do Whazing, acesse **Canais** e clique em **Adicionar Canal** (ou no botão de adicionar novo canal).
 
-> **📸 Sugestão de print:** tela de Canais mostrando o botão de adicionar novo canal.
-
 ### 2. Escolha o tipo "WhatsApp Oficial"
 
 Na lista de tipos de canal, selecione **WhatsApp Oficial** (também conhecido como WABA). É a conexão oficial do WhatsApp, indicada para empresas que buscam maior estabilidade e conformidade com as regras da Meta.
@@ -75,8 +69,6 @@ Na lista de tipos de canal, selecione **WhatsApp Oficial** (também conhecido co
 ### 3. Clique em "Conectar WABA"
 
 Aparecerá o botão **Conectar WABA**. Ao clicar nele, o Whazing abre a tela de conexão.
-
-> **📸 Sugestão de print:** botão "Conectar WABA" exibido ao selecionar o tipo WhatsApp Oficial.
 
 ### 4. Inicie a conexão com a Meta
 
@@ -88,8 +80,6 @@ Na tela **Conectar WhatsApp Business**, você verá:
 Clique em **Conectar WhatsApp**. Uma janela da Meta (Facebook) será aberta para você fazer login e autorizar a conexão.
 
 > 💡 **Dica:** se a janela não abrir, seu navegador pode estar bloqueando janelas extras (pop-ups). Permita os pop-ups para o site do Whazing e tente novamente. Se você usa **Firefox**, a própria tela mostra um passo a passo para liberar a conexão.
-
-> **📸 Sugestão de print:** tela "Conectar WhatsApp Business" com o botão "Conectar WhatsApp".
 
 ### 5. Faça login na Meta e siga as etapas
 
@@ -176,33 +166,20 @@ Se um canal for conectado ou desconectado **no meio do mês**, a cobrança é **
 
 ***
 
-## ➕ O canal pode ter cobrança adicional?
-
-Sim. Além da mensalidade do Hub, existem os **adicionais de canal**. Funciona assim:
-
-* Cada plano do Whazing inclui uma **quantidade de canais**. Quando essa quantidade acaba, é possível **comprar canais extras** (adicionais).
-* Alguns tipos de canal podem ter **valores adicionais diferentes** — por exemplo, um valor por canal/mês específico para WhatsApp Oficial e outro para os demais tipos.
-* Quando o limite do plano é atingido e você tenta adicionar um novo canal, o sistema mostra a tela **"Você atingiu o limite do seu plano"** com a opção **"Liberar canal"**. Nela aparecem os adicionais disponíveis, o preço por canal (no formato **"R$ valor / canal / mês"**), o **"Total: R$ valor/mês"**, o valor de hoje proporcional (**pró-rata**) e o da próxima renovação.
-* Após **"Continuar para pagamento"** e **"Confirmar compra"**, o adicional é ativado e o novo canal pode ser cadastrado.
-
-> 💡 **Resumindo:** o adicional serve para **aumentar a quantidade de canais do plano**. A mensalidade do Hub (R$ 25,00 por canal) é pela **ponte de conexão integrada**. Dependendo da configuração, as duas cobranças podem aparecer juntas.
-
-***
-
 ## 🖥️ Painel do Hub: o que você encontra lá
 
 O painel do Hub é um site simples, acessado com o **usuário e senha** do cliente (recebidos quando o acesso é liberado). Ele serve para acompanhar e gerenciar seus canais e cobranças. No menu lateral você encontra:
 
-| Área | O que você vê lá |
-|---|---|
-| 🏠 **Início** | Visão geral da sua conta |
-| 🔗 **Meus canais** | Lista dos canais oficiais conectados, com número, situação e valor mensal. É aqui que você pode **Desconectar** um canal (com confirmação) |
-| 🩺 **Saúde dos números** | Qualidade e status que a Meta informa sobre os seus números WhatsApp |
-| 🧾 **Faturas** | Suas cobranças, com vencimento, valor e situação. É onde você **paga** as faturas |
-| 💳 **Pagamentos** | Histórico dos pagamentos realizados, com recibos |
-| ⚡ **Atividade** | Registro dos eventos da conta |
-| 👤 **Minha conta** | Seus dados de acesso |
-| ❓ **Ajuda** | Suporte |
+| Área                     | O que você vê lá                                                                                                                           |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| 🏠 **Início**            | Visão geral da sua conta                                                                                                                   |
+| 🔗 **Meus canais**       | Lista dos canais oficiais conectados, com número, situação e valor mensal. É aqui que você pode **Desconectar** um canal (com confirmação) |
+| 🩺 **Saúde dos números** | Qualidade e status que a Meta informa sobre os seus números WhatsApp                                                                       |
+| 🧾 **Faturas**           | Suas cobranças, com vencimento, valor e situação. É onde você **paga** as faturas                                                          |
+| 💳 **Pagamentos**        | Histórico dos pagamentos realizados, com recibos                                                                                           |
+| ⚡ **Atividade**          | Registro dos eventos da conta                                                                                                              |
+| 👤 **Minha conta**       | Seus dados de acesso                                                                                                                       |
+| ❓ **Ajuda**              | Suporte                                                                                                                                    |
 
 No Whazing, o administrador também encontra uma página de acompanhamento do Hub em **Central de Configurações → Atendimento → MultiAPIWA (Hub Meta)**, com o **status da cobrança** (Em dia / Em carência / Bloqueado, valor em aberto e link para pagamento) e a tabela **"Canais conectados pelo Hub"**.
 
@@ -224,8 +201,6 @@ O cancelamento é feito **manualmente, pelo painel do Hub**:
 * O canal desconectado continua aparecendo na lista, marcado como desconectado — há uma opção **"Mostrar desconectados"** para exibi-los ou ocultá-los.
 
 > ⚠️ **Atenção:** desconectar o canal no painel do Hub também **interrompe o atendimento** por aquele número no Whazing. Se a intenção é apenas parar de usar o Hub, mas manter o número conectado, fale com o suporte sobre as outras formas de conexão.
-
-> **📸 Sugestão de print:** tela "Meus canais" do painel do Hub, mostrando o botão "Desconectar".
 
 ***
 
@@ -256,33 +231,43 @@ Significa que há **fatura do Hub em aberto**. Regularize o pagamento até a dat
 ## ❓ Perguntas frequentes
 
 #### O que é o Hub MultiAPIWA?
+
 É a integração que permite conectar o WhatsApp Oficial ao Whazing **sem configurações técnicas** — a conexão acontece dentro do próprio sistema, em poucos cliques.
 
 #### Preciso criar um Chatbot para usar o Hub?
+
 Não. O Hub não tem relação com Chatbot; ele é apenas a **forma de conexão** do canal.
 
 #### Preciso informar token ou webhook?
+
 **Não.** O Whazing faz a conexão automaticamente. Você só faz login na Meta e autoriza.
 
 #### O Hub é obrigatório?
+
 Não. Ele é **opcional por tipo de canal** — o administrador escolhe se o WhatsApp Oficial (e futuramente Facebook e Instagram) usará o Hub ou a conexão tradicional.
 
 #### Quanto custa?
+
 **R$ 25,00 por mês, por canal conectado**, cobrados separadamente do Whazing. A fatura é gerada todo dia 01, com pagamento até o dia 10.
 
 #### Vou pagar R$ 25,00 mesmo conectando no meio do mês?
+
 Não. A cobrança é **proporcional aos dias utilizados**, com mínimo de **R$ 10,00 por canal**.
 
 #### A cobrança do Hub inclui as cobranças da Meta?
+
 Não. A Meta cobra separadamente pelas mensagens da API Oficial. O valor do Hub é apenas pela ponte de conexão integrada.
 
 #### Posso cancelar um canal quando quiser?
+
 Sim. Basta acessar o **painel do Hub → Meus canais → Desconectar**. O período utilizado é cobrado proporcionalmente.
 
 #### Quais canais o Hub suporta hoje?
+
 Atualmente, apenas o **WhatsApp Oficial (WABA)**. Facebook e Instagram estão previstos para o futuro.
 
 #### Continuo usando o WhatsApp no celular?
+
 Sim, quando estiver usando a **Coexistência (Coex)**. O Hub é compatível com esse modo.
 
 ***
