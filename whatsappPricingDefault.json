@@ -7,6 +7,11 @@
     "monthlyFeeBrl": 0,
     "perMessageFeeBrl": 0
   },
+  "franchise": {
+    "freeMessagesPerChannel": 1000,
+    "effectiveFrom": "2026-10-01",
+    "note": "Franquia gratuita concedida pela Meta/WhatsApp: 1000 mensagens gratis por numero conectado/mes nos canais oficiais."
+  },
   "markets": {
     "BR": {
       "name": "Brasil",
