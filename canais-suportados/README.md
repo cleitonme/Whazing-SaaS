@@ -24,11 +24,29 @@ São opções de conexão sem custo adicional por canal.
 * Sem custo por canal.
 * Boa alternativa para instalações que desejam utilizar WhatsApp sem API oficial.
 
-#### WhatsApp Baileys (desativada por padrão)
+#### WhatsApp Baileys (descontinuado)
 
-* WhatsApp API não oficial.
-* **Não recomendamos o uso do Baileys.**
-* Para novas instalações, recomendamos utilizar o **WuzAPI (WhatsMeow)**.
+* WhatsApp API não oficial **antiga, que foi descontinuada**.
+* **Vem desativada por padrão** nas instalações atuais.
+* **Não recomendamos o uso do Baileys.** Para novas instalações, utilize o **WuzAPI (WhatsMeow)**.
+
+##### Como ativar (somente se você realmente precisar)
+
+Em últimos casos, quem quiser manter o Baileys pode reativá-lo na configuração do servidor:
+
+1. Abra o arquivo **`.env`** do backend (arquivo de configuração da instalação);
+2. Adicione a linha:
+
+```
+# Baileys vem desativado por padrao. Definir =true pra habilitar.
+BAILEYS_ENABLED=true
+```
+
+3. **Reinicie** o sistema;
+4. No **Painel SaaS**, acesse a tela de **Canais Disponíveis** — aparecerá o botão **"Whatsapp Baileys (recomendado desativar)"** (o próprio nome já avisa que o ideal é mantê-lo desligado);
+5. Ligue o botão — o canal Baileys volta a aparecer no **catálogo de canais** para os clientes (o plano da empresa também precisa ter o Baileys habilitado).
+
+> **📸 Sugestão de print:** tela "Canais Disponíveis" do Painel SaaS mostrando o botão "Whatsapp Baileys (recomendado desativar)".
 
 #### Telegram
 
@@ -331,7 +349,7 @@ Para reduzir o consumo, diminua o tamanho da mensagem.
 | Canal                           | Tipo                | Custo / cobrança               | Principais recursos                             |
 | ------------------------------- | ------------------- | ------------------------------ | ----------------------------------------------- |
 | **WhatsApp WuzAPI / WhatsMeow** | Não oficial         | Gratuito                       | WhatsApp, mensagens e atendimento               |
-| **WhatsApp Baileys**            | Não oficial         | Gratuito                       | WhatsApp básico                                 |
+| **WhatsApp Baileys**            | Não oficial         | Gratuito                       | Descontinuado — desativado por padrão           |
 | **Telegram**                    | Não oficial         | Gratuito                       | Atendimento via Telegram                        |
 | **WhatsApp API PLUS**           | Não oficial Premium | Paga                           | Botões, listas, links e localização             |
 | **Hub NotificaMe**              | Oficial / HUB       | Conforme canal                 | WhatsApp, Instagram, Facebook, WebChat e TikTok |
