@@ -84,7 +84,7 @@
     * [Como Enviar Template](canais-suportados/api-oficial/como-enviar-template.md)
     * [Configuração do WABA Incorporado (Coexistência)](canais-suportados/api-oficial/configuracao-do-waba-incorporado-coexistencia.md)
     * [Solicitar Provedor de Tecnologia](canais-suportados/api-oficial/solicitar-provedor-de-tecnologia.md)
-    * [HUB Whazing API OFICIAL](canais-suportados/api-oficial/hub-whazing.md)
+    * [Hub MultiAPIWA (conexão integrada)](canais-suportados/api-oficial/hub-multiapiwa.md)
     * [WhatsApp API Oficial via Hub](canais-suportados/api-oficial/api-oficial/README.md)
       * [Modo Fallback](canais-suportados/api-oficial/api-oficial/fallback.md)
     * [⚠️ Limitações e Erros](canais-suportados/api-oficial/limitacoes-e-erros/README.md)

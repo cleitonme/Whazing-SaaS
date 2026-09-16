@@ -44,7 +44,7 @@ Código quadrado que o WhatsApp do celular escaneia para conectar o número ao s
 
 ### HUB
 
-Um serviço intermediário que conecta canais oficiais (WhatsApp, Instagram, Facebook, TikTok) ao Whazing, cuidando da parte técnica da conexão. Ex.: Hub NotificaMe, ConnectionHub, HUB Whazing.
+Um serviço intermediário que conecta canais oficiais (WhatsApp, Instagram, Facebook, TikTok) ao Whazing, cuidando da parte técnica da conexão. Ex.: Hub NotificaMe, ConnectionHub, Hub MultiAPIWA.
 
 ### Template (mensagem modelo)
 

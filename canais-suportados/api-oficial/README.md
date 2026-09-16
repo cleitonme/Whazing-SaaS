@@ -4,7 +4,9 @@ icon: whatsapp
 
 # Api Oficial
 
-Para conectar api oficial via whazing existe 3 métodos direto, HUB NotificaMe e Hub Whazing.
+Para conectar api oficial via whazing existe 3 métodos direto, HUB NotificaMe e Hub MultiAPIWA.
+
+🔀 **Quer a conexão mais simples, direto dentro do Whazing, sem tokens nem webhook?** Conheça o [Hub MultiAPIWA (conexão integrada)](hub-multiapiwa.md).
 
 Para quem quiser manter aplicativo e usar coexistência único método suporta isso via HUB
 
