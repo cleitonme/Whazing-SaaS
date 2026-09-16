@@ -175,11 +175,32 @@ Selecione quais canais o cliente poderá conectar ao sistema:
 * Connection Hub
 * NotificaMe Hub
 * Telegram
+* Facebook
+* Instagram
 * WebChat
 * E-mail
 * SMS
 
 Somente os canais marcados ficarão disponíveis para os clientes do plano.
+
+##### Ativar limite de canais por tipo
+
+Ao ligar esta opção, os canais **Whatsapp Api Oficial (WABA)**, **Whatsapp Plus**, **Instagram** e **Facebook** passam a ter um **limite próprio de quantidade**, além do limite geral de conexões do plano.
+
+Cada tipo habilitado ganha o campo **Quantidade inclusa** — quantos canais daquele tipo o plano já inclui sem custo extra.
+
+> 💡 **Dica:** quantidade inclusa **0** é um valor válido — significa que o plano não inclui nenhum canal daquele tipo de graça, e o cliente compra todos como **adicional**. É o modelo ideal para vender, por exemplo, WhatsApp Oficial sempre como adicional.
+
+Os avisos do próprio sistema explicam o comportamento:
+
+* **Com a opção desligada:** *"Os canais serão controlados apenas pelo limite geral do plano. Não será possível vender canais adicionais separados por tipo."*
+* **Com a opção ligada:** *"Os limites são controlados por tipo de canal, com os valores definidos abaixo (mesmo quantidade inclusa = 0). Adicionais só podem ser vendidos para os tipos de canal habilitados aqui."*
+
+> ⚠️ **Importante:** o limite geral de conexões do plano continua valendo — cada tipo precisa caber dentro do total. E os adicionais por tipo só são oferecidos aos clientes dos planos que têm esta opção ligada.
+
+Para o lado comercial (criação e compra dos adicionais por tipo), consulte:
+
+[🛒 Adicionais — Adicionais por tipo de canal](adicionais.md#adicionais-por-tipo-de-canal)
 
 ***
 
