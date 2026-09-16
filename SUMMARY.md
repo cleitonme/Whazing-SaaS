@@ -46,6 +46,7 @@
   * [Comunicados](modulo-saas/comunicados.md)
   * [Criação de Planos - Financeiro](modulo-saas/criacao-de-planos-financeiro/README.md)
     * [🛒 Adicionais](modulo-saas/criacao-de-planos-financeiro/adicionais.md)
+    * [Canais Adicionais (venda aos seus clientes)](modulo-saas/criacao-de-planos-financeiro/adicionais-de-canais.md)
   * [Gateways de Pagamento](modulo-saas/gateways-pagamentos/README.md)
     * [Pushin Pay](modulo-saas/gateways-pagamentos/configurar-pushin-pay.md)
     * [Asaas](modulo-saas/gateways-pagamentos/configurar-asaas.md)
@@ -74,9 +75,7 @@
   * [Armazenamento S3](modulo-saas/armazenamento-s3.md)
   * [🎛️ Botão Coringa](modulo-saas/botao-coringa.md)
 
-## Canais Disponíveis
-
-* [Canais Disponíveis](canais-suportados/README.md)
+## Canais Disponíveis  * [Canais Disponíveis](canais-suportados/README.md)
   * [WhatsApp API Oficial](canais-suportados/api-oficial/README.md)
     * [API Oficial do WhatsApp (Meta)](canais-suportados/api-oficial/api-oficial-do-whatsapp-meta.md)
     * [API Oficial do WhatsApp - FAQ Completo](canais-suportados/api-oficial/api-oficial-do-whatsapp-faq-completo.md)
@@ -106,6 +105,7 @@
       * [Responder Comentários Instagram - HUB NotificaMe](canais-suportados/hub-instagram-facebook-tiktok/facebook-e-instagram-via-hub/responder-comentarios-instagram.md)
     * [Instagram, Facebook via ConnectionHub](canais-suportados/hub-instagram-facebook-tiktok/instagram-facebook-via-connectionhub.md)
   * [SMS](canais-suportados/sms.md)
+  * [WebChat — Atendimento pelo seu site](canais-suportados/webchat.md)
 
 ## Funcionalidades
 
@@ -217,6 +217,8 @@
     * [Introdução e Autenticação](integracoes/api/introducao-e-autenticacao.md)
     * [Endpoints](integracoes/api/endpoints/README.md)
       * [Mensagens](integracoes/api/endpoints/mensagens.md)
+      * [Agendamentos](integracoes/api/endpoints/agendamentos.md)
+      * [Agenda](integracoes/api/endpoints/agenda.md)
       * [API PLUS](integracoes/api/endpoints/api-plus.md)
       * [Contatos](integracoes/api/endpoints/contatos.md)
       * [Tickets](integracoes/api/endpoints/tickets.md)

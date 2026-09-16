@@ -78,6 +78,8 @@ Entre os exemplos estão:
 
 Cada tipo possui uma finalidade diferente.
 
+> 💡 **Novidade:** além dos tipos listados acima, existem os **adicionais específicos por tipo de canal** — **WhatsApp Plus**, **WhatsApp Oficial (WABA)**, **Instagram** e **Facebook** — que permitem cobrar valores diferentes por tipo. Veja a seção [📱 Adicionais por tipo de canal](#adicionais-por-tipo-de-canal) mais abaixo.
+
 ***
 
 ## 👥 1. Usuários
@@ -136,31 +138,82 @@ Novo limite:
 
 **3 canais**
 
+> 💡 Este é o adicional **genérico** de canais. Para vender canais com **valores diferentes por tipo** (WhatsApp Plus, WhatsApp Oficial, Instagram, Facebook), veja a seção [📱 Adicionais por tipo de canal](#adicionais-por-tipo-de-canal) abaixo.
+
 ***
 
 ## 🛒 Compra de canal
 
-Quando o cliente tentar adicionar um canal e o limite do plano já estiver ocupado, o sistema poderá apresentar a opção de contratar um adicional.
+Quando o cliente tentar adicionar um canal e o limite do plano já estiver ocupado, o sistema apresenta a contratação **direto no catálogo de canais**.
 
-Fluxo:
+O catálogo que abre na tela de **Canais** já mostra, em cada canal, um aviso sobre a disponibilidade:
 
-```
-Cliente tenta adicionar canal
-          ↓
-Limite do plano atingido
-          ↓
-Sistema verifica adicionais disponíveis
-          ↓
-Cliente pode contratar
-          ↓
-Pagamento
-          ↓
-Limite aumentado
-          ↓
-Cliente adiciona o novo canal
-```
+* **"Usar este canal"** — há vaga no plano, conecta sem custo extra;
+* **"Adicionar por R$ X/mês"** — o limite do tipo acabou, e o adicional é oferecido na hora;
+* **"É necessário aumentar seu limite de canais"** — o limite geral do plano acabou;
+* **"Não disponível no seu plano"** — o tipo não está habilitado no plano do cliente.
+
+Se faltarem **dois limites ao mesmo tempo** (limite do tipo **e** limite geral), o sistema junta os dois itens em **uma única fatura** na mesma tela de compra.
+
+O pagamento acontece no próprio fluxo — **PIX** (QR Code ou copiar e colar), **link de pagamento** ou **chave PIX manual** para valores maiores. A ativação do canal segue a configuração do adicional: liberado **na hora** (com pagamento a finalizar) ou **após a confirmação do pagamento**. Em ambos os casos, a configuração do canal **continua automaticamente** de onde parou.
+
+> 🎬 O guia completo do cliente, com o passo a passo das telas, está em:
+>
+> **[Canais Adicionais (venda aos seus clientes)](adicionais-de-canais.md)**
 
 <figure><img src="../../.gitbook/assets/compracanal.png" alt=""><figcaption></figcaption></figure>
+
+***
+
+## 📱 Adicionais por tipo de canal
+
+Além do adicional genérico de **Canais**, o sistema permite criar adicionais **específicos para um tipo de canal**, cada um com **valor próprio definido por você** — é a sua oferta de canais para os seus clientes.
+
+* **WhatsApp Plus** — WhatsApp com botões e listas interativas
+* **WhatsApp Oficial (WABA)** — conexão oficial do WhatsApp
+* **Instagram**
+* **Facebook**
+
+**Exemplo comercial:** o plano inclui 3 canais gerais, mas você quer cobrar um valor diferente por cada WhatsApp Oficial. Você cria um adicional do tipo **WhatsApp Oficial (WABA)** com o valor desejado, e outro do tipo **WhatsApp Plus** com outro valor. O cliente contrata somente o tipo que precisa, pelo preço que você definiu.
+
+> 💡 **É a sua venda:** o adicional é criado no seu Painel SaaS, com o seu preço, e a cobrança entra no seu financeiro. O cliente contrata o que **você** disponibilizou.
+
+> **📸 Sugestão de print:** tela de criação de adicional mostrando a escolha do tipo de canal e o valor mensal.
+
+### 🏷️ Como criar
+
+O caminho é o mesmo de qualquer adicional (**Painel SaaS → Comercial → Adicionais → Criar Adicional**), escolhendo no campo **Tipo** uma das opções de canal específico.
+
+Ao escolher um tipo de canal, o sistema mostra a dica na própria tela:
+
+> *"Este adicional libera canais extras somente deste tipo. Só terá efeito em planos com esse tipo de canal habilitado e 'Ativar limite de canais por tipo' ligado — mesmo que a quantidade inclusa seja 0. Caso contrário, use o adicional geral de Canais."*
+
+### ⚠️ Requisito no plano
+
+Para o adicional de um tipo de canal funcionar, o plano da empresa precisa de **duas coisas**:
+
+1. O **tipo de canal habilitado** no plano (seção **Canais Disponíveis**);
+2. A opção **"Ativar limite de canais por tipo"** **ligada** no plano.
+
+Se faltar um dos dois, o sistema **avisa na criação do adicional**:
+
+> *"Este adicional não terá efeito nos planos selecionados a seguir, pois eles não têm este tipo de canal habilitado ou não têm 'Ativar limite de canais por tipo' ligado: {planos}."*
+
+> 💡 **Quantidade inclusa = 0 é um valor válido!** Significa que o plano não inclui nenhum canal daquele tipo de graça — o cliente compra todos por adicional. Isso é um modelo comum para vender, por exemplo, WhatsApp Oficial sempre como adicional.
+
+### 💳 Como o cliente compra
+
+O cliente contrata pelos mesmos lugares de sempre: no **catálogo de canais** ao adicionar um canal (o card do canal mostra **"Adicionar por R$ X/mês"**) ou na seção **"Canais adicionais"** do **Financeiro** (um card por tipo, com preço e quantidade contratada).
+
+Detalhes que valem destacar:
+
+* A compra do tipo específico cobre o **limite daquele tipo**; se o **limite geral** do plano também estiver no teto, os dois itens entram na **mesma fatura** automaticamente;
+* O comportamento de liberação segue o campo **"Exigir pagamento antes de liberar"** do adicional (na hora ou após a confirmação do pagamento);
+* Tipos de canal **sem adicional cadastrado** aparecem para o cliente como **"Não disponível no seu plano"**.
+
+O passo a passo completo das telas do cliente está em:
+
+**[Canais Adicionais (venda aos seus clientes)](adicionais-de-canais.md)**
 
 ***
 
