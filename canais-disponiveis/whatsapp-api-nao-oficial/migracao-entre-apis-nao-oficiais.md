@@ -3,7 +3,7 @@ description: Instruções troca de api não oficiais sem perda de dados
 icon: square-whatsapp
 ---
 
-# Migração entre apis não oficiais
+# Migração entre APIs Não Oficiais
 
 #### 🔄 Migração de Canal (Passo a passo detalhado e seguro)
 
@@ -19,7 +19,7 @@ icon: square-whatsapp
 1. **Desconectar o WhatsApp** atual (no painel).
    * Por que: evita que mensagens novas sejam vinculadas ao canal antigo.
 2. **Editar o canal** no painel e **alterar o tipo** (plus, baileys ou wuzapi).
-   * ⚠️ **Atenção:** o Baileys está **descontinuado e vem desativado por padrão** — a opção só aparece se ele tiver sido reativado no servidor (arquivo `.env`). Prefira **Plus** ou **WuzAPI**. Detalhes: [Canais Suportados](../README.md).
+   * ⚠️ **Atenção:** o Baileys está **descontinuado e vem desativado por padrão** — a opção só aparece se ele tiver sido reativado no servidor (arquivo `.env`). Prefira **Plus** ou **WuzAPI**. Detalhes: [Canais Suportados](/broken/pages/QAnEaik78KQAIVLnXPyy).
 3. **Gerar novo QR Code**
 4. **Conectar**: abra o WhatsApp no celular, escaneie o QR Code.
 5. **Validar**: confirme que as mensagens chegam e que o perfil está correto.

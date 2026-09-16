@@ -12,7 +12,7 @@ A **WuzAPI (WhatsMeow)** é uma forma de conectar seu WhatsApp ao sistema **sem 
 
 ### 🔁 Posso trocar de API sem perder dados?
 
-Sim. É possível **migrar entre as 3 APIs não oficiais** — **Baileys**, **API Plus** e **WuzAPI** — **sem perder dados**. Veja o passo a passo em [Migração entre APIs Não Oficiais](migracao-entre-apis-nao-oficiais.md).
+Sim. É possível **migrar entre as 3 APIs não oficiais** — **Baileys**, **API Plus** e **WuzAPI** — **sem perder dados**. Veja o passo a passo em [Migração entre APIs Não Oficiais](../migracao-entre-apis-nao-oficiais.md).
 
 > 🆘 **Sessão não conecta ou o QR Code não aparece?** Veja o guia [WuzAPI não conecta ou não lê o QR Code](wuzapi-nao-conecta-ou-nao-ler-qrcode.md).
 
@@ -42,7 +42,7 @@ Arquivo: /home/deploy/wuzapi.yaml
 
 #### ⚙️ **Conexão no painel Whazing**
 
-<figure><img src="../../.gitbook/assets/wuzapiconfig.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../../.gitbook/assets/wuzapiconfig.png" alt=""><figcaption></figcaption></figure>
 
 1. Acesse o painel **Whazing → SaaS → Canais**
 2. Preencha os campos com:
@@ -176,9 +176,9 @@ Após esses passos, o WUZAPI estará completamente removido do servidor.
 
 Depois que o WhatsApp estiver conectado, siga esta sequência para deixar o atendimento funcionando:
 
-1. **Crie as filas** e defina qual fila receberá os atendimentos desse número — veja [Organização de Atendimentos, Filas e Permissões de Usuários](../../funcionalidades/gestao/organizacao-de-atendimentos-filas-e-permissoes-de-usuarios.md).
-2. **Cadastre os usuários (atendentes)** e defina quais filas cada um pode acessar — veja [Usuários](../../funcionalidades/gestao/usuarios/).
-3. **Configure mensagens automáticas** (saudação, despedida e transferência) — veja [Mensagens Automáticas](../../funcionalidades/automacao/mensagens-automaticas.md).
+1. **Crie as filas** e defina qual fila receberá os atendimentos desse número — veja [Organização de Atendimentos, Filas e Permissões de Usuários](../../../funcionalidades/gestao/organizacao-de-atendimentos-filas-e-permissoes-de-usuarios.md).
+2. **Cadastre os usuários (atendentes)** e defina quais filas cada um pode acessar — veja [Usuários](../../../funcionalidades/gestao/usuarios/).
+3. **Configure mensagens automáticas** (saudação, despedida e transferência) — veja [Mensagens Automáticas](../../../funcionalidades/automacao/mensagens-automaticas.md).
 4. **Crie um chatbot** para responder automaticamente — veja [Chatbot Interno](/broken/pages/TGwWzzEM0Y8dp6I4bNLS).
-5. **Importe as mensagens antigas** do WhatsApp, se quiser manter o histórico — veja [Importar mensagens Baileys](../../funcionalidades/whatsapp/importar-mensagens-whatsapp.md).
-6. **Nada funcionando?** Veja [Mensagem não enviando](mensagem-nao-enviando.md), [WuzAPI não conecta ou não lê o QR Code](wuzapi-nao-conecta-ou-nao-ler-qrcode.md) e [WhatsApp desconecta ou mensagens não chegam](../../solucao-de-problemas/whatsapp-e-mensagens/whatsapp-desconecta-ou-mensagens-nao-chegam.md).
+5. **Importe as mensagens antigas** do WhatsApp, se quiser manter o histórico — veja [Importar mensagens Baileys](../../../funcionalidades/whatsapp/importar-mensagens-whatsapp.md).
+6. **Nada funcionando?** Veja [Mensagem não enviando](../mensagem-nao-enviando.md), [WuzAPI não conecta ou não lê o QR Code](wuzapi-nao-conecta-ou-nao-ler-qrcode.md) e [WhatsApp desconecta ou mensagens não chegam](../../../solucao-de-problemas/whatsapp-e-mensagens/whatsapp-desconecta-ou-mensagens-nao-chegam.md).

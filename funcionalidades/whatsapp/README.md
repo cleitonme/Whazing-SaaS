@@ -6,4 +6,4 @@ Recursos específicos do WhatsApp dentro do sistema:
 * [Sincronizar Mensagens (API PLUS / WuzApi)](sincronizar_mensagens_api_plus.md);
 * [Liberar Grupos WhatsApp](liberar_grupos_whatsapp.md) — receba mensagens de grupos.
 
-> 💡 Para **conectar** um número de WhatsApp (criar o canal), veja [Canais Disponíveis](../../canais-suportados/README.md). Para configurar mensagens automáticas, chatbot e campanhas, veja [Automação](../automacao/README.md).
+> 💡 Para **conectar** um número de WhatsApp (criar o canal), veja [Canais Disponíveis](/broken/pages/QAnEaik78KQAIVLnXPyy). Para configurar mensagens automáticas, chatbot e campanhas, veja [Automação](../automacao/).

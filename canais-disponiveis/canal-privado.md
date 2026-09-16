@@ -264,4 +264,4 @@ Somente o **proprietário** definido na configuração tem acesso — ser admini
 
 * Gerencie quem usa o sistema e com qual perfil: [Usuários](../funcionalidades/gestao/usuarios/).
 * Entenda a organização dos atendimentos e as permissões: [Organização de Atendimentos, Filas e Permissões de Usuários](../funcionalidades/gestao/organizacao-de-atendimentos-filas-e-permissoes-de-usuarios.md).
-* Conheça os demais recursos de canais: [Canais Disponíveis](./) e o [Modo Híbrido](modo-hibrido.md).
+* Conheça os demais recursos de canais: [Canais Disponíveis](/broken/pages/QAnEaik78KQAIVLnXPyy) e o [Modo Híbrido](modo-hibrido.md).

@@ -2,18 +2,18 @@
 icon: up-from-bracket
 ---
 
-# Importar Mensagens do WhatsApp
+# Importar mensagens Baileys
 
 Ao conectar um novo número, o Whazing permite **importar mensagens antigas** para manter o histórico das conversas. A quantidade de mensagens que pode ser importada depende da API utilizada:
 
-> ⚠️ **O canal Baileys está descontinuado e vem desativado por padrão** nas instalações atuais — ele só aparece se tiver sido reativado no servidor (arquivo `.env`). Veja [Canais Suportados](../../canais-suportados/README.md).
+> ⚠️ **O canal Baileys está descontinuado e vem desativado por padrão** nas instalações atuais — ele só aparece se tiver sido reativado no servidor (arquivo `.env`). Veja [Canais Suportados](/broken/pages/QAnEaik78KQAIVLnXPyy).
 
-| API | O que é possível importar |
-| --- | --- |
-| **Baileys** | Até **30 dias** de mensagens, na leitura do QR Code |
+| API          | O que é possível importar                                                                                          |
+| ------------ | ------------------------------------------------------------------------------------------------------------------ |
+| **Baileys**  | Até **30 dias** de mensagens, na leitura do QR Code                                                                |
 | **API PLUS** | Até **100 mensagens por contato** — é necessário criar um ticket e fazer a importação manualmente, de cada contato |
 
----
+***
 
 ## 💬 Importar mensagens (Baileys)
 
@@ -21,9 +21,9 @@ Ao conectar um novo número, o Whazing permite **importar mensagens antigas** pa
 2. Ao ler o QR Code, **marque a opção de importar mensagens**.
 3. **Defina a data** a partir da qual as mensagens devem ser importadas (limite de 30 dias).
 
-<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption>Opção de importação de mensagens na leitura do QR Code</figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (2) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Opção de importação de mensagens na leitura do QR Code</p></figcaption></figure>
 
----
+***
 
 ## 💬 Importar mensagens (API PLUS)
 
@@ -32,7 +32,7 @@ Para a API PLUS, a importação é feita **por contato**, de forma manual:
 1. Abra o contato desejado e **crie um ticket**;
 2. Realize a **importação manual** das mensagens (até 100 mensagens por contato).
 
----
+***
 
 ## 💡 Dica
 

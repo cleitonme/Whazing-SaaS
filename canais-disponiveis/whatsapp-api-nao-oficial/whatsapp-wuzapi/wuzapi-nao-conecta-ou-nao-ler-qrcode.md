@@ -21,16 +21,16 @@ docker logs --tail 100 -f wuzapi
 ```
 
 * `--tail 100` mostra as **últimas 100 linhas**.
-* `-f` (de *follow*) faz o log continuar aparecendo em tempo real. Para sair, pressione **Ctrl + C**.
+* `-f` (de _follow_) faz o log continuar aparecendo em tempo real. Para sair, pressione **Ctrl + C**.
 
 Tente criar a sessão no painel **com o log aberto** e observe o que aparece no momento da tentativa. Os erros mais comuns são:
 
-| O que aparece no log | O que geralmente significa |
-| --- | --- |
-| `connection refused` / `no such host` | O Whazing não está conseguindo "enxergar" a Wuzapi (veja o passo da rede bridge, abaixo) |
-| Erros de banco de dados / PostgreSQL | O banco da Wuzapi está parado (reinicie `postgreswuzapi`) |
-| Erros de RabbitMQ / AMQP | Reinicie o `rabbitmqwuzapi` |
-| Erros de webhook | Confira se a **URL** e o **Admin Token** no painel **SaaS → Canais** estão exatamente como na instalação |
+| O que aparece no log                  | O que geralmente significa                                                                               |
+| ------------------------------------- | -------------------------------------------------------------------------------------------------------- |
+| `connection refused` / `no such host` | O Whazing não está conseguindo "enxergar" a Wuzapi (veja o passo da rede bridge, abaixo)                 |
+| Erros de banco de dados / PostgreSQL  | O banco da Wuzapi está parado (reinicie `postgreswuzapi`)                                                |
+| Erros de RabbitMQ / AMQP              | Reinicie o `rabbitmqwuzapi`                                                                              |
+| Erros de webhook                      | Confira se a **URL** e o **Admin Token** no painel **SaaS → Canais** estão exatamente como na instalação |
 
 > 💡 **Dica:** também vale olhar os logs do banco e do mensageiro, pois a Wuzapi depende dos dois:
 >
@@ -39,7 +39,7 @@ Tente criar a sessão no painel **com o log aberto** e observe o que aparece no 
 > docker logs --tail 100 -f rabbitmqwuzapi
 > ```
 
-Para uma visão geral de todos os logs do sistema, veja [Acessando os Logs](../../instalacao-and-vps/acessando_logs.md).
+Para uma visão geral de todos os logs do sistema, veja [Acessando os Logs](../../../instalacao-and-vps/acessando_logs.md).
 
 ***
 
@@ -97,7 +97,7 @@ sudo ufw disable
 sudo ufw enable
 ```
 
-Guia completo com todas as verificações: [Como verificar e reiniciar o Firewall (UFW) no Linux](../../solucao-de-problemas/servidor-e-banco-de-dados/como-verificar-e-reiniciar-o-firewall-ufw-no-linux.md).
+Guia completo com todas as verificações: [Como verificar e reiniciar o Firewall (UFW) no Linux](../../../solucao-de-problemas/servidor-e-banco-de-dados/como-verificar-e-reiniciar-o-firewall-ufw-no-linux.md).
 
 ***
 
@@ -137,13 +137,13 @@ Se o QR Code até aparece, mas **não conecta ao ler**:
 1. **Desconecte o número de outros lugares.** O WhatsApp não permite a mesma sessão conectada em vários sistemas ao mesmo tempo (WhatsApp Web, outra API não oficial etc.). Desconecte de todos antes de conectar no Whazing.
 2. **Apague o canal no painel e crie novamente**, gerando um novo QR Code. Uma sessão antiga com dados corrompidos não se recupera — a nova sessão força uma sincronização limpa.
 
-Veja também as boas práticas em [WhatsApp desconecta ou mensagens não chegam](../../solucao-de-problemas/whatsapp-e-mensagens/whatsapp-desconecta-ou-mensagens-nao-chegam.md).
+Veja também as boas práticas em [WhatsApp desconecta ou mensagens não chegam](../../../solucao-de-problemas/whatsapp-e-mensagens/whatsapp-desconecta-ou-mensagens-nao-chegam.md).
 
 ***
 
 ## 🗑️ 7️⃣ Último recurso: reinstalação limpa
 
-Se nada acima resolver, faça a **desinstalação completa** e instale novamente — o passo a passo está em [Desinstalar WUZAPI](whatsapp-wuzapi.md#desinstalar-wuzapi).
+Se nada acima resolver, faça a **desinstalação completa** e instale novamente — o passo a passo está em [Desinstalar WUZAPI](./#desinstalar-wuzapi).
 
 > ⚠️ **Lembre-se:** as mensagens do atendimento **não são perdidas** (ficam no banco principal do sistema), mas depois da reinstalação será necessário **ler os QR Codes novamente** e **atualizar o Admin Token no painel SaaS**.
 
@@ -151,13 +151,13 @@ Se nada acima resolver, faça a **desinstalação completa** e instale novamente
 
 ## ✅ Checklist rápido
 
-| Sintoma | Provável causa | O que fazer |
-| --- | --- | --- |
-| Sessão não conecta, QR não aparece | Container fora da rede bridge | `docker network connect bridge wuzapi \|\| true` + restart |
-| Nada responde no servidor | Firewall parado/travado | Verificar e reiniciar o UFW |
-| QR aparece, mas não conecta ao ler | Número conectado em outro sistema / sessão antiga | Desconectar de outros lugares e criar novo canal |
-| Erros de banco/RabbitMQ nos logs | Containers auxiliares parados | Reiniciar `postgreswuzapi` e `rabbitmqwuzapi` |
-| Conecta, mas nada chega no Whazing | URL ou Admin Token errados no painel | Conferir **SaaS → Canais** |
+| Sintoma                            | Provável causa                                    | O que fazer                                                |
+| ---------------------------------- | ------------------------------------------------- | ---------------------------------------------------------- |
+| Sessão não conecta, QR não aparece | Container fora da rede bridge                     | `docker network connect bridge wuzapi \|\| true` + restart |
+| Nada responde no servidor          | Firewall parado/travado                           | Verificar e reiniciar o UFW                                |
+| QR aparece, mas não conecta ao ler | Número conectado em outro sistema / sessão antiga | Desconectar de outros lugares e criar novo canal           |
+| Erros de banco/RabbitMQ nos logs   | Containers auxiliares parados                     | Reiniciar `postgreswuzapi` e `rabbitmqwuzapi`              |
+| Conecta, mas nada chega no Whazing | URL ou Admin Token errados no painel              | Conferir **SaaS → Canais**                                 |
 
 ***
 
