@@ -75,8 +75,7 @@
   * [Armazenamento S3](modulo-saas/armazenamento-s3.md)
   * [🎛️ Botão Coringa](modulo-saas/botao-coringa.md)
 
-## Canais Disponíveis
-
+## Canais Disponíveis  * [Canais Disponíveis](canais-suportados/README.md)
 * [WhatsApp API Oficial](canais-disponiveis/api-oficial/README.md)
   * [API Oficial do WhatsApp (Meta)](canais-disponiveis/api-oficial/api-oficial-do-whatsapp-meta.md)
   * [API Oficial do WhatsApp - FAQ Completo](canais-disponiveis/api-oficial/api-oficial-do-whatsapp-faq-completo.md)
