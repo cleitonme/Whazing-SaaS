@@ -113,6 +113,7 @@
 
 * [Funcionalidades](funcionalidades/README.md)
   * [Atendimento](funcionalidades/atendimento/README.md)
+    * [Tela Atendimento](funcionalidades/atendimento/tela-atendimento.md)
     * [Avaliação de Atendimento](funcionalidades/atendimento/avaliacao.md)
     * [Follow-up](docs/modulos/follow-up.md)
     * [Despedida](docs/modulos/despedida.md)
