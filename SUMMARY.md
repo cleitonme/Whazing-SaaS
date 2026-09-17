@@ -77,7 +77,7 @@
 
 ## Canais Disponíveis
 
-* [Canais Disponíveis](canais-suportados/README.md)
+* [Canais Disponíveis](canais-disponiveis/canais-disponiveis.md "Canais Disponíveis")
 * [WhatsApp API Oficial](canais-disponiveis/api-oficial/README.md)
   * [API Oficial do WhatsApp (Meta)](canais-disponiveis/api-oficial/api-oficial-do-whatsapp-meta.md)
   * [API Oficial do WhatsApp - FAQ Completo](canais-disponiveis/api-oficial/api-oficial-do-whatsapp-faq-completo.md)

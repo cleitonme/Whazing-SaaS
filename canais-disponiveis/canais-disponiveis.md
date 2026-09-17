@@ -10,7 +10,7 @@ description: >-
 
 [Telera Whazing](https://telera.whazing.com.br/)
 
-> 🔒 Precisa esconder um canal dos demais usuários do sistema? Conheça o [Canal Privado](canal-privado.md).
+> 🔒 Precisa esconder um canal dos demais usuários do sistema? Conheça o [Canal Privado](../canais-suportados/canal-privado.md).
 
 ***
 
@@ -30,7 +30,7 @@ São opções de conexão sem custo adicional por canal.
 * **Vem desativada por padrão** nas instalações atuais.
 * **Não recomendamos o uso do Baileys.** Para novas instalações, utilize o **WuzAPI (WhatsMeow)**.
 
-##### Como ativar (somente se você realmente precisar)
+**Como ativar (somente se você realmente precisar)**
 
 Em últimos casos, quem quiser manter o Baileys pode reativá-lo na configuração do servidor:
 
@@ -103,8 +103,6 @@ Use o cupom de desconto:
 * Mensalidade: **R$ 50,00 por canal conectado (**&#x55;sando cupom whazing valor mensal)
 * Suporte COEX
 
-
-
 #### Instagram
 
 * Sem taxa de ativação
@@ -156,7 +154,7 @@ A conexão mais simples da API Oficial: acontece **direto dentro do Whazing**, s
 * Sem taxa de ativação;
 * Mensalidade: **R$ 25,00 por canal conectado** (fatura gerada todo dia 01, pagamento até o dia 10; cobrança proporcional com mínimo de R$ 10,00 por canal).
 
-👉 Guia completo: [Hub MultiAPIWA (conexão integrada)](api-oficial/hub-multiapiwa.md)
+👉 Guia completo: [Hub MultiAPIWA (conexão integrada)](../canais-suportados/api-oficial/hub-multiapiwa.md)
 
 ***
 
@@ -186,7 +184,7 @@ O Whazing também suporta conexão direta com a **WhatsApp Business Platform da 
 
 Consulte o guia específico:
 
-[**Manual de Integração com a API Oficial do WhatsApp (Meta)**](api-oficial/api-oficial-do-whatsapp-meta.md)
+[**Manual de Integração com a API Oficial do WhatsApp (Meta)**](../canais-suportados/api-oficial/api-oficial-do-whatsapp-meta.md)
 
 ***
 
@@ -231,7 +229,7 @@ O Whazing **não cobra nenhuma taxa adicional pelo WebChat nativo**.
 * Sistemas internos;
 * Áreas do cliente.
 
-> 📄 **Guia completo:** veja a página **[WebChat — Atendimento pelo seu site](webchat.md)** com o passo a passo de configuração, instalação no site, personalização, API JavaScript e solução de problemas.
+> 📄 **Guia completo:** veja a página [**WebChat — Atendimento pelo seu site**](../canais-suportados/webchat.md) com o passo a passo de configuração, instalação no site, personalização, API JavaScript e solução de problemas.
 
 ***
 
