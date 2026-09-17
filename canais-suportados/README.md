@@ -8,7 +8,7 @@ description: >-
 
 📲 Caso precise de um número para utilizar no sistema, você pode adquirir facilmente através do portal:
 
-[Telera Whazing](https://telera.whazing.com.br/?utm_source=chatgpt.com)
+[Telera Whazing](https://telera.whazing.com.br/)
 
 > 🔒 Precisa esconder um canal dos demais usuários do sistema? Conheça o [Canal Privado](canal-privado.md).
 
