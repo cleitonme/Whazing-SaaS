@@ -40,6 +40,20 @@ Este é um dos pontos que mais geram dúvida — vale a explicação detalhada:
 
 ***
 
+## 📷 Foto do profissional
+
+Cada profissional pode ter uma **foto**, que aparece **na página pública de agendamento** (link público e Embed): nos botões de escolha do profissional e no topo da página quando o cliente o seleciona. Assim, o cliente vê **com quem vai agendar**.
+
+**Como cadastrar:**
+
+1. Abra o profissional (seta da linha) e vá na aba de configurações dele.
+2. No campo **Foto**, clique em **Enviar foto** e escolha a imagem.
+3. Se o profissional estiver **vinculado a um usuário** que já tem foto no sistema, aparece também o botão **Usar foto do usuário vinculado** — a foto do login dele é aplicada de uma vez.
+
+> 💡 Profissional sem foto não é problema: a página pública mostra as **iniciais do nome** no lugar, mantendo o visual organizado.
+
+***
+
 ## 🛠️ Serviços realizados pelo profissional
 
 Dentro do cadastro do profissional (clique na seta da linha para abrir), a seção **"Serviços realizados"** define **o que ele pode fazer**:
