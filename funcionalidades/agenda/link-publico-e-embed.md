@@ -30,6 +30,7 @@ A janela de criação tem **5 abas**. As duas informações obrigatórias ficam 
 | **Serviços que aparecem no link**           | 🔶 Opcional  | Escolha o que pode ser agendado. **Vazio = todos os serviços que os profissionais escolhidos oferecem**                                                   |
 | **Como chamar "Profissional" nesta página** | 🔶 Opcional  | Personaliza o rótulo (ex.: "Médico", "Barbeiro", "Terapeuta")                                                                                             |
 | **Como chamar "Serviço" nesta página**      | 🔶 Opcional  | Ex.: consultório pode preferir "Consulta" ou "Procedimento"                                                                                               |
+| **Limite de agendamento**                   | 🔶 Opcional  | Define **até quando o cliente pode marcar** por este link: **Sem limite**, **Até X dias** à frente ou **Até uma data específica**. Se o calendário for mais restrito, vale a regra mais restritiva — veja [Período para agendamento](como-usar-a-agenda.md#-período-para-agendamento-data-limite) |
 | **Status**                                  | —            | **Ativo** (link funcionando) ou **Inativo** (página fora do ar)                                                                                           |
 
 <figure><img src="../../.gitbook/assets/criacaolink.png" alt=""><figcaption></figcaption></figure>
@@ -45,8 +46,24 @@ Define o que o cliente preenche. **Nome e telefone (WhatsApp) sempre aparecem e 
 
 Deixa a página com a identidade visual da empresa:
 
-* **Logo** — envie uma imagem (o upload fica disponível **depois de salvar o link** pela primeira vez).
+#### 🏷️ Logo
+
+O upload fica disponível **depois de salvar o link** pela primeira vez. Ao enviar a imagem, você pode ajustar:
+
+* **Tamanho da logo** — **Pequena**, **Média** ou **Original** (tamanho real da imagem);
+* **Posição da logo** — alinhada à **esquerda**, ao **centro** ou à **direita** do topo da página;
+* **Formato da logo** — **Original** (mantém o formato do arquivo), **Quadrada** ou **Arredondada**;
+* **Remover logo** — o 🗑️ ao lado da imagem tira a logo do link;
+* A **pré-visualização** da aba mostra a logo na posição, no tamanho e no formato escolhidos antes de você salvar.
+
+A logo aparece **no topo da página pública**, acima do cartão de agendamento — é a primeira coisa que o cliente vê.
+
+**📸 Sugestão de print:** aba "Aparência" com as opções da logo e a pré-visualização.
+
+#### 🎨 Cores e textos
+
 * **Cores** — cor principal (botões e horário selecionado), cor de fundo do cartão e cor do texto (útil quando o fundo é escuro).
+* **Pré-visualização** — um cartão de exemplo mostra "é assim que vai ficar" enquanto você escolhe as cores.
 * **Pré-visualização** — um cartão de exemplo mostra "é assim que vai ficar" enquanto você escolhe as cores.
 * **Como escolher a data** — **"Calendário completo (clicar no dia)"**, mais visual, ou **"Campo de data simples"**, mais compacto.
 * **Texto de boas-vindas (opcional)** — a frase que aparece no topo da página.
@@ -74,7 +91,7 @@ Ao clicar em **Salvar**, aparece a confirmação **"Link criado com sucesso!"**.
 O cliente não precisa de cadastro nem de senha. Basta abrir o endereço (ex.: `seusistema.com.br/#/agendar/nome-do-link`). A experiência dele:
 
 1. **Escolhe o serviço** — botões com o nome e a duração ("Corte masculino · 30min"). Se houver só um serviço, essa etapa já vem pronta.
-2. **Escolhe o profissional** — se houver mais de um, aparece a lista de botões. Só um? Etapa pula automático.
+2. **Escolhe o profissional** — se houver mais de um, aparece a lista de botões **com a foto de cada profissional** (quem não tem foto cadastrada aparece com as iniciais do nome). Só um? Etapa pula automático.
 3. **Escolhe a data** — no calendário visual (ou no campo de data, conforme a configuração). Dias passados não aparecem.
 4. **Escolhe o horário** — o sistema lista **somente horários realmente livres**, respeitando disponibilidade, exceções e compromissos externos. Sem horário, aparece _"Nenhum horário disponível nesta data."_
 5. **Preenche os dados** — **Seu nome**, **WhatsApp (com DDD)** e o **email** (se configurado).
@@ -84,6 +101,8 @@ O cliente não precisa de cadastro nem de senha. Basta abrir o endereço (ex.: `
 > 💡 Se a página não abrir, o sistema mostra _"Link de agendamento indisponível"_ — verifique se o link está **Ativo**.
 
 <figure><img src="../../.gitbook/assets/paginapublica.png" alt=""><figcaption></figcaption></figure>
+
+> 💡 **Foto do profissional:** quem é escolhido pelo cliente aparece com a **foto** dele no topo da página durante o agendamento. A foto é cadastrada na aba **Profissionais** — veja [Profissionais](profissionais.md#-foto-do-profissional).
 
 ***
 

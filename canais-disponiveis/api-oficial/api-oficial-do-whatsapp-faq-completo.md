@@ -117,6 +117,8 @@ A Meta anunciou um novo modelo de cobrança para mensagens que **não são Templ
 
 Ou seja: a partir de outubro/2026, **toda mensagem não-template enviada em resposta a um cliente passará a ter cobrança da Meta**.
 
+> 💡 **Como se preparar:** além da **franquia mensal de mensagens grátis** que cada número conectado recebe por mês (acompanhada no sistema — veja [Franquia mensal grátis](franquia-mensal-gratis.md)), o Whazing oferece dois recursos para reduzir o consumo sem trocar de API: o [Concatenador de Mensagens](concatenador-de-mensagens.md) e o [Chat externo por link](chat-externo-por-link.md).
+
 ***
 
 ### Como funciona a cobrança das mensagens de serviço e utilidade a partir de outubro de 2026?

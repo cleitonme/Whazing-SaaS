@@ -150,6 +150,18 @@ Quando desativada, o sistema exibirá um aviso informando que é necessário uti
 
 > **Atenção:** o funcionamento dessa regra depende do canal utilizado e das políticas da plataforma.
 
+### Concatenador de Mensagens
+
+Junta **mensagens de texto enviadas em sequência pelo atendente** em uma única mensagem, para **reduzir a quantidade de mensagens cobradas pela API Oficial**. Ao ativar, você escolhe o **Modo** (Simples ou Com IA) e quantos **segundos** o sistema aguarda antes de enviar (2 a 15). Abaixo da opção, o próprio sistema mostra a **"Economia de mensagens"** do mês.
+
+> 📄 Guia completo: [Concatenador de Mensagens](../../canais-disponiveis/api-oficial/concatenador-de-mensagens.md).
+
+### Modo alternativo (chat externo por link)
+
+Permite que o cliente continue o atendimento (WABA/Hub WhatsApp) por um **link de chat parecido com o WhatsApp**, sem usar mensagem oficial. Ao ativar, você pode **pedir uma senha de acesso** (os 4 últimos números do telefone do cliente), personalizar o **texto da mensagem** e o **texto do botão** do link.
+
+> 📄 Guia completo: [Chat externo por link](../../canais-disponiveis/api-oficial/chat-externo-por-link.md).
+
 ***
 
 ## Privacidade do telefone

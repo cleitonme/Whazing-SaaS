@@ -32,7 +32,9 @@ Qualquer empresa que atende com hora marcada, por exemplo:
 | **Profissionais**            | Cadastrar quem atende, seus serviços, horários e folgas                | [Profissionais](profissionais.md)                                                 |
 | **Google Agenda / Outlook**  | Conectar calendários externos e bloquear compromissos pessoais         | [Google Agenda](google-agenda.md)                                                 |
 | **Lembretes**                | Enviar mensagem automática no WhatsApp antes do atendimento            | [Lembretes](lembretes.md)                                                         |
-| **Link público e Embed**     | Deixar o cliente agendar sozinho pelo WhatsApp ou pelo seu site        | [Link público e Embed](link-publico-e-embed.md)                                   |
+| **Link público e Embed**     | Deixar o cliente agendar sozinho pelo WhatsApp ou pelo seu site — com **foto do profissional** e **logo** personalizada | [Link público e Embed](link-publico-e-embed.md)                                   |
+| **Recepção**                 | Painel do dia: acompanhar chegadas, fila de espera e atendimentos em tempo real | [Recepção](recepcao.md)                                                           |
+| **Relatórios da Agenda**     | Agenda do Dia, Agendamentos, Produtividade e Estatísticas              | [Relatórios da Agenda](relatorios-da-agenda.md)                                   |
 | **Chatbot**                  | O bot conduz a conversa e agenda (ou cancela) automaticamente          | [Agendamento pelo Chatbot](agendamento-pelo-chatbot.md)                           |
 | **Recepção Inteligente**     | A IA consulta a agenda e agenda durante a conversa natural             | [Agendamento pela Recepção Inteligente](agendamento-pela-recepcao-inteligente.md) |
 | **Tela de Atendimento**      | O atendente agenda enquanto conversa com o cliente                     | [Agendamento pela tela de Atendimento](agendamento-pelo-atendimento.md)           |
@@ -49,6 +51,8 @@ Qualquer empresa que atende com hora marcada, por exemplo:
 * [Google Agenda](google-agenda.md)
 * [Lembretes](lembretes.md)
 * [Link público e Embed](link-publico-e-embed.md)
+* [Recepção](recepcao.md)
+* [Relatórios da Agenda](relatorios-da-agenda.md)
 * [Agendamento pelo Chatbot](agendamento-pelo-chatbot.md)
 * [Agendamento pela Recepção Inteligente](agendamento-pela-recepcao-inteligente.md)
 * [Agendamento pela tela de Atendimento](agendamento-pelo-atendimento.md)

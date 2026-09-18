@@ -316,6 +316,8 @@ O botão **✨ Assistente IA** (à direita do campo) abre o menu do Copiloto. Se
 * **Resumir Conversa com IA** — gera um resumo do atendimento (bom para pegar o contexto rapidamente).
 * **Sugerir Resposta com IA** — a IA lê a conversa e preenche uma sugestão de resposta no campo, que você revisa antes de enviar.
 
+> 🔋 **E o limite de IA?** Esses recursos podem usar a **IA compartilhada do sistema**, que tem um **limite mensal**. Se o limite da empresa acabar, o sistema informa o que fazer: quem é **administrador/supervisor** recebe na hora a opção de **adquirir mais acesso** (adicional), e quem é **atendente** vê a orientação para **solicitar a um administrador ou supervisor**. Detalhes em [Limite de uso da IA](assistente-ia-menu-copiloto/limite-de-uso-da-ia.md).
+
 > 📄 Guia completo: [Assistente IA — Menu Copiloto](assistente-ia-menu-copiloto/).
 
 ### Conversas de e-mail
@@ -477,7 +479,7 @@ Mostra **foto, nome e telefone** (o telefone pode estar oculto por configuraçã
   * **Sincronizar Mensagens** _(só canais WhatsApp Plus/Wuzapi, com conversa aberta)_ — importa de novo as últimas mensagens que não chegaram; você escolhe a quantidade (até 100).
   * **Exibir Chat Completo** — abre a conversa em modo de consulta (leitura), incluindo histórico de conversas anteriores do mesmo contato.
   * **Baixar PDF mensagens ticket ativo** — gera um **PDF do atendimento** com todas as mensagens (bom para anexar em um chamado ou guardar como comprovante).
-  * **Logs** — linha do tempo do ticket: quem assumiu, transferiu, adicionou colaborador etc. (com data e hora).
+  * **Logs** — linha do tempo do ticket: quem assumiu, transferiu, adicionou colaborador etc. (com data e hora). Também registram **menções em anotações**: quando alguém cria uma anotação marcando um usuário ou equipe, aparece "Mencionou {nome} na anotação" — veja [Anotação Tickets](../../gestao/anotacao-tickets.md).
   * **Deletar Ticket** _(só admin/supervisor)_ — **exclui permanentemente** o atendimento, com confirmação. Cuidado: não tem volta.
 
 ### Aba Perfil
