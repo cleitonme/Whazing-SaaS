@@ -1,10 +1,10 @@
-# 🏥 Módulo Recepção
+# 🏥 Recepção
 
 O **Recepção** é uma tela da Agenda feita para acompanhar **os agendamentos do dia em tempo real** e movimentar cada cliente conforme a situação: se **já chegou**, se está **aguardando** ou se **já foi atendido**.
 
 > 💡 **Pense assim:** imagine que existem 10 clientes agendados para hoje. Pela tela de Recepção a equipe da recepção vê, de relance, quem já chegou, quem está esperando há quanto tempo e quem já terminou o atendimento — sem precisar perguntar nada a ninguém.
 
----
+***
 
 ## 📍 Onde encontrar
 
@@ -14,23 +14,23 @@ O **Recepção** é uma tela da Agenda feita para acompanhar **os agendamentos d
 
 > 💡 Do Recepção também dá para voltar ao calendário a qualquer momento: use o botão **Calendário** no topo.
 
-**📸 Sugestão de print:** tela do módulo Recepção mostrando o quadro com as colunas de situação.
+<figure><img src="../../.gitbook/assets/repcepcao.png" alt=""><figcaption></figcaption></figure>
 
----
+***
 
 ## 🖥️ O que aparece na tela
 
 A tela é organizada como um **quadro com colunas**. Cada coluna é uma **situação** do cliente no dia:
 
-| Coluna             | O que significa                                                                                    |
-| ------------------ | -------------------------------------------------------------------------------------------------- |
-| **Agendados**      | Clientes com horário marcado que ainda **não chegaram**                                            |
-| **Aguardando**     | Clientes que **já chegaram** e estão esperando a vez                                                |
-| **Em atendimento** | Clientes que estão **sendo atendidos agora**                                                        |
-| **Concluído**      | Atendimentos que **já terminaram**                                                                  |
-| **Cancelado**      | Agendamentos cancelados do dia                                                                      |
+| Coluna             | O que significa                                         |
+| ------------------ | ------------------------------------------------------- |
+| **Agendados**      | Clientes com horário marcado que ainda **não chegaram** |
+| **Aguardando**     | Clientes que **já chegaram** e estão esperando a vez    |
+| **Em atendimento** | Clientes que estão **sendo atendidos agora**            |
+| **Concluído**      | Atendimentos que **já terminaram**                      |
+| **Cancelado**      | Agendamentos cancelados do dia                          |
 
-> 💡 A coluna **Agendados** e a **Cancelado** são a base do fluxo e sempre existem. As colunas do meio podem ser **renomeadas, coloridas e até ampliadas** pela empresa — veja [Personalizando as colunas](#-personalizando-as-colunas) mais abaixo.
+> 💡 A coluna **Agendados** e a **Cancelado** são a base do fluxo e sempre existem. As colunas do meio podem ser **renomeadas, coloridas e até ampliadas** pela empresa — veja [Personalizando as colunas](recepcao.md#-personalizando-as-colunas) mais abaixo.
 
 Cada **cartão** (quadradinho) representa um agendamento e mostra:
 
@@ -45,9 +45,7 @@ Cada **cartão** (quadradinho) representa um agendamento e mostra:
   * 🩺 **"Em atendimento há X min"** — há quanto tempo o atendimento começou;
   * ✅ **"Finalizado às HH:MM"** e 📣 **"Chamado às HH:MM"** — registro do que já aconteceu.
 
-**📸 Sugestão de print:** cartão da Recepção com o aviso "Aguardando há X min" em destaque.
-
----
+***
 
 ## 🔁 Como movimentar um cliente (as etapas do dia)
 
@@ -61,11 +59,11 @@ Você pode avançar cada etapa de **duas formas**:
 
 Cada cartão mostra um botão com **a próxima ação da fila**:
 
-| O cliente está em... | O botão mostra...          | O que acontece ao clicar                     |
-| -------------------- | -------------------------- | -------------------------------------------- |
-| **Agendados**        | **Cliente chegou**         | O cartão vai para a coluna **Aguardando**    |
-| **Aguardando**       | **Iniciar atendimento**    | O cartão vai para **Em atendimento**         |
-| **Em atendimento**   | **Finalizar**              | O cartão vai para **Concluído**              |
+| O cliente está em... | O botão mostra...       | O que acontece ao clicar                  |
+| -------------------- | ----------------------- | ----------------------------------------- |
+| **Agendados**        | **Cliente chegou**      | O cartão vai para a coluna **Aguardando** |
+| **Aguardando**       | **Iniciar atendimento** | O cartão vai para **Em atendimento**      |
+| **Em atendimento**   | **Finalizar**           | O cartão vai para **Concluído**           |
 
 ### Jeito 2 — Arrastando o cartão
 
@@ -76,13 +74,12 @@ Arraste o cartão de uma coluna para outra. Ao soltar, a situação é atualizad
 Clique nos **três pontinhos** do cartão e escolha **Alterar status** → a situação desejada. Nesse mesmo menu há também **Ver / editar**, que abre o agendamento completo.
 
 > ⚠️ **Regras do quadro:**
+>
 > * Um agendamento **cancelado não muda de etapa** — o sistema avisa: _"Este agendamento está cancelado e não pode mudar de etapa."_
 > * Se você arrastar um cartão para **Cancelado**, o sistema pede confirmação antes de cancelar o agendamento.
 > * Para movimentar um agendamento é preciso ter **permissão de edição naquele calendário**. Sem permissão, aparece: _"Você não tem permissão para alterar este agendamento."_
 
-**📸 Sugestão de print:** sequência dos botões "Cliente chegou" → "Iniciar atendimento" → "Finalizar".
-
----
+***
 
 ## 📣 Chamar próximo
 
@@ -96,7 +93,7 @@ O botão **Chamar próximo** (no topo da tela) serve para a recepção **chamar 
 
 > 💡 O sistema também avisa se **todos os profissionais estão ocupados** no momento ("Todos os profissionais estão em atendimento no momento.") e permite **chamar mesmo assim** quando necessário. E, se um cliente já foi chamado mas ainda está aguardando, o cartão mostra o botão **Chamar novamente**.
 
----
+***
 
 ## 🔍 Busca e filtros
 
@@ -110,7 +107,7 @@ No topo da tela você pode refinar o que aparece:
 
 No **celular**, o quadro vira **abas** (Agendados, Aguardando, etc.) para navegar situação por situação.
 
----
+***
 
 ## 📊 Indicadores do dia
 
@@ -121,7 +118,7 @@ A tela mostra **números do dia** para a recepção acompanhar o movimento:
 * **Tempo médio de espera** — quanto tempo os clientes estão esperando em média;
 * **Tempo médio de atendimento** — a duração média dos atendimentos.
 
----
+***
 
 ## 🎨 Personalizando as colunas
 
@@ -134,27 +131,25 @@ Quem tem permissão pode **ajustar as colunas à realidade da empresa** clicando
 
 > ⚠️ As colunas **Agendados** e **Cancelado** não podem ser desativadas nem excluídas — são a base do fluxo. Se uma coluna criada pela empresa for excluída, os agendamentos que estavam nela **voltam para "Agendados"**.
 
-**📸 Sugestão de print:** janela "Colunas da Recepção".
-
----
+***
 
 ## 🖨️ Imprimindo a agenda do dia
 
 No topo da tela há o botão da **impressora** 🖨️, que abre o relatório **"Agenda do dia (imprimir)"**: uma lista do dia com horário, cliente, profissional e a situação na recepção, pronta para imprimir ou salvar em PDF. Veja detalhes em [Relatórios da Agenda](relatorios-da-agenda.md).
 
----
+***
 
 ## 👥 Permissões: quem pode o quê
 
-| Ação                                       | Quem pode                                                     |
-| ------------------------------------------ | ------------------------------------------------------------- |
-| **Ver a Recepção**                         | Quem tem acesso ao módulo Agenda (recurso vendido como adicional do plano) |
-| **Movimentar clientes e chamar próximo**   | Usuários com papel **Editor** ou **Admin** no calendário       |
-| **Personalizar colunas**                   | **Administrador**, **Supervisor** ou admin de pelo menos um calendário |
+| Ação                                     | Quem pode                                                                  |
+| ---------------------------------------- | -------------------------------------------------------------------------- |
+| **Ver a Recepção**                       | Quem tem acesso ao módulo Agenda (recurso vendido como adicional do plano) |
+| **Movimentar clientes e chamar próximo** | Usuários com papel **Editor** ou **Admin** no calendário                   |
+| **Personalizar colunas**                 | **Administrador**, **Supervisor** ou admin de pelo menos um calendário     |
 
 > 💡 Papéis do calendário (Visualizador, Editor, Admin) são explicados em [Calendários e Permissões](calendarios-e-permissoes.md).
 
----
+***
 
 ## ✅ Para que serve na prática
 
@@ -163,22 +158,18 @@ No topo da tela há o botão da **impressora** 🖨️, que abre o relatório **
 * **Atendimento com histórico:** o registro das etapas e dos horários fica salvo e alimenta os indicadores e relatórios;
 * **Menos fila desorganizada:** o botão **Chamar próximo** indica exatamente quem é a vez.
 
----
+***
 
 ## ❓ Problemas comuns
 
-**"O botão Chamar próximo não aparece."**
-Ele aparece apenas para quem pode **editar** pelo menos um calendário. Quem só tem acesso de visualização não o vê.
+**"O botão Chamar próximo não aparece."** Ele aparece apenas para quem pode **editar** pelo menos um calendário. Quem só tem acesso de visualização não o vê.
 
-**"Não consigo arrastar o cartão para outra coluna."**
-Confira se você tem papel **Editor** ou **Admin** no calendário do agendamento. Também não é possível mover um agendamento **cancelado**.
+**"Não consigo arrastar o cartão para outra coluna."** Confira se você tem papel **Editor** ou **Admin** no calendário do agendamento. Também não é possível mover um agendamento **cancelado**.
 
-**"Movimentei o cliente por engano."**
-Basta arrastar o cartão de volta para a coluna anterior — o sistema atualiza o registro e os horários (chegada, início, fim) da etapa correspondente.
+**"Movimentei o cliente por engano."** Basta arrastar o cartão de volta para a coluna anterior — o sistema atualiza o registro e os horários (chegada, início, fim) da etapa correspondente.
 
-**"A tela não mostra o dia que quero."**
-Use o seletor de **Data** no topo. Por padrão a tela abre no dia atual.
+**"A tela não mostra o dia que quero."** Use o seletor de **Data** no topo. Por padrão a tela abre no dia atual.
 
----
+***
 
 > 📄 Veja também: [Como usar a Agenda](como-usar-a-agenda.md) · [Calendários e Permissões](calendarios-e-permissoes.md) · [Relatórios da Agenda](relatorios-da-agenda.md)
