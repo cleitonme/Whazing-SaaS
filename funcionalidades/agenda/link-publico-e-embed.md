@@ -22,16 +22,16 @@ A janela de criação tem **5 abas**. As duas informações obrigatórias ficam 
 
 ### 📋 Aba "Informações básicas"
 
-| Campo                                       | Obrigatório? | Para que serve                                                                                                                                            |
-| ------------------------------------------- | ------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Nome do link**                            | ✅ Sim        | Para você identificar na lista (ex.: "Barbearia - Instagram")                                                                                             |
-| **Calendário**                              | ✅ Sim        | De qual agenda sairão os horários. ⚠️ **Não pode ser trocado depois** — o sistema avisa que, se precisar mudar, será preciso excluir o link e criar outro |
-| **Profissionais que aparecem no link**      | 🔶 Opcional  | Escolha quem aparece. **Deixando vazio, entram todos os profissionais vinculados ao calendário**                                                          |
-| **Serviços que aparecem no link**           | 🔶 Opcional  | Escolha o que pode ser agendado. **Vazio = todos os serviços que os profissionais escolhidos oferecem**                                                   |
-| **Como chamar "Profissional" nesta página** | 🔶 Opcional  | Personaliza o rótulo (ex.: "Médico", "Barbeiro", "Terapeuta")                                                                                             |
-| **Como chamar "Serviço" nesta página**      | 🔶 Opcional  | Ex.: consultório pode preferir "Consulta" ou "Procedimento"                                                                                               |
+| Campo                                       | Obrigatório? | Para que serve                                                                                                                                                                                                                                                                                    |
+| ------------------------------------------- | ------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Nome do link**                            | ✅ Sim        | Para você identificar na lista (ex.: "Barbearia - Instagram")                                                                                                                                                                                                                                     |
+| **Calendário**                              | ✅ Sim        | De qual agenda sairão os horários. ⚠️ **Não pode ser trocado depois** — o sistema avisa que, se precisar mudar, será preciso excluir o link e criar outro                                                                                                                                         |
+| **Profissionais que aparecem no link**      | 🔶 Opcional  | Escolha quem aparece. **Deixando vazio, entram todos os profissionais vinculados ao calendário**                                                                                                                                                                                                  |
+| **Serviços que aparecem no link**           | 🔶 Opcional  | Escolha o que pode ser agendado. **Vazio = todos os serviços que os profissionais escolhidos oferecem**                                                                                                                                                                                           |
+| **Como chamar "Profissional" nesta página** | 🔶 Opcional  | Personaliza o rótulo (ex.: "Médico", "Barbeiro", "Terapeuta")                                                                                                                                                                                                                                     |
+| **Como chamar "Serviço" nesta página**      | 🔶 Opcional  | Ex.: consultório pode preferir "Consulta" ou "Procedimento"                                                                                                                                                                                                                                       |
 | **Limite de agendamento**                   | 🔶 Opcional  | Define **até quando o cliente pode marcar** por este link: **Sem limite**, **Até X dias** à frente ou **Até uma data específica**. Se o calendário for mais restrito, vale a regra mais restritiva — veja [Período para agendamento](como-usar-a-agenda.md#-período-para-agendamento-data-limite) |
-| **Status**                                  | —            | **Ativo** (link funcionando) ou **Inativo** (página fora do ar)                                                                                           |
+| **Status**                                  | —            | **Ativo** (link funcionando) ou **Inativo** (página fora do ar)                                                                                                                                                                                                                                   |
 
 <figure><img src="../../.gitbook/assets/criacaolink.png" alt=""><figcaption></figcaption></figure>
 
@@ -58,7 +58,7 @@ O upload fica disponível **depois de salvar o link** pela primeira vez. Ao envi
 
 A logo aparece **no topo da página pública**, acima do cartão de agendamento — é a primeira coisa que o cliente vê.
 
-**📸 Sugestão de print:** aba "Aparência" com as opções da logo e a pré-visualização.
+<figure><img src="../../.gitbook/assets/linkagenda.png" alt=""><figcaption></figcaption></figure>
 
 #### 🎨 Cores e textos
 
@@ -99,8 +99,6 @@ O cliente não precisa de cadastro nem de senha. Basta abrir o endereço (ex.: `
 7. **Pronto** — tela de **"Agendamento confirmado!"** com a mensagem de sucesso que você definiu, e o agendamento **cai direto na sua Agenda** 🎉
 
 > 💡 Se a página não abrir, o sistema mostra _"Link de agendamento indisponível"_ — verifique se o link está **Ativo**.
-
-<figure><img src="../../.gitbook/assets/paginapublica.png" alt=""><figcaption></figcaption></figure>
 
 > 💡 **Foto do profissional:** quem é escolhido pelo cliente aparece com a **foto** dele no topo da página durante o agendamento. A foto é cadastrada na aba **Profissionais** — veja [Profissionais](profissionais.md#-foto-do-profissional).
 
