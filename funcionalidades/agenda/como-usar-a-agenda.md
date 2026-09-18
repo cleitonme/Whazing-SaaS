@@ -14,15 +14,15 @@ A tela inicial já mostra o **calendário** com todos os agendamentos do períod
 
 ## 🖥️ O que aparece na tela
 
-| Elemento                            | O que faz                                                                                                     |
-| ----------------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| **Seletor "Todos os calendários"**  | Filtra o calendário para mostrar agendamentos de apenas um calendário específico                              |
-| **Botão "Novo agendamento"**        | Abre o formulário para criar um agendamento                                                                   |
-| **Ícone de seta com calendário** 📤 | Leva para a tela **Links de Agendamento** (link público e Embed)                                              |
-| **Engrenagem ⚙️**                   | Abre as **"Configurações da agenda"** (calendários, profissionais, serviços, disponibilidade)                 |
-| **Botão "Recepção"**                | Leva ao módulo **Recepção**: o painel do dia para acompanhar chegadas, fila e atendimentos — veja [Recepção](recepcao.md) |
+| Elemento                                              | O que faz                                                                                                                                  |
+| ----------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Seletor "Todos os calendários"**                    | Filtra o calendário para mostrar agendamentos de apenas um calendário específico                                                           |
+| **Botão "Novo agendamento"**                          | Abre o formulário para criar um agendamento                                                                                                |
+| **Ícone de seta com calendário** 📤                   | Leva para a tela **Links de Agendamento** (link público e Embed)                                                                           |
+| **Engrenagem ⚙️**                                     | Abre as **"Configurações da agenda"** (calendários, profissionais, serviços, disponibilidade)                                              |
+| **Botão "Recepção"**                                  | Leva ao módulo **Recepção**: o painel do dia para acompanhar chegadas, fila e atendimentos — veja [Recepção](recepcao.md)                  |
 | **Interruptor "Sombrear horário fora de expediente"** | Aparece ao selecionar um **profissional** no filtro: destaca no calendário os horários em que ele **não pode atender** — veja seção abaixo |
-| **Navegação do calendário**         | Botões ‹ › para mudar de período, botão **Hoje** para voltar ao dia atual e alternador **Mês / Semana / Dia** |
+| **Navegação do calendário**                           | Botões ‹ › para mudar de período, botão **Hoje** para voltar ao dia atual e alternador **Mês / Semana / Dia**                              |
 
 ***
 
@@ -80,8 +80,6 @@ Enquanto os horários carregam, aparece **"Buscando horários..."**. Se o dia es
 
 > 💡 Isso vale para a criação pelo **botão "Novo agendamento"**. Clicando direto no calendário, o formulário continua aceitando a data/hora do ponto selecionado — a grade aparece quando você escolhe profissional e serviço.
 
-**📸 Sugestão de print:** grade de horários do novo agendamento com disponíveis, "Ocupado" e "Fora do expediente".
-
 > 💡 **Serviço + profissional:** se o profissional tiver **serviços vinculados**, a lista mostra apenas esses serviços. Se ele não tiver nenhum vínculo, pode fazer **qualquer serviço**.
 
 Após salvar, aparece a mensagem **"Agendamento criado com sucesso!"** e o evento surge no calendário na cor do calendário escolhido.
@@ -98,8 +96,6 @@ No topo da tela, ao selecionar um **profissional** no filtro, aparece o interrup
 * **Como usar:** filtre o profissional → ligue o interruptor → as faixas fora do expediente dele ficam sombreadas no calendário;
 * **Importante:** o sombreado é uma **dica visual** baseada na disponibilidade cadastrada. O bloqueio de verdade acontece na hora de agendar (na grade de horários e nas regras do calendário).
 
-**📸 Sugestão de print:** calendário semanal com as faixas sombreadas fora do expediente.
-
 ***
 
 ## 📏 Período para agendamento (data limite)
@@ -108,19 +104,19 @@ Nas **Configurações da agenda** (engrenagem ⚙️), cada **calendário** e ca
 
 ### Agendamentos no futuro (a data limite)
 
-| Opção                          | O que faz                                                                                     |
-| ------------------------------ | --------------------------------------------------------------------------------------------- |
-| **Sem limite**                 | Pode-se agendar para qualquer data futura                                                      |
-| **Até X dias**                 | Aceita agendamentos só até X dias a partir de hoje (ex.: 30)                                   |
-| **Até uma data específica**    | Aceita agendamentos só até a data escolhida (ex.: até 20/12)                                   |
+| Opção                       | O que faz                                                    |
+| --------------------------- | ------------------------------------------------------------ |
+| **Sem limite**              | Pode-se agendar para qualquer data futura                    |
+| **Até X dias**              | Aceita agendamentos só até X dias a partir de hoje (ex.: 30) |
+| **Até uma data específica** | Aceita agendamentos só até a data escolhida (ex.: até 20/12) |
 
 Quando o limite é atingido, o calendário simplesmente **não oferece datas além dele** — nem na tela principal, nem no [link público](link-publico-e-embed.md), nem no chatbot. É a forma de evitar que alguém marque um horário muito distante no futuro (útil para agendas com tabelas de preço ou escala que mudam).
 
 ### Agendamentos no passado
 
-| Opção                            | O que faz                                                                    |
-| -------------------------------- | ----------------------------------------------------------------------------- |
-| **Não permitir**                 | Nada de agendar em datas que já passaram (padrão do link público)             |
+| Opção                             | O que faz                                                                                              |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| **Não permitir**                  | Nada de agendar em datas que já passaram (padrão do link público)                                      |
 | **Permitir até X dias para trás** | Deixa lançar agendamentos retroativos (ex.: registrar um atendimento feito hoje mesmo sem agendamento) |
 
 ### Como os limites se combinam
@@ -130,8 +126,6 @@ Quando o limite é atingido, o calendário simplesmente **não oferece datas al�
 * Vale sempre **a janela mais restritiva** entre calendário e profissional.
 
 > 💡 Bloqueios e exceções de dia específico (folgas, feriados) **continuam valendo** dentro da faixa permitida — a janela é a régua geral, a exceção é o detalhe.
-
-**📸 Sugestão de print:** bloco "Período para agendamento" nas configurações do calendário.
 
 ***
 
