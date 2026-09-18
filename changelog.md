@@ -1,5 +1,54 @@
 ## Changelog e Atualizações
 
+# 🚀 Versão 3.1.1 BETA
+
+## 🐛 Correções
+
+* **E-mail:** erro ao enviar e-mail informa restrição do WhatsApp e não aparece no frontend que o e-mail não foi enviado.
+* **Google Calendar:** sincronização duplicando e mostrando como agendamento pessoal.
+* **Tarefas:** correção no layout.
+* **Tela de atendimento:** cliente sem agenda no plano. Ao acessar, fica dando aviso sempre que cada ticket tenta abrir.
+* **Agenda — Controle de acesso:** mostra todos os usuários. Supervisor e admin não precisam, pois já têm todos os acessos.
+
+## 📝 Logs
+
+* **Ticket:** registro ao mencionar em uma anotação.
+
+## 📅 Agenda
+
+* Configurar data limite para agendamento.
+* Visualização sobre o horário em que o profissional não está disponível, facilitando o agendamento.
+* Cadastro de agendamento pelo atendente: o sistema agora exibe o horário disponível, facilitando o agendamento.
+* **Módulo recepção:** mostra os agendamentos do dia e permite mover conforme a situação: se já chegou, está aguardando ou já foi atendido.
+* **Link externo:** possibilidade de colocar foto do profissional.
+* **Link externo:** correção da logo e personalização da mesma.
+* Novos relatórios relacionados à agenda.
+
+## 📊 Relatórios
+
+* Melhor organização.
+
+## 💬 Tela de atendimento
+
+* **Cliente IA integrada:** ao tentar usar o Copilot, já abre a opção de comprar adicional caso o limite tenha acabado.
+
+## 🔵 API Oficial
+
+* 2 novos modelos lançados para economizar API oficial sem usar APIs não oficiais.
+
+### Concatenador de Mensagens
+
+* Junte mensagens enviadas em sequência pelo atendente para reduzir a quantidade de mensagens enviadas pela API Oficial.
+
+### Modo alternativo — Chat externo por link
+
+Permite que o cliente continue o atendimento **(WABA/Hub WhatsApp)** por um link de chat parecido com o WhatsApp, sem usar mensagem oficial.
+
+### ℹ️ Informações
+
+* Mensagens enviadas: cálculo de **1.000 grátis**.
+
+
 ## 🚀 Versão 3.1.0 BETA
 
 * Baileys - Desativada descontinuado. Em ultimos casos quem quiser ativar possivel através .env
