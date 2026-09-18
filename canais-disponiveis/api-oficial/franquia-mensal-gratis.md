@@ -1,10 +1,10 @@
-# 🎁 Franquia mensal grátis do WhatsApp
+# 🎁 Franquia mensal grátis
 
 Os canais de **API Oficial do WhatsApp** conectados no sistema têm uma **franquia mensal de mensagens grátis**, concedida pelo próprio WhatsApp (Meta): **a cada mês, cada número conectado recebe uma quantidade de mensagens de atendimento gratuitas** — o sistema trabalha com o valor padrão de **1.000 mensagens grátis por número**, acompanhando o uso desse saldo.
 
 > ⚠️ **Importante:** essa franquia é uma **concessão da Meta/WhatsApp**, não da Whazing. O sistema **exibe e acompanha** o uso — a cobrança (quando houver) é feita pela Meta diretamente à empresa dona da conta. Veja detalhes de cobrança no [FAQ da API Oficial](api-oficial-do-whatsapp-faq-completo.md).
 
----
+***
 
 ## 📍 Onde o contador aparece
 
@@ -14,25 +14,25 @@ O acompanhamento aparece em **três lugares**:
 2. **No Relatório de custos do WhatsApp Oficial** (menu **Relatórios → Financeiro**) — a seção **"Franquia mensal grátis do WhatsApp"**, com o detalhamento por canal;
 3. **Na Calculadora do WhatsApp** — nos resumos de custo das mensagens oficiais.
 
-**📸 Sugestão de print:** card do canal oficial com a barra "Uso deste mês".
+<figure><img src="../../.gitbook/assets/usooficial.png" alt=""><figcaption></figcaption></figure>
 
----
+***
 
 ## 📖 O que significa cada informação
 
 No relatório, cada canal conectado mostra:
 
-| Informação                            | O que significa                                                                                          |
-| ------------------------------------- | -------------------------------------------------------------------------------------------------------- |
-| **Uso deste mês**                     | O par "utilizadas / gratuitas" (ex.: 640 / 1000) e a barra de progresso                                   |
-| **Período: {início} a {fim}**         | Os dias do ciclo atual da franquia                                                                        |
-| **Renova em {data}**                  | Quando o contador recomeça                                                                                |
-| **{qtd} mensagens grátis restantes**   | Quanto ainda cabe dentro da franquia no mês                                                               |
-| **{qtd} mensagens acima da franquia**  | Quanto já passou do saldo gratuito no mês                                                                 |
-| **Custo estimado do excedente**        | Estimativa de custo das mensagens que passaram da franquia (baseada nas taxas das mensagens correspondentes) |
-| **Utilizadas / Gratuitas / Excedentes** | O detalhamento do consumo no período                                                                      |
+| Informação                              | O que significa                                                                                              |
+| --------------------------------------- | ------------------------------------------------------------------------------------------------------------ |
+| **Uso deste mês**                       | O par "utilizadas / gratuitas" (ex.: 640 / 1000) e a barra de progresso                                      |
+| **Período: {início} a {fim}**           | Os dias do ciclo atual da franquia                                                                           |
+| **Renova em {data}**                    | Quando o contador recomeça                                                                                   |
+| **{qtd} mensagens grátis restantes**    | Quanto ainda cabe dentro da franquia no mês                                                                  |
+| **{qtd} mensagens acima da franquia**   | Quanto já passou do saldo gratuito no mês                                                                    |
+| **Custo estimado do excedente**         | Estimativa de custo das mensagens que passaram da franquia (baseada nas taxas das mensagens correspondentes) |
+| **Utilizadas / Gratuitas / Excedentes** | O detalhamento do consumo no período                                                                         |
 
----
+***
 
 ## 🔄 Como funciona o contador
 
@@ -44,7 +44,7 @@ No relatório, cada canal conectado mostra:
 
 > 💡 **Cada número tem sua própria franquia.** Uma empresa com 3 números oficiais conectados acompanha 3 contadores independentes — um não compensa o outro.
 
----
+***
 
 ## 💡 Como usar essa informação
 
@@ -52,24 +52,20 @@ No relatório, cada canal conectado mostra:
 * **Reduza o desperdício** com os recursos de economia:
   * [Concatenador de Mensagens](concatenador-de-mensagens.md) — junta mensagens enviadas em sequência;
   * [Chat externo por link](chat-externo-por-link.md) — continua a conversa por uma página web, sem mensagem oficial;
-* **Analise o mês** no [Relatório de custos do WhatsApp Oficial](../../funcionalidades/relatorios/README.md) para entender para onde o consumo vai.
+* **Analise o mês** no [Relatório de custos do WhatsApp Oficial](../../funcionalidades/relatorios/) para entender para onde o consumo vai.
 
----
+***
 
 ## ❓ Problemas comuns
 
-**"O contador do meu canal aparece zerado."**
-A franquia é exibida apenas em **canais de API Oficial** (WABA/Hub WhatsApp) e **depois que há consumo no mês** — canais não oficiais não têm esse acompanhamento.
+**"O contador do meu canal aparece zerado."** A franquia é exibida apenas em **canais de API Oficial** (WABA/Hub WhatsApp) e **depois que há consumo no mês** — canais não oficiais não têm esse acompanhamento.
 
-**"Minhas mensagens não aparecem no contador."**
-O acompanhamento considera as mensagens de atendimento da API Oficial no mês corrente. Mensagens de outros canais (não oficiais, Instagram etc.) não entram nessa conta.
+**"Minhas mensagens não aparecem no contador."** O acompanhamento considera as mensagens de atendimento da API Oficial no mês corrente. Mensagens de outros canais (não oficiais, Instagram etc.) não entram nessa conta.
 
-**"A barra mudou de cor."**
-Ela fica na cor de alerta quando o uso **passa da franquia** — sinal de que as próximas mensagens podem gerar cobrança da Meta.
+**"A barra mudou de cor."** Ela fica na cor de alerta quando o uso **passa da franquia** — sinal de que as próximas mensagens podem gerar cobrança da Meta.
 
-**"O valor da franquia é sempre 1.000?"**
-Esse é o valor padrão de **mensagens de serviço grátis por número/mês** concedido pelo WhatsApp. O sistema mostra sempre o valor vigente de cada canal — e a configuração do sistema SaaS pode ajustar a franquia ofertada.
+**"O valor da franquia é sempre 1.000?"** Esse é o valor padrão de **mensagens de serviço grátis por número/mês** concedido pelo WhatsApp. O sistema mostra sempre o valor vigente de cada canal — e a configuração do sistema SaaS pode ajustar a franquia ofertada.
 
----
+***
 
 > 📄 Veja também: [API Oficial do WhatsApp - FAQ Completo](api-oficial-do-whatsapp-faq-completo.md) · [Concatenador de Mensagens](concatenador-de-mensagens.md) · [Chat externo por link](chat-externo-por-link.md)
