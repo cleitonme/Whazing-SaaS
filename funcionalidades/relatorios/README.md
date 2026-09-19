@@ -10,8 +10,6 @@ No menu lateral do sistema, clique em **Relatórios**.
 
 A tela mostra **cartões organizados por seções** — cada seção reúne os relatórios de um tema do sistema.
 
-**📸 Sugestão de print:** tela de Relatórios com as seções e o campo de busca.
-
 ---
 
 ## 🗂️ Como os relatórios estão organizados

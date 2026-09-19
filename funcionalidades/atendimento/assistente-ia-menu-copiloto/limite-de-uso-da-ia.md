@@ -30,8 +30,6 @@ Ao tentar usar um recurso de IA com o limite esgotado, aparece o aviso **"Limite
 | **Administrador / Supervisor** | Abre direto a janela **"Contratar Copilot"** com os **pacotes de adicional** disponíveis, já com valores para **comprar na hora**                                      |
 | **Atendente**         | Aparece o diálogo **"Limite de IA atingido"** com a orientação de **solicitar a um administrador ou supervisor** — não há botão de compra para esse perfil             |
 
-**📸 Sugestão de print:** diálogo "Limite de IA atingido" exibido na tela de atendimento.
-
 ### Como funciona a compra do adicional (administrador/supervisor)
 
 Na janela **"Contratar Copilot"** aparecem os pacotes oferecidos pelo sistema. Para cada pacote você vê:
@@ -58,8 +56,6 @@ Em **Configurações → Serviços de IA**, quem é administrador ou supervisor 
 * Botão de ação — quando o status não está "Ativo", aparece **Comprar acesso** (recurso não contratado) ou **Ampliar limite** (limite esgotado), abrindo a mesma janela de compra dos adicionais.
 
 > 💡 **A chave de API própria nunca para por limite do sistema:** se a empresa usa a chave dela, ela **continua funcionando normalmente** mesmo com a IA compartilhada esgotada — o próprio aviso do painel lembra isso.
-
-**📸 Sugestão de print:** painel "Serviços de IA" com um cartão em "Limite esgotado" e o botão "Ampliar limite".
 
 ---
 
