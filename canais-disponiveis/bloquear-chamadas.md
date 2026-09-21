@@ -1,14 +1,10 @@
----
-icon: phone-off
----
-
 # 📵 Bloquear Chamadas do WhatsApp
 
-**O que é:** uma configuração do canal WhatsApp que faz o número **recusar automaticamente as chamadas de voz** recebidas e, se você quiser, **enviar uma mensagem automática** para quem ligou — como se dissesse *"aqui não atendemos ligações, envie uma mensagem"*.
+**O que é:** uma configuração do canal WhatsApp que faz o número **recusar automaticamente as chamadas de voz** recebidas e, se você quiser, **enviar uma mensagem automática** para quem ligou — como se dissesse _"aqui não atendemos ligações, envie uma mensagem"_.
 
 **Para que serve:** evitar que clientes liguem e fiquem sem resposta, poupar a equipe de chamadas indevidas e impedir que chamadas abram atendimentos no sistema.
 
-> 📸 **Sugestão de print:** card "Chamadas de Voz" das Configurações Avançadas do canal, com as opções visíveis.
+<figure><img src="../.gitbook/assets/recusarchamadas.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -16,14 +12,10 @@ icon: phone-off
 
 A configuração fica dentro do cadastro do **canal** (conexão) do WhatsApp:
 
-1. No menu lateral, acesse **Canais / Sessões**;
+1. No menu lateral, acesse **Cadastros - >** **Canais** ;
 2. Localize o canal desejado e clique no botão **Configurações**;
 3. No modal que abrir, clique na aba **Configurações Avançadas**;
 4. Procure o card **Chamadas de Voz**.
-
-> ⚠️ A tela **Canais / Sessões** é acessada somente por usuários com perfil **Administrador** ou **Supervisor**.
-
-> 📸 **Sugestão de print:** tela Canais / Sessões com o botão "Configurações" de um canal destacado.
 
 ***
 
@@ -47,7 +39,7 @@ A configuração fica dentro do cadastro do **canal** (conexão) do WhatsApp:
 
 > ⚠️ **Importante:** depois de salvar, **reinicie a conexão** do canal (desconecte e conecte novamente) para a recusa começar a valer.
 
-> ⚠️ **Disponibilidade:** essa opção existe somente nos canais WhatsApp **não oficiais** (WuzAPI, WhatsApp PLUS, Multi-WA e Baileys). Nos canais **API Oficial (WABA)** e **WhatsApp via Hub** ela não é exibida — nesses casos, utilize a opção **"Não criar ticket ao receber chamadas"**.
+> ⚠️ **Disponibilidade:** essa opção existe somente nos canais WhatsApp **não oficiais** (WuzAPI, WhatsApp PLUS, Multi-WA e Baileys). Nos canais **API Oficial (WABA)** e **WhatsApp via Hub** ela não é exibida.
 
 ### 3. Mensagem ao recusar a chamada
 
@@ -57,7 +49,7 @@ A configuração fica dentro do cadastro do **canal** (conexão) do WhatsApp:
 
 1. Ligue a opção **"Recusar chamadas no Whatsapp"**;
 2. Vai aparecer o campo **"Mensagem a ser enviada ao cliente ao recusar a chamada (necessário reiniciar a conexão)"**;
-3. Escreva a mensagem que o cliente receberá. Exemplo: *"Olá! Não atendemos chamadas por WhatsApp. Por favor, envie sua mensagem por texto que responderemos em seguida. Obrigado!"*;
+3. Escreva a mensagem que o cliente receberá. Exemplo: _"Olá! Não atendemos chamadas por WhatsApp. Por favor, envie sua mensagem por texto que responderemos em seguida. Obrigado!"_;
 4. Clique em **Salvar**;
 5. **Reinicie a conexão** do canal (desconecte e conecte de novo).
 
@@ -68,18 +60,16 @@ No campo também é possível:
 
 **O que acontece depois:** sempre que alguém ligar, a chamada será recusada e a pessoa receberá sua mensagem orientando a falar por texto. Essa mensagem entra como uma conversa normal e pode gerar atendimento normalmente.
 
-> 📸 **Sugestão de print:** campo "Mensagem a ser enviada ao cliente ao recusar a chamada" preenchido, com os ícones de emoji e variáveis.
-
 ***
 
 ## Quando usar cada combinação
 
-| Situação | O que ativar |
-| --- | --- |
-| Não quero que chamadas gerem atendimentos | **Não criar ticket ao receber chamadas** |
-| Quero recusar as ligações e avisar o cliente | **Recusar chamadas no WhatsApp** + mensagem preenchida |
-| Quero recusar sem enviar mensagem | **Recusar chamadas no WhatsApp** (deixe o campo vazio) |
-| Número em API Oficial (WABA / Hub) | Somente **Não criar ticket ao receber chamadas** está disponível |
+| Situação                                     | O que ativar                                                     |
+| -------------------------------------------- | ---------------------------------------------------------------- |
+| Não quero que chamadas gerem atendimentos    | **Não criar ticket ao receber chamadas**                         |
+| Quero recusar as ligações e avisar o cliente | **Recusar chamadas no WhatsApp** + mensagem preenchida           |
+| Quero recusar sem enviar mensagem            | **Recusar chamadas no WhatsApp** (deixe o campo vazio)           |
+| Número em API Oficial (WABA / Hub)           | Somente **Não criar ticket ao receber chamadas** está disponível |
 
 ***
 
@@ -104,17 +94,12 @@ Existe ainda uma configuração que controla, por canal, **quais usuários têm 
 
 ## Problemas comuns
 
-**Ativei a recusa, mas as chamadas continuam passando.**
-Confirme se você **reiniciou a conexão** do canal depois de salvar (desconectar e conectar de novo). Sem isso, a recusa e a mensagem não entram em vigor.
+**Ativei a recusa, mas as chamadas continuam passando.** Confirme se você **reiniciou a conexão** do canal depois de salvar (desconectar e conectar de novo). Sem isso, a recusa e a mensagem não entram em vigor.
 
-**A mensagem de recusa não está sendo enviada.**
-Verifique se a recusa está ativa, se a mensagem foi salva e se a conexão foi reiniciada após o salvamento.
+**A mensagem de recusa não está sendo enviada.** Verifique se a recusa está ativa, se a mensagem foi salva e se a conexão foi reiniciada após o salvamento.
 
-**A opção "Recusar chamadas" não aparece no meu canal.**
-Ela só existe para canais WhatsApp não oficiais (WuzAPI, PLUS, Multi-WA, Baileys). Em canais API Oficial (WABA / Hub), utilize a opção **"Não criar ticket ao receber chamadas"**.
+**A opção "Recusar chamadas" não aparece no meu canal.** Ela só existe para canais WhatsApp não oficiais (WuzAPI, PLUS, Multi-WA, Baileys). Em canais API Oficial (WABA / Hub) não é possivel recusar chamadas.
 
-**Ativei "Não criar ticket" e a opção de recusar sumiu.**
-É o comportamento esperado: com "Não criar ticket ao receber chamadas" ligado, a recusa não é exibida. Desligue a primeira opção se quiser usar a recusa com mensagem.
+**Ativei "Não criar ticket" e a opção de recusar sumiu.** É o comportamento esperado: com "Não criar ticket ao receber chamadas" ligado, a recusa não é exibida. Desligue a primeira opção se quiser usar a recusa com mensagem.
 
-**Quero bloquear ligações só para alguns atendentes.**
-A recusa automática é por **canal** — vale para o número inteiro. Para limitar quem pode ligar/receber chamadas pelo atendimento, utilize as permissões de chamada do canal e as integrações de telefonia.
+**Quero bloquear ligações só para alguns atendentes.** A recusa automática é por **canal** — vale para o número inteiro. Para limitar quem pode ligar/receber chamadas pelo atendimento, utilize as permissões de chamada do canal e as integrações de telefonia.
