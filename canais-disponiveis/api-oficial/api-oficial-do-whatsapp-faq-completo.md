@@ -236,8 +236,6 @@ Se o número estiver em Modo Coexistência, as chamadas continuam funcionando no
 
 Além disso, a Meta já disponibiliza recursos de chamadas por voz via API para números conectado via api nuvem.
 
-> 📵 **Recebe muitas ligações e não quer atendimentos por chamada?** O sistema permite recusar automaticamente as chamadas e avisar o cliente por mensagem — veja [Bloquear Chamadas do WhatsApp](../bloquear-chamadas.md).
-
 ***
 
 ### Posso fazer chamadas de vídeo?
