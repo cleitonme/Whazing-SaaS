@@ -11,6 +11,20 @@ A senha universal permite que você acesse qualquer conta cadastrada na platafor
 
 ***
 
+## **Como Usar no Login (ex.: usuário esqueceu a senha)**
+
+A senha universal **não tem tela própria** — ela é usada na própria tela de login:
+
+1. Informe o **e-mail do usuário** que perdeu o acesso;
+2. No campo de senha, digite a **senha universal**;
+3. Você entrará na conta normalmente.
+
+Depois de entrar, o ideal é definir uma senha nova para o usuário em **Usuários → Editar → campo Senha**.
+
+> 📄 Passo a passo simplificado para leigos, com todas as opções de recuperação de acesso: [Esqueci meu usuário e/ou senha](../solucao-de-problemas/acesso-e-licenca/recuperar-usuario-e-senha.md)
+
+***
+
 ## **Passo a Passo para Configuração no Linux (Exemplo com o Bitvise)**
 
 1. **Conexão**:

@@ -12,6 +12,8 @@ description: >-
 
 > 🔒 Precisa esconder um canal dos demais usuários do sistema? Conheça o [Canal Privado](../canais-suportados/canal-privado.md).
 
+> 📵 Quer que o número recuse automaticamente as chamadas de voz e avise quem ligou? Veja [Bloquear Chamadas do WhatsApp](bloquear-chamadas.md).
+
 ***
 
 ### 📱 WhatsApp API Não Oficial — Gratuita

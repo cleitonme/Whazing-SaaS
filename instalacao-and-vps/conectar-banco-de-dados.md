@@ -188,6 +188,8 @@ Na aba principal:
 
 # 🔐 Recuperação de Senha de Usuário
 
+> 💡 **Quando usar:** este é o caminho mais técnico para recuperar o acesso — use quando a recuperação por e-mail ("Esqueci a senha") e a **Senha Universal** não estiverem disponíveis. Veja todas as opções em [Esqueci meu usuário e/ou senha](../solucao-de-problemas/acesso-e-licenca/recuperar-usuario-e-senha.md).
+
 ## Passo 1 – Acessar a Tabela Users
 
 No DBeaver:
