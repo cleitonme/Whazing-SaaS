@@ -70,7 +70,7 @@
     * [Mensagem de boas vindas teste](modulo-saas/integracao-api-envio-de-mensagens-e-alertas/mensagem-boas-vindas-teste.md)
     * [Envio WhatsApp aviso fatura em aberto](modulo-saas/integracao-api-envio-de-mensagens-e-alertas/envio-whatsapp-aviso-fatura-em-aberto.md)
   * [Guia Simples para Configurar o Gmail e Lembrar a Senha no Whazing](modulo-saas/configurar-gmail.md)
-  * [Configurar OAuth do Gmail para Canal EMAIL](modulo-saas/configurar-oauth-do-gmail-para-canal-email.md)
+  * [Configurar OAuth do Google/Microsoft (E-mail + Agenda)](modulo-saas/configurar-oauth-do-gmail-para-canal-email.md)
   * [Ativar Cloudflare Turnstile (Proteção Anti-Bot)](modulo-saas/ativar-cloudflare-turnstile-protecao-anti-bot.md)
   * [Armazenamento S3](modulo-saas/armazenamento-s3.md)
   * [🎛️ Botão Coringa](modulo-saas/botao-coringa.md)

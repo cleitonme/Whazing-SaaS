@@ -4,7 +4,7 @@ A Agenda do Whazing pode conversar com o **Google Calendar** e com o **Outlook**
 
 > 💡 **Se você nunca ouviu falar em sincronização, pense assim:** em vez de digitar o mesmo compromisso em dois lugares, o sistema cuida disso. O compromisso feito num lado aparece no outro automaticamente.
 
-> ⚠️ A sincronização precisa estar **habilitada nas configurações do sistema** (Google ou Microsoft). Se os botões de conexão não aparecerem, fale com o administrador — ele pode ativar a integração.
+> ⚠️ A sincronização precisa estar **habilitada nas configurações do sistema** (Google ou Microsoft). Se os botões de conexão não aparecerem, fale com o administrador — ele precisa configurar o OAuth da plataforma (veja o guia técnico: [Configurar OAuth do Google/Microsoft — E-mail + Agenda](../../modulo-saas/configurar-oauth-do-gmail-para-canal-email.md)).
 
 ## 🧩 As duas formas de sincronizar
 
@@ -29,9 +29,10 @@ O caminho é o mesmo para os dois tipos — o que muda é **onde** você clica:
 
 1. Para a **agenda total**: abra **Configurações da agenda** (⚙️) → aba **Calendários** → abra o calendário desejado (clique na seta).
 2. Para o **profissional**: abra **Configurações da agenda** (⚙️) → aba **Profissionais** → abra o profissional desejado.
-3. Localize a seção **"Sincronização com Google Calendar/Outlook"**.
-4. Clique em **"Conectar Google Calendar"** ou **"Conectar Outlook"** (o botão que aparece depende do que o administrador habilitou).
-5. Uma **janela de login** abre pedindo a conta externa (Google ou Microsoft). Faça login e **autorize** o acesso.
+3. Pelo **Perfil** (autoatendimento): o profissional conectado pode conectar a própria agenda pelo menu **Perfil**, na mesma seção **"Sincronização com Google Calendar/Outlook"**.
+4. Localize a seção **"Sincronização com Google Calendar/Outlook"**.
+5. Clique em **"Conectar Google Calendar"** ou **"Conectar Outlook"** (o botão que aparece depende do que o administrador habilitou).
+6. Uma **janela de login** abre pedindo a conta externa (Google ou Microsoft). Faça login e **autorize** o acesso.
 
 Pronto! A seção passa a exibir **"Conectado como** seu@email\*\*"\*\*, indicando qual conta está vinculada.
 

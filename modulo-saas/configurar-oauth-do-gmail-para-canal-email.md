@@ -1,16 +1,17 @@
-# Configurar OAuth do Gmail para Canal EMAIL
+# Configurar OAuth do Google/Microsoft (E-mail + Agenda)
 
-**Disponível a partir da versão 3.0.0**
+O OAuth do Gmail permite que as empresas conectem uma conta de e-mail utilizando o botão **"Entrar com Google"** (ou **"Entrar com Microsoft"**), sem precisar informar a senha do Gmail.
 
-O OAuth do Gmail permite que as empresas conectem uma conta de e-mail utilizando o botão **"Entrar com Google"**, sem precisar informar a senha do Gmail.
+> 💡 **Novidade:** essa mesma configuração agora também habilita a **sincronização com o Google Calendar e o Outlook na Agenda** — o profissional conecta o calendário pessoal dele e os compromissos pessoais bloqueiam horário na Agenda do sistema. Você **não precisa criar um segundo aplicativo** no Google: **o mesmo Client ID e Client Secret valem para os dois usos** — basta cadastrar **mais uma URL de retorno** (veja o passo 7).
 
 > **Importante:** a configuração do OAuth é feita **uma única vez para toda a plataforma**, no painel SaaS. Não é necessário configurar o OAuth separadamente para cada empresa.
 
-### Quando preciso configurar o OAuth?
+### O que a configuração habilita?
 
-Você precisa configurar o OAuth somente se quiser permitir que seus clientes conectem e-mails através de:
+O OAuth é necessário para oferecer, em duas telas do sistema:
 
-**Entrar com Google**
+1. **Canal de e-mail** — o botão **Entrar com Google / Entrar com Microsoft** na conexão de caixas de e-mail.
+2. **Agenda** — os botões **Conectar Google Calendar / Conectar Outlook** na sincronização de calendário (Google Calendar API / Outlook).
 
 Se a empresa utilizar uma configuração tradicional com:
 
@@ -19,7 +20,7 @@ Se a empresa utilizar uma configuração tradicional com:
 * Usuário
 * Senha
 
-não é necessário configurar o OAuth.
+não é necessário configurar o OAuth. E se a Agenda for usada sem sincronização externa, também não é necessário. **Sem essa configuração nada quebra** — as telas continuam funcionando do jeito manual.
 
 ***
 
@@ -29,11 +30,11 @@ Entre no sistema com uma conta que tenha acesso ao **Painel SaaS**.
 
 No menu, acesse:
 
-**Painel SaaS → Integrações → E-mail (OAuth)**
+**Painel SaaS → Integrações → Login com Google/Microsoft (OAuth)**
 
-Nesta tela serão exibidas as configurações de autenticação para Google e Microsoft.
+Nesta tela serão exibidas as configurações de autenticação para **Google** e **Microsoft**, junto com um aviso explicando que a configuração atende o **e-mail e a Agenda**.
 
-Para configurar o Gmail, vamos utilizar a seção:
+Para configurar o Google, vamos utilizar a seção:
 
 **Google**
 
@@ -44,13 +45,15 @@ Você encontrará os campos:
 
 Esses dados serão obtidos no Google Cloud.
 
+> 💡 A tela mostra também as **4 URLs de retorno** que o sistema utiliza (E-mail e Agenda, para Google e Microsoft). Copie-as exatamente como aparecem — elas dependem do endereço (domínio) da sua instalação.
+
 ***
 
 ## 2. Criar um projeto no Google Cloud
 
 Acesse o:
 
-[Google Cloud Console](https://console.cloud.google.com/?utm_source=chatgpt.com)
+[Google Cloud Console](https://console.cloud.google.com)
 
 Faça login com uma conta Google que será responsável pelo aplicativo OAuth.
 
@@ -74,11 +77,13 @@ Clique em **Criar**.
 
 ***
 
-## 3. Ativar a Gmail API
+## 3. Ativar as APIs: Gmail API e Google Calendar API
 
 Depois de criar o projeto, abra o menu:
 
 **APIs e serviços → Biblioteca**
+
+### 3.1 Ativar a Gmail API
 
 Pesquise por:
 
@@ -92,7 +97,23 @@ Depois clique em:
 
 **Ativar**
 
-A API do Gmail precisa estar habilitada para que o aplicativo possa utilizar os recursos do Gmail.
+A API do Gmail precisa estar habilitada para que o aplicativo possa ler e enviar e-mails.
+
+### 3.2 Ativar a Google Calendar API
+
+Volte à **Biblioteca**, pesquise por:
+
+```
+Google Calendar API
+```
+
+Clique em **Google Calendar API**.
+
+Depois clique em:
+
+**Ativar**
+
+> ⚠️ **Novidade importante:** a **Google Calendar API** precisa estar ativada no **mesmo projeto** para que a sincronização com a Agenda funcione. Se você só for usar OAuth para e-mail (e não pretende oferecer sincronização de Agenda), ativar apenas a Gmail API é suficiente.
 
 ***
 
@@ -172,7 +193,7 @@ O Google recomenda o tipo **Web application** para esse tipo de fluxo OAuth no s
 
 ***
 
-## 7. Configurar a URL de retorno
+## 7. Configurar as URLs de retorno
 
 Esta é uma das configurações mais importantes.
 
@@ -184,17 +205,20 @@ clique em:
 
 **Add URI**
 
-Informe exatamente:
+Cadastre **as URLs de retorno do E-mail e da Agenda** (copie exatamente como a tela de configuração do sistema mostra):
 
 ```
 https://testeapi.whazing.com.br/email-oauth/google/callback
+https://testeapi.whazing.com.br/calendar-sync-oauth/google/callback
 ```
 
 Depois salve.
 
-> **Atenção:** não altere a URL, não coloque uma `/` no final e não utilize outra URL. O endereço cadastrado no Google precisa ser exatamente o mesmo utilizado pelo sistema.
+> **Atenção:** não altere as URLs, não coloque uma `/` no final e não utilize outros endereços. O endereço `testeapi.whazing.com.br` é um exemplo — **use o domínio da sua instalação**, exatamente como exibido na tela do sistema. Cada endereço cadastrado no Google precisa ser idêntico ao utilizado pelo sistema.
 
-O Google exige que o URI de redirecionamento utilizado pelo aplicativo esteja registrado nas credenciais OAuth.
+O Google exige que os URIs de redirecionamento utilizados pelo aplicativo estejam registrados nas credenciais OAuth.
+
+> 💡 Se você também configurar o **Microsoft** para e-mail e Agenda, o mesmo raciocínio vale no Azure: cadastre as URLs de retorno de **e-mail** (`/email-oauth/microsoft/callback`) **e de Agenda** (`/calendar-sync-oauth/microsoft/callback`).
 
 ***
 
@@ -228,17 +252,13 @@ Volte para o sistema.
 
 Acesse:
 
-**Painel SaaS → Integrações → E-mail (OAuth)**
+**Painel SaaS → Integrações → Login com Google/Microsoft (OAuth)**
 
-Na seção **Google**, preencha:
+Na seção **Google**:
 
-#### Client ID
-
-Cole o valor copiado do Google Cloud.
-
-#### Client Secret
-
-Cole o valor copiado do Google Cloud.
+1. Certifique-se de que a chave **Google** está **ativada**.
+2. Em **Client ID**, cole o valor copiado do Google Cloud.
+3. Em **Client Secret**, cole o valor copiado do Google Cloud.
 
 Exemplo:
 
@@ -250,13 +270,13 @@ Client Secret:
 GOCSPX-xxxxxxxxxxxxxxxxxxxxxxxx
 ```
 
-Depois clique em:
+Depois clique em **Salvar** (ou aguarde a confirmação de "Configuração alterada").
 
-**Salvar**
+> 💡 **O mesmo Client ID/Secret vale para e-mail e Agenda** — não crie um aplicativo separado. A configuração é por provedor (Google e Microsoft são independentes entre si).
 
 ***
 
-## 10. Testar a conexão
+## 10. Testar a conexão (e-mail)
 
 Depois de salvar o OAuth, entre em uma empresa que tenha acesso à configuração de e-mail.
 
@@ -276,7 +296,7 @@ Selecione a conta Gmail que deseja conectar.
 
 ## 11. Autorizar o aplicativo
 
-O Google mostrará as permissões solicitadas pelo sistema.
+O Google mostrará as permissões solicitadas pelo sistema (as permissões incluem e-mail e, se o app tiver a Google Calendar API ativada, também calendário).
 
 Confira as informações e clique em:
 
@@ -288,17 +308,36 @@ A conta Gmail deverá aparecer como conectada.
 
 ***
 
-## 12. Configuração da URL utilizada pelo sistema
+## 12. Testar a sincronização da Agenda
 
-Para o Google, a URL de retorno utilizada pelo sistema é:
+Para testar a parte da Agenda (Google Calendar/Outlook):
 
-```
-https://testeapi.whazing.com.br/email-oauth/google/callback
-```
+1. Abra a **Agenda** do sistema → **Configurações da agenda** (⚙️) → aba **Profissionais** (ou aba **Calendários**).
+2. Abra um profissional (ou calendário) e localize a seção **"Sincronização com Google Calendar/Outlook"**.
+3. Clique em **Conectar Google Calendar** (ou **Conectar Outlook**).
+4. Faça login na conta externa e **autorize** o acesso.
+5. A seção deve exibir **"Conectado como"** o e-mail da conta.
 
-Essa URL deve estar cadastrada no Google Cloud em:
+> 💡 O profissional também pode conectar a própria agenda sozinho: **Perfil** (menu do usuário) → seção **"Sincronização com Google Calendar/Outlook"** (só aparece se o OAuth estiver habilitado no painel SaaS e o profissional estiver vinculado ao usuário).
+
+Guia completo do uso no dia a dia: [Google Agenda](../funcionalidades/agenda/google-agenda.md)
+
+***
+
+## 13. Configuração da URL utilizada pelo sistema
+
+Para o Google, o sistema utiliza **duas** URLs de retorno:
+
+| Uso | URL de retorno |
+| --- | --- |
+| **E-mail** | `https://SEU-DOMINIO/email-oauth/google/callback` |
+| **Agenda (Google Calendar)** | `https://SEU-DOMINIO/calendar-sync-oauth/google/callback` |
+
+Essas URLs devem estar cadastradas no Google Cloud em:
 
 **Google Auth Platform → Clients → seu aplicativo → Authorized redirect URIs**
+
+Para a Microsoft, as URLs seguem o mesmo padrão (`/email-oauth/microsoft/callback` e `/calendar-sync-oauth/microsoft/callback`).
 
 ***
 
@@ -312,19 +351,15 @@ Se aparecer um erro relacionado a:
 redirect_uri_mismatch
 ```
 
-verifique se a URL cadastrada no Google está exatamente assim:
-
-```
-https://testeapi.whazing.com.br/email-oauth/google/callback
-```
-
-Confira principalmente:
+verifique se **as duas URLs** (E-mail **e** Agenda) estão cadastradas no Google exatamente como o sistema exibe:
 
 * `https`
-* domínio
-* `/email-oauth/google/callback`
+* domínio correto da sua instalação
+* `/email-oauth/google/callback` (e-mail) e `/calendar-sync-oauth/google/callback` (Agenda)
 * ausência de espaços
 * ausência de `/` adicional no final
+
+> 💡 Um erro muito comum: a conexão de **e-mail funciona**, mas a da **Agenda dá erro** — normalmente é porque a URL da Agenda (`/calendar-sync-oauth/google/callback`) não foi cadastrada no Google.
 
 ***
 
@@ -332,7 +367,7 @@ Confira principalmente:
 
 Volte em:
 
-**Painel SaaS → Integrações → E-mail (OAuth)**
+**Painel SaaS → Integrações → Login com Google/Microsoft (OAuth)**
 
 e confira se os dados foram copiados corretamente.
 
@@ -356,16 +391,25 @@ e se a URL de retorno está cadastrada corretamente.
 
 ***
 
+### A Agenda não conecta
+
+* **Botão não aparece:** o OAuth do Google/Microsoft precisa estar **habilitado e ativado** no Painel SaaS (chave **Google** ou **Microsoft** ligada). Para profissionais, a seção também só aparece quando o profissional está **vinculado a um usuário do sistema**.
+* **Dá erro ao conectar:** verifique se a **Google Calendar API** está **ativada** no mesmo projeto do Google Cloud (passo 3.2) e se a URL de retorno da Agenda (`/calendar-sync-oauth/google/callback`) está cadastrada.
+* **Janela de login não abre:** o navegador pode estar bloqueando pop-ups — libere-os para o site do sistema e tente de novo.
+
+***
+
 ## Configuração para Microsoft
 
 A configuração do Microsoft OAuth também está disponível na mesma tela:
 
-**Painel SaaS → Integrações → E-mail (OAuth)**
+**Painel SaaS → Integrações → Login com Google/Microsoft (OAuth)**
 
-Para Microsoft, utilize o Azure Portal e a URL de retorno:
+Para Microsoft, utilize o Azure Portal e cadastre as URLs de retorno:
 
 ```
-https://testeapi.whazing.com.br/email-oauth/microsoft/callback
+https://SEU-DOMINIO/email-oauth/microsoft/callback
+https://SEU-DOMINIO/calendar-sync-oauth/microsoft/callback
 ```
 
 A configuração do Google e Microsoft é independente.
@@ -374,25 +418,21 @@ A configuração do Google e Microsoft é independente.
 
 ## Resumo
 
-Para configurar o Gmail:
+Para configurar o Google (e-mail + Agenda):
 
-1. Acesse **Painel SaaS → Integrações → E-mail (OAuth)**.
+1. Acesse **Painel SaaS → Integrações → Login com Google/Microsoft (OAuth)**.
 2. Abra o **Google Cloud Console**.
 3. Crie um projeto.
-4. Ative a **Gmail API**.
+4. Ative a **Gmail API** **e a Google Calendar API**.
 5. Configure a tela de consentimento OAuth.
 6. Crie um cliente OAuth do tipo **Web application**.
-7.  Cadastre a URL:
-
-    ```
-    https://testeapi.whazing.com.br/email-oauth/google/callback
-    ```
+7. Cadastre as **duas** URLs de retorno (E-mail e Agenda).
 8. Copie o **Client ID**.
 9. Copie o **Client Secret**.
 10. Volte ao sistema.
-11. Acesse **Painel SaaS → Integrações → E-mail (OAuth)**.
-12. Cole o **Client ID** e **Client Secret** nos campos do Google.
+11. Acesse **Painel SaaS → Integrações → Login com Google/Microsoft (OAuth)**.
+12. Ative a chave **Google** e cole o **Client ID** e **Client Secret**.
 13. Clique em **Salvar**.
-14. Teste conectando uma conta através de **Entrar com Google**.
+14. Teste o **e-mail** com **Entrar com Google** e a **Agenda** com **Conectar Google Calendar**.
 
-> **Esta configuração é única para a plataforma.** Depois de configurada, não é necessário criar um novo aplicativo OAuth para cada empresa.
+> **Esta configuração é única para a plataforma.** Depois de configurada, não é necessário criar um novo aplicativo OAuth para cada empresa — e o mesmo aplicativo atende o e-mail e a Agenda.
