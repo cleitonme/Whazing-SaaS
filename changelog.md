@@ -1,5 +1,77 @@
 ## Changelog e Atualizações
 
+# 🚀 Versão 3.1.2 BETA
+
+### 🏢 Painel SaaS
+
+* **Empresas:** melhorias no processo de exclusão de empresas, tornando a operação mais segura e consistente.
+* **Cadastro de Empresas:** adicionado espaço para **anotações internas** no cadastro das empresas.
+* **Backup do banco de dados:** adicionada programação de backups automáticos pelo Painel SaaS.
+  ⚠️ **Atenção:** o processo de backup pode consumir bastante processamento do servidor e, durante sua execução, deixar o sistema mais lento. Utilize com consciência e programe os backups em horários de menor utilização.
+* **Configuração de Webhooks:** melhorias no layout e na organização das configurações de webhook.
+
+### 📋 Módulo de Tarefas
+
+* **Anexos:** agora é possível anexar arquivos às tarefas.
+* **Notificações:** melhorias nas notificações e nos alertas relacionados às tarefas.
+
+### 🌐 Webchat
+
+* **Relatórios:** adicionado rastreamento de visitantes do Webchat.
+* **Primeira mensagem automática:** adicionada configuração para enviar uma primeira mensagem automaticamente ao iniciar a integração.
+* **Chamar visitante:** adicionada possibilidade de chamar um visitante diretamente pelo Webchat.
+
+### 🔗 Tracking Links
+
+* **Visualização em mapa:** os relatórios de Tracking Links agora possuem opção de visualização dos dados em **modo mapa**.
+
+### ⏱️ Dashboard de SLA
+
+* **Monitoramento de atendimento:** novo Dashboard de SLA (*Service Level Agreement*) para acompanhamento dos tempos de atendimento.
+* **Metas de atendimento:** adicionada configuração para definir metas de SLA.
+* **Relatórios:** novos indicadores e relatórios para acompanhar o cumprimento das metas de atendimento.
+
+### 📅 Agenda
+
+* **Sincronização:** melhorias na sincronização de eventos externos criados diretamente na agenda.
+* **Links de agendamento:** os links podem ser gerados já com **nome e telefone preenchidos**.
+* **Personalização dos links:** novas opções de personalização dos links externos de agendamento.
+* **Valor do serviço:** adicionada configuração para definir o valor de cada serviço.
+* **Lembretes:** adicionada configuração para definir o **horário permitido para envio dos lembretes**, evitando envios fora do período configurado.
+* **Webhook:** adicionada integração via webhook para eventos da agenda.
+* **Chatbot:** ampliadas as opções de personalização dos fluxos de agendamento.
+
+#### 🤖 Novos fluxos de agendamento no Chatbot
+
+* **Serviço → Profissional → Data → Horário:** exibe somente os profissionais que realizam o serviço selecionado.
+* **Serviço → Data → Profissional → Horário:** exibe somente dias em que existe disponibilidade e, depois, os profissionais que possuem horário disponível naquele dia.
+* **Qualquer profissional:** nova opção no topo da seleção de profissionais. Nesse caso, o profissional é definido automaticamente de acordo com o horário escolhido.
+
+### 💬 Atendimento
+
+* **Tickets antigos:** tickets com mais de 7 dias agora exibem a data para facilitar a identificação e navegação pelo histórico.
+* **Ações em massa:** adicionada seleção manual e pontual de tickets por meio de **checkboxes**, permitindo escolher exatamente quais tickets participarão das ações em massa.
+
+### 🔌 API
+
+* **Anotações em tickets:** adicionados novos endpoints para criação, consulta, edição e gerenciamento de anotações vinculadas aos tickets.
+
+### 💰 Meta de Vendas
+
+* **Novo relatório:** adicionado relatório de metas de vendas por mês.
+* **Meta baseada no Kanban:** a meta utiliza como referência os valores definidos nas negociações do Kanban.
+* **Lane de negociação ganha:** é possível configurar uma lane como **"Lane de negociação ganha"**. As negociações que chegarem nessa etapa passam a contabilizar para o resultado do mês.
+* **Valor das negociações:** o relatório utiliza o valor definido nas negociações do Kanban.
+* **Negociações perdidas:** também considerada a etapa configurada como negociação perdida para os indicadores do Kanban.
+
+### 📊 Kanban
+
+* **Webhook:** adicionada configuração de webhook para o Kanban.
+
+### 📈 Kanban Pro
+
+* **Webhook:** adicionada configuração de webhook para o Kanban Pro.
+
 # 🚀 Versão 3.1.1 BETA
 
 ## 🐛 Correções
