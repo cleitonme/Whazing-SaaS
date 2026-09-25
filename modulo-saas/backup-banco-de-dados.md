@@ -44,6 +44,8 @@ Cada alteração é salva na hora — aparece a confirmação **"Configuração 
 
 > ⚠️ **Destino "Neste servidor":** o backup fica **no mesmo servidor do sistema**. Se o servidor for perdido, o backup se perde junto. Para proteção real, use o **armazenamento externo (S3)** — o próprio sistema destaca esse aviso quando o destino local está escolhido.
 
+Local fica na pasta /home/deploy/whazing/backend/private/backups
+
 ***
 
 ## 🗄️ Armazenamento externo (S3)
