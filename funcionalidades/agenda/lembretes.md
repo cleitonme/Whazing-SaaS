@@ -30,6 +30,29 @@ Aparece a confirmação **"Configuração de lembrete salva com sucesso!"**.
 
 ***
 
+## ⏰ Horário permitido para lembretes
+
+Imagine um agendamento às **08:00** com **24 horas de antecedência**: o lembrete cairia às 08:00 da manhã — ou, em agendamentos da madrugada seguinte, de madrugada. Para evitar que o cliente receba mensagens em horários inconvenientes, cada calendário tem a configuração **"Horário permitido para lembretes"**.
+
+**Onde configurar** (dentro da mesma seção **Lembretes** do calendário):
+
+1. Ligue a opção **"Respeitar horário permitido para envio"**.
+2. Defina a **"Hora inicial"** e a **"Hora final"** — a janela em que os lembretes podem ser enviados (ex.: das 09:00 às 20:00).
+3. Escolha o que o sistema faz **quando o horário calculado cair fora desse período**:
+   * **"Enviar no próximo horário permitido"** — espera até o início da próxima janela. Ex.: o lembrete cairia às 07:00? O cliente recebe às 09:00.
+   * **"Enviar no último horário permitido anterior"** — antecipa para o fim da janela anterior. Ex.: o lembrete cairia às 07:00? O cliente recebeu na véspera, às 20:00.
+4. Clique em **Salvar**.
+
+> 💡 **Para que serve:** garante que nenhum lembrete atrapalhe o cliente de madrugada ou em horários de pouco movimento — e evita que o número da empresa pareça invasivo.
+
+> ⚠️ Deixar **"Respeitar horário permitido para envio"** desligado mantém o comportamento antigo: o lembrete sai exatamente na hora calculada pela antecedência, mesmo que seja de madrugada.
+
+**Onde colocar:** logo após a lista de passos desta seção.
+
+**Objetivo:** mostrar visualmente onde fica a nova configuração e que existem duas escolhas possíveis para quando o lembrete cai fora do período.
+
+***
+
 ## ✍️ Formas de enviar a mensagem
 
 Na aba **Geral** você escolhe **como** a mensagem sai. Existem três formatos:
