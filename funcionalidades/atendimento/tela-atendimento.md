@@ -188,7 +188,7 @@ Se um canal (número de WhatsApp, Instagram...) **desconectar**, um aviso aparec
 
 ## Ações em massa (selecionar vários atendimentos)
 
-Para administradores e supervisores, é possível aplicar uma mesma ação em **vários atendimentos de uma vez**, escolhendo **exatamente quais** participarão.
+Para administradores e supervisores, é possível aplicar uma mesma ação em **vários atendimentos de uma vez**, escolhendo **exatamente quais** participarão. Somente admin e Supervisor
 
 ### Como selecionar
 
@@ -203,27 +203,27 @@ Para administradores e supervisores, é possível aplicar uma mesma ação em **
 
 Com um ou mais atendimentos selecionados, clique em **"Ações"** na barra do rodapé:
 
-| Ação | O que faz |
-| --- | --- |
-| **Marcar como Aberto** | Coloca os atendimentos selecionados em status **Aberto** |
-| **Marcar como Pendente** | Devolve para a fila (status **Pendente**) |
-| **Fechar atendimentos** | Encerra todos os selecionados — **pede confirmação** com a quantidade |
-| **Transferir fila/setor** | Escolhe a fila de destino para todos |
-| **Atribuir atendente** | Define um responsável para todos |
-| **Desatribuir atendente** | Tira o responsável dos selecionados |
-| **Adicionar etiqueta** | Aplica uma etiqueta em todos |
-| **Remover etiqueta** | Tira uma etiqueta de todos |
-| **Excluir atendimentos** | **Apaga** os selecionados — **pede confirmação** e a ação **não pode ser desfeita** |
+| Ação                      | O que faz                                                                           |
+| ------------------------- | ----------------------------------------------------------------------------------- |
+| **Marcar como Aberto**    | Coloca os atendimentos selecionados em status **Aberto**                            |
+| **Marcar como Pendente**  | Devolve para a fila (status **Pendente**)                                           |
+| **Fechar atendimentos**   | Encerra todos os selecionados — **pede confirmação** com a quantidade               |
+| **Transferir fila/setor** | Escolhe a fila de destino para todos                                                |
+| **Atribuir atendente**    | Define um responsável para todos                                                    |
+| **Desatribuir atendente** | Tira o responsável dos selecionados                                                 |
+| **Adicionar etiqueta**    | Aplica uma etiqueta em todos                                                        |
+| **Remover etiqueta**      | Tira uma etiqueta de todos                                                          |
+| **Excluir atendimentos**  | **Apaga** os selecionados — **pede confirmação** e a ação **não pode ser desfeita** |
 
 Ao concluir, o sistema informa **"{n} atendimento(s) atualizado(s)."** — e, quando algum fica de fora por regra (ex.: já estava naquele status, ou desatribuir um atendimento aberto), avisa quantos foram **ignorados** e por quê.
 
 > 💡 As confirmações só aparecem nas ações difíceis de desfazer (fechar e excluir). As demais são aplicadas direto — mas vale conferir a seleção antes, pela contagem na barra.
 
-**Sugestão de print:** lista de atendimentos no modo seleção, com checkboxes visíveis nos cards e a barra do rodapé mostrando "{n} selecionado(s)" e o menu "Ações" aberto.
 
-**Onde colocar:** logo após a tabela de ações.
 
-**Objetivo:** mostrar as duas partes do recurso de uma vez — onde ficam os checkboxes e o menu de ações em massa — já que é uma funcionalidade nova e exclusiva de admin/supervisor.
+<figure><img src="../../.gitbook/assets/acoesemmassaatendimento.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/acoesmassaatendomento2.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
