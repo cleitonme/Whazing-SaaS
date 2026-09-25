@@ -19,6 +19,7 @@
 1. No topo da aba, preencha:
    * **Nome do serviço** — ex.: "Corte masculino", "Consulta de rotina", "Avaliação".
    * **Duração (minutos)** — quanto tempo o atendimento leva. O padrão sugerido é **30 minutos**.
+   * **Valor** — quanto o serviço custa (opcional). Detalhes na seção [Valor do serviço](#valor-do-serviço) abaixo.
 2. Clique no **botão +**.
 
 Aparece a confirmação e o serviço entra na lista, já **ativo**.
@@ -39,12 +40,13 @@ Se a duração for trocada para 1 hora, os horários passam a ser **09:00, 10:00
 
 ## ✏️ Editando um serviço
 
-Cada serviço na lista tem três controles, todos salvos **automaticamente** ao sair do campo:
+Cada serviço na lista tem quatro controles, todos salvos **automaticamente** ao sair do campo:
 
 | Controle                  | O que faz                                   |
 | ------------------------- | ------------------------------------------- |
 | **Nome** (campo de texto) | Clique, edite e clique fora para salvar     |
 | **Duração** (campo `min`) | Ajuste os minutos e clique fora para salvar |
+| **Valor** (campo com o símbolo da moeda) | Informe quanto o serviço custa — veja abaixo. Em branco, o serviço simplesmente não exibe valor |
 | **Chave liga/desliga**    | Ativa ou desativa o serviço                 |
 
 ### 🔕 Desativar em vez de excluir
@@ -69,6 +71,27 @@ Os serviços não podem ter **nomes repetidos** — nem entre ativos, nem entre 
 | **Existe um serviço desativado com esse nome** | Você já teve um serviço assim e o desativou | O sistema **mostra o serviço desativado na lista** (destacado em laranja). Basta **ligar a chave dele** para reativar em vez de criar outro |
 
 > 💡 Esse segundo aviso é ótimo para quem desativou um serviço e depois precisou dele de volta: não precisa recriar do zero, é só reativar.
+
+***
+
+## 💰 Valor do serviço
+
+Cada serviço pode ter um **valor** — o preço daquele atendimento. É uma informação **informativa**: o sistema não faz cobrança nem envia link de pagamento, ele apenas **mostra o valor** nos lugares certos.
+
+**Onde configurar:**
+
+1. Acesse o menu **Agenda** → engrenagem ⚙️ → aba **Serviços**.
+2. Informe o valor no campo com o **símbolo da moeda** — tanto ao criar um serviço novo quanto na lista dos existentes.
+3. Saia do campo: o valor é salvo automaticamente.
+
+**Formato:** digite o valor em números (ex.: `45` ou `45.90`) — o sistema exibe formatado com o símbolo da moeda da instalação (ex.: R$ 45,90). Serviço sem valor cadastrado simplesmente não mostra preço em lugar nenhum.
+
+**Onde o valor aparece:**
+
+* **No link público/Embed** — junto do nome do serviço (ex.: "Corte masculino · 30min · R$ 45,90") e no resumo da escolha, desde que o link tenha a opção **"Mostrar valor dos serviços"** ativada (veja [Link público e Embed](link-publico-e-embed.md#🧾-aba-campos)).
+* **No chatbot** — quando o bloco de agendamento tem a opção **"Enviar valor do serviço para o cliente"** ligada, o valor aparece na lista de serviços e na mensagem de confirmação (veja [Agendamento pelo Chatbot](agendamento-pelo-chatbot.md)).
+
+> 💡 O valor **não muda a duração nem os horários** — é apenas exibido. Para alterar a duração de um atendimento, mexa no campo **Duração**, não no valor.
 
 ***
 
