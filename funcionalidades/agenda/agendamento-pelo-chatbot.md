@@ -21,7 +21,7 @@ Dentro do **ChatFlow** (o editor visual de chatbot do Whazing) existem dois bloc
 
 ## 📅 Bloco "Agendamento" — como o cliente agenda
 
-Você não monta o passo a passo do agendamento: **o bloco conduz a conversa inteira sozinho**, nesta sequência:
+Você não monta o passo a passo do agendamento: **o bloco conduz a conversa inteira sozinho** — e, com a opção **"Ordem das perguntas"**, você escolhe a sequência em que o cliente faz as escolhas (veja mais abaixo):
 
 **Profissional → Serviço → Data → Horário → Confirmação → Agendamento criado** ✅
 
@@ -46,12 +46,44 @@ O bloco tem **2 saídas fixas** que você conecta no canvas:
 | **Calendário**                                | ✅ Obrigatório — de qual agenda sairão os horários                                                                                                                                                                                                                |
 | **Profissionais**                             | **Todos** ou **Selecionar** alguns específicos                                                                                                                                                                                                                   |
 | **Serviços**                                  | **Todos** ou **Selecionar** alguns específicos                                                                                                                                                                                                                   |
-| **Como mostrar as opções?**                   | **Automático (recomendado)** — o sistema decide o melhor formato por canal; **Texto**; **Lista**; **Botões**                                                                                                                                                     |
+| **Enviar valor do serviço para o cliente**    | Desligado por padrão. Quando ligado, o bot mostra o **valor cadastrado** do serviço ao listar as opções e também na mensagem de confirmação. Serviço sem valor cadastrado não mostra nada         |
+| **Ordem das perguntas**                       | A sequência em que o bot pergunta — veja as 3 formas de agendamento abaixo. A disponibilidade continua sendo a mesma da Agenda                                                                   |
+| **Oferecer "Qualquer profissional"**          | Desligado por padrão. Quando ligado, adiciona uma opção extra no menu de profissionais para quem não tem preferência — detalhes abaixo                                                            |
+| **Como mostrar as opções?**                   | **Automático (recomendado)** — o sistema decide o melhor formato por canal; **Texto**; **Lista**; **Botões**                                                                                     |
 | **Dias pra procurar disponibilidade**         | Quantos dias à frente o bot procura horário (padrão: 14, máximo 60)                                                                                                                                                                                              |
 | **Opções por vez**                            | Quantas opções mostrar de uma vez (limite respeitado: até 3 em botões, até 10 em lista)                                                                                                                                                                          |
 | **Permitir sair do fluxo a qualquer momento** | Desligado por padrão. Quando ligado, cria uma **3ª saída** no canvas ("Sair") e adiciona a opção **Sair** em todos os menus da conversa — para o cliente desistir sem terminar o agendamento (ex.: não achou horário que sirva). O texto do botão é configurável |
 
 > 💡 **Requisito por canal:** as apresentações **Lista** e **Botões** dependem do canal suportar esses recursos. No modo **Automático**, o sistema escolhe o formato adequado para você.
+
+### 🔄 As 3 formas de agendamento (Ordem das perguntas)
+
+A opção **"Ordem das perguntas"** define o caminho da conversa. Escolha a que combina com o seu negócio:
+
+**1. Profissional → Serviço → Data → Horário** (padrão)
+O caminho de sempre: o cliente escolhe o profissional, depois o serviço, depois a data e por fim o horário.
+
+**2. Serviço → Profissional → Data → Horário**
+O cliente escolhe primeiro **o que quer fazer** e só depois **com quem**. O bot mostra **somente os profissionais que realizam o serviço escolhido** — se a manicure não faz corte, ela não aparece quando o cliente escolhe "Corte".
+
+**3. Serviço → Data → Profissional → Horário**
+O cliente escolhe o serviço, e o bot mostra **somente os dias em que existe horário disponível** para aquele serviço. Depois que ele escolhe o dia, aparecem **apenas os profissionais que têm horário livre naquele dia** — e, em seguida, os horários.
+
+> 💡 **A ordem só muda a pergunta, não a agenda:** em qualquer uma das três formas, os horários oferecidos continuam respeitando exatamente a disponibilidade cadastrada na Agenda. Mude à vontade — não há risco de "soltar" um horário que não existe.
+
+**Onde colocar:** logo após a tabela "Configurações do bloco".
+
+**Objetivo:** mostrar onde ficam as duas novidades — a escolha da ordem da conversa e a opção extra de profissional — que costumam gerar dúvida sobre onde são configuradas.
+
+### 👤 A opção "Qualquer profissional"
+
+Ao ligar **"Oferecer \"Qualquer profissional\""**, aparece no **topo da lista de profissionais** uma opção extra para quem não tem preferência (ex.: _"Qualquer profissional"_).
+
+* Quando o cliente escolhe essa opção, **quem vai atendê-lo fica definido pelo horário que ele escolher**: o sistema marca o atendimento com um profissional que esteja livre naquele dia e hora.
+* O **texto da opção é configurável** no campo **\"Rótulo \"Qualquer profissional\"\"** — uma clínica pode preferir _"Primeiro disponível"_, por exemplo.
+* É ótimo para aproveitar melhor a agenda: o cliente aceita qualquer pessoa, então encaixa em qualquer horário livre.
+
+> ⚠️ Deixar desligado (padrão) mantém o comportamento antigo: o cliente sempre escolhe a pessoa.
 
 ### Mensagens e rótulos personalizados
 
@@ -59,7 +91,7 @@ Em **"Mensagens"** você edita todos os textos da conversa (cada um já vem pree
 
 Em **"Rótulos e botões"** você ajusta os textos curtos dos cabeçalhos e botões (ex.: trocar "Serviço" por "Consulta").
 
-> 💡 **Teste antes de publicar!** O **simulador** do ChatFlow reproduz a conversa de agendamento ponta a ponta (profissional → serviço → data → horário → confirmação). É uma simulação: nenhum agendamento real é criado durante o teste.
+> 💡 **Teste antes de publicar!** O **simulador** do ChatFlow reproduz a conversa de agendamento ponta a ponta, na ordem que você configurou. É uma simulação: nenhum agendamento real é criado durante o teste.
 
 ***
 
