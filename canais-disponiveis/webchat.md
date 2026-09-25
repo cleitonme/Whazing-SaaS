@@ -40,7 +40,7 @@ A configuração do WebChat tem **6 abas**:
 | ----------------- | -------------------------------------------------------- |
 | **Configuração**  | Nome, textos, formulário, posição, domínios permitidos   |
 | **Aparência**     | Cores do chat                                            |
-| **Comportamento** | Abertura automática, simulação de digitação, som         |
+| **Comportamento** | Abertura automática, simulação de digitação, som, rastreamento de visitantes e mensagem automática |
 | **Preview**       | Vê como o chat vai ficar antes de publicar               |
 | **Instalação**    | Código para colocar no site + documentação de integração |
 | **Sessões**       | Lista das conversas dos visitantes                       |
@@ -122,8 +122,28 @@ Você escolhe **duas cores de fundo** e, para cada uma, a **cor da fonte** (a co
 | **Simular digitação do agente** | Antes da mensagem aparecer, mostra "digitando…" — dá cara de conversa humana |
 | **Duração da simulação**        | Quanto tempo o "digitando…" fica na tela (em milissegundos)                  |
 | **Som de notificação**          | Toca um som quando chega mensagem                                            |
+| **Rastrear visitantes do site** | Acompanha em tempo real quem está no site **mesmo sem ter iniciado uma conversa** — alimenta o relatório "Visitantes do WebChat" (mais abaixo). Já vem **ligada** por padrão |
+| **Iniciar conversa automaticamente após o visitante preencher seus dados** | Envia uma **primeira mensagem automática** assim que o visitante termina o formulário — veja abaixo |
 
 > 💡 A abertura automática também pode ser feita pelo código, caso prefira controlar pelo site — os dois jeitos estão descritos na seção de integração.
+
+### 👋 Primeira mensagem automática
+
+Ao ligar **"Iniciar conversa automaticamente após o visitante preencher seus dados"**, aparece o campo **"Mensagem automática"**. O funcionamento:
+
+1. O visitante abre o chat e preenche os dados do formulário (o que você marcou como obrigatório).
+2. **Assim que ele termina**, o WebChat envia **sozinho** a mensagem que você escreveu no campo.
+3. Essa mensagem **inicia o atendimento** e faz o canal funcionar como de costume: **dispara o chatbot ou a integração configurada** no canal (fila, automação etc.), sem o visitante precisar digitar nada antes.
+
+**Para que serve:** dar as boas-vindas de forma consistente ("Olá! Em que podemos ajudar hoje?") e já entregar o visitante ao bot/fila na hora certa, mesmo que ele não escreva a primeira mensagem.
+
+> ⚠️ Deixar desligado (padrão) mantém o comportamento normal: a conversa só começa quando o próprio visitante envia uma mensagem.
+
+**Sugestão de print:** aba **Comportamento** mostrando as opções "Rastrear visitantes do site" e "Iniciar conversa automaticamente..." com o campo "Mensagem automática" preenchido.
+
+**Onde colocar:** logo após a tabela desta aba.
+
+**Objetivo:** mostrar as duas configurações novas no lugar exato onde ficam e como o campo de mensagem aparece só quando a opção está ligada.
 
 ***
 
@@ -266,6 +286,61 @@ Lista as **conversas dos visitantes** deste widget, com as colunas:
 | **Ticket**           | Número do atendimento criado no sistema (ex.: `#123`) — clique para acompanhar no atendimento |
 
 Se não houver conversas, aparece **"Nenhuma sessão encontrada."**
+
+***
+
+## 🕵️ Visitantes do WebChat — quem está no site agora
+
+Com o **"Rastrear visitantes do site"** ligado, o sistema acompanha quem está navegando no seu site — **mesmo sem ter aberto o chat**. Tudo isso aparece no relatório **"Visitantes do WebChat"**.
+
+### Onde acessar
+
+**Relatórios → seção WebChat → "Visitantes do WebChat"**. O relatório é exclusivo de **administradores e supervisores** e tem três abas:
+
+### 🟢 Aba "Online"
+
+Mostra **quem está no site neste momento**, com um **mapa** dos visitantes e uma tabela com:
+
+| Informação | O que mostra |
+| --- | --- |
+| **Visitante** | Nome (ou "Visitante anônimo", quando ainda não se identificou) |
+| **Página** | A página do site onde a pessoa está agora (a URL completa aparece ao passar o mouse) |
+| **Localização** | Cidade, região e país — aproximados, obtidos pelo IP |
+| **Navegador** | Navegador e sistema (ex.: Chrome / Windows) |
+| **Tempo no site** | Um cronômetro que avança em tempo real desde a entrada |
+
+Há filtros para **buscar** por nome, página ou cidade, filtrar por **site** (quando o widget está em mais de um), por **identificação** (Todos / Identificados / Anônimos) e por **país**.
+
+Cada linha tem duas ações:
+
+* **👁️ Ver** — abre o detalhe completo do visitante: página de entrada, **origem** (de onde veio — ex.: Google), IP, dispositivo, quando entrou e o contato do sistema caso já exista.
+* **💬 Chamar** — veja abaixo.
+
+### 🕓 Aba "Histórico"
+
+Lista as **visitas anteriores**: escolha o período (De/Até), a identificação e pesquise. Mostra visitante, localização, site, **última página visitada**, navegador, **páginas vistas** e a última atividade. Use **"Carregar mais"** para ver mais resultados.
+
+### 🗺️ Aba "Mapa de visitantes"
+
+A mesma pergunta do histórico, em forma de **mapa**: visitantes por **cidade** no período escolhido, com a contagem por local e a marcação de quantos estão **identificados**. A tabela abaixo do mapa repete os números.
+
+> 💡 **A localização é aproximada**, obtida pelo IP (cidade/região) — o próprio relatório avisa que não é a posição exata do visitante.
+
+### 💬 Chamar visitante
+
+Ações **"Chamar"** (na tabela Online e no detalhe) abrem a janela **"Chamar visitante"**:
+
+1. O sistema sugere a mensagem **"Olá! Posso ajudar você?"** — você pode editar antes de enviar.
+2. Clique em **Enviar**.
+3. **O que acontece:** a mensagem **abre a conversa no WebChat do visitante** (ela aparece no chat aberto no site dele) e **cria o atendimento**, que aparece na tela de Atendimento como qualquer conversa. O aviso de sucesso traz o botão **"Abrir atendimento"** para ir direto à conversa.
+
+> ⚠️ **E se o visitante já saiu do site?** O sistema avisa: "O visitante saiu do site e não pode receber mensagens agora." A mensagem só é entregue a quem está navegando naquele momento.
+
+**Sugestão de print:** aba **Online** do relatório "Visitantes do WebChat", com o mapa e a tabela de visitantes visíveis.
+
+**Onde colocar:** logo após a lista "Onde acessar".
+
+**Objetivo:** dar a visão geral da tela nova — mapa, colunas e as ações de Ver e Chamar — antes de explicar os detalhes.
 
 ***
 
