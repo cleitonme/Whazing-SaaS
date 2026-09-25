@@ -17,6 +17,7 @@ A referência técnica completa (todos os campos, exemplos e respostas) fica no 
 | 📅 **Agenda** | **NOVO** — criar e gerenciar **compromissos** da tela Agenda (calendários, profissionais, serviços) | [Agenda](agenda.md) |
 | 👤 **Contatos (clientes)** | Criar, editar, buscar e listar contatos; atualizar Kanban, etiquetas e Follow-up; validar número | [Contatos](contatos.md) |
 | 🎫 **Tickets** | Consultar tickets, criar ticket, definir fila/chatbot, listar mensagens de um ticket | [Tickets](tickets.md) |
+| 🖊️ **Anotações** | **NOVO** — criar, consultar, listar e apagar anotações internas vinculadas a tickets | [Anotações](anotacoes.md) |
 | 🧩 **Templates** | Gerenciar templates oficiais do WhatsApp | [Templates](templates.md) |
 | ⚡ **API PLUS** | Mensagens interativas avançadas (botões, listas, carrossel, pagamento) do canal WhatsApp API PLUS | [API PLUS](api-plus.md) |
 | 🔧 **Outros** | Validar número, status do canal, QR Code e listagens por filtro | [Outros](outros.md) |
@@ -32,6 +33,7 @@ A referência técnica completa (todos os campos, exemplos e respostas) fica no 
 Os dois grupos mais recentes da API são:
 
 * **[Agendamentos](agendamentos.md)** — programar o envio futuro de uma mensagem e depois consultar ou cancelar;
-* **[Agenda](agenda.md)** — criar compromissos reais na Agenda do sistema (com profissional, serviço e verificação de conflito de horário).
+* **[Agenda](agenda.md)** — criar compromissos reais na Agenda do sistema (com profissional, serviço e verificação de conflito de horário);
+* **[Anotações](anotacoes.md)** — gerenciar por API as anotações internas dos tickets (criar por ticketId ou número, consultar, listar por ticket/contato e apagar), incluindo as menções a usuários e equipes.
 
 > ⚠️ Novos endpoints podem demorar a chegar nesta documentação — **sempre baixe o modelo Postman** pelo sistema (Configurações → Canais → API) para ver a versão mais atual.
