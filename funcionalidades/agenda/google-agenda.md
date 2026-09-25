@@ -46,7 +46,8 @@ A seção de sincronização mostra o estado direto no lugar:
 
 * **🟢 Conectado:** aparece o ícone de check verde + **"Conectado como** conta@email\*\*"\*\* + o nome do serviço (Google Calendar ou Outlook) + botão **Desconectar**.
 * **⚪ Não conectado:** aparecem os botões **Conectar Google Calendar** / **Conectar Outlook**.
-* **🔴 Erro:** se houver problema na conexão (por exemplo, senha trocada ou permissão revogada), uma mensagem de erro aparece nessa mesma seção.
+* **🟡 Reconectando:** se houver uma **falha temporária de comunicação** (a autorização continua válida), aparece o aviso **"Reconectando calendário..."**. O sistema **tenta se reconectar sozinho** — não é preciso fazer nada nem reconectar manualmente.
+* **🔴 Erro:** se houver problema na conexão (por exemplo, senha trocada ou permissão revogada), aparece **"Reconexão necessária"** com a mensagem de erro nessa mesma seção — aí sim será preciso clicar no botão de conexão novamente.
 
 ***
 
@@ -64,9 +65,36 @@ Essa configuração fica logo abaixo da conexão, dentro do cadastro do **profis
 
 ***
 
+## ✏️ Editando eventos externos pela Agenda
+
+Os **eventos que vieram do Google Agenda ou do Outlook** (os "Compromissos pessoais") não são mais apenas visuais: agora é possível **editá-los direto da tela da Agenda**.
+
+**Como fazer:**
+
+1. Clique no evento externo no calendário.
+2. A janela mostra as informações do evento: **título, origem, data/hora, local, descrição, organizador e participantes** — com o botão **"Abrir no Google Agenda"** (ou Outlook) quando quiser ver o evento lá.
+3. Faça as alterações e salve: **"Evento atualizado no Google Agenda"**.
+
+> ⚠️ **A alteração é gravada direto no Google Agenda/Outlook** — nada fica salvo só no Whazing. O sistema avisa isso na própria janela de edição.
+
+### Quando NÃO dá para editar por aqui
+
+Alguns eventos continuam editáveis **somente no calendário de origem**. Nesses casos, a própria janela mostra o motivo:
+
+| Situação                                        | Por quê                                                            |
+| ----------------------------------------------- | ------------------------------------------------------------------ |
+| **Evento recorrente** (que se repete)           | As repetições são controladas pelo Google/Outlook                  |
+| **Evento de dia inteiro**                       | O horário só pode ser alterado no calendário de origem             |
+| **Você não é o organizador do evento**          | Só quem organizou (ou a conta conectada, sendo organizadora) altera |
+| **Descrição em formato rico**                   | A formatação é preservada — para alterá-la, edite no Google/Outlook |
+
+Em todas elas, o horário **continua bloqueado na Agenda normalmente** — a limitação é só de edição.
+
+***
+
 ## 📅 E depois da sincronização?
 
-* **Compromissos pessoais do profissional** aparecem na Agenda como eventos **listrados** chamados **"Compromisso pessoal — Nome do profissional"**. Eles bloqueiam o horário e **não podem ser editados por aqui** — só no Google/Outlook.
+* **Compromissos pessoais do profissional** aparecem na Agenda como eventos listrados chamados **"Compromisso pessoal — Nome do profissional"**. Eles bloqueiam o horário e **podem ser editados direto daqui** nos casos comuns — veja a seção [Editando eventos externos pela Agenda](#️-editando-eventos-externos-pela-agenda). Quando a edição não for possível (evento recorrente, de dia inteiro ou de outro organizador), o sistema explica o motivo e indica o calendário de origem.
 * **Agendamentos feitos na Agenda** (quando a sincronização da agenda total está ativa) são **criados no calendário externo** da conta conectada.
 * O calendário principal passa a mostrar os dois tipos de evento juntos, cada um na sua cor.
 
