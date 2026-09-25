@@ -1,7 +1,3 @@
----
-icon: target
----
-
 # Meta de Vendas
 
 O relatório **Meta de Vendas** mostra, mês a mês, **quanto sua equipe ganhou** comparado com a **meta definida**: o valor ganho, o **percentual atingido**, quanto **falta** para bater a meta — e uma radiografia completa do funil comercial.
@@ -38,12 +34,12 @@ O cartão no topo mostra a situação da meta:
 
 ### 📌 Indicadores (cartões de resumo)
 
-| Indicador | O que mostra |
-| --- | --- |
-| **Meta** | O valor definido para o mês |
-| **Ganho** | Soma dos valores das negociações **ganhas** no mês |
-| **Atingido** | Percentual da meta alcançado |
-| **Restante** | Quanto falta para bater a meta |
+| Indicador              | O que mostra                                             |
+| ---------------------- | -------------------------------------------------------- |
+| **Meta**               | O valor definido para o mês                              |
+| **Ganho**              | Soma dos valores das negociações **ganhas** no mês       |
+| **Atingido**           | Percentual da meta alcançado                             |
+| **Restante**           | Quanto falta para bater a meta                           |
 | **Negociações ganhas** | **Quantidade** de negociações que chegaram à etapa ganha |
 
 ### 🗂️ Ganho por kanban
@@ -76,11 +72,7 @@ Três configurações do Kanban alimentam este relatório:
 
 > ⚠️ **Importante:** o mês contabilizado é o da **vitória** (quando a negociação chega à etapa ganha), não o da criação. Uma negociação criada em março e ganha em abril entra no resultado de **abril**.
 
-**Sugestão de print:** topo do relatório **Meta de Vendas** com o cartão de progresso (Ganho/Meta, percentual e barra) e os cartões de indicadores.
-
-**Onde colocar:** logo após "A página (mês e ano)".
-
-**Objetivo:** mostrar o resultado visual mais importante do relatório — quanto falta para a meta e como o sistema apresenta isso.
+<figure><img src="../../.gitbook/assets/metavenda.png" alt=""><figcaption></figcaption></figure>
 
 ***
 

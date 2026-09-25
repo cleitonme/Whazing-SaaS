@@ -12,7 +12,7 @@ O **Dashboard de SLA** ajuda você a acompanhar **os tempos do seu atendimento**
 
 São dois lugares que trabalham juntos:
 
-1. **Metas:** menu **Configurações → Configurações** → seção **"Metas de SLA"** — é onde você define os prazos.
+1. **Metas:** menu **Configurações de Atendimento** **→ Configurações de SLA**
 2. **Acompanhamento:** menu **Relatórios** → seção **Atendimento** → **"Dashboard de SLA"** — é onde você vê os resultados.
 
 ***
@@ -21,14 +21,14 @@ São dois lugares que trabalham juntos:
 
 Na seção **"Metas de SLA"**, clique em **"Nova regra"** e preencha:
 
-| Campo | O que é |
-| --- | --- |
-| **Aplicar a** | Para quem vale a regra: **"Toda a empresa"**, **"Uma fila"** ou **"Um canal"**. Ao escolher fila ou canal, aparece a lista para selecionar |
-| **Primeira resposta** | Prazo máximo (em **minutos**) para alguém responder o cliente pela primeira vez |
-| **Resolução** | Prazo máximo (em **minutos**) para **resolver** o atendimento |
-| **Alerta** | Percentual do prazo a partir do qual o atendimento entra **"Em alerta"** (ex.: `80` = quando o atendimento já consumiu 80% do prazo e continua aberto) |
+| Campo                                 | O que é                                                                                                                                                                           |
+| ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Aplicar a**                         | Para quem vale a regra: **"Toda a empresa"**, **"Uma fila"** ou **"Um canal"**. Ao escolher fila ou canal, aparece a lista para selecionar                                        |
+| **Primeira resposta**                 | Prazo máximo (em **minutos**) para alguém responder o cliente pela primeira vez                                                                                                   |
+| **Resolução**                         | Prazo máximo (em **minutos**) para **resolver** o atendimento                                                                                                                     |
+| **Alerta**                            | Percentual do prazo a partir do qual o atendimento entra **"Em alerta"** (ex.: `80` = quando o atendimento já consumiu 80% do prazo e continua aberto)                            |
 | **Contar apenas o horário comercial** | Ligado: o prazo **só corre no expediente e feriados já configurados** no sistema (a noite e o fim de semana não contam). Desligado: o prazo corre em tempo real, 24 horas por dia |
-| **Ativa** | Liga/desliga a regra |
+| **Ativa**                             | Liga/desliga a regra                                                                                                                                                              |
 
 1. Acesse **Configurações → Configurações → Metas de SLA**.
 2. Clique em **"Nova regra"**.
@@ -41,11 +41,7 @@ Você pode criar quantas regras quiser. Quando mais de uma serve para o mesmo at
 
 > ⚠️ **Atenção:** atendimentos abertos **antes** do cadastro de uma regra **não recebem prazo** — as metas valem para os atendimentos que abrirem a partir daí. No relatório, esses aparecem como **"Sem meta definida"** (fora dos percentuais, sem contar como atraso).
 
-**Sugestão de print:** modal **"Nova regra"** de Metas de SLA com todos os campos visíveis.
-
-**Onde colocar:** logo após a tabela de campos.
-
-**Objetivo:** mostrar visualmente onde o usuário configura cada prazo — a dúvida mais comum é onde as metas são definidas.
+<figure><img src="../../.gitbook/assets/regrasla.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -55,16 +51,16 @@ Abra **Relatórios → Atendimento → Dashboard de SLA**, escolha o **período*
 
 ### Cartões de resumo (topo da tela)
 
-| Indicador | O que mostra |
-| --- | --- |
-| **Atendimentos** | Quantos atendimentos entram no período |
-| **Tempo de 1ª resposta** | Tempo **médio** que a equipe levou para responder pela primeira vez |
-| **Tempo de resolução** | Tempo **médio** para resolver os atendimentos |
-| **1ª resposta no prazo** | **Percentual** dentro da meta de primeira resposta (e, embaixo, "X de Y" atendimentos) |
-| **Resolução no prazo** | **Percentual** resolvido dentro da meta (e "X de Y") |
-| **Resolução fora do prazo** | Percentual que **estourou** a meta de resolução |
-| **Em alerta** | Atendimentos **ainda abertos** que passaram do percentual de alerta — a chance de dar tempo está acabando |
-| **Sem meta definida** | Atendimentos do período que **não tinham meta** quando abriram (aviso, não atraso) |
+| Indicador                   | O que mostra                                                                                              |
+| --------------------------- | --------------------------------------------------------------------------------------------------------- |
+| **Atendimentos**            | Quantos atendimentos entram no período                                                                    |
+| **Tempo de 1ª resposta**    | Tempo **médio** que a equipe levou para responder pela primeira vez                                       |
+| **Tempo de resolução**      | Tempo **médio** para resolver os atendimentos                                                             |
+| **1ª resposta no prazo**    | **Percentual** dentro da meta de primeira resposta (e, embaixo, "X de Y" atendimentos)                    |
+| **Resolução no prazo**      | **Percentual** resolvido dentro da meta (e "X de Y")                                                      |
+| **Resolução fora do prazo** | Percentual que **estourou** a meta de resolução                                                           |
+| **Em alerta**               | Atendimentos **ainda abertos** que passaram do percentual de alerta — a chance de dar tempo está acabando |
+| **Sem meta definida**       | Atendimentos do período que **não tinham meta** quando abriram (aviso, não atraso)                        |
 
 ### As três situações de um atendimento
 
@@ -82,11 +78,7 @@ Abra **Relatórios → Atendimento → Dashboard de SLA**, escolha o **período*
 
 > ⚠️ **Detalhes do cálculo:** o atendimento é contado para o **responsável atual** (nem sempre quem deu a primeira resposta) e atendimentos de **grupos não entram** no cálculo.
 
-**Sugestão de print:** Dashboard de SLA completo (cartões de resumo + gráficos).
-
-**Onde colocar:** no início da seção "O relatório".
-
-**Objetivo:** dar a visão geral da tela nova — onde ficam os indicadores, gráficos e a tabela — antes de explicar cada um.
+<figure><img src="../../.gitbook/assets/relatoriosla.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
