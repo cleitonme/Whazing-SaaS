@@ -48,8 +48,6 @@ BAILEYS_ENABLED=true
 4. No **Painel SaaS**, acesse a tela de **Canais Disponíveis** — aparecerá o botão **"Whatsapp Baileys (recomendado desativar)"** (o próprio nome já avisa que o ideal é mantê-lo desligado);
 5. Ligue o botão — o canal Baileys volta a aparecer no **catálogo de canais** para os clientes (o plano da empresa também precisa ter o Baileys habilitado).
 
-> **📸 Sugestão de print:** tela "Canais Disponíveis" do Painel SaaS mostrando o botão "Whatsapp Baileys (recomendado desativar)".
-
 #### Telegram
 
 * Integração com Telegram.
