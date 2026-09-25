@@ -28,14 +28,14 @@ Qualquer empresa que atende com hora marcada, por exemplo:
 | ---------------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
 | **Agendamentos no painel**   | Criar, editar, remarcar, cancelar e excluir agendamentos no calendário | [Como usar a Agenda](como-usar-a-agenda.md)                                       |
 | **Calendários e permissões** | Criar agendas separadas e definir quem pode ver ou editar cada uma     | [Calendários e Permissões](calendarios-e-permissoes.md)                           |
-| **Serviços**                 | Cadastrar os serviços e o tempo de duração de cada um                  | [Serviços](servicos.md)                                                           |
+| **Serviços**                 | Cadastrar os serviços, o tempo de duração e o **valor** de cada um     | [Serviços](servicos.md)                                                           |
 | **Profissionais**            | Cadastrar quem atende, seus serviços, horários e folgas                | [Profissionais](profissionais.md)                                                 |
-| **Google Agenda / Outlook**  | Conectar calendários externos e bloquear compromissos pessoais         | [Google Agenda](google-agenda.md)                                                 |
-| **Lembretes**                | Enviar mensagem automática no WhatsApp antes do atendimento            | [Lembretes](lembretes.md)                                                         |
-| **Link público e Embed**     | Deixar o cliente agendar sozinho pelo WhatsApp ou pelo seu site — com **foto do profissional** e **logo** personalizada | [Link público e Embed](link-publico-e-embed.md)                                   |
+| **Google Agenda / Outlook**  | Conectar calendários externos e bloquear compromissos pessoais — com edição dos eventos externos direto daqui | [Google Agenda](google-agenda.md)                                                 |
+| **Lembretes**                | Enviar mensagem automática no WhatsApp antes do atendimento, com **horário permitido para envio** | [Lembretes](lembretes.md)                                                         |
+| **Link público e Embed**     | Deixar o cliente agendar sozinho pelo WhatsApp ou pelo seu site — com **foto do profissional**, **logo**, **valor dos serviços** e links **com dados já preenchidos** | [Link público e Embed](link-publico-e-embed.md)                                   |
 | **Recepção**                 | Painel do dia: acompanhar chegadas, fila de espera e atendimentos em tempo real | [Recepção](recepcao.md)                                                           |
 | **Relatórios da Agenda**     | Agenda do Dia, Agendamentos, Produtividade e Estatísticas              | [Relatórios da Agenda](relatorios-da-agenda.md)                                   |
-| **Chatbot**                  | O bot conduz a conversa e agenda (ou cancela) automaticamente          | [Agendamento pelo Chatbot](agendamento-pelo-chatbot.md)                           |
+| **Chatbot**                  | O bot conduz a conversa e agenda (ou cancela) automaticamente — com **3 formas de agendamento** e opção **"Qualquer profissional"** | [Agendamento pelo Chatbot](agendamento-pelo-chatbot.md)                           |
 | **Recepção Inteligente**     | A IA consulta a agenda e agenda durante a conversa natural             | [Agendamento pela Recepção Inteligente](agendamento-pela-recepcao-inteligente.md) |
 | **Tela de Atendimento**      | O atendente agenda enquanto conversa com o cliente                     | [Agendamento pela tela de Atendimento](agendamento-pelo-atendimento.md)           |
 | **Cancelamento**             | Todas as formas de cancelar um agendamento                             | [Cancelamento de agendamentos](cancelamento-de-agendamentos.md)                   |
