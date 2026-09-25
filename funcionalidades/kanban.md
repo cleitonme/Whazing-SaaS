@@ -108,6 +108,26 @@ Aqui você controla como o Kanban funciona:
 
 ***
 
+## 🏆 Lane de negociação ganha e perdida
+
+Ao cadastrar ou editar uma **coluna (lane)** do Kanban, existem duas chaves liga/desliga que dão um **significado especial** à etapa:
+
+| Chave | O que faz |
+| --- | --- |
+| **"Lane de negociação ganha"** | As negociações (contatos) que chegarem a essa etapa **passam a contar como ganhas** — o valor delas entra no resultado do mês no relatório [Meta de Vendas](relatorios/meta-de-vendas.md) e dispara o evento de status nos [webhooks do Kanban](../integracoes/webhooks/webhook-agenda-kanban-kanbanpro.md). A tela resume: _"As negociações que chegarem aqui contam no ganho do mês"_ |
+| **"Lane de negociação perdida"** | As negociações que chegarem a essa etapa **saem do pipeline em aberto**, alimentando os indicadores de perda. A tela resume: _"As negociações que chegarem aqui saem do pipeline em aberto"_ |
+
+**Como configurar:**
+
+1. Abra o **Kanban**.
+2. Crie uma nova coluna ("Nova lista") ou edite uma existente.
+3. Ligue **"Lane de negociação ganha"** na etapa que representa o negócio fechado (ex.: "Venda concluída") e **"Lane de negociação perdida"** na etapa de negócio perdido (ex.: "Perdido").
+4. Clique em **Salvar**.
+
+> 💡 **Recomendação:** tenha **uma** etapa de ganho e **uma** de perdida no funil. É ela que o sistema usa para calcular vitórias/perdas — sem essa marcação, mover um contato para qualquer etapa é só organização visual, sem efeito nos relatórios.
+
+> ⚠️ Se o seu Kanban é **compartilhado**, apenas o administrador consegue editar as colunas (conforme a configuração "Separar lista de lanes por usuário").
+
 ## 🧾 O que dá pra fazer no Kanban
 
 Dentro de cada contato você pode:
