@@ -108,7 +108,7 @@ Cada item da lista mostra:
 
 * **Avatar** do cliente (a foto do WhatsApp, Instagram etc.) — o relógio da janela de conversa aparece sobre ele; em WebChat, um pontinho verde/ cinza mostra se o cliente está online.
 * **Nome do cliente** + ícone do canal (WhatsApp, Instagram, Telegram...). Em canal de e-mail, aparece também o nome da conta de e-mail.
-* **Hora** da última mensagem ("há 5 minutos").
+* **Hora** da última mensagem ("há 5 minutos"). **Atendimento antigo?** Conversas que estão sem atualização há **mais de 7 dias** passam a mostrar a **data exata** (ex.: `12/05/2026`) no lugar do tempo relativo — facilita achar e navegar pelo histórico de atendimentos antigos.
 * **Última mensagem** (resumo) + badge vermelho de **não lidas**.
 * **Número do ticket** (#123) — o "protocolo" da conversa.
 * **Fila** atual, com bolinha colorida (a cor é a cadastrada da fila). Sem fila aparece "SEM FILA".
@@ -183,6 +183,47 @@ Na aba **Arquivados** existe um campo próprio "**Buscar arquivados...**" para l
 ### Canais desconectados
 
 Se um canal (número de WhatsApp, Instagram...) **desconectar**, um aviso aparece na parte de baixo da lista com o ícone do canal. Passe o mouse para ver o motivo. _(Aparece só se a configuração "Exibir conexões" estiver ativa.)_ Conversas novas desse canal param de chegar até a conexão voltar.
+
+***
+
+## Ações em massa (selecionar vários atendimentos)
+
+Para administradores e supervisores, é possível aplicar uma mesma ação em **vários atendimentos de uma vez**, escolhendo **exatamente quais** participarão.
+
+### Como selecionar
+
+1. No topo da lista de atendimentos, clique no botão de **checkbox múltiplo** — o tooltip mostra **"Selecionar atendimentos"**. Ele fica destacado enquanto o modo está ativo. (_Não aparece na aba **Arquivados**._)
+2. **Aparecem os checkboxes** em cada card da lista. Clique nos cards que quiser — o card inteiro alterna a marcação (no modo seleção, clicar no card **não abre** a conversa, só marca/desmarca).
+3. Uma **barra fixa no rodapé** da lista mostra **"{n} selecionado(s)"** e os atalhos:
+   * **"Selecionar todos os carregados"** — marca de uma vez todos os atendimentos visíveis naquela aba;
+   * **"Limpar seleção"** — desmarca tudo e sai do modo.
+4. Para sair do modo, clique no **X** (Limpar seleção) ou no botão de seleção novamente.
+
+### Ações disponíveis
+
+Com um ou mais atendimentos selecionados, clique em **"Ações"** na barra do rodapé:
+
+| Ação | O que faz |
+| --- | --- |
+| **Marcar como Aberto** | Coloca os atendimentos selecionados em status **Aberto** |
+| **Marcar como Pendente** | Devolve para a fila (status **Pendente**) |
+| **Fechar atendimentos** | Encerra todos os selecionados — **pede confirmação** com a quantidade |
+| **Transferir fila/setor** | Escolhe a fila de destino para todos |
+| **Atribuir atendente** | Define um responsável para todos |
+| **Desatribuir atendente** | Tira o responsável dos selecionados |
+| **Adicionar etiqueta** | Aplica uma etiqueta em todos |
+| **Remover etiqueta** | Tira uma etiqueta de todos |
+| **Excluir atendimentos** | **Apaga** os selecionados — **pede confirmação** e a ação **não pode ser desfeita** |
+
+Ao concluir, o sistema informa **"{n} atendimento(s) atualizado(s)."** — e, quando algum fica de fora por regra (ex.: já estava naquele status, ou desatribuir um atendimento aberto), avisa quantos foram **ignorados** e por quê.
+
+> 💡 As confirmações só aparecem nas ações difíceis de desfazer (fechar e excluir). As demais são aplicadas direto — mas vale conferir a seleção antes, pela contagem na barra.
+
+**Sugestão de print:** lista de atendimentos no modo seleção, com checkboxes visíveis nos cards e a barra do rodapé mostrando "{n} selecionado(s)" e o menu "Ações" aberto.
+
+**Onde colocar:** logo após a tabela de ações.
+
+**Objetivo:** mostrar as duas partes do recurso de uma vez — onde ficam os checkboxes e o menu de ações em massa — já que é uma funcionalidade nova e exclusiva de admin/supervisor.
 
 ***
 
