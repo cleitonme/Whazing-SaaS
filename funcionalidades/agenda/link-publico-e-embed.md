@@ -37,10 +37,11 @@ A janela de criação tem **5 abas**. As duas informações obrigatórias ficam 
 
 ### 🧾 Aba "Campos"
 
-Define o que o cliente preenche. **Nome e telefone (WhatsApp) sempre aparecem e são obrigatórios** — só o e-mail é configurável:
+Define o que o cliente preenche. **Nome e telefone (WhatsApp) sempre aparecem e são obrigatórios** — o e-mail e o valor dos serviços são configuráveis:
 
 * **Mostrar campo de email** — liga/desliga o campo.
 * **Tornar o email obrigatório** — só funciona se o campo estiver sendo mostrado.
+* **Mostrar valor dos serviços** — quando ligada, o **valor cadastrado do serviço** aparece junto do nome do serviço na página (ex.: "Corte masculino · 30min · R$ 45,00") e também no resumo da escolha. Só aparece nos serviços que **têm valor cadastrado** — serviço sem valor continua aparecendo normalmente, só sem o preço. Veja onde cadastrar o valor em [Serviços](servicos.md#valor-do-serviço).
 
 ### 🎨 Aba "Aparência"
 
@@ -60,10 +61,21 @@ A logo aparece **no topo da página pública**, acima do cartão de agendamento 
 
 <figure><img src="../../.gitbook/assets/linkagenda.png" alt=""><figcaption></figcaption></figure>
 
+#### 🧱 Organização da página e título
+
+Duas opções controlam **como a página é montada** e o **que aparece nela**:
+
+* **Organização** — escolha entre **"Painel lateral"** (padrão: o resumo das escolhas fica numa coluna à esquerda do calendário) e **"Coluna única"** (tudo empilhado numa coluna só — mais compacto e ótimo para telas pequenas).
+* **Mostrar título** — exibe o **nome do link** na página pública. Você decide onde ele fica:
+  * **No painel** — dentro do cartão, junto das escolhas (padrão);
+  * **No topo** — no cabeçalho da página, acima do cartão, aproveitando o alinhamento da logo (esquerda/centro/direita).
+* **Mostrar resumo da escolha** — enquanto o cliente escolhe, um resumo aparece com o serviço, a duração, o valor (se exibido), o profissional e a data/hora selecionados. Ajuda o cliente a conferir tudo antes de confirmar.
+
+> 💡 Em links criados antes dessas opções existirem, a página continua com o visual de sempre (painel lateral com título) — para mudar, é só editar o link e escolher as novas opções.
+
 #### 🎨 Cores e textos
 
 * **Cores** — cor principal (botões e horário selecionado), cor de fundo do cartão e cor do texto (útil quando o fundo é escuro).
-* **Pré-visualização** — um cartão de exemplo mostra "é assim que vai ficar" enquanto você escolhe as cores.
 * **Pré-visualização** — um cartão de exemplo mostra "é assim que vai ficar" enquanto você escolhe as cores.
 * **Como escolher a data** — **"Calendário completo (clicar no dia)"**, mais visual, ou **"Campo de data simples"**, mais compacto.
 * **Texto de boas-vindas (opcional)** — a frase que aparece no topo da página.
@@ -90,11 +102,11 @@ Ao clicar em **Salvar**, aparece a confirmação **"Link criado com sucesso!"**.
 
 O cliente não precisa de cadastro nem de senha. Basta abrir o endereço (ex.: `seusistema.com.br/#/agendar/nome-do-link`). A experiência dele:
 
-1. **Escolhe o serviço** — botões com o nome e a duração ("Corte masculino · 30min"). Se houver só um serviço, essa etapa já vem pronta.
+1. **Escolhe o serviço** — botões com o nome, a duração e o valor (quando o valor está configurado para aparecer e o serviço tem um). Se houver só um serviço, essa etapa já vem pronta.
 2. **Escolhe o profissional** — se houver mais de um, aparece a lista de botões **com a foto de cada profissional** (quem não tem foto cadastrada aparece com as iniciais do nome). Só um? Etapa pula automático.
 3. **Escolhe a data** — no calendário visual (ou no campo de data, conforme a configuração). Dias passados não aparecem.
 4. **Escolhe o horário** — o sistema lista **somente horários realmente livres**, respeitando disponibilidade, exceções e compromissos externos. Sem horário, aparece _"Nenhum horário disponível nesta data."_
-5. **Preenche os dados** — **Seu nome**, **WhatsApp (com DDD)** e o **email** (se configurado).
+5. **Preenche os dados** — **Seu nome**, **WhatsApp (com DDD)** e o **email** (se configurado). Se você gerou o link **com os dados já preenchidos** (veja abaixo), os campos já chegam prontos — e o cliente ainda pode corrigir qualquer um antes de confirmar.
 6. **Confirma** — clica no botão de agendar (com verificação WhatsApp ativa, digita antes o código de 6 dígitos recebido).
 7. **Pronto** — tela de **"Agendamento confirmado!"** com a mensagem de sucesso que você definiu, e o agendamento **cai direto na sua Agenda** 🎉
 
@@ -104,9 +116,32 @@ O cliente não precisa de cadastro nem de senha. Basta abrir o endereço (ex.: `
 
 ***
 
+## 👤 Links com nome e telefone já preenchidos
+
+Na aba **Instalação** existe o bloco **"Já preencher os dados do cliente (opcional)"** — com os campos **"Nome do cliente"**, **"Telefone do cliente"** (de preferência com o código do país, ex.: `+5511999998888`) e **"E-mail do cliente"**.
+
+**Como funciona:**
+
+1. Abra o link em **Editar** e vá na aba **Instalação**.
+2. Preencha nome, telefone e/ou e-mail **só quando você já souber quem vai receber aquele link** (ex.: você conversou com a Maria no WhatsApp e vai mandar o link do horário para ela).
+3. A **URL pública** e o **script de incorporação** exibidos logo abaixo **se atualizam na hora**, ganhando os dados no próprio endereço (ex.: `.../#/agendar/seu-link?nome=Maria%20Silva&telefone=%2B5511999998888&email=maria@email.com`).
+4. Envie a versão atualizada do link para o cliente.
+
+**O que o cliente vê:** o formulário abre com os campos **já preenchidos** — podendo **corrigir qualquer um deles antes de confirmar**. Ou seja: os dados ficam visíveis e editáveis, nada é travado.
+
+> 💡 Deixou os campos em branco? O link gerado é o normal, sem dados preenchidos. Isso também serve para o **Embed**: com os dados preenchidos, o script incorpora as informações no código (atributos data-nome, data-telefone e data-email), e a página dentro do seu site abre da mesma forma, com o formulário pronto.
+
+**Sugestão de print:** aba **Instalação** de um link mostrando os campos "Nome do cliente", "Telefone do cliente" e "E-mail do cliente" preenchidos, com a URL pública abaixo já exibindo os dados (`?nome=...&telefone=...`).
+
+**Onde colocar:** logo após esta seção.
+
+**Objetivo:** esclarecer a dúvida mais comum sobre o recurso — onde se preenche o nome/telefone e como confirmar que o link gerado veio com os dados.
+
+***
+
 ## 📲 Como enviar o link para os clientes
 
-Na aba **Instalação** (ou no botão de copiar da lista de links) está a **URL pública**, no formato `.../#/agendar/nome-do-link`. O próprio sistema sugere os usos:
+Na aba **Instalação** (ou no botão de copiar da lista de links) está a **URL pública**, no formato `.../#/agendar/nome-do-link` — gerada já com os dados preenchidos no bloco acima, se houver. O próprio sistema sugere os usos:
 
 * **Enviar direto ao cliente** — WhatsApp, redes sociais, e-mail.
 * **Usar como link na bio** das redes sociais.
