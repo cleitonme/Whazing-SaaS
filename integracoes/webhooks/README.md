@@ -22,10 +22,13 @@ No Whazing, **todo o Webhook (e o N8N) é configurado em um único lugar**:
 
 > **Automação e Integrações → Webhooks/N8N**
 
-A tela possui **duas abas**:
+A tela possui **cinco abas**:
 
 1. **Integrações por Canal** — o webhook vale para **todos os atendimentos de um canal** (ex.: um WhatsApp conectado).
 2. **Integrações por Fila** — o webhook vale **apenas para os atendimentos de uma fila** (integrações do tipo N8N, vinculadas a uma fila).
+3. **Webhook da Agenda** — envia **eventos de agendamento** (criado, remarcado, cancelado...). Veja [Webhook da Agenda, Kanban e Kanban Pro](webhook-agenda-kanban-kanbanpro.md).
+4. **Webhook do Kanban** — envia **eventos dos cards do Kanban** (criado, movido de etapa...). Veja [Webhook da Agenda, Kanban e Kanban Pro](webhook-agenda-kanban-kanbanpro.md).
+5. **Webhook do Kanban Pro** — envia **eventos dos cards do Kanban Pro**. Veja [Webhook da Agenda, Kanban e Kanban Pro](webhook-agenda-kanban-kanbanpro.md).
 
 > 🔐 A página fica disponível para perfis **Admin** e **Supervisor** e depende do recurso **Webhooks** estar liberado no seu plano.
 
@@ -57,4 +60,5 @@ A tela possui **duas abas**:
 * **[Webhook e N8N](webhook-e-n8n/README.md)** — guia completo: como criar, configurar, testar e entender cada opção da tela.
 * **[Webhook de Canal](modelo-webhook-canal.md)** — formato exato dos dados enviados pelos eventos de **canal**.
 * **[Webhook de Integrações](modelo-webhook-integracoes.md)** — formato exato dos dados enviados pelas integrações de **fila**.
+* **[Webhook da Agenda, Kanban e Kanban Pro](webhook-agenda-kanban-kanbanpro.md)** — os três novos escopos de webhook, em um só guia.
 * **[Instalação N8N](webhook-e-n8n/como-instalar.md)** — como instalar o N8N na mesma VPS do Whazing.
