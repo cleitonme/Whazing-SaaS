@@ -10,7 +10,7 @@ description: >-
 
 [Telera Whazing](https://telera.whazing.com.br/)
 
-> 🔒 Precisa esconder um canal dos demais usuários do sistema? Conheça o [Canal Privado](../canais-suportados/canal-privado.md).
+> 🔒 Precisa esconder um canal dos demais usuários do sistema? Conheça o [Canal Privado.](canal-privado.md)
 
 > 📵 Quer que o número recuse automaticamente as chamadas de voz e avise quem ligou? Veja [Bloquear Chamadas do WhatsApp](bloquear-chamadas.md).
 
@@ -91,7 +91,7 @@ O Hub NotificaMe permite conectar canais oficiais ao Whazing.
 
 Cadastro através de:
 
-[Hub Whazing / NotificaMe](https://hub.whazing.com.br/?utm_source=chatgpt.com)
+[Hub Whazing / NotificaMe](https://hub.whazing.com.br/)
 
 Use o cupom de desconto:
 
@@ -154,7 +154,7 @@ A conexão mais simples da API Oficial: acontece **direto dentro do Whazing**, s
 * Sem taxa de ativação;
 * Mensalidade: **R$ 25,00 por canal conectado** (fatura gerada todo dia 01, pagamento até o dia 10; cobrança proporcional com mínimo de R$ 10,00 por canal).
 
-👉 Guia completo: [Hub MultiAPIWA (conexão integrada)](../canais-suportados/api-oficial/hub-multiapiwa.md)
+👉 Guia completo: [Hub MultiAPIWA (conexão integrada)](api-oficial/hub-multiapiwa.md)
 
 ***
 
@@ -273,7 +273,7 @@ O Whazing também possui suporte ao **canal SMS**.
 
 O SMS utiliza a integração com a **Witi** para envio e recebimento de mensagens.
 
-[Witi](https://witi.me/?utm_source=chatgpt.com)
+[Witi](https://witi.me/)
 
 #### 💰 Como funciona
 
