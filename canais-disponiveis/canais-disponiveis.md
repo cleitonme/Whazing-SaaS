@@ -184,7 +184,7 @@ O Whazing também suporta conexão direta com a **WhatsApp Business Platform da 
 
 Consulte o guia específico:
 
-[**Manual de Integração com a API Oficial do WhatsApp (Meta)**](../canais-suportados/api-oficial/api-oficial-do-whatsapp-meta.md)
+[**Manual de Integração com a API Oficial do WhatsApp (Meta)**](api-oficial/api-oficial-do-whatsapp-meta.md)
 
 ***
 
@@ -229,7 +229,7 @@ O Whazing **não cobra nenhuma taxa adicional pelo WebChat nativo**.
 * Sistemas internos;
 * Áreas do cliente.
 
-> 📄 **Guia completo:** veja a página [**WebChat — Atendimento pelo seu site**](../canais-suportados/webchat.md) com o passo a passo de configuração, instalação no site, personalização, API JavaScript e solução de problemas.
+> 📄 **Guia completo:** veja a página [**WebChat — Atendimento pelo seu site**](webchat.md) com o passo a passo de configuração, instalação no site, personalização, API JavaScript e solução de problemas.
 
 ***
 
