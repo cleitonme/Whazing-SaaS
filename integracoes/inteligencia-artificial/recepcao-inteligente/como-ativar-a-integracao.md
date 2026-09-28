@@ -8,7 +8,7 @@ Acesse:
 
 **Automação e Integrações → IA e Integrações**
 
-Clique em **Nova integração Smart Reception** para começar.
+Clique em **Adicionar** e selecione **Inteligência Artificial - Recepcao Inteligente**.
 
 ***
 
