@@ -71,17 +71,57 @@ O funcionamento é simples:
 
 ↓
 
-**5. Cliente inicia uma conversa**
+**5. Cliente é direcionado para o destino do link**
 
 ↓
 
-**6. Whazing identifica a conversa**
+**6. Whazing identifica a origem do contato**
 
 ↓
 
 **7. Você acompanha a conversão nos relatórios**
 
 Dessa forma, você consegue saber não apenas quantas pessoas clicaram, mas também quantas realmente iniciaram uma conversa e quantas chegaram ao atendimento.
+
+O destino do link pode ser um **WhatsApp** ou uma **página do seu site**:
+
+* **Destino WhatsApp:** o cliente cai direto na conversa, e a origem é identificada por um código enviado junto com a primeira mensagem;
+* **Destino Website:** o cliente é redirecionado automaticamente para a página cadastrada, e a origem é registrada no clique — a conversão pode ser medida com um **Formulário** vinculado ao link.
+
+***
+
+## 🌐 Destino do link: WhatsApp ou Website
+
+Ao criar ou editar um Tracking Link, você escolhe o **Destino**:
+
+#### WhatsApp
+
+O link abre uma conversa do WhatsApp. Você informa:
+
+* Telefone (com DDI);
+* Mensagem inicial.
+
+O Whazing monta automaticamente o link da API do WhatsApp e adiciona o código de rastreamento à mensagem.
+
+#### Website
+
+O link leva o visitante para uma página da web. Você informa apenas:
+
+* **URL de destino** — o endereço completo da página (por exemplo, `https://seusite.com/promocao`).
+
+Quando alguém clica no Tracking Link, o Whazing registra o clique e **redireciona automaticamente** o visitante para essa página. Para o visitante, a experiência é a mesma de clicar em um link comum — a medição acontece sem interferir na navegação.
+
+> **Importante:** a URL de destino precisa começar com `http://` ou `https://`. Endereços de outros tipos não são aceitos por segurança.
+
+#### Comparativo
+
+| | **WhatsApp** | **Website** |
+| ---------------- | ---------------------------------------------- | ---------------------------------------------- |
+| Para onde leva | Conversa do WhatsApp | Página do seu site |
+| Código `[tk:...]` | Sim, enviado na primeira mensagem | Não é utilizado |
+| Registro do clique | Ao clicar no link | Ao clicar no link |
+| Registro da conversa | Primeira mensagem com o código | Envio de Formulário vinculado ao link |
+| Uso típico | Divulgação direta do WhatsApp | Landing pages, anúncios, posts e materiais |
 
 ***
 
@@ -128,6 +168,68 @@ Se o cliente **editar a mensagem antes de enviá-la**, o código poderá ser rem
 Por outro lado, se a mensagem for enviada normalmente contendo o código, o sistema conseguirá registrar a origem.
 
 > **Importante:** o código `[tk:...]` é utilizado internamente pelo sistema para identificar o Tracking Link.
+
+***
+
+## 🌐 Rastreamento em site (destino Website)
+
+Quando o destino do Tracking Link é um **Website**, todo o rastreamento acontece no momento do clique, sem precisar de nenhum código na mensagem.
+
+### O que é registrado em cada clique
+
+* Cliques totais;
+* Visitantes únicos;
+* Data e hora do acesso;
+* Dispositivo (Desktop ou Mobile);
+* Navegador;
+* Sistema operacional;
+* Página de origem (Referer) — o site de onde a pessoa veio antes de clicar;
+* Parâmetros UTM presentes na URL do link;
+* Cidade e país, quando disponíveis.
+
+### Visitantes únicos
+
+O Whazing identifica cada visitante por meio de um **cookie** gravado no navegador de quem clicou, com validade de aproximadamente **1 ano**.
+
+Assim, se a mesma pessoa clicar no link várias vezes, ela será contada como **1 visitante único**, e cada acesso novo será contado como clique.
+
+### Como divulgar com UTMs
+
+Você pode acrescentar parâmetros UTM ao Tracking Link para identificar ainda melhor cada divulgação:
+
+`https://seusistema.com/t/promocao?utm_source=instagram&utm_medium=post&utm_campaign=promocao-agosto`
+
+Os parâmetros aceitos são:
+
+* `utm_source`;
+* `utm_medium`;
+* `utm_campaign`;
+* `utm_term`;
+* `utm_content`.
+
+Essas informações ficam registradas junto com o clique e ajudam a analisar o desempenho de cada campanha nos relatórios.
+
+***
+
+## 📝 Como medir conversão com destino Website
+
+No destino Website **não existe código `[tk:...]`**, então a conversão é medida com a ajuda dos **Formulários**.
+
+### Passo a passo
+
+**1.** Crie o Tracking Link com destino **Website**, apontando para a sua página;
+
+**2.** Crie um **Formulário** e vincule esse Tracking Link na aba de vínculo do formulário;
+
+**3.** Publique o formulário na página (por link ou incorporado no site);
+
+**4.** Quando um visitante clicar no link, preencher e enviar o formulário, o Whazing registra a conversão e cria o contato vinculado à origem.
+
+> 💡 Veja como configurar na página [Formulários](formularios.md).
+
+#### Sem formulário vinculado
+
+Se o Tracking Link com destino Website **não tiver um Formulário vinculado**, o relatório continuará mostrando **cliques e visitantes únicos**, mas a etapa de conversa do funil não será preenchida.
 
 ***
 
@@ -214,6 +316,14 @@ Isso permite identificar de quais regiões estão vindo os acessos.
 
 ***
 
+## 🗺️ Mapa de cliques
+
+Os relatórios de Tracking Links também possuem opção de visualização dos dados em **modo mapa**.
+
+Cada clique é exibido como um ponto no mapa, conforme a cidade de origem, permitindo enxergar de forma visual de quais regiões estão vindo os acessos.
+
+***
+
 ## 🕐 Mapa de calor
 
 O sistema também disponibiliza um **Mapa de calor (hora x dia da semana)**.
@@ -226,7 +336,7 @@ Com essa informação, você pode descobrir, por exemplo, quais dias e horários
 
 ## 📱 QR Code
 
-Cada Tracking Link também pode disponibilizar um **QR Code**.
+Cada Tracking Link também pode disponibilizar um **QR Code**, tanto para links com destino WhatsApp quanto para links com destino Website.
 
 Isso é útil para materiais físicos, como:
 
@@ -248,14 +358,16 @@ O sistema também apresenta os cliques realizados recentemente.
 
 Exemplo:
 
-| Data                | Dispositivo | Navegador | Sistema | Cidade   | País |
-| ------------------- | ----------- | --------- | ------- | -------- | ---- |
-| 12/08/2026 10:05:24 | Desktop     | Chrome    | Windows | Blumenau | BR   |
-| 07/08/2026 14:09:53 | Mobile      | Chrome    | Android | —        | BR   |
-| 07/08/2026 11:26:02 | Desktop     | Chrome    | Windows | —        | BR   |
-| 07/08/2026 11:09:20 | Mobile      | Chrome    | Android | —        | BR   |
+| Data                | Dispositivo | Navegador | Sistema | Cidade   | País | Referer              |
+| ------------------- | ----------- | --------- | ------- | -------- | ---- | -------------------- |
+| 12/08/2026 10:05:24 | Desktop     | Chrome    | Windows | Blumenau | BR   | instagram.com        |
+| 07/08/2026 14:09:53 | Mobile      | Chrome    | Android | —        | BR   | l.facebook.com       |
+| 07/08/2026 11:26:02 | Desktop     | Chrome    | Windows | —        | BR   | google.com           |
+| 07/08/2026 11:09:20 | Mobile      | Chrome    | Android | —        | BR   | —                    |
 
 Essas informações ajudam a entender o perfil das pessoas que estão acessando o link.
+
+A coluna **Referer** mostra de qual site ou app a pessoa veio antes de clicar no link, ajudando a confirmar a origem real do acesso.
 
 ***
 
@@ -389,6 +501,24 @@ Campanha:
 
 ***
 
+#### Landing page de promoção
+
+Link:
+
+`https://seusistema.com/t/landing-promocao`
+
+Destino:
+
+**Website**
+
+URL de destino:
+
+`https://seusite.com/promocao`
+
+Nesse cenário, quem clicar no link é levado para a página de promoção, e o clique fica registrado com dispositivo, origem e localização. Para registrar a conversão, um **Formulário** é publicado nessa página e vinculado a esse Tracking Link — assim, cada envio de formulário entra no funil do relatório.
+
+***
+
 Agora você pode configurar uma Automação de Entrada para que:
 
 **Link Instagram**
@@ -421,7 +551,7 @@ Criar um link para cada campanha ou anúncio.
 
 #### 🌐 Site
 
-Criar links diferentes para páginas ou botões diferentes.
+Criar links diferentes para páginas ou botões diferentes, com destino Website, e acompanhar quantos visitantes cada página trouxe.
 
 #### 📧 E-mail
 
@@ -472,11 +602,16 @@ O **Tracking Links** permite:
 * 🎫 Acompanhar atendimentos;
 * ✅ Acompanhar finalizações;
 * 📈 Calcular conversão;
+* 🌐 Escolher o destino do link: **WhatsApp** ou **Website**;
+* ↪️ Redirecionar automaticamente o visitante para a página cadastrada;
+* 🏷️ Registrar parâmetros UTM e a página de origem (Referer) de cada clique;
 * 📱 Identificar dispositivos;
 * 🌐 Identificar navegador e sistema operacional;
 * 🗺️ Identificar cidade e país quando disponível;
+* 🗺️ Visualizar os cliques em mapa;
 * 🕐 Analisar horários e dias com maior movimentação;
 * 📱 Gerar QR Code;
+* 📝 Medir conversão em site com Formulários vinculados;
 * 🤖 Integrar com Automação de Entrada;
 * 👥 Direcionar leads para filas;
 * 🤖 Direcionar leads para chatbots específicos.
