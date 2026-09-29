@@ -17,7 +17,7 @@ Usar cupom desconto: whazing
 
 Para conectar verifique documentação oficial do HUB
 
-<figure><img src="../../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 \*\*\*
 
@@ -37,14 +37,14 @@ Para conectar verifique documentação oficial do HUB
 ### ✅ Whazing tem suporte às mensagens especiais da API OFICIAL
 
 * **Botões (até 3)**\
-  ![print](../../../.gitbook/assets/botao.png)
+  ![print](../../.gitbook/assets/botao.png)
 * **Lista**\
-  ![print](../../../.gitbook/assets/lista.png)\
-  ![print](../../../.gitbook/assets/lista2.png)
+  ![print](../../.gitbook/assets/lista.png)\
+  ![print](../../.gitbook/assets/lista2.png)
 * **Links com informações**\
-  ![print](../../../.gitbook/assets/links.png)
+  ![print](../../.gitbook/assets/links.png)
 * **Solicitar localização**\
-  ![print](../../../.gitbook/assets/solicitarlocalizacao.png)
+  ![print](../../.gitbook/assets/solicitarlocalizacao.png)
 
 ***
 

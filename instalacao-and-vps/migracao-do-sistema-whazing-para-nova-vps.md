@@ -28,7 +28,7 @@ O processo correto é:
 **1. Instalar o sistema na nova VPS**
 
 * Acesse a nova VPS.
-* Siga o guia oficial de instalação: 👉 [**Como instalar e atualizar**](https://doc.whazing.com.br/instalacao-and-vps/instalacao-and-vps/como-instalar-e-atualizar)
+* Siga o guia oficial de instalação: 👉 [**Como instalar e atualizar**](https://doc.whazing.com.br/instalacao-and-vps/como-instalar-e-atualizar)
 * Finalize toda a instalação.
 * Confirme o IP público da nova VPS.
 

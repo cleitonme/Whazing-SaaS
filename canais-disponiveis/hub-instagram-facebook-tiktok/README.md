@@ -2,7 +2,7 @@
 
 O Whazing permite conectar **Instagram, Facebook e TikTok** como canais de atendimento através de provedores HUB (serviços intermediários que cuidam da conexão com as redes sociais).
 
-> 💡 **Custos:** os valores são definidos pelo provedor do HUB. Consulte [Canais Disponíveis](/broken/pages/QAnEaik78KQAIVLnXPyy) para ver a tabela de valores por canal.
+> 💡 **Custos:** os valores são definidos pelo provedor do HUB. Consulte [Canais Disponíveis](../canais-disponiveis.md) para ver a tabela de valores por canal.
 
 ## 📄 Opções de conexão
 

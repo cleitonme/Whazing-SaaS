@@ -139,7 +139,7 @@ Ideal para empresas que desejam escalar o atendimento sem aumentar equipe.
 
 ***
 
-### 📲 Canais Suportados
+### 📲 Canais Disponíveis
 
 * **WhatsApp API Oficial** (Direto ou via HUB)
 * **WhatsApp API Não Oficial Plus** (Lista e Botões)

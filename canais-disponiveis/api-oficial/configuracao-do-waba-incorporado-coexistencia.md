@@ -9,7 +9,7 @@ Antes de iniciar, confirme se você **já possui tudo abaixo**:
 3. ✅ Pelo menos **1 número de WhatsApp conectado** ao aplicativo (API Oficial)
 4. ✅ Ser **Provedor de Tecnologia** aprovado pela Meta
 
-⚠️ **Importante** Se você **ainda não concluiu essas etapas**, siga primeiro este guia: 👉 **API Oficial do WhatsApp (Meta)** [https://doc.whazing.com.br/canais-suportados/api-oficial/api-oficial-do-whatsapp-meta](https://doc.whazing.com.br/canais-suportados/api-oficial/api-oficial-do-whatsapp-meta)
+⚠️ **Importante** Se você **ainda não concluiu essas etapas**, siga primeiro este guia: 👉 **API Oficial do WhatsApp (Meta)** [https://doc.whazing.com.br/canais-disponiveis/api-oficial/api-oficial-do-whatsapp-meta](https://doc.whazing.com.br/canais-disponiveis/api-oficial/api-oficial-do-whatsapp-meta)
 
 ***
 

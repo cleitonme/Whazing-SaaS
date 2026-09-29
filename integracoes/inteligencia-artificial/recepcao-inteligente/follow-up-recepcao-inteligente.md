@@ -94,7 +94,7 @@ Você sabia que nosso sistema pode ser instalado e testado sem nenhum custo?
 Temos uma versão gratuita disponível com todos os recursos da versão paga.
 
 Veja como é fácil instalar:
-https://doc.whazing.com.br/como-instalar-e-atualizar
+https://doc.whazing.com.br/instalacao-and-vps/como-instalar-e-atualizar
 
 Ou ative o Teste Premium gratuito de 10 dias:
 https://trial.whazing.com.br/

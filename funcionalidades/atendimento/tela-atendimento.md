@@ -520,7 +520,7 @@ Mostra **foto, nome e telefone** (o telefone pode estar oculto por configuraçã
   * **Sincronizar Mensagens** _(só canais WhatsApp Plus/Wuzapi, com conversa aberta)_ — importa de novo as últimas mensagens que não chegaram; você escolhe a quantidade (até 100).
   * **Exibir Chat Completo** — abre a conversa em modo de consulta (leitura), incluindo histórico de conversas anteriores do mesmo contato.
   * **Baixar PDF mensagens ticket ativo** — gera um **PDF do atendimento** com todas as mensagens (bom para anexar em um chamado ou guardar como comprovante).
-  * **Logs** — linha do tempo do ticket: quem assumiu, transferiu, adicionou colaborador etc. (com data e hora). Também registram **menções em anotações**: quando alguém cria uma anotação marcando um usuário ou equipe, aparece "Mencionou {nome} na anotação" — veja [Anotação Tickets](../../gestao/anotacao-tickets.md).
+  * **Logs** — linha do tempo do ticket: quem assumiu, transferiu, adicionou colaborador etc. (com data e hora). Também registram **menções em anotações**: quando alguém cria uma anotação marcando um usuário ou equipe, aparece "Mencionou {nome} na anotação" — veja [Anotação Tickets](../gestao/anotacao-tickets.md).
   * **Deletar Ticket** _(só admin/supervisor)_ — **exclui permanentemente** o atendimento, com confirmação. Cuidado: não tem volta.
 
 ### Aba Perfil

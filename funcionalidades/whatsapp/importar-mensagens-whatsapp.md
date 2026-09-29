@@ -6,7 +6,7 @@ icon: up-from-bracket
 
 Ao conectar um novo número, o Whazing permite **importar mensagens antigas** para manter o histórico das conversas. A quantidade de mensagens que pode ser importada depende da API utilizada:
 
-> ⚠️ **O canal Baileys está descontinuado e vem desativado por padrão** nas instalações atuais — ele só aparece se tiver sido reativado no servidor (arquivo `.env`). Veja [Canais Suportados](/broken/pages/QAnEaik78KQAIVLnXPyy).
+> ⚠️ **O canal Baileys está descontinuado e vem desativado por padrão** nas instalações atuais — ele só aparece se tiver sido reativado no servidor (arquivo `.env`). Veja [Canais Disponíveis](../../canais-disponiveis/canais-disponiveis.md).
 
 | API          | O que é possível importar                                                                                          |
 | ------------ | ------------------------------------------------------------------------------------------------------------------ |

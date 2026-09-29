@@ -46,7 +46,7 @@ Alguns problemas têm solução em outras seções da documentação:
 
 * **Problemas com webhooks, integrações ou ausência de resposta em integrações:** seção [Integrações](../integracoes/).
 * **Problemas com chatbot, automações ou campanhas:** seção [Funcionalidades](../funcionalidades/).
-* **Conexão de canais (API Oficial, Telegram, SMS, Instagram, Facebook, TikTok):** seção [Canais Disponíveis](/broken/pages/QAnEaik78KQAIVLnXPyy).
+* **Conexão de canais (API Oficial, Telegram, SMS, Instagram, Facebook, TikTok):** seção [Canais Disponíveis](../canais-disponiveis/canais-disponiveis.md).
 
 ## 🆘 Quando procurar o suporte
 

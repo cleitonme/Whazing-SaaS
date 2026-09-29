@@ -53,7 +53,7 @@ Versões antigas podem apresentar incompatibilidades com mudanças realizadas pe
 
 Documentação:
 
-* Atualização da Wuzapi: [https://doc.whazing.com.br/canais-suportados/whatsapp-wuzapi](https://doc.whazing.com.br/canais-suportados/whatsapp-wuzapi)
+* Atualização da Wuzapi: [https://doc.whazing.com.br/canais-disponiveis/whatsapp-wuzapi](https://doc.whazing.com.br/canais-disponiveis/whatsapp-wuzapi)
 
 #### Mantenha o Whazing atualizado
 
@@ -100,7 +100,7 @@ Além disso, eventualmente podem ocorrer problemas de conexão que exigem uma no
 
 Documentação específica:
 
-[https://doc.whazing.com.br/canais-suportados/api-oficial/limitacoes-e-erros/coex-api-oficial-problemas-de-conexao-e-reconexao](https://doc.whazing.com.br/canais-suportados/api-oficial/limitacoes-e-erros/coex-api-oficial-problemas-de-conexao-e-reconexao)
+[https://doc.whazing.com.br/canais-disponiveis/api-oficial/limitacoes-e-erros/coex-api-oficial-problemas-de-conexao-e-reconexao](https://doc.whazing.com.br/canais-disponiveis/api-oficial/limitacoes-e-erros/coex-api-oficial-problemas-de-conexao-e-reconexao)
 
 ***
 

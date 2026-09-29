@@ -65,5 +65,5 @@ No **@BotFather**, selecione seu bot e clique em **Bot Settings** e configure da
 1. **Crie as filas** e defina qual fila receberá os atendimentos do Telegram — veja [Organização de Atendimentos, Filas e Permissões de Usuários](../funcionalidades/gestao/organizacao-de-atendimentos-filas-e-permissoes-de-usuarios.md).
 2. **Cadastre os usuários (atendentes)** e defina quais filas cada um pode acessar — veja [Usuários](../funcionalidades/gestao/usuarios/).
 3. **Configure mensagens automáticas** (saudação, despedida e transferência) — veja [Mensagens Automáticas](../funcionalidades/automacao/mensagens-automaticas.md).
-4. **Crie um chatbot** para responder automaticamente — veja [Chatbot Interno](/broken/pages/TGwWzzEM0Y8dp6I4bNLS).
+4. **Crie um chatbot** para responder automaticamente — veja [Chatbot Interno](../funcionalidades/automacao/chatbotinterno-1/README.md).
 5. **Nada funcionando?** Veja a [Solução de Problemas](../solucao-de-problemas/).
