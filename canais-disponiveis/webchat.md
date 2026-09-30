@@ -304,25 +304,29 @@ Mostra **quem está no site neste momento**, com um **mapa** dos visitantes e um
 | Informação | O que mostra |
 | --- | --- |
 | **Visitante** | Nome (ou "Visitante anônimo", quando ainda não se identificou) |
+| **WebChat** | O nome do canal/widget onde o visitante está (aparece quando você tem mais de um WebChat criado) |
 | **Página** | A página do site onde a pessoa está agora (a URL completa aparece ao passar o mouse) |
 | **Localização** | Cidade, região e país — aproximados, obtidos pelo IP |
 | **Navegador** | Navegador e sistema (ex.: Chrome / Windows) |
 | **Tempo no site** | Um cronômetro que avança em tempo real desde a entrada |
 
-Há filtros para **buscar** por nome, página ou cidade, filtrar por **site** (quando o widget está em mais de um), por **identificação** (Todos / Identificados / Anônimos) e por **país**.
+Há filtros para **buscar** por nome, página ou cidade, filtrar por **WebChat** (qual canal), por **site** (quando o widget está em mais de um), por **identificação** (Todos / Identificados / Anônimos) e por **país**.
 
-Cada linha tem duas ações:
+Cada linha tem três ações:
 
-* **👁️ Ver** — abre o detalhe completo do visitante: página de entrada, **origem** (de onde veio — ex.: Google), IP, dispositivo, quando entrou e o contato do sistema caso já exista.
+* **👁️ Ver** — abre o detalhe completo do visitante: página de entrada, **origem** (de onde veio — ex.: Google), IP, dispositivo, quando entrou, a linha do tempo da visita e o contato do sistema caso já exista.
 * **💬 Chamar** — veja abaixo.
+* **🕐 Ver jornada no site** — abre o caminho completo do visitante no **[Rastreamento de Site](../funcionalidades/site-tracking.md)**: todas as páginas que ele viu, de onde veio, cliques e eventos — mesmo que ele nunca tenha aberto o chat.
 
 ### 🕓 Aba "Histórico"
 
-Lista as **visitas anteriores**: escolha o período (De/Até), a identificação e pesquise. Mostra visitante, localização, site, **última página visitada**, navegador, **páginas vistas** e a última atividade. Use **"Carregar mais"** para ver mais resultados.
+Lista as **visitas anteriores**. Escolha o período (De/Até), filtre por **WebChat**, por **Domínio** (o site em que o widget está instalado), pela identificação (Todos / Identificados / Anônimos) e pesquise por nome, página ou cidade. Depois clique em **Gerar**.
+
+A tabela mostra visitante, **WebChat**, localização, site, **última página visitada**, navegador, **páginas vistas**, **tempo no site** (da primeira à última atividade registrada) e a última atividade. Use **"Carregar mais"** para ver mais resultados.
 
 ### 🗺️ Aba "Mapa de visitantes"
 
-A mesma pergunta do histórico, em forma de **mapa**: visitantes por **cidade** no período escolhido, com a contagem por local e a marcação de quantos estão **identificados**. A tabela abaixo do mapa repete os números.
+A mesma pergunta do histórico, em forma de **mapa** — com os mesmos filtros (período, WebChat, Domínio e Identificação) e o botão **Gerar**. No topo aparecem o total de **visitantes no período** e a quantidade de **cidades**. Cada ponto mostra os visitantes da cidade e quantos estão identificados, e a tabela abaixo do mapa repete os números.
 
 > 💡 **A localização é aproximada**, obtida pelo IP (cidade/região) — o próprio relatório avisa que não é a posição exata do visitante.
 
@@ -335,12 +339,6 @@ Ações **"Chamar"** (na tabela Online e no detalhe) abrem a janela **"Chamar vi
 3. **O que acontece:** a mensagem **abre a conversa no WebChat do visitante** (ela aparece no chat aberto no site dele) e **cria o atendimento**, que aparece na tela de Atendimento como qualquer conversa. O aviso de sucesso traz o botão **"Abrir atendimento"** para ir direto à conversa.
 
 > ⚠️ **E se o visitante já saiu do site?** O sistema avisa: "O visitante saiu do site e não pode receber mensagens agora." A mensagem só é entregue a quem está navegando naquele momento.
-
-**Sugestão de print:** aba **Online** do relatório "Visitantes do WebChat", com o mapa e a tabela de visitantes visíveis.
-
-**Onde colocar:** logo após a lista "Onde acessar".
-
-**Objetivo:** dar a visão geral da tela nova — mapa, colunas e as ações de Ver e Chamar — antes de explicar os detalhes.
 
 ***
 
