@@ -1,7 +1,5 @@
 # Formulários
 
-A partir da **versão 3.0**, o Whazing possui o recurso de **Formulários**, que permite criar formulários para **captura de leads**.
-
 Você pode disponibilizar o formulário de duas maneiras:
 
 * 🌐 Incorporado diretamente em um site;
