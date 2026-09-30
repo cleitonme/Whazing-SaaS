@@ -8,8 +8,11 @@ Com ele você poderá:
 
 * Receber chamadas de voz do WhatsApp.
 * Realizar chamadas diretamente pela tela de atendimento.
-* Direcionar chamadas automaticamente para os atendentes.
+* Direcionar o atendimento automaticamente para quem atendeu a ligação.
+* Gravar e transcrever ligações.
 * Utilizar múltiplas conexões (SID) para aumentar a disponibilidade das chamadas.
+
+> 💡 **Esta página trata da instalação do servidor** (parte técnica, na VPS). Para o **uso no dia a dia** — conectar o canal, organização automática do atendimento, gravação, transcrição e o relatório de ligações — veja a página [Chamadas de Voz (WaCalls)](../../funcionalidades/wacalls-uso.md).
 
 ***
 
@@ -352,6 +355,10 @@ Quando uma ligação é recebida:
 * Caso contrário, a chamada tocará para todos os usuários autorizados naquele canal.
 
 Durante um atendimento também será exibido um botão de chamada para ligar diretamente ao cliente.
+
+> 💡 **Organização automática:** com a opção **"Organizar automaticamente o atendimento ao atender uma ligação"** ativada (padrão), ao atender, o atendimento do contato é direcionado automaticamente para o atendente que recebeu a chamada e, quando necessário, para uma fila da qual ele participa. Se o atendimento já tiver outro responsável, nada é alterado. A opção fica na tela [Chamadas de Voz (WaCalls)](../../funcionalidades/wacalls-uso.md#-atendimento-de-ligações-organização-automática).
+
+> 💡 **Gravação e transcrição:** as ligações atendidas podem ser gravadas (com período de retenção definido pelo administrador) e transcritas em texto pelo Relatório das Ligações — detalhes em [Chamadas de Voz (WaCalls)](../../funcionalidades/wacalls-uso.md).
 
 ***
 

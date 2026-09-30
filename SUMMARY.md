@@ -116,6 +116,7 @@
 ## Funcionalidades
 
 * [Funcionalidades](funcionalidades/README.md)
+  * [Chamadas de Voz (WaCalls)](funcionalidades/wacalls-uso.md)
   * [Atendimento](funcionalidades/atendimento/README.md)
     * [Tela Atendimento](funcionalidades/atendimento/tela-atendimento.md)
     * [Avaliação de Atendimento](funcionalidades/atendimento/avaliacao.md)

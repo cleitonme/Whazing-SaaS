@@ -391,6 +391,17 @@ O cliente encontra o recurso em:
 
 **Automação e Integrações → Chamadas de Voz (WaCalls)**
 
+Nessa tela o cliente:
+
+* Conecta o canal de WhatsApp às chamadas (QR Code);
+* Define **quem pode fazer chamadas** (permissão por usuário);
+* Liga a **organização automática do atendimento** — ao atender uma ligação, o atendimento do contato vai automaticamente para o atendente que atendeu e, quando necessário, para uma fila da qual ele participa;
+* Liga a **gravação de chamadas** (com período de retenção definido pelo administrador do sistema).
+
+As ligações gravadas podem ser **transcritas em texto** pelo Relatório das Ligações.
+
+> 💡 O passo a passo completo de uso está na página [Chamadas de Voz (WaCalls)](../funcionalidades/wacalls-uso.md).
+
 ***
 
 ## 💳 18. Como funciona a cobrança
