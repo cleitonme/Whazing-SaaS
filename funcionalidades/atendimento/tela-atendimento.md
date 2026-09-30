@@ -316,7 +316,7 @@ Nos dois casos abre uma **prévia** para você confirmar o envio (dá para escre
 | **💰 Enviar Chave PIX**                          | Envia chave PIX/pagamento formatado ao cliente                                                                | WhatsApp Plus, Wuzapi e API Oficial (WABA)        |
 | **👤 Enviar Contato**                            | Envia o cartão de um contato cadastrado                                                                       | Canais de WhatsApp (não oficiais, WABA, MultiAPI) |
 | **😀 Enviar Figurinha**                          | Abre o seletor de stickers                                                                                    | WhatsApp, Telegram, WebChat e variações           |
-| **📞 Atendimento por chamada**                   | Cria uma **chamada de vídeo ou áudio** interna e manda o link para o cliente; a chamada abre na sua tela      | Todos                                             |
+| **📞 Atendimento por chamada**                   | Cria uma **chamada de vídeo ou áudio** interna e manda o link para o cliente; a chamada abre na sua tela. O áudio é **gravado automaticamente** e pode ser transcrito — veja [Chamadas Internas](../chamadas-internas.md) | Todos                                             |
 | **📝 Enviar template**                           | Envia mensagem modelo aprovada pela Meta (para conversas fora da janela de 24h)                               | Hub WhatsApp e WABA                               |
 | **☎️ Solicitar permissão para chamada**          | Envia mensagem pedindo autorização para ligar (regra da API oficial)                                          | Só WABA                                           |
 | **🗒️ Adicionar anotação no ticket**             | Cria uma anotação interna (o cliente não vê)                                                                  | Todos                                             |
@@ -491,6 +491,8 @@ No menu **⋮ Mais ações** do cabeçalho podem aparecer até três formas de l
 * **Iniciar Chamada** — discador interno (SIP) do sistema; aparece se seu usuário tiver telefonia SIP configurada.
 * **Iniciar Chamada pelo Whatsapp (Wavoip)** — liga usando o próprio WhatsApp conectado via Wavoip; aparece se o canal do atendimento tiver Wavoip ativo.
 * **Chamada WaCalls** — chamada pelo serviço WaCalls; aparece se o canal tiver WaCalls ativo.
+
+> 📞 Além dessas, existe a **chamada com o cliente** no menu ➕ do campo de mensagem (link no chat, cliente entra pelo navegador). O áudio dessas chamadas é **gravado automaticamente** e pode ser transcrito no **Relatório de Chamadas** — veja [Chamadas Internas](../chamadas-internas.md).
 
 ### Lançar Pedido 🧾
 
