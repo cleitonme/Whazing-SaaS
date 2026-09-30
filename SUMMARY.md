@@ -57,6 +57,7 @@
   * [Emissão de NFS-e com Asaas](modulo-saas/emissao-de-nfs-e-com-asaas.md)
   * [Programa de Afiliados (Indique e Ganhe)](modulo-saas/programa-de-afiliados-indique-e-ganhe.md)
   * [Controle de Espaço em Uso e Venda de Adicionais de Armazenamento](modulo-saas/controle-de-espaco-em-uso-e-venda-de-adicionais-de-armazenamento.md)
+  * [🔎 Verificar Número ao Cadastrar Contato](modulo-saas/verificar-numero-contatos.md)
   * [📞 WaCalls — Ativação Automática e Venda de Adicionais](modulo-saas/wacalls-ativacao-automatica-e-venda-de-adicionais.md)
   * [IA Integrada](modulo-saas/ia-integrada/README.md)
     * [Usando o 9Router como Provedor de IA no Whazing](modulo-saas/ia-integrada/usando-o-9router-como-provedor-de-ia-no-whazing/README.md)

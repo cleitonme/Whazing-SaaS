@@ -11,4 +11,4 @@ No **Módulo SaaS** você controla sua instalação como administrador/revendedo
 * **Backup** — programação de backups automáticos do banco de dados: [Backup do Banco](backup-banco-de-dados.md);
 * **Inteligência Artificial** — IA integrada, gerador de chatbot e transcrição de áudio;
 * **API e Webhooks** — API SaaS, webhooks e integração de mensagens/alertas;
-* **Configurações gerais** — Gmail/OAuth, Cloudflare Turnstile, armazenamento S3, **Backup do Banco** e Botão Coringa.
+* **Configurações gerais** — Gmail/OAuth, Cloudflare Turnstile, armazenamento S3, **Backup do Banco**, [Verificar Número ao Cadastrar Contato](verificar-numero-contatos.md) e Botão Coringa.
