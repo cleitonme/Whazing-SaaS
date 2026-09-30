@@ -13,12 +13,15 @@ Solicite uma pesquisa de satisfação automaticamente após finalizar um atendim
 ## ⚙️ Passos para Configuração
 
 1. Acesse **Configurações de Atendimento → Avaliação de Atendimento**.
-2. No campo **Selecione o Canal**, escolha o canal onde deseja ativar a pesquisa de satisfação.
+2. No campo **Canal**, escolha o canal onde deseja ativar a pesquisa de satisfação.
 3. Ative a opção **Ativar avaliação automática**.
+4. Configure as opções da pesquisa e clique em **Salvar Configuração**.
 
 <figure><img src="../../.gitbook/assets/cadastraavaliacao.png" alt=""><figcaption></figcaption></figure>
 
 > 💡 A pesquisa é enviada automaticamente após o encerramento do atendimento. Você pode personalizar a mensagem enviada ao cliente.
+
+> 💡 **Configuração é por canal:** cada canal tem a sua própria configuração de avaliação. Quer usar a mesma em vários canais? Depois de configurar, use o botão **"Copiar para outros canais"** (veja no final desta página).
 
 ***
 
@@ -157,14 +160,56 @@ O sistema enviará automaticamente uma mensagem solicitando mais detalhes sobre 
 
 ***
 
+## 🧠 Análise com IA: o que causou a nota
+
+Em vez de ficar adivinhando **por que o cliente deu aquela nota**, você pode deixar a **IA ler o atendimento** e apontar o que pode ter causado a nota e o que pode ser melhorado.
+
+**Onde configurar:** na mesma tela de **Avaliação de Atendimento**, opção **"Analisar avaliações com IA"**.
+
+### Como ativar
+
+1. Ligue a opção **"Analisar avaliações com IA"**.
+2. Escolha **quais avaliações analisar** — clique nas notas (1★ a 5★) que a IA deve analisar, ou use o botão **"Todas as notas"**. A análise será feita **apenas para as notas selecionadas**.
+3. Defina a **quantidade de mensagens analisadas** — quantas mensagens do atendimento a IA vai considerar (50, 100, 200 ou 500). Quanto mais mensagens, mais contexto a IA tem — e mais conteúdo ela processa.
+4. Clique em **Salvar Configuração**.
+
+> 💡 **Dica prática:** analisar todas as notas pode ser caro e desnecessário — na maioria dos casos, o que interessa é entender as **notas baixas** (1★, 2★ e 3★). As notas altas raramente escondem problemas.
+
+### Qual IA é usada?
+
+A análise usa **a mesma IA configurada no Copiloto** (Assistente IA). Se ainda não há IA configurada, o próprio card mostra o botão **"Configurar IA"** para levar você direto à configuração. O admin configura uma vez e todos os recursos de IA do sistema usam a mesma conexão.
+
+> ⚠️ **Limite da análise:** a IA tem um limite de quanto conteúdo consegue ler por vez. O sistema **ajusta automaticamente** o conteúdo do atendimento para caber nesse limite e evitar erros — você não precisa se preocupar com isso.
+
+### Onde aparece a análise
+
+No **Relatório de Avaliações** (menu **Relatórios → Avaliações**), cada avaliação ganha a coluna **"Análise da IA"** com um botão que muda de acordo com o estado:
+
+| Botão                       | Cor      | Significado                                        |
+| --------------------------- | -------- | -------------------------------------------------- |
+| **Analisar com IA** 🧠      | Azul     | Ainda não analisada — clique para analisar agora   |
+| **Analisando...**           | —        | IA em processo (botão fica bloqueado até terminar) |
+| **Ver análise** 👁️         | Verde    | Já analisada — clique para ler o resultado         |
+| **Analisar com IA** ↻       | Amarelo  | A última tentativa falhou — clique para tentar de novo |
+
+Clicando no botão, abre a janela **"Análise da IA"** com a **nota do cliente**, o **feedback escrito** (quando houver) e o **texto da análise**: o que pode ter causado a nota e o que pode ser melhorado.
+
+> 💡 **Quando a análise é feita?** Pela configuração acima o sistema analisa automaticamente as notas escolhidas — mas você também pode pedir a análise de qualquer avaliação na hora, pelo botão **"Analisar com IA"** no relatório. Análise feita uma vez fica salva (verde).
+
+> ⚠️ **Sem IA configurada?** Ao clicar em analisar, o sistema avisa: _"Não há uma IA configurada para realizar a análise. Configure a IA para continuar."_ — com o botão **Configurar IA** para resolver na hora.
+
+***
+
 ## 📋 Formato de Lista
 
 Em canais compatíveis, envie a avaliação como uma **lista interativa com opções de 1 a 5**.
 
 Disponível para:
 
-* API Oficial WhatsApp
+* API Oficial WhatsApp (WABA e Hub)
 * Plus WhatsApp (`plus_whatsapp`)
+
+> 💡 Em canais sem suporte à lista, a opção nem aparece — a avaliação é enviada como mensagem de texto normal.
 
 Ao ativar essa opção, a solicitação de avaliação poderá ser enviada utilizando listas interativas do WhatsApp.
 
@@ -212,18 +257,39 @@ Permite configurar as opções de avaliação que serão exibidas ao cliente.
 
 Para acompanhar os resultados:
 
-1. Acesse **Relatórios** na plataforma.
+1. Acesse **Relatórios → Avaliações** (ou o botão **"Ver Relatório de Avaliações"** na tela de configuração).
 2. Consulte os dados de avaliações recebidas.
 
-Os relatórios exibem informações como:
+No topo, cards de resumo mostram a **média das notas** e a quantidade de avaliações em cada nível (🤩 Extremamente Satisfeito a 😞 Muito Insatisfeito) — os cards são **clicáveis** e funcionam como filtro rápido.
 
-* Quantidade de avaliações recebidas
-* Média das notas atribuídas
-* Percentual de avaliações válidas
-* Percentual de avaliações inválidas
-* Desempenho individual da equipe
+### Filtros e colunas
+
+O relatório aceita **filtro por usuário, canal e período** (abre mostrando os últimos 30 dias). A tabela mostra:
+
+* **Ticket** — clicável, abre a conversa do atendimento;
+* **Avaliação** — as estrelas dadas pelo cliente;
+* **Usuário Avaliado** — quem atendeu;
+* **Contato** — quem avaliou;
+* **Data**;
+* **Feedback do cliente** — o texto que ele escreveu (quando houver);
+* **Análise da IA** — o botão de análise (veja [Análise com IA](#-análise-com-ia-o-que-causou-a-nota)).
+
+O relatório também pode ser **exportado para Excel** pelo botão no topo.
 
 <figure><img src="../../.gitbook/assets/avaliacaorelatorio.png" alt=""><figcaption></figcaption></figure>
+
+***
+
+## 📄 Copiar configuração para outros canais
+
+A configuração da avaliação é **por canal** — mas ninguém precisa configurar canal por canal. O botão **"Copiar para outros canais"** (ao lado de Salvar) aplica a configuração atual aos canais que você escolher:
+
+1. Configure a avaliação do canal atual e **salve**.
+2. Clique em **"Copiar para outros canais"**.
+3. Selecione os canais que devem receber a configuração (há botão para **selecionar todos** os compatíveis).
+4. Confirme — o sistema avisa quantos canais receberam a configuração.
+
+> ⚠️ **O que a cópia afeta:** apenas as **configurações de avaliação** — as demais configurações do canal não mudam. Canais **sem suporte ao Formato de Lista** não recebem os campos de lista. E canais **criados no futuro** não herdam a configuração automaticamente — copie de novo quando criar um canal novo.
 
 ***
 
