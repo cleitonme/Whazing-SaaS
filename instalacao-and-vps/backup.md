@@ -218,6 +218,8 @@ Adicione a linha abaixo para executar o backup **todos os dias às 2h da manhã*
 Para evitar que o sistema peça senha ao transferir arquivos via **scp**, use este comando:
 
 ```bash
+ssh-keygen -t rsa -b 4096
+
 cat ~/.ssh/id_rsa.pub | ssh deploy@endereco_IP_remoto "mkdir -p ~/.ssh && cat >> ~/.ssh/authorized_keys"
 ```
 
