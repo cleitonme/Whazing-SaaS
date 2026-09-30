@@ -75,6 +75,20 @@ Qualquer usuário com permissão de **Editor** (ou superior) no calendário canc
 
 O agendamento fica com status **Cancelado** (riscado no calendário). Não há botão de cancelar para itens já **Concluídos** ou **Cancelados**.
 
+### 🔁 Agendamentos que fazem parte de uma repetição
+
+Ao cancelar (ou excluir) uma ocorrência com o símbolo **↻**, o sistema pergunta **o que você quer cancelar**:
+
+| Opção                                  | O que faz                                                     |
+| -------------------------------------- | ------------------------------------------------------------- |
+| **Somente este agendamento**           | Cancela apenas a ocorrência aberta                            |
+| **Este e os próximos**                 | Cancela a ocorrência aberta e todas as seguintes              |
+| **Todos os agendamentos da repetição** | Cancela a série inteira                                       |
+
+> ⚠️ Cancelar em série é definitivo para o que foi escolhido — mas as ocorrências anteriores continuam no histórico normalmente.
+
+> 💡 Detalhes de como a repetição funciona em [Agendamento recorrente](como-usar-a-agenda.md#-agendamento-recorrente).
+
 ***
 
 ## 🔁 O que acontece depois do cancelamento

@@ -1,18 +1,20 @@
 # Calendários e Permissões
 
-Dentro da Agenda, cada **calendário** é uma agenda independente — com seus próprios profissionais, suas próprias permissões e seus próprios lembretes. Esta página explica como criar, organizar e controlar **quem pode usar** cada calendário.
+Dentro da Agenda, cada **calendário** funciona como um **local de atendimento** — uma agenda independente, com seus próprios profissionais, suas próprias permissões e seus próprios lembretes. Esta página explica como criar, organizar e controlar **quem pode usar** cada calendário.
 
 > 💡 Está com dúvida sobre a diferença entre _calendário_, _profissional_ e _serviço_? Veja [Antes de começar](antes-de-comecar.md) — tem uma explicação simples de cada conceito.
 
 ## 🧠 O que é um calendário (e por que criar mais de um)
 
-O calendário é onde os agendamentos são guardados. Criar mais de um ajuda a **separar os atendimentos** por setor, unidade ou tipo de atendimento, por exemplo:
+O calendário funciona como o **local onde o profissional atende** — a unidade, a sala, a clínica. Criar mais de um ajuda a **separar os atendimentos** por local, setor ou tipo de atendimento, por exemplo:
 
+* **"Clínica Centro"** e **"Clínica Shopping"** — o mesmo profissional atende nos dois locais, **sem precisar cadastrá-lo duas vezes**.
 * **"Barbearia"** e **"Depilação"** — serviços diferentes, equipes diferentes.
-* **"Unidade Centro"** e **"Unidade Shopping"** — cada unidade com sua agenda.
 * **"Consultas"** e **"Retornos"** — separação por tipo de atendimento.
 
-Cada calendário tem um **nome** e uma **cor** — os agendamentos aparecem no calendário principal pintados com essa cor, para você identificar de longe de qual agenda cada um veio.
+> 💡 **Pense assim:** o **calendário é o local** (onde), o **profissional é quem atende** (quem) e o **serviço é o que será feito** (o quê). Um profissional pode estar vinculado a vários locais — e cada local tem seus próprios lembretes e permissões.
+
+Cada calendário tem um **nome** e uma **cor**. No calendário principal, cada agendamento exibe uma **faixa lateral na cor do local** onde vai acontecer — e o preenchimento do evento é a **cor do profissional** que vai atender (veja [Profissionais](profissionais.md#-cor-do-profissional)).
 
 ***
 
@@ -49,11 +51,19 @@ Cada calendário aparece como uma **linha expansível** (clique na seta para abr
 
 > ⚠️ Excluir o calendário remove a agenda inteira — prefira **desativar** se quiser apenas tirá-la de circulação por um tempo.
 
+### 📍 Endereço do local
+
+Dentro do calendário aberto, o primeiro bloco é o **"Local do atendimento"**. É ali que fica o campo **"Endereço (opcional)"**:
+
+* Pode ter **várias linhas**: rua, número, complemento, bairro e ponto de referência.
+* É apenas **informativo** — quem não preencher não sente diferença nenhuma no resto do sistema.
+* **Onde aparece:** na [página pública de agendamento](link-publico-e-embed.md) — no resumo das escolhas e na tela de confirmação, junto do nome do local, desde que o link tenha a opção **"Mostrar endereço do local"** ligada.
+
 ***
 
 ## 👨‍⚕️ Vinculando profissionais ao calendário
 
-Dentro do calendário aberto, a primeira seção é **Profissionais**. É aqui que você diz **quem atende nesta agenda**.
+Dentro do calendário aberto, a seção **Profissionais** é onde você diz **quem atende neste local**.
 
 > 💡 O profissional precisa existir antes — se a lista aparecer vazia com o aviso _"Nenhum profissional disponível. Cadastre um na aba Profissionais."_, cadastre-o primeiro na aba **Profissionais** (veja [Profissionais](profissionais.md)).
 

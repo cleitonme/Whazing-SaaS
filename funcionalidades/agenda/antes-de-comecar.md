@@ -12,7 +12,8 @@ A Agenda só funciona bem quando os **cadastros-base** estão prontos. Esta pág
 | **Serviços**                          | ✅ Sim         | Define o que pode ser agendado e a duração de cada item                  |
 | **Profissionais**                     | ✅ Sim         | Define quem realiza os atendimentos                                      |
 | **Horários de disponibilidade**       | ✅ Sim         | Sem isso, nenhum dia/hora ficará disponível para agendamento             |
-| **Vínculo profissional ↔ calendário** | ✅ Sim         | O profissional só atende nos calendários a que estiver vinculado         |
+| **Vínculo profissional ↔ calendário** | ✅ Sim         | O profissional só atende nos locais (calendários) a que estiver vinculado |
+| **Endereço do calendário**            | 🔶 Opcional   | Aparece na página pública de agendamento (link público/Embed)            |
 | **Vínculo profissional ↔ serviços**   | 🔶 Opcional   | Restringe quais serviços cada profissional pode fazer                    |
 | **Membros com acesso ao calendário**  | 🔶 Opcional   | Libera usuários comuns (que não são admin/supervisor) para usar a agenda |
 | **Lembretes por WhatsApp**            | 🔶 Opcional   | Avisa o cliente antes do atendimento e permite confirmar/cancelar        |
@@ -33,11 +34,12 @@ A Agenda só funciona bem quando os **cadastros-base** estão prontos. Esta pág
 3. **Cadastre os profissionais** — [Profissionais](profissionais.md)
 4. **Vincule os serviços a cada profissional** — [Profissionais](profissionais.md#serviços-realizados-pelo-profissional)
 5. **Defina os horários de disponibilidade (e as exceções)** — [Profissionais](profissionais.md#horários-de-atendimento)
-6. **Vincule os profissionais ao calendário** — [Calendários e Permissões](calendarios-e-permissoes.md#vinculando-profissionais-ao-calendário)
+6. **Vincule os profissionais ao calendário (local)** — [Calendários e Permissões](calendarios-e-permissoes.md#vinculando-profissionais-ao-calendário)
 7. **Configure quem pode usar a agenda (membros)** — [Calendários e Permissões](calendarios-e-permissoes.md#quem-tem-acesso-ao-calendário)
-8. **Configure os lembretes** — [Lembretes](lembretes.md)
-9. **Conecte o Google Agenda/Outlook, se quiser** — [Google Agenda](google-agenda.md)
-10. **Libere o agendamento por link público, Embed, Chatbot ou Recepção Inteligente** — conforme sua necessidade
+8. **Preencha o endereço de cada local e as cores dos profissionais, se quiser** — [Calendários e Permissões](calendarios-e-permissoes.md#-endereço-do-local) e [Profissionais](profissionais.md#-cor-do-profissional)
+9. **Configure os lembretes** — [Lembretes](lembretes.md)
+10. **Conecte o Google Agenda/Outlook, se quiser** — [Google Agenda](google-agenda.md)
+11. **Libere o agendamento por link público, Embed, Chatbot ou Recepção Inteligente** — conforme sua necessidade
 
 > ⚠️ **Por que essa ordem importa:**
 >

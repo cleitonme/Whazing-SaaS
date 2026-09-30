@@ -42,6 +42,7 @@ Define o que o cliente preenche. **Nome e telefone (WhatsApp) sempre aparecem e 
 * **Mostrar campo de email** — liga/desliga o campo.
 * **Tornar o email obrigatório** — só funciona se o campo estiver sendo mostrado.
 * **Mostrar valor dos serviços** — quando ligada, o **valor cadastrado do serviço** aparece junto do nome do serviço na página (ex.: "Corte masculino · 30min · R$ 45,00") e também no resumo da escolha. Só aparece nos serviços que **têm valor cadastrado** — serviço sem valor continua aparecendo normalmente, só sem o preço. Veja onde cadastrar o valor em [Serviços](servicos.md#valor-do-serviço).
+* **Mostrar endereço do local** — quando ligada, o **endereço cadastrado no calendário** deste link aparece no **resumo da escolha** e na **tela de confirmação** (junto do nome do local). Calendário sem endereço não mostra nada — veja onde cadastrar em [Calendários e Permissões](calendarios-e-permissoes.md#-endereço-do-local).
 
 ### 🎨 Aba "Aparência"
 
@@ -84,11 +85,37 @@ Duas opções controlam **como a página é montada** e o **que aparece nela**:
 
 ### 💬 Aba "Verificação WhatsApp" (opcional)
 
+Esta aba tem **duas funções opcionais**, independentes uma da outra:
+
+#### Código de confirmação antes de agendar
+
 Quer garantir que o telefone informado é real? Ative **"Confirmar o WhatsApp com um código antes de agendar"**:
 
 1. Escolha o **canal do WhatsApp** que enviará o código.
 2. Se for canal **oficial (WABA/Hub)**, escolha também o **template aprovado** que carrega o código. Em canais comuns, uma mensagem personalizada é enviada.
 3. No dia do uso, o cliente recebe um **código de 6 dígitos** e precisa digitá-lo na página antes de confirmar o agendamento.
+
+#### Mensagem automática após o agendamento
+
+Quer que o cliente receba um **recado no WhatsApp na hora em que concluir o agendamento**? Ative **"Enviar mensagem pelo WhatsApp após o agendamento"**:
+
+1. Escolha o **canal do WhatsApp** que vai enviar.
+2. Escolha o formato:
+   * **Texto simples** — você escreve a mensagem do seu jeito.
+   * **Modelo aprovado** — disponível em canais **oficiais (WABA/Hub)**: escolha o template aprovado e preencha as variáveis com os dados do agendamento.
+3. Na mensagem de texto, use as variáveis que quiser — o sistema troca pelos dados reais:
+
+| Variável         | Vira                 |
+| ---------------- | -------------------- |
+| `{cliente}`      | Nome do cliente      |
+| `{profissional}` | Nome do profissional |
+| `{servico}`      | Nome do serviço      |
+| `{data}`         | Data do atendimento  |
+| `{hora}`         | Hora do atendimento  |
+
+> ⚠️ **Canal oficial:** texto simples só chega a quem **conversou com você nas últimas 24 horas**. Para a mensagem chegar sempre, use um **modelo aprovado** — o próprio sistema avisa isso na tela.
+
+> 💡 A mensagem sai **assim que o cliente confirma o agendamento** na página. É a confirmação imediata — diferente do [lembrete](lembretes.md), que é enviado antes do atendimento.
 
 ### 🌐 Aba "Instalação" (aparece depois de salvar)
 
@@ -111,6 +138,17 @@ O cliente não precisa de cadastro nem de senha. Basta abrir o endereço (ex.: `
 7. **Pronto** — tela de **"Agendamento confirmado!"** com a mensagem de sucesso que você definiu, e o agendamento **cai direto na sua Agenda** 🎉
 
 > 💡 Se a página não abrir, o sistema mostra _"Link de agendamento indisponível"_ — verifique se o link está **Ativo**.
+
+### 📅 Datas bloqueadas no calendário da página
+
+O calendário de escolha de data da página pública **mostra apenas o que realmente existe**: dias em que o **profissional não atende**, em que o **serviço escolhido não está disponível** ou que já estão **cheios** aparecem **desabilitados (cinza)** — o cliente nem consegue clicar.
+
+* Os dias disponíveis são recontados automaticamente sempre que o cliente troca o **profissional** ou o **serviço**.
+* Dias fora do [período para agendamento](como-usar-a-agenda.md#-período-para-agendamento-data-limite) do calendário/profissional também ficam bloqueados.
+* Enquanto a verificação carrega, aparece _"Verificando os dias com atendimento..."_.
+* Se nenhuma combinação tiver data livre, a página avisa: _"Não há dias disponíveis para esta combinação. Escolha outro serviço ou profissional."_
+
+> 💡 Isso vale para o **calendário visual** ("clicar no dia"). No modo **"Campo de data simples"**, o cliente vê o aviso de "Nenhum horário disponível nesta data" ao escolher um dia sem horário.
 
 > 💡 **Foto do profissional:** quem é escolhido pelo cliente aparece com a **foto** dele no topo da página durante o agendamento. A foto é cadastrada na aba **Profissionais** — veja [Profissionais](profissionais.md#-foto-do-profissional).
 

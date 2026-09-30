@@ -54,6 +54,22 @@ Cada profissional pode ter uma **foto**, que aparece **na página pública de ag
 
 ***
 
+## 🎨 Cor do profissional
+
+Cada profissional pode ter uma **cor** — ela é a cor do **agendamento dele no calendário**. Com vários profissionais no mesmo dia, é a cor que responde rápido "quem atende?" sem precisar ler o texto do evento.
+
+**Como escolher:**
+
+1. Na aba **Profissionais**, localize a linha do profissional.
+2. Clique no **quadradinho colorido** ao lado do nome e escolha a cor.
+3. Pronto — a cor é salva na hora e já vale para todos os agendamentos dele.
+
+* **Não escolheu nada?** O sistema já usa uma **cor automática** para cada profissional — uma diferente da outra, sem ninguém precisar configurar.
+* A cor vale para a **tela principal da Agenda** e para os **cards da [Recepção](recepcao.md)**.
+* No evento do calendário, a cor do profissional vem acompanhada de uma **faixa lateral na cor do calendário (local)** — de relance, você vê **quem atende e onde**.
+
+***
+
 ## 🛠️ Serviços realizados pelo profissional
 
 Dentro do cadastro do profissional (clique na seta da linha para abrir), a seção **"Serviços realizados"** define **o que ele pode fazer**:
@@ -93,6 +109,23 @@ A aba **Disponibilidade** (a 4ª aba da janela de configurações) define **quan
 A regra entra na lista (ex.: "Segunda-feira — 08:00 - 18:00"). Para **remover** uma regra, clique no 🗑️ ao lado dela.
 
 > 💡 Quer almoçar no meio do expediente? Cadastre **dois turnos**: 08:00–12:00 e 13:00–18:00. As regras se somam.
+
+### 🏢 Horários diferentes em cada local (configuração avançada)
+
+Como o mesmo profissional pode atender em **vários calendários (locais)**, o horário dele pode mudar de um local para o outro. Para isso existe a opção **"Configuração avançada"**, que aparece na aba **Disponibilidade** quando o profissional está em mais de um calendário:
+
+1. Ligue a opção **"Configuração avançada"**.
+2. Além de dia da semana, hora inicial e hora final, escolha:
+   * **Calendário** — o local onde a regra vale. **Deixe em branco** para valer em qualquer local.
+   * **Serviços** — se quiser limitar a regra a serviços específicos. **Deixe em branco** para valer para todos.
+3. Clique no **botão +**.
+
+Na lista, cada regra mostra o **local** e os **serviços** aos quais vale. Exemplos de uso:
+
+* **Clínica Centro de manhã, Clínica Shopping à tarde** — duas regras para a mesma segunda-feira, uma com cada calendário.
+* **Atende o dia todo, menos para um serviço específico** — uma regra geral + uma regra só para aquele serviço.
+
+> 💡 Quem atende em **um local só** (ou igual em todos) pode ignorar esta opção: os três campos de sempre continuam funcionando do mesmo jeito.
 
 ### Exceções: folgas, feriados e horários diferentes
 

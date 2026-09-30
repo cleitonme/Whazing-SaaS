@@ -34,7 +34,7 @@ Você pode alternar entre três formas de visualizar:
 * **Semana** — visão padrão, com as horas do dia em linhas (das 06:00 às 22:00).
 * **Dia** — detalhe de um único dia, ideal para conferir a rotina.
 
-> 💡 Os agendamentos aparecem **na cor do calendário** em que foram criados — uma forma fácil de separar visualmente agendamentos de filas ou setores diferentes.
+> 💡 **Cores no calendário:** o **preenchimento do evento é a cor do profissional** que vai atender — e cada profissional pode ter a sua cor definida (veja [Profissionais](profissionais.md#-cor-do-profissional)). A **faixa lateral** do evento é a cor do **calendário (local)** onde vai acontecer. Assim, de relance, você vê **quem atende e onde**. O nome do profissional também aparece junto do título do evento (menos quando a tela já está filtrada por um profissional, para não repetir à toa). E no filtro de profissional, cada nome vem com a **bolinha da cor dele**.
 
 ***
 
@@ -82,7 +82,9 @@ Enquanto os horários carregam, aparece **"Buscando horários..."**. Se o dia es
 
 > 💡 **Serviço + profissional:** se o profissional tiver **serviços vinculados**, a lista mostra apenas esses serviços. Se ele não tiver nenhum vínculo, pode fazer **qualquer serviço**.
 
-Após salvar, aparece a mensagem **"Agendamento criado com sucesso!"** e o evento surge no calendário na cor do calendário escolhido.
+Após salvar, aparece a mensagem **"Agendamento criado com sucesso!"** e o evento surge no calendário com a **cor do profissional** e a faixa lateral na cor do **local** escolhido.
+
+> 💡 O agendamento salvo também aparece com o **nome do profissional** junto do título — ex.: _"Corte masculino · Maria"_.
 
 <figure><img src="../../.gitbook/assets/addagendamento.png" alt=""><figcaption></figcaption></figure>
 
@@ -126,6 +128,48 @@ Quando o limite é atingido, o calendário simplesmente **não oferece datas al�
 * Vale sempre **a janela mais restritiva** entre calendário e profissional.
 
 > 💡 Bloqueios e exceções de dia específico (folgas, feriados) **continuam valendo** dentro da faixa permitida — a janela é a régua geral, a exceção é o detalhe.
+
+***
+
+## 🔁 Agendamento recorrente
+
+Precisa marcar o **mesmo horário toda semana** (ex.: fisioterapia às quartas) ou **todo mês**? Em vez de criar um agendamento por vez, o formulário de agendamento tem a opção **"Repetir agendamento"**.
+
+### Como criar
+
+1. Abra um **novo agendamento** como de costume (botão ou clique no calendário).
+2. No campo **"Repetir agendamento"**, escolha a frequência:
+   * **Não repetir** (padrão) — cria um agendamento único, como sempre.
+   * **Toda semana** — repete no mesmo dia da semana.
+   * **A cada 2 semanas** — repete quinzenalmente.
+   * **Todo mês** — repete no mesmo dia do mês.
+3. Escolha quando a repetição **termina**:
+   * **Em uma data** — ex.: até 20/12.
+   * **Após X vezes** — ex.: 10 encontros.
+4. Clique em **Salvar**. O sistema cria **todos os agendamentos da série de uma vez** e avisa: _"X agendamentos criados com sucesso!"_.
+
+### Se alguma data já estiver ocupada
+
+O sistema avisa: _"Algumas datas não estão disponíveis"_ — e você escolhe entre **criar só as disponíveis** (as ocupadas ficam de fora) ou desistir. Confirmando sem nenhuma data livre, ele informa: _"O agendamento foi salvo, mas nenhuma data da repetição estava disponível."_
+
+### Como identificar no calendário
+
+* Cada ocorrência aparece como um **agendamento normal**, com o símbolo **↻** no início do título indicando que faz parte de uma repetição.
+* Abrindo qualquer ocorrência, um aviso resume a série: _"Agendamento repetido · X agendamentos até Y"_.
+
+### Como editar ou excluir uma repetição
+
+Ao alterar ou excluir uma ocorrência, o sistema pergunta **a alteração vale para quem?**:
+
+| Opção                                  | O que faz                                              |
+| -------------------------------------- | ------------------------------------------------------ |
+| **Somente este agendamento**           | Mexe apenas na ocorrência aberta                       |
+| **Este e os próximos**                 | Altera/exclui a ocorrência aberta e todas as seguintes |
+| **Todos os agendamentos da repetição** | Altera/exclui a série inteira                          |
+
+> ⚠️ Se você **mudar a data** da ocorrência, a alteração vale **apenas para ela** — o sistema avisa isso na hora.
+
+> 💡 Quer encerrar uma repetição que ainda roda? **Exclua uma ocorrência escolhendo "Este e os próximos"**: a série termina dali para frente e o histórico anterior continua no calendário.
 
 ***
 

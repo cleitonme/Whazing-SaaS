@@ -127,6 +127,49 @@ Verifique:
 
 * O calendário **não pode ser trocado depois de criado** — o sistema avisa disso na edição. Se precisar mudar, **exclua o link e crie outro** (ou duplique o atual antes).
 
+### O dia no calendário da página aparece cinza e o cliente não consegue clicar
+
+* É o comportamento novo: **dias sem nenhum horário livre ficam desabilitados** — o profissional não atende naquele dia, o serviço não está disponível nele ou a agenda já está cheia. Veja [Datas bloqueadas no calendário da página](link-publico-e-embed.md#-datas-bloqueadas-no-calendário-da-página).
+* Se aparecer algum dia liberado errado, confira a **disponibilidade do profissional** e as **exceções** (folgas) dele.
+
+### O endereço não aparece na página do cliente
+
+* O **calendário** do link precisa ter o **endereço preenchido** (veja [Endereço do local](calendarios-e-permissoes.md#-endereço-do-local)).
+* O link precisa ter a opção **"Mostrar endereço do local"** ligada (aba **Campos**).
+* Calendário sem endereço não mostra nada — mesmo com a opção ligada.
+
+### A mensagem de WhatsApp após o agendamento não chegou
+
+* A opção **"Enviar mensagem pelo WhatsApp após o agendamento"** está **ligada** no link (aba **Verificação WhatsApp**)?
+* O **canal** escolhido está conectado e funcionando?
+* Em canal **oficial (WABA/Hub)** com **texto simples**: a mensagem só chega a quem conversou com você nas **últimas 24 horas** — nesse caso, use um **modelo aprovado**.
+
+***
+
+## 🔁 Agendamento recorrente
+
+### Como parar uma repetição que não termina mais
+
+* Abra qualquer ocorrência e **exclua escolhendo "Este e os próximos"** — a série termina dali para frente e as ocorrências passadas continuam no histórico.
+* Ou **edite** a ocorrência (também valendo para "Este e os próximos") ajustando o fim em **"Em uma data"** ou **"Após X vezes"**.
+
+### Preciso mudar o horário de uma ocorrência só
+
+* Edite a ocorrência desejada e escolha **"Somente este agendamento"**. Se você **mudar a data**, a alteração vale **apenas para ela** automaticamente.
+
+***
+
+## 🎨 Cores e nomes no calendário
+
+### Meus agendamentos estão com uma cor diferente da cor do calendário
+
+* Agora o **preenchimento do evento é a cor do profissional** e a **faixa lateral** é a cor do **calendário (local)**. Para trocar a cor de um profissional, veja [Cor do profissional](profissionais.md#-cor-do-profissional).
+* Profissional **sem cor escolhida** recebe uma **cor automática** — profissionais diferentes ficam com cores diferentes sem ninguém configurar nada.
+
+### Por que o nome do profissional não aparece em alguns agendamentos?
+
+* Quando a tela está **filtrada por um profissional**, o nome dele deixa de repetir em todos os eventos — todos já são dele.
+
 ***
 
 ## 🤖 Chatbot e Recepção Inteligente
@@ -148,5 +191,6 @@ Verifique:
 ## 💡 Outras dúvidas rápidas
 
 * **"Agenda" e "Agendamento" são o mesmo módulo?** Não! O **Agendamento** (em Cadastros) serve para **enviar mensagens programadas**. A **Agenda** é o módulo de horários descrito nesta documentação.
-* **Posso ter dois calendários com o mesmo nome?** O sistema não impede, mas evite: nomes iguais dificultam identificar os agendamentos (que usam a cor de cada calendário para se diferenciar).
+* **Posso cadastrar o mesmo profissional em dois locais?** Sim! O calendário funciona como o **local de atendimento**: vincule o profissional aos calendários (locais) em que ele atende — sem cadastrar duas vezes. E cada local pode ter horário próprio, com a [configuração avançada de disponibilidade](profissionais.md#-horários-diferentes-em-cada-local-configuração-avançada).
+* **Posso ter dois calendários com o mesmo nome?** O sistema não impede, mas evite: nomes iguais dificultam identificar o **local** de cada agendamento — tanto na faixa lateral colorida do evento quanto no [link público](link-publico-e-embed.md), que é criado sempre para um calendário.
 * **Onde vejo todos os agendamentos de um cliente?** No **Atendimento**, aba **Agenda** do painel do cliente — ou no painel da Agenda, buscando pelo nome dele no campo **Cliente** ao criar/editar um agendamento.
