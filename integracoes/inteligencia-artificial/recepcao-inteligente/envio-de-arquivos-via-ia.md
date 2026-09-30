@@ -14,6 +14,39 @@ Esse comando faz com que o sistema envie um arquivo previamente cadastrado.
 
 ***
 
+## 📎 Onde os arquivos vêm de
+
+Antes de a IA enviar arquivos, você precisa **cadastrá-los** e **selecioná-los** na integração. A mecânica é a mesma da [Base de Conhecimento](base-de-conhecimento.md): cadastra uma vez e seleciona na Recepção Inteligente.
+
+### 1️⃣ Cadastre o arquivo
+
+1. No menu lateral, acesse **Cadastros**
+2. Clique no card **Arquivos da IA** ("Gerencie arquivos utilizados pela IA durante os atendimentos automatizados")
+3. Clique em **Adicionar Arquivo**
+4. Selecione ou arraste o arquivo (imagens, vídeos, PDF, DOC/DOCX, XLS/XLSX) — até 50 MB
+5. Preencha a **descrição** — um nome curto que identifique o arquivo (ex.: `Tela da campanha`)
+6. Clique em **Salvar**
+
+> 💡 O botão **⚙️ Configurações** desta tela abre o mesmo modal de **Embeddings** da Base de Conhecimento (chave do Gemini). Configure uma vez e vale para os dois.
+
+> ⚠️ Cada arquivo cadastrado recebe um **ID** no sistema. Anote o ID do arquivo que a IA deve enviar — ele é usado no comando `{ "sendFile": ID }` mais abaixo.
+
+### 2️⃣ Selecione o arquivo na Recepção Inteligente
+
+1. Vá em **Automação e Integrações → IA e Integrações** e edite sua integração da **Recepção Inteligente**
+2. Abra a aba **Automação** e expanda a seção **Configuração de Arquivos**
+3. Clique em **Adicionar Arquivo**
+4. Em **Selecionar Arquivo**, escolha o arquivo cadastrado
+5. Preencha as **Palavras-chave** (separadas por vírgula) — os assuntos em que faz sentido enviar este arquivo (ex.: `campanha, disparo em massa, marketing`)
+6. Opcionalmente, preencha a **Legenda** — um texto que acompanha o arquivo quando enviado
+7. Clique em **Adicionar** e depois **Salvar** a integração
+
+> 💡 A **Correspondência Semântica de Arquivos** (configurada logo abaixo da lista, com Embedding ativo) define a sensibilidade para o sistema encontrar e enviar o arquivo sozinho, mesmo quando o cliente não usa a palavra exata.
+
+> ⚠️ Dependendo do formato do arquivo ou do canal, a **legenda** pode não ser enviada junto.
+
+***
+
 ### 📎 Correspondência Semântica de Arquivos
 
 Agora o sistema também pode **encontrar e enviar arquivos automaticamente** com base na mensagem do cliente, utilizando busca por similaridade (semântica).
@@ -63,13 +96,11 @@ Valor entre **0.5 e 1.0**
 
 Use um valor de envio automático mais alto para evitar envios indevidos e garantir que apenas arquivos realmente relevantes sejam enviados 👍
 
-Aqui está o trecho adicional 👇
-
 ***
 
 ### ⚠️ Importante
 
-Para que a **Correspondência Semântica de Arquivos** funcione, é obrigatório ter a **API do Gemini configurada** na fica configurações na tela que lista arquivos.
+Para que a **Correspondência Semântica de Arquivos** funcione, é obrigatório ter a **API do Gemini configurada** nas configurações da tela que lista arquivos (botão **⚙️ Configurações** em **Cadastros → Arquivos da IA**).
 
 Sem essa configuração:
 
