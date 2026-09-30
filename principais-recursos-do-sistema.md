@@ -168,6 +168,12 @@ Ideal para empresas que desejam escalar o atendimento sem aumentar equipe.
 
 ***
 
+### 🌐 Rastreamento de Site
+
+* **Novo módulo:** script no site para acompanhar **visitantes em tempo real**, a **jornada** página a página, origem, campanhas e **conversões** — veja [Rastreamento de Site](funcionalidades/site-tracking.md)
+
+***
+
 ## 🆓 Versão Grátis
 
 * Exibe anúncios do Whazing

@@ -4,6 +4,8 @@ A partir da **versão 3.0**, o Whazing possui o recurso **Tracking Links**, que 
 
 O recurso é especialmente útil para campanhas de marketing, anúncios, Instagram, Facebook, sites e outras fontes de divulgação.
 
+> 🌐 **Nova:** o módulo **[Rastreamento de Site](../../site-tracking.md)** mostra quem está no seu site em tempo real e a jornada de cada visitante — e quem chega pelos seus Tracking Links aparece identificado lá também.
+
 ***
 
 ### 📌 Onde encontrar
