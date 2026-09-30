@@ -5,7 +5,7 @@ Você pode disponibilizar o formulário de duas maneiras:
 * 🌐 Incorporado diretamente em um site;
 * 🔗 Através de um link público.
 
-Os dados enviados pelo visitante podem ser utilizados para capturar informações de potenciais clientes.
+Os dados enviados pelo visitante podem ser utilizados para capturar informações de potenciais clientes. E o formulário ainda pode **avisar sua equipe** a cada resposta e **confirmar no WhatsApp** do visitante que os dados foram recebidos.
 
 <figure><img src="../../../.gitbook/assets/exemploformulario.png" alt=""><figcaption></figcaption></figure>
 
@@ -25,7 +25,18 @@ Na tela de Formulários, clique em:
 
 **Novo Formulário**
 
-Você poderá configurar o formulário de acordo com as informações que deseja coletar.
+A janela de criação é organizada em **6 abas**:
+
+| Aba                | O que você configura                                                                        |
+| ------------------ | ------------------------------------------------------------------------------------------- |
+| **Informações básicas** | Nome do formulário e status (ativo/inativo)                                            |
+| **Campos**         | As perguntas que o visitante responde                                                       |
+| **Aparência**      | Cores e texto do botão                                                                      |
+| **Após envio**     | Mensagem de sucesso, **notificação interna** e **confirmação por WhatsApp**                 |
+| **Vínculo**        | Conectar o formulário a um Tracking Link (opcional)                                         |
+| **Instalação**     | URL pública e script para incorporar no site (aparece depois de salvar)                     |
+
+> 💡 Na **lista de formulários**, cada nome pode exibir dois ícones: um **sino 🔔** (notificação interna ligada) e um **WhatsApp verde** (confirmação por WhatsApp ligada) — dá para ver de relance o que cada formulário faz.
 
 ***
 
@@ -61,9 +72,9 @@ Se estiver desativado, ele não deverá ser utilizado para novas captações.
 
 ## 🧩 Campos do formulário
 
-Você pode adicionar diferentes tipos de campos.
+Na aba **Campos**, clique em **Adicionar campo** para criar as perguntas. Para cada campo você define o **tipo**, o **rótulo** (a pergunta) e se é **obrigatório**.
 
-Isso permite criar formulários simples ou mais completos.
+Existem **7 tipos de campo**:
 
 ***
 
@@ -76,7 +87,6 @@ Exemplos:
 * Nome;
 * Cidade;
 * Empresa;
-* Telefone;
 * CPF;
 * Código.
 
@@ -116,6 +126,24 @@ O visitante verá:
 
 ***
 
+## 📱 Telefone
+
+Utilizado para pedir o número de **WhatsApp** do visitante.
+
+#### Exemplo
+
+**Rótulo:**
+
+WhatsApp
+
+**Obrigatório:**
+
+Sim
+
+> 💡 **Campo importante:** é o campo de **Telefone** que permite usar a **confirmação por WhatsApp** (veja [Após envio](#-após-envio-notificações-e-mensagem-de-sucesso)). Sem ele, o sistema não tem para quem enviar a mensagem.
+
+***
+
 ## 📝 Texto longo
 
 Utilizado quando o visitante precisa escrever uma mensagem maior.
@@ -140,9 +168,9 @@ Sim
 
 ***
 
-## 🔘 Múltipla escolha
+## 🔽 Lista suspensa
 
-Permite que o visitante escolha **uma opção** entre várias disponíveis.
+Permite que o visitante escolha **uma opção** em uma lista.
 
 No campo **Opções**, informe as opções separadas por vírgula.
 
@@ -155,6 +183,24 @@ Qual produto você procura?
 **Opções:**
 
 WhatsApp, Instagram, Facebook, E-mail
+
+***
+
+## 🔘 Múltipla escolha
+
+Permite que o visitante escolha **uma opção** entre várias disponíveis.
+
+No campo **Opções**, informe as opções separadas por vírgula.
+
+#### Exemplo
+
+**Rótulo:**
+
+Como prefere ser atendido?
+
+**Opções:**
+
+WhatsApp, Telefone, E-mail
 
 O visitante poderá escolher uma das opções.
 
@@ -180,6 +226,12 @@ O visitante poderá selecionar mais de uma opção.
 
 ***
 
+## 🔃 Organizando os campos
+
+Cada campo tem as **setas ↑ ↓** para mudar a ordem em que aparecem para o visitante, e o **🗑️** para removê-lo.
+
+***
+
 ## ⚠️ Campo obrigatório
 
 Cada campo pode ser configurado como:
@@ -196,6 +248,8 @@ Um formulário de orçamento pode ter:
 
 **Nome** → Obrigatório ✅
 
+**WhatsApp** → Obrigatório ✅
+
 **E-mail** → Obrigatório ✅
 
 **Mensagem** → Obrigatório ✅
@@ -204,9 +258,9 @@ Um formulário de orçamento pode ter:
 
 ***
 
-## 🎨 Personalização
+## 🎨 Aparência
 
-O formulário também permite personalizar sua aparência.
+Na aba **Aparência**, o formulário permite personalizar sua aparência.
 
 Você pode configurar:
 
@@ -234,13 +288,51 @@ Exemplo:
 
 **Enviar**
 
+***
+
+## 🔔 Após envio: notificações e mensagem de sucesso
+
+Na aba **Após envio** você define o que acontece **depois que o visitante envia o formulário** — a mensagem que ele vê, quem da sua equipe fica sabendo e se ele recebe uma confirmação no WhatsApp.
+
 #### Mensagem de sucesso
 
-Define a mensagem apresentada depois que o formulário é enviado.
+Define a mensagem apresentada ao visitante depois que o formulário é enviado.
 
 Exemplo:
 
 > **Recebemos sua mensagem, obrigado!**
+
+***
+
+### 🔔 Notificação interna (quando receber uma resposta)
+
+A opção **"Notificar quando receber uma resposta"** avisa a **sua equipe** a cada formulário recebido:
+
+* Quando ligada, **administradores e supervisores** do sistema recebem um **aviso interno** a cada nova resposta.
+* **Para que serve:** ninguém precisa ficar atualizando a tela de leads para saber se chegou alguém — o aviso chega na hora.
+* É uma notificação **dentro do próprio sistema** (sino de notificações), não envia WhatsApp para a equipe.
+
+> 💡 Quer que a equipe também receba por WhatsApp? Isso é possível combinando o formulário com uma automação — veja [Regras de Automação](../regras-de-automacao.md).
+
+***
+
+### 💬 Confirmação pelo WhatsApp (para o visitante)
+
+A opção **"Enviar confirmação pelo WhatsApp"** envia uma **mensagem automática para quem preencheu o formulário**, confirmando que os dados foram recebidos:
+
+> _"Obrigado por preencher nosso formulário! Recebemos suas informações e entraremos em contato em breve."_
+
+**Como ativar:**
+
+1. O formulário precisa ter **um campo do tipo Telefone** — sem ele, a opção fica travada e o sistema avisa: _"Para enviar confirmação pelo WhatsApp, o formulário precisa possuir um campo de telefone."_
+2. Escolha o **Canal WhatsApp** que vai enviar (só aparecem canais conectados).
+3. Escolha o formato da mensagem:
+   * **Texto livre** — canais comuns (Plus, Wuzapi e similares): escreva a mensagem do seu jeito, usando as variáveis pelo menu ao lado do campo.
+   * **Modelo aprovado (template)** — em canais **oficiais (WABA/Hub)**, a mensagem tem de ser um template aprovado pela Meta. O sistema avisa: _"Canal oficial só envia template aprovado para quem ainda não respondeu. Escolha um template."_
+
+> ⚠️ **Canal oficial:** o template é obrigatório porque a API Oficial do WhatsApp não permite texto livre para conversas novas. Se tentar salvar sem escolher um template, o sistema bloqueia e pede a escolha.
+
+> 💡 **Onde acompanhar o envio:** na tela de **Leads** do formulário, cada resposta mostra a coluna **Confirmação** com o status: **Enviada** (verde), **Falhou** (vermelho) ou **Sem telefone** (cinza — o visitante não preencheu o campo de telefone).
 
 ***
 
@@ -302,7 +394,7 @@ Isso permite avaliar o resultado da campanha.
 
 ## 🌐 URL pública
 
-Depois de salvar o formulário, o sistema disponibiliza uma **URL pública**.
+Depois de salvar o formulário, a aba **Instalação** mostra a **URL pública** já com um **QR Code** para baixar/imprimir.
 
 Exemplo:
 
@@ -329,6 +421,23 @@ Você pode criar um formulário chamado:
 **Solicite um orçamento**
 
 e compartilhar diretamente o link com seus clientes.
+
+***
+
+## 📊 Leads: as respostas recebidas
+
+Cada envio de formulário é registrado como um **lead**. Para ver as respostas, clique no ícone de **Leads 👥** na linha do formulário (ação **Ver leads**).
+
+A tela de leads mostra **uma tabela com todas as respostas**:
+
+* **Data** — quando o formulário foi enviado.
+* **Contato** — o contato criado no sistema com os dados do visitante (quando ele preencheu nome/telefone).
+* **Uma coluna para cada campo** do formulário, com o que o visitante respondeu.
+* **Confirmação** — aparece só em formulários com confirmação por WhatsApp: **Enviada**, **Falhou** ou **Sem telefone**.
+
+No topo da tela, o botão **Excel** **exporta todas as respostas** para uma planilha — com todas as colunas da tabela. É a forma mais prática de passar os leads para o time comercial.
+
+> 💡 Na [lista de formulários](#-criar-um-formulário), o número na coluna **Leads** mostra de cara quantas respostas cada formulário já recebeu.
 
 ***
 
@@ -511,7 +620,7 @@ Defina o nome
 
 ↓
 
-Adicione os campos
+Adicione os campos (inclua o **Telefone** se quiser confirmação por WhatsApp)
 
 ↓
 
@@ -519,7 +628,11 @@ Escolha quais são obrigatórios
 
 ↓
 
-Personalize cores e mensagens
+Personalize cores e texto do botão
+
+↓
+
+Na aba **Após envio**: mensagem de sucesso, **notificação interna** e **confirmação por WhatsApp**
 
 ↓
 
@@ -554,6 +667,9 @@ Você pode:
 * 📝 Criar formulários personalizados;
 * 🌐 Incorporar em sites;
 * 🔗 Compartilhar através de uma URL;
+* 🔔 Receber uma **notificação interna** a cada resposta;
+* 💬 Enviar **confirmação automática por WhatsApp** para quem preencheu;
+* 📊 Acompanhar os **leads** e exportá-los para Excel;
 * 🎨 Personalizar cores;
 * 🖼️ Adicionar logo;
 * 📊 Integrar com Tracking Links;
