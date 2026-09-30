@@ -197,7 +197,7 @@ LOCALIZACAO RAPIDA DAS MEMORIAS
 4. A IA responde usando **exatamente** aquele conteúdo
 5. Se nenhuma palavra-chave casar, **nada é injetado** — o prompt continua leve
 
-> 💡 Use o **Testar IA** (disponível na tela da integração) para conferir se as palavras-chave estão sendo acionadas como esperado.
+> ⚠️ **O simulador não testa a Base de Conhecimento.** No botão **Simular conversa**, a IA responde apenas com o prompt configurado — os itens da base **não são buscados**. Para validar as palavras-chave e o conteúdo injetado, faça um teste real pelo WhatsApp/canal. Veja todas as limitações na [página da Recepção Inteligente](README.md).
 
 ***
 

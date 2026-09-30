@@ -85,6 +85,27 @@ Após criar, o botão **Editar** abre as **informações avançadas** em abas:
 
 ***
 
+## 🧪 Testando a integração (Simular conversa)
+
+Na tela da integração você encontra o botão **Simular conversa**, que abre um chat de teste para conversar com a sua IA.
+
+> ⚠️ **O simulador é uma simulação — tem limitações.** Veja o botão **Ver limitações** no próprio teste.
+
+| Recurso | Comportamento no simulador |
+| --- | --- |
+| **Base de Conhecimento** | Itens da KB **não são buscados** — a IA responde apenas com o prompt configurado |
+| **Busca web (Tavily)** | Nenhuma pesquisa é feita na web durante a simulação |
+| **Envio de arquivos** | O comando `sendFile` é detectado e exibido, mas o arquivo **não é enviado de fato** |
+| **PIX** | O comando `SendPix` é detectado e exibido, mas nenhuma chave é enviada |
+| **Verificação de usuários online** | Transferências acontecem **sem checar** se há atendentes disponíveis |
+| **Histórico real de tickets** | A conversa começa do zero — sem contexto de atendimentos anteriores do contato |
+
+> 💡 **O que funciona fielmente:** prompt principal, filas, usuários e comandos são simulados fielmente.
+
+> 💡 Para testar **Base de Conhecimento, busca web, arquivos e PIX de verdade**, faça um teste **real** pelo WhatsApp/canal configurado.
+
+***
+
 ## 📌 Exemplo prático de fluxo
 
 * Cliente envia mensagem pelo WhatsApp: _"Quero a segunda via do boleto"_.
