@@ -1,5 +1,69 @@
 ## Changelog e Atualizações
 
+# 🚀 Versão 3.1.3 BETA
+
+### 🐛 Correções
+
+* **API Oficial:** correção no cálculo de custos. Os 1.000 envios gratuitos não estavam sendo descontados corretamente
+* **Tarefas:** correção no funcionamento de anexos utilizando S3
+* **Formulários:** correção na exibição da logo
+* **Sticker:** atualização da fonte de dados, pois a fonte anterior apresentava problemas
+* **Usuários:** bloqueio da exclusão de usuário que possui tickets atribuídos, sejam eles abertos ou fechados
+
+### 📅 Agenda
+
+* **Calendário por local:** o calendário passa a funcionar como uma espécie de local onde o profissional atende. Exemplo: o mesmo profissional pode atender em duas clínicas diferentes, permitindo gerenciar melhor os horários sem precisar cadastrar o mesmo profissional mais de uma vez
+* **Link de agendamento:** melhorias no link de agendamento e no cadastro realizado pelo usuário, bloqueando datas em que o profissional não atende ou em que o serviço não está disponível
+* **WhatsApp:** envio de mensagem pelo WhatsApp após o agendamento realizado pelo link de agendamento
+* **Endereço:** cadastro de endereço e exibição no link externo
+* **Profissionais:** definição de cores para os profissionais e exibição do nome do profissional no calendário
+* **Agendamento recorrente:** possibilidade de criar agendamentos recorrentes
+
+### 📝 Formulários
+
+* **Notificação WhatsApp:** nova opção de notificação via WhatsApp
+* **Notificação interna:** nova opção de notificação interna
+
+### 🤖 Serviços de IA
+
+* **Página Serviços de IA:** melhorias para deixar mais claro para que serve cada serviço
+
+### 📊 Relatórios
+
+* **Relatório WebChat:** novos dados e novos filtros
+
+### 🎫 Atendimento
+
+* **Nova configuração:** permitir que todos os usuários possam fechar e transferir tickets de grupos
+* **Suporte bot a grupos:** configuração para definir se o bot poderá atuar em todos os grupos ou somente em grupos específicos. A configuração fica no local onde o nome do bot é editado
+
+### 📞 WallCalls
+
+* **Atendimento de ligações:** ao atender uma ligação, o atendimento do contato é direcionado automaticamente para o atendente que recebeu a chamada e, quando necessário, para uma fila da qual ele participa
+* **Organização automática:** organização automática do atendimento ao receber uma ligação
+* **Transcrição:** suporte à transcrição de ligações
+
+### ⭐ Avaliação
+
+* **Análise com IA:** utilização de IA para avaliar o motivo da nota atribuída
+
+### 📱 Chamadas internas
+
+* **Gravação e transcrição:** suporte à gravação e transcrição das chamadas internas, utilizando somente áudio para tornar o recurso mais leve
+
+### 🌐 Rastreamento de Site
+
+* **Novo módulo:** novo módulo de Rastreamento de Site
+* **Monitoramento:** possibilidade de adicionar um script ao site para monitorar visitantes e rastrear cliques
+
+### 🧠 Recepção Inteligente
+
+* **Tratamento de erros:** em caso de erro na resposta da IA, criar uma nota interna no ticket informando o erro e transferir o atendimento para uma fila de fallback, caso exista
+
+### 💳 Integração PushinPay
+
+* **Novo PIX:** opção para gerar um novo PIX quando o pagamento anterior estiver expirado
+
 # 🚀 Versão 3.1.2 BETA
 
 ### 🏢 Painel SaaS
