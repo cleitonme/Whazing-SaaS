@@ -263,6 +263,18 @@ Essa configuração pode ser utilizada quando a empresa precisa acompanhar ativi
 
 ***
 
+### Permitir fechar e transferir tickets de grupos para todos os usuários
+
+Quando ativada, **usuários comuns** também poderão **fechar** e **transferir** atendimentos de grupos. Afeta **somente grupos** — atendimentos individuais seguem as regras atuais.
+
+**Sem a opção (padrão):** só administradores e supervisores conseguem encerrar ou transferir o ticket de um grupo.
+
+**Com a opção ativada:** qualquer atendente resolve o grupo, sem depender de um admin.
+
+> 💡 **Bot em grupos:** o chatbot também passou a poder atender grupos — veja [Atendimento em grupos](../automacao/chatbotinterno-1/README.md#atendimento-em-grupos). Se o canal estiver com **Ignorar Mensagens de Grupo** ativada, o bot não responde nos grupos, mesmo com a configuração dele habilitada.
+
+***
+
 ## Assinatura de mensagens
 
 ### Permitir que usuário desabilite a assinatura

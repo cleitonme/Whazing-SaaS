@@ -18,12 +18,13 @@ O **ChatFlow** é o editor visual de chatbot do Whazing. Com ele você monta **f
 7. [Conexões entre etapas](./#conexões-entre-etapas)
 8. [Configurações do bot](./#configurações-do-bot)
    * [Ausência de resposta](./#ausência-de-resposta)
-9. [Variáveis](./#variáveis)
-10. [Testando o fluxo (Simulador)](./#testando-o-fluxo-simulador)
-11. [Automações (integrações)](./#automações-integrações)
-12. [Atalhos de teclado](./#atalhos-de-teclado)
-13. [Exportar fluxo](./#exportar-fluxo)
-14. [Exemplos Práticos de Fluxos](./#exemplos-práticos-de-fluxos)
+9. [Atendimento em grupos](./#atendimento-em-grupos)
+10. [Variáveis](./#variáveis)
+11. [Testando o fluxo (Simulador)](./#testando-o-fluxo-simulador)
+12. [Automações (integrações)](./#automações-integrações)
+13. [Atalhos de teclado](./#atalhos-de-teclado)
+14. [Exportar fluxo](./#exportar-fluxo)
+15. [Exemplos Práticos de Fluxos](./#exemplos-práticos-de-fluxos)
 
 ***
 
@@ -535,6 +536,28 @@ Ao clicar no nó **Configurações**, um **painel/modal** abre com as opções g
 * **Encerrar Atendimento:** lista de **palavras** que, se digitadas pelo cliente, **encerram o atendimento**. Acompanhada da **mensagem de despedida** enviada ao cliente.
 * **Palavras-chave para reiniciar o atendimento:** lista de palavras (ex.: `#menu`) que fazem o bot **voltar para o início** (etapa Boas-vindas) a partir de qualquer etapa.
 * **Mensagem de saudação (Fila/Usuário):** mensagem enviada automaticamente **sempre que o bot transfere** o atendimento para uma fila ou usuário.
+
+***
+
+## 👥 Atendimento em grupos
+
+Por segurança, o chatbot **não atende grupos por padrão** — ele responde apenas em conversas individuais. Agora você decide onde ele pode atuar.
+
+**Onde configurar:** na tela de **criar/editar o chatbot** (a mesma onde se define o **nome do bot**), na seção **"Atendimento em grupos"**.
+
+<figure><img src="../../../.gitbook/assets/chatbot-grupos.png" alt=""><figcaption></figcaption></figure>
+
+### Os três modos
+
+| Modo | O que acontece |
+| --- | --- |
+| **Não atender grupos** _(padrão)_ | Comportamento de sempre: o bot ignora grupos e responde só no individual |
+| **Atender apenas grupos escolhidos** | O bot responde **somente** nos grupos da lista **"Grupos autorizados"** (com busca pelo nome do grupo). Grupos novos começam **sem autorização** — você escolhe um a um |
+| **Atender todos os grupos** | O bot responde em **qualquer** grupo em que o número conectado participar |
+
+> 💡 **Bots criados antes desta melhoria** ficam automaticamente no modo padrão (**Não atender grupos**) — o comportamento deles não muda até você configurar.
+
+> ⚠️ **O bot só responde nos grupos se o canal não estiver configurado para ignorar mensagens de grupos.** Se a opção **"Ignorar Mensagens de Grupo"** estiver ativada nas [Configurações do Atendimento](../../gestao/configuracoes-do-atendimento.md), o sistema não abre ticket nenhum para grupos — e a configuração do bot não surte efeito. As duas configurações trabalham juntas.
 
 ***
 
