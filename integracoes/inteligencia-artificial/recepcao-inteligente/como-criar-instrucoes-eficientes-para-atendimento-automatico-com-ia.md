@@ -34,11 +34,17 @@ Você pode **trocar de modelo a qualquer momento** — ao selecionar, o prompt p
 
 ### 🔧 Variáveis disponíveis
 
-O sistema insere automaticamente informações atuais no prompt, usando as variáveis:
+O sistema insere automaticamente informações atuais no prompt, usando as variáveis. Na tela, basta **clicar em uma variável para copiá-la**:
 
-* `{{CURRENT_DATE}}` — data atual
-* `{{CURRENT_WEEKDAY}}` — dia da semana atual
-* `{{CURRENT_TIME}}` — horário atual
+| Variável | O que a IA recebe | Exemplo de resultado |
+| --- | --- | --- |
+| `{{CURRENT_DATE}}` | Data atual | `30/09/2026` |
+| `{{CURRENT_TIME}}` | Horário atual | `14:35` |
+| `{{CURRENT_DATETIME}}` | Data e hora juntas | `30/09/2026 14:35` |
+| `{{CURRENT_WEEKDAY}}` | Dia da semana | `quarta-feira` |
+| `{{CURRENT_MONTH}}` | Mês atual | `setembro` |
+| `{{CURRENT_YEAR}}` | Ano atual | `2026` |
+| `{{CURRENT_TIMEZONE}}` | Fuso horário do sistema | `America/Sao_Paulo` |
 
 Exemplo de uso no prompt:
 
@@ -51,9 +57,14 @@ Horário atual:
 
 ***
 
-### 🧪 Testar integração
+### 🧪 Testar antes de usar
 
-Após configurar o prompt, utilize o botão **Testar integração** para validar o comportamento da IA antes de colocar em produção.
+Na tela da integração, a seção **Testar IA** oferece duas formas de validar antes de colocar em produção:
+
+* **Testar configuração** — um diagnóstico que confere provedor, modelo, API Key e conexão, e ainda dá uma **nota à qualidade do seu prompt** com sugestões de melhoria (dá para ver e copiar uma versão melhorada do prompt).
+* **Simular conversa** — um chat de teste para conversar com a sua IA como se fosse o cliente.
+
+> ⚠️ O simulador é uma **aproximação**: Base de Conhecimento, busca na web, arquivos e PIX não são executados de verdade. Veja as limitações completas na seção [Testando a integração](README.md#-testando-a-integração-simular-conversa) do guia principal.
 
 ***
 

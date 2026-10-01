@@ -83,11 +83,13 @@ Na integração (**Automação e Integrações → IA e Integrações**), escolh
 
 **Utilizar minha própria API**
 
-Depois, abra as **Configurações avançadas** e preencha os campos do provedor:
+No card **Utilizar minha própria API** da aba **Geral**, preencha os campos do provedor:
 
-#### Campos:
+#### Campos (nesta ordem):
 
-* **URL Base da API**
+* **Serviço de IA** — escolha o provedor pronto (OpenAI, Groq, Gemini, etc.) ou **Custom (URL própria)** para usar qualquer serviço compatível com o formato OpenAI
+
+* **URL Base da API** — aparece quando o Serviço de IA é **Custom (URL própria)**; o campo avisa que deve ser *compatível com formato OpenAI*
 
 ```
 https://openrouter.ai/api/v1
@@ -106,6 +108,15 @@ https://openrouter.ai/api/v1
 ```
 
 <figure><img src="../../../.gitbook/assets/whazingcustomurl.png" alt=""><figcaption></figcaption></figure>
+
+***
+
+#### 🔌 Testar conexão
+
+Depois de preencher, clique no botão **Testar conexão**:
+
+* ✅ **Conectado** — tudo certo, o Whazing está se comunicando com o seu provedor.
+* ❌ **Erro na conexão** — revise a API Key, o modelo e a URL base.
 
 ***
 

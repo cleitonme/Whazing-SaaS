@@ -19,15 +19,36 @@ A configuração fica na **aba Followup** da tela de edição da integração (*
 
 #### Tempo mínimo (min)
 
-Define o tempo mínimo para iniciar o follow-up automático.
+Define o tempo **mínimo** (em minutos) para iniciar o follow-up automático com IA.
 
-> 💡 Use `0` para **desativar** o follow-up automático.
+> 💡 Use `0` para **desativar** o follow-up automático com IA — assim aparece o modo simples **"Cliente sem resposta"** (explicado mais abaixo).
 
-#### Cliente sem resposta — Tempo de espera (minutos)
+#### Tempo máximo (min)
 
-Define quanto tempo aguardar a resposta do cliente antes de executar a ação de follow-up.
+O **teto** do intervalo: deve ser **maior ou igual ao tempo mínimo** (só aparece quando o mínimo é maior que 0).
 
-> 💡 Use `0` para **desativar**.
+> ℹ️ A própria tela avisa: *"A ação será executada em um tempo aleatório entre o mínimo e o máximo minutos"* — esse sorteio deixa o contato mais natural.
+
+#### Horário Inicial e Final Permitido para Envio
+
+Define a **janela de horário** em que o follow-up pode ser enviado (ex.: só entre 08:00 e 20:00). Fora dessa janela, nada é enviado.
+
+> 💡 Útil para não disparar mensagem de vendas de madrugada.
+
+***
+
+## 🙋 Modo alternativo: "Cliente sem resposta"
+
+Quando o **Tempo mínimo** está em `0`, a aba mostra um modo mais simples, **sem prompt de IA**:
+
+| Campo | O que faz |
+| --- | --- |
+| **Tempo de espera (minutos)** | Minutos aguardando o cliente responder antes de agir (`0` desativa) |
+| **Fila / Usuário / Fechar Ticket** | A ação executada quando o cliente não responde: transferir para uma **fila**, transferir para um **usuário** ou **encerrar o atendimento** |
+
+Nos **dois modos** existe também a **Mensagem por inatividade**: um texto fixo (aceita emojis e variáveis) enviado ao cliente quando ele fica sem responder.
+
+> 💡 Não sabe qual usar? **Follow-up com IA** = mensagens diferentes a cada tentativa e decisão inteligente de encerrar. **Cliente sem resposta** = direto ao ponto: espera X minutos e executa uma ação fixa.
 
 ***
 

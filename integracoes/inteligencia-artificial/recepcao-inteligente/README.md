@@ -75,6 +75,39 @@ Após criar, o botão **Editar** abre as **informações avançadas** em abas:
 
 ***
 
+## 🔀 Transferência inteligente (aba Automação)
+
+No card **Transferência** da aba **Automação** ficam as opções que controlam **para quem a IA transfere** e **o que o cliente vê** nessa transferência.
+
+### 👥 Usuários online
+
+| Opção | O que faz |
+| --- | --- |
+| **Transferir apenas para filas com usuários online** | Antes de transferir, o sistema confere se tem alguém disponível na fila |
+| **Verificar usuários online nesta fila** | Mesma checagem, mas configurada **fila por fila** |
+| **Fila de fallback** | Se não houver usuários online (quando a verificação estiver ativa) ou o bot não entender a solicitação, o atendimento vai para essa fila de reserva |
+
+### 🕗 Fora do horário de atendimento
+
+* **Bloquear transferência fora do horário de atendimento** — quando ativado, a IA não realiza transferências fora do horário configurado.
+* **Mensagem fora do horário de atendimento** — o texto que o cliente recebe nesse caso.
+
+### 💬 Mensagens personalizadas
+
+| Mensagem | Quando é enviada |
+| --- | --- |
+| **Mensagem de transferência** (global) | Quando a fila **tem** usuários online |
+| **Mensagem quando não há usuários online** (global) | Quando a fila **não tem** nenhum usuário online |
+| **Mensagem de transferência personalizada** (por fila) | Substitui a global para aquela fila — se ficar vazia, usa a global |
+| **Mensagem quando não há usuários online** (por fila) | Substitui a global para aquela fila — se ficar vazia, usa a global |
+| **Mensagem quando usuário está offline** (por usuário) | Enviada se o usuário escolhido estiver offline e a verificação estiver ativada |
+
+> 💡 As mensagens personalizadas deixam a transferência mais natural: o cliente lê "Conectando com nossa equipe de vendas..." em vez de um aviso genérico.
+
+> ⚠️ Sempre escolha uma **fila de fallback**. É ela que evita que o cliente fique sem resposta quando ninguém está online ou a IA não entende o pedido.
+
+***
+
 ### ✅ Sugestões para Melhor Uso
 
 * Use **prompts curtos e objetivos**, evitando instruções confusas.
