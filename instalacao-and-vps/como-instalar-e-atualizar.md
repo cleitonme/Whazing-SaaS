@@ -17,7 +17,7 @@
 
 ### 🔹 Requisitos mínimos
 
-* Ubuntu 22 (instalação limpa)
+* Ubuntu 24 (instalação limpa)
 * 4 GB de memória RAM
 * 2 subdomínios configurados (frontend e backend)
 
