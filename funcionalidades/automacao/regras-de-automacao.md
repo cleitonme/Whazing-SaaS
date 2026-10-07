@@ -1,7 +1,5 @@
 # Regras de Automação
 
-A partir da **versão 3.0**, o Whazing possui um novo sistema de **Regras de Automação** para executar ações automaticamente nos Tickets.
-
 Com esse recurso, você pode criar regras para:
 
 * Fechar Tickets automaticamente;
@@ -294,24 +292,10 @@ Isso permite criar regras muito específicas.
 
 As condições disponíveis incluem:
 
-* Etiqueta;
 * Status do Ticket;
 * Dia da semana;
 * Horário;
 * Origem do Ticket;
-* Quantidade mínima de mensagens.
-
-***
-
-## 🏷️ Etiqueta
-
-Permite executar a regra somente para contatos que possuem determinada etiqueta.
-
-#### Exemplo
-
-**Etiqueta: Cliente VIP**
-
-A automação será aplicada somente aos contatos com essa etiqueta.
 
 ***
 
@@ -367,19 +351,6 @@ Exemplo:
 
 Isso permite criar comportamentos diferentes dependendo da origem registrada no Ticket.
 
-***
-
-## 💬 Quantidade mínima de mensagens
-
-Você também pode definir uma quantidade mínima de mensagens.
-
-Exemplo:
-
-**1 mensagem**
-
-A regra somente será considerada quando o Ticket possuir pelo menos a quantidade configurada.
-
-***
 
 ## ➕ Combinar várias condições
 
