@@ -19,7 +19,7 @@ Na tela, há **duas abas**:
 
 ### 🧩 **1. Pela Fila (Integrações por Fila)**
 
-**Caminho:** `Configurações → Automação e Integrações → Webhooks → aba Integrações por Fila`
+**Caminho:** `Automação e Integrações → Webhooks/N8N → aba Integrações por Fila`
 
 1. Clique em **Nova Integração N8N**.
 2. Preencha os campos:
@@ -46,7 +46,7 @@ Na tela, há **duas abas**:
 
 ### 🔧 **2. Pelo Canal (Integrações por Canal)**
 
-**Caminho:** `Configurações → Automação e Integrações → Webhooks → aba Integrações por Canal`
+**Caminho:** `Automação e Integrações → Webhooks/N8N  → aba Integrações por Canal`
 
 1. A aba lista os canais disponíveis (WhatsApp, WhatsApp Oficial, etc. — os canais de **E-mail** e **SMS** não aparecem, pois não usam webhook por canal).
 2. Clique em **Configurar** no canal desejado.
@@ -65,27 +65,27 @@ Na tela, há **duas abas**:
 
 ### Na aba **Integrações por Canal**
 
-| Campo / Opção | O que faz |
-| --- | --- |
-| **Integração Ativada** | Liga ou desliga o envio de eventos do canal para o webhook. Se estiver desligada, nada é enviado, mesmo com URL preenchida. |
-| **URL do Webhook/N8N** | Endereço (`https://...`) que receberá as requisições `POST`. Obrigatória e precisa ser uma URL válida. |
-| **Eventos** | Lista de interruptores que escolhem **quais acontecimentos** geram envio (ver tabela abaixo). |
-| **Mostrar configurações avançadas** | Expande a seção de autenticação. |
-| **Bearer Token / API Key** | Token opcional enviado no cabeçalho da requisição. Deixe em branco se o destino não exigir autenticação. |
-| **Testar integração** | Envia uma requisição de teste real (feita pelo servidor) para a URL informada e mostra o resultado. |
-| **Salvar** | Grava a configuração do canal. |
+| Campo / Opção                       | O que faz                                                                                                                   |
+| ----------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| **Integração Ativada**              | Liga ou desliga o envio de eventos do canal para o webhook. Se estiver desligada, nada é enviado, mesmo com URL preenchida. |
+| **URL do Webhook/N8N**              | Endereço (`https://...`) que receberá as requisições `POST`. Obrigatória e precisa ser uma URL válida.                      |
+| **Eventos**                         | Lista de interruptores que escolhem **quais acontecimentos** geram envio (ver tabela abaixo).                               |
+| **Mostrar configurações avançadas** | Expande a seção de autenticação.                                                                                            |
+| **Bearer Token / API Key**          | Token opcional enviado no cabeçalho da requisição. Deixe em branco se o destino não exigir autenticação.                    |
+| **Testar integração**               | Envia uma requisição de teste real (feita pelo servidor) para a URL informada e mostra o resultado.                         |
+| **Salvar**                          | Grava a configuração do canal.                                                                                              |
 
 ### Na aba **Integrações por Fila**
 
-| Campo / Opção | O que faz |
-| --- | --- |
-| **Nome da integração** | Nome de identificação. Obrigatório. |
-| **URL do Webhook/N8N** | Endereço que receberá as requisições `POST`. Obrigatória e precisa ser uma URL válida. |
-| **Eventos** | Lista de interruptores que escolhem **quais acontecimentos** geram envio (ver tabela abaixo). |
-| **Mostrar configurações avançadas** | Expande a seção de autenticação. |
-| **Bearer Token / API Key** | Token opcional enviado no cabeçalho da requisição. |
-| **Testar integração** | Envia uma requisição de teste real para a URL. |
-| **Salvar** | Cria/atualiza a integração. Ao criar, o sistema já abre o assistente de **vínculo com a fila**. |
+| Campo / Opção                       | O que faz                                                                                       |
+| ----------------------------------- | ----------------------------------------------------------------------------------------------- |
+| **Nome da integração**              | Nome de identificação. Obrigatório.                                                             |
+| **URL do Webhook/N8N**              | Endereço que receberá as requisições `POST`. Obrigatória e precisa ser uma URL válida.          |
+| **Eventos**                         | Lista de interruptores que escolhem **quais acontecimentos** geram envio (ver tabela abaixo).   |
+| **Mostrar configurações avançadas** | Expande a seção de autenticação.                                                                |
+| **Bearer Token / API Key**          | Token opcional enviado no cabeçalho da requisição.                                              |
+| **Testar integração**               | Envia uma requisição de teste real para a URL.                                                  |
+| **Salvar**                          | Cria/atualiza a integração. Ao criar, o sistema já abre o assistente de **vínculo com a fila**. |
 
 Na lista de integrações por fila também existem os botões de ação em cada card:
 
@@ -102,27 +102,27 @@ Na lista de integrações por fila também existem os botões de ação em cada 
 
 ### Na aba **Integrações por Canal** (9 opções)
 
-| Evento na tela | O que dispara |
-| --- | --- |
-| **Mensagem recebida** | Uma mensagem **recebida** no canal (não enviada por você). |
-| **Mensagem enviada** | Uma mensagem **enviada** pelo seu atendente/bot no canal. |
-| **Novo ticket** | Um **novo ticket** é aberto — tanto quando **o usuário cria** o ticket quanto quando ele é **aberto automaticamente** por uma mensagem recebida. |
-| **Ticket transferido** | O ticket é **transferido** para outra fila ou usuário. |
-| **Ticket fechado** | O ticket é **finalizado/encerrado**. |
-| **Ticket em atendimento** | Filtro: envia webhook de **mensagem** apenas para tickets com status **Aberto** (ver regra abaixo). |
-| **Ticket pendente** | Filtro: envia webhook de **mensagem** apenas para tickets com status **Pendente** (ver regra abaixo). |
-| **Mensagens de grupo** | Habilita o envio de eventos de **mensagens de grupos**. Se desligado, mensagens de grupo **não** geram webhook. |
+| Evento na tela             | O que dispara                                                                                                                                                                                       |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Mensagem recebida**      | Uma mensagem **recebida** no canal (não enviada por você).                                                                                                                                          |
+| **Mensagem enviada**       | Uma mensagem **enviada** pelo seu atendente/bot no canal.                                                                                                                                           |
+| **Novo ticket**            | Um **novo ticket** é aberto — tanto quando **o usuário cria** o ticket quanto quando ele é **aberto automaticamente** por uma mensagem recebida.                                                    |
+| **Ticket transferido**     | O ticket é **transferido** para outra fila ou usuário.                                                                                                                                              |
+| **Ticket fechado**         | O ticket é **finalizado/encerrado**.                                                                                                                                                                |
+| **Ticket em atendimento**  | Filtro: envia webhook de **mensagem** apenas para tickets com status **Aberto** (ver regra abaixo).                                                                                                 |
+| **Ticket pendente**        | Filtro: envia webhook de **mensagem** apenas para tickets com status **Pendente** (ver regra abaixo).                                                                                               |
+| **Mensagens de grupo**     | Habilita o envio de eventos de **mensagens de grupos**. Se desligado, mensagens de grupo **não** geram webhook.                                                                                     |
 | **Enviar mídia em base64** | Ao enviar uma mensagem com mídia, inclui o **conteúdo da mídia em base64** no campo `mediaBase64` do JSON. ⚠️ Exige mais processamento e pode impactar a performance em fluxos com muitos arquivos. |
 
 ### Na aba **Integrações por Fila** (6 opções)
 
-| Evento na tela | O que dispara |
-| --- | --- |
-| **Mensagem recebida** | Uma mensagem **recebida** em um ticket que esteja na fila vinculada. |
-| **Mensagem enviada** | Uma mensagem **enviada** em um ticket que esteja na fila vinculada. |
-| **Ticket em atendimento** | Filtro: envia webhook de **mensagem** apenas para tickets **Abertos**. |
-| **Ticket pendente** | Filtro: envia webhook de **mensagem** apenas para tickets **Pendentes**. |
-| **Mensagens de grupo** | Habilita o envio de eventos de **mensagens de grupos**. |
+| Evento na tela             | O que dispara                                                            |
+| -------------------------- | ------------------------------------------------------------------------ |
+| **Mensagem recebida**      | Uma mensagem **recebida** em um ticket que esteja na fila vinculada.     |
+| **Mensagem enviada**       | Uma mensagem **enviada** em um ticket que esteja na fila vinculada.      |
+| **Ticket em atendimento**  | Filtro: envia webhook de **mensagem** apenas para tickets **Abertos**.   |
+| **Ticket pendente**        | Filtro: envia webhook de **mensagem** apenas para tickets **Pendentes**. |
+| **Mensagens de grupo**     | Habilita o envio de eventos de **mensagens de grupos**.                  |
 | **Enviar mídia em base64** | Inclui o **conteúdo da mídia em base64** no campo `mediaBase64` do JSON. |
 
 > 🔀 **Diferença importante entre as abas:** a aba **Canal** possui os eventos de **ciclo de vida do ticket** (Novo ticket, Ticket transferido, Ticket fechado). A aba **Fila** **não** possui esses eventos — ela envia apenas eventos de **mensagem** (com os filtros de status), e somente para tickets que estejam na fila vinculada.
@@ -145,11 +145,11 @@ Ela define **de quais tickets você quer receber o webhook de mensagem**.
 
 Existe 1 ticket **Aberto** e 1 ticket **Pendente**:
 
-| Cenário | Aberto | Pendente | Resultado |
-| --- | --- | --- | --- |
-| 1 | ✅ Ativado | ❌ Desativado | Webhook **apenas das mensagens** do ticket Aberto |
-| 2 | ❌ Desativado | ✅ Ativado | Webhook **apenas das mensagens** do ticket Pendente |
-| 3 | ❌ Desativado | ❌ Desativado | **Nenhum webhook de mensagem**, mesmo com mensagens chegando |
+| Cenário | Aberto       | Pendente     | Resultado                                                    |
+| ------- | ------------ | ------------ | ------------------------------------------------------------ |
+| 1       | ✅ Ativado    | ❌ Desativado | Webhook **apenas das mensagens** do ticket Aberto            |
+| 2       | ❌ Desativado | ✅ Ativado    | Webhook **apenas das mensagens** do ticket Pendente          |
+| 3       | ❌ Desativado | ❌ Desativado | **Nenhum webhook de mensagem**, mesmo com mensagens chegando |
 
 > ⚠️ **Atenção:** se você ativar “Mensagem recebida” / “Mensagem enviada”, mas deixar **Aberto e Pendente desativados**, **nenhuma mensagem será enviada** para o seu webhook.
 
@@ -162,14 +162,15 @@ Existe 1 ticket **Aberto** e 1 ticket **Pendente**:
 Dentro do formulário (canal ou fila), clique em **Testar integração**:
 
 1. O Whazing envia uma requisição de **teste real** para a URL (feita **pelo servidor**, com o mesmo cabeçalho de autenticação usado nos envios reais);
-2. O corpo enviado no teste é:
-   ```json
-   {
-     "event": "test",
-     "origin": "webhook-config",
-     "timestamp": "2026-08-15T12:00:00.000Z"
-   }
-   ```
+2.  O corpo enviado no teste é:
+
+    ```json
+    {
+      "event": "test",
+      "origin": "webhook-config",
+      "timestamp": "2026-08-15T12:00:00.000Z"
+    }
+    ```
 3. O resultado mostra **Status HTTP** e **Duração**:
    * ✅ Sucesso → a URL respondeu com status **2xx**;
    * ❌ Falha → a URL não respondeu ou respondeu com erro (status **4xx/5xx**, tempo excedido, URL inacessível etc.).
@@ -223,7 +224,7 @@ Verifique, nesta ordem:
 
 * **Testar integração** → confirma que a URL aceita requisições;
 * **Gere um evento real** (envie/receba uma mensagem no canal/fila) e veja se o destino recebeu;
-* **N8N**: abra o fluxo → aba **Executions** e veja se o nó *Webhook* recebeu a requisição;
+* **N8N**: abra o fluxo → aba **Executions** e veja se o nó _Webhook_ recebeu a requisição;
 * **Servidor**: na fila **SendWebhook** do **Bull Board** você vê os envios, tentativas e falhas. Em caso de erro, os logs do backend registram `WebHook -> Webhook: error`.
 
 ***
