@@ -44,7 +44,7 @@ Arquivo: /home/deploy/wuzapi.yaml
 
 <figure><img src="../../../.gitbook/assets/wuzapiconfig.png" alt=""><figcaption></figcaption></figure>
 
-1. Acesse o painel **Whazing → SaaS → Canais**
+1. Acesse o painel **Whazing → Painel SaaS → Integrações → Wuzapi**
 2. Preencha os campos com:
    * **URL:** a exibida na instalação (exemplo: `http://127.0.0.1:8080`)
    * **Admin Token:** o token gerado (exemplo: `xeU2d47fSHxIM5pSdB4ua9C1y3E4k2`)
@@ -179,6 +179,6 @@ Depois que o WhatsApp estiver conectado, siga esta sequência para deixar o aten
 1. **Crie as filas** e defina qual fila receberá os atendimentos desse número — veja [Organização de Atendimentos, Filas e Permissões de Usuários](../../../funcionalidades/gestao/organizacao-de-atendimentos-filas-e-permissoes-de-usuarios.md).
 2. **Cadastre os usuários (atendentes)** e defina quais filas cada um pode acessar — veja [Usuários](../../../funcionalidades/gestao/usuarios/).
 3. **Configure mensagens automáticas** (saudação, despedida e transferência) — veja [Mensagens Automáticas](../../../funcionalidades/automacao/mensagens-automaticas.md).
-4. **Crie um chatbot** para responder automaticamente — veja [Chatbot Interno](../../../funcionalidades/automacao/chatbotinterno-1/README.md).
+4. **Crie um chatbot** para responder automaticamente — veja [Chatbot Interno](../../../funcionalidades/automacao/chatbotinterno-1/).
 5. **Importe as mensagens antigas** do WhatsApp, se quiser manter o histórico — veja [Importar mensagens Baileys](../../../funcionalidades/whatsapp/importar-mensagens-whatsapp.md).
 6. **Nada funcionando?** Veja [Mensagem não enviando](../mensagem-nao-enviando.md), [WuzAPI não conecta ou não lê o QR Code](wuzapi-nao-conecta-ou-nao-ler-qrcode.md) e [WhatsApp desconecta ou mensagens não chegam](../../../solucao-de-problemas/whatsapp-e-mensagens/whatsapp-desconecta-ou-mensagens-nao-chegam.md).
