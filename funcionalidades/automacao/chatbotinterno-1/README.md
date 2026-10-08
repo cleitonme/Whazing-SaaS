@@ -545,15 +545,13 @@ Por segurança, o chatbot **não atende grupos por padrão** — ele responde ap
 
 **Onde configurar:** na tela de **criar/editar o chatbot** (a mesma onde se define o **nome do bot**), na seção **"Atendimento em grupos"**.
 
-<figure><img src="../../../.gitbook/assets/chatbot-grupos.png" alt=""><figcaption></figcaption></figure>
-
 ### Os três modos
 
-| Modo | O que acontece |
-| --- | --- |
-| **Não atender grupos** _(padrão)_ | Comportamento de sempre: o bot ignora grupos e responde só no individual |
+| Modo                                 | O que acontece                                                                                                                                                          |
+| ------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Não atender grupos** _(padrão)_    | Comportamento de sempre: o bot ignora grupos e responde só no individual                                                                                                |
 | **Atender apenas grupos escolhidos** | O bot responde **somente** nos grupos da lista **"Grupos autorizados"** (com busca pelo nome do grupo). Grupos novos começam **sem autorização** — você escolhe um a um |
-| **Atender todos os grupos** | O bot responde em **qualquer** grupo em que o número conectado participar |
+| **Atender todos os grupos**          | O bot responde em **qualquer** grupo em que o número conectado participar                                                                                               |
 
 > 💡 **Bots criados antes desta melhoria** ficam automaticamente no modo padrão (**Não atender grupos**) — o comportamento deles não muda até você configurar.
 

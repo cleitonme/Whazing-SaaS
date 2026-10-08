@@ -1,4 +1,4 @@
-# 📞 Chamadas de Voz (WaCalls)
+# Chamadas de Voz (WaCalls)
 
 O **WaCalls** é o recurso do Whazing que permite **fazer e receber chamadas de voz do WhatsApp direto no sistema** — sem celular na mesa e sem trocar de tela. A ligação toca nos computadores dos atendentes, e o atendimento do cliente é organizado automaticamente.
 
@@ -64,6 +64,7 @@ Só quem tem **permissão** consegue realizar chamadas no canal:
 * Se ninguém tiver permissão, o sistema avisa: _"Nenhum usuário possui acesso às chamadas."_
 
 ***
+
 ## 🎯 Atendimento de ligações (organização automática)
 
 Aqui está a melhoria que mais facilita o dia a dia: **quem atende a ligação, ganha o atendimento**.
@@ -112,6 +113,7 @@ As ligações **gravadas** podem virar **texto**: o sistema transcreve a convers
 > ⚠️ **Precisa de duas coisas:** a ligação precisa **ter gravação** (linha sem áudio não tem o botão) e o administrador precisa ter **um serviço de transcrição configurado** no sistema. Sem isso, aparece o aviso: _"Não é possível transcrever esta ligação porque nenhum serviço de transcrição está configurado."_
 
 ***
+
 ## 📊 Relatório das Ligações
 
 O **Relatório das Ligações** é a central para conferir tudo o que rolou nas chamadas de voz do WhatsApp.
@@ -135,13 +137,13 @@ No topo, quatro cards mostram o quadro geral: **Total de Chamadas**, **Recebidas
 
 | Coluna       | O que mostra                                                         |
 | ------------ | -------------------------------------------------------------------- |
-| **Direção**  | 📥 Recebida (verde) ou 📤 Realizada (azul)                          |
+| **Direção**  | 📥 Recebida (verde) ou 📤 Realizada (azul)                           |
 | **Status**   | **Atendida**, **Chamando**, **Terminada** ou **Transferida**         |
-| **Usuário**   | Quem atendeu/realizou                                                |
+| **Usuário**  | Quem atendeu/realizou                                                |
 | **Contato**  | Com quem foi a ligação (nome e número)                               |
 | **Gravação** | O **player de áudio** para ouvir direto na tela (quando há gravação) |
-| **Ticket**   | O número do atendimento, clicável — abre a conversa em um modal        |
-| **Canal**    | Conexão de WhatsApp usada                                           |
+| **Ticket**   | O número do atendimento, clicável — abre a conversa em um modal      |
+| **Canal**    | Conexão de WhatsApp usada                                            |
 | **Data**     | Quando aconteceu                                                     |
 
 Na linha da ligação ficam também os botões de **Transcrever áudio / Ver transcrição** (veja acima) e o 🗑️ para **excluir a gravação** daquela ligação.

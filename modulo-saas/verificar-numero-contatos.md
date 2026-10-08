@@ -1,4 +1,4 @@
-# Verificar Número ao Cadastrar Contato
+# 🔎 Verificar Número ao Cadastrar Contato
 
 O **Verificar Número** é a configuração do painel SaaS que faz o sistema **conferir se um número realmente existe no WhatsApp** na hora de cadastrar ou salvar um contato. O objetivo é simples: **evitar inconsistência** — contatos com número errado, número que não existe, ou o problema clássico de números brasileiros com/sem o **nono dígito**.
 
@@ -44,10 +44,10 @@ Se não houver conexão nenhuma disponível, o sistema **não bloqueia o cadastr
 
 > "Quando ativado, empresas sem conexão WhatsApp própria utilizarão a conexão da Empresa 01 como último fallback para validar números."
 
-| Estado | O que acontece |
-| --- | --- |
-| **Ativado** | Empresas sem conexão própria ainda podem ter números validados usando a Empresa 01 |
-| **Desativado** | Empresa sem conexão própria não valida número (o contato é salvo como digitado) |
+| Estado         | O que acontece                                                                     |
+| -------------- | ---------------------------------------------------------------------------------- |
+| **Ativado**    | Empresas sem conexão própria ainda podem ter números validados usando a Empresa 01 |
+| **Desativado** | Empresa sem conexão própria não valida número (o contato é salvo como digitado)    |
 
 > 💡 Útil quando você tem uma conexão WhatsApp estável na Empresa 01 e quer que **todos os clientes da instalação** tenham validação, mesmo os que não conectam WhatsApp próprio (ex.: quem usa só API Oficial).
 
@@ -57,10 +57,10 @@ Se não houver conexão nenhuma disponível, o sistema **não bloqueia o cadastr
 
 Um seletor onde você escolhe **qual conexão** será usada para validar (qualquer WhatsApp da instalação), com a opção **"Desabilitado (sem canal fixo)"**.
 
-| Opção | O que acontece |
-| --- | --- |
+| Opção                  | O que acontece                                                                                              |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------- |
 | **Um canal escolhido** | Empresas sem conexão própria validam sempre por esse canal — ex.: um WhatsApp QR Code dedicado só para isso |
-| **Desabilitado** | Sem canal fixo; se houver fallback da Empresa 01 ativado, é ele quem entra |
+| **Desabilitado**       | Sem canal fixo; se houver fallback da Empresa 01 ativado, é ele quem entra                                  |
 
 > ⚠️ Se o canal fixo escolhido estiver **desconectado**, o sistema cai automaticamente no fallback da Empresa 01 (se ativado). Se também não houver, o contato é salvo sem validação.
 

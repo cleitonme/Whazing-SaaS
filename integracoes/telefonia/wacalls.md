@@ -271,7 +271,7 @@ Na maioria dos casos o problema está relacionado à porta 5000 bloqueada.
 
 No Painel SaaS acesse:
 
-**Canais → WaCalls — Chamadas de Voz**
+**Painel SaaS → Integrações — WaCalls**
 
 Preencha:
 
@@ -297,7 +297,7 @@ Você poderá:
 
 Também é possível criar contas diretamente pelo painel do próprio WaCalls.
 
-<figure><img src="../../.gitbook/assets/saaswacall.png" alt=""><figcaption></figcaption></figure>
+<figure><img src="../../.gitbook/assets/walcall.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
