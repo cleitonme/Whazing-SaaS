@@ -1,5 +1,83 @@
 ## Changelog e Atualizações
 
+# 🚀 Versão 3.1.4 BETA
+
+## ⚠️ Atenção
+
+* **Distribuição Automática:** a configuração de distribuição automática de atendimento foi removida do bot. Agora, o gerenciamento deve ser realizado exclusivamente pelo novo módulo de **Distribuição Automática**.
+
+## 🐛 Correções
+
+* **WallCalls:** melhorias no gerenciamento de empresas que possuem mais de um canal WallCalls
+* **Regras de Automação:** correção de problema que fazia o ticket ser fechado mesmo após o cliente enviar uma nova resposta
+* **Chat Externo Oficial:** correção que impedia que anotações internas dos tickets fossem expostas no chat externo
+* **Chat Externo Oficial:** correção na contagem de mensagens enviadas pelo próprio chat externo, que estava causando dados incorretos no relatório de custos
+* **Importação de contatos de grupos:** correção para listar todos os grupos disponíveis
+* **Transcrição de chamadas:** correção na transcrição de chamadas gravadas no S3 utilizando a transcrição SaaS
+* **Disponível/Indisponível:** correção na atualização das informações em tempo real
+* **SaaS – Exclusão de empresas:** melhorias no processo de exclusão de empresas com muitos arquivos, reduzindo a ocorrência de erros durante o processo
+
+## 💬 SaaS
+
+* **Aviso de vencimento:** envio de aviso pelo WhatsApp sobre a fatura após o vencimento
+
+## 📅 Agenda
+
+* **Cancelamento em massa:** possibilidade de cancelar os agendamentos futuros de um cliente em massa
+* **Filtro de cancelados:** agendamentos cancelados ficam ocultos por padrão
+* **Exclusão de agendamentos:** processo de exclusão de agendamentos simplificado, permitindo também apagar agendamentos cancelados
+* **Adicional Agenda:** o administrador pode cancelar o adicional mesmo quando existem agendamentos ativos
+
+## 👤 Contatos
+
+* **Unificação de contatos:** melhorias na detecção de contatos e no processo de unificação. Utilizada validação pela API não oficial para aumentar a consistência e reduzir erros
+
+## 🎫 Atendimento
+
+* **Arquivos:** nova configuração para desativar o agrupamento de arquivos ao baixar a lista de mensagens
+* **Mensagens não lidas:** marcador de mensagens não lidas na janela de atendimento
+* **Filtros:** novos filtros por origem e classificação do lead
+* **Marcar como não lido:** possibilidade de marcar um ticket como não lido
+
+## 🤖 Recepção Inteligente
+
+* **Limite de caracteres:** limite nas respostas geradas pela Recepção Inteligente para evitar que ultrapassem o limite de 4.096 caracteres do WhatsApp
+
+## 🔌 Canais
+
+* **Identificação no provedor:** alteração do nome utilizado na criação automática dos canais Plus, Wuzapi e WallCalls, facilitando a identificação do cliente no provedor
+
+## 📢 Campanhas
+
+* **Novo módulo de Campanhas não oficial:** novo módulo com diversas opções, incluindo criação de várias variações de mensagens, diferentes tipos de delay, envio de mais de uma mensagem para o mesmo contato, entre outras opções
+
+## 🧠 Integração Jev
+
+* **Jev – IA de decisão:** a Jev não é utilizada para gerar respostas. Ela é utilizada automaticamente para definir etiquetas, estado do atendimento, entre outras decisões
+* **Controle SaaS:** somente o dono do SaaS define os dados da Jev e controla em quais planos o recurso estará disponível ou se será vendido como serviço adicional
+
+## 📊 Relatórios Meta Ads
+
+* **Eventos:** melhoria no relatório Meta Ads. O funcionamento considera somente a API Oficial direta, sendo necessário que o evento **`automatic_events`** esteja assinado
+
+## 🌐 External Chat
+
+* **Recepção Inteligente e Chatbot:** suporte ao uso da Recepção Inteligente e do Chatbot no External Chat
+
+## ⚙️ Regras de Automação
+
+* **Novos logs:** novos registros de execução para facilitar a identificação e localização de problemas
+* **Tempo de execução:** quando configurado com tempo **0**, a próxima ação é executada imediatamente, sem aguardar os 5 minutos anteriores
+* **Notificações:** melhorias nas notificações quando não houver usuário online na fila
+
+## 👥 Distribuição Automática
+
+* **Disponibilidade do usuário:** nova configuração para definir se o sistema deve considerar se o usuário está **online/offline** e **disponível/indisponível** ao selecionar o usuário para distribuição do atendimento
+
+## 🚨 Palavras Sensíveis
+
+* **Monitoramento:** novo cadastro de palavras que devem ser monitoradas durante os atendimentos
+
 # 🚀 Versão 3.1.3 BETA
 
 ### 🐛 Correções
