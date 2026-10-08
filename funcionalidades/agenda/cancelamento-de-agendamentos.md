@@ -11,6 +11,8 @@ Um agendamento pode ser cancelado de várias formas — pelo **próprio cliente*
 
 > 💡 Na dúvida, **cancele** — o histórico continua e dá para conferir o que houve depois.
 
+> 🆕 **Novidade:** agora dá para **apagar** também os agendamentos já **Cancelados** — um por um na janela do agendamento, ou **todos de uma vez** pelo botão **"Excluir cancelados"** do painel da Agenda (veja [Limpando a agenda](como-usar-a-agenda.md#-limpando-a-agenda)).
+
 ***
 
 ## 👤 Cancelamento pelo cliente (resposta ao lembrete)
@@ -73,7 +75,18 @@ Qualquer usuário com permissão de **Editor** (ou superior) no calendário canc
 2. Na janela, clique em **Cancelar**.
 3. Confirme a ação.
 
-O agendamento fica com status **Cancelado** (riscado no calendário). Não há botão de cancelar para itens já **Concluídos** ou **Cancelados**.
+O agendamento fica com status **Cancelado** (riscado no calendário). Não há botão de cancelar para itens já **Concluídos** ou **Cancelados** — mas, novidade: os **Cancelados** agora têm botão de **excluir** 🗑️, para quem quiser limpar o histórico.
+
+### 👥 Cancelar os futuros de um cliente em massa
+
+Se um cliente **desmarcou tudo** (trocou de cidade, desistiu do tratamento, sumiu), não precisa abrir agendamento por agendamento. Na janela do agendamento existe o botão **"Cancelar futuros deste cliente"**, que cancela **todos os horários futuros dele de uma vez**:
+
+1. No painel da Agenda, **clique em qualquer agendamento futuro** desse cliente.
+2. Na janela, clique em **"Cancelar futuros deste cliente"**.
+3. O sistema mostra **quantos agendamentos futuros** o cliente tem e pede confirmação: _"Isso vai cancelar X agendamentos futuros deste cliente"_.
+4. Confirme — todos são cancelados de uma vez e o horário de cada um volta a ficar **disponível** para outros clientes.
+
+> 💡 Os agendamentos **passados** desse cliente não são mexidos — o histórico continua guardado. Se depois quiser limpar, use o botão **"Excluir cancelados"** (veja [Limpando a agenda](como-usar-a-agenda.md#-limpando-a-agenda)).
 
 ### 🔁 Agendamentos que fazem parte de uma repetição
 
@@ -96,4 +109,4 @@ Ao cancelar (ou excluir) uma ocorrência com o símbolo **↻**, o sistema pergu
 * **Status e visual:** o agendamento passa a **Cancelado** — vermelho e riscado no calendário.
 * **Horário liberado:** o período volta a ficar **disponível** para novos agendamentos (link público, chatbot, IA e painel).
 * **Lembretes:** não há mais motivo para lembrete de um agendamento cancelado.
-* **Histórico:** os agendamentos cancelados continuam nas listas (ex.: aba **Anteriores/Próximos** do Atendimento) para consulta.
+* **Histórico:** os agendamentos cancelados continuam nas listas (ex.: aba **Anteriores/Próximos** do Atendimento) para consulta. Se preferir não guardar, dá para **apagar os cancelados de uma vez** pelo botão **"Excluir cancelados"** do painel — veja [Limpando a agenda](como-usar-a-agenda.md#-limpando-a-agenda).

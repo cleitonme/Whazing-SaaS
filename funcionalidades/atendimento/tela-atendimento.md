@@ -161,6 +161,8 @@ Clique no **funil** ao lado da busca para abrir os **Filtros Avançados**. Qualq
 | **Usuários**                                          | Mostra apenas conversas responsáveis pelos atendentes escolhidos — inclui conversas em que eles participam como colaboradores.                   |
 | **Pesquisa Mensagens** (campo extra)                  | Outro lugar para buscar palavra dentro das mensagens, sem sair do menu.                                                                          |
 | **Status** (caixinhas Abertos / Pendentes / Fechados) | Escolhe quais status aparecer na lista. Por padrão já vêm marcados Abertos + Pendentes.                                                          |
+| **Temperatura do lead** 🌡️                            | Filtra pela classificação que a **IA** deu ao interesse do cliente: **Muito quente, Quente, Morno, Frio, Muito frio** — ou **"Sem classificação"** para quem a IA ainda não avaliou. Dá para marcar mais de uma. |
+| **Fonte do lead** 📢                                  | Filtra de onde o cliente veio: **Meta Ads**, **Link Rastreado**, **Direto** — ou **"Sem fonte"** para quem não tem origem registrada. Dá para marcar mais de uma. |
 
 **Filtros do modo "Ver Todos" (admin/supervisor):** ao ligar **Visualizar Todos Tickets(Admin)**, o menu muda e passa a mostrar:
 
@@ -171,6 +173,22 @@ Clique no **funil** ao lado da busca para abrir os **Filtros Avançados**. Qualq
 Ou seja: o admin/supervisor consegue enxergar **todos os atendimentos da empresa** e recortar por quem atende, por qual número/canal entrou e por qual setor.
 
 > **Como voltar ao normal:** desligue o "Visualizar Todos Tickets(Admin)" ou desmarque os filtros. Os filtros escolhidos ficam **guardados** — quando você voltar ao Atendimento (mesmo em outro dia ou no celular), a lista já abre como você deixou.
+
+### 🌡️ Temperatura e fonte do lead
+
+Dois filtros do funil mostram **quem é o cliente e de onde ele veio**:
+
+* **Temperatura do lead** — é a classificação que a **IA (Recepção Inteligente)** dá ao interesse do cliente: **Muito quente** (quer comprar agora), **Quente**, **Morno**, **Frio** ou **Muito frio**. A opção **"Sem classificação"** traz quem a IA ainda não avaliou.
+* **Fonte do lead** — é o **caminho que trouxe o cliente** até você: um **anúncio do Meta Ads**, um **Link Rastreado** (Tracking Links) ou **Direto** (chegou por conta própria, sem anúncio nem link). A opção **"Sem fonte"** traz quem não tem origem registrada.
+
+Nos dois, você pode **marcar mais de uma opção** — a lista mostra os atendimentos que combinam com qualquer uma delas. Ao escolher, a lista já atualiza na hora; para limpar, é só remover as opções selecionadas (os "chips") do filtro.
+
+**Onde esses dados aparecem também:**
+
+* No **cabeçalho da conversa**, a temperatura aparece como etiqueta 🌡️ **"Temperatura do lead (IA)"** ao lado do nome do cliente;
+* Na **lista de atendimentos** e dentro da conversa, a fonte aparece como ícone 📢 (anúncio) ou 🔗 (link rastreado) e no **card de origem do lead**.
+
+> 💡 Os dois filtros funcionam também no modo **"Visualizar Todos Tickets (Admin)"** — útil para o gestor ver, por exemplo, só os leads **quentes** que vieram de **Meta Ads**.
 
 ### Carregar mais conversas
 
@@ -399,13 +417,14 @@ No menu ⌄ da mensagem, o topo mostra **reações rápidas** (👍 ❤️ 😂 
 
 ### Ícones e etiquetas nas mensagens
 
+* **Mensagens não lidas:** ao abrir um atendimento com mensagens novas, uma linha **“Mensagens não lidas”** aparece no meio do histórico, antes da primeira que você ainda não viu — e a conversa rola direto para esse ponto. Nova mensagem do cliente chegando com a conversa aberta ganha o marcador também. A linha só existe se o administrador não tiver desligado o **Marcador de mensagens não lidas** (veja [Configurações que mudam o que aparece na tela](tela-atendimento.md#configurações-que-mudam-o-que-aparece-na-tela)).
 * **Vistos (suas mensagens):** 🕐 enviando · ✓ enviada · ✓✓ recebida · ✓✓ azul lida · ✖ erro/inválida · 🌐 fora do WhatsApp.
 * **Dispositivo (mensagens do cliente):** ícone discreto de Apple/Android/Web/Desktop mostrando de onde o cliente escreve.
 * **Mensagem encaminhada** — etiqueta "Mensagem encaminhada".
 * **Resposta de status (Stories)** — cartão com a miniatura do status que o cliente está respondendo e botão **Visualizar**.
 * **Origem de anúncio** — etiqueta mostrando que o cliente veio de um anúncio (Meta Ads).
 * **Comentário do Instagram/Facebook/TikTok** — card com a plataforma, o autor e o texto do comentário, com o botão **Responder comentário** que responde o comentário na própria rede social.
-* **Mídia:** imagens e stickers abrem em tela cheia ao clicar; vídeos tocam ali mesmo; **PDF** aparece em miniatura; todos com botão **Baixar** com o nome do arquivo. Várias mídias em sequência viram um **card de download ZIP** ("Baixar X arquivos") para baixar tudo de uma vez.
+* **Mídia:** imagens e stickers abrem em tela cheia ao clicar; vídeos tocam ali mesmo; **PDF** aparece em miniatura; todos com botão **Baixar** com o nome do arquivo. Várias mídias em sequência viram um **card de download ZIP** ("Baixar X arquivos") para baixar tudo de uma vez — a menos que o administrador tenha desligado o **Pacote de Arquivos no Chat** (veja [Configurações que mudam o que aparece na tela](tela-atendimento.md#configurações-que-mudam-o-que-aparece-na-tela)).
 * **Localização** — mostra o mapa e abre no Google Maps ao clicar.
 * **Enquete/botões/listas/templates** — aparecem formatados; botões e listas permitem clicar para responder (o sistema envia o texto da opção escolhida); enquetes recebidas mostram aviso de indisponibilidade de resposta.
 * **Anotações internas** (mediaType nota) aparecem destacadas na conversa — só a equipe vê.
@@ -658,6 +677,8 @@ Estas opções são definidas pelo administrador em **Configurações do Atendim
 | **Colaboradores** (`AllowJoinTicketCollaborator`)            | Habilita "Participar deste atendimento" na janela de ticket atribuído |
 | **Assumir tickets bloqueados** (`AllowAssumeBlockedTickets`) | Habilita "Assumir este atendimento" em conversas presas em fila/bot   |
 | **Reação como mensagem** (`reactionResponse`)                | Mostra as reações também como mensagens na conversa                   |
+| **Pacote de arquivos no chat** (`MediaZipGroupEnabled`)      | Quando desligada, some o card "Baixar todos em ZIP" e cada mídia volta a aparecer sozinha, com seu próprio botão de baixar |
+| **Marcador de mensagens não lidas** (`UnreadDividerEnabled`) | Quando desligada, some a linha "Mensagens não lidas" e a conversa volta a abrir sempre na mensagem mais recente           |
 
 > Se algum recurso deste guia **não está aparecendo** para você, provavelmente é uma destas configurações — ou a permissão do seu perfil. Confira com o administrador.
 

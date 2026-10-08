@@ -162,6 +162,34 @@ Permite que o cliente continue o atendimento (WABA/Hub WhatsApp) por um **link d
 
 > 📄 Guia completo: [Chat externo por link](../../canais-disponiveis/api-oficial/chat-externo-por-link.md).
 
+### Pacote de Arquivos no Chat
+
+Quando o cliente (ou o atendente) envia **duas ou mais mídias em sequência** — fotos, PDFs, vídeos etc. — a conversa mostra um **cartão de download** no lugar de vários arquivos soltos:
+
+* **Pacote de Arquivos** — mostra quantos arquivos foram enviados e os nomes dos primeiros;
+* botão **“Baixar todos em ZIP”** — salva tudo em um único arquivo compactado, com um clique.
+
+**Ligada (padrão):** o cartão aparece e a equipe baixa todas as mídias de uma vez.
+
+**Desligada:** o cartão deixa de existir e cada arquivo volta a aparecer sozinho, com o próprio botão de baixar.
+
+**Quando usar:**\
+Desligue se a equipe prefere ver e baixar cada arquivo separadamente (por exemplo, para conferir arquivo por arquivo), ou se o cartão de agrupamento não faz sentido para o jeito que sua empresa trabalha. Com a opção desligada, nada é perdido: todos os arquivos continuam na conversa normalmente.
+
+### Marcador de mensagens não lidas
+
+Ao abrir um atendimento que tem **mensagens novas do cliente**, a conversa mostra uma linha **“Mensagens não lidas”** no meio do histórico — exatamente antes da primeira mensagem que você ainda não viu — e a conversa **rola direto para esse ponto**, em vez de ir para o fim.
+
+**Ligada (padrão):**
+
+* abrir um atendimento com mensagens novas → a conversa para na linha “Mensagens não lidas”, como num aplicativo de mensagens;
+* mensagem nova do cliente chegando enquanto a conversa está aberta → a primeira delas também recebe o marcador.
+
+**Desligada:** volta ao comportamento anterior — sem a linha de marcador e a conversa sempre rolando para o fim.
+
+**Quando usar:**\
+Útil para equipes com muita mensagem: o atendente enxerga de cara **a partir de onde** parou de ler, sem precisar caçar as novidades no meio do histórico. Desligue se preferir que a conversa abra sempre na mensagem mais recente.
+
 ***
 
 ## Privacidade do telefone

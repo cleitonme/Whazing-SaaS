@@ -188,6 +188,32 @@ Verifique:
 
 ***
 
+## 🧹 Cancelados e limpeza
+
+### Meus agendamentos cancelados sumiram do calendário
+
+* Eles não sumiram — agora ficam **ocultos por padrão** para o calendário ficar limpo.
+* Para vê-los, use o filtro **"Situação"** no topo da tela e escolha **Cancelados** ou **Todos (inclui cancelados)**. Eles aparecem **riscados e esmaecidos**.
+
+### Como apagar vários agendamentos cancelados de uma vez
+
+* Mude o filtro **"Situação"** para **Cancelados** ou **Todos** e clique no botão **"Excluir cancelados"** no topo da tela.
+* O sistema mostra a quantidade e pede confirmação — com **confirmação extra** a partir de 50 agendamentos. Cuidado: apagar é **para sempre**.
+* Para apagar **um só**, abra o agendamento cancelado e use o botão da lixeira 🗑️.
+* Detalhes em [Limpando a agenda](como-usar-a-agenda.md#-limpando-a-agenda).
+
+### Cancelar os futuros de um cliente sem abrir um por um
+
+* Abra **qualquer agendamento futuro** do cliente e clique em **"Cancelar futuros deste cliente"** — todos os horários futuros dele são cancelados de uma vez (os passados continuam no histórico). Veja [Cancelar os futuros de um cliente em massa](cancelamento-de-agendamentos.md#-cancelar-os-futuros-de-um-cliente-em-massa).
+
+### O que acontece com os agendamentos quando o adicional da Agenda é cancelado
+
+* Se existirem **agendamentos futuros**, o sistema **pergunta** o que fazer com eles: **excluir** (recomendado) ou apenas **cancelar** — a escolha aparece na hora de confirmar o cancelamento do adicional.
+* Os agendamentos **passados** nunca são mexidos — o **histórico** fica guardado.
+* Sem o adicional, a tela da Agenda volta a mostrar _"Recurso indisponível"_ até o adicional ser contratado de novo (veja [Disponibilidade do módulo](README.md#disponibilidade-do-módulo)).
+
+***
+
 ## 💡 Outras dúvidas rápidas
 
 * **"Agenda" e "Agendamento" são o mesmo módulo?** Não! O **Agendamento** (em Cadastros) serve para **enviar mensagens programadas**. A **Agenda** é o módulo de horários descrito nesta documentação.

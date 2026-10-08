@@ -9,6 +9,8 @@ Lembre-se campanha tem riscos altos de ban aconselhamos uso de números descart�
 
 ⚠️ Atualmente, as campanhas estão disponíveis apenas para o canal **WhatsApp**.
 
+> 🆕 **Novo módulo de campanhas:** agora existe um módulo novo e mais completo para envio por WhatsApp não oficial — com **sequência de mensagens**, **variações de texto** (com ajuda da IA), **intervalos variados**, pausas, horários e limite por dia. Veja [Campanha WhatsApp Não Oficial](campanha-whatsapp-nao-oficial.md). Esta página continua disponível para as campanhas criadas no modelo anterior.
+
 ***
 
 ### 🚀 Etapa 1: Configuração da Campanha

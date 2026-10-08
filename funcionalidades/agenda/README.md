@@ -26,7 +26,7 @@ Qualquer empresa que atende com hora marcada, por exemplo:
 
 | Recurso                      | O que faz                                                              | Documentação                                                                      |
 | ---------------------------- | ---------------------------------------------------------------------- | --------------------------------------------------------------------------------- |
-| **Agendamentos no painel**   | Criar, editar, remarcar, cancelar e excluir agendamentos no calendário — inclusive **agendamentos recorrentes** (toda semana, quinzenal, mensal) | [Como usar a Agenda](como-usar-a-agenda.md)                                       |
+| **Agendamentos no painel**   | Criar, editar, remarcar, cancelar e excluir agendamentos no calendário — inclusive **agendamentos recorrentes** (toda semana, quinzenal, mensal) — com **limpeza fácil**: cancelar todos os futuros de um cliente de uma vez e apagar os cancelados em massa | [Como usar a Agenda](como-usar-a-agenda.md)                                       |
 | **Calendários e permissões** | Criar agendas separadas por **local de atendimento** (com endereço) e definir quem pode ver ou editar cada uma | [Calendários e Permissões](calendarios-e-permissoes.md)                           |
 | **Serviços**                 | Cadastrar os serviços, o tempo de duração e o **valor** de cada um     | [Serviços](servicos.md)                                                           |
 | **Profissionais**            | Cadastrar quem atende, seus serviços, horários, **cores** e folgas — com horários diferentes por local | [Profissionais](profissionais.md)                                                 |
@@ -38,7 +38,7 @@ Qualquer empresa que atende com hora marcada, por exemplo:
 | **Chatbot**                  | O bot conduz a conversa e agenda (ou cancela) automaticamente — com **3 formas de agendamento** e opção **"Qualquer profissional"** | [Agendamento pelo Chatbot](agendamento-pelo-chatbot.md)                           |
 | **Recepção Inteligente**     | A IA consulta a agenda e agenda durante a conversa natural             | [Agendamento pela Recepção Inteligente](agendamento-pela-recepcao-inteligente.md) |
 | **Tela de Atendimento**      | O atendente agenda enquanto conversa com o cliente                     | [Agendamento pela tela de Atendimento](agendamento-pelo-atendimento.md)           |
-| **Cancelamento**             | Todas as formas de cancelar um agendamento                             | [Cancelamento de agendamentos](cancelamento-de-agendamentos.md)                   |
+| **Cancelamento**             | Todas as formas de cancelar um agendamento — inclusive **os futuros de um cliente, todos de uma vez** | [Cancelamento de agendamentos](cancelamento-de-agendamentos.md)                   |
 | **Problemas comuns**         | Soluções para as dúvidas mais frequentes                               | [Dúvidas e problemas comuns](duvidas-e-problemas-comuns.md)                       |
 
 ## 📚 Páginas desta seção
@@ -68,6 +68,17 @@ A Agenda é um **adicional vendido separadamente** nos planos, conforme a config
 Se o seu plano não incluir a Agenda, ao acessar o menu **Agenda** o sistema exibe a mensagem **"Recurso indisponível"** e um aviso laranja informando que **"Seu plano não inclui a agenda. Contrate um adicional para liberar."**, com o botão **Comprar adicional** para liberar o recurso na hora.
 
 > 💡 Depois de contratar o adicional, a tela da Agenda é liberada automaticamente, sem precisar recarregar o sistema.
+
+### Cancelando o adicional da Agenda
+
+O administrador também pode **cancelar o adicional** da Agenda (por exemplo, quando a empresa parou de usar o módulo). Se ainda existirem **agendamentos futuros** criados, o sistema **pergunta o que fazer com eles**:
+
+| Opção                                                               | O que acontece                                                                 |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------------------ |
+| **Cancelar adicional e excluir agendamentos futuros (recomendado)** | Os agendamentos futuros são **apagados** e os horários ficam livres            |
+| **Cancelar adicional e cancelar agendamentos futuros**              | Os agendamentos futuros ficam marcados como **Cancelados** (riscados), sem apagar |
+
+> 💡 Nos dois casos, os agendamentos **passados** não são mexidos — o **histórico** continua guardado.
 
 ***
 

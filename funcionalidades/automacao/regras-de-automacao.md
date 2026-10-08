@@ -513,23 +513,49 @@ A mensagem pode ser enviada internamente para os responsáveis.
 
 ## ⏱️ Tempo de cada ação
 
-Cada ação pode possuir seu próprio tempo de execução.
+Cada ação pode ter um atraso antes de acontecer.
 
-Por exemplo:
+Isso permite criar sequências como:
 
-**Enviar mensagem**
+* enviar mensagem agora;
+* aguardar um pouco;
+* depois fechar o Ticket ou mudar outra coisa.
 
-→ imediatamente
+### Tempo zero: executa na próxima verificação
 
-Depois de **30 minutos**
+Você pode configurar o atraso como **0 minutos**.
 
-**Alterar status → Fechado**
+Nesse caso, a ação não fica esperando um tempo extra antes de executar — ela é lançada na próxima verificação da regra.
 
-Depois de mais **30 minutos**
+Isso é útil quando você quer:
 
-**Reabrir Ticket**
+* enviar o aviso logo;
+* fechar o Ticketlogo;
+* executar a próxima ação com o menor atraso possível.
 
-Isso permite criar sequências automáticas.
+> ⚠️ Tempo 0 não quer dizer que a ação acontece no mesmo instante exato do relógio. Quer dizer que você não adicionou um atraso configurado antes dela.
+
+> 💡 Antes, em alguns casos, a ação podia parecer que esperava um tempo padrão mesmo sem você ter pedido. Agora, se você quer que algo aconteça na próxima verificação, basta configurar com tempo 0.
+
+***
+
+## 🔔 Regra “sem usuário online na fila”
+
+Existe um tipo de automação feita para o caso em que a fila **não tem atendente online**.
+
+Nela, a regra pode ser configurada para agir quando essa situação acontecer. Por exemplo:
+
+* avisar o cliente;
+* transferir o Ticket para outra fila;
+* registrar o evento para a equipe.
+
+Ao configurar essa regra, o sistema avisa se você escolher a **mesma fila como destino**. Isso acontece porque, se o atendimento já está nessa fila, a transferência não tem para onde ir.
+
+Você também pode escolher se a regra deve **avisar mesmo quando o destino for a mesma fila**, caso queira registrar ou avisar sem transferir de verdade.
+
+> 💡 Se você quer transferir de verdade, escolha uma fila diferente da fila atual. Se você só quer avisar, pode deixar a regra avisando mesmo com destino igual.
+
+> 💡 Se algo aconteceu de forma inesperada — como transferência ou mensagem automática —, confira se a regra está relacionada à indisponibilidade da fila e veja o **Histórico de Automações**.
 
 ***
 
@@ -649,6 +675,37 @@ Ela é especialmente útil para descobrir:
 * Quais ações foram realizadas.
 
 > 💡 Quando uma automação não estiver funcionando como esperado, o primeiro lugar para verificar é o **Histórico de Automações**.
+
+### O que você vê no histórico agora
+
+Na tela de histórico, você pode filtrar por:
+
+* **Regra** — para ver as execuções de uma regra específica;
+* **Ticket** — para ver o que aconteceu com um atendimento específico;
+* **Resultado** — para separar execuções que foram bem, execuções que deram erro ou execuções registradas de outra forma.
+
+Também aparece uma coluna que diz a origem da execução, separando:
+
+* **Regra** — a execução veio de uma automação;
+* **Ausência** — a execução veio de um período de ausência configurado.
+
+Isso ajuda a entender a diferença entre “a regra rodou” e “o sistema redirecionou porque tinha uma ausência ativa”.
+
+> 💡 Se você está tentando entender por que um atendimento mudou de fila ou recebeu uma ação, comece por aqui e confira de onde veio a execução.
+
+### Execuções agendadas
+
+O histórico também mostra as execuções que estão **agendadas** para acontecer.
+
+Isso é útil porque algumas ações não ocorrem na hora — elas ficam aguardando o tempo configurado.
+
+Nessa parte do histórico, você pode ver:
+
+* O que está agendado;
+* Quando deve ocorrer;
+* Se está aguardando ou se já foi cancelada, e o motivo do cancelamento quando houver.
+
+> 💡 Se você criou uma regra e não vê a ação acontecendo na hora, verifique se ela está listada como agendada.
 
 ***
 

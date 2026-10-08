@@ -116,6 +116,14 @@ No card **Transferência** da aba **Automação** ficam as opções que controla
 * Ajuste o **intervalo entre mensagens** para evitar que a IA responda mensagens curtas isoladamente ("oi", "bom dia").
 * Teste diferentes **temperaturas** para encontrar o equilíbrio entre objetividade e naturalidade.
 
+> 💡 Se a IA parece lenta demais, veja a aba **Comportamento**. O tempo de espera é configurável e está relacionado ao comportamento de agrupar as mensagens do cliente antes de responder.
+
+***
+
+## 🧠 FAQ e comportamento comum
+
+Para dúvidas rápidas sobre o comportamento da Recepção Inteligente — especialmente o **tempo de espera**, o **agrupamento de mensagens** e o que fazer quando ela parece não entender — veja o [FAQ](faq.md).
+
 ***
 
 ## 🧪 Testando a integração (Simular conversa)

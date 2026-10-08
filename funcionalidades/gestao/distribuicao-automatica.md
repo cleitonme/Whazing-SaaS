@@ -63,16 +63,22 @@ Por padrão, a distribuição automática age apenas em **atendimentos novos**. 
 
 ## 🧑‍💼 Quem pode receber os atendimentos?
 
-Os candidatos são os usuários que atendem aos **três requisitos** ao mesmo tempo:
+Os candidatos são os usuários que atendem aos requisitos que você configurar. Por padrão, a distribuição considera usuários dos **perfis selecionados** que estejam **online** e **disponíveis**.
 
-1. Ter um dos **perfis selecionados** na configuração (veja abaixo os perfis disponíveis);
-2. Estar **online** no sistema;
-3. Estar **disponível** para receber atendimentos (não marcado como indisponível).
+Agora você pode ajustar quais desses critérios devem valer na hora de escolher:
+
+1. Ter um dos **perfis selecionados** na configuração.
+2. Estar **online** no sistema — se você deixar essa verificação ativa.
+3. Estar **disponível** para receber — ou seja, não estar marcado como indisponível — se você deixar essa verificação ativa.
+
+Isso significa que você pode configurar a fila para distribuir mesmo entre atendentes que **não estão online** ou que **estão indisponíveis**, se preferir.
+
+> 💡 Se você não quiser que a distribuição dependa de presença ou disponibilidade, desative essas opções na configuração da fila. Assim, o sistema escolhe entre os usuários dos perfis marcados, independentemente de estar online ou disponível no momento.
 
 ### Como o sistema escolhe entre os elegíveis?
 
-* **Aleatória:** sorteia entre os usuários elegíveis que estiverem online e disponíveis.
-* **Balanceada:** escolhe o usuário elegível, online e disponível **com menos atendimentos em aberto** naquele momento. Se houver empate, o sistema sorteia entre os empatados.
+* **Aleatória:** sorteia entre os usuários elegíveis de acordo com os critérios que você deixou ativos.
+* **Balanceada:** escolhe o usuário elegível **com menos atendimentos em aberto** naquele momento. Se houver empate, o sistema sorteia entre os empatados.
 
 > 💡 No modo **Balanceada**, a contagem considera os atendimentos em aberto do usuário **em toda a empresa** — não apenas naquela fila. Assim, a carga da equipe fica equilibrada de verdade.
 
@@ -82,7 +88,7 @@ Os candidatos são os usuários que atendem aos **três requisitos** ao mesmo te
 
 ### 1. Acesse a configuração
 
-Abra a Configurações de Atendimento e localize o card **"Distribuição Automática"** — identificado pela descrição _"Configure, por fila, quais perfis participam da distribuição automática de novos atendimentos (Aleatória ou Balanceada)."_
+Abra a Configurações de Atendimento e localize o card **"Distribuição Automática"** — identificado pela descrição _"Configure, por fila, quais perfis participam da distribuição automática de novos atendimentos (Aleatória ou Balanceada)."_.
 
 ### 2. Selecione a fila
 
@@ -181,6 +187,24 @@ Para confirmar que está funcionando:
 
 **O que acontece depois?** Ligado: transferências sem usuário escolhido passam a ser distribuídas automaticamente. Desligado: a distribuição vale apenas para atendimentos novos. Em ambos os casos, transferências que já escolhem um usuário específico são respeitadas.
 
+### Quem deve ser considerado na distribuição
+
+**Para que serve?** Definir se a distribuição deve considerar presença e disponibilidade do atendente ao escolher o responsável.
+
+**O que devo escolher?**
+
+* **Considerar quem está online** — se você quiser que, entre os perfis selecionados, só entre na escolha quem estiver online no momento.
+* **Considerar quem está disponível** — se você quiser que, entre os perfis selecionados, só entre na escolha quem não estiver marcado como indisponível.
+
+Você pode ativar, desativar ou combinar essas opções conforme sua necessidade. Se ambas estiverem ativas, a distribuição prioriza pessoas online e disponíveis; se ambas estiverem desativadas, ela escolhe entre todos os usuários dos perfis selecionados, independentemente desses estados.
+
+**O que acontece depois?**
+
+* Se você deixar as verificações ativas, a distribuição só considera atendentes que estejam online e/ou disponíveis, dependendo do que você marcou.
+* Se você desativar, a fila distribui entre todos os usuários dos perfis marcados, mesmo que estejam off ou indisponíveis no momento.
+
+> 💡 Essas opções explicam por que, em alguns casos, um atendimento pode ser entregue a um atendente que não estava online ou que estava indisponível — se a fila permitir isso na configuração.
+
 ### Botão "Salvar"
 
 **Para que serve?** Gravar a configuração da fila.
@@ -248,8 +272,13 @@ Outras configurações do sistema também podem definir **quem atende**. A regra
 Verifique, nesta ordem:
 
 1. **O atendimento já tinha um responsável definido por uma regra anterior?** (Chatbot, integração, canal privado ou carteira do contato.) Nesse caso, a distribuição automática não atua — quem definiu primeiro, ganha.
-2. **Havia alguém elegível no momento?** É preciso ter, pelo menos, um usuário dos **perfis selecionados** **online** e **disponível**. Se nenhum estiver, o atendimento fica na fila.
+2. **Havia alguém elegível de acordo com a configuração da fila?** Dependendo das opções que você marcou, o sistema pode considerar só atendentes online, só disponíveis, os dois ou nenhum desses critérios. Se a fila exigir um desses estados e ninguém estiver nessas condições, o atendimento fica na fila.
 3. **O modo estava "Não"?** Só distribui quem estiver em **Aleatória** ou **Balanceada**.
+
+### "O atendimento foi para um atendente off ou indisponível sem eu querer"
+
+* Verifique se a fila tem as opções de considerar online e disponível **desativadas**.
+* Se ambas estiverem desativadas, a distribuição pode escolher qualquer usuário dos perfis marcados, mesmo que não esteja online ou disponível no momento.
 
 ### "O atendimento foi para outro usuário que eu não esperava"
 

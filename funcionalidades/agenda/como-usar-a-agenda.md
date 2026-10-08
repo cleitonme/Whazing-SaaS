@@ -22,6 +22,8 @@ A tela inicial já mostra o **calendário** com todos os agendamentos do períod
 | **Engrenagem ⚙️**                                     | Abre as **"Configurações da agenda"** (calendários, profissionais, serviços, disponibilidade)                                              |
 | **Botão "Recepção"**                                  | Leva ao módulo **Recepção**: o painel do dia para acompanhar chegadas, fila e atendimentos — veja [Recepção](recepcao.md)                  |
 | **Interruptor "Sombrear horário fora de expediente"** | Aparece ao selecionar um **profissional** no filtro: destaca no calendário os horários em que ele **não pode atender** — veja seção abaixo |
+| **Filtro "Situação"**                                  | Define o que aparece no calendário: **Ativos** (padrão), **Cancelados** ou **Todos**. Os cancelados ficam **ocultos por padrão** — mude o filtro para vê-los |
+| **Botão "Excluir cancelados"** 🗑️                      | Aparece quando o filtro "Situação" não está em **Ativos**: apaga todos os agendamentos cancelados de uma vez — veja [Limpando a agenda](#-limpando-a-agenda) |
 | **Navegação do calendário**                           | Botões ‹ › para mudar de período, botão **Hoje** para voltar ao dia atual e alternador **Mês / Semana / Dia**                              |
 
 ***
@@ -213,7 +215,27 @@ São ações diferentes — veja a página [Cancelamento de agendamentos](cancel
 * **Cancelar** — o agendamento continua no calendário (aparece riscado), com o histórico preservado. O sistema pede confirmação: _"Deseja realmente cancelar este agendamento?"_.
 * **Excluir** — o agendamento some do calendário. O sistema avisa que **"Esta ação não pode ser desfeita."**
 
-Ambas as ações ficam disponíveis ao clicar no agendamento, exceto para agendamentos **Concluídos** ou **Cancelados**.
+Os botões dependem da situação do agendamento:
+
+* **Agendado** e **Confirmado** — têm os botões **Cancelar** e **Excluir**;
+* **Cancelado** — já está cancelado, mas agora pode ser **apagado** pelo botão da lixeira 🗑️ na janela dele;
+* **Concluído** — não tem nenhum dos dois botões (o histórico fica preservado).
+
+***
+
+## 🧹 Limpando a agenda
+
+Com o tempo, os agendamentos **cancelados** se acumulam no histórico. Agora a limpeza ficou fácil — e o calendário fica mais organizado.
+
+### Como usar o botão "Excluir cancelados"
+
+1. Mude o filtro **"Situação"** para **Cancelados** ou **Todos** — o botão aparece quando você sai do padrão **Ativos**.
+2. Clique em **"Excluir cancelados"**.
+3. O sistema mostra **quantos agendamentos serão apagados** e pede confirmação: _"Essa ação excluirá permanentemente X agendamento(s) cancelado(s). Deseja continuar?"_.
+4. Com **50 ou mais** agendamentos, ele pede **uma confirmação extra** antes de executar — quantidade grande demais para apagar sem certeza.
+5. Pronto: os cancelados saem do sistema de vez.
+
+> ⚠️ **Excluir é para sempre.** Depois de apagar, não há como recuperar — diferente de cancelar, que mantém o histórico. O botão respeita os filtros de **calendário** e **profissional** da tela: só apaga o que está dentro do filtro.
 
 ***
 

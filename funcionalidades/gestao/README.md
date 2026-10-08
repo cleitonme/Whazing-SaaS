@@ -5,6 +5,7 @@ Nesta seção você encontra tudo sobre a organização do sistema para a sua eq
 * **Filas e permissões** — como separar os atendimentos e controlar o acesso;
 * **Usuários** — cadastro, perfis e permissões dos atendentes;
 * **Contatos** — cadastro, importação e histórico dos clientes;
+* **Distribuição Automática** — como o sistema escolhe o atendente para cada novo atendimento e se ele deve considerar quem está online ou disponível;
 * **Configurações** — opções gerais, do atendimento e variáveis do sistema;
 * **Tarefas e anotações** — organização interna da equipe.
 
