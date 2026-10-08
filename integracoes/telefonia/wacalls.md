@@ -301,38 +301,6 @@ Também é possível criar contas diretamente pelo painel do próprio WaCalls.
 
 ***
 
-## Configurando o SID no canal
-
-Acesse:
-
-**Configurações → Canais/API → Configuração Avançada**
-
-Localize o campo:
-
-**WaCalls SID**
-
-Informe um ou mais SIDs.
-
-Exemplo:
-
-```
-SID01,SID02,SID03
-```
-
-Caso um SID esteja ocupado durante uma chamada, o Whazing tentará automaticamente utilizar o próximo SID disponível.
-
-<figure><img src="../../.gitbook/assets/obtersid.png" alt=""><figcaption></figcaption></figure>
-
-***
-
-## QR Code
-
-Sempre que precisar conectar um novo WhatsApp, acesse:
-
-**Ferramentas → QR Code WaCalls**
-
-Faça a leitura normalmente pelo WhatsApp.
-
 ***
 
 ## Gestão WaCalls
