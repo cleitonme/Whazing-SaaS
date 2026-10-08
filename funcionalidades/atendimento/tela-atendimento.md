@@ -124,6 +124,7 @@ Cada item da lista mostra:
 * **Opções** ⋮ (três pontinhos) — abre o menu:
   * **Fixar no topo / Desafixar** — prende o atendimento no começo da lista, para não se perder entre tantas conversas.
   * **Prioridade** _(só aparece quando o item está fixado)_ — **Subir prioridade** e **Descer prioridade** reordenam os fixados entre si. O de cima da lista é o mais prioritário.
+  * **Marcar como não lida** — devolve a bolinha vermelha de **mensagens não lidas** na conversa, para você lembrar de voltar nela depois. Só aparece em atendimento **Aberto** que já está lido. Se você marcar a conversa que está aberta, ela fecha na hora (para o contador não zerar de novo).
   * **Arquivar / Desarquivar** — guarda a conversa na aba Arquivados (ou traz de volta). Ao arquivar, o sistema pede confirmação. Não é possível arquivar um atendimento **fechado** que ainda não está arquivado — primeiro feche, depois arquive, ou arquive antes de fechar.
 
 > 💡 **Fixar ≠ Prioridade ≠ Arquivar.** Fixar deixa sempre visível no topo; prioridade ordena entre os fixados; arquivar tira da lista normal. Nenhuma dessas ações muda o status do atendimento.
@@ -701,6 +702,8 @@ Estas opções são definidas pelo administrador em **Configurações do Atendim
 **"Tentei iniciar um atendimento e disse que já tem responsável."** É a janela "Ticket já atribuído": peça para **participar como colaborador** (se habilitado), mande uma mensagem interna ao responsável ou atenda outra conversa.
 
 **"Não consigo reabrir um atendimento."** A reabertura precisa de permissão (admin tem sempre; atendente depende da configuração "Reabrir Ticket") — e o sistema **bloqueia reabrir tickets muito antigos** para evitar confusão de histórico.
+
+**"Marquei como não lida, mas a bolinha sumiu de novo."** O contador de não lidas zera automaticamente quando a conversa é **aberta** (é o comportamento esperado: abrir a conversa = ler). Se você marcou a conversa que estava aberta, ela fecha sozinha justamente para o contador continuar valendo. Uma mensagem nova do cliente também volta a contar como não lida normalmente.
 
 **"O canal desconectou e as conversas pararam de chegar."** Veja o aviso no rodapé da lista de conversas; o administrador deve reconectar o canal em **Sessões/Conexões** até a conversa voltar ao normal.
 
