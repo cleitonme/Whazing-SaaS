@@ -8,7 +8,7 @@ A **Distribuição Automática** faz com que o sistema escolha **automaticamente
 
 > _"Quando ativada numa fila, o sistema escolhe automaticamente um usuário elegível (online, disponível e de um dos perfis selecionados) para receber cada novo atendimento — sem precisar escolher usuário por usuário."_
 
-Em linguagem simples: em vez de os atendimentos ficarem parados na fila esperando que alguém os aceite, o sistema **entrega cada atendimento diretamente para um atendente** que esteja disponível, seguindo o critério que você escolher (aleatório ou balanceado).
+Em linguagem simples: em vez de os atendimentos ficarem parados na fila esperando que alguém os aceite, o sistema **entrega cada atendimento diretamente para um atendente** que esteja disponível, seguindo o critério que você escolher: **aleatório**, **balanceado**, **divisão por porcentagem entre vendedores** ou **rodízio por ordem de cadastro**.
 
 ### 🧑‍💼 Antes de continuar: o que é uma fila?
 
@@ -46,11 +46,11 @@ Quando um novo atendimento chega:
 
 1. O sistema verifica **qual é a fila** daquele atendimento.
 2. Se a fila estiver com a Distribuição Automática **ativada**, o sistema procura os **usuários elegíveis**: de um dos **perfis selecionados**, **online** e **disponíveis**.
-3. O atendimento é **entregue automaticamente** a um desses usuários, seguindo o modo configurado (**Aleatória** ou **Balanceada**).
+3. O atendimento é **entregue automaticamente**: no modo **Aleatória** ou **Balanceada** vai a um desses usuários; no modo **Porcentagem** vai a um vendedor da divisão; no modo **Rodízio**, vai ao próximo da ordem de cadastro.
 
 ### Situações em que a distribuição não acontece
 
-* Se o atendimento **já tem um responsável definido** por uma regra anterior — como um Chatbot, uma integração, o canal privado ou a carteira do contato — a distribuição automática da fila **não o move**.
+* Se o atendimento **já tem um responsável definido** por uma regra anterior — como um Chatbot, uma integração ou o canal privado — a distribuição automática da fila **não o move**. O mesmo vale para a **carteira do contato** quando a opção de clientes recorrentes estiver ligada (veja a seção **Clientes recorrentes** abaixo).
 * Se não houver **nenhum usuário elegível** no momento (nenhum atendente dos perfis selecionados online e disponível), o atendimento permanece na fila, como de costume.
 
 ### Transferências
@@ -58,6 +58,30 @@ Quando um novo atendimento chega:
 Por padrão, a distribuição automática age apenas em **atendimentos novos**. Se você ativar a opção **"Distribuir também em transferências"**, ela também entra em ação quando uma **transferência** mover o atendimento para a fila **sem escolher um atendente** — seja uma transferência manual ou feita por uma integração, como a Recepção Inteligente.
 
 > ⚠️ **Transferências que já escolhem um usuário específico nunca são sobrescritas** — o sistema entrega o atendimento para o usuário escolhido, como sempre.
+
+***
+
+## 👥 Clientes recorrentes: o contato que já tem vendedor na carteira
+
+A tela tem um card próprio, **"Clientes recorrentes"**, com duas opções. A primeira só pode ser alterada por um **administrador**.
+
+### Envio ao vendedor da carteira — "Enviar o atendimento para o vendedor da carteira do contato"
+
+Quando ligada:
+
+* Se o **contato já tem um vendedor na carteira**, o atendimento vai **direto para esse vendedor**.
+* O atendimento **não entra** na divisão por porcentagem (nem nas demais distribuições da fila) — a divisão vale apenas para os **contatos sem vendedor associado**.
+* Desligada, o sistema deixa de enviar o atendimento diretamente ao dono da carteira.
+
+### Registro na carteira — "Guardar o cliente na carteira de quem receber"
+
+Quando ligada:
+
+* Ao **distribuir um atendimento**, o contato é **registrado na carteira do vendedor selecionado**.
+* Assim, os **próximos atendimentos** desse contato podem ir direto para ele.
+* Se o contato **já tiver** um vendedor na carteira, essa associação **não é alterada**.
+
+Em linguagem simples: a divisão por porcentagem cuida dos **clientes novos** — e, a partir do primeiro atendimento, cada cliente passa a "pertencer" ao vendedor que o atendeu.
 
 ***
 
@@ -79,6 +103,10 @@ Isso significa que você pode configurar a fila para distribuir mesmo entre aten
 
 * **Aleatória:** sorteia entre os usuários elegíveis de acordo com os critérios que você deixou ativos.
 * **Balanceada:** escolhe o usuário elegível **com menos atendimentos em aberto** naquele momento. Se houver empate, o sistema sorteia entre os empatados.
+* **Porcentagem:** os candidatos são os **vendedores da divisão** configurada para a fila — cada um recebe conforme a porcentagem definida (veja a seção **Clientes recorrentes** acima).
+* **Rodízio por ordem de cadastro:** entrega **um atendimento para cada usuário por vez**, seguindo a ordem de cadastro; ao chegar no último, recomeça no primeiro.
+
+> 💡 No modo **Porcentagem**, os perfis valem apenas como **reserva**: se a opção de distribuir pelo modo balanceado estiver ligada e nenhum vendedor da divisão estiver disponível, o atendimento é distribuído entre os perfis selecionados.
 
 > 💡 No modo **Balanceada**, a contagem considera os atendimentos em aberto do usuário **em toda a empresa** — não apenas naquela fila. Assim, a carga da equipe fica equilibrada de verdade.
 
@@ -100,13 +128,51 @@ Ao selecionar a fila, o restante das opções aparece na tela, já preenchido co
 
 ### 3. Escolha o modo de distribuição
 
-No card **"Distribuição Automática"**, clique em um dos três cartões de modo:
+No card **"Distribuição Automática"**, clique em um dos cinco cartões de modo:
 
 * **Não** — desativado: os novos atendimentos da fila **não** são distribuídos automaticamente (comportamento padrão).
 * **Aleatória** — sorteia entre os usuários elegíveis que estiverem online e disponíveis.
 * **Balanceada** — distribui priorizando o usuário elegível, online e disponível **com menos atendimentos**.
+* **Porcentagem** — divide os novos atendimentos entre **vendedores específicos** da fila, segundo as porcentagens que você definir (por exemplo, 30% e 70%).
+* **Rodízio por ordem de cadastro** — entrega um atendimento para cada usuário por vez, seguindo a ordem de cadastro; no fim da lista, o ciclo recomeça no primeiro.
 
 O cartão selecionado ganha uma marca de ✓.
+
+#### 🥧 No modo Porcentagem: a divisão por vendedor
+
+Ao escolher **Porcentagem**, aparece na tela o card **"Divisão por vendedor"**:
+
+1. **Adicione os vendedores** que vão participar — a lista mostra somente os usuários **vinculados a esta fila**.
+2. **Defina a porcentagem de cada um** — por exemplo, 30% e 70%. A soma precisa ser **exatamente 100%**.
+
+Enquanto você ajusta, a tela mostra o **total da divisão**:
+
+| Situação | O que você verá |
+| ---- | --------- |
+| Soma correta | _"Soma correta: 100%"_ |
+| Soma menor | _"Faltam X% para fechar 100%"_ |
+| Soma maior | _"A soma passou de 100% em X%"_ |
+
+O botão **"Salvar"** fica bloqueado até a soma fechar em 100%.
+
+> 💡 **Contato que já tem carteira não entra na divisão:** com a opção de **Clientes recorrentes** ligada, o atendimento de quem já tem vendedor na carteira vai **direto para ele** — apenas os contatos **sem** vendedor associado entram na divisão por porcentagem.
+
+> ⚠️ Se um vendedor da divisão perder o vínculo com a fila, ele fica na lista marcado como _"Fora da fila — não participará da divisão"_ até ser removido.
+
+#### 🤝 Reserva balanceada: se ninguém da divisão estiver disponível
+
+No modo Porcentagem há também a opção **"Distribuir pelo modo balanceado"**, no card _"Se ninguém da divisão estiver disponível"_:
+
+* **Ligada:** se nenhum vendedor da divisão estiver elegível no momento, o atendimento é distribuído pelo modo **balanceado** (quem tem menos atendimentos em aberto) entre os **perfis selecionados**. Por isso, no modo Porcentagem, os perfis servem apenas para essa reserva.
+* **Desligada:** o atendimento fica **sem responsável** e segue o fluxo normal da fila.
+
+#### 🔁 No modo Rodízio por ordem de cadastro
+
+No rodízio, o atendimento vai para **um usuário por vez**, seguindo a ordem de cadastro:
+
+* A ordem segue o **número de cadastro** de cada usuário, do mais antigo para o mais recente.
+* A cada novo atendimento entra o **próximo da lista**; ao chegar no último, **recomeça no primeiro**.
+* Se um usuário não estiver disponível no momento, a vez passa para o próximo.
 
 ### 4. Escolha os perfis que podem receber
 
@@ -122,6 +188,8 @@ No card **"Perfis que podem receber"**, marque os perfis que poderão receber os
 O sistema explica: _"Os atendimentos serão distribuídos entre usuários dos perfis selecionados que estiverem online e disponíveis. Não é necessário selecionar usuários individualmente."_ — ou seja, você configura por **perfil**, e todos os usuários daquele perfil participam.
 
 > ⚠️ **Selecione ao menos um perfil.** Se nenhum for escolhido, a tela avisa: _"Selecione ao menos um perfil, ou a distribuição automática não terá nenhum candidato."_ — e o botão **Salvar** fica desabilitado até você escolher um.
+
+> 💡 **No modo Porcentagem**, os perfis aparecem somente quando a reserva balanceada (acima) estiver ligada — aí eles definem **entre quem** o atendimento é distribuído quando nenhum vendedor da divisão estiver disponível.
 
 ### 5. (Opcional) Distribuir também em transferências
 
@@ -168,8 +236,10 @@ Para confirmar que está funcionando:
 * **Não** — para desativar a distribuição automática na fila.
 * **Aleatória** — para sortear entre os elegíveis.
 * **Balanceada** — para entregar ao elegível com menos atendimentos em aberto.
+* **Porcentagem** — para dividir os atendimentos entre vendedores específicos da fila, conforme a porcentagem definida para cada um.
+* **Rodízio por ordem de cadastro** — para entregar um atendimento para cada usuário por vez, seguindo a ordem de cadastro.
 
-**O que acontece depois?** Os novos atendimentos da fila (sem responsável definido) passam a ser entregues conforme o modo escolhido.
+**O que acontece depois?** Os novos atendimentos da fila (sem responsável definido por regra anterior, como a carteira do contato) passam a ser entregues conforme o modo escolhido. No modo Porcentagem, a divisão de vendedores também precisa estar configurada.
 
 ### "Perfis que podem receber"
 
@@ -178,6 +248,8 @@ Para confirmar que está funcionando:
 **O que devo escolher?** Um ou mais perfis (Administrador, Supervisor Geral, Supervisor de Fila e/ou Usuário).
 
 **O que acontece depois?** Somente usuários dos perfis marcados — online e disponíveis — entram no sorteio/distribuição. Perfis não marcados nunca recebem pela distribuição automática.
+
+> 💡 No modo **Porcentagem**, os perfis valem apenas para a reserva balanceada (veja "Distribuir pelo modo balanceado" mais abaixo).
 
 ### "Distribuir também em transferências"
 
@@ -204,6 +276,46 @@ Você pode ativar, desativar ou combinar essas opções conforme sua necessidade
 * Se você desativar, a fila distribui entre todos os usuários dos perfis marcados, mesmo que estejam off ou indisponíveis no momento.
 
 > 💡 Essas opções explicam por que, em alguns casos, um atendimento pode ser entregue a um atendente que não estava online ou que estava indisponível — se a fila permitir isso na configuração.
+
+### "Divisão por vendedor" (aparece no modo Porcentagem)
+
+**Para que serve?** Definir **quais vendedores** participam da divisão e **quanto** cada um recebe.
+
+**O que devo fazer?** Adicionar usuários da fila e ajustar as porcentagens até a soma fechar em **100%**.
+
+**O que acontece depois?** Os novos atendimentos — de contatos **sem carteira** — vão para os vendedores da divisão, na proporção definida para cada um.
+
+### "Se ninguém da divisão estiver disponível" — "Distribuir pelo modo balanceado"
+
+**Para que serve?** Decidir o que acontece se nenhum vendedor da divisão estiver disponível no momento do atendimento.
+
+**O que devo escolher?** Ligar ou desligar.
+
+**O que acontece depois?** Ligada, o atendimento é distribuído pelo modo balanceado entre os perfis selecionados. Desligada, fica sem responsável e segue o fluxo normal da fila.
+
+### "Clientes recorrentes" — "Enviar o atendimento para o vendedor da carteira do contato"
+
+**Para que serve?** Priorizar a carteira: contato que já tem vendedor vai direto para ele.
+
+**O que devo escolher?** Ligar ou desligar a opção. ⚠️ Somente um **administrador** pode alterar esta opção.
+
+**O que acontece depois?** Contatos com carteira deixam de passar pela distribuição da fila e vão direto para o dono da carteira.
+
+### "Guardar o cliente na carteira de quem receber"
+
+**Para que serve?** Fazer com que a distribuição construa a carteira dos vendedores ao longo do tempo.
+
+**O que devo escolher?** Ligar ou desligar.
+
+**O que acontece depois?** Cada atendimento distribuído registra o contato na carteira do vendedor selecionado — contato que já tem carteira nunca é alterado.
+
+### "Quando ninguém estiver disponível"
+
+**Para que serve?** Decidir o que fazer quando, no instante do atendimento, não houver ninguém **online e disponível**.
+
+**O que devo escolher?** _"Deixar o atendimento na fila, sem responsável"_ (padrão) ou _"Distribuir mesmo assim, ignorando quem está fora ou ocupado"_.
+
+**O que acontece depois?** Com a segunda opção, o sistema tenta primeiro quem está online e disponível e, só se não encontrar ninguém, distribui pela mesma regra entre os demais usuários da fila, mesmo que estejam fora ou ocupados.
 
 ### Botão "Salvar"
 
@@ -242,6 +354,14 @@ A empresa tem as filas **Vendas**, **Suporte** e **Financeiro**. Como a configur
 
 Cada fila distribui entre os seus próprios perfis participantes, independentemente das outras.
 
+### Exemplo 3 — Vendas com divisão por porcentagem e carteira
+
+Na fila **Vendas**, o administrador escolhe o modo **Porcentagem** e monta a divisão: **Ana com 70%** e **Bruno com 30%**. As opções **"Enviar o atendimento para o vendedor da carteira"** e **"Guardar o cliente na carteira de quem receber"** estão ligadas.
+
+1. Chega um contato **novo** (sem vendedor na carteira): ele entra na divisão — tem 70% de chance de ir para Ana e 30% para Bruno. Quem recebeu (digamos, Ana) **ganha o contato na própria carteira**.
+2. O mesmo cliente volta no dia seguinte: o atendimento vai **direto para Ana**, sem passar pela divisão de 70/30.
+3. Os contatos que chegarem já com Ana na carteira **nunca passam pela divisão** — e a associação deles na carteira não é alterada pela distribuição.
+
 ***
 
 ## 📱 Canais
@@ -258,10 +378,37 @@ Outras configurações do sistema também podem definir **quem atende**. A regra
 
 * **Chatbot:** se o fluxo transfere o atendimento para um **usuário** específico, ele é respeitado. Se a fila também tiver "Auto Distribuir Atendimento" configurada no bot, **a configuração do bot prevalece** sobre a da fila.
 * **Integrações (como a Recepção Inteligente):** se a integração escolher um usuário, a escolha é respeitada; se definir apenas a fila, a distribuição automática entra em ação quando a opção **"Distribuir também em transferências"** estiver ligada.
-* **Canal privado e carteira do contato:** atendimentos que já têm responsável por esses motivos nunca são redistribuídos.
+* **Canal privado:** atendimentos que já têm responsável por esse motivo nunca são redistribuídos.
+* **Carteira do contato:** com a opção de clientes recorrentes ligada, o contato que já tem vendedor na carteira vai direto para o dono — a distribuição da fila não o move.
 * **Entre filas:** não existe conflito — cada fila tem sua própria configuração, que vale apenas para os atendimentos dela.
 
 > 💡 **Resumo:** se um atendimento chegar à fila **sem responsável definido** e **sem nenhuma regra anterior** que o atribua, a Distribuição Automática atua. Se alguma regra anterior já definiu o responsável, ela tem prioridade.
+
+***
+
+## 📋 Logs e histórico de distribuição
+
+Ao lado do botão **"Salvar"**, na tela de Distribuição Automática, fica o botão **"Ver histórico de distribuição"**. Ele abre o relatório que registra as decisões de distribuição — inclusive as do rodízio — para ajudar a **identificar e analisar erros**.
+
+### O que cada registro mostra
+
+* **Data e hora**, **fila**, **canal** e o **atendimento**;
+* **Resultado:** entregue a alguém, ou ninguém disponível (o atendimento ficou na fila);
+* **Regra usada:** Aleatória, Balanceada, Porcentagem ou Rodízio;
+* **Quem recebeu** o atendimento.
+
+### Ver o que estava acontecendo naquele momento
+
+Cada registro pode abrir os **detalhes da decisão**: como cada usuário vinculado à fila estava naquele instante (online? disponível? podia receber?) e o **motivo** da escolha, por exemplo:
+
+* _"Era a vez desse usuário no rodízio"_
+* _"Sorteado entre quem estava disponível"_
+* _"Tinha menos atendimentos em aberto"_
+* _"Porcentagem definida para esse usuário"_
+* _"Nenhum vendedor da divisão estava disponível, então valeu o critério de menos atendimentos"_
+* _"Ninguém estava disponível e o atendimento ficou na fila"_
+
+> 💡 No rodízio, os detalhes mostram também **"Último a receber antes desta vez"** — se a ordem parecer errada, esse é o dado para conferir.
 
 ***
 
@@ -273,7 +420,7 @@ Verifique, nesta ordem:
 
 1. **O atendimento já tinha um responsável definido por uma regra anterior?** (Chatbot, integração, canal privado ou carteira do contato.) Nesse caso, a distribuição automática não atua — quem definiu primeiro, ganha.
 2. **Havia alguém elegível de acordo com a configuração da fila?** Dependendo das opções que você marcou, o sistema pode considerar só atendentes online, só disponíveis, os dois ou nenhum desses critérios. Se a fila exigir um desses estados e ninguém estiver nessas condições, o atendimento fica na fila.
-3. **O modo estava "Não"?** Só distribui quem estiver em **Aleatória** ou **Balanceada**.
+3. **O modo estava "Não"?** Só distribui quem estiver em **Aleatória**, **Balanceada**, **Porcentagem** ou **Rodízio por ordem de cadastro**.
 
 ### "O atendimento foi para um atendente off ou indisponível sem eu querer"
 
@@ -284,6 +431,20 @@ Verifique, nesta ordem:
 
 * Se a fila também é alcançada por um **Chatbot com "Auto Distribuir Atendimento"**, a configuração do **bot prevalece**.
 * Se o atendimento veio por **transferência com usuário já escolhido**, a escolha é sempre respeitada.
+* **No modo Porcentagem:** se a reserva balanceada estava ligada e **nenhum vendedor da divisão estava disponível**, o atendimento é distribuído pelos perfis selecionados.
+* O contato tinha **vendedor na carteira** (opção de clientes recorrentes ligada)? Aí vai direto para o dono da carteira — é o comportamento esperado.
+
+### "No modo Porcentagem, não consigo salvar a configuração"
+
+A soma das porcentagens precisa ser **exatamente 100%**. A tela mostra o total e avisa quanto falta ("Faltam X% para fechar 100%") ou quanto excedeu. Só depois de fechar em 100% é possível salvar.
+
+### "Quero ver por que um atendimento foi para um usuário"
+
+Abra o **histórico de distribuição** (botão "Ver histórico de distribuição", na tela de configuração): ele mostra o resultado, a regra usada, o motivo e como cada usuário estava no momento.
+
+### "No Rodízio, parece que um usuário ficou de fora"
+
+No rodízio só participam os usuários **disponíveis** no momento do atendimento. Se alguém não estava, a vez passa direto para o próximo — confira o retrato do momento no histórico de distribuição.
 
 ### "Não aparece nenhuma fila para selecionar"
 
@@ -335,7 +496,25 @@ Sim. **Cada fila** tem sua própria configuração de modo e perfis — por exem
 
 ### O que acontece quando chega um novo atendimento?
 
-Se a fila estiver com a distribuição ativada e o atendimento **não tiver responsável definido**, o sistema entrega o atendimento a um usuário elegível (perfil selecionado, online e disponível), conforme o modo escolhido. Se ninguém estiver elegível, o atendimento permanece na fila.
+Se a fila estiver com a distribuição ativada, o atendimento **não tiver responsável definido** e o contato **não tiver vendedor na carteira** (com a opção de clientes recorrentes ligada), o sistema entrega o atendimento: a um usuário elegível (perfil selecionado, online e disponível), a um vendedor da divisão (modo Porcentagem) ou ao próximo da ordem de cadastro (modo Rodízio). Se ninguém estiver elegível, o atendimento permanece na fila.
+
+### Como funciona a divisão por porcentagem?
+
+Ao escolher o modo **Porcentagem**, você define **quais vendedores** vão receber e **quanto** cada um recebe — a soma precisa fechar em **100%**. Contatos que já têm vendedor na carteira vão direto para o dono da carteira; só quem está **sem carteira** entra na divisão.
+
+### Como funciona o Rodízio por ordem de cadastro?
+
+Cada atendimento vai para **um usuário por vez**, seguindo a ordem de cadastro (o mais antigo primeiro). Ao chegar no último, o ciclo **recomeça no primeiro**. Quem não estiver disponível no momento pode ter a vez pulada.
+
+### O que acontece com clientes que já têm vendedor na carteira?
+
+* **Contato já na carteira:** com a opção de clientes recorrentes ligada, o atendimento vai **direto para o dono da carteira** — não entra na divisão por porcentagem nem no rodízio.
+* **Contato novo, sem carteira:** entra na distribuição normal da fila. Se a opção **"Guardar o cliente na carteira de quem receber"** estiver ativada, ao ser distribuído o contato é registrado na carteira do vendedor escolhido — os próximos atendimentos voltam direto para ele.
+* **Contato que já tem carteira** nunca tem a associação alterada pela distribuição.
+
+### Onde vejo por que um atendimento foi para um usuário?
+
+No **histórico de distribuição** — o botão **"Ver histórico de distribuição"** fica na tela da Distribuição Automática, junto do botão Salvar.
 
 ### O Chatbot continua funcionando normalmente?
 
