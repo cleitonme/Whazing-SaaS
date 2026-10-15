@@ -24,7 +24,8 @@ O **ChatFlow** é o editor visual de chatbot do Whazing. Com ele você monta **f
 12. [Automações (integrações)](./#automações-integrações)
 13. [Atalhos de teclado](./#atalhos-de-teclado)
 14. [Exportar fluxo](./#exportar-fluxo)
-15. [Exemplos Práticos de Fluxos](./#exemplos-práticos-de-fluxos)
+15. [Importar fluxo](./#importar-fluxo)
+16. [Exemplos Práticos de Fluxos](./#exemplos-práticos-de-fluxos)
 
 ***
 
@@ -67,6 +68,7 @@ A configuração do fluxo é feita pela interface visual do novo editor:
 * **Automações** — abre o painel de automações (integrações vinculadas a filas). Veja [Automações](./#automações-integrações).
 * **Testar** — abre o [Simulador](./#testando-o-fluxo-simulador) para validar o fluxo.
 * **Ajuda** — lista os atalhos de teclado.
+* **Importar JSON** — abre a janela de [importação de fluxo](./#importar-fluxo).
 * **Exportar** — baixa o fluxo em formato JSON (compatível com a importação do sistema).
 
 ### Lateral esquerda (paleta de blocos)
@@ -674,6 +676,58 @@ O botão **"Automações"** (na barra superior) abre o painel de **automações*
 ## 📥 Exportar fluxo
 
 O botão de **exportar** (ícone de download na barra superior) baixa o fluxo atual em **JSON** no mesmo formato aceito pela **importação do sistema** — útil para salvar modelos, compartilhar fluxos ou restaurar em outra instalação.
+
+***
+
+## 📤 Importar fluxo
+
+Agora é possível **importar um fluxo de bot direto no editor** — em vez de montar tudo de novo, você traz as etapas e conexões prontas (de um modelo que você exportou, de outro bot ou de um arquivo recebido).
+
+### Como abrir
+
+* Pelo botão de **importar** (ícone de upload na barra superior);
+* Ou **colando (Ctrl+V) um JSON de fluxo no editor** — a janela já abre preenchida com o texto colado. (O colar normal das etapas copiadas dentro do próprio editor continua funcionando como sempre.)
+
+### Como trazer o fluxo
+
+Na janela **"Importar fluxo"**, escolha uma das formas:
+
+* **Cole o JSON** do fluxo no campo de texto;
+* Ou clique em **"Escolher arquivo"** e selecione um arquivo `.json`.
+
+O sistema **confere o arquivo** antes de aplicar: se estiver tudo certo, mostra _"JSON válido: X etapas e Y conexões."_ e libera o botão de importar; senão, avisa o problema.
+
+### O que acontece com o fluxo aberto
+O fluxo aberto **continua sendo o mesmo bot** — o nome e os lugares que apontam para ele não mudam. O que entra são as **etapas e conexões** do arquivo.
+
+### Dois modos de importação
+
+| Modo | O que faz |
+| ---- | --------- |
+| **Substituir** | Troca as etapas e conexões do fluxo aberto pelas do arquivo. Como mexe no que já existe, o sistema **pede confirmação** antes de aplicar. |
+| **Mesclar** | **Acrescenta** as etapas e conexões do arquivo às que já existem, sem remover nada. Aplica na hora — e dá para **desfazer com Ctrl+Z**. |
+
+No modo **Substituir**, aparece ainda a opção **"Importar também as configurações do fluxo"**:
+
+* **Marcada:** entram também as configurações gerais do bot do arquivo — mensagem de boas-vindas, sem resposta, fora de horário, despedida, máximo de tentativas e distribuição automática.
+* **Desmarcada (padrão):** as configurações atuais do seu bot **são preservadas** — apenas etapas e conexões são trocadas.
+
+> 💡 As etapas importadas entram com **identificações novas** — ao mesclar, elas não se confundem com as que já existem, e as conexões internas do arquivo continuam funcionando.
+
+### ⚠️ Depois de importar
+
+Um aviso da própria janela merece atenção:
+
+> _"Filas, usuários e fluxos referenciados pelas condições não são revalidados. Se o arquivo vem de outro ambiente, revise as transferências depois de importar."_
+
+Em linguagem simples: as condições podem apontar para **filas, usuários ou outros fluxos** que não existem na sua instalação. O sistema traz as etapas e conexões sem reclamar — quem religa os destinos é **você**: depois de importar, revise as condições e aponte para os destinos corretos do seu ambiente.
+
+### Fluxo típico
+
+1. No bot de origem, clique em **Exportar** e baixe o arquivo `.json` (veja [Exportar fluxo](./#exportar-fluxo));
+2. Abra o bot de destino;
+3. Clique em **Importar JSON** e escolha o arquivo — **Mesclar** para juntar com o que já existe, ou **Substituir** para trocar tudo;
+4. Revise as condições de transferência e use o **Testar** (Simulador) para conferir o resultado antes de ativar para os clientes.
 
 ***
 
