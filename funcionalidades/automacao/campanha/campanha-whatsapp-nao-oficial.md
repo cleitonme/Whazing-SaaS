@@ -9,6 +9,8 @@ Este é o **módulo novo de campanhas** para envio pelo **WhatsApp não oficial*
 
 * **Sequência de mensagens** — você pode enviar **mais de uma mensagem para o mesmo contato** (ex.: primeira mensagem, esperar um pouco, segunda mensagem).
 * **Variações de texto** — o sistema sorteia uma versão da mensagem para cada contato, para o envio não ficar repetitivo.
+* **Vários números por campanha** — dá para escolher **mais de um WhatsApp**: os envios se alternam entre os números durante a campanha, e cada contato recebe a sequência inteira por um único número.
+* **Repetição automática** — opcional: a campanha pode **recomeçar sozinha** ao terminar a lista, em intervalos fixos (diário, semanal, a cada 15 dias ou mensal), até a data limite que você definir.
 * **Intervalos que variam** — em vez de sempre esperar o mesmo tempo, você define uma **faixa** (ex.: entre 30 e 60 segundos) e o sistema sorteia.
 * **Pausas, horários e limite por dia** — o envio respeita pausas automáticas, horário permitido, dias da semana e um limite de envios por dia.
 * **Ajuda da IA** — a IA pode **criar**, **melhorar** e **gerar variações** das suas mensagens.
@@ -44,7 +46,7 @@ A tela inicial lista todas as suas campanhas:
 | Coluna            | O que mostra                                          |
 | ----------------- | ----------------------------------------------------- |
 | **Nome**          | O nome que você deu à campanha (só você vê)           |
-| **Canal**         | Qual número de WhatsApp vai enviar                    |
+| **Canal**         | Quais números de WhatsApp vão enviar (um ou mais)     |
 | **Situação**      | Onde a campanha está (veja a tabela abaixo)           |
 | **Contatos**      | Quantos contatos estão na lista                       |
 | **Progresso**     | Barra com a % de contatos que já receberam            |
@@ -85,8 +87,14 @@ Clique em **"Nova campanha"**. O cadastro é um assistente com **6 etapas** — 
 ### 1️⃣ Nome e canal
 
 * **Nome da campanha** — só para você se organizar; o contato nunca vê.
-* **Enviar por** — escolha o **número de WhatsApp (não oficial)** que vai fazer o envio.
+* **Enviar por** — escolha **um ou mais números de WhatsApp (não oficial)** que vão fazer o envio:
+  * Escolheu **mais de um número**? Os envios **se alternam** entre eles durante a campanha.
+  * O mesmo contato recebe **a sequência inteira pelo mesmo número** — não troca de número no meio da sequência.
 * **Quando começar** — escolha **"Assim que eu iniciar"** (começa na hora em que você clicar em iniciar) ou **"Programar data e hora"**.
+* **Repetir (opcional)** — faça a campanha **recomeçar sozinha** ao terminar a lista de contatos:
+  * Escolha o intervalo: **Todos os dias**, **Toda semana**, **A cada 15 dias** ou **Todo mês** (ou **"Não repetir"**, o padrão).
+  * Em **"Repetir até"**, defina até quando a campanha repete.
+  * ⚠️ Aviso da própria tela: **cada rodada reenvia para a lista inteira** — com uma lista grande, uma rodada pode levar horas.
 
 ### 2️⃣ Mensagens
 
@@ -168,6 +176,8 @@ Na tela da campanha, clique no botão **📊 Acompanhar**:
 * **Números gerais** — total, enviadas, aguardando, entregues, lidas, não enviadas e ignorados;
 * **Progresso** — barra com a % concluída e a **previsão de conclusão**;
 * **Histórico de envios** — lista por contato: qual mensagem foi, quando estava programada, quantas tentativas, a situação (Aguardando, Em andamento, Enviada, Não enviada, Ignorado) e se foi **entregue** ou **lida**.
+  * A coluna **Canal** mostra **por qual número** cada mensagem saiu — útil quando a campanha usa vários números.
+  * Se a campanha **repete sozinha**, aparece também a coluna **Rodada** (a cada nova lista completa é uma rodada nova) e o histórico **acumula todas as rodadas**.
 
 ***
 
