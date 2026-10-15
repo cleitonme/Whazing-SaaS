@@ -44,6 +44,7 @@
   * [Onboarding Inicial](modulo-saas/onboarding-inicial.md)
   * [Como Criar a Opção de Ajuda](modulo-saas/criarajuda.md)
   * [Comunicados](modulo-saas/comunicados.md)
+  * [⚙️ Personalização SaaS](modulo-saas/personalizacao-saas.md)
   * [Criação de Planos - Financeiro](modulo-saas/criacao-de-planos-financeiro/README.md)
     * [🛒 Adicionais](modulo-saas/criacao-de-planos-financeiro/adicionais.md)
     * [Canais Adicionais (venda aos seus clientes)](modulo-saas/criacao-de-planos-financeiro/adicionais-de-canais.md)
