@@ -20,6 +20,7 @@
    * **Nome do serviço** — ex.: "Corte masculino", "Consulta de rotina", "Avaliação".
    * **Duração (minutos)** — quanto tempo o atendimento leva. O padrão sugerido é **30 minutos**.
    * **Valor** — quanto o serviço custa (opcional). Detalhes na seção [Valor do serviço](#valor-do-serviço) abaixo.
+   * **Descrição** (opcional) — um resumo curto de para que serve o serviço. Detalhes na seção [Descrição do serviço](#descrição-do-serviço) abaixo.
 2. Clique no **botão +**.
 
 Aparece a confirmação e o serviço entra na lista, já **ativo**.
@@ -40,13 +41,14 @@ Se a duração for trocada para 1 hora, os horários passam a ser **09:00, 10:00
 
 ## ✏️ Editando um serviço
 
-Cada serviço na lista tem quatro controles, todos salvos **automaticamente** ao sair do campo:
+Cada serviço na lista tem cinco controles, todos salvos **automaticamente** ao sair do campo:
 
 | Controle                  | O que faz                                   |
 | ------------------------- | ------------------------------------------- |
 | **Nome** (campo de texto) | Clique, edite e clique fora para salvar     |
 | **Duração** (campo `min`) | Ajuste os minutos e clique fora para salvar |
 | **Valor** (campo com o símbolo da moeda) | Informe quanto o serviço custa — veja abaixo. Em branco, o serviço simplesmente não exibe valor |
+| **Descrição** (campo de texto maior) | Resumo opcional do serviço — aceita até 500 caracteres |
 | **Chave liga/desliga**    | Ativa ou desativa o serviço                 |
 
 ### 🔕 Desativar em vez de excluir
@@ -92,6 +94,22 @@ Cada serviço pode ter um **valor** — o preço daquele atendimento. É uma inf
 * **No chatbot** — quando o bloco de agendamento tem a opção **"Enviar valor do serviço para o cliente"** ligada, o valor aparece na lista de serviços e na mensagem de confirmação (veja [Agendamento pelo Chatbot](agendamento-pelo-chatbot.md)).
 
 > 💡 O valor **não muda a duração nem os horários** — é apenas exibido. Para alterar a duração de um atendimento, mexa no campo **Duração**, não no valor.
+
+***
+
+## 📝 Descrição do serviço
+
+Além do nome, cada serviço pode ter uma **descrição** — um resumo curto de **para que serve** o atendimento. O ideal é uma frase ou duas, que o cliente entenda de longe.
+
+**Onde configurar:**
+
+* **Ao criar** — o campo **"Descrição do serviço"** aparece no topo da aba, junto do nome, da duração e do valor.
+* **Na lista** — é um campo de texto maior, aceitando até **500 caracteres**. Edite e saia do campo: salva sozinho.
+* O campo é **opcional** — serviço sem descrição funciona normalmente.
+
+**Onde aparece:** na **página pública de agendamento** (link público/Embed), junto do serviço que o cliente selecionou. O texto aceita **negrito** (marca com asteriscos duplos, como em uma mensagem de WhatsApp) e **quebras de linha**. Se a descrição estiver vazia, esse bloco simplesmente não aparece na página pública.
+
+> 💡 Use a descrição para adiantar o que o cliente precisa saber antes de escolher o serviço — sem precisar de bloco de mensagem no fluxo do chatbot.
 
 ***
 

@@ -108,6 +108,20 @@ Na aba **"Respostas do cliente"** você define o que o cliente pode fazer **resp
 * **Mensagem de resposta ao cancelamento** — a confirmação do cancelamento que ele recebe.
 * O cancelamento por lembrete segue as mesmas regras da página [Cancelamento de agendamentos](cancelamento-de-agendamentos.md).
 
+### 🤖 Depois da resposta: o que fazer com a conversa
+
+Dentro de **"Confirmar presença"** e de **"Cancelamento"** há um bloco novo que define o que o sistema faz **depois de processar a resposta**. Ele é o mesmo nas duas, mas é configurado **separadamente** — uma configuração para o confirmar, outra para o cancelar:
+
+* **"Enviar mensagem de resposta ao cliente"** — liga/desliga a resposta automática que o cliente recebe (o texto que você escreve no campo de mensagem acima).
+* **"O que fazer com a conversa"** — para onde a conversa vai depois da resposta:
+  * **"Apenas atualizar o agendamento"** (padrão) — o sistema marca confirmado/cancelado e nada mais acontece;
+  * **"Encaminhar para uma fila"** — a conversa vai para a **"Fila de destino"** que você escolher, **sem mensagem de transferência**;
+  * **"Iniciar um bot"** — o **"Bot a iniciar"** que você escolher assume a conversa.
+* **"Não acionar o bot nem a integração depois desta resposta"** — recomendado: sem isso, o cliente pode receber a resposta do lembrete e, em seguida, a resposta do bot. Esta opção **some** quando a ação escolhida é "Iniciar um bot" (a ação já é acionar o bot).
+* A tela mostra um **resumo** — "O que acontece depois desta resposta" — com tudo em ordem: o agendamento é marcado (confirmado ou cancelado), o cliente recebe (ou não) a mensagem, para onde a conversa vai e o que acontece com o bot e as integrações.
+
+> ⚠️ **Se "Fechar o ticket automaticamente após cancelar/confirmar" estiver ligado**, a escolha de fila/bot fica **indisponível** — o ticket é fechado em seguida, então não faz sentido encaminhar a conversa. O resumo da tela avisa: "O ticket é fechado em seguida."
+
 ### 👨‍💼 Pedir atendente
 
 * **"Permitir pedir para falar com um atendente"** — se o cliente responder com a **palavra-chave para falar com atendente**, a conversa é direcionada para a equipe (com a mensagem de resposta que você definir).
@@ -129,3 +143,5 @@ Na aba **"Respostas do cliente"** você define o que o cliente pode fazer **resp
 * Se ele **cancela** → o horário é liberado e o agendamento fica **Cancelado** (riscado no calendário).
 * Se ele **pede atendente** → a conversa é encaminhada para a equipe.
 * Se ele **não responde** → nada acontece; o agendamento permanece **Agendado**.
+* Se você configurou **fila ou bot** para depois da resposta → a conversa segue para lá: a **fila escolhida** recebe a conversa sem mensagem de transferência, e o **bot escolhido** assume. Se você marcou "Não acionar o bot nem a integração", nem o bot nem as integrações respondem a essa mensagem.
+* Se **"Fechar o ticket automaticamente"** estiver ligado → o atendimento é fechado logo após a resposta, antes de qualquer encaminhamento.
