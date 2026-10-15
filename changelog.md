@@ -1,5 +1,59 @@
 ## Changelog e Atualizações
 
+# 🚀 Versão 3.1.5 BETA
+
+## 🐛 Correções
+
+- **E-mail:** correção na opção de ignorar contato
+- **E-mail:** correção de problema que marcava como lido um ticket aberto
+- **Wuzapi:** melhorias na confirmação de leitura
+- **Reações:** correção para evitar que uma reação abra um novo ticket
+
+## 📅 Agenda
+
+- **Lembretes:** novas configurações para definir o comportamento dos bots após o envio dos lembretes
+- **Serviços:** opção para adicionar a descrição do serviço
+
+## 🗂️ Gerenciamento de arquivos
+
+- **Exclusão de arquivos:** alterações no processo de exclusão para executar as operações em segundo plano e informar o andamento no frontend. A melhoria visa facilitar o acompanhamento, principalmente quando existem muitos arquivos e o processo é demorado, evitando a sensação de que a exclusão não está sendo realizada
+
+## ⚙️ Personalização SaaS
+
+- **API não oficial:** possibilidade de personalizar o aviso exibido no painel SaaS sobre o uso da API não oficial
+
+## 📢 Campanhas
+
+- **Múltiplos números:** suporte à seleção de mais de um WhatsApp para alternar entre números durante a campanha
+- **Repetição automática:** opção para repetir campanhas automaticamente
+
+## 🤖 Chatbot
+
+- **Importação de fluxos:** possibilidade de importar um fluxo de bot diretamente no editor
+
+## 🔌 API Plus
+
+- **Recuperação de mensagens:** recuperação automática de mensagens perdidas em webhooks
+
+## 👥 Distribuição Automática
+
+- **Novo método de distribuição por porcentagem:** divide os novos atendimentos entre vendedores específicos, conforme as porcentagens definidas (exemplo: 30% e 70%)
+- **Clientes recorrentes:** quando o contato já possui um vendedor em sua carteira, o atendimento é direcionado diretamente para ele, sem participar da divisão por porcentagem. Somente contatos que ainda não possuem vendedor na carteira entram na distribuição
+- **Direcionamento para o vendedor da carteira:** opção para enviar o atendimento ao vendedor que já possui o contato em sua carteira
+- **Registro automático na carteira:** ao distribuir um atendimento, o contato é registrado na carteira do vendedor selecionado, para que os próximos atendimentos sejam direcionados diretamente a ele. Contatos que já possuem vendedor na carteira não têm essa associação alterada
+- **Rodízio por ordem de cadastro:** novo método de distribuição por rodízio, seguindo a ordem de cadastro
+- **Logs de distribuição:** novos registros das decisões de rodízio para facilitar a identificação e a análise de erros
+
+## 🛠️ Melhorias técnicas
+
+- **Mensagens inválidas:** possibilidade de acessar o JSON das mensagens inválidas, facilitando a identificação e a análise de problemas futuros
+- **WABA:** registro de eventos `account_update` para consultas futuras
+
+## 📇 Contatos e Kanban
+
+- **Ações em massa:** novas opções de ações em massa nas listas de contatos, no Kanban e no Kanban Pro
+- **Kanban Pro:** possibilidade de importar contatos diretamente para uma lane do Kanban Pro
+
 # 🚀 Versão 3.1.4 BETA
 
 ## ⚠️ Atenção
