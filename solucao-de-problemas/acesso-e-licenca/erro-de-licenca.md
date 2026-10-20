@@ -1,9 +1,40 @@
 ---
-description: An error occurred while validating the license
+description: An error occurred while validating the license / O sistema recebe mensagens, mas não envia
 icon: key
 ---
 
 # Erro de Licença
+
+## 📭 O sistema recebe mensagens, mas não envia
+
+> **Relato típico do cliente:**
+> "Meu Whazing só está chegando mensagens, não envia."
+
+Esse sintoma — as mensagens **chegam normalmente**, mas **nenhuma é enviada** — é um dos efeitos mais comuns de **licença bloqueada** e, na maioria das vezes, **não é um problema do WhatsApp nem do canal**.
+
+Quando a licença **Premium** fica bloqueada — por **falta de pagamento** ou por **erro na validação** — o sistema:
+
+* mantém a **recepção** de mensagens funcionando;
+* **interrompe o envio de mensagens imediatamente**, até que a licença volte a ser válida.
+
+O mesmo vale quando a tela do sistema exibe o erro *"An error occurred while validating the license"* (detalhes abaixo).
+
+### ✅ Como verificar o status da licença
+
+1. Acesse o **Painel SaaS**.
+2. Verifique as informações da licença da sua empresa — **se houver qualquer erro de licença, ele será exibido nele** (bloqueio por pagamento em atraso, falha de validação etc.).
+
+Depois, siga o cenário que se encaixa na sua situação:
+
+| O que você vê no Painel SaaS                        | O que fazer                                                              |
+| --------------------------------------------------- | ------------------------------------------------------------------------ |
+| Pagamento em atraso / licença bloqueada             | Regularize o pagamento e clique em **"Reiniciar Whazing"** → passo 🔹 1   |
+| Sem problema de pagamento, mas o envio não volta    | Provável erro de validação (IP, firewall ou DNS) → passo 🔹 3             |
+| Não deseja mais manter o Premium                    | Voltar para a versão Free de forma segura → passo 🔹 2                    |
+
+> 💡 **Importante:** após **qualquer** regularização da licença, clique em **"Reiniciar Whazing"** no Painel SaaS para recarregar a licença — só regularizar o pagamento não reativa o envio automaticamente.
+
+***
 
 ## ❗ Erro ao validar a licença
 

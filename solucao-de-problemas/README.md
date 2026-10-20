@@ -29,9 +29,10 @@ Se algo não está funcionando, siga esta ordem:
 
 ### 🔑 Acesso e Licença
 
-| Problema                             | Onde resolver                                          |
-| ------------------------------------ | ------------------------------------------------------ |
-| Erro de licença ao acessar o sistema | [Erro de licença](acesso-e-licenca/erro-de-licenca.md) |
+| Problema                                                    | Onde resolver                                                    |
+| ----------------------------------------------------------- | ----------------------------------------------------------------- |
+| O sistema recebe mensagens, mas não envia nada              | [Erro de licença](acesso-e-licenca/erro-de-licenca.md)             |
+| Erro de licença ao acessar o sistema                        | [Erro de licença](acesso-e-licenca/erro-de-licenca.md)             |
 
 ### 🛠️ Servidor e Banco de Dados
 
