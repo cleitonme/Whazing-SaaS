@@ -193,6 +193,7 @@
   * [📊 Relatórios](funcionalidades/relatorios/README.md)
     * [Dashboard de SLA](funcionalidades/relatorios/dashboard-de-sla.md)
     * [Meta de Vendas](funcionalidades/relatorios/meta-de-vendas.md)
+    * [Meta Ads Analytics](funcionalidades/relatorios/meta-ads.md)
     * [Palavras Monitoradas](funcionalidades/relatorios/palavras-monitoradas.md)
   * [Kanban](funcionalidades/kanban.md)
   * [Kanban Pro](funcionalidades/kanban-pro/README.md)

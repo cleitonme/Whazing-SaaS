@@ -34,6 +34,7 @@ Os dois grupos mais recentes da API são:
 
 * **[Agendamentos](agendamentos.md)** — programar o envio futuro de uma mensagem e depois consultar ou cancelar;
 * **[Agenda](agenda.md)** — criar compromissos reais na Agenda do sistema (com profissional, serviço e verificação de conflito de horário);
-* **[Anotações](anotacoes.md)** — gerenciar por API as anotações internas dos tickets (criar por ticketId ou número, consultar, listar por ticket/contato e apagar), incluindo as menções a usuários e equipes.
+* **[Anotações](anotacoes.md)** — gerenciar por API as anotações internas dos tickets (criar por ticketId ou número, consultar, listar por ticket/contato e apagar), incluindo as menções a usuários e equipes;
+* **Lanes do CRM (Kanban)** — `GET /crm` lista as colunas/etapas do CRM clássico da empresa, com os mesmos IDs usados em `POST /updatecrm` e `GET /contacts/crm/{id}` — veja em [Outros](outros.md).
 
 > ⚠️ Novos endpoints podem demorar a chegar nesta documentação — **sempre baixe o modelo Postman** pelo sistema (Configurações → Canais → API) para ver a versão mais atual.

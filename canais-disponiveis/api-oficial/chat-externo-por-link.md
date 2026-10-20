@@ -54,10 +54,13 @@ A página do cliente é simples e parecida com o WhatsApp:
 * **Enviar mensagens de texto**, com **emojis**;
 * **Enviar imagens** (tocar para ampliar) e **documentos em PDF**;
 * **Gravar e enviar áudio**;
+* **Cartões interativos** — botões, listas de opções e carrossel enviados pelo atendente/bot funcionam na página (o cliente clica e responde);
+* **Cartão de pagamento** — quando o atendente envia uma cobrança/chave Pix, a página mostra o cartão com a chave e o botão **copiar**;
+* **Cartão de contato** e **localização** — mensagens estruturadas aparecem formatadas;
 * Se ativado, **informar os 4 últimos números do telefone** antes de entrar;
 * Quando o atendimento é **encerrado**, a página avisa: _"Este atendimento foi encerrado. Se precisar de algo, mande uma mensagem no WhatsApp novamente."_
 
-> ⚠️ **Limitações:** a página aceita **texto, imagem, PDF e áudio**. Recursos exclusivos do WhatsApp — como stickers, respostas citadas com menu completo, localização em tempo real, PIX e botões de template — não fazem parte do chat externo. Se o link expirar, a página informa: _"Este link não é mais válido. Peça um novo link ao atendente."_
+> ⚠️ **Limitações:** a página aceita **texto, imagem, PDF, áudio** e as mensagens estruturadas listadas acima (**botões, listas, carrossel, contato, localização e cartão de pagamento/Pix**). Recursos exclusivos do WhatsApp — como stickers e a localização **em tempo real** — não fazem parte do chat externo. Se o link expirar, a página informa: _"Este link não é mais válido. Peça um novo link ao atendente."_
 
 ***
 

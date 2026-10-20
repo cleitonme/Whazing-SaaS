@@ -23,8 +23,8 @@ As seções disponíveis são:
 | **Ligações**    | Chamadas e telefonia (SIP, WaCalls etc.)                                              |
 | **Kanban Pro**  | Cards e movimentações do Kanban Pro                                                   |
 | **Kanban CRM**  | Oportunidades e funil do Kanban CRM                                                   |
-| **Marketing**   | Campanhas, tracking links e resultados de disparos                                    |
-| **Financeiro**  | Custos, cobranças e o **Meta de Vendas** — veja [Meta de Vendas](meta-de-vendas.md)   |
+| **Marketing**   | Campanhas, tracking links, resultados de disparos e o **Meta Ads Analytics** — veja [Meta Ads Analytics](meta-ads.md) |
+| **Financeiro**  | Custos, cobranças e o **Meta de Vendas** — veja [Meta de Vendas](meta-de-vendas.md) |
 | **WebChat**     | **Visitantes do WebChat**: quem está no site em tempo real, histórico e mapa — veja o guia do [WebChat](../../canais-disponiveis/webchat.md#️-visitantes-do-webchat--quem-está-no-site-agora) |
 | **Auditoria**   | Histórico de alterações e exclusões (logs de auditoria)                               |
 | **Agenda**      | Agendamentos: **Agenda do Dia**, **Agendamentos**, **Agenda por profissional e serviço** e **Estatísticas da Agenda** — veja [Relatórios da Agenda](../agenda/relatorios-da-agenda.md) |
