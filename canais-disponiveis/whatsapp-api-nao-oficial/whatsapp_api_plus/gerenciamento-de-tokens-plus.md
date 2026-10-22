@@ -14,7 +14,7 @@ Assim, o cliente consegue cadastrar e gerenciar canais **sem precisar informar d
 
 ## 📍 Onde encontrar essa opção?
 
-Essa funcionalidade está disponível no **Painel SaaS**, na aba **Canais**.
+Essa funcionalidade está disponível no **Painel SaaS - Integracoes** - **WhatsApp Plus**
 
 ***
 
