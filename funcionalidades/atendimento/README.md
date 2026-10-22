@@ -26,6 +26,10 @@ Aqui você encontra as ferramentas usadas **durante e depois** do atendimento: a
 [despedida.md](../../docs/modulos/despedida.md)
 {% endcontent-ref %}
 
+{% content-ref url="fechar-e-apagar-tickets-em-massa.md" %}
+[fechar-e-apagar-tickets-em-massa.md](fechar-e-apagar-tickets-em-massa.md)
+{% endcontent-ref %}
+
 {% content-ref url="../../docs/modulos/motivos-de-encerramento-de-tickets.md" %}
 [motivos-de-encerramento-de-tickets.md](../../docs/modulos/motivos-de-encerramento-de-tickets.md)
 {% endcontent-ref %}

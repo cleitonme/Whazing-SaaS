@@ -130,6 +130,7 @@
     * [Motivos de Encerramento](docs/modulos/motivos-de-encerramento-de-tickets.md)
     * [Chave PIX](funcionalidades/atendimento/chave-pix.md)
     * [Formatação de Texto](funcionalidades/atendimento/formatacao-de-texto.md)
+    * [Fechar e Apagar Tickets em Massa](funcionalidades/atendimento/fechar-e-apagar-tickets-em-massa.md)
     * [Assistente IA — Menu Copiloto](funcionalidades/atendimento/assistente-ia-menu-copiloto/README.md)
       * [Configuração dos Provedores de IA](funcionalidades/atendimento/assistente-ia-menu-copiloto/configuracao-dos-provedores-de-ia.md)
       * [Melhorar Texto de Atendimento](funcionalidades/atendimento/assistente-ia-menu-copiloto/melhorar_texto_atendimento.md)
