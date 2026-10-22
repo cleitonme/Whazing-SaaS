@@ -14,6 +14,7 @@ A tela de **Contatos** reúne todos os clientes que já conversaram com a sua em
 
 ## 📄 Páginas desta seção
 
+* [Modal de Edição de Contatos](modal-de-edicao-de-contatos.md) — guia do cadastro/edição de contatos: abas, campos, preferências e salvamento
 * [Importar Contatos](importarcontatos.md) — cadastre vários contatos de uma vez usando um arquivo CSV
 * [Arquivos do Contato](arquivos-do-contato.md) — veja as mídias e arquivos de cada conversa
 * [Histórico de Mídias por Contato](historico-de-midias-por-contato.md) — consulte o histórico de mídias de um contato específico
