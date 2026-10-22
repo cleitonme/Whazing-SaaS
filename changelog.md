@@ -1,5 +1,18 @@
 ## Changelog e Atualizações
 
+# 🚀 Versão 3.1.6 BETA
+
+## 🐛 Correções
+
+- **Agenda:** correção de problema que impedia a exibição do nome do cliente ao abrir agendamentos já realizados
+- **WallCalls:** correção na leitura do QR Code no modo escuro
+- **Tarefas:** correção nos calendários de tarefas
+
+## 📧 E-mail
+
+- **Teste de conexão:** exibição de mensagens de erro mais detalhadas em caso de falha
+- **Diagnóstico automático:** teste automático de portas comuns para auxiliar na identificação e na resolução de erros de configuração
+
 # 🚀 Versão 3.1.5 BETA
 
 ## 🐛 Correções
