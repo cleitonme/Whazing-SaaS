@@ -47,7 +47,7 @@ A tela apresenta a lista de invoices com as seguintes informações:
 
 A lista possui paginação (**Registros por página**).
 
----
+***
 
 ## ⚙️ Configurações de Pagamento
 
@@ -109,14 +109,9 @@ Valor definitivo — não é promoção.
 
 No Whazing você pode receber pagamentos via:
 
-✅ [InfinitePay](infinitepay.md)
-✅ [Pushin Pay (Pix R$ 0,30 fixo)](configurar-pushin-pay.md)
-✅ [Mercado Pago](configurar-mercado-pago.md)
-✅ [Asaas](configurar-asaas.md)
-✅ [EFI Bank](configurar-efi-bank.md)
-✅ [Stripe](stripe.md)
+✅ [InfinitePay](infinitepay.md) ✅ [Pushin Pay (Pix R$ 0,30 fixo)](configurar-pushin-pay.md) ✅ [Mercado Pago](configurar-mercado-pago.md) ✅ [Asaas](configurar-asaas.md) ✅ [EFI Bank](configurar-efi-bank.md) ✅ [Stripe](stripe.md)
 
----
+***
 
 ## 🙋 Perguntas Frequentes (FAQ)
 
@@ -124,13 +119,13 @@ No Whazing você pode receber pagamentos via:
 
 **R:** Verifique se o cadastro da empresa tem os campos obrigatórios preenchidos:
 
-- ✅ **Nome** completo
-- ✅ **Telefone** com DDD
-- ✅ **E-mail** válido
+* ✅ **Nome** completo
+* ✅ **Telefone** com DDD
+* ✅ **E-mail** válido
 
 Esses campos são essenciais para o correto funcionamento dos pagamentos. Se algum estiver incompleto, o pagamento pode falhar.
 
-Apague a fatura com erro que sistema gera outra automaticamente
+Sempre apague as faturas com erro que o sistema gera outra automaticamente.
 
 ### P: As configurações são diferentes para cada gateway?
 
