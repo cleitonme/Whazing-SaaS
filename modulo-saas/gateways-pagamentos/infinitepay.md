@@ -3,31 +3,98 @@ description: >-
   Com InfinitePay você tem taxa zero no pix e possibilidade de repassar taxas
   pagamento via cartão
 ---
-
 # InfinitePay
 
-Caso ainda não tenha cadastro acesse [https://infinitepay.whazing.com.br](https://infinitepay.whazing.com.br/)&#x20;
+## 🚀 Primeiros Passos (Setup para Leigos)
 
-Para usar muito simples primeiro no aplicativo do InfinitePay caso ainda não tenha você tem que criar uma chave pix para pode receber. Em Área Pix na opção chaves - cadastrar chave.
+Para começar a receber pagamentos via InfinitePay, siga estes passos simples:
 
-Pelo computador acesse [https://app.infinitepay.io](https://app.infinitepay.io)&#x20;
+### 1. Cadastre-se no InfinitePay
 
-<figure><img src="../../.gitbook/assets/image (21).png" alt=""><figcaption></figcaption></figure>
+- Se ainda não tem cadastro, acesse o [aplicativo do InfinitePay](https://infinitepay.whazing.com.br/) e crie uma chave Pix
+- No app, vá em **Área Pix → Chaves → Cadastrar chave** para criar sua chave Pix
 
-No Whazing, acesse **Painel SaaS → Comercial → Receitas → Configurações de Pagamento**, selecione o gateway **InfinitePay** e informe o **Infinite Tag**. Essa informação aparece ali depois do `$` (no meu caso `informeurer`).
+### 2. Acesse o painel do Whazing
 
-Para ajustar taxas vá até configurações - Link integrado.&#x20;
+- No Whazing, acesse: **Painel SaaS → Comercial → Receitas → Configurações de Pagamento**
+- Selecione o gateway **InfinitePay**
+- Informe o **Infinite Tag** (aparece após o `$` no painel, ex: `informeurer`)
 
-Desative opção etapa de endereço
+### 3. Configure as taxas e meios de pagamento
 
-<figure><img src="../../.gitbook/assets/image (22).png" alt=""><figcaption></figcaption></figure>
+No painel do InfinitePay (em https://app.infinitepay.io/):
 
-Clique meios de pagamento escolha se quer repassar taxas cartão ou não
+- Ative a opção **"Habilitar Checkout Integrado"**
+- **Desative** a etapa de endereço
+- Em **"Meios de pagamento"**, configure quais métodos estão disponíveis e as taxas
 
-<figure><img src="../../.gitbook/assets/image (23).png" alt=""><figcaption></figcaption></figure>
+> ⚠️ **Importante:** Não é necessário configurar API Keys. O acesso ao Whazing é feito exclusivamente pela **Infinite Tag**.
 
-Pronto seu whazing está pronto para receber pagamento. Caso cliente feche tela de pagamento antes de finalizar e voltar para site whazing automaticamente o pagamento não será renovado automaticamente.
+Pronto! Seu Whazing está pronto para receber pagamentos.
 
+---
 
+## ⚠️ Faturas com "Erro Processar Pagamento"
 
-Para quem usa PerfexCRM vendemos modulo com suporte infinitipay
+Se você está tendo faturas que dão "erro processar pagamento", verifique o cadastro da empresa:
+
+### 📋 Cadastro da Empresa é Obrigatório
+
+Para o correto funcionamento dos pagamentos, a empresa deve ter os seguintes campos **corretamente cadastrados**:
+
+- ✅ **Nome** completo
+- ✅ **Telefone** com DDD
+- ✅ **E-mail** válido
+
+Se algum desses campos estiver incompleto ou errado, o pagamento pode falhar. Verifique e corrija no cadastro da empresa no painel SaaS.
+
+- Apague fatura com erro, o sistema gera fatura nocamente automaticamente
+
+---
+
+## 📋 Perguntas Frequentes (FAQ)
+
+### P: Preciso configurar webhook no InfinitePay?
+**R:** Não. A configuração é simplificada. A única coisa que você precisa é da **Infinite Tag**, que é configurada no painel do Whazing. O restante da configuração (gerar Pix, definir taxas, etc.) é feita diretamente no painel do InfinitePay em https://app.infinitepay.io/.
+
+### P: Como ativar o Checkout Integrado?
+**R:** No painel do InfinitePay (https://app.infinitepay.io/):
+- Vá em **Checkout → Configurações**
+- Ative a opção **"Habilitar Checkout Integrado"**
+- Desative a **"Etapa de endereço"**
+- Em **"Meios de pagamento"**, configure os métodos disponíveis e as taxas
+
+### P: Preciso de API Keys para integrar?
+**R:** Não, não utilizamos API Keys. O acesso ao Whazing é feito exclusivamente pela **Infinite Tag**.
+
+### P: O que fazer se a fatura continuar com erro após cadastro completo?
+**R:** Verifique os logs do sistema e confirme que o cadastro da empresa tem nome, telefone e email preenchidos corretamente.
+
+---
+
+## 🔧 Configuração no Painel do InfinitePay
+
+Todas as configurações avançadas são feitas diretamente no painel do InfinitePay:
+
+Acesse: **https://app.infinitepay.io/**
+
+1. **Checkout - Configurações**
+   - Ative: **"Habilitar Checkout Integrado"**
+   - Desative: **"Etapa de endereço"**
+
+2. **Meios de pagamento**
+   - Configure quais métodos estão disponíveis
+   - Defina as taxas para cada meio
+
+3. **Geração de Pix**
+   - As configurações de Pix são feitas nativamente no InfinitePay
+
+---
+
+## ✅ Pronto para Receber
+
+Depois de seguir todos os passos acima, seu Whazing está pronto para receber pagamentos via InfinitePay. Lembre-se:
+
+- O cliente precisa completar o pagamento na tela do InfinitePay
+- O cadastro da empresa deve ter nome, telefone e email preenchidos
+- O Infinite Tag deve estar informado no painel do Whazing
