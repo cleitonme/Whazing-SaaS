@@ -106,15 +106,14 @@ Para obter melhor estabilidade e comportamento mais realista da conexão:
 
 ### 💰 Preços (tabela clara)
 
-| Plano / Pacote                    |                            Preço |
-| --------------------------------- | -------------------------------: |
-| Whazing Premium — 1 canal (teste) | **Grátis (1 canal para testar)** |
-| Adicional: 1 canal                |                **R$ 5,00 / mês** |
-| Adicional: 10 canais              |               **R$ 35,00 / mês** |
-| Adicional: 20 canais              |               **R$ 60,00 / mês** |
-| Adicional: 30 canais              |               **R$ 80,00 / mês** |
-| Adicional: 40 canais              |               **R$ 95,00 / mês** |
-| Adicional: 50 canais              |              **R$ 105,00 / mês** |
+| Plano / Pacote       |               Preço |
+| -------------------- | ------------------: |
+| Adicional: 1 canal   |   **R$ 5,00 / mês** |
+| Adicional: 10 canais |  **R$ 35,00 / mês** |
+| Adicional: 20 canais |  **R$ 60,00 / mês** |
+| Adicional: 30 canais |  **R$ 80,00 / mês** |
+| Adicional: 40 canais |  **R$ 95,00 / mês** |
+| Adicional: 50 canais | **R$ 105,00 / mês** |
 
 > Observação: **cada canal precisa de um token de acesso** Observação: **Api plus somente para clientes versão premium**
 
@@ -153,9 +152,6 @@ Para obter melhor estabilidade e comportamento mais realista da conexão:
 ***
 
 ### ❓ Perguntas frequentes (FAQ)
-
-**P: Posso testar um canal antes de pagar?**\
-R: Sim — o plano Premium costuma oferecer **1 canal grátis para teste**
 
 **P: Por que paguei e apareceu de novo na fatura?**\
 R: Se comprou perto do vencimento, é possível que tenha sido cobrado na compra e, por segurança do sistema de faturas, o valor também tenha sido incluído na fatura da VPS. Por isso a recomendação de programar a compra.
