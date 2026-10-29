@@ -4,8 +4,6 @@ icon: cloud
 
 # Armazenamento S3
 
-A partir da **Versão 2.6.0**, o sistema passa a suportar **armazenamento externo via S3** (como AWS S3, Backblaze B2, MinIO, entre outros).
-
 Esse recurso é utilizado para armazenar:
 
 * 📷 Fotos
