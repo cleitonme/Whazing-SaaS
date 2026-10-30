@@ -16,6 +16,8 @@ Na prática, você cria um **par de canais**: uma conexão oficial e uma conexã
 
 **Para que isso é útil?** A API Oficial tem recursos e confiabilidade que a Não Oficial não tem, mas cada mensagem enviada por ela tem custo. A API Não Oficial não tem custo por mensagem. Com o Modo Híbrido, é possível dividir os envios entre as duas — por exemplo, deixando as mensagens mais importantes na Oficial e o restante na Não Oficial.
 
+> ⚠️ **Antes de ativar, saiba disto:** com o par híbrido ativo, o atendimento passa a ser feito **pelo Whazing**. Mensagens enviadas por fora — pelo **WhatsApp Web** ou pelo **aplicativo do celular** — **não aparecem mais no sistema**. Isso é intencional: evita que a mesma mensagem apareça duplicada. Veja [Mensagens enviadas por fora do Whazing](#mensagens-enviadas-por-fora-do-whazing-whatsapp-web-ou-celular).
+
 <figure><img src="../.gitbook/assets/modohibrido.png" alt=""><figcaption></figcaption></figure>
 
 ***
@@ -83,6 +85,12 @@ O Modo Híbrido depende da conexão em **Coexistência**. Sem ela, o mesmo núme
 
 Utilizar uma conexão Não Oficial **continua envolvendo riscos**, mesmo com o Modo Híbrido ativo. O recurso divide os envios, mas não elimina os riscos da conexão Não Oficial.
 
+### Não atenda o número pelo WhatsApp Web ou pelo celular
+
+Com o Modo Híbrido ativo, o atendimento deve acontecer **dentro do Whazing**. Mensagens enviadas pelo WhatsApp Web ou pelo aplicativo do celular **não são registradas no sistema** — nem na conversa, nem nos relatórios de atendimento.
+
+Se parte da equipe continuar respondendo por fora, o histórico da conversa fica incompleto e o cliente pode receber respostas desencontradas. Oriente todos a usar o Whazing.
+
 ### Não faça envios abusivos
 
 Grandes volumes de mensagens e mensagens para pessoas que não esperam recebê-las podem **aumentar os riscos** de bloqueio ou restrição — em qualquer tipo de conexão. Envie sempre para quem autorizou e no volume adequado ao seu atendimento.
@@ -97,8 +105,34 @@ Quando você cria um par no Modo Híbrido, cada lado fica responsável por uma p
 
 * **Todas as mensagens recebidas são processadas pela API Oficial.**
 * Mensagens individuais que chegarem pela conexão Não Oficial são **ignoradas** — de propósito — para que a mesma conversa não apareça duas vezes no atendimento.
+* Mensagens que **você mesmo envia por fora do Whazing** (WhatsApp Web ou aplicativo do celular) também são **ignoradas** — elas **não aparecem** no sistema. Veja a explicação completa logo abaixo.
 
 > 💡 Isso é esperado, não é um erro: no Modo Híbrido, a conexão Não Oficial não é usada para receber mensagens individuais. Ela é usada principalmente para **envio** e para **receber mensagens de grupos**.
+
+### Mensagens enviadas por fora do Whazing (WhatsApp Web ou celular)
+
+No Modo Híbrido, quem atende o número é o **Whazing**. Se alguém da sua equipe responder pelo **WhatsApp Web** ou pelo **aplicativo do celular**, essa mensagem **sai do número, mas não é registrada no sistema** — ela é ignorada de propósito.
+
+**Por que isso acontece?**
+
+O Whazing envia pela **conexão Não Oficial**, que se comporta como o próprio WhatsApp Web. Para essa conexão, não existe nenhuma identificação que diga se a mensagem saiu do **sistema** ou de **outro aparelho**: as duas coisas chegam do mesmo jeito, como “mensagem enviada por mim”.
+
+Se o sistema aceitasse essas mensagens, **todas as mensagens que ele mesmo envia voltariam também como recebidas** — e cada envio apareceria duplicado na conversa. Como não há como separar uma coisa da outra, o sistema ignora o que vem por esse caminho.
+
+Já a **conexão Oficial** identifica as mensagens de forma **diferente da Não Oficial**. É essa diferença que permite ao sistema tratar a entrada pela Oficial sem esse risco de duplicação.
+
+> ⚠️ **Importante:** essa é uma característica do Modo Híbrido, **não um defeito**. Se a sua equipe precisa que o atendimento fique registrado no sistema, as mensagens devem ser enviadas **pelo próprio Whazing**.
+>
+> 💡 Antes de criar o par híbrido, um canal Oficial em Coexistência usado sozinho mostrava no sistema as mensagens enviadas pelo WhatsApp Web ou pelo celular. **É ao ativar o par que esse comportamento muda** — por isso a sensação de que “o sistema passou a ignorar” essas mensagens.
+
+### Resumo: o que aparece no Whazing com o Modo Híbrido ativo
+
+| Situação                                               | Aparece no Whazing?                         |
+| ------------------------------------------------------ | ------------------------------------------- |
+| Mensagem **recebida** de um cliente                    | ✅ Sim — entra pela API Oficial              |
+| Mensagem de **grupo**                                  | ✅ Sim — entra pela API Não Oficial          |
+| Mensagem **enviada pelo Whazing**                      | ✅ Sim — o sistema registra o próprio envio  |
+| Mensagem **enviada pelo WhatsApp Web ou pelo celular** | ❌ Não — é ignorada de propósito             |
 
 ### Grupos
 
@@ -243,6 +277,12 @@ Nesse caso, **não utilize o Modo Híbrido**. O recurso foi feito para o mesmo n
 ### "Meu número não está em Coex"
 
 O Modo Híbrido depende da conexão em **Coexistência**. Veja como configurar em [Configuração do WABA Incorporado (Coexistência)](api-oficial/configuracao-do-waba-incorporado-coexistencia.md).
+
+### "Enviei pelo WhatsApp Web / celular e a mensagem não apareceu no Whazing"
+
+Esse é o comportamento esperado do Modo Híbrido. Mensagens enviadas fora do Whazing **não são registradas** no sistema, porque não há como diferenciá-las das mensagens que o próprio sistema envia pela conexão Não Oficial — e aceitá-las duplicaria todos os envios. Veja [Mensagens enviadas por fora do Whazing](#mensagens-enviadas-por-fora-do-whazing-whatsapp-web-ou-celular).
+
+Para que o atendimento fique registrado, envie sempre **pelo Whazing**.
 
 ### "Qual porcentagem devo usar?"
 
