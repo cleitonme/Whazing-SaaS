@@ -1,5 +1,25 @@
 ## Changelog e Atualizações
 
+# 🚀 Versão 3.1.7 FINAL
+
+## 🚨 Correção crítica de segurança
+
+- **Recuperação de senha:** correção de uma vulnerabilidade grave que permitia a invasão de contas por meio do sistema de recuperação de senha.
+
+*ATUALIZAÇÃO IMEDIATA RECOMENDADA*
+
+**Atenção:** atualize o sistema imediatamente para a versão mais recente para garantir a correção dessa vulnerabilidade.
+
+**Camada adicional de proteção:** recomendamos também ativar o Cloudflare Turnstile para aumentar a segurança e proteger o sistema contra acessos automatizados (bots).
+
+Documentação: https://doc.whazing.com.br/modulo-saas-administracao/modulo-saas/ativar-cloudflare-turnstile-protecao-anti-bot
+
+## 🐛 Correções
+
+- **Lista de contatos:** correção do filtro que não funcionava ao utilizar a opção de limpar
+- **Kanban:** correção de problema visual em que as etiquetas desapareciam ao trocar de lane, voltando a aparecer somente após atualizar a página (F5)
+- **Nova Campanha:** correção no envio de mensagens contendo somente botões
+
 # 🚀 Versão 3.1.6 BETA
 
 ## 🐛 Correções
