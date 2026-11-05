@@ -1,5 +1,27 @@
 ## Changelog e Atualizações
 
+# 🚀 Versão 3.1.9 FINAL
+
+## 🔒 Segurança
+
+- **Novas correções de segurança:** aplicação de novos ajustes e correções de segurança. Atualização prioritária e recomendada.
+
+---
+
+## ❤️ Um recado importante aos nossos clientes
+
+Estamos passando por um momento que exige atenção redobrada e muito trabalho para reforçar ainda mais a segurança e a estabilidade da nossa plataforma.
+
+Sabemos que mudanças e atualizações podem gerar alguns transtornos, mas queremos tranquilizar vocês: estamos trabalhando continuamente para superar essa fase e entregar um sistema cada vez mais seguro, confiável e estável.
+
+Pedimos um pouco de compreensão e confiança neste momento. Estamos cuidando de tudo para que, em breve, possamos voltar ainda mais fortes.
+
+**Nosso compromisso continua sendo o mesmo: cuidar da sua operação e oferecer a melhor experiência possível.**
+
+Agradecemos de coração pela parceria e confiança! ❤️
+
+**Equipe Whazing**
+
 🚀 Versão 3.1.8 FINAL
 
 🔒 Segurança
