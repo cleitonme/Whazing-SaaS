@@ -1,8 +1,10 @@
 ## Changelog e Atualizações
 
-# 🚀 Versão 3.1.8 FINAL
+🚀 Versão 3.1.8 FINAL
 
-- atualização segurança do node
+🔒 Segurança
+
+Node.js: atualização da versão do Node.js para reforçar a segurança e manter o sistema atualizado
 
 # 🚀 Versão 3.1.7 FINAL
 
