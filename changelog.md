@@ -1,5 +1,9 @@
 ## Changelog e Atualizações
 
+# 🚀 Versão 3.1.8 FINAL
+
+- atualização segurança do node
+
 # 🚀 Versão 3.1.7 FINAL
 
 ## 🚨 Correção crítica de segurança
