@@ -1,5 +1,12 @@
 ## Changelog e Atualizações
 
+# 🚀 Versão 3.1.10 FINAL
+
+## 🔒 Segurança
+
+- **Novas correções de segurança:** aplicação de novos ajustes e correções para reforçar a proteção do sistema. Atualização prioritária e recomendada.
+- **Kanban Pro:** correção de problemas relacionados às permissões de acesso e utilização dos recursos.
+
 # 🚀 Versão 3.1.9 FINAL
 
 ## 🔒 Segurança
