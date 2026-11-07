@@ -26,22 +26,20 @@ Por questões de manutenção, compatibilidade e evolução do sistema, o Bailey
 
 **Se você utiliza Baileys e percebeu algum destes problemas após atualizar o Whazing:**
 
-- WhatsApp fica tentando conectar e não conecta.
-- QR Code não é gerado.
-- Canal deixou de conectar depois de uma atualização.
-- Sessão apresenta erros ou não consegue autenticar.
+* WhatsApp fica tentando conectar e não conecta.
+* QR Code não é gerado.
+* Canal deixou de conectar depois de uma atualização.
+* Sessão apresenta erros ou não consegue autenticar.
 
 Isso pode estar relacionado à descontinuação do Baileys.
 
 **Nossa recomendação é migrar para o WuzAPI (WhatsMeow).**
 
-Documentação:
-https://doc.whazing.com.br/canais-disponiveis/whatsapp-api-nao-oficial/whatsapp-wuzapi
+Documentação: [https://doc.whazing.com.br/canais-disponiveis/whatsapp-api-nao-oficial/whatsapp-wuzapi](https://doc.whazing.com.br/canais-disponiveis/whatsapp-api-nao-oficial/whatsapp-wuzapi)
 
 Caso realmente precise continuar utilizando o Baileys, existe a possibilidade de reativá-lo manualmente no servidor, mas não recomendamos essa alternativa e não garantimos seu funcionamento nas versões atuais.
 
-Consulte as instruções:
-https://doc.whazing.com.br/canais-disponiveis/canais-disponiveis
+Consulte as instruções: [https://doc.whazing.com.br/canais-disponiveis/canais-disponiveis](https://doc.whazing.com.br/canais-disponiveis/canais-disponiveis)
 
 ### Boas práticas para reduzir problemas
 
