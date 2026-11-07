@@ -18,6 +18,31 @@ Nas APIs não oficiais, alguns cenários são mais suscetíveis a falhas de sinc
 * Leitura do QR Code em múltiplos sistemas simultaneamente.
 * Uso simultâneo com WhatsApp Web e outras integrações.
 
+### Atenção: WhatsApp Baileys foi descontinuado
+
+O WhatsApp Baileys é uma integração antiga que foi descontinuada nas versões mais recentes do Whazing.
+
+Por questões de manutenção, compatibilidade e evolução do sistema, o Baileys vem desativado por padrão nas instalações atuais.
+
+**Se você utiliza Baileys e percebeu algum destes problemas após atualizar o Whazing:**
+
+- WhatsApp fica tentando conectar e não conecta.
+- QR Code não é gerado.
+- Canal deixou de conectar depois de uma atualização.
+- Sessão apresenta erros ou não consegue autenticar.
+
+Isso pode estar relacionado à descontinuação do Baileys.
+
+**Nossa recomendação é migrar para o WuzAPI (WhatsMeow).**
+
+Documentação:
+https://doc.whazing.com.br/canais-disponiveis/whatsapp-api-nao-oficial/whatsapp-wuzapi
+
+Caso realmente precise continuar utilizando o Baileys, existe a possibilidade de reativá-lo manualmente no servidor, mas não recomendamos essa alternativa e não garantimos seu funcionamento nas versões atuais.
+
+Consulte as instruções:
+https://doc.whazing.com.br/canais-disponiveis/canais-disponiveis
+
 ### Boas práticas para reduzir problemas
 
 #### Mantenha o celular sempre conectado
