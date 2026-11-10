@@ -154,4 +154,7 @@ Primeiras telas que ajudam o novo usuário a configurar o sistema rapidamente, c
 ## ❓ Ainda com dúvidas?
 
 * Consulte a [Solução de Problemas](solucao-de-problemas/).
-* Entre no grupo de suporte e envie o máximo de informações possível (o que estava fazendo, mensagem de erro, prints).
+* Fale com o atendimento oficial e envie o máximo de informações possível (o que estava fazendo, mensagem de erro, prints):
+  * 🌐 Site de contato: [whazing.com.br/#contact](https://www.whazing.com.br/#contact)
+  * 📱 WhatsApp / telefone: [+55 48 3197-0877](https://wa.me/554831970877) ou [+55 48 3197-0599](https://wa.me/554831970599)
+  * 🕘 Segunda a sexta-feira, das 09h às 17h (horário de Brasília – BRT)

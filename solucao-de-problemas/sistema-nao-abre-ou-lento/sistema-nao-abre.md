@@ -203,11 +203,14 @@ Se aparecer algo como:
 
 ***
 
-## 🆘 Grupo de suporte
+## 🆘 Canais oficiais de atendimento
 
-Se mesmo após seguir todos os passos o problema continuar:
+Se mesmo após seguir todos os passos o problema continuar, fale com o atendimento oficial:
 
-👉 Acesse o grupo de suporte
+* 🌐 **Site de contato:** [whazing.com.br/#contact](https://www.whazing.com.br/#contact)
+* 📱 **WhatsApp / telefone:** [+55 48 3197-0877](https://wa.me/554831970877) ou [+55 48 3197-0599](https://wa.me/554831970599)
+
+**Horário de atendimento:** segunda a sexta-feira, das 09h às 17h (horário de Brasília – BRT).
 
 ### Envie o máximo de informações possíveis:
 

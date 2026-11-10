@@ -4,7 +4,7 @@ Se algo não está funcionando, siga esta ordem:
 
 1. **Identifique o sintoma** na lista abaixo e abra a página correspondente.
 2. Siga os passos **na ordem em que aparecem**.
-3. Se o problema continuar, reúna as informações pedidas no final da página (logs, prints, resultado de comandos) e procure o **grupo de suporte**.
+3. Se o problema continuar, reúna as informações pedidas no final da página (logs, prints, resultado de comandos) e procure o **atendimento oficial** pelos canais indicados no final desta página.
 
 > 💡 **Dica geral:** muitos problemas são causados por **falta de espaço no disco**, **DNS incorreto** ou **containers parados**. Se não sabe por onde começar, veja [Sistema não abre ou parou de funcionar](sistema-nao-abre-ou-lento/sistema-nao-abre.md).
 
@@ -58,3 +58,11 @@ Procure o suporte quando:
 * O sistema não abre **após uma atualização** e você não tem snapshot/backup.
 
 Ao entrar em contato, informe: o que estava fazendo, mensagens de erro, prints e os **logs do sistema** (veja [Acessando Logs](../instalacao-and-vps/acessando_logs.md)).
+
+## 🌐 Canais oficiais de atendimento
+
+* 🌐 **Site de contato:** [whazing.com.br/#contact](https://www.whazing.com.br/#contact)
+* 📱 **WhatsApp / telefone:** [+55 48 3197-0877](https://wa.me/554831970877) ou [+55 48 3197-0599](https://wa.me/554831970599)
+* 🕘 **Horário de atendimento:** segunda a sexta-feira, das 09h às 17h (horário de Brasília – BRT)
+
+Esses são os canais oficiais de contato da empresa.
