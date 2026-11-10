@@ -73,7 +73,7 @@ A versão Premium possui as seguintes características:
 
 * não contém anúncios ou propagandas automáticas
 * exige pagamento recorrente conforme plano vigente
-* o suporte técnico, quando solicitado, é prestado pelos canais oficiais de atendimento e observa o disposto na cláusula 6 destes Termos
+* **não inclui suporte técnico**; serviços de suporte técnico avançado podem ser contratados separadamente, nos termos da cláusula 6 destes Termos
 
 A instalação, atualização, configuração e manutenção da infraestrutura são **responsabilidade exclusiva do cliente**.
 
@@ -114,6 +114,8 @@ Os canais oficiais de atendimento da Whazing são exclusivamente:
 
 Esses são os canais oficiais de contato da empresa. Solicitações recebidas por outros meios — incluindo redes sociais, comunidades de terceiros ou contato direto com colaboradores — não são consideradas canais oficiais de atendimento.
 
+O atendimento prestado nesses canais é **comercial e administrativo** e **não inclui suporte técnico**, nos termos da cláusula 6.
+
 A Whazing mantém também um canal oficial no Telegram ([t.me/whazing](https://t.me/whazing)), destinado exclusivamente à divulgação de novidades e atualizações. Trata-se de um canal de transmissão, sem atendimento, e **não constitui canal de suporte**.
 
 ## 5.2 Atendimento Comercial e Administrativo
@@ -144,23 +146,24 @@ A liberação ou renovação do acesso Premium depende de:
 
 # 6. Suporte Técnico
 
-O atendimento de suporte técnico é realizado exclusivamente pelos canais oficiais de atendimento indicados na cláusula 5.
+**A Whazing não presta suporte técnico.** O uso da plataforma não inclui suporte técnico de qualquer natureza, nem orientações individualizadas de instalação, configuração, atualização ou operação do sistema.
 
-O uso da plataforma **não inclui suporte técnico individual ilimitado**. O suporte prestado destina-se a **orientações gerais e dúvidas comuns** sobre o funcionamento do software.
+Os canais oficiais de atendimento indicados na cláusula 5 destinam-se a questões **comerciais, administrativas e de licenciamento**, como compras, renovações, validação de pagamento e liberação de acesso Premium.
 
-**Não prestamos suporte de instalação, configuração ou atualização do sistema.** O suporte **não inclui**:
+A instalação, a configuração, a atualização e a operação do sistema são de **responsabilidade exclusiva do cliente**, que deve ler a documentação e os manuais do produto e realizar todas as configurações necessárias por conta própria, sem acompanhamento da Whazing.
 
+Não estão incluídos, em nenhuma hipótese:
+
+* instalação do sistema
 * configuração de servidor
 * configuração de DNS
 * configuração de VPS
 * configuração de banco de dados
-* instalação do sistema
 * atualizações do sistema
 * desenvolvimento de funcionalidades
+* orientações individualizadas de uso
 
-A instalação, a configuração e a atualização do sistema são de **responsabilidade exclusiva do cliente**, que deve ler a documentação e os manuais do produto e realizar todas as configurações necessárias por conta própria.
-
-O suporte técnico avançado, quando necessário, depende de **contratação separada, remunerada por hora de atendimento**, nos termos do item 6.1.
+O suporte técnico avançado, quando necessário, **não está incluído** e depende de **contratação separada, remunerada por hora de atendimento**, nos termos do item 6.1.
 
 ## 6.1 Contratação de Suporte Técnico Adicional
 
@@ -170,7 +173,7 @@ Serviços de suporte técnico avançado ou especializado podem ser contratados s
 * A contratação é opcional e pode ser realizada mediante solicitação pelos canais oficiais de atendimento.
 * Valores, disponibilidade e condições devem ser consultados diretamente com a equipe comercial.
 
-O atendimento prestado pelos canais oficiais não caracteriza contratação de suporte técnico adicional, nem gera direito a atendimento individual, remoto, emergencial ou personalizado sem a respectiva contratação.
+O atendimento comercial e administrativo prestado pelos canais oficiais **não é suporte técnico**, não caracteriza contratação de suporte adicional e não gera direito a atendimento individual, remoto, emergencial ou personalizado sem a respectiva contratação.
 
 ---
 
