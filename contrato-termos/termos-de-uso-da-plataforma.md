@@ -73,16 +73,7 @@ A versão Premium possui as seguintes características:
 
 * não contém anúncios ou propagandas automáticas
 * exige pagamento recorrente conforme plano vigente
-* inclui suporte coletivo através do grupo oficial no Telegram
-
-Suporte adicional como:
-
-* suporte individual
-* suporte remoto
-* suporte emergencial
-* suporte personalizado
-
-poderá ser cobrado separadamente como **hora técnica**.
+* o suporte técnico, quando solicitado, é prestado pelos canais oficiais de atendimento e observa o disposto na cláusula 6 destes Termos
 
 A instalação, atualização, configuração e manutenção da infraestrutura são **responsabilidade exclusiva do cliente**.
 
@@ -108,7 +99,24 @@ Isso inclui, mas não se limita a:
 
 ---
 
-# 5. Atendimento Comercial, Administrativo e Liberação de Acesso Premium
+# 5. Canais Oficiais de Atendimento, Atendimento Comercial e Liberação de Acesso Premium
+
+## 5.1 Canais Oficiais de Atendimento
+
+Os canais oficiais de atendimento da Whazing são exclusivamente:
+
+* **Site de contato:** https://www.whazing.com.br/#contact
+* **WhatsApp e telefone:**
+  * (48) 3197-0877
+  * (48) 3197-0599
+
+**Horário de atendimento:** segunda a sexta-feira, das 09h às 17h (horário de Brasília – BRT), exceto feriados.
+
+Esses são os canais oficiais de contato da empresa. Solicitações recebidas por outros meios — incluindo redes sociais, comunidades de terceiros ou contato direto com colaboradores — não são consideradas canais oficiais de atendimento.
+
+A Whazing mantém também um canal oficial no Telegram ([t.me/whazing](https://t.me/whazing)), destinado exclusivamente à divulgação de novidades e atualizações. Trata-se de um canal de transmissão, sem atendimento, e **não constitui canal de suporte**.
+
+## 5.2 Atendimento Comercial e Administrativo
 
 Este setor abrange:
 
@@ -119,11 +127,7 @@ Este setor abrange:
 * liberação de acesso Premium
 * questões administrativas
 
-Horário de atendimento:
-
-**Segunda a sexta-feira**
-08:00 às 18:00
-(exceto feriados)
+O atendimento é prestado pelos canais oficiais indicados no item 5.1, dentro do horário ali informado.
 
 Prazo médio de resposta:
 
@@ -140,10 +144,9 @@ A liberação ou renovação do acesso Premium depende de:
 
 # 6. Suporte Técnico
 
-O suporte técnico incluído na versão Premium possui as seguintes características:
+O atendimento de suporte técnico é realizado exclusivamente pelos canais oficiais de atendimento indicados na cláusula 5.
 
-* fornecido apenas de forma **coletiva via grupo oficial**
-* destinado a **orientações gerais e dúvidas comuns**
+O uso da plataforma **não inclui suporte técnico individual ilimitado**. O suporte prestado destina-se a **orientações gerais e dúvidas comuns** sobre o funcionamento do software.
 
 O suporte **não inclui**:
 
@@ -155,71 +158,19 @@ O suporte **não inclui**:
 * atualizações do sistema
 * desenvolvimento de funcionalidades
 
-Suporte técnico **individual ou especializado** poderá ser cobrado como **hora técnica adicional**.
+## 6.1 Contratação de Suporte Técnico Adicional
+
+Serviços de suporte técnico especializado podem ser contratados separadamente pelo cliente, de forma **opcional**.
+
+* O suporte técnico adicional é comercializado **por hora de atendimento**.
+* A contratação é opcional e pode ser realizada mediante solicitação pelos canais oficiais de atendimento.
+* Valores, disponibilidade e condições devem ser consultados diretamente com a equipe comercial.
+
+O atendimento prestado pelos canais oficiais não caracteriza contratação de suporte técnico adicional, nem gera direito a atendimento individual, remoto, emergencial ou personalizado sem a respectiva contratação.
 
 ---
 
-# 7. Regras da Comunidade e Grupos Oficiais
-
-Os grupos oficiais vinculados ao software têm como objetivo promover suporte coletivo, troca de conhecimento e colaboração entre usuários.
-
-Ao participar de qualquer grupo oficial relacionado ao sistema, o usuário concorda em seguir as regras de convivência abaixo.
-
-## 7.1 Conduta e Respeito
-
-Os participantes devem manter um ambiente respeitoso e colaborativo.
-
-Não são permitidos:
-
-* ofensas pessoais
-* linguagem agressiva ou discriminatória
-* discussões que não contribuam para o propósito do grupo
-
-Todos os membros devem agir com educação e respeito.
-
-## 7.2 Proibições
-
-Nos grupos oficiais é expressamente proibido:
-
-* entrar em contato com membros no privado sem autorização prévia
-* divulgar links de grupos de Telegram, WhatsApp ou outras comunidades
-* realizar propaganda, autopromoção ou divulgação de serviços sem autorização
-* enviar ofertas comerciais não solicitadas a outros membros
-* praticar qualquer tipo de golpe, fraude ou tentativa de obtenção indevida de vantagem
-
-## 7.3 Ofertas de Serviços entre Membros
-
-Caso um membro necessite de algum serviço técnico ou profissional, deverá manifestar publicamente no grupo que está buscando o serviço.
-
-Somente após essa manifestação, outros membros poderão oferecer ajuda ou entrar em contato no privado.
-
-A desenvolvedora **não intermedeia negociações entre membros**.
-
-## 7.4 Responsabilidade por Negociações
-
-Qualquer negociação realizada entre membros é de responsabilidade exclusiva das partes envolvidas.
-
-A administração dos grupos e a desenvolvedora não se responsabilizam por:
-
-* prejuízos financeiros
-* serviços não entregues
-* golpes ou fraudes praticadas entre usuários
-
-## 7.5 Moderação e Penalidades
-
-O descumprimento das regras poderá resultar em:
-
-* advertência
-* remoção de mensagens
-* restrição de participação
-* banimento do grupo
-* bloqueio da licença
-
-A decisão de moderação é exclusiva da administração.
-
----
-
-# 8. Serviços de Terceiros e Custos Externos
+# 7. Serviços de Terceiros e Custos Externos
 
 O cliente reconhece que diversas funcionalidades dependem de **serviços externos não incluídos na licença**, como:
 
@@ -245,7 +196,7 @@ A desenvolvedora **não se responsabiliza por:**
 
 ---
 
-# 9. Propriedade Intelectual
+# 8. Propriedade Intelectual
 
 Todo o software, incluindo:
 
@@ -270,7 +221,7 @@ Violações podem resultar em **medidas legais civis e penais**.
 
 ---
 
-# 10. Uso Permitido e Responsabilidade do Usuário
+# 9. Uso Permitido e Responsabilidade do Usuário
 
 O usuário concorda em:
 
@@ -294,7 +245,7 @@ O usuário é integralmente responsável por:
 
 ---
 
-# 11. Uso de APIs de Mensageria e Risco de Bloqueios
+# 10. Uso de APIs de Mensageria e Risco de Bloqueios
 
 O sistema pode integrar-se com plataformas como:
 
@@ -314,7 +265,7 @@ A desenvolvedora **não possui controle sobre essas plataformas** e **não garan
 
 ---
 
-# 12. Limitação de Responsabilidade
+# 11. Limitação de Responsabilidade
 
 A desenvolvedora não se responsabiliza por:
 
@@ -328,7 +279,7 @@ Na máxima extensão permitida por lei, a responsabilidade da empresa será **li
 
 ---
 
-# 13. Política de Chargeback
+# 12. Política de Chargeback
 
 Caso o usuário realize **contestação de pagamento (chargeback)** junto ao meio de pagamento, a empresa poderá:
 
@@ -340,7 +291,7 @@ Chargebacks após a ativação da licença podem ser considerados **uso indevido
 
 ---
 
-# 14. Alterações nos Termos
+# 13. Alterações nos Termos
 
 A empresa pode atualizar estes Termos de Uso a qualquer momento.
 
@@ -350,7 +301,7 @@ O uso contínuo do sistema após alterações implica **aceitação automática 
 
 ---
 
-# 15. Aceitação Final
+# 14. Aceitação Final
 
 O uso do software é permitido somente mediante **aceitação total e irrestrita destes Termos de Uso**.
 
