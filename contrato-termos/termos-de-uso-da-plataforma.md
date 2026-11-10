@@ -148,7 +148,7 @@ O atendimento de suporte técnico é realizado exclusivamente pelos canais ofici
 
 O uso da plataforma **não inclui suporte técnico individual ilimitado**. O suporte prestado destina-se a **orientações gerais e dúvidas comuns** sobre o funcionamento do software.
 
-O suporte **não inclui**:
+**Não prestamos suporte de instalação, configuração ou atualização do sistema.** O suporte **não inclui**:
 
 * configuração de servidor
 * configuração de DNS
@@ -158,9 +158,13 @@ O suporte **não inclui**:
 * atualizações do sistema
 * desenvolvimento de funcionalidades
 
+A instalação, a configuração e a atualização do sistema são de **responsabilidade exclusiva do cliente**, que deve ler a documentação e os manuais do produto e realizar todas as configurações necessárias por conta própria.
+
+O suporte técnico avançado, quando necessário, depende de **contratação separada, remunerada por hora de atendimento**, nos termos do item 6.1.
+
 ## 6.1 Contratação de Suporte Técnico Adicional
 
-Serviços de suporte técnico especializado podem ser contratados separadamente pelo cliente, de forma **opcional**.
+Serviços de suporte técnico avançado ou especializado podem ser contratados separadamente pelo cliente, de forma **opcional**.
 
 * O suporte técnico adicional é comercializado **por hora de atendimento**.
 * A contratação é opcional e pode ser realizada mediante solicitação pelos canais oficiais de atendimento.
