@@ -2,20 +2,21 @@
 
 A **Recepção Inteligente** permite integrar diferentes provedores de IA usando o padrão compatível com a API da OpenAI.
 
-Isso significa que você não precisa usar apenas os disponíveis no sistema  — é possível utilizar:
+Isso significa que você não precisa usar apenas os provedores disponíveis no sistema. Também é possível utilizar:
 
-* Provedores externos (ex: OpenRouter, etc.)
-* Ou até mesmo rodar sua própria IA localmente (ex: Ollama)
+* Provedores externos, como OpenRouter
+* Uma IA instalada localmente, como Ollama
+* Claude diretamente pela API da Anthropic, usando a configuração compatível com OpenAI
 
-***
+---
 
 ### ⚠️ Importante (IA local)
 
-Caso você opte por rodar sua própria IA (como com o Ollama), é altamente recomendado:
+Caso opte por rodar sua própria IA, como com o Ollama, é altamente recomendado:
 
 * Utilizar um **servidor dedicado**
-* Ter uma **GPU** (placa de vídeo) para desempenho aceitável
-* Não rodar no mesmo servidor do sistema principal (para evitar lentidão)
+* Ter uma **GPU** para obter melhor desempenho
+* Não rodar no mesmo servidor do sistema principal, para evitar lentidão
 
 ***
 
@@ -166,3 +167,29 @@ O sistema é compatível com qualquer provedor API OpenAI compatível. No entant
 * **Temperatura:** 0.1 a 0.3 para respostas mais objetivas e consistentes
 * **Máximo de tokens:** 200 a 500 para respostas curtas e objetivas (ideal para WhatsApp)
 
+----
+
+### 🧠 Exemplo prático: conectar Claude diretamente no Whazing
+
+A Anthropic oferece compatibilidade com o formato da API OpenAI. Para essa configuração, use uma chave da API Claude e o Model ID `claude-opus-5-5`.
+
+#### 🔑 Passo 1 — Criar a API Key
+
+Crie uma chave na [página de API Keys da Claude Console](https://platform.claude.com/settings/keys).
+
+#### ⚙️ Passo 2 — Configurar no Whazing
+
+Acesse **Automação e Integrações → IA e Integrações** e escolha **Utilizar minha própria API**. No card **Utilizar minha própria API**, na aba **Geral**, preencha:
+
+| Campo | Valor |
+|---|---|
+| **Serviço de IA** | `Custom (URL própria)` |
+| **URL Base da API** | `https://api.anthropic.com/v1/` |
+| **Modelo** | `claude-opus-5-5` |
+| **API Key** | Cole a chave criada na Claude Console |
+
+<figure><img src="../../../.gitbook/assets/whazingcustomurl.png" alt=""><figcaption></figcaption></figure>
+
+#### 🔌 Passo 3 — Testar a conexão
+
+Clique em **Testar conexão**. Se aparecer **Conectado**, faça também uma conversa de teste para confirmar que o Claude está respondendo na Recepção Inteligente.>
