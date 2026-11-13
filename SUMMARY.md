@@ -61,7 +61,7 @@
   * [🔎 Verificar Número ao Cadastrar Contato](modulo-saas/verificar-numero-contatos.md)
   * [📞 WaCalls — Ativação Automática e Venda de Adicionais](modulo-saas/wacalls-ativacao-automatica-e-venda-de-adicionais.md)
   * [IA Integrada](modulo-saas/ia-integrada/README.md)
-    * [Classificação Automática com Jev](modulo-saas/ia-integrada/classificacao-automatica-jev.md)
+    * [Classificação Automática com Jev(TypeSafe)](modulo-saas/ia-integrada/classificacao-automatica-jev.md)
     * [Usando o 9Router como Provedor de IA no Whazing](modulo-saas/ia-integrada/usando-o-9router-como-provedor-de-ia-no-whazing/README.md)
       * [🔊 Dica Extra — Recepção Inteligente com Voz usando 9Router](modulo-saas/ia-integrada/usando-o-9router-como-provedor-de-ia-no-whazing/dica-extra-recepcao-inteligente-com-voz-usando-9router.md)
   * [Gerador de Chatbot com IA](modulo-saas/gerador-de-chatbot-com-ia.md)
