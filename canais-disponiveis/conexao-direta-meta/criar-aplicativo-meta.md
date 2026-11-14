@@ -10,7 +10,7 @@ Este guia mostra como criar o **aplicativo próprio** usado na conexão direta d
 
 > ⚠️ **Nível avançado.** O suporte Whazing **não cria, não configura e não aprova** aplicativos na Meta. Se preferir que alguém faça por você, existe **consultoria por R$ 1.000,00** (criação + condução da aprovação). Se quiser o caminho fácil, use o [Hub MultiAPIWA](../api-oficial/hub-multiapiwa.md).
 
-> ⚠️ **A Meta muda nomes de menus com frequência.** Os caminhos abaixo usam os nomes atuais do App Dashboard. Se um item não existir com esse nome, procure o equivalente (ex.: *Casos de uso*, *Produtos*, *Configurações do app*).
+> ⚠️ **A Meta muda nomes de menus com frequência.** Os caminhos abaixo usam os nomes atuais do App Dashboard. Se um item não existir com esse nome, procure o equivalente (ex.: _Casos de uso_, _Produtos_, _Configurações do app_).
 
 ***
 
@@ -33,14 +33,14 @@ Antes de começar, você precisa ter:
 
 O Whazing aceita **dois métodos**. Escolha o que combina com o seu cenário — e confira quais permissões você já tem **aprovadas** para ele (veja [Permissões e aprovação](permissoes-e-aprovacao-meta.md)).
 
-| Método no Whazing | Quando usar | Credenciais que você vai colar |
-| ----------------- | ----------- | ------------------------------ |
-| **Instagram Login** (`graph.instagram.com`) | Quer conectar **só Instagram**, com login direto da conta — **não exige Página nem conta do Facebook** | **Instagram App ID** + **Instagram App Secret** (em *Instagram → API setup with Instagram login → Business login settings*) |
-| **Unified Login** (`graph.facebook.com`) | Quer Instagram **e** Facebook no **mesmo app**, com login pelo Facebook; necessário para ativos de um **Portfólio Empresarial** | **App ID** + **App Secret** da Meta (*Configurações do app → Básico*) + **`config_id`** |
+| Método no Whazing                           | Quando usar                                                                                                                     | Credenciais que você vai colar                                                                                              |
+| ------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
+| **Instagram Login** (`graph.instagram.com`) | Quer conectar **só Instagram**, com login direto da conta — **não exige Página nem conta do Facebook**                          | **Instagram App ID** + **Instagram App Secret** (em _Instagram → API setup with Instagram login → Business login settings_) |
+| **Unified Login** (`graph.facebook.com`)    | Quer Instagram **e** Facebook no **mesmo app**, com login pelo Facebook; necessário para ativos de um **Portfólio Empresarial** | **App ID** + **App Secret** da Meta (_Configurações do app → Básico_) + **`config_id`**                                     |
 
 > ⚠️ **Um método por canal.** Cada método usa uma **família de permissões** própria. Configure no canal o método cujas permissões o seu app tem **aprovadas** — se o app está aprovado nas duas famílias (caso comum de quem já passou pelo App Review), você pode oferecer os dois métodos. Detalhes em [Permissões e aprovação](permissoes-e-aprovacao-meta.md).
 >
-> 💡 No **Unified Login**, o `config_id` é **obrigatório**. Ele vem de uma **Configuração** criada em *Facebook Login for Business*. Para conectar **Páginas pessoais** (sem Portfólio), é possível desligar o uso do `config_id` no Whazing.
+> 💡 No **Unified Login**, o `config_id` é **obrigatório**. Ele vem de uma **Configuração** criada em _Facebook Login for Business_. Para conectar **Páginas pessoais** (sem Portfólio), é possível desligar o uso do `config_id` no Whazing.
 
 ***
 
@@ -50,11 +50,11 @@ O Whazing aceita **dois métodos**. Escolha o que combina com o seu cenário —
 2. Informe o **nome** (é o nome que o cliente verá na tela de autorização) e o **e-mail de contato**.
 3. Escolha o **caso de uso** conforme o canal:
 
-| Canal | Caso de uso a escolher |
-| ----- | ---------------------- |
-| **Facebook (Messenger)** | **Engage with customers on Messenger** (*Engajar clientes no Messenger*) |
+| Canal                           | Caso de uso a escolher                                                                   |
+| ------------------------------- | ---------------------------------------------------------------------------------------- |
+| **Facebook (Messenger)**        | **Engage with customers on Messenger** (_Engajar clientes no Messenger_)                 |
 | **Instagram (Instagram Login)** | **Manage messaging and content on Instagram** → opção **API setup with Instagram Login** |
-| **Instagram (Unified Login)** | **Manage messaging and content on Instagram** → opção **API setup with Facebook Login** |
+| **Instagram (Unified Login)**   | **Manage messaging and content on Instagram** → opção **API setup with Facebook Login**  |
 
 4. Selecione o **Portfólio Empresarial** (Business Manager) ao qual o app pertence.
 5. Finalize a criação.
@@ -70,7 +70,7 @@ O Whazing aceita **dois métodos**. Escolha o que combina com o seu cenário —
 1. No menu lateral, abra **Instagram** → **API setup with Instagram login**.
 2. Em **Business login settings**, copie:
    * **Instagram App ID**;
-   * **Instagram App Secret** (clique em *Show*).
+   * **Instagram App Secret** (clique em _Show_).
 
 ### Unified Login / Facebook
 
@@ -91,7 +91,7 @@ Sem isso a conexão falha com o erro **"URL bloqueada"**.
 
 Em **Instagram → Business login settings → OAuth redirect URIs**, adicione **exatamente**:
 
-```text
+```
 https://SEU-DOMINIO/oauth/instagram/callback
 ```
 
@@ -101,7 +101,7 @@ _(Use a URL indicada na tela do Whazing — ela é gerada a partir do seu domín
 
 Em **Facebook Login for Business → Configurações**, ative **Login OAuth do Cliente/Web** e adicione **exatamente** a URL em **Valid OAuth Redirect URIs**:
 
-```text
+```
 https://SEU-DOMINIO/oauth/facebook/callback
 ```
 
@@ -123,14 +123,16 @@ O webhook é por onde a Meta **entrega as mensagens** ao Whazing.
 4. Clique em **Verificar e salvar**. Se der erro, confira se a URL está **pública** e com **HTTPS válido**.
 5. **Assine os campos** necessários:
 
-| Canal | Campos que precisam estar assinados |
-| ----- | ----------------------------------- |
-| **Instagram** | `messages`, `messaging_postbacks`, `message_reactions`, `comments`, `mentions`, `live_comments` |
+| Canal                    | Campos que precisam estar assinados                                                                               |
+| ------------------------ | ----------------------------------------------------------------------------------------------------------------- |
+| **Instagram**            | `messages`, `messaging_postbacks`, `message_reactions`, `comments`, `mentions`, `live_comments`                   |
 | **Facebook (Messenger)** | `messages`, `messaging_postbacks`, `messaging_optins`, `message_reactions`, `message_deliveries`, `message_reads` |
 
 > ⚠️ **`messages` é o mais importante** — sem ele o canal conecta mas **não recebe nada**.
 
-> 📸 **Print sugerido (P3):** tela de **Webhooks** do App Dashboard com a **Callback URL** e o **Verify Token** preenchidos, e a lista de campos assinados com `messages` marcado.
+<figure><img src="../../.gitbook/assets/webhookfacebook.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/instagramwebhook.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -144,24 +146,30 @@ O webhook é por onde a Meta **entrega as mensagens** ao Whazing.
 2. Confira o **modo** do app: em **Desenvolvimento**, só quem tem função no app consegue conectar. Para clientes, ele precisa estar **Ativo** (o que exige os passos de [Permissões e aprovação](permissoes-e-aprovacao-meta.md)).
 3. No Whazing, abra **Painel SaaS → Integrações → Instagram** (ou **Facebook Messenger**) → **Novo App Meta** e preencha:
 
-| Campo no Whazing | O que informar |
-| ---------------- | -------------- |
-| **Nome (identificação interna)** | Um nome para você reconhecer (ex.: `App principal 2026`) |
-| **App ID** | Instagram App ID (Instagram Login) **ou** App ID da Meta (Unified Login) |
-| **App Secret** | O segredo correspondente ao App ID informado |
-| **Versão da Graph API** | A versão usada nas chamadas (ex.: `v23.0`) |
-| **Método de login da Meta** | **Instagram Login** ou **Unified Login** |
-| **config_id** | Obrigatório no Unified Login; **obrigatório** para Páginas de um Portfólio Empresarial |
-| **Usar config_id no OAuth** | Desligue apenas para **Páginas pessoais** |
-| **Empresas que usam este App** | Vazio = vale para quem **não tem** App próprio definido |
-| **Ativo** | Ligue para o App ser usado nas conexões |
+| Campo no Whazing                 | O que informar                                                                         |
+| -------------------------------- | -------------------------------------------------------------------------------------- |
+| **Nome (identificação interna)** | Um nome para você reconhecer (ex.: `App principal 2026`)                               |
+| **App ID**                       | Instagram App ID (Instagram Login) **ou** App ID da Meta (Unified Login)               |
+| **App Secret**                   | O segredo correspondente ao App ID informado                                           |
+| **Versão da Graph API**          | A versão usada nas chamadas (ex.: `v23.0`)                                             |
+| **Método de login da Meta**      | **Instagram Login** ou **Unified Login**                                               |
+| **config\_id**                   | Obrigatório no Unified Login; **obrigatório** para Páginas de um Portfólio Empresarial |
+| **Usar config\_id no OAuth**     | Desligue apenas para **Páginas pessoais**                                              |
+| **Empresas que usam este App**   | Vazio = vale para quem **não tem** App próprio definido                                |
+| **Ativo**                        | Ligue para o App ser usado nas conexões                                                |
 
 4. Clique em **Testar credenciais** — o sistema confirma se App ID/Secret estão válidos.
 5. Se este for o único app, marque-o como **Padrão**.
 
-> 📸 **Print sugerido (P1):** formulário **Novo App Meta** no Painel SaaS, com **Método de login** e **config_id** visíveis.
->
-> 📸 **Print sugerido (P2):** **Configurações do app → Básico** na Meta, com **App ID** e **App Secret**.
+<figure><img src="../../.gitbook/assets/instagram1appconexao.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/instagram2app.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/facebook1app.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/facebookapp2.png" alt=""><figcaption></figcaption></figure>
+
+<figure><img src="../../.gitbook/assets/configid.png" alt=""><figcaption></figcaption></figure>
 
 > 💡 **Vários apps:** você pode cadastrar mais de um app no mesmo canal e **vincular cada um a empresas específicas**. O app marcado como **padrão** atende quem não tem vínculo próprio.
 
