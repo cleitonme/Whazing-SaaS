@@ -1,5 +1,10 @@
 ## Changelog e Atualizações
 
+# 🚀 Versão 3.1.11 FINAL
+
+- Suporte Hub MultiAPIWA (facebook, instagram e api oficial)
+- Conexão direto meta instagram e facebook
+
 # 🚀 Versão 3.1.10 FINAL
 
 ## 🔒 Segurança
