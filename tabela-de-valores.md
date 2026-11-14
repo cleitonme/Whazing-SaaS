@@ -134,6 +134,7 @@ Você recebe o sistema totalmente instalado em uma VPS localizada no Brasil. Tod
 | Instalação da versão gratuita                       |    R$ 100,00   |
 | Instalação adicional (Typebot ou N8N)               | R$ 100,00 cada |
 | Hora técnica                                        |    R$ 150,00   |
+| Consultoria para criação e aprovação de App Meta     |  R$ 1.000,00   |
 
 > Os serviços de instalação são destinados exclusivamente aos planos Self-Hosted.
 
