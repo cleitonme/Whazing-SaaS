@@ -1,4 +1,4 @@
-# Ativar e vender o Hub MultiAPIWA (administrador)
+# Ativar e vender o Hub MultiAPIWA
 
 Esta página é para o **dono do Whazing (administrador do SaaS)**. Ela mostra como **liberar o Hub**, **ativar por canal** e **vender os canais** para os seus clientes.
 
@@ -23,11 +23,11 @@ Você vai precisar de:
 
 Fale com o **suporte Whazing** e peça a liberação do **Hub MultiAPIWA**. Você vai receber **três dados**:
 
-| Dado                                      | Onde aparece no Whazing                              | O que é                                                                 |
-| ----------------------------------------- | ---------------------------------------------------- | ----------------------------------------------------------------------- |
-| **URL do backend**                        | campo **URL da API do MultiAPIWA**                   | Endereço do servidor que faz a ponte entre o seu Whazing e a Meta       |
-| **Token de integração da instalação**     | campo **Token de integração da instalação**          | Identifica o seu Whazing perante o Hub                                  |
-| **Segredo HMAC da instalação**            | campo **Segredo HMAC da instalação**                 | Assinatura de segurança das mensagens trocadas                          |
+| Dado                                  | Onde aparece no Whazing                     | O que é                                                           |
+| ------------------------------------- | ------------------------------------------- | ----------------------------------------------------------------- |
+| **URL do backend**                    | campo **URL da API do MultiAPIWA**          | Endereço do servidor que faz a ponte entre o seu Whazing e a Meta |
+| **Token de integração da instalação** | campo **Token de integração da instalação** | Identifica o seu Whazing perante o Hub                            |
+| **Segredo HMAC da instalação**        | campo **Segredo HMAC da instalação**        | Assinatura de segurança das mensagens trocadas                    |
 
 > 🔒 **Trate esses dados como senha.** Não publique, não envie em grupo e não coloque em prints. Quem tiver os três consegue agir como a sua instalação.
 
@@ -42,12 +42,11 @@ Fale com o **suporte Whazing** e peça a liberação do **Hub MultiAPIWA**. Voc�
 
 ## 🧩 Passo 2 — Colar as credenciais (uma única vez)
 
-1. No Painel SaaS, acesse **Integrações → WhatsApp Oficial (WABA)**.
-   _(Também é possível preencher em **Facebook Messenger** ou **Instagram** — o bloco de credenciais é o mesmo.)_
+1. No Painel SaaS, acesse **Integrações → WhatsApp Oficial (WABA)**. _(Também é possível preencher em **Facebook Messenger** ou **Instagram** — o bloco de credenciais é o mesmo.)_
 2. Localize o bloco **"Credenciais da instalação MultiAPIWA (valem para WhatsApp Oficial, Facebook e Instagram)"**.
 3. Preencha os três campos e **salve**:
 
-```text
+```
 URL da API do MultiAPIWA      →  ex.: https://hubapi.multiapiwa.com.br
 Token de integração           →  (recebido do suporte)
 Segredo HMAC da instalação    →  (recebido do suporte)
@@ -77,21 +76,21 @@ A ativação é **um botão por tipo de canal**. Você pode ligar um, dois ou os
 
 ### O que acontece ao ligar
 
-| Situação                          | Efeito                                                                                       |
-| --------------------------------- | -------------------------------------------------------------------------------------------- |
-| **Hub ligado no canal**           | As conexões daquele canal usam o **App Meta centralizado** do Hub                             |
+| Situação                             | Efeito                                                                                       |
+| ------------------------------------ | -------------------------------------------------------------------------------------------- |
+| **Hub ligado no canal**              | As conexões daquele canal usam o **App Meta centralizado** do Hub                            |
 | **Aplicativos próprios cadastrados** | Ficam **inativos** para aquele canal enquanto o Hub estiver ligado (o sistema avisa na tela) |
-| **Hub desligado no canal**        | O canal volta a usar a conexão tradicional, com **App próprio**                               |
+| **Hub desligado no canal**           | O canal volta a usar a conexão tradicional, com **App próprio**                              |
 
 > ⚠️ Ligar o Hub em um canal **não** liga nos outros. São decisões separadas.
 
 ### Exemplos de combinação
 
-| Cenário                    | O que ligar                                           |
-| -------------------------- | ----------------------------------------------------- |
-| Só Instagram               | **Instagram** → Hub MultiAPIWA (Instagram)             |
-| Instagram + Facebook       | **Instagram** e **Facebook Messenger**                 |
-| Todos os canais oficiais   | **WhatsApp Oficial (WABA)**, **Facebook** e **Instagram** |
+| Cenário                  | O que ligar                                               |
+| ------------------------ | --------------------------------------------------------- |
+| Só Instagram             | **Instagram** → Hub MultiAPIWA (Instagram)                |
+| Instagram + Facebook     | **Instagram** e **Facebook Messenger**                    |
+| Todos os canais oficiais | **WhatsApp Oficial (WABA)**, **Facebook** e **Instagram** |
 
 ***
 
@@ -102,11 +101,11 @@ Agora diga ao sistema **que esse tipo de canal existe** no seu SaaS:
 1. Acesse **Painel SaaS → Integrações → Canais Disponíveis**.
 2. Ligue o tipo desejado:
 
-| Tipo na tela                  | Para que serve                                  |
-| ----------------------------- | ----------------------------------------------- |
-| **WABA Api Oficial**          | Canais de WhatsApp Oficial                      |
-| **Facebook Messenger**        | Canais de Facebook                              |
-| **Instagram**                 | Canais de Instagram                             |
+| Tipo na tela           | Para que serve             |
+| ---------------------- | -------------------------- |
+| **WABA Api Oficial**   | Canais de WhatsApp Oficial |
+| **Facebook Messenger** | Canais de Facebook         |
+| **Instagram**          | Canais de Instagram        |
 
 3. Salve.
 
@@ -125,25 +124,24 @@ O canal precisa estar **no plano daquele cliente**:
 5. Defina a quantidade por tipo — **a quantidade pode ser `0`**.
 6. Salve.
 
-> 💡 **Quantidade `0` é válida e é muito usada.** Significa: *"este plano não inclui nenhum canal deste tipo; o cliente compra por adicional"*. É o modelo recomendado para vender Instagram, Facebook ou WABA separadamente.
->
-> 📸 **Print sugerido (P4):** seção **"Ativar limite de canais por tipo"** com o botão ligado e **Instagram = 0**.
+> 💡 **Quantidade `0` é válida e é muito usada.** Significa: _"este plano não inclui nenhum canal deste tipo; o cliente compra por adicional"_. É o modelo recomendado para vender Instagram, Facebook ou WABA separadamente.
+
+<figure><img src="../../.gitbook/assets/limite0intagram.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
 ## 🔎 Passo 6 — Conferir se está tudo funcionando
 
-1. Acesse **Painel SaaS → Integrações → MultiAPIWA (Hub Meta)**.
-   _(O cartão só aparece quando o Hub está ligado em pelo menos um canal.)_
+1. Acesse **Painel SaaS → Integrações → MultiAPIWA (Hub Meta)**. _(O cartão só aparece quando o Hub está ligado em pelo menos um canal.)_
 2. Confira o **status da cobrança** (**Em dia**, **Em carência** ou **Bloqueado**) e o valor em aberto.
 3. Na tabela **"Canais conectados pelo Hub"**, confira:
 
-| Coluna                     | O que conferir                                                     |
-| -------------------------- | ------------------------------------------------------------------ |
-| **Tipo**                   | WhatsApp, Instagram ou Facebook                                    |
-| **Número / Identificador** | Se é o canal certo                                                 |
-| **Cliente (empresa)**      | Se o canal está na empresa correta                                 |
-| **Situação**               | **Ativo** é o esperado                                             |
+| Coluna                     | O que conferir                                                                        |
+| -------------------------- | ------------------------------------------------------------------------------------- |
+| **Tipo**                   | WhatsApp, Instagram ou Facebook                                                       |
+| **Número / Identificador** | Se é o canal certo                                                                    |
+| **Cliente (empresa)**      | Se o canal está na empresa correta                                                    |
+| **Situação**               | **Ativo** é o esperado                                                                |
 | **Token**                  | **OK** é o esperado (**Vai expirar** / **Expirado** / **Inválido** = pedir reconexão) |
 
 4. **Teste de ponta a ponta:** peça ao cliente para adicionar o canal, conectar e envie uma mensagem real.
@@ -160,12 +158,12 @@ Agora a parte comercial: **você paga R$ 25,00 por canal ao Hub** e **define qua
 
 O Whazing verifica **dois limites** antes de liberar um canal:
 
-| Limite                        | Pergunta que ele responde                                        |
-| ----------------------------- | ---------------------------------------------------------------- |
-| **Limite geral de canais**    | O cliente ainda tem "vaga" na quantidade total de canais do plano? |
-| **Limite por tipo de canal**  | O cliente ainda tem vaga **naquele tipo** (Instagram, Facebook, WABA)? |
+| Limite                       | Pergunta que ele responde                                              |
+| ---------------------------- | ---------------------------------------------------------------------- |
+| **Limite geral de canais**   | O cliente ainda tem "vaga" na quantidade total de canais do plano?     |
+| **Limite por tipo de canal** | O cliente ainda tem vaga **naquele tipo** (Instagram, Facebook, WABA)? |
 
-* Se **falta o limite do tipo** → o sistema cobra o **adicional do tipo** (ex.: *Instagram*).
+* Se **falta o limite do tipo** → o sistema cobra o **adicional do tipo** (ex.: _Instagram_).
 * Se **também falta o limite geral** → o sistema cobra **o adicional de canais + o adicional do tipo**, na **mesma fatura**.
 * Se **falta só o limite geral** → cobra apenas o **adicional de canais**.
 
@@ -187,51 +185,51 @@ Resultado: o cliente **vê** o Instagram na lista, mas **não tem nenhum incluí
 
 **Adicional 1 — o canal extra (limite geral)**
 
-| Campo                  | Valor                          |
-| ---------------------- | ------------------------------ |
-| **Nome**               | Canal adicional                |
-| **Tipo**               | **Canais**                     |
-| **Quantidade**         | 1                              |
-| **Valor mensal**       | **R$ 59,90**                   |
-| **Planos disponíveis** | os planos que podem vender     |
-| **Ativo**              | ligado                         |
+| Campo                  | Valor                      |
+| ---------------------- | -------------------------- |
+| **Nome**               | Canal adicional            |
+| **Tipo**               | **Canais**                 |
+| **Quantidade**         | 1                          |
+| **Valor mensal**       | **R$ 59,90**               |
+| **Planos disponíveis** | os planos que podem vender |
+| **Ativo**              | ligado                     |
 
 **Adicional 2 — o canal do tipo Instagram**
 
-| Campo                  | Valor                          |
-| ---------------------- | ------------------------------ |
-| **Nome**               | Instagram                      |
-| **Tipo**               | **Instagram**                  |
-| **Quantidade**         | 1                              |
-| **Valor mensal**       | **R$ 99,90**                   |
-| **Planos disponíveis** | os planos que podem vender     |
-| **Ativo**              | ligado                         |
+| Campo                  | Valor                      |
+| ---------------------- | -------------------------- |
+| **Nome**               | Instagram                  |
+| **Tipo**               | **Instagram**              |
+| **Quantidade**         | 1                          |
+| **Valor mensal**       | **R$ 99,90**               |
+| **Planos disponíveis** | os planos que podem vender |
+| **Ativo**              | ligado                     |
 
 > 💡 Os tipos disponíveis para canal são: **Canais** (geral), **WhatsApp Plus**, **WhatsApp Oficial (WABA)**, **Instagram** e **Facebook**. Você pode repetir essa estrutura para cada tipo que quiser vender.
->
-> 📸 **Print sugerido (P5):** tela de criação de adicional com **Tipo = Instagram** e valor **R$ 99,90**.
 
-> ℹ️ O adicional de tipo **só tem efeito** em planos que tenham **aquele tipo habilitado** *e* **"Ativar limite de canais por tipo"** ligado — mesmo que a quantidade inclusa seja `0`. Se faltar um dos dois, o próprio sistema avisa na criação do adicional.
+<figure><img src="../../.gitbook/assets/adicionainstagram.png" alt=""><figcaption></figcaption></figure>
+
+> ℹ️ O adicional de tipo **só tem efeito** em planos que tenham **aquele tipo habilitado** _e_ **"Ativar limite de canais por tipo"** ligado — mesmo que a quantidade inclusa seja `0`. Se faltar um dos dois, o próprio sistema avisa na criação do adicional.
 
 ### 🧮 Exemplo A — Cliente sem nenhum canal
 
 **Plano do cliente**
 
-```text
+```
 Total de canais:        1
 Instagram:              0 canais
 ```
 
 **Adicionais disponíveis**
 
-```text
+```
 Canal adicional ...... R$ 59,90
 Instagram ............ R$ 99,90
 ```
 
 **O que acontece:** o cliente não tem nenhum canal e tenta adicionar um **Instagram**.
 
-```text
+```
 Tem vaga no limite geral?       SIM (0 de 1 usado)
 Tem vaga no limite do tipo?     NÃO (0 de 0)
         ↓
@@ -246,20 +244,20 @@ R$ 99,90/mês
 
 **Plano do cliente**
 
-```text
+```
 Total de canais:        1
 Instagram:              0 canais
 ```
 
 **O que já está em uso**
 
-```text
+```
 1 canal WhatsApp  →  o limite geral de 1 já está ocupado
 ```
 
 **O que acontece:** o cliente tenta adicionar um **Instagram**.
 
-```text
+```
 Tem vaga no limite geral?       NÃO (1 de 1 usado)
 Tem vaga no limite do tipo?     NÃO (0 de 0)
         ↓
@@ -272,10 +270,10 @@ R$ 59,90  +  R$ 99,90  =  R$ 159,80/mês
 
 ### 📊 Resumo dos dois cenários
 
-| Situação do cliente          | O que é cobrado                       | Total por mês     |
-| ---------------------------- | ------------------------------------- | ----------------- |
-| Nenhum canal, quer Instagram  | Adicional **Instagram**                | **R$ 99,90**      |
-| Já tem 1 canal, quer Instagram | Adicional **Canais** + **Instagram**   | **R$ 159,80**     |
+| Situação do cliente            | O que é cobrado                      | Total por mês |
+| ------------------------------ | ------------------------------------ | ------------- |
+| Nenhum canal, quer Instagram   | Adicional **Instagram**              | **R$ 99,90**  |
+| Já tem 1 canal, quer Instagram | Adicional **Canais** + **Instagram** | **R$ 159,80** |
 
 > 💡 **Margem:** em ambos os casos o custo do Hub é **R$ 25,00** pelo canal. A diferença entre esse custo e o preço que você definiu é a **sua receita**.
 >
@@ -283,10 +281,12 @@ R$ 59,90  +  R$ 99,90  =  R$ 159,80/mês
 
 ### 🛒 Onde o cliente compra
 
-* **Direto no catálogo de canais**, ao clicar em adicionar canal (o card mostra o valor: *"Adicionar por R$ X/mês"*);
+* **Direto no catálogo de canais**, ao clicar em adicionar canal (o card mostra o valor: _"Adicionar por R$ X/mês"_);
 * Ou em **Financeiro → Canais adicionais**, quando você habilitou os adicionais no plano.
 
 O passo a passo das telas do cliente está em [Canais Adicionais (venda aos seus clientes)](../../modulo-saas/criacao-de-planos-financeiro/adicionais-de-canais.md).
+
+<figure><img src="../../.gitbook/assets/compracanal (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -398,7 +398,7 @@ Os canais são **bloqueados automaticamente** e param de funcionar até a regula
 * [Hub MultiAPIWA (conexão integrada)](hub-multiapiwa.md) — visão geral, custos e conexão do cliente
 * [Canais Adicionais (venda aos seus clientes)](../../modulo-saas/criacao-de-planos-financeiro/adicionais-de-canais.md)
 * [🛒 Adicionais](../../modulo-saas/criacao-de-planos-financeiro/adicionais.md)
-* [Criação de Planos - Financeiro](../../modulo-saas/criacao-de-planos-financeiro/README.md)
+* [Criação de Planos - Financeiro](../../modulo-saas/criacao-de-planos-financeiro/)
 * [Canais Disponíveis](../canais-disponiveis.md)
 
 ***
