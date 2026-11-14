@@ -22,13 +22,13 @@ Com ele, a conexão acontece **dentro do próprio Whazing**: o cliente clica em 
 
 Para usar um canal oficial, o Whazing precisa de uma **"ponte"** entre o seu canal e a Meta. Existem duas formas de criar essa ponte:
 
-|                                     | **App próprio** (forma tradicional) | **Hub MultiAPIWA**                       |
-| ----------------------------------- | ----------------------------------- | ---------------------------------------- |
-| Criar aplicativo na Meta Developers | ✅ Necessário                        | ❌ Desnecessário                          |
-| Preencher ID do app e chave secreta | ✅ Necessário (no seu Whazing)       | ❌ Desnecessário                          |
-| Copiar tokens e configurar webhook  | ✅ Necessário                        | ❌ Automático                             |
+|                                     | **App próprio** (forma tradicional)  | **Hub MultiAPIWA**                       |
+| ----------------------------------- | ------------------------------------ | ---------------------------------------- |
+| Criar aplicativo na Meta Developers | ✅ Necessário                         | ❌ Desnecessário                          |
+| Preencher ID do app e chave secreta | ✅ Necessário (no seu Whazing)        | ❌ Desnecessário                          |
+| Copiar tokens e configurar webhook  | ✅ Necessário                         | ❌ Automático                             |
 | Onde o cliente conecta              | Em telas técnicas, com vários passos | **Dentro do Whazing, em poucos cliques** |
-| Custo                               | Sem cobrança extra por ponte        | **R$ 25,00/mês por canal**               |
+| Custo                               | Sem cobrança extra por ponte         | **R$ 25,00/mês por canal**               |
 
 Em resumo: **com o Hub, o trabalho técnico fica com o Whazing — e não com o seu cliente.**
 
@@ -38,13 +38,13 @@ Em resumo: **com o Hub, o trabalho técnico fica com o Whazing — e não com o 
 
 ## 📱 Quais canais o Hub atende
 
-| Canal                           | O que atende                                                       | O que o cliente precisa ter                                         |
-| ------------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------- |
-| **WhatsApp Oficial (WABA)**     | Atendimento pelo número oficial do WhatsApp Business               | Conta no Facebook, Business Manager e número apto para a API Oficial |
-| **Instagram**                   | Conversas do Direct da conta profissional                          | Conta **profissional** do Instagram vinculada a uma página          |
-| **Facebook (Messenger)**        | Conversas do Messenger da página                                   | Página do Facebook e permissão de administrador                     |
+| Canal                       | O que atende                                         | O que o cliente precisa ter                                          |
+| --------------------------- | ---------------------------------------------------- | -------------------------------------------------------------------- |
+| **WhatsApp Oficial (WABA)** | Atendimento pelo número oficial do WhatsApp Business | Conta no Facebook, Business Manager e número apto para a API Oficial |
+| **Instagram**               | Conversas do Direct da conta profissional            | Conta **profissional** do Instagram vinculada a uma página           |
+| **Facebook (Messenger)**    | Conversas do Messenger da página                     | Página do Facebook e permissão de administrador                      |
 
-> ✅ É possível ativar **os três**, **dois** ou **apenas um**. Exemplo: *"quero somente Instagram"* ou *"quero Instagram + Facebook"*. Cada tipo tem o seu próprio botão de ativação.
+> ✅ É possível ativar **os três**, **dois** ou **apenas um**. Exemplo: _"quero somente Instagram"_ ou _"quero Instagram + Facebook"_. Cada tipo tem o seu próprio botão de ativação.
 
 ***
 
@@ -52,7 +52,7 @@ Em resumo: **com o Hub, o trabalho técnico fica com o Whazing — e não com o 
 
 A conexão é chamada de **transparente** porque o cliente **não sai do Whazing** e não lida com dados técnicos:
 
-```text
+```
 Cliente clica em "Conectar"
         ↓
 Abre a tela oficial da Meta (login/autorização)
@@ -71,7 +71,7 @@ Na prática, o cliente apenas:
 3. faz login na Meta e autoriza;
 4. volta para o Whazing com o canal pronto.
 
-> 📸 **Print sugerido (P3):** tela **"Conectar WhatsApp Business"** dentro do Whazing, mostrando o botão **Conectar WhatsApp** e o resumo de requisitos. É o print que mais ajuda o cliente a entender que ele não vai precisar de token.
+<figure><img src="../../.gitbook/assets/conectarinstagram.png" alt=""><figcaption></figcaption></figure>
 
 > 💡 **Dica:** se a janela da Meta não abrir, o navegador pode estar bloqueando pop-ups. Libere os pop-ups para o site do Whazing e clique novamente. No **Firefox**, a própria tela mostra o passo a passo (ícone de escudo 🛡️ na barra de endereço → desativar a proteção para o site).
 
@@ -84,11 +84,11 @@ O Hub **não é ativado pelo cliente**. Ele é liberado para o **dono do Whazing
 1. **Solicite o acesso ao suporte Whazing**, informando que quer usar o **Hub MultiAPIWA**.
 2. O suporte cria a sua **instalação** e devolve **três dados**:
 
-| Dado recebido                         | Para que serve                                                          |
-| ------------------------------------- | ----------------------------------------------------------------------- |
-| **URL do backend**                    | Endereço do servidor que faz a ponte entre o seu Whazing e a Meta       |
-| **Token de integração da instalação** | Identifica o seu Whazing perante o Hub                                  |
-| **Segredo HMAC da instalação**        | Garante que as mensagens trocadas são realmente do seu Whazing          |
+| Dado recebido                         | Para que serve                                                    |
+| ------------------------------------- | ----------------------------------------------------------------- |
+| **URL do backend**                    | Endereço do servidor que faz a ponte entre o seu Whazing e a Meta |
+| **Token de integração da instalação** | Identifica o seu Whazing perante o Hub                            |
+| **Segredo HMAC da instalação**        | Garante que as mensagens trocadas são realmente do seu Whazing    |
 
 3. Você preenche esses três dados **uma única vez** no painel do Whazing.
 4. Depois disso, liga o Hub **apenas nos canais que quiser usar**.
@@ -109,11 +109,11 @@ O passo a passo completo, com as telas, está na página:
 
 A ativação é **por tipo de canal**, dentro do Painel SaaS:
 
-| Canal                    | Caminho no Painel SaaS                                     | Botão a ligar                       |
-| ------------------------ | ---------------------------------------------------------- | ----------------------------------- |
-| **WhatsApp Oficial**     | Painel SaaS → **Integrações** → **WhatsApp Oficial (WABA)** | **Hub MultiAPIWA (WhatsApp Oficial)** |
-| **Facebook Messenger**   | Painel SaaS → **Integrações** → **Facebook Messenger**      | **Hub MultiAPIWA (Facebook)**         |
-| **Instagram**            | Painel SaaS → **Integrações** → **Instagram**               | **Hub MultiAPIWA (Instagram)**        |
+| Canal                  | Caminho no Painel SaaS                                      | Botão a ligar                         |
+| ---------------------- | ----------------------------------------------------------- | ------------------------------------- |
+| **WhatsApp Oficial**   | Painel SaaS → **Integrações** → **WhatsApp Oficial (WABA)** | **Hub MultiAPIWA (WhatsApp Oficial)** |
+| **Facebook Messenger** | Painel SaaS → **Integrações** → **Facebook Messenger**      | **Hub MultiAPIWA (Facebook)**         |
+| **Instagram**          | Painel SaaS → **Integrações** → **Instagram**               | **Hub MultiAPIWA (Instagram)**        |
 
 Regras simples:
 
@@ -121,7 +121,7 @@ Regras simples:
 * ✅ Você pode ativar **só um** canal e deixar os outros desligados.
 * ⚠️ Com o Hub ligado em um canal, os **Aplicativos próprios** cadastrados naquela tela ficam **inativos** para esse canal (o próprio sistema avisa). Desligar o Hub devolve o canal para a conexão tradicional.
 
-> 📸 **Print sugerido (P2):** tela do **WhatsApp Oficial (WABA)** mostrando o bloco **"Hub MultiAPIWA (WhatsApp Oficial)"** com o botão ligado e os três campos (URL da API, Token de integração, Segredo HMAC). Esse print serve para os três canais, porque as credenciais são as mesmas.
+<figure><img src="../../.gitbook/assets/dadoshub.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -129,10 +129,10 @@ Regras simples:
 
 Essa é a parte que mais gera dúvida: **o canal precisa existir em dois lugares ao mesmo tempo.**
 
-| Onde                                                       | O que libera                                                    |
-| ---------------------------------------------------------- | --------------------------------------------------------------- |
-| **Painel SaaS → Integrações → Canais Disponíveis**          | Diz que aquele tipo de canal **existe no seu SaaS**             |
-| **Painel SaaS → Comercial → Planos** (plano do cliente)     | Diz que aquele cliente **pode usar** aquele tipo de canal       |
+| Onde                                                    | O que libera                                              |
+| ------------------------------------------------------- | --------------------------------------------------------- |
+| **Painel SaaS → Integrações → Canais Disponíveis**      | Diz que aquele tipo de canal **existe no seu SaaS**       |
+| **Painel SaaS → Comercial → Planos** (plano do cliente) | Diz que aquele cliente **pode usar** aquele tipo de canal |
 
 Se faltar **um dos dois**, o cliente **não vê** o canal na lista — nem como opção, nem como compra.
 
@@ -152,12 +152,12 @@ Se faltar **um dos dois**, o cliente **não vê** o canal na lista — nem como 
 
 **Exemplo 1 — três canais o mês inteiro**
 
-| Canal                       | Valor      |
-| --------------------------- | ---------- |
-| WhatsApp Oficial (WABA)      | R$ 25,00   |
-| Instagram                    | R$ 25,00   |
-| Facebook                     | R$ 25,00   |
-| **Total do mês**             | **R$ 75,00** |
+| Canal                   | Valor        |
+| ----------------------- | ------------ |
+| WhatsApp Oficial (WABA) | R$ 25,00     |
+| Instagram               | R$ 25,00     |
+| Facebook                | R$ 25,00     |
+| **Total do mês**        | **R$ 75,00** |
 
 **Exemplo 2 — canal conectado no meio do mês**
 
@@ -169,13 +169,13 @@ Um canal conectado no dia 16, em um mês de 30 dias: você paga **apenas os dias
 
 ## 🧾 Como funciona a cobrança
 
-| Item                        | Como funciona                                                     |
-| --------------------------- | ----------------------------------------------------------------- |
-| **Quando a fatura é gerada** | Todo dia **01** do mês                                            |
-| **Vencimento**              | Dia **10**                                                        |
-| **Se atrasar**              | O serviço é **bloqueado automaticamente**                         |
-| **Formas de pagamento**     | **InfinityPay**: **Pix sem taxa** e **cartão** (com as taxas do cartão) |
-| **Cobrança proporcional**   | Sim, pelos dias de uso, com mínimo de R$ 10,00 por canal          |
+| Item                         | Como funciona                                                           |
+| ---------------------------- | ----------------------------------------------------------------------- |
+| **Quando a fatura é gerada** | Todo dia **01** do mês                                                  |
+| **Vencimento**               | Dia **10**                                                              |
+| **Se atrasar**               | O serviço é **bloqueado automaticamente**                               |
+| **Formas de pagamento**      | **InfinityPay**: **Pix sem taxa** e **cartão** (com as taxas do cartão) |
+| **Cobrança proporcional**    | Sim, pelos dias de uso, com mínimo de R$ 10,00 por canal                |
 
 > 💡 Enquanto o mês está em andamento, o painel mostra uma **estimativa** do valor até agora; a fatura fechada aparece depois do dia 01.
 
@@ -183,7 +183,7 @@ Um canal conectado no dia 16, em um mês de 30 dias: você paga **apenas os dias
 
 O Hub tem **cobrança própria**, **separada da licença do Whazing** e **separada das mensagens cobradas pela Meta**. São três coisas diferentes:
 
-```text
+```
 Licença do Whazing   →  o que você paga pelo sistema
 Hub MultiAPIWA       →  o que você paga pelos canais oficiais conectados (R$ 25/canal)
 Mensagens da Meta    →  o que a Meta cobra pelo envio na API Oficial
@@ -204,7 +204,7 @@ Nessa página você encontra:
 * os botões **Atualizar** e **Verificar pagamento**;
 * a tabela **"Canais conectados pelo Hub"**.
 
-> 📸 **Print sugerido (P1):** cartão **"MultiAPIWA (Hub Meta)"** na tela de Integrações e o card **"Status da cobrança MultiAPIWA"** aberto, com o selo Em dia/Em carência e o link de pagamento.
+<figure><img src="../../.gitbook/assets/canaisconectadormulto.png" alt=""><figcaption></figcaption></figure>
 
 > ℹ️ O cartão **"MultiAPIWA (Hub Meta)"** só aparece no menu quando o Hub está ligado em **pelo menos um** canal.
 
@@ -216,16 +216,16 @@ Nessa página você encontra:
 
 Além do painel do Whazing, o Hub tem um **site próprio**, acessado com o **usuário e senha** enviados quando o acesso é liberado. No menu lateral:
 
-| Área                     | O que você encontra                                                                                  |
-| ------------------------ | ---------------------------------------------------------------------------------------------------- |
-| 🏠 **Início**            | Visão geral da conta                                                                                 |
+| Área                     | O que você encontra                                                                                     |
+| ------------------------ | ------------------------------------------------------------------------------------------------------- |
+| 🏠 **Início**            | Visão geral da conta                                                                                    |
 | 🔗 **Meus canais**       | Canais conectados, com número/identificador, situação e valor mensal. É onde se **desconecta** um canal |
-| 🩺 **Saúde dos números** | Qualidade e status que a Meta informa sobre os números                                                |
-| 🧾 **Faturas**           | Cobranças com vencimento, valor e situação — e o botão **Pagar**                                      |
-| 💳 **Pagamentos**        | Histórico dos pagamentos e recibos                                                                   |
-| ⚡ **Atividade**          | Registro dos eventos da conta                                                                        |
-| 👤 **Minha conta**       | Dados de acesso                                                                                      |
-| ❓ **Ajuda**              | Suporte                                                                                              |
+| 🩺 **Saúde dos números** | Qualidade e status que a Meta informa sobre os números                                                  |
+| 🧾 **Faturas**           | Cobranças com vencimento, valor e situação — e o botão **Pagar**                                        |
+| 💳 **Pagamentos**        | Histórico dos pagamentos e recibos                                                                      |
+| ⚡ **Atividade**          | Registro dos eventos da conta                                                                           |
+| 👤 **Minha conta**       | Dados de acesso                                                                                         |
+| ❓ **Ajuda**              | Suporte                                                                                                 |
 
 ***
 
@@ -249,7 +249,7 @@ Este é o ponto mais importante da página. **O Hub não é uma ferramenta de di
 
 ### O que acontece se as regras não forem respeitadas
 
-```text
+```
 Mensagens recusadas / denúncias
         ↓
 A qualidade do número cai (a Meta informa isso no painel)
@@ -299,16 +299,16 @@ O cancelamento pode ser feito **pelo painel do Hub** ou **pelo próprio Whazing*
 
 Na página **Painel SaaS → Integrações → MultiAPIWA (Hub Meta)**, a tabela **"Canais conectados pelo Hub"** mostra:
 
-| Coluna                 | O que significa                                                          |
-| ---------------------- | ------------------------------------------------------------------------ |
-| **Tipo**               | WhatsApp, Instagram ou Facebook                                          |
-| **Número / Identificador** | O número ou usuário do canal                                         |
-| **Cliente (empresa)**  | A empresa (tenant) dona daquele canal                                    |
-| **Canal**              | O nome do canal dentro do Whazing                                        |
-| **Conectado em**       | Data da conexão                                                          |
-| **Situação**           | **Ativo**, **Conectando**, **Com erro**, **Desconectado** ou **Pausado (pendência)** |
-| **Token**              | **OK**, **Vai expirar**, **Expirado**, **Inválido** ou **Sincronizando** |
-| **Ações**              | **Cancelar conexão**                                                     |
+| Coluna                     | O que significa                                                                      |
+| -------------------------- | ------------------------------------------------------------------------------------ |
+| **Tipo**                   | WhatsApp, Instagram ou Facebook                                                      |
+| **Número / Identificador** | O número ou usuário do canal                                                         |
+| **Cliente (empresa)**      | A empresa (tenant) dona daquele canal                                                |
+| **Canal**                  | O nome do canal dentro do Whazing                                                    |
+| **Conectado em**           | Data da conexão                                                                      |
+| **Situação**               | **Ativo**, **Conectando**, **Com erro**, **Desconectado** ou **Pausado (pendência)** |
+| **Token**                  | **OK**, **Vai expirar**, **Expirado**, **Inválido** ou **Sincronizando**             |
+| **Ações**                  | **Cancelar conexão**                                                                 |
 
 > 🔑 **Token "Vai expirar", "Expirado" ou "Inválido":** significa que o cliente precisa **reconectar** o canal. A própria página mostra um aviso com a quantidade de canais que precisam de atenção.
 
