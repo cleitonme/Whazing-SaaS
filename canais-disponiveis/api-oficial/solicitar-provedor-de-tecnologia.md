@@ -11,6 +11,10 @@ Um **Provedor de Tecnologia** é uma empresa ou plataforma autorizada pela Meta 
 
 O **Whazing** atua exatamente nesse papel, por isso é necessário solicitar essa aprovação.
 
+> ⚠️ **Nível avançado.** O **suporte Whazing não cria, não configura e não aprova aplicativos** na Meta — isso vale para **WhatsApp Oficial, Instagram e Facebook**. Quem quiser esse serviço pode contratar **consultoria por R$ 1.000,00** (criação do app + condução da aprovação). Para quem quer simplicidade, use o [Hub MultiAPIWA](hub-multiapiwa.md).
+>
+> 📌 O mesmo processo de avaliação da Meta, aplicado a **Instagram e Facebook**, está em [Permissões e aprovação na Meta](../conexao-direta-meta/permissoes-e-aprovacao-meta.md).
+
 ***
 
 ## ✅ Pré-requisitos (obrigatório antes de começar)

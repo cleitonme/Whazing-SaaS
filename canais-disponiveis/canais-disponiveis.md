@@ -85,6 +85,28 @@ A **WhatsApp PLUS** é uma opção não oficial com recursos adicionais.
 
 ***
 
+## 🔵 Conexão Direta Meta — Instagram e Facebook (nível avançado)
+
+Além dos hubs, o Whazing conecta **Instagram** e **Facebook** direto pela **Graph API oficial**, usando um **aplicativo próprio** criado por você na Meta.
+
+#### Como funciona
+
+* Você cria o app no **Meta for Developers** e cadastra **App ID / App Secret** em **Painel SaaS → Integrações → Instagram** (ou **Facebook Messenger**);
+* O cliente conecta a conta pelo próprio Whazing, em **Canais → Instagram/Facebook → "Conexão direta"**;
+* As mensagens chegam pelo **webhook** do seu app.
+
+#### Custos
+
+* **Sem cobrança por canal do Whazing**;
+* Existe custo indireto: tempo de criação, **verificação de negócio** e **App Review** na Meta.
+
+> ⚠️ **Nível avançado.** O **suporte Whazing não cria, não configura e não aprova aplicativos** — isso vale para Instagram, Facebook e WhatsApp Oficial. Quem quiser esse serviço pode contratar **consultoria por R$ 1.000,00** (criação do app + condução da aprovação na Meta). Para quem quer simplicidade, use o [Hub MultiAPIWA](api-oficial/hub-multiapiwa.md).
+
+👉 Guia completo: [Conexão direta Meta (Facebook e Instagram)](conexao-direta-meta/README.md)\
+👉 Permissões, duplicadas e aprovação: [Permissões e aprovação na Meta](conexao-direta-meta/permissoes-e-aprovacao-meta.md)
+
+***
+
 ## 💼 API Oficial via Hub MultiAPIWA
 
 A conexão mais simples dos canais oficiais: acontece **direto dentro do Whazing**, sem o cliente copiar token nem configurar webhook.
@@ -175,6 +197,8 @@ O ConnectionHub permite utilizar canais oficiais de Facebook e Instagram.
 ## 🟢 WhatsApp API Oficial da Meta — WABA
 
 O Whazing também suporta conexão direta com a **WhatsApp Business Platform da Meta**.
+
+> ⚠️ **Nível avançado.** A configuração abaixo exige criar e **aprovar um aplicativo na Meta**. O **suporte Whazing não cria, não configura e não aprova aplicativos** (vale para WhatsApp, Instagram e Facebook). Há **consultoria opcional por R$ 1.000,00** para criação + aprovação, e o [Hub MultiAPIWA](api-oficial/hub-multiapiwa.md) é o caminho pronto e sem burocracia.
 
 #### Recursos
 
@@ -369,6 +393,7 @@ Para reduzir o consumo, diminua o tamanho da mensagem.
 | **Hub MultiAPIWA**              | Oficial / HUB       | R$ 25/canal                    | WhatsApp, Instagram e Facebook                  |
 | **Hub NotificaMe**              | Oficial / HUB       | Conforme canal                 | WhatsApp, Instagram, Facebook, WebChat e TikTok |
 | **ConnectionHub**               | Oficial / HUB       | R$ 25/canal                    | Instagram e Facebook                            |
+| **Conexão Direta Meta**         | Oficial (App próprio) | Gratuito no Whazing         | Instagram e Facebook via Graph API              |
 | **WhatsApp WABA**               | Oficial Meta        | Conforme uso da Meta           | Templates, botões, multimídia e escalabilidade  |
 | **WebChat**                     | Nativo              | Sem custo adicional do Whazing | Atendimento diretamente pelo site               |
 | **E-mail**                      | E-mail              | Conforme provedor              | Gmail, Microsoft, IMAP, POP3 e SMTP             |

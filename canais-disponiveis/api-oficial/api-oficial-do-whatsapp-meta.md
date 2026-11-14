@@ -8,6 +8,13 @@ description: >-
 
 ## API Oficial do WhatsApp (Meta)
 
+> ⚠️ **Nível avançado — o aplicativo é por sua conta.**
+>
+> Este guia exige criar e **aprovar** um aplicativo na Meta. **O suporte Whazing não cria, não configura e não aprova aplicativos** — e isso vale também para **Instagram e Facebook** (veja [Conexão direta Meta](../conexao-direta-meta/README.md)).
+>
+> * 🛠️ **Consultoria opcional: R$ 1.000,00** — criação do aplicativo + condução da aprovação na Meta.
+> * ⚡ **Quer o caminho fácil?** Use o [Hub MultiAPIWA](hub-multiapiwa.md): a conexão acontece dentro do Whazing, sem app, token ou webhook.
+
 **⚠️ Considerações importantes**
 
 * A API oficial **não oferece suporte a grupos**.

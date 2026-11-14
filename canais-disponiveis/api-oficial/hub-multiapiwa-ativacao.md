@@ -389,7 +389,7 @@ Os canais são **bloqueados automaticamente** e param de funcionar até a regula
 
 #### Posso usar o Hub para campanhas em massa?
 
-**Não.** O Hub é para **atendimento**, dentro das regras da Meta. Disparo em massa derruba a **qualidade do número**, pode bloquear o cadastro e, por o App Meta ser centralizado, **afeta todos os clientes**. Veja [Regras de uso e qualidade do número](hub-multiapiwa.md#regras-de-uso-e-qualidade-do-numero).
+**Não.** O Hub é para **atendimento**, dentro das regras da Meta. Disparo em massa derruba a **qualidade do número**, pode bloquear o cadastro e, por o App Meta ser centralizado, **afeta todos os clientes**. Veja a seção **Regras de uso e qualidade do número** em [Hub MultiAPIWA (conexão integrada)](hub-multiapiwa.md).
 
 ***
 

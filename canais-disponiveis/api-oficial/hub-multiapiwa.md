@@ -14,7 +14,7 @@ Com ele, a conexão acontece **dentro do próprio Whazing**: o cliente clica em 
 
 > ⚠️ **Uso responsável do número (leia antes de conectar).**
 >
-> Os canais conectados pelo Hub usam um **aplicativo da Meta centralizado**, compartilhado entre todos os clientes. Por isso, o número **não deve ser usado para envio de spam ou disparo em massa fora das regras da Meta**. Se um número perder **qualidade** (denúncias, bloqueios, mensagens recusadas), o cadastro pode ser **restrito ou bloqueado** — e, como o aplicativo é compartilhado, o problema de um cliente pode **afetar todos os clientes**. Use os canais oficiais apenas para atendimento e comunicações permitidas. Veja a seção [Regras de uso e qualidade do número](#regras-de-uso-e-qualidade-do-numero).
+> Os canais conectados pelo Hub usam um **aplicativo da Meta centralizado**, compartilhado entre todos os clientes. Por isso, o número **não deve ser usado para envio de spam ou disparo em massa fora das regras da Meta**. Se um número perder **qualidade** (denúncias, bloqueios, mensagens recusadas), o cadastro pode ser **restrito ou bloqueado** — e, como o aplicativo é compartilhado, o problema de um cliente pode **afetar todos os clientes**. Use os canais oficiais apenas para atendimento e comunicações permitidas. Veja a seção **Regras de uso e qualidade do número**, mais abaixo.
 
 ***
 
@@ -318,7 +318,7 @@ Na página **Painel SaaS → Integrações → MultiAPIWA (Hub Meta)**, a tabela
 
 ### O canal não aparece para o cliente
 
-Falta liberar em **um dos dois lugares**: o tipo no seu **plano** (Painel SaaS → Comercial → Planos) ou o tipo em **Canais Disponíveis**. Veja [Para o canal aparecer para o seu cliente](#para-o-canal-aparecer-para-o-seu-cliente).
+Falta liberar em **um dos dois lugares**: o tipo no seu **plano** (Painel SaaS → Comercial → Planos) ou o tipo em **Canais Disponíveis**. Veja a seção **Para o canal aparecer para o seu cliente**, acima.
 
 ### O menu "MultiAPIWA (Hub Meta)" não aparece no Painel SaaS
 
@@ -414,7 +414,7 @@ Sim. Pelo painel do Hub ou pelo Whazing (**Cancelar conexão**). O período usad
 
 #### Posso vender esse canal para os meus clientes?
 
-Sim — é exatamente para isso que existem os **planos** e os **adicionais**. Veja [Ativar e vender o Hub MultiAPIWA](hub-multiapiwa-ativacao.md#vender-o-canal-como-adicional).
+Sim — é exatamente para isso que existem os **planos** e os **adicionais**. Veja a seção **Vender o canal como adicional** em [Ativar e vender o Hub MultiAPIWA](hub-multiapiwa-ativacao.md).
 
 ***
 

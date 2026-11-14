@@ -4,6 +4,8 @@ O Whazing permite conectar **Instagram, Facebook e TikTok** como canais de atend
 
 > 💡 **Custos:** os valores são definidos pelo provedor do HUB. Consulte [Canais Disponíveis](../canais-disponiveis.md) para ver a tabela de valores por canal.
 
+> 🔵 **Prefere sem hub, com aplicativo próprio?** O Whazing também conecta Instagram e Facebook pela **conexão direta** (Graph API oficial). É nível avançado, exige criar e aprovar um app na Meta — veja [Conexão direta Meta (Facebook e Instagram)](../conexao-direta-meta/README.md).
+
 ## 📄 Opções de conexão
 
 * [WhatsApp, Instagram, Facebook, TikTok e WebChat via NotificaMe](facebook-e-instagram-via-hub/)
