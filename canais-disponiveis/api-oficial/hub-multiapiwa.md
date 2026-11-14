@@ -1,230 +1,352 @@
 # Hub MultiAPIWA (conexão integrada)
 
-O **Hub MultiAPIWA** é a forma mais simples de conectar o **WhatsApp Oficial (API Oficial / WABA)** ao Whazing.
+O **Hub MultiAPIWA** é o **hub oficial do Whazing** para conectar os canais oficiais da Meta ao sistema:
 
-Com ele, a conexão acontece **dentro do próprio Whazing**: você clica em um botão, a tela oficial de cadastro do WhatsApp Business aparece e o sistema conduz cada etapa até o final. Você **não precisa copiar tokens, configurar webhook ou cadastrar aplicativos na Meta** — tudo isso fica por conta da integração.
+* ✅ **WhatsApp Oficial (WABA)**
+* ✅ **Instagram**
+* ✅ **Facebook (Messenger)**
 
-> 💰 **Mensalidade:** R$ 25,00 por canal (número) conectado
+Com ele, a conexão acontece **dentro do próprio Whazing**: o cliente clica em um botão, a tela oficial da Meta aparece e o sistema conduz cada etapa até o final. **O cliente final não precisa copiar token, criar aplicativo na Meta nem configurar webhook** — o Whazing já faz essa parte.
+
+> 🚫 **Exclusivo do Whazing.**
 >
-> ✅ Compatível com **Coexistência (Coex)** — continue usando o WhatsApp no celular normalmente
+> O Hub MultiAPIWA **funciona somente com o Whazing**. Os dados de instalação que você recebe são criados para o **seu** Whazing e **não funcionam em outros sistemas**. Não é possível reaproveitar as mesmas credenciais em outro painel ou em outra instalação.
+
+> ⚠️ **Uso responsável do número (leia antes de conectar).**
 >
-> 🔀 O Hub é **opcional**: cada tipo de canal pode usar o Hub **ou** outra forma de conexão disponível no sistema
+> Os canais conectados pelo Hub usam um **aplicativo da Meta centralizado**, compartilhado entre todos os clientes. Por isso, o número **não deve ser usado para envio de spam ou disparo em massa fora das regras da Meta**. Se um número perder **qualidade** (denúncias, bloqueios, mensagens recusadas), o cadastro pode ser **restrito ou bloqueado** — e, como o aplicativo é compartilhado, o problema de um cliente pode **afetar todos os clientes**. Use os canais oficiais apenas para atendimento e comunicações permitidas. Veja a seção [Regras de uso e qualidade do número](#regras-de-uso-e-qualidade-do-numero).
 
 ***
 
-## 🤔 O que é o Hub?
+## 🤔 O que é o Hub, em palavras simples
 
-Pense no Hub como um **atalho inteligente** para conectar canais oficiais.
+Para usar um canal oficial, o Whazing precisa de uma **"ponte"** entre o seu canal e a Meta. Existem duas formas de criar essa ponte:
 
-Para usar a API Oficial do WhatsApp, o sistema precisa de uma "ponte" entre o seu número e o Whazing. Existem duas formas de criar essa ponte:
+|                                     | **App próprio** (forma tradicional) | **Hub MultiAPIWA**                       |
+| ----------------------------------- | ----------------------------------- | ---------------------------------------- |
+| Criar aplicativo na Meta Developers | ✅ Necessário                        | ❌ Desnecessário                          |
+| Preencher ID do app e chave secreta | ✅ Necessário (no seu Whazing)       | ❌ Desnecessário                          |
+| Copiar tokens e configurar webhook  | ✅ Necessário                        | ❌ Automático                             |
+| Onde o cliente conecta              | Em telas técnicas, com vários passos | **Dentro do Whazing, em poucos cliques** |
+| Custo                               | Sem cobrança extra por ponte        | **R$ 25,00/mês por canal**               |
 
-|                                         | **App próprio** (forma tradicional)      | **Hub MultiAPIWA**                       |
-| --------------------------------------- | ---------------------------------------- | ---------------------------------------- |
-| Cadastro de aplicativo na Meta          | ✅ Necessário (feito pelo administrador)  | ❌ Desnecessário                          |
-| Preencher ID do app, chave secreta etc. | ✅ Necessário                             | ❌ Desnecessário                          |
-| Copiar tokens e configurar webhook      | ✅ Necessário                             | ❌ Automático                             |
-| Tela de conexão                         | Configurações técnicas em vários lugares | **Dentro do Whazing, em poucos cliques** |
-| Cobrança                                | Sem cobrança extra por ponte             | **R$ 25,00/mês por canal**               |
+Em resumo: **com o Hub, o trabalho técnico fica com o Whazing — e não com o seu cliente.**
 
-Em resumo: **com o Hub, o Whazing faz o trabalho técnico por você.**
-
-***
-
-## ⭐ Qual é a vantagem?
-
-1. **Conexão dentro do Whazing** — você não sai do sistema para fazer configurações em outros painéis.
-2. **Nada de dados técnicos** — não é preciso informar tokens, webhook, ID de aplicativo ou chave secreta. O próprio Whazing conduz o processo.
-3. **Experiência oficial da Meta** — a tela de cadastro do WhatsApp Business que aparece é a oficial da Meta, parecida com quando você conecta um aplicativo novo no celular usando o Facebook.
-4. **Menos chance de erro** — sem digitação de dados técnicos, não há risco de preencher algo errado.
+> 💡 O Hub é **opcional e escolhido por tipo de canal**. Você pode usar o Hub para Instagram e continuar usando o App próprio para WhatsApp, por exemplo.
 
 ***
 
-## 📱 Quais canais estão disponíveis?
+## 📱 Quais canais o Hub atende
 
-Atualmente, o Hub está disponível para:
+| Canal                           | O que atende                                                       | O que o cliente precisa ter                                         |
+| ------------------------------- | ------------------------------------------------------------------ | ------------------------------------------------------------------- |
+| **WhatsApp Oficial (WABA)**     | Atendimento pelo número oficial do WhatsApp Business               | Conta no Facebook, Business Manager e número apto para a API Oficial |
+| **Instagram**                   | Conversas do Direct da conta profissional                          | Conta **profissional** do Instagram vinculada a uma página          |
+| **Facebook (Messenger)**        | Conversas do Messenger da página                                   | Página do Facebook e permissão de administrador                     |
 
-* ✅ **WhatsApp Oficial (WABA)** — disponível agora
-
-Previstos para o futuro:
-
-* ⏳ Facebook — em breve
-* ⏳ Instagram — em breve
-
-> ⚠️ Facebook e Instagram **ainda não estão liberados** pelo Hub. Quando forem ativados, esta documentação será atualizada.
+> ✅ É possível ativar **os três**, **dois** ou **apenas um**. Exemplo: *"quero somente Instagram"* ou *"quero Instagram + Facebook"*. Cada tipo tem o seu próprio botão de ativação.
 
 ***
 
-## 🔌 Como conectar um WhatsApp Oficial pelo Hub?
+## 🔌 Como funciona a conexão (transparente)
 
-O processo acontece **inteiramente dentro do Whazing**. Siga o passo a passo:
+A conexão é chamada de **transparente** porque o cliente **não sai do Whazing** e não lida com dados técnicos:
 
-### 1. Abra a lista de canais
+```text
+Cliente clica em "Conectar"
+        ↓
+Abre a tela oficial da Meta (login/autorização)
+        ↓
+Cliente escolhe a empresa, a página ou o número
+        ↓
+A Meta autoriza
+        ↓
+O canal é criado no Whazing já funcionando 🎉
+```
 
-No menu do Whazing, acesse **Canais** e clique em **Adicionar Canal** (ou no botão de adicionar novo canal).
+Na prática, o cliente apenas:
 
-### 2. Escolha o tipo "WhatsApp Oficial"
+1. escolhe o canal em **Canais → adicionar canal** (WhatsApp Oficial, Instagram ou Facebook);
+2. clica no botão de conexão;
+3. faz login na Meta e autoriza;
+4. volta para o Whazing com o canal pronto.
 
-Na lista de tipos de canal, selecione **WhatsApp Oficial** (também conhecido como WABA). É a conexão oficial do WhatsApp, indicada para empresas que buscam maior estabilidade e conformidade com as regras da Meta.
+> 📸 **Print sugerido (P3):** tela **"Conectar WhatsApp Business"** dentro do Whazing, mostrando o botão **Conectar WhatsApp** e o resumo de requisitos. É o print que mais ajuda o cliente a entender que ele não vai precisar de token.
 
-### 3. Clique em "Conectar WABA"
-
-Aparecerá o botão **Conectar WABA**. Ao clicar nele, o Whazing abre a tela de conexão.
-
-### 4. Inicie a conexão com a Meta
-
-Na tela **Conectar WhatsApp Business**, você verá:
-
-* Informações importantes sobre requisitos, cobranças da Meta e regras da API Oficial (vale a pena ler!);
-* O botão **Conectar WhatsApp**, para iniciar o cadastro.
-
-Clique em **Conectar WhatsApp**. Uma janela da Meta (Facebook) será aberta para você fazer login e autorizar a conexão.
-
-> 💡 **Dica:** se a janela não abrir, seu navegador pode estar bloqueando janelas extras (pop-ups). Permita os pop-ups para o site do Whazing e tente novamente. Se você usa **Firefox**, a própria tela mostra um passo a passo para liberar a conexão.
-
-### 5. Faça login na Meta e siga as etapas
-
-Na janela da Meta:
-
-1. Faça login com a conta do **Facebook** ligada ao seu WhatsApp Business.
-2. Selecione a empresa e o número do WhatsApp que deseja conectar.
-3. Siga as etapas apresentadas pela Meta até concluir a autorização.
-
-> ⚠️ Certifique-se de selecionar a conta comercial e o número corretos para evitar problemas na vinculação.
-
-### 6. Pronto! 🎉
-
-Ao voltar para o Whazing, você verá a mensagem:
-
-> **WhatsApp Business conectado com sucesso!**
-
-O canal será criado automaticamente no Whazing, já vinculado ao Hub. Você pode clicar em **Ir para Canais** para vê-lo na lista de canais.
+> 💡 **Dica:** se a janela da Meta não abrir, o navegador pode estar bloqueando pop-ups. Libere os pop-ups para o site do Whazing e clique novamente. No **Firefox**, a própria tela mostra o passo a passo (ícone de escudo 🛡️ na barra de endereço → desativar a proteção para o site).
 
 ***
 
-## 🔐 Preciso informar token ou webhook?
+## 🔑 Como conseguir o acesso
 
-**Não.** 🎉
+O Hub **não é ativado pelo cliente**. Ele é liberado para o **dono do Whazing (você, que administra o SaaS)**:
 
-Na conexão pelo Hub você **não precisa**:
+1. **Solicite o acesso ao suporte Whazing**, informando que quer usar o **Hub MultiAPIWA**.
+2. O suporte cria a sua **instalação** e devolve **três dados**:
 
-* ❌ Copiar ou colar tokens;
-* ❌ Configurar webhook;
-* ❌ Criar aplicativo na Meta for Developers;
-* ❌ Informar ID de aplicativo, chave secreta ou ID de configuração.
+| Dado recebido                         | Para que serve                                                          |
+| ------------------------------------- | ----------------------------------------------------------------------- |
+| **URL do backend**                    | Endereço do servidor que faz a ponte entre o seu Whazing e a Meta       |
+| **Token de integração da instalação** | Identifica o seu Whazing perante o Hub                                  |
+| **Segredo HMAC da instalação**        | Garante que as mensagens trocadas são realmente do seu Whazing          |
 
-O Whazing cuida de tudo isso automaticamente durante a conexão. Você só precisa ter em mãos:
+3. Você preenche esses três dados **uma única vez** no painel do Whazing.
+4. Depois disso, liga o Hub **apenas nos canais que quiser usar**.
 
-* ✅ Uma **conta Facebook ativa**;
-* ✅ Uma conta **Business Manager configurada**;
-* ✅ A **empresa verificada pela Meta** (necessária para ativar a API Oficial);
-* ✅ Um **cartão de crédito cadastrado na Meta** (exigência da própria Meta, pois ela cobra pelas mensagens da API Oficial — essa cobrança é separada da mensalidade do Hub).
+> ⚠️ **Muito importante — URL do backend.**
+>
+> A **URL do backend precisa ser informada** ao suporte (é o endereço pelo qual o seu Whazing é acessado). **Se essa URL mudar** — troca de domínio, mudança de VPS, instalação de túnel/proxy — **você precisa informar novamente**, senão as conexões param de funcionar.
+>
+> Veja também: [Trocar Domínio](../../instalacao-and-vps/trocar-dominio-instalacao-whazing.md).
 
-***
+O passo a passo completo, com as telas, está na página:
 
-## 🔄 O Hub é obrigatório?
-
-**Não.** O uso do Hub é **opcional e configurado por tipo de canal**.
-
-* O administrador do sistema pode **ligar ou desligar** o Hub para cada tipo de canal (WhatsApp Oficial e, no futuro, Facebook e Instagram) nas configurações internas de canais. O usuário comum do atendimento não precisa se preocupar com isso.
-* **Com o Hub ligado** para o WhatsApp Oficial, a conexão acontece direto pelo Whazing, como mostrado acima. Nessa situação, as conexões usam o aplicativo centralizado do Hub, e os aplicativos próprios cadastrados ficam **inativos** para esse canal enquanto o Hub estiver ligado — o próprio sistema avisa isso na tela de configuração.
-* **Com o Hub desligado**, o canal volta a usar a forma de conexão tradicional, com aplicativo próprio.
-
-> 💡 Ou seja: o mesmo sistema pode ter canais conectados pelo Hub e canais conectados de outras formas, conforme a configuração de cada tipo de canal.
+👉 [**Ativar e vender o Hub MultiAPIWA (administrador)**](hub-multiapiwa-ativacao.md)
 
 ***
 
-## 💰 Quanto custa?
+## 🎛️ Como ativar o Hub em cada canal
 
-O Hub possui cobrança própria, **separada da cobrança do Whazing**:
+A ativação é **por tipo de canal**, dentro do Painel SaaS:
 
-> **R$ 25,00 por mês, por canal (número) conectado.**
+| Canal                    | Caminho no Painel SaaS                                     | Botão a ligar                       |
+| ------------------------ | ---------------------------------------------------------- | ----------------------------------- |
+| **WhatsApp Oficial**     | Painel SaaS → **Integrações** → **WhatsApp Oficial (WABA)** | **Hub MultiAPIWA (WhatsApp Oficial)** |
+| **Facebook Messenger**   | Painel SaaS → **Integrações** → **Facebook Messenger**      | **Hub MultiAPIWA (Facebook)**         |
+| **Instagram**            | Painel SaaS → **Integrações** → **Instagram**               | **Hub MultiAPIWA (Instagram)**        |
 
-**Exemplo:** se sua empresa conectar 3 números pelo Hub, a cobrança do Hub será de **R$ 75,00 por mês** — além do valor do seu plano Whazing.
+Regras simples:
 
-> ⚠️ **Atenção:** a cobrança da **Meta** pelas mensagens da API Oficial é outra cobrança, feita diretamente pela Meta. O valor do Hub **não inclui** essas cobranças.
+* ✅ As **credenciais são compartilhadas** pelos três canais. Se você já preencheu ao ativar o primeiro canal, **não precisa preencher de novo** nos outros — os campos já estarão lá.
+* ✅ Você pode ativar **só um** canal e deixar os outros desligados.
+* ⚠️ Com o Hub ligado em um canal, os **Aplicativos próprios** cadastrados naquela tela ficam **inativos** para esse canal (o próprio sistema avisa). Desligar o Hub devolve o canal para a conexão tradicional.
 
-***
-
-## 🧾 Como funciona a cobrança do Hub?
-
-A cobrança do Hub funciona de forma simples:
-
-* **Geração da fatura:** todo dia **01** do mês é gerada a fatura com os canais usados no período.
-* **Prazo de pagamento:** você tem até o **dia 10** para pagar.
-* **Acompanhamento:** as faturas ficam disponíveis no **painel do Hub**, na área **Faturas**, onde você também pode pagar cada fatura pelo botão **Pagar**.
-
-> 💡 Enquanto o mês está em andamento, o painel mostra o valor como **"Estimativa até agora"** — ele cresce conforme os dias passam, até o fechamento da fatura.
-
-### 💸 Cobrança proporcional
-
-Se um canal for conectado ou desconectado **no meio do mês**, a cobrança é **proporcional aos dias utilizados** — você paga apenas pelo tempo em que o canal ficou ativo.
-
-* O painel do Hub mostra essa situação com o texto **"cobrança proporcional ao tempo de uso"**.
-* **Valor mínimo:** cada canal tem uma cobrança mínima de **R$ 10,00**. Se o cálculo proporcional der um valor muito baixo, é aplicado o mínimo de R$ 10,00 por canal.
-
-**Exemplo simples:** um canal conectado no dia 16 (metade de um mês de 30 dias) será cobrado proporcionalmente pelos dias restantes, não os R$ 25,00 cheios. Se a conta proporcional der menos de R$ 10,00, entra o mínimo de **R$ 10,00**.
+> 📸 **Print sugerido (P2):** tela do **WhatsApp Oficial (WABA)** mostrando o bloco **"Hub MultiAPIWA (WhatsApp Oficial)"** com o botão ligado e os três campos (URL da API, Token de integração, Segredo HMAC). Esse print serve para os três canais, porque as credenciais são as mesmas.
 
 ***
 
-## 🖥️ Painel do Hub: o que você encontra lá
+## 👥 Para o canal aparecer para o seu cliente
 
-O painel do Hub é um site simples, acessado com o **usuário e senha** do cliente (recebidos quando o acesso é liberado). Ele serve para acompanhar e gerenciar seus canais e cobranças. No menu lateral você encontra:
+Essa é a parte que mais gera dúvida: **o canal precisa existir em dois lugares ao mesmo tempo.**
 
-| Área                     | O que você vê lá                                                                                                                           |
-| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| 🏠 **Início**            | Visão geral da sua conta                                                                                                                   |
-| 🔗 **Meus canais**       | Lista dos canais oficiais conectados, com número, situação e valor mensal. É aqui que você pode **Desconectar** um canal (com confirmação) |
-| 🩺 **Saúde dos números** | Qualidade e status que a Meta informa sobre os seus números WhatsApp                                                                       |
-| 🧾 **Faturas**           | Suas cobranças, com vencimento, valor e situação. É onde você **paga** as faturas                                                          |
-| 💳 **Pagamentos**        | Histórico dos pagamentos realizados, com recibos                                                                                           |
-| ⚡ **Atividade**          | Registro dos eventos da conta                                                                                                              |
-| 👤 **Minha conta**       | Seus dados de acesso                                                                                                                       |
-| ❓ **Ajuda**              | Suporte                                                                                                                                    |
+| Onde                                                       | O que libera                                                    |
+| ---------------------------------------------------------- | --------------------------------------------------------------- |
+| **Painel SaaS → Integrações → Canais Disponíveis**          | Diz que aquele tipo de canal **existe no seu SaaS**             |
+| **Painel SaaS → Comercial → Planos** (plano do cliente)     | Diz que aquele cliente **pode usar** aquele tipo de canal       |
 
-No Whazing, o administrador também encontra uma página de acompanhamento do Hub em **Central de Configurações → Atendimento → MultiAPIWA (Hub Meta)**, com o **status da cobrança** (Em dia / Em carência / Bloqueado, valor em aberto e link para pagamento) e a tabela **"Canais conectados pelo Hub"**.
+Se faltar **um dos dois**, o cliente **não vê** o canal na lista — nem como opção, nem como compra.
+
+> 💡 Regra de bolso: **Canais Disponíveis = o que o seu SaaS oferece. Plano do cliente = o que aquele cliente contratou.**
 
 ***
 
-## ❌ Como cancelar (desconectar) um canal?
+## 💰 Quanto custa
 
-O cancelamento é feito **manualmente, pelo painel do Hub**:
+> **R$ 25,00 por mês, por canal conectado.**
+
+* O valor é **por canal** (cada número de WhatsApp, cada conta de Instagram, cada página de Facebook conta como um canal).
+* A cobrança é **proporcional aos dias de uso**: entrou no meio do mês, paga só o período usado; cancelou no meio do mês, paga só até o dia do cancelamento.
+* **Valor mínimo: R$ 10,00 por canal.** Se o cálculo proporcional der menos que isso, vale o mínimo.
+
+### Exemplos
+
+**Exemplo 1 — três canais o mês inteiro**
+
+| Canal                       | Valor      |
+| --------------------------- | ---------- |
+| WhatsApp Oficial (WABA)      | R$ 25,00   |
+| Instagram                    | R$ 25,00   |
+| Facebook                     | R$ 25,00   |
+| **Total do mês**             | **R$ 75,00** |
+
+**Exemplo 2 — canal conectado no meio do mês**
+
+Um canal conectado no dia 16, em um mês de 30 dias: você paga **apenas os dias em que ele ficou ativo**, não os R$ 25,00 cheios. Se a conta proporcional ficar abaixo de R$ 10,00, entra o **mínimo de R$ 10,00**.
+
+> ⚠️ **Não confunda as cobranças.** O valor do Hub é só pela **ponte de conexão**. As **mensagens** da API Oficial são cobradas **pela Meta**, direto na sua conta Meta — isso é outra fatura, de outro fornecedor.
+
+***
+
+## 🧾 Como funciona a cobrança
+
+| Item                        | Como funciona                                                     |
+| --------------------------- | ----------------------------------------------------------------- |
+| **Quando a fatura é gerada** | Todo dia **01** do mês                                            |
+| **Vencimento**              | Dia **10**                                                        |
+| **Se atrasar**              | O serviço é **bloqueado automaticamente**                         |
+| **Formas de pagamento**     | **InfinityPay**: **Pix sem taxa** e **cartão** (com as taxas do cartão) |
+| **Cobrança proporcional**   | Sim, pelos dias de uso, com mínimo de R$ 10,00 por canal          |
+
+> 💡 Enquanto o mês está em andamento, o painel mostra uma **estimativa** do valor até agora; a fatura fechada aparece depois do dia 01.
+
+### 💳 O pagamento do Hub é separado do Whazing
+
+O Hub tem **cobrança própria**, **separada da licença do Whazing** e **separada das mensagens cobradas pela Meta**. São três coisas diferentes:
+
+```text
+Licença do Whazing   →  o que você paga pelo sistema
+Hub MultiAPIWA       →  o que você paga pelos canais oficiais conectados (R$ 25/canal)
+Mensagens da Meta    →  o que a Meta cobra pelo envio na API Oficial
+```
+
+### 📍 Onde você vê e paga a fatura do Hub
+
+No Whazing:
+
+**Painel SaaS → Integrações → MultiAPIWA (Hub Meta)**
+
+Nessa página você encontra:
+
+* o **status da cobrança**: **Em dia**, **Em carência** ou **Bloqueado**;
+* o **valor em aberto** e a **data de vencimento**;
+* o aviso de **"Regularize até {data} para evitar o bloqueio automático"** (quando em carência);
+* o botão **Abrir link de pagamento** (página do InfinityPay, com Pix e cartão);
+* os botões **Atualizar** e **Verificar pagamento**;
+* a tabela **"Canais conectados pelo Hub"**.
+
+> 📸 **Print sugerido (P1):** cartão **"MultiAPIWA (Hub Meta)"** na tela de Integrações e o card **"Status da cobrança MultiAPIWA"** aberto, com o selo Em dia/Em carência e o link de pagamento.
+
+> ℹ️ O cartão **"MultiAPIWA (Hub Meta)"** só aparece no menu quando o Hub está ligado em **pelo menos um** canal.
+
+> ⚠️ Se a fatura do Hub não for paga, os canais **param de funcionar** até a regularização — o bloqueio é automático e não depende do suporte.
+
+***
+
+## 🖥️ Painel do Hub (site)
+
+Além do painel do Whazing, o Hub tem um **site próprio**, acessado com o **usuário e senha** enviados quando o acesso é liberado. No menu lateral:
+
+| Área                     | O que você encontra                                                                                  |
+| ------------------------ | ---------------------------------------------------------------------------------------------------- |
+| 🏠 **Início**            | Visão geral da conta                                                                                 |
+| 🔗 **Meus canais**       | Canais conectados, com número/identificador, situação e valor mensal. É onde se **desconecta** um canal |
+| 🩺 **Saúde dos números** | Qualidade e status que a Meta informa sobre os números                                                |
+| 🧾 **Faturas**           | Cobranças com vencimento, valor e situação — e o botão **Pagar**                                      |
+| 💳 **Pagamentos**        | Histórico dos pagamentos e recibos                                                                   |
+| ⚡ **Atividade**          | Registro dos eventos da conta                                                                        |
+| 👤 **Minha conta**       | Dados de acesso                                                                                      |
+| ❓ **Ajuda**              | Suporte                                                                                              |
+
+***
+
+## ⚠️ Regras de uso e qualidade do número
+
+Este é o ponto mais importante da página. **O Hub não é uma ferramenta de disparo em massa.**
+
+### ❌ Não faça
+
+* Envio de **spam**, listas compradas ou mensagens não solicitadas;
+* **Disparo em massa** para contatos que não autorizaram o recebimento;
+* Uso de canais oficiais para burlar as regras ou os limites da Meta;
+* Reaproveitar a mesma credencial de instalação em outro sistema ou em outra instalação.
+
+### ✅ Faça
+
+* Atendimento a clientes que **iniciaram** a conversa;
+* Uso de **templates aprovados** quando a conversa estiver fora da janela de 24 horas;
+* Acompanhamento da **saúde do número** no painel do Hub;
+* Respeito às [políticas do WhatsApp Business](https://business.whatsapp.com/policy).
+
+### O que acontece se as regras não forem respeitadas
+
+```text
+Mensagens recusadas / denúncias
+        ↓
+A qualidade do número cai (a Meta informa isso no painel)
+        ↓
+O número pode ser restrito e depois bloqueado
+        ↓
+O cadastro pode ser suspenso — e, por ser um app centralizado,
+o problema pode atingir outros clientes do Hub
+```
+
+> 🚨 **Por que isso afeta todo mundo:** no Hub, o aplicativo da Meta é **centralizado**. Um número com muitos bloqueios e denúncias compromete a reputação do conjunto. É por isso que o uso indevido é tratado como **risco para todos os clientes** — e pode levar à **suspensão do canal ou da instalação**.
+
+> 💡 Se o seu objetivo é **campanha em massa**, use os canais e recursos próprios para isso (campanhas na API não oficial, SMS, e-mail) e mantenha os canais oficiais para **atendimento**.
+
+***
+
+## ❌ Como cancelar (desconectar) um canal
+
+O cancelamento pode ser feito **pelo painel do Hub** ou **pelo próprio Whazing**.
+
+### Pelo painel do Hub
 
 1. Acesse o **painel do Hub** com seu usuário e senha.
-2. No menu lateral, clique em **Meus canais**.
-3. Encontre o canal que deseja cancelar e clique em **Desconectar**.
-4. Confirme a ação na janela que aparece.
+2. Menu lateral → **Meus canais**.
+3. Localize o canal e clique em **Desconectar**.
+4. Confirme.
+
+### Pelo Whazing
+
+1. Acesse **Painel SaaS → Integrações → MultiAPIWA (Hub Meta)**.
+2. Na tabela **"Canais conectados pelo Hub"**, localize o canal na coluna **Número / Identificador**.
+3. Clique em **Cancelar conexão** e confirme.
 
 **O que acontece depois do cancelamento:**
 
-* O canal sai da cobrança — você deixa de pagar os R$ 25,00 referentes a ele.
-* Se a desconexão acontecer no meio do mês, o período já utilizado é cobrado **proporcionalmente** (respeitando o mínimo de R$ 10,00 por canal).
-* O canal desconectado continua aparecendo na lista, marcado como desconectado — há uma opção **"Mostrar desconectados"** para exibi-los ou ocultá-los.
+* O canal **deixa de receber eventos** da Meta — ou seja, **para de receber mensagens** no Whazing;
+* A **cobrança daquele canal é encerrada**;
+* O período já usado é cobrado **proporcionalmente** (respeitando o mínimo de R$ 10,00);
+* O canal **não é apagado** da empresa no Whazing — ele continua na lista, marcado como **Desconectado** (use **"Mostrar desconectados"** para exibi-lo ou ocultá-lo);
+* Para voltar a usar, é necessário **conectar de novo**.
 
-> ⚠️ **Atenção:** desconectar o canal no painel do Hub também **interrompe o atendimento** por aquele número no Whazing. Se a intenção é apenas parar de usar o Hub, mas manter o número conectado, fale com o suporte sobre as outras formas de conexão.
+> ⚠️ **Atenção:** cancelar a conexão **corta o atendimento por aquele canal**. Se a intenção é só **parar de usar o Hub** mantendo o número funcionando, isso precisa ser tratado antes (voltando o canal para a conexão tradicional, com App próprio) — fale com o suporte.
+
+***
+
+## 🔎 Como conferir os canais conectados
+
+Na página **Painel SaaS → Integrações → MultiAPIWA (Hub Meta)**, a tabela **"Canais conectados pelo Hub"** mostra:
+
+| Coluna                 | O que significa                                                          |
+| ---------------------- | ------------------------------------------------------------------------ |
+| **Tipo**               | WhatsApp, Instagram ou Facebook                                          |
+| **Número / Identificador** | O número ou usuário do canal                                         |
+| **Cliente (empresa)**  | A empresa (tenant) dona daquele canal                                    |
+| **Canal**              | O nome do canal dentro do Whazing                                        |
+| **Conectado em**       | Data da conexão                                                          |
+| **Situação**           | **Ativo**, **Conectando**, **Com erro**, **Desconectado** ou **Pausado (pendência)** |
+| **Token**              | **OK**, **Vai expirar**, **Expirado**, **Inválido** ou **Sincronizando** |
+| **Ações**              | **Cancelar conexão**                                                     |
+
+> 🔑 **Token "Vai expirar", "Expirado" ou "Inválido":** significa que o cliente precisa **reconectar** o canal. A própria página mostra um aviso com a quantidade de canais que precisam de atenção.
 
 ***
 
 ## 🆘 Problemas comuns
 
+### O canal não aparece para o cliente
+
+Falta liberar em **um dos dois lugares**: o tipo no seu **plano** (Painel SaaS → Comercial → Planos) ou o tipo em **Canais Disponíveis**. Veja [Para o canal aparecer para o seu cliente](#para-o-canal-aparecer-para-o-seu-cliente).
+
+### O menu "MultiAPIWA (Hub Meta)" não aparece no Painel SaaS
+
+Ele só aparece quando o Hub está **ligado em pelo menos um canal** (WhatsApp, Instagram ou Facebook).
+
 ### "A janela da Meta não abre"
 
-Seu navegador pode estar bloqueando janelas extras (pop-ups). Permita os pop-ups para o site do Whazing e clique novamente em **Conectar WhatsApp**.
-
-### "Uso Firefox e a conexão não inicia"
-
-O Firefox bloqueia por padrão um recurso da Meta usado na conexão. A própria tela mostra o passo a passo: clique no **ícone de escudo 🛡️** na barra de endereço e desative a proteção contra rastreamento **para este site**, depois clique em **Conectar WhatsApp** novamente.
-
-### "Minha empresa não está verificada na Meta"
-
-A API Oficial exige empresa verificada pela Meta. Verifique o status em **Business Manager → Configurações da Empresa → Informações da Empresa** e siga as orientações da Meta.
+O navegador está bloqueando pop-ups. Libere os pop-ups para o site e clique novamente. No Firefox, siga o passo a passo que a própria tela mostra.
 
 ### "Conectei, mas o canal não aparece"
 
-Aguarde alguns instantes e atualize a lista de canais. Se persistir, utilize o botão **Atualizar** na página do Hub em **Central de Configurações** ou entre em contato com o suporte.
+Aguarde alguns instantes e use **Atualizar** na página do MultiAPIWA. Se persistir, confira se o cliente tem o canal liberado no plano.
 
-### "Aparece 'Bloqueado' ou 'Em carência' na cobrança"
+### Aparece "Em carência" ou "Bloqueado"
 
-Significa que há **fatura do Hub em aberto**. Regularize o pagamento até a data mostrada na tela para evitar o bloqueio automático dos canais. O link de pagamento aparece na própria página do Hub.
+Existe **fatura do Hub em aberto**. Regularize até a data mostrada na própria página (link de pagamento no card) para evitar o bloqueio automático dos canais.
+
+### Aparece "Token precisa reconectar"
+
+O token da Meta expirou ou está inválido. Peça ao cliente para **reconectar o canal**; o atendimento volta ao normal depois disso.
+
+### As mensagens pararam de chegar depois de trocar o domínio
+
+A **URL do backend** mudou. Informe a nova URL ao suporte do Whazing — sem isso a ponte não encontra o seu sistema.
+
+### "Erro ao conectar" ou autorização negada na Meta
+
+Normalmente é permissão: o usuário que está conectando precisa ser **administrador** da página/conta comercial e a conta precisa estar com o cadastro em ordem na Meta.
 
 ***
 
@@ -232,43 +354,77 @@ Significa que há **fatura do Hub em aberto**. Regularize o pagamento até a dat
 
 #### O que é o Hub MultiAPIWA?
 
-É a integração que permite conectar o WhatsApp Oficial ao Whazing **sem configurações técnicas** — a conexão acontece dentro do próprio sistema, em poucos cliques.
+É o hub oficial do Whazing para conectar **WhatsApp Oficial (WABA)**, **Instagram** e **Facebook** sem configurações técnicas: a conexão acontece dentro do próprio Whazing.
 
-#### Preciso criar um Chatbot para usar o Hub?
+#### Funciona em outro sistema?
 
-Não. O Hub não tem relação com Chatbot; ele é apenas a **forma de conexão** do canal.
+**Não.** O Hub é **exclusivo do Whazing**. Os dados de instalação são vinculados ao seu Whazing e não funcionam em outro painel.
 
-#### Preciso informar token ou webhook?
+#### Quais canais posso usar?
 
-**Não.** O Whazing faz a conexão automaticamente. Você só faz login na Meta e autoriza.
+Os três: **WhatsApp Oficial**, **Instagram** e **Facebook** — e você escolhe quais ativar.
 
-#### O Hub é obrigatório?
+#### Preciso ativar os três?
 
-Não. Ele é **opcional por tipo de canal** — o administrador escolhe se o WhatsApp Oficial (e futuramente Facebook e Instagram) usará o Hub ou a conexão tradicional.
+Não. Pode ativar **só um**, dois ou os três, independentemente. Exemplo: apenas Instagram, ou Instagram + Facebook.
+
+#### Quem ativa o Hub?
+
+O **dono do Whazing (administrador do SaaS)**, pelo Painel SaaS. O cliente final só conecta o canal.
+
+#### O cliente precisa informar token ou webhook?
+
+**Não.** Ele apenas faz login na Meta e autoriza. As credenciais técnicas ficam no seu Painel SaaS, preenchidas uma única vez.
+
+#### Preciso informar a URL do backend?
+
+**Sim.** A URL do backend precisa ser informada ao suporte — e, **se ela mudar**, precisa ser informada novamente, senão as conexões param.
 
 #### Quanto custa?
 
-**R$ 25,00 por mês, por canal conectado**, cobrados separadamente do Whazing. A fatura é gerada todo dia 01, com pagamento até o dia 10.
+**R$ 25,00 por mês, por canal conectado**, com **mínimo de R$ 10,00** na cobrança proporcional. É separado da licença do Whazing.
 
-#### Vou pagar R$ 25,00 mesmo conectando no meio do mês?
+#### Como é cobrado?
 
-Não. A cobrança é **proporcional aos dias utilizados**, com mínimo de **R$ 10,00 por canal**.
+Fatura gerada no **dia 01**, vencimento no **dia 10**. Pagamento por **InfinityPay** (**Pix sem taxa**, cartão com as taxas do cartão). Atraso = **bloqueio automático**.
 
-#### A cobrança do Hub inclui as cobranças da Meta?
+#### Onde pago a fatura do Hub?
 
-Não. A Meta cobra separadamente pelas mensagens da API Oficial. O valor do Hub é apenas pela ponte de conexão integrada.
+Em **Painel SaaS → Integrações → MultiAPIWA (Hub Meta)**, pelo botão **Abrir link de pagamento** (ou pelo painel do Hub, em **Faturas**).
 
-#### Posso cancelar um canal quando quiser?
+#### A cobrança do Hub inclui as mensagens da Meta?
 
-Sim. Basta acessar o **painel do Hub → Meus canais → Desconectar**. O período utilizado é cobrado proporcionalmente.
+**Não.** A Meta cobra as mensagens da API Oficial separadamente. O Hub cobra apenas a ponte de conexão.
 
-#### Quais canais o Hub suporta hoje?
+#### Posso usar o número para disparo em massa?
 
-Atualmente, apenas o **WhatsApp Oficial (WABA)**. Facebook e Instagram estão previstos para o futuro.
+**Não.** O uso é para atendimento, dentro das regras da Meta. Spam e disparo em massa derrubam a **qualidade do número**, podem bloquear o cadastro e, por o aplicativo Meta ser centralizado, **afetam todos os clientes**.
+
+#### O número pode ser banido mesmo sendo API Oficial?
+
+**Sim.** A API Oficial também está sujeita às regras da Meta. Número com qualidade baixa pode ser restrito ou bloqueado.
 
 #### Continuo usando o WhatsApp no celular?
 
-Sim, quando estiver usando a **Coexistência (Coex)**. O Hub é compatível com esse modo.
+Sim, quando o canal estiver em **Coexistência (Coex)**. Veja [Configuração do WABA Incorporado (Coexistência)](configuracao-do-waba-incorporado-coexistencia.md).
+
+#### Posso cancelar um canal quando quiser?
+
+Sim. Pelo painel do Hub ou pelo Whazing (**Cancelar conexão**). O período usado é cobrado proporcionalmente, com mínimo de R$ 10,00.
+
+#### Posso vender esse canal para os meus clientes?
+
+Sim — é exatamente para isso que existem os **planos** e os **adicionais**. Veja [Ativar e vender o Hub MultiAPIWA](hub-multiapiwa-ativacao.md#vender-o-canal-como-adicional).
+
+***
+
+## 📚 Veja também
+
+* [**Ativar e vender o Hub MultiAPIWA (administrador)**](hub-multiapiwa-ativacao.md) — credenciais, ativação por canal e venda em planos/adicionais
+* [Canais Adicionais (venda aos seus clientes)](../../modulo-saas/criacao-de-planos-financeiro/adicionais-de-canais.md)
+* [Adicionais](../../modulo-saas/criacao-de-planos-financeiro/adicionais.md)
+* [API Oficial do WhatsApp (Meta)](api-oficial-do-whatsapp-meta.md)
+* [API Oficial do WhatsApp — FAQ Completo](api-oficial-do-whatsapp-faq-completo.md)
 
 ***
 

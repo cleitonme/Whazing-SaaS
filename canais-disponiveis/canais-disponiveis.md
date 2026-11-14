@@ -85,6 +85,33 @@ A **WhatsApp PLUS** é uma opção não oficial com recursos adicionais.
 
 ***
 
+## 💼 API Oficial via Hub MultiAPIWA
+
+A conexão mais simples dos canais oficiais: acontece **direto dentro do Whazing**, sem o cliente copiar token nem configurar webhook.
+
+> 🚫 **Hub exclusivo do Whazing** — não funciona em outros sistemas.
+>
+> ⚠️ **O número não deve ser usado para spam.** Disparo em massa fora das regras da Meta derruba a qualidade do número e pode bloquear o cadastro. Como o aplicativo da Meta é centralizado no Hub, o problema de um cliente **afeta todos os clientes**.
+
+#### Canais disponíveis
+
+* **WhatsApp Oficial (WABA)**;
+* **Instagram**;
+* **Facebook (Messenger)**.
+
+É possível ativar **os três**, **dois** ou **apenas um** — a ativação é por tipo de canal.
+
+#### Custos
+
+* Sem taxa de ativação;
+* Mensalidade: **R$ 25,00 por canal conectado** (fatura gerada todo dia 01, vencimento dia 10, bloqueio automático em caso de atraso; cobrança proporcional com mínimo de R$ 10,00 por canal);
+* Pagamento **separado do Whazing**, por **InfinityPay** (Pix sem taxa, cartão com as taxas do cartão).
+
+👉 Guia completo: [Hub MultiAPIWA (conexão integrada)](api-oficial/hub-multiapiwa.md)\
+👉 Para o administrador: [Ativar e vender o Hub MultiAPIWA](api-oficial/hub-multiapiwa-ativacao.md)
+
+***
+
 ## 💼 WhatsApp API Oficial via Hub NotificaMe
 
 O Hub NotificaMe permite conectar canais oficiais ao Whazing.
@@ -142,19 +169,6 @@ O ConnectionHub permite utilizar canais oficiais de Facebook e Instagram.
 * Mensalidade: **R$ 59,90 por canal conectado**.
 
 > **Limitação:** não suporta agendamento de publicações de Feed, Stories e Reels do Instagram. Comentários em publicações são suportados somente para Direct.
-
-***
-
-## 💼 API Oficial via Hub MultiAPIWA
-
-A conexão mais simples da API Oficial: acontece **direto dentro do Whazing**, sem tokens nem webhook manual.
-
-#### WhatsApp
-
-* Sem taxa de ativação;
-* Mensalidade: **R$ 25,00 por canal conectado** (fatura gerada todo dia 01, pagamento até o dia 10; cobrança proporcional com mínimo de R$ 10,00 por canal).
-
-👉 Guia completo: [Hub MultiAPIWA (conexão integrada)](api-oficial/hub-multiapiwa.md)
 
 ***
 
@@ -352,9 +366,9 @@ Para reduzir o consumo, diminua o tamanho da mensagem.
 | **WhatsApp Baileys**            | Não oficial         | Gratuito                       | Descontinuado — desativado por padrão           |
 | **Telegram**                    | Não oficial         | Gratuito                       | Atendimento via Telegram                        |
 | **WhatsApp API PLUS**           | Não oficial Premium | Paga                           | Botões, listas, links e localização             |
+| **Hub MultiAPIWA**              | Oficial / HUB       | R$ 25/canal                    | WhatsApp, Instagram e Facebook                  |
 | **Hub NotificaMe**              | Oficial / HUB       | Conforme canal                 | WhatsApp, Instagram, Facebook, WebChat e TikTok |
 | **ConnectionHub**               | Oficial / HUB       | R$ 25/canal                    | Instagram e Facebook                            |
-| **Hub MultiAPIWA**              | Oficial / HUB       | R$ 25/canal                    | WhatsApp                                        |
 | **WhatsApp WABA**               | Oficial Meta        | Conforme uso da Meta           | Templates, botões, multimídia e escalabilidade  |
 | **WebChat**                     | Nativo              | Sem custo adicional do Whazing | Atendimento diretamente pelo site               |
 | **E-mail**                      | E-mail              | Conforme provedor              | Gmail, Microsoft, IMAP, POP3 e SMTP             |
@@ -384,10 +398,10 @@ Possui recursos adicionais como botões, listas, links e localização.
 
 Considere:
 
+* Hub MultiAPIWA;
 * WhatsApp WABA;
 * Hub NotificaMe;
-* ConnectionHub;
-* Hub MultiAPIWA.
+* ConnectionHub.
 
 #### 🌐 Quero atendimento pelo meu site
 
