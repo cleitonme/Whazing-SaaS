@@ -28,10 +28,10 @@ Preencha App ID, App Secret, versão da Graph API e o método de login. Use **Te
 
 **Painel SaaS → Integrações → Canais Disponíveis**
 
-| Tipo na tela | Libera |
-| ------------ | ------ |
-| **Instagram** | Canais de Instagram (conexão direta e hub) |
-| **Facebook Messenger** | Canais de Facebook (conexão direta e hub) |
+| Tipo na tela           | Libera                                     |
+| ---------------------- | ------------------------------------------ |
+| **Instagram**          | Canais de Instagram (conexão direta e hub) |
+| **Facebook Messenger** | Canais de Facebook (conexão direta e hub)  |
 
 Ligue o botão do tipo que quer oferecer e salve.
 
@@ -63,21 +63,19 @@ O caminho é o mesmo que o cliente já usa para qualquer canal:
    * **escolha a Página** e/ou a **conta profissional** que será conectada.
 6. Volte ao Whazing — o canal aparece na lista já funcionando.
 
-> 📸 **Print sugerido (P4):** catálogo do cliente com **Instagram → "Conexão direta"** e o botão de conectar.
-
 > ⚠️ **Se aparecer cobrança de adicional**, é o limite do plano: o sistema junta os itens em uma fatura só antes de seguir. Veja [Canais Adicionais](../../modulo-saas/criacao-de-planos-financeiro/adicionais-de-canais.md).
 
 ***
 
 ## 🔎 Depois de conectar
 
-| O que conferir | Onde |
-| -------------- | ---- |
-| Canal ativo e recebendo | **Canais** (lista) |
-| Mensagens chegando | **Atendimento** |
-| Resposta automática a comentários | **Automação → Comentários e Direct do Instagram** |
-| Agendamento de publicações | **Automação → Agendamento de Publicações no Instagram** |
-| Webhook entregando | **Configurações → Webhooks** (histórico) |
+| O que conferir                    | Onde                                                    |
+| --------------------------------- | ------------------------------------------------------- |
+| Canal ativo e recebendo           | **Canais** (lista)                                      |
+| Mensagens chegando                | **Atendimento**                                         |
+| Resposta automática a comentários | **Automação → Comentários e Direct do Instagram**       |
+| Agendamento de publicações        | **Automação → Agendamento de Publicações no Instagram** |
+| Webhook entregando                | **Configurações → Webhooks** (histórico)                |
 
 > 💡 **Teste real obrigatório:** peça para alguém enviar uma mensagem no Direct/Messenger e responda pelo Whazing. Aprovar permissão não garante webhook funcionando.
 
