@@ -352,6 +352,8 @@ Canal de **SMS** com integração à [Witi](https://witi.me/).
 
 * [Liberação de Canais para Empresas](../modulo-saas/liberacao-de-canais.md)
 * [Canais Adicionais (venda aos seus clientes)](../modulo-saas/criacao-de-planos-financeiro/adicionais-de-canais.md)
-* [Guia de Conexão do Telegram](telegram.md)
-* [WebChat](webchat.md) · [SMS](sms.md)
+* [Hubs (oficiais sem criar aplicativo)](hubs/README.md) · [Conexão direta Meta](conexao-direta-meta/README.md)
+* [Instagram direto](conexao-direta-meta/instagram.md) · [Facebook direto](conexao-direta-meta/facebook.md)
+* [Telegram (bot oficial)](telegram.md) · [WebChat](webchat.md)
+* [📧 E-mail](email.md) · [SMS](sms.md)
 * [Canal Privado](canal-privado.md) · [Bloquear Chamadas do WhatsApp](bloquear-chamadas.md)
