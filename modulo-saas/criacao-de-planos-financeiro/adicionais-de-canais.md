@@ -32,7 +32,7 @@ O fluxo tem duas pontas — e as duas são suas:
 
 ***
 
-> 💡 **Exemplo pronto (Hub MultiAPIWA):** plano com **1 canal** no total e **Instagram = 0**; adicionais **Canal adicional R$ 59,90** e **Instagram R$ 99,90**. Cliente sem canal que adiciona Instagram paga **R$ 99,90/mês**; cliente que já tem 1 WhatsApp paga **R$ 59,90 + R$ 99,90 = R$ 159,80/mês**. O passo a passo completo está em [Ativar e vender o Hub MultiAPIWA](../../canais-disponiveis/api-oficial/hub-multiapiwa-ativacao.md#vender-o-canal-como-adicional).
+> 💡 **Exemplo pronto (Hub MultiAPIWA):** plano com **1 canal** no total e **Instagram = 0**; adicionais **Canal adicional R$ 59,90** e **Instagram R$ 99,90**. Cliente sem canal que adiciona Instagram paga **R$ 99,90/mês**; cliente que já tem 1 WhatsApp paga **R$ 59,90 + R$ 99,90 = R$ 159,80/mês**. O passo a passo completo está em [Ativar e vender o Hub MultiAPIWA](../../canais-disponiveis/api-oficial/hub-multiapiwa-ativacao.md) (seção **Vender o canal como adicional**).
 
 ***
 
