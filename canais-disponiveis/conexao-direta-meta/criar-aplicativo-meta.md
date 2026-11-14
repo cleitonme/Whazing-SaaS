@@ -92,7 +92,7 @@ Sem isso a conexão falha com o erro **"URL bloqueada"**.
 Em **Instagram → Business login settings → OAuth redirect URIs**, adicione **exatamente**:
 
 ```
-https://SEU-DOMINIO/oauth/instagram/callback
+https://SEU-DOMINIO/meta-oauth/callback
 ```
 
 _(Use a URL indicada na tela do Whazing — ela é gerada a partir do seu domínio.)_
@@ -102,7 +102,7 @@ _(Use a URL indicada na tela do Whazing — ela é gerada a partir do seu domín
 Em **Facebook Login for Business → Configurações**, ative **Login OAuth do Cliente/Web** e adicione **exatamente** a URL em **Valid OAuth Redirect URIs**:
 
 ```
-https://SEU-DOMINIO/oauth/facebook/callback
+https://SEU-DOMINIO/meta-oauth/callback
 ```
 
 > ⚠️ A URL precisa ser **idêntica** (inclusive `https` e sem barra no final). Divergência de uma letra gera "URL bloqueada".
