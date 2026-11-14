@@ -1,455 +1,357 @@
 ---
 description: >-
-  O Whazing suporta diferentes tipos de canais de atendimento. Cada canal possui
-  suas próprias características, custos, formas de conexão e recursos.
+  Os canais de atendimento do Whazing organizados por tipo: não oficiais, hubs
+  oficiais e conexão direta Meta, com custos, comparativo e liberação por plano.
 ---
 
 # Canais Disponíveis
 
-📲 Caso precise de um número para utilizar no sistema, você pode adquirir facilmente através do portal:
+O Whazing atende por **três famílias de canais**. Entender isso resolve 90% das dúvidas:
 
-[Telera Whazing](https://telera.whazing.com.br/)
+| Família | O que é | Exemplos |
+| ------- | ------- | -------- |
+| **Não oficial** | Conecta um número comum de WhatsApp **por QR Code**. Simples e barato, mas **fora das regras da Meta**. | WuzAPI, PLUS |
+| **Oficial via Hub** | Um provedor intermediário conecta a API oficial (Meta) por você. **Sem criar aplicativo.** | Hub MultiAPIWA, NotificaMe, ConnectionHub |
+| **Oficial direto** | Você cria o **seu aplicativo na Meta** e conecta direto. Controle total, **exige aprovação**. | WhatsApp WABA, Instagram, Facebook |
 
-> 🔒 Precisa esconder um canal dos demais usuários do sistema? Conheça o [Canal Privado.](canal-privado.md)
+📲 Precisa de um número para usar no sistema? Adquira pelo portal [Telera Whazing](https://telera.whazing.com.br/).
 
-> 📵 Quer que o número recuse automaticamente as chamadas de voz e avise quem ligou? Veja [Bloquear Chamadas do WhatsApp](bloquear-chamadas.md).
+> 🔒 Precisa esconder um canal dos demais usuários? Veja [Canal Privado](canal-privado.md).
+>
+> 📵 Quer recusar chamadas de voz automaticamente? Veja [Bloquear Chamadas do WhatsApp](bloquear-chamadas.md).
 
 ***
 
-### 📱 WhatsApp API Não Oficial — Gratuita
+## 🚀 Escolha em 30 segundos
 
-São opções de conexão sem custo adicional por canal.
+| O que eu quero | Canal recomendado | Custo |
+| -------------- | ----------------- | ----- |
+| Começar sem pagar por canal | **WhatsApp não oficial (WuzAPI)** ou **Telegram (bot oficial)** | Gratuito |
+| WhatsApp com botões e listas, sem API oficial | **WhatsApp PLUS** | Baixo, por canal |
+| Canais oficiais com conexão fácil (1, 2 ou 3) | **Hub MultiAPIWA** | R$ 25/canal/mês |
+| Canais oficiais + TikTok no mesmo hub | **Hub NotificaMe** | R$ 50/canal/mês (+ ativação em WABA/TikTok) |
+| Só Instagram e Facebook oficiais | **ConnectionHub** | R$ 59,90/canal/mês |
+| Controle total do app Meta (equipe técnica) | **Conexão direta Meta** | Gratuito no Whazing (exige app + aprovação) |
+| Atendimento pelo site | **WebChat nativo** | Gratuito |
+| Centralizar e-mails | **E-mail** | Conforme provedor |
+| Enviar SMS | **SMS (Witi)** | Conforme créditos |
 
-#### WhatsApp WuzAPI (WhatsMeow)
+> 💡 Valores de hubs e provedores são cobrados **por eles**, não pelo Whazing. Confirme sempre antes de contratar.
 
-* API não oficial.
-* Sem custo por canal.
-* Boa alternativa para instalações que desejam utilizar WhatsApp sem API oficial.
+***
 
-#### WhatsApp Baileys (descontinuado)
+## 🔐 Liberar o canal para a empresa
 
-* WhatsApp API não oficial **antiga, que foi descontinuada**.
-* **Vem desativada por padrão** nas instalações atuais.
-* **Não recomendamos o uso do Baileys.** Para novas instalações, utilize o **WuzAPI (WhatsMeow)**.
+Antes de qualquer conexão, o canal precisa existir em **dois lugares**. Se faltar um dos dois, **o canal não aparece** para o cliente — nem para conectar, nem para comprar.
+
+```text
+1) O SaaS oferece o canal?     Painel SaaS → Integrações → Canais Disponíveis
+2) A empresa tem no plano?     Painel SaaS → Comercial → Planos
+                ↓
+Os dois ligados → o cliente vê o canal em Canais → Adicionar canal
+```
+
+| Onde | O que libera |
+| ---- | ------------ |
+| **Painel SaaS → Integrações → Canais Disponíveis** | Diz que aquele tipo de canal **existe no seu SaaS** |
+| **Painel SaaS → Comercial → Planos** | Diz que **aquela empresa** pode usar aquele tipo (limite geral e limite por tipo) |
+
+Os botões de **Canais Disponíveis**: WABA Api Oficial, Whatsapp WuzAPI, Whatsapp Api Plus, Whatsapp Baileys, MultiAPI, Facebook Messenger, Instagram, Connection Hub Insta/Facebook, Hub Notificame, Telegram, Webchat, E-mail e SMS.
+
+> 💡 **Regra de bolso:** *Canais Disponíveis = o que o seu SaaS oferece. Plano da empresa = o que aquela empresa contratou.*
+
+📄 Passo a passo completo: [Liberação de Canais para Empresas](../modulo-saas/liberacao-de-canais.md)\
+📄 Vender canal como adicional: [Canais Adicionais](../modulo-saas/criacao-de-planos-financeiro/adicionais-de-canais.md)
+
+***
+
+## 📱 Canais Não Oficiais
+
+Conexão por **QR Code**, como o WhatsApp Web. **Não** passam pela API oficial da Meta.
+
+> ⚠️ **Atenção:** por serem não oficiais, estão fora das regras da Meta e **podem sofrer bloqueio** — principalmente com disparo em massa. Use com consciência.
+
+### WhatsApp WuzAPI (WhatsMeow)
+
+* API não oficial, mais moderna e recomendada;
+* **Sem custo por canal**;
+* Boa opção para quem quer WhatsApp sem API oficial.
+
+### WhatsApp Baileys (descontinuado)
+
+* API não oficial **antiga, descontinuada**;
+* **Vem desativada por padrão** nas instalações atuais;
+* **Não recomendamos.** Para novas instalações, use o **WuzAPI (WhatsMeow)**.
 
 **Como ativar (somente se você realmente precisar)**
 
-Em últimos casos, quem quiser manter o Baileys pode reativá-lo na configuração do servidor:
-
-1. Abra o arquivo **`.env`** do backend (arquivo de configuração da instalação);
+1. Abra o arquivo **`.env`** do backend;
 2. Adicione a linha:
 
-```
+```text
 # Baileys vem desativado por padrao. Definir =true pra habilitar.
 BAILEYS_ENABLED=true
 ```
 
 3. **Reinicie** o sistema;
-4. No **Painel SaaS**, acesse a tela de **Canais Disponíveis** — aparecerá o botão **"Whatsapp Baileys (recomendado desativar)"** (o próprio nome já avisa que o ideal é mantê-lo desligado);
-5. Ligue o botão — o canal Baileys volta a aparecer no **catálogo de canais** para os clientes (o plano da empresa também precisa ter o Baileys habilitado).
+4. No **Painel SaaS**, acesse **Canais Disponíveis** — aparecerá o botão **"Whatsapp Baileys (recomendado desativar)"**;
+5. Ligue o botão — o canal volta ao catálogo (o plano da empresa também precisa ter o Baileys habilitado).
 
-#### Telegram
+### ⭐ WhatsApp PLUS (não oficial premium)
 
-* Integração com Telegram.
-* Sem custo por canal.
+Versão não oficial com recursos extras de atendimento:
 
-#### 💰 Custos
-
-* **Sem custo por canal.**
-* Sem limite específico de usuários ou canais.
-* O limite real depende da capacidade da VPS e dos recursos disponíveis.
-
-> É possível alterar o tipo de API não oficial utilizada sem perder os dados existentes, seguindo o procedimento indicado na documentação.
-
-***
-
-### ⭐ WhatsApp API Não Oficial Premium — API PLUS
-
-A **WhatsApp PLUS** é uma opção não oficial com recursos adicionais.
-
-#### Recursos disponíveis
-
-* Envio de botões;
-* Listas;
+* Envio de **botões** e **listas**;
 * Botão "Copiar e Colar";
-* Links;
-* Solicitação de localização;
-* Seleção da cidade do proxy para simular uma conexão na mesma região do aparelho celular.
+* **Links**;
+* Solicitação de **localização**;
+* Seleção da **cidade do proxy** (simula conexão na região do celular).
 
-#### 💡 Vantagens
+**Vantagens:** mais estável que o Baileys, menor consumo da VPS, baixo custo por canal e recursos interativos.
 
-* Maior estabilidade em relação ao Baileys;
-* Menor consumo de recursos da VPS;
-* Baixo custo por canal;
-* Recursos adicionais para utilização no atendimento.
+### 💰 Custos dos não oficiais
 
-***
+* **Sem custo do Whazing por canal** (exceto o PLUS, que tem custo do provedor);
+* Sem limite específico de canais — o limite real é a capacidade da sua VPS.
 
-## 🔵 Conexão Direta Meta — Instagram e Facebook (nível avançado)
-
-Além dos hubs, o Whazing conecta **Instagram** e **Facebook** direto pela **Graph API oficial**, usando um **aplicativo próprio** criado por você na Meta.
-
-#### Como funciona
-
-* Você cria o app no **Meta for Developers** e cadastra **App ID / App Secret** em **Painel SaaS → Integrações → Instagram** (ou **Facebook Messenger**);
-* O cliente conecta a conta pelo próprio Whazing, em **Canais → Instagram/Facebook → "Conexão direta"**;
-* As mensagens chegam pelo **webhook** do seu app.
-
-#### Custos
-
-* **Sem cobrança por canal do Whazing**;
-* Existe custo indireto: tempo de criação, **verificação de negócio** e **App Review** na Meta.
-
-> ⚠️ **Nível avançado.** O **suporte Whazing não cria, não configura e não aprova aplicativos** — isso vale para Instagram, Facebook e WhatsApp Oficial. Quem quiser esse serviço pode contratar **consultoria por R$ 1.000,00** (criação do app + condução da aprovação na Meta). Para quem quer simplicidade, use o [Hub MultiAPIWA](api-oficial/hub-multiapiwa.md).
-
-👉 Guia completo: [Conexão direta Meta (Facebook e Instagram)](conexao-direta-meta/README.md)\
-👉 Permissões, duplicadas e aprovação: [Permissões e aprovação na Meta](conexao-direta-meta/permissoes-e-aprovacao-meta.md)
+> É possível trocar o tipo de API não oficial sem perder dados, seguindo o procedimento da documentação.
 
 ***
 
-## 💼 API Oficial via Hub MultiAPIWA
+## 📨 Telegram (Bot API oficial)
 
-A conexão mais simples dos canais oficiais: acontece **direto dentro do Whazing**, sem o cliente copiar token nem configurar webhook.
+O Telegram **não é QR Code** e não usa a API da Meta: ele usa a **Bot API oficial do Telegram**. Você **cria um bot** no **@BotFather** e conecta o **token** gerado ao Whazing.
 
-> 🚫 **Hub exclusivo do Whazing** — não funciona em outros sistemas.
->
-> ⚠️ **O número não deve ser usado para spam.** Disparo em massa fora das regras da Meta derruba a qualidade do número e pode bloquear o cadastro. Como o aplicativo da Meta é centralizado no Hub, o problema de um cliente **afeta todos os clientes**.
+* ✅ **Sem custo por canal**;
+* ✅ Conexão oficial do Telegram (Bot API);
+* ✅ Mensagens enviadas ao **seu bot** aparecem na tela de Atendimento;
+* ⚠️ Precisa criar o bot antes de cadastrar o canal — sem token não há conexão.
 
-#### Canais disponíveis
+**Resumo do caminho:** Telegram → **@BotFather** → `/newbot` → escolher nome e usuário (terminando em **"bot"**) → copiar o **token** → cadastrar o canal no Whazing.
 
-* **WhatsApp Oficial (WABA)**;
-* **Instagram**;
-* **Facebook (Messenger)**.
+👉 Guia completo: [Guia de Conexão do Telegram](telegram.md)
 
-É possível ativar **os três**, **dois** ou **apenas um** — a ativação é por tipo de canal.
+***
 
-#### Custos
+## 💼 Hub MultiAPIWA (recomendado)
 
-* Sem taxa de ativação;
-* Mensalidade: **R$ 25,00 por canal conectado** (fatura gerada todo dia 01, vencimento dia 10, bloqueio automático em caso de atraso; cobrança proporcional com mínimo de R$ 10,00 por canal);
-* Pagamento **separado do Whazing**, por **InfinityPay** (Pix sem taxa, cartão com as taxas do cartão).
+O hub **oficial do Whazing** para conectar canais da Meta. A conexão acontece **dentro do próprio Whazing**, sem o cliente copiar token nem configurar webhook.
+
+> 🚫 **Exclusivo do Whazing** — não funciona em outros sistemas.
+
+### Canais disponíveis
+
+| Canal | O que atende |
+| ----- | ------------ |
+| **WhatsApp Oficial (WABA)** | Atendimento pelo número oficial |
+| **Instagram** | Direct da conta profissional |
+| **Facebook (Messenger)** | Mensagens da Página |
+
+É possível ativar **os três**, **dois** ou **apenas um** — a ativação é **por tipo de canal** (ex.: só Instagram; ou Instagram + Facebook).
+
+### ✅ Vantagens
+
+* **Um único hub para três canais** — WhatsApp Oficial, Instagram e Facebook;
+* **Ativação por canal** — ligue só o que precisa;
+* **Sem criar aplicativo na Meta** — nada de App ID, token, webhook ou App Review;
+* **O cliente conecta dentro do Whazing** — não sai do sistema, em poucos cliques;
+* **Sem taxa de ativação** e **o menor custo por canal** entre os hubs;
+* **Cobrança proporcional** aos dias de uso;
+* **Exclusivo do Whazing**, mantido pela própria equipe.
+
+### 💰 Custos
+
+* **R$ 25,00 por canal/mês**, sem taxa de ativação;
+* **Mínimo de R$ 10,00** por canal na cobrança proporcional;
+* Fatura no **dia 01**, vencimento **dia 10** e **bloqueio automático** em caso de atraso;
+* Pagamento **separado do Whazing**, por **InfinityPay** (**Pix sem taxa**, cartão com as taxas do cartão).
+
+> ⚠️ **O número não deve ser usado para spam.** Disparo em massa fora das regras da Meta derruba a **qualidade do número** e pode bloquear o cadastro. Como o aplicativo da Meta é **centralizado**, o problema de um cliente **afeta todos**.
 
 👉 Guia completo: [Hub MultiAPIWA (conexão integrada)](api-oficial/hub-multiapiwa.md)\
 👉 Para o administrador: [Ativar e vender o Hub MultiAPIWA](api-oficial/hub-multiapiwa-ativacao.md)
 
 ***
 
-## 💼 WhatsApp API Oficial via Hub NotificaMe
+## 💼 Hub NotificaMe
 
-O Hub NotificaMe permite conectar canais oficiais ao Whazing.
+Hub com o maior número de canais no mesmo lugar — inclusive **TikTok**.
 
-Cadastro através de:
+* Cadastro: [Hub Whazing / NotificaMe](https://hub.whazing.com.br/)
+* Cupom de desconto: **whazing**
 
-[Hub Whazing / NotificaMe](https://hub.whazing.com.br/)
+| Canal | Ativação | Mensalidade |
+| ----- | -------- | ----------- |
+| **WhatsApp Oficial** | **R$ 150,00** | R$ 50,00/canal (com cupom) |
+| **Instagram** | Sem taxa | R$ 50,00/canal (com cupom) |
+| **Facebook** | Sem taxa | R$ 50,00/canal (com cupom) |
+| **TikTok** | **R$ 50,00** | R$ 50,00/canal (com cupom) |
 
-Use o cupom de desconto:
+* Suporta **COEX** no WhatsApp Oficial;
+* Recursos extras no Instagram: agendamento de publicações e resposta a comentários.
 
-**whazing**
-
-#### WhatsApp Oficial
-
-* Ativação por canal: **R$ 150,00**
-* Mensalidade: **R$ 50,00 por canal conectado (**&#x55;sando cupom whazing valor mensal)
-* Suporte COEX
-
-#### Instagram
-
-* Sem taxa de ativação
-* Mensalidade: **R$ 50,00 por canal conectado (**&#x55;sando cupom whazing valor mensal)
-
-#### Facebook
-
-* Sem taxa de ativação
-* Mensalidade: **R$ 50,00 por canal conectado (**&#x55;sando cupom whazing valor mensal)
-
-#### WebChat
-
-* Sem taxa de ativação
-* Mensalidade: **R$ 50,00 por canal conectado (**&#x55;sando cupom whazing valor mensal)
-
-#### TikTok
-
-* Ativação por canal: **R$ 50,00**
-* Mensalidade: **R$ 50,00 por canal conectado (**&#x55;sando cupom whazing valor mensal)
-
-> Os valores são referentes ao provedor e podem estar sujeitos a alterações.
+> Os valores são do **provedor** e podem mudar. Confirme no site antes de contratar.
 
 ***
 
-## 💼 API Oficial via Hub ConnectionHub
+## 💼 Hub ConnectionHub
 
-O ConnectionHub permite utilizar canais oficiais de Facebook e Instagram.
+Hub focado em **Instagram e Facebook**.
 
-#### Facebook
+Site oficial: [connectionhub.com.br](https://www.connectionhub.com.br/)
 
-* Sem taxa de ativação;
-* Mensalidade: **R$ 59,90 por canal conectado**.
+| Canal | Ativação | Mensalidade |
+| ----- | -------- | ----------- |
+| **Facebook** | Sem taxa | **R$ 59,90/canal** |
+| **Instagram** | Sem taxa | **R$ 59,90/canal** |
 
-#### Instagram
+> ⚠️ **Limitação:** não suporta agendamento de publicações de Feed, Stories e Reels do Instagram. Comentários são suportados apenas no Direct.
 
-* Sem taxa de ativação;
-* Mensalidade: **R$ 59,90 por canal conectado**.
-
-> **Limitação:** não suporta agendamento de publicações de Feed, Stories e Reels do Instagram. Comentários em publicações são suportados somente para Direct.
+👉 Guia de conexão: [Instagram e Facebook via ConnectionHub](hub-instagram-facebook-tiktok/instagram-facebook-via-connectionhub.md)
 
 ***
 
-## 🟢 WhatsApp API Oficial da Meta — WABA
+## 🔵 Conexão Direta Meta (nível avançado)
 
-O Whazing também suporta conexão direta com a **WhatsApp Business Platform da Meta**.
+Aqui você **não usa hub**: cria o **seu aplicativo** no Meta for Developers e conecta direto pela **Graph API oficial**.
 
-> ⚠️ **Nível avançado.** A configuração abaixo exige criar e **aprovar um aplicativo na Meta**. O **suporte Whazing não cria, não configura e não aprova aplicativos** (vale para WhatsApp, Instagram e Facebook). Há **consultoria opcional por R$ 1.000,00** para criação + aprovação, e o [Hub MultiAPIWA](api-oficial/hub-multiapiwa.md) é o caminho pronto e sem burocracia.
+Serve para quem quer controle total do app, reduzir custo por canal em volume alto ou usar recursos que dependem de permissões específicas.
 
-#### Recursos
+> ⚠️ **Nível avançado — o aplicativo é por sua conta.**
+>
+> Exige criar app, **verificação de negócio** e **App Review** com vídeos de cada permissão. **O suporte Whazing não cria, não configura e não aprova aplicativos** — e isso vale para **WhatsApp Oficial, Instagram e Facebook**.
+>
+> * 🛠️ **Consultoria opcional: R$ 1.000,00** (criação do app + condução da aprovação).
+> * ⚡ **Quer o caminho fácil?** Use o [Hub MultiAPIWA](api-oficial/hub-multiapiwa.md).
+
+### 5.1 WhatsApp Oficial (WABA)
+
+Conexão direta com a **WhatsApp Business Platform da Meta**.
+
+**Recursos**
 
 * Conexão direta com a API oficial da Meta;
-* Suporte COEX, quando necessário;
+* Suporte **COEX**, quando necessário;
 * Conformidade com as políticas do WhatsApp;
-* Mensagens template (HSM);
-* Sessão de atendimento de 24 horas;
-* Botões interativos;
-* Mensagens multimídia;
-* Texto, imagem, vídeo, documentos e áudio.
+* **Templates (HSM)**, sessão de 24 horas, botões interativos e multimídia.
 
-#### 💡 Vantagens
+**Vantagens**
 
 * Integração oficial e aprovada pelo WhatsApp;
 * Melhor reputação e entregabilidade do número;
-* Maior possibilidade de escalabilidade;
-* Mais adequada para operações empresariais.
+* Mais adequada para operações empresariais e de escala.
 
-⚠️ A configuração exige acesso ao **Facebook Developers** e geração de **Token Permanente**.
+⚠️ Exige acesso ao **Facebook Developers** e geração de **Token Permanente**.
 
-Consulte o guia específico:
+👉 Manual: [API Oficial do WhatsApp (Meta)](api-oficial/api-oficial-do-whatsapp-meta.md)\
+👉 Dúvidas: [API Oficial — FAQ Completo](api-oficial/api-oficial-do-whatsapp-faq-completo.md)
 
-[**Manual de Integração com a API Oficial do WhatsApp (Meta)**](api-oficial/api-oficial-do-whatsapp-meta.md)
+### 5.2 Instagram
+
+Conexão direta do Instagram por aplicativo próprio, com Direct, comentários e publicação.
+
+* Cliente conecta em **Canais → Instagram → "Conexão direta"**;
+* Mensagens chegam pelo **webhook** do seu app;
+* Exige permissões aprovadas na Meta.
+
+👉 Guia da seção: [Conexão direta Meta (Facebook e Instagram)](conexao-direta-meta/README.md)\
+👉 Permissões e aprovação: [Permissões e aprovação na Meta](conexao-direta-meta/permissoes-e-aprovacao-meta.md)
+
+### 5.3 Facebook
+
+Conexão direta da **Página do Facebook** (Messenger) por aplicativo próprio.
+
+* Cliente conecta em **Canais → Facebook → "Conexão direta"**;
+* Exige ser **administrador** da Página e permissões aprovadas;
+* Webhook do seu app recebe as mensagens.
+
+👉 Guia da seção: [Conexão direta Meta (Facebook e Instagram)](conexao-direta-meta/README.md)\
+👉 Como conectar: [Conectar o canal direto](conexao-direta-meta/conectar-canal-direto.md)
+
+> 💡 **Custo da conexão direta:** o Whazing **não cobra por canal**. O custo é o **tempo/esforço** de criar e manter o app aprovado (ou a consultoria de R$ 1.000,00).
 
 ***
 
 ## 💬 WebChat
 
-O WebChat permite que os visitantes conversem com sua equipe diretamente pelo seu site.
+Atendimento diretamente pelo **seu site**, sem aplicativo e sem número de telefone. Basta um script.
 
-Não é necessário instalar aplicativos ou utilizar um número de telefone. Basta adicionar um pequeno script ao site.
+**Vantagens:** conversas centralizadas no Atendimento, compatível com Chatbot e Recepção Inteligente, filas, departamentos, personalização de cores e mensagem de boas-vindas.
 
-#### ✅ Vantagens
+**Custos:** o Whazing **não cobra nada** pelo WebChat nativo.
 
-* Atendimento diretamente pelo site;
-* O cliente não precisa informar telefone;
-* Conversas centralizadas na tela de atendimento;
-* Compatível com chatbot;
-* Recepção Inteligente;
-* Filas;
-* Departamentos;
-* Atendentes;
-* Automações;
-* Personalização de cores;
-* Nome da empresa;
-* Mensagem de boas-vindas;
-* Instalação através de um único código.
-
-#### 💰 Custos
-
-O Whazing **não cobra nenhuma taxa adicional pelo WebChat nativo**.
-
-É possível criar WebChats de acordo com os limites da sua infraestrutura e licença.
-
-> Caso seja utilizado um provedor HUB para WebChat, como o Hub NotificaMe, poderão existir cobranças definidas pelo próprio provedor. Essas cobranças não são realizadas pelo Whazing.
-
-> **Importante:** o Whazing possui WebChat nativo. Portanto, não é necessário contratar um HUB para utilizar o WebChat.
-
-#### 🚀 Ideal para
-
-* Sites institucionais;
-* Lojas virtuais;
-* Landing Pages;
-* Portais de suporte;
-* Sistemas internos;
-* Áreas do cliente.
-
-> 📄 **Guia completo:** veja a página [**WebChat — Atendimento pelo seu site**](webchat.md) com o passo a passo de configuração, instalação no site, personalização, API JavaScript e solução de problemas.
+👉 Guia completo: [WebChat — Atendimento pelo seu site](webchat.md)
 
 ***
 
 ## 📧 E-mail
 
-O Whazing também permite utilizar **E-mail como canal de atendimento**.
+Use o **e-mail como canal de atendimento**, centralizado no mesmo sistema.
 
-Com o canal de E-mail, as mensagens podem ser centralizadas no mesmo sistema utilizado para os demais canais.
+**Formas de conexão:** Gmail/Google OAuth, Microsoft/Outlook OAuth, IMAP, POP3 e SMTP.
 
-O sistema suporta diferentes formas de conexão, incluindo:
+* O **OAuth** é configurado **uma vez no ambiente SaaS** e permite que os clientes conectem as próprias contas;
+* Permite receber, responder, manter histórico e abrir tickets.
 
-* **Gmail / Google OAuth**
-* **Microsoft / Outlook OAuth**
-* **IMAP**
-* **POP3**
-* **SMTP**
+> O custo depende do provedor (Google, Microsoft ou servidor próprio). O Whazing não define essas tarifas.
 
-#### 🔐 OAuth
-
-Para Gmail e Microsoft, é possível utilizar autenticação OAuth, permitindo que o cliente conecte sua conta através do processo de autenticação do próprio provedor.
-
-A configuração OAuth é realizada uma única vez no ambiente SaaS e permite que os clientes conectem suas contas de e-mail pelo sistema.
-
-#### 📥 Recebimento e 📤 envio
-
-O canal de E-mail pode ser utilizado para:
-
-* Receber mensagens;
-* Enviar respostas;
-* Manter o histórico das conversas;
-* Centralizar o atendimento;
-* Criar tickets a partir das mensagens recebidas.
-
-> O custo do serviço de E-mail depende do provedor utilizado e da configuração escolhida. O Whazing não define as tarifas cobradas pelo Google, Microsoft ou outros provedores.
+👉 Configuração: [Configurar OAuth do Google/Microsoft](../modulo-saas/configurar-oauth-do-gmail-para-canal-email.md)
 
 ***
 
 ## 📱 SMS
 
-O Whazing também possui suporte ao **canal SMS**.
+Canal de **SMS** com integração à [Witi](https://witi.me/).
 
-O SMS utiliza a integração com a **Witi** para envio e recebimento de mensagens.
+**Como funciona:** você compra créditos na Witi e pode **revendê-los aos clientes** em pacotes criados no Painel SaaS. O cliente compra pelo próprio Whazing, sem acessar a Witi.
 
-[Witi](https://witi.me/)
+* Preço na Witi a partir de ~**R$ 0,038 por SMS** (varia por rota);
+* Compra mínima informada pela Witi: **R$ 250,00**;
+* Onde usar: **Atendimento**, **Campanhas** e **API**.
 
-#### 💰 Como funciona
+⚠️ **Limite de caracteres:** mensagens longas podem ser divididas em vários SMS e consumir **vários créditos por contato** (ex.: *"Vai consumir 2 crédito(s) por contato"*).
 
-Na operação SaaS, os créditos de SMS são adquiridos na Witi e podem ser posteriormente **revendidos aos clientes através de pacotes de SMS** criados no Whazing.
-
-O preço do SMS na Witi começa a partir de aproximadamente **R$ 0,038 por SMS**, dependendo da rota escolhida.
-
-A compra mínima de créditos informada pela Witi é de **R$ 250,00**.
-
-#### 📦 Venda de créditos aos clientes
-
-O administrador SaaS pode criar pacotes em:
-
-**Painel SaaS → Comercial → Créditos de SMS**
-
-É possível definir:
-
-* Nome do pacote;
-* Descrição;
-* Valor;
-* Quantidade de SMS.
-
-O cliente compra o pacote pelo próprio Whazing e os créditos são adicionados automaticamente ao saldo da empresa.
-
-#### 📊 Controle de consumo
-
-O administrador pode acompanhar:
-
-**Painel SaaS → Comercial → Relatório de SMS**
-
-É possível consultar:
-
-* Consumo dos clientes;
-* Saldo dos clientes;
-* Saldo disponível na Witi;
-* Gastos com SMS.
-
-#### 📍 Onde o cliente compra
-
-O cliente pode acessar:
-
-**Cadastros → Canais → SMS**
-
-Nesse local poderá consultar o histórico e comprar créditos.
-
-#### 🚀 Onde o SMS pode ser utilizado
-
-Os créditos podem ser utilizados para:
-
-* Envio de SMS no **Atendimento**;
-* Envio de SMS através de **Campanhas**.
-
-#### ⚠️ Limite de caracteres
-
-O SMS possui limite de caracteres.
-
-Quando uma mensagem ultrapassa o limite, ela pode consumir mais de um crédito.
-
-Por exemplo:
-
-> **Vai consumir 2 crédito(s) por contato (codificação GSM).**
-
-Nesse caso, o envio consumirá **2 créditos para cada contato**.
-
-Para reduzir o consumo, diminua o tamanho da mensagem.
-
-> **Importante:** mensagens maiores podem ser divididas em vários SMS e consumir vários créditos por contato.
+👉 Guia completo (conta Witi, token, callbacks, pacotes, saldo e relatório): [SMS](sms.md)
 
 ***
 
-## 🔄 Resumo dos canais
+## 📊 Quadro comparativo — API Oficial
 
-| Canal                           | Tipo                | Custo / cobrança               | Principais recursos                             |
-| ------------------------------- | ------------------- | ------------------------------ | ----------------------------------------------- |
-| **WhatsApp WuzAPI / WhatsMeow** | Não oficial         | Gratuito                       | WhatsApp, mensagens e atendimento               |
-| **WhatsApp Baileys**            | Não oficial         | Gratuito                       | Descontinuado — desativado por padrão           |
-| **Telegram**                    | Não oficial         | Gratuito                       | Atendimento via Telegram                        |
-| **WhatsApp API PLUS**           | Não oficial Premium | Paga                           | Botões, listas, links e localização             |
-| **Hub MultiAPIWA**              | Oficial / HUB       | R$ 25/canal                    | WhatsApp, Instagram e Facebook                  |
-| **Hub NotificaMe**              | Oficial / HUB       | Conforme canal                 | WhatsApp, Instagram, Facebook, WebChat e TikTok |
-| **ConnectionHub**               | Oficial / HUB       | R$ 25/canal                    | Instagram e Facebook                            |
-| **Conexão Direta Meta**         | Oficial (App próprio) | Gratuito no Whazing         | Instagram e Facebook via Graph API              |
-| **WhatsApp WABA**               | Oficial Meta        | Conforme uso da Meta           | Templates, botões, multimídia e escalabilidade  |
-| **WebChat**                     | Nativo              | Sem custo adicional do Whazing | Atendimento diretamente pelo site               |
-| **E-mail**                      | E-mail              | Conforme provedor              | Gmail, Microsoft, IMAP, POP3 e SMTP             |
-| **SMS**                         | SMS                 | Conforme créditos utilizados   | Atendimento e campanhas                         |
+| Opção | Canais | Custo | Ativação | Esforço | Prazo |
+| ----- | ------ | ----- | -------- | ------- | ----- |
+| **Hub MultiAPIWA** | WhatsApp Oficial, Instagram, Facebook | **R$ 25/canal/mês** (mín. R$ 10 proporcional) | Sem taxa | **Baixo** — tudo dentro do Whazing | Minutos |
+| **Hub NotificaMe** | WhatsApp Oficial, Instagram, Facebook, TikTok | **R$ 50/canal/mês** | R$ 150 (WABA) · R$ 50 (TikTok) | Médio | Minutos |
+| **Hub ConnectionHub** | Instagram, Facebook | **R$ 59,90/canal/mês** | Sem taxa | Médio | Minutos |
+| **Conexão direta Meta** | WhatsApp Oficial, Instagram, Facebook | Gratuito no Whazing (+ consultoria R$ 1.000 se quiser) | — | **Alto** — app próprio, verificação de negócio, App Review | Dias a semanas |
+
+> ⏱️ **"Prazo"** é o tempo até o canal funcionar. É a coluna que mais ajuda a decidir.
 
 ***
 
-## 💡 Qual canal escolher?
+## 📋 Resumo de todos os canais
 
-#### 🆓 Quero reduzir custos
+| Canal | Tipo | Custo / cobrança | Principais recursos |
+| ----- | ---- | ---------------- | ------------------- |
+| **WhatsApp WuzAPI / WhatsMeow** | Não oficial | Gratuito | WhatsApp, mensagens e atendimento |
+| **WhatsApp Baileys** | Não oficial | Gratuito | Descontinuado — desativado por padrão |
+| **WhatsApp PLUS** | Não oficial premium | Pago ao provedor | Botões, listas, links e localização |
+| **Telegram** | Oficial (Bot API) | Gratuito | Bot criado no BotFather |
+| **Hub MultiAPIWA** | Oficial / Hub | R$ 25/canal (mín. R$ 10) | WhatsApp Oficial, Instagram e Facebook |
+| **Hub NotificaMe** | Oficial / Hub | R$ 50/canal + ativação em WABA/TikTok | WhatsApp, Instagram, Facebook e TikTok |
+| **ConnectionHub** | Oficial / Hub | R$ 59,90/canal | Instagram e Facebook |
+| **Conexão direta Meta** | Oficial (app próprio) | Gratuito no Whazing | WhatsApp Oficial, Instagram e Facebook via Graph API |
+| **WebChat** | Nativo | Gratuito no Whazing | Atendimento pelo site |
+| **E-mail** | E-mail | Conforme provedor | Gmail, Microsoft, IMAP, POP3 e SMTP |
+| **SMS** | SMS | Conforme créditos (Witi) | Atendimento, campanhas e API |
 
-Utilize:
+> **Importante:** preços de provedores, hubs, Meta e serviços externos podem mudar sem aviso. Confirme no provedor antes de contratar.
 
-**WhatsApp WuzAPI / WhatsMeow ou Telegram**
+***
 
-São opções sem custo adicional por canal, considerando a infraestrutura própria.
+## 📚 Veja também
 
-#### ⭐ Quero mais recursos no WhatsApp não oficial
-
-Utilize:
-
-**WhatsApp PLUS**
-
-Possui recursos adicionais como botões, listas, links e localização.
-
-#### 🏢 Quero utilizar canais oficiais
-
-Considere:
-
-* Hub MultiAPIWA;
-* WhatsApp WABA;
-* Hub NotificaMe;
-* ConnectionHub.
-
-#### 🌐 Quero atendimento pelo meu site
-
-Utilize:
-
-**WebChat nativo**
-
-Não é necessário contratar um HUB para utilizar o WebChat nativo do Whazing.
-
-#### 📧 Quero centralizar meus e-mails
-
-Utilize:
-
-**Canal E-mail**
-
-É possível conectar Gmail, Microsoft/Outlook e servidores de e-mail através de IMAP, POP3 e SMTP.
-
-#### 📱 Quero enviar mensagens para celulares
-
-Utilize:
-
-**Canal SMS**
-
-O SMS é indicado para comunicações que precisam chegar diretamente ao telefone do destinatário, podendo ser utilizado em atendimentos e campanhas.
-
-> **Importante:** os preços de provedores, HUBs, Meta e serviços externos podem sofrer alterações. Sempre consulte o provedor antes de contratar ou realizar uma compra.
+* [Liberação de Canais para Empresas](../modulo-saas/liberacao-de-canais.md)
+* [Canais Adicionais (venda aos seus clientes)](../modulo-saas/criacao-de-planos-financeiro/adicionais-de-canais.md)
+* [Guia de Conexão do Telegram](telegram.md)
+* [WebChat](webchat.md) · [SMS](sms.md)
+* [Canal Privado](canal-privado.md) · [Bloquear Chamadas do WhatsApp](bloquear-chamadas.md)
