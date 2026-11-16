@@ -88,7 +88,7 @@ Clique em **Adicionar** e preencha os campos da aba **Informações**:
 A aba **Avançado** do cadastro possui duas configurações opcionais:
 
 * **Telefonia SIP** — configuração de ramal telefônico via SIP (Asterisk, FreeSWITCH, PBX etc.). É **independente** das ligações pelo WhatsApp: preencha apenas se a empresa usa um provedor SIP para fazer e receber chamadas telefônicas. Campos: **Habilitar SIP**, **Servidor SIP**, **Porta WSS**, **Usuário SIP** e **Senha SIP**.
-* **Botões personalizados no menu (Botão Coringa)** — até **2 atalhos** personalizados que aparecem no menu lateral do usuário (ex.: link para sistema parceiro, painel externo ou documentação). Para cada botão informe **Nome**, **Ícone (MDI)** e **URL**. Veja [🎛️ Botão Coringa](../../../modulo-saas/botao-coringa.md).
+* **Botões personalizados no menu (Botão Coringa)** — até **2 atalhos** personalizados que aparecem no menu lateral do usuário (ex.: link para sistema parceiro, painel externo ou documentação). Para cada botão informe **Nome**, **Ícone (MDI)** e **URL**. Veja [🎛️ Botão Coringa](../../../modulo-saas/botao-coringa.md) e, para configurar por empresa, [⚙️ Configurar Menu da Empresa](../../../modulo-saas/configurar-menu-da-empresa.md).
 
 Após salvar, o sistema **abre automaticamente a Central de Atendimento** para você configurar filas, canais e demais permissões do novo usuário.
 

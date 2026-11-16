@@ -45,6 +45,7 @@
   * [Como Criar a Opção de Ajuda](modulo-saas/criarajuda.md)
   * [Comunicados](modulo-saas/comunicados.md)
   * [⚙️ Personalização SaaS](modulo-saas/personalizacao-saas.md)
+  * [⚙️ Configurar Menu da Empresa](modulo-saas/configurar-menu-da-empresa.md)
   * [Liberação de Canais para Empresas](modulo-saas/liberacao-de-canais.md)
   * [Criação de Planos - Financeiro](modulo-saas/criacao-de-planos-financeiro/README.md)
     * [🛒 Adicionais](modulo-saas/criacao-de-planos-financeiro/adicionais.md)

@@ -97,6 +97,8 @@ Caso queira que o **Botão Coringa apareça apenas para uma empresa específica*
    * Ícone
    * URL específica
 
+📄 **Passo a passo completo (com todas as opções de menu):** [⚙️ Configurar Menu da Empresa](configurar-menu-da-empresa.md).
+
 ***
 
 <figure><img src="../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption><p>Configuração de menu por empresa</p></figcaption></figure>
