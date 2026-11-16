@@ -12,12 +12,12 @@ description: >-
 
 ## ✅ Onde este recurso funciona
 
-| Como o Instagram está conectado | Responde comentários | Direct automático |
-| --- | --- | --- |
-| **Hub MultiAPIWA** | ✅ | ✅ |
-| **Hub NotificaMe** | ✅ | ✅ |
-| **Conexão direta Meta** (app aprovado) | ✅ | ✅ |
-| **ConnectionHub** | ❌ | ❌ |
+| Como o Instagram está conectado        | Responde comentários | Direct automático |
+| -------------------------------------- | -------------------- | ----------------- |
+| **Hub MultiAPIWA**                     | ✅                    | ✅                 |
+| **Hub NotificaMe**                     | ✅                    | ✅                 |
+| **Conexão direta Meta** (app aprovado) | ✅                    | ✅                 |
+| **ConnectionHub**                      | ❌                    | ❌                 |
 
 > 🔎 Não sabe como o seu canal está conectado? Veja [O que cada hub faz](../../recursos-por-hub.md).
 
@@ -29,7 +29,7 @@ description: >-
 2. Clique em responder
 3. Escreva a resposta e envie.
 
-![print](../../../.gitbook/assets/respondercomentario.png)
+<figure><img src="../../../.gitbook/assets/respondercomentario (1).png" alt=""><figcaption></figcaption></figure>
 
 > ✅ A resposta pode ser enviada **mesmo que o ticket esteja pendente**.
 >
@@ -39,18 +39,7 @@ description: >-
 
 ## 📩 Direct automático depois do comentário
 
-Com esta opção ligada, quem comentar em uma publicação recebe **sozinho** uma mensagem privada.
-
-### Como ativar
-
-1. Vá em **Configurações → Canais**.
-2. Clique no **ícone de lápis** para editar o canal do Instagram.
-3. Ligue a opção **"Enviar Direct automático após comentário"**.
-4. Escreva a **mensagem** que será enviada e salve.
-
-![print](../../../.gitbook/assets/direct.png)
-
-> 💡 A mensagem é a mesma para todos. Se você quer respostas diferentes conforme o comentário — ou respostas geradas por IA — use a [Automação de Comentários e Direct](../../../funcionalidades/automacao/automacao-de-comentarios-e-direct-do-instagram.md).
+Se você quer respostas diferentes conforme o comentário — ou respostas geradas por IA — use a [Automação de Comentários e Direct](../../../funcionalidades/automacao/automacao-de-comentarios-e-direct-do-instagram.md).
 
 ***
 
@@ -73,12 +62,6 @@ Confira **como o canal está conectado**: ConnectionHub não tem esse recurso. V
 
 Provavelmente a **janela de 24 horas** já tinha fechado, ou a pessoa tem restrições de mensagem na conta dela. A resposta pública ao comentário é enviada normalmente.
 
-### O Direct automático não está disparando
-
-1. Confirme que a opção está **ligada** no canal (Configurações → Canais → lápis).
-2. Verifique se existe **texto** salvo na mensagem automática.
-3. Teste em uma publicação com um comentário real de outra conta.
-
 ### Comentários antigos não aparecem
 
 O sistema acompanha os comentários a partir da conexão do canal. Comentários anteriores à conexão podem não ser importados.
@@ -87,8 +70,8 @@ O sistema acompanha os comentários a partir da conexão do canal. Comentários 
 
 ## 📚 Veja também
 
-* [O que cada hub faz (comparativo)](../../../canais-disponiveis/recursos-por-hub.md)
+* [O que cada hub faz (comparativo)](../../recursos-por-hub.md)
 * [Usar o Instagram e o Facebook pelo hub](../../hubs/instagram-e-facebook.md)
 * [Automação de Comentários e Direct do Instagram](../../../funcionalidades/automacao/automacao-de-comentarios-e-direct-do-instagram.md)
 * [Agendamento de Publicações no Instagram](../../../funcionalidades/automacao/agendamento-de-publicacoes-no-instagram.md)
-* [Instagram, Facebook e TikTok via NotificaMe](README.md)
+* [Instagram, Facebook e TikTok via NotificaMe](./)
