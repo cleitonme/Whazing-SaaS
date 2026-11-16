@@ -1,14 +1,12 @@
 # Agendamento de Publicações no Instagram
 
-A partir da **versão 3.0**, o Whazing permite programar publicações do Instagram para serem publicadas automaticamente.
-
 O recurso permite agendar:
 
 * 🖼️ **Feed**
 * ⏳ **Stories**
 * 🎬 **Reels**
 
-> ⚠️ **Importante:** o Agendamento de Instagram está disponível **somente para canais Instagram conectados através do Hub NotificaMe**.
+> ⚠️ **Importante:** o Agendamento de Instagram está disponível **somente para canais Instagram conectados através do Hub MultiAPIWA** , **Hub NotificaMe e conexão direta caso tenha aprovação da meta do aplicativo**.
 
 ***
 
@@ -296,11 +294,13 @@ Depois de agendar, consulte a tela de **Agendamento Instagram** para verificar s
 
 ***
 
-## ⚠️ Importante: Hub NotificaMe
+## ⚠️ Importante: Hub NotificaMe e Hub MultiAPIWA
 
 O recurso de **Agendamento de Instagram** é disponibilizado para canais Instagram conectados através do:
 
 **Hub NotificaMe**
+
+**Hub MultiAPIWA**
 
 Portanto, se a opção de agendamento não estiver disponível para determinada conta, verifique primeiro como o canal Instagram está conectado ao Whazing.
 
@@ -308,7 +308,7 @@ Portanto, se a opção de agendamento não estiver disponível para determinada 
 
 ## 🚀 Resumo
 
-A partir da **versão 3.0**, você pode programar publicações do Instagram diretamente pelo Whazing.
+Você pode programar publicações do Instagram diretamente pelo Whazing.
 
 Acesse:
 

@@ -1,9 +1,8 @@
 # Automação de Comentários e Direct do Instagram
 
-> **Disponível a partir da versão 3.0**\
 > Este recurso permite que o sistema responda automaticamente aos comentários das publicações do Instagram e envie uma mensagem privada (Direct) para a pessoa que comentou.
 >
-> ⚠️ **Importante:** este recurso está disponível somente para canais do **Instagram conectados pelo HUB Notificame**.
+> ⚠️ **Importante:** este recurso está disponível somente para canais do **Instagram conectados pelo Hub MultiAPIWA**, **HUB Notificame ou conexão direta com meta com aplicativo aprovado**.
 
 ***
 
@@ -411,7 +410,7 @@ Por isso, recomendamos:
 
 #### A automação funciona em qualquer Instagram?
 
-Não. A funcionalidade descrita nesta documentação está disponível para **Instagram conectado pelo HUB Notificame**.
+Não. A funcionalidade descrita nesta documentação está disponível para **Instagram conectado pelo Hub MultiAPIWA** e **HUB Notificame**.
 
 #### Preciso usar inteligência artificial?
 
