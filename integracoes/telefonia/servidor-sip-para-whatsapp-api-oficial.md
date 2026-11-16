@@ -1,5 +1,17 @@
 # Servidor SIP para WhatsApp API Oficial
 
+> **Em palavras simples:** este serviço transforma o seu **WhatsApp Oficial** em uma central de telefone: cada atendente ganha um **ramal** e pode ligar e receber pelo Whazing, por um telefone IP ou por um aplicativo SIP.
+>
+> **Serve para:** quem tem WhatsApp Oficial (Cloud API) e quer atendimento por voz com ramais e fila.
+>
+> **Precisa de:** WhatsApp Cloud API ligada **direto na Meta**, Business Manager aprovado e limite de 2.000 destinatários por dia.
+>
+> **Não funciona no COEX** (aquele modo em que o WhatsApp continua no celular).
+>
+> **Custa:** R$ 35,00 por ramal/mês (1 a 9 ramais) ou a partir de R$ 25,00 acima de 10 ramais, sem taxa de ativação. Ligação recebida não tem custo da Meta; ligação feita pela empresa paga por minuto.
+
+> 🧭 **Não sabe se esta é a opção certa?** Veja o comparativo em [Telefonia](README.md).
+
 Transforme sua API Oficial do WhatsApp em uma central de atendimento por voz utilizando ramais SIP.
 
 ### Valores

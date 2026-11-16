@@ -1,16 +1,29 @@
+---
+description: >-
+  Como programar publicações do Instagram (Feed, Stories e Reels) pelo Whazing,
+  com data, hora, mídia e legenda.
+---
+
 # Agendamento de Publicações no Instagram
 
-O recurso permite agendar:
-
-* 🖼️ **Feed**
-* ⏳ **Stories**
-* 🎬 **Reels**
-
-> ⚠️ **Importante:** o Agendamento de Instagram está disponível **somente para canais Instagram conectados através do Hub MultiAPIWA** , **Hub NotificaMe e conexão direta caso tenha aprovação da meta do aplicativo**.
+> **Em palavras simples:** você escolhe a foto ou o vídeo, escreve a legenda e marca **dia e hora** — o Whazing publica no Instagram sozinho. Serve para quem cuida das redes sociais e quer deixar conteúdo pronto com antecedência. Não tem custo extra no Whazing; o custo é o do provedor que conecta o Instagram.
 
 ***
 
-### 📍 Onde encontrar
+## ✅ Onde este recurso funciona
+
+| Como o Instagram está conectado | Agenda publicações |
+| --- | --- |
+| **Hub MultiAPIWA** | ✅ |
+| **Hub NotificaMe** | ✅ |
+| **Conexão direta Meta** (aplicativo com permissão de publicação aprovada) | ✅ |
+| **ConnectionHub** | ❌ |
+
+> ⚠️ **ConnectionHub não publica.** Ele faz somente Direct. Veja [O que cada hub faz](../../canais-disponiveis/recursos-por-hub.md) para trocar de provedor.
+
+***
+
+## 📍 Onde encontrar
 
 Acesse:
 
@@ -18,336 +31,115 @@ Acesse:
 
 ***
 
-## 📅 Tela de Agendamento
+## 📅 Tela de agendamento
 
-Ao acessar a tela, você poderá visualizar as publicações que já foram agendadas e acompanhar o status delas.
+A tela mostra as publicações já programadas e a situação de cada uma. Você pode:
 
-A tela possui opções para facilitar a localização das publicações.
-
-#### 🔎 Pesquisar legenda
-
-Digite uma palavra ou trecho da legenda para encontrar uma publicação específica.
-
-#### 📊 Status
-
-Permite filtrar as publicações de acordo com seu estado.
-
-Exemplos:
-
-* **Processando**
-* **Publicado**
-* **Cancelado**
-
-#### 📅 Período
-
-Permite consultar publicações de acordo com o período desejado.
+* **Pesquisar pela legenda** — digite uma palavra para achar a publicação;
+* **Filtrar por status** — por exemplo *Processando*, *Publicado* ou *Cancelado*;
+* **Filtrar por período** — para ver o que foi agendado em uma data.
 
 <figure><img src="../../.gitbook/assets/telapublicacao.png" alt=""><figcaption></figcaption></figure>
 
-***
-
-## 📋 Lista de publicações
-
-A lista apresenta informações das publicações agendadas.
-
-Por exemplo:
-
-| Status      | Tipo | Informações                        |
-| ----------- | ---- | ---------------------------------- |
-| Cancelado   | Feed | publicação cancelada               |
-| Publicado   | Feed | publicação já enviada ao Instagram |
-| Processando | Feed | publicação sendo processada        |
-
-Também são exibidos dados como:
-
-* Nome da publicação;
-* Conta do Instagram;
-* Data e horário;
-* Tipo da publicação;
-* Status.
+Na lista aparecem: nome da publicação, conta do Instagram, data e horário, tipo e status.
 
 ***
 
 ## ➕ Criar um novo agendamento
 
-Para criar uma publicação programada, clique no botão para adicionar um novo agendamento.
+### 1. Escolha a conta
 
-Será aberta a tela de configuração.
+Selecione qual **conta do Instagram** vai receber a publicação. Se a empresa tiver mais de uma conta conectada, escolha a certa.
 
-***
+### 2. Escolha o tipo
 
-## 📱 Selecionar Instagram
+| Tipo | O que é | Quando usar |
+| --- | --- | --- |
+| 🖼️ **Feed** | Publicação permanente no perfil | Fotos e conteúdos que ficam no perfil |
+| ⏳ **Stories** | Conteúdo que desaparece em 24 horas | Avisos, promoções e conteúdos rápidos |
+| 🎬 **Reels** | Vídeo curto | Vídeos no formato Reels |
 
-Primeiro, escolha qual conta do Instagram receberá a publicação.
+### 3. Envie a mídia
 
-#### Exemplo
+Arraste o arquivo para a área **Enviar mídia** ou selecione do computador.
 
-**Instagram:**
+> 💡 Confira o arquivo antes de confirmar — depois de publicado, corrigir exige apagar no Instagram.
 
-`informeurer`
+### 4. Escreva a legenda
 
-Caso sua empresa possua mais de uma conta Instagram conectada ao sistema, selecione a conta desejada.
-
-***
-
-## 📢 Tipo da publicação
-
-Você poderá escolher entre três tipos de publicação:
-
-### 🖼️ Feed
-
-Publicação permanente no perfil do Instagram.
-
-É indicada para fotos e conteúdos que você deseja manter disponíveis no perfil.
-
-***
-
-### ⏳ Stories
-
-Conteúdo que desaparece após **24 horas**.
-
-É indicado para publicações temporárias, avisos, promoções e conteúdos rápidos.
-
-***
-
-### 🎬 Reels
-
-Vídeos em formato curto.
-
-É indicado para conteúdos em vídeo preparados para o formato de Reels do Instagram.
-
-***
-
-## 📎 Enviar mídia
-
-Depois de escolher o tipo de publicação, envie o arquivo que será publicado.
-
-Você pode utilizar a área:
-
-**Enviar mídia**
-
-e:
-
-* Arrastar o arquivo para a área indicada;
-* Ou selecionar o arquivo pelo computador.
-
-O arquivo será utilizado na publicação programada.
-
-***
-
-## ✍️ Legenda
-
-No campo **Legenda**, escreva o texto que acompanhará a publicação.
-
-Exemplo:
+No campo **Legenda**, escreva o texto que acompanha a publicação.
 
 > Novidades chegando! 🚀 Confira nosso novo conteúdo.
 
-A legenda é opcional quando permitido pelo tipo de publicação.
+A legenda é opcional quando o tipo de publicação permitir.
+
+### 5. Marque data e hora
+
+Na seção **Agendamento**, informe **Data / Hora** (ex.: `12/08/2026 17:27`).
+
+> ⏰ O horário usado é o **fuso horário configurado para a empresa**. Antes de agendar algo importante, confira o fuso — veja [Fuso Horário](../../instalacao-and-vps/ajustefuso.md).
+
+### 6. Confira o resumo e confirme
+
+O sistema mostra um resumo com conta, tipo, arquivo, legenda, data e hora. Confira e confirme.
+
+```text
+Nova Publicação
+      ↓
+Escolher o Instagram
+      ↓
+Feed / Stories / Reels
+      ↓
+Enviar a mídia
+      ↓
+Escrever a legenda
+      ↓
+Escolher data e hora
+      ↓
+Conferir o resumo
+      ↓
+Confirmar
+```
 
 ***
 
-## 🕐 Agendamento
+## 🟡 Status das publicações
 
-Na seção **Agendamento**, informe:
+| Status | O que significa |
+| --- | --- |
+| **Processando** | O sistema está enviando a publicação para o Instagram |
+| **Publicado** | Já está no perfil |
+| **Cancelado** | Não será publicada |
 
-**Data / Hora**
-
-Exemplo:
-
-**12/08/2026 17:27**
-
-A publicação será programada para esse momento.
-
-#### ⚠️ Fuso horário
-
-O horário utilizado no agendamento considera o **fuso horário configurado para a empresa**.
-
-> 💡 Antes de agendar uma publicação importante, confira se o fuso horário da empresa está configurado corretamente.
+> 💡 Depois de agendar, volte à tela de **Agendamento Instagram** para conferir se a publicação foi concluída.
 
 ***
 
-## 📋 Resumo
+## 🆘 Problemas comuns
 
-Antes de finalizar, o sistema apresenta um resumo da publicação.
+### A tela de agendamento não aparece (ou não lista meu Instagram)
 
-Por exemplo:
+O canal está conectado por um provedor que **não publica** (ConnectionHub) ou o tipo de canal não está liberado no plano. Veja [O que cada hub faz](../../canais-disponiveis/recursos-por-hub.md) e [Liberação de Canais para Empresas](../../modulo-saas/liberacao-de-canais.md).
 
-**Instagram**
+### A publicação ficou em "Processando" e não foi ao ar
 
-informeurer
+1. Confirme que a conta do Instagram está **ativa** e conectada.
+2. Verifique se a mídia está no formato aceito pelo Instagram (imagem ou vídeo dentro dos limites dele).
+3. Se o token do canal expirou, reconecte o Instagram.
 
-**Tipo**
+### A publicação saiu na hora errada
 
-Feed
+O horário segue o **fuso da empresa**. Ajuste o fuso e reagende — veja [Fuso Horário](../../instalacao-and-vps/ajustefuso.md).
 
-**Arquivo**
+### Posso publicar no Facebook também?
 
-brodski-kontejneri-dimenzije-prodaja-kontejneri-brodski-kontejner-20-prodaja.jpg
-
-**Legenda**
-
-Sem legenda
-
-**Data / Hora**
-
-12/08/2026 17:27
-
-Esse resumo permite conferir os dados antes de confirmar o agendamento.
+Esta tela é do **Instagram**. A publicação no Facebook é feita direto na Página.
 
 ***
 
-## ✅ Exemplo completo
-
-Imagine que você queira publicar uma imagem amanhã às 18h.
-
-#### 1. Acesse
-
-**Automação e Integrações → Agendamento Instagram**
-
-#### 2. Crie um novo agendamento
-
-Clique em **Novo Publicação**.
-
-#### 3. Escolha a conta
-
-**Instagram:** informeurer
-
-#### 4. Escolha o tipo
-
-**Feed**
-
-#### 5. Envie a imagem
-
-Selecione a imagem que deseja publicar.
-
-#### 6. Digite a legenda
-
-Exemplo:
-
-> Confira nossa novidade! 🚀
-
-#### 7. Escolha a data e horário
-
-**26/08/2026 — 18:00**
-
-#### 8. Confira o resumo
-
-Verifique:
-
-* Instagram;
-* Tipo;
-* Arquivo;
-* Legenda;
-* Data;
-* Horário.
-
-#### 9. Confirme
-
-A publicação ficará programada para ser processada no horário definido.
-
-***
-
-## 📊 Status das publicações
-
-Depois de criar um agendamento, você poderá acompanhar o status na tela principal.
-
-### 🟡 Processando
-
-A publicação está sendo processada pelo sistema.
-
-***
-
-### 🟢 Publicado
-
-A publicação foi enviada e publicada no Instagram.
-
-***
-
-### 🔴 Cancelado
-
-O agendamento foi cancelado e a publicação não será realizada.
-
-***
-
-## 💡 Dicas para usar o Agendamento Instagram
-
-#### 📅 Planeje suas publicações
-
-Você pode deixar conteúdos preparados antecipadamente e programar os horários em que deseja que sejam publicados.
-
-#### 📝 Prepare as legendas
-
-Deixe as legendas prontas antes do horário da publicação.
-
-#### 🖼️ Confira a mídia
-
-Antes de confirmar, verifique se o arquivo correto foi selecionado.
-
-#### 🕐 Confira o horário
-
-Lembre-se de que o horário considera o **fuso horário configurado para a empresa**.
-
-#### 📊 Acompanhe os status
-
-Depois de agendar, consulte a tela de **Agendamento Instagram** para verificar se a publicação foi processada, publicada ou cancelada.
-
-***
-
-## ⚠️ Importante: Hub NotificaMe e Hub MultiAPIWA
-
-O recurso de **Agendamento de Instagram** é disponibilizado para canais Instagram conectados através do:
-
-**Hub NotificaMe**
-
-**Hub MultiAPIWA**
-
-Portanto, se a opção de agendamento não estiver disponível para determinada conta, verifique primeiro como o canal Instagram está conectado ao Whazing.
-
-***
-
-## 🚀 Resumo
-
-Você pode programar publicações do Instagram diretamente pelo Whazing.
-
-Acesse:
-
-**Automação e Integrações → Agendamento Instagram**
-
-Depois:
-
-**Nova Publicação**
-
-↓
-
-Selecione o **Instagram**
-
-↓
-
-Escolha:
-
-**Feed / Stories / Reels**
-
-↓
-
-Envie a mídia
-
-↓
-
-Adicione a legenda
-
-↓
-
-Escolha **data e horário**
-
-↓
-
-Confira o resumo
-
-↓
-
-**Confirme o agendamento**
-
-O sistema ficará responsável por processar a publicação no horário configurado.
-
-> 📌 **Disponibilidade:** esse recurso é exclusivo para canais Instagram conectados pelo **Hub NotificaMe**.
+## 📚 Veja também
+
+* [O que cada hub faz (comparativo)](../../canais-disponiveis/recursos-por-hub.md)
+* [Usar o Instagram e o Facebook pelo hub](../../canais-disponiveis/hubs/instagram-e-facebook.md)
+* [Automação de Comentários e Direct do Instagram](automacao-de-comentarios-e-direct-do-instagram.md)
+* [Agendamento de Status (Stories) WhatsApp](agendamento-de-status-stories-whatsapp.md)

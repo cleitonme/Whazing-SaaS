@@ -1,26 +1,41 @@
 ---
 description: >-
   Os três hubs oficiais do Whazing (MultiAPIWA, NotificaMe e ConnectionHub): o
-  que cada um conecta, quanto custa e quando escolher — sem criar aplicativo na Meta.
+  que cada um conecta, quanto custa e qual escolher — sem criar aplicativo na Meta.
 ---
 
 # Hubs (oficiais sem criar aplicativo)
 
-Um **hub** é um provedor que já tem aplicativo aprovado na Meta e faz a conexão oficial por você. Você **não cria app, token nem webhook**: escolhe o canal dentro do Whazing e conecta em minutos.
+> **Em palavras simples:** um **hub** é uma empresa que já tem um aplicativo aprovado na Meta e faz a conexão oficial por você. Você **não cria aplicativo, não copia token e não configura webhook**: escolhe o canal dentro do Whazing e conecta em minutos.
 
-> 💡 Os hubs cobram **por canal, por mês**, direto de você. O Whazing **não cobra** nada por essa conexão.
+> 💰 Os hubs cobram **por canal, por mês**, direto de você. O Whazing **não cobra nada** por essa conexão.
 
 ***
 
 ## 🧭 Qual hub escolher
 
-| Hub | Conecta | Custo | Ativação | Ideal para |
-| --- | --- | --- | --- | --- |
-| **Hub MultiAPIWA** | WhatsApp Oficial, Instagram, Facebook | **R$ 25/canal/mês** (mínimo R$ 10 proporcional) | Sem taxa | Começar barato, com 1 a 3 canais |
-| **Hub NotificaMe** | WhatsApp Oficial, Instagram, Facebook, TikTok | **R$ 50/canal/mês** | R$ 150 (WABA) · R$ 50 (TikTok) | Quem precisa de **TikTok** |
-| **ConnectionHub** | Instagram, Facebook | **R$ 59,90/canal/mês** | Sem taxa | Só redes sociais, com provedor dedicado |
+| Hub | Conecta | Custo | Ideal para |
+| --- | --- | --- | --- |
+| **Hub MultiAPIWA** | WhatsApp Oficial, Instagram, Facebook | **R$ 25/canal/mês** (mínimo R$ 10 na proporção) | Quem quer o menor custo e todos os recursos de Instagram |
+| **Hub NotificaMe** | WhatsApp Oficial, Instagram, Facebook, TikTok | **R$ 50/canal/mês** | Quem precisa de **TikTok** |
+| **ConnectionHub** | Instagram e Facebook — **somente Direct** | **R$ 59,90/canal/mês** | Quem só precisa conversar no Direct |
 
-> ⚠️ Valores são definidos pelos provedores e podem mudar sem aviso. Confirme antes de contratar.
+> ⚠️ Valores definidos pelos provedores; podem mudar sem aviso. Confirme antes de contratar.
+
+***
+
+## 🔎 O que cada um faz (a dúvida mais comum)
+
+| Recurso | Hub MultiAPIWA | Hub NotificaMe | ConnectionHub |
+| --- | --- | --- | --- |
+| Conversar no Direct | ✅ | ✅ | ✅ |
+| Responder comentários do Instagram | ✅ | ✅ | ❌ |
+| Direct automático após comentário | ✅ | ✅ | ❌ |
+| Agendar Feed, Stories e Reels | ✅ | ✅ | ❌ |
+| TikTok | ❌ | ✅ | ❌ |
+| WhatsApp Oficial no mesmo hub | ✅ | ✅ | ❌ |
+
+📄 Tabela completa, incluindo a **conexão direta Meta**: [O que cada hub faz (comparativo)](../recursos-por-hub.md)
 
 ***
 
@@ -28,22 +43,25 @@ Um **hub** é um provedor que já tem aplicativo aprovado na Meta e faz a conex�
 
 ### Hub MultiAPIWA
 
-* [Hub MultiAPIWA (WhatsApp, Instagram e Facebook)](../api-oficial/hub-multiapiwa.md) — o que é, canais e credenciais.
-* [Ativar e vender o Hub MultiAPIWA](../api-oficial/hub-multiapiwa-ativacao.md) — cobrança, repasse e venda aos seus clientes.
+* [Hub MultiAPIWA — o que é e como conectar](../api-oficial/hub-multiapiwa.md)
+* [Hub MultiAPIWA — ativar e vender (administrador)](../api-oficial/hub-multiapiwa-ativacao.md)
+* [Usar o Instagram e o Facebook pelo hub](instagram-e-facebook.md)
+  * [Responder comentários do Instagram](../hub-instagram-facebook-tiktok/facebook-e-instagram-via-hub/responder-comentarios-instagram.md)
+  * [Automação de Comentários e Direct do Instagram](../../funcionalidades/automacao/automacao-de-comentarios-e-direct-do-instagram.md)
+  * [Agendamento de Publicações no Instagram](../../funcionalidades/automacao/agendamento-de-publicacoes-no-instagram.md)
 
-### NotificaMe e ConnectionHub
+### Hub NotificaMe e ConnectionHub
 
-* [NotificaMe e ConnectionHub (visão geral)](../hub-instagram-facebook-tiktok/README.md) — panorama dos dois provedores.
-* [WhatsApp, Instagram, Facebook e TikTok via NotificaMe](../hub-instagram-facebook-tiktok/facebook-e-instagram-via-hub/README.md)
-  * [Responder Comentários Instagram - HUB NotificaMe](../hub-instagram-facebook-tiktok/facebook-e-instagram-via-hub/responder-comentarios-instagram.md)
-* [WhatsApp Oficial via Hub (NotificaMe)](../api-oficial/api-oficial.md)
-* [Instagram e Facebook via ConnectionHub](../hub-instagram-facebook-tiktok/instagram-facebook-via-connectionhub.md)
+* [NotificaMe e ConnectionHub (visão geral)](../hub-instagram-facebook-tiktok/README.md)
+* [Hub NotificaMe — WhatsApp Oficial](../api-oficial/api-oficial.md)
+* [Hub NotificaMe — Instagram, Facebook e TikTok](../hub-instagram-facebook-tiktok/facebook-e-instagram-via-hub/README.md)
+* [Hub ConnectionHub — somente Direct](../hub-instagram-facebook-tiktok/instagram-facebook-via-connectionhub.md)
 
 ***
 
 ## ✅ Por que usar um hub
 
-* **Funciona hoje** — sem verificação de negócio, App Review ou screencast.
+* **Funciona hoje** — sem verificação de negócio, App Review ou vídeo de demonstração.
 * **Sem manutenção** de token expirado: o provedor cuida da conexão.
 * **Suporte do Whazing** na instalação das credenciais.
 * **Vários canais no mesmo lugar**: WhatsApp Oficial, Instagram, Facebook e (no NotificaMe) TikTok.
@@ -52,19 +70,20 @@ Um **hub** é um provedor que já tem aplicativo aprovado na Meta e faz a conex�
 
 * **Custo mensal por canal** — na conexão direta o Whazing não cobra, mas o esforço técnico é seu.
 * **Menos controle** do aplicativo: nome, ícone e verificação ficam com o provedor.
-* Recursos que dependem de permissões específicas do seu app podem não existir.
+* **Recursos variam por provedor** — o ConnectionHub, por exemplo, faz somente Direct.
 
 ***
 
 ## 🔁 Hub ou conexão direta?
 
 * Quer **funcionar hoje, sem equipe técnica**? Use um hub.
-* Já tem (ou vai investir em) **aplicativo próprio aprovado na Meta**? Veja [Conexão direta Meta (avançado)](../conexao-direta-meta/README.md).
+* Já tem (ou vai investir em) **um aplicativo próprio aprovado na Meta**? Veja [Conexão direta Meta (avançado)](../conexao-direta-meta/README.md).
 
 ***
 
 ## Veja também
 
+* [O que cada hub faz (comparativo)](../recursos-por-hub.md)
 * [Canais Disponíveis](../canais-disponiveis.md) — comparativo completo e liberação por plano.
 * [Liberação de Canais para Empresas](../../modulo-saas/liberacao-de-canais.md)
 * [Canais Adicionais (venda aos seus clientes)](../../modulo-saas/criacao-de-planos-financeiro/adicionais-de-canais.md)

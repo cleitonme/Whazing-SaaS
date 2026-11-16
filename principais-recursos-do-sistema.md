@@ -1,206 +1,162 @@
 ---
 description: >-
-  Sistema Multi empresa com única instalação pode cadastrar varias empresas e
-  revender o acesso sistema para obter lucro
+  Lista simples do que o Whazing faz, organizada por assunto e com link para o
+  passo a passo de cada recurso.
 ---
 
 # Principais Recursos do Sistema
 
-### 🏢 Estrutura SaaS
+> **Em palavras simples:** esta página é o **mapa do sistema**. Use a lista para descobrir o que existe e clique no link para ver como usar. Não precisa ler tudo — procure o assunto do seu dia a dia.
 
-* **Painel SaaS**: Gerencie empresas, usuários, planos e configurações em um único painel.
-* **White Label**: Personalize com sua marca, cores e identidade visual.
-* **Planos**: Crie e gerencie planos comerciais.
-* **Integração Bancária (Receber Valores Planos)**
-  * Efi
-  * Mercado Pago
-  * Asaas
-  * InfinitePay
-  * Stripe
-  * PIX, cartão e bolet
-* **Menu Ajuda**: Acesso rápido a tutoriais e suporte.
-* **Multi Idioma**: Português, Inglês e Espanhol.
-* **Controle de Horário de Login**: Restrinja acesso fora do expediente.
-* **Horário de Atendimento**: Configure por empresa, canal ou fila (com feriados).
-* **Suporte a Armazenamento S3**: Armazene mídias e arquivos em servidor externo compatível.
+> 🚀 **Primeira vez no Whazing?** Comece por [Primeiros Passos](primeiros-passos.md).
+>
+> 📖 **Não entendeu um termo?** Veja o [Glossário](glossario.md).
 
 ***
 
-### 💬 Atendimento e Gestão
+## 💬 Atendimento (o dia a dia)
 
-* **Tela de Atendimento** com filtros avançados
-* **Lista de Protocolos**
-* **Mensagens Separadas por Filas**
-* **Fechamento e Exclusão em Massa**
-* **Motivo de Encerramento Obrigatório**
-* **Anotações Internas**
-* **Relatórios de Tickets**
-* **Exportação de Atendimento em PDF**
-* **Avaliação de Atendimento**
-* **CRM Visual**
-* **Tarefas**
-* **Follow-up Automático**
-
-***
-
-### ⚡ Produtividade e Mensagens
-
-* **Mensagens Rápidas com Anexos**
-* **Mensagens Rápidas por Fila**
-* **Mensagem de Despedida por Usuário**
-* **Mensagem de Despedida por Fila**
-* **Importação de Mensagens do Celular**
-* **Importação de Contatos**
-
-#### 📅 Agendamento
-
-* Repetição:
-  * Diário
-  * Trimestral
-  * Semestral
-  * Anual
-* Envio para até 5 contatos simultaneamente
+* **Tela de atendimento** com filtros, protocolo e histórico — [Tela Atendimento](funcionalidades/atendimento/tela-atendimento.md)
+* **Filas e permissões** — cada setor vê só as suas conversas — [Organização de Atendimentos, Filas e Permissões](funcionalidades/gestao/organizacao-de-atendimentos-filas-e-permissoes-de-usuarios.md)
+* **Distribuição automática** de conversas entre a equipe — [Distribuição Automática](funcionalidades/gestao/distribuicao-automatica.md)
+* **Mensagens rápidas** prontas para responder com um clique
+* **Anotações internas** (a equipe vê, o cliente não) — [Anotação Tickets](funcionalidades/gestao/anotacao-tickets.md)
+* **Fechamento e exclusão em massa** — [Fechar e Apagar Tickets em Massa](funcionalidades/atendimento/fechar-e-apagar-tickets-em-massa.md)
+* **Motivo de encerramento obrigatório** — [Motivos de Encerramento](docs/modulos/motivos-de-encerramento-de-tickets.md)
+* **Avaliação de atendimento** — [Avaliação](funcionalidades/atendimento/avaliacao.md)
+* **Follow-up** (acompanhar o cliente depois) — [Follow-up](docs/modulos/follow-up.md)
+* **Mensagem de despedida** — [Despedida](docs/modulos/despedida.md)
+* **Palavras monitoradas** — [Palavras Monitoradas](funcionalidades/atendimento/palavras-monitoradas.md)
+* **Chave PIX pronta no chat** — [Chave PIX](funcionalidades/atendimento/chave-pix.md)
+* **Formatação de texto** — [Formatação de Texto](funcionalidades/atendimento/formatacao-de-texto.md)
+* **Chat interno da equipe** — [Chamadas Internas](funcionalidades/chamadas-internas.md)
+* **Aplicativo no celular (PWA)** — [PWA e Notificações](funcionalidades/instalacao-do-pwa-e-habilitacao-de-notificacoes.md)
 
 ***
 
-### 🤖 Bots e Automação
+## 🤖 Automação e IA
 
-* **Construtor de Bot estilo ChatFlow**
-  * Delay
-  * Áudios
-  * Arquivos
-  * Webhooks
-  * Figurinhas
-  * Localização
-  * Botões (API Oficial)
-  * Listas (API Oficial e API Plus)
-* **Bot por Palavra-Chave**
-* **Envio Automático de Mensagens**
-* **Transferência para ChatBot**
-* **Simulação de Digitação e Gravação**
+### Chatbot e regras
 
-***
+* **Construtor de bot estilo ChatFlow** (menus, botões, listas, arquivos, áudio, webhook) — [Chatbot](funcionalidades/automacao/chatbotinterno-1/README.md)
+* **Rodízio automático** de atendimentos — [Rodízio](funcionalidades/automacao/chatbotinterno-1/rodizio-automatico-de-atendimentos.md)
+* **Regras de automação** e **automação de entrada** — [Regras](funcionalidades/automacao/regras-de-automacao.md) · [Automação de Entrada](funcionalidades/automacao/automacao-de-entrada.md)
+* **Mensagens automáticas** (saudação, despedida, transferência) — [Mensagens Automáticas](funcionalidades/automacao/mensagens-automaticas.md)
+* **Ausências por fila** e **encerramento por palavra-chave** — [Ausências](funcionalidades/automacao/ausencias-por-fila.md) · [Encerramento](funcionalidades/automacao/encerramento-por-palavra-chave.md)
 
-## 🧠 Recepção Inteligente com IA
+### Inteligência artificial
 
-A **Recepção Inteligente** é um módulo avançado de atendimento automático com Inteligência Artificial.
+* **Recepção Inteligente** — a IA faz o primeiro atendimento, classifica, etiqueta, move no Kanban, envia PIX e transfere para humano — [Recepção Inteligente](integracoes/inteligencia-artificial/recepcao-inteligente/README.md)
+* **Copiloto de IA no atendimento** — melhorar texto, sugerir resposta, resumir conversa e perguntar à IA — [Assistente IA](funcionalidades/atendimento/assistente-ia-menu-copiloto/README.md)
+* **Transcrição automática de áudio** — [Transcrição de Áudio](integracoes/inteligencia-artificial/transcricao_audio.md)
+* **Gerador de chatbot com IA** — [Gerador de Chatbot com IA](modulo-saas/gerador-de-chatbot-com-ia.md)
+* **Provedores suportados:** OpenAI, Groq, Gemini, DeepSeek, Grok, Perplexity e qualquer serviço compatível com OpenAI — [Configuração dos Provedores](funcionalidades/atendimento/assistente-ia-menu-copiloto/configuracao-dos-provedores-de-ia.md)
 
-Ela realiza o **primeiro atendimento do cliente**, entende o contexto da conversa e toma decisões automaticamente, reduzindo trabalho manual da equipe.
+### Campanhas e publicações
 
-#### O que ela pode fazer:
-
-* ✅ Responder dúvidas automaticamente
-* ✅ Classificar o atendimento
-* ✅ Adicionar ou remover etiquetas
-* ✅ Mover no Kanban
-* ✅ Transferir para fila específica
-* ✅ Transferir para usuário específico
-* ✅ Enviar PIX automaticamente
-* ✅ Enviar arquivos
-* ✅ Finalizar atendimento
-* ✅ Encaminhar para atendimento humano quando necessário
-* ✅ Suporte a áudio via ElevenLabs
-
-#### Compatível com múltiplas IAs:
-
-* OpenAI (ChatGPT)
-* Groq
-* Gemini
-* DeepSeek
-* Grok
-* Perplexity
-
-#### Benefícios:
-
-* Atendimento 24 horas
-* Redução de tempo de resposta
-* Organização automática das filas
-* Escalabilidade para alto volume
-* Redução de custos operacionais
-
-Ideal para empresas que desejam escalar o atendimento sem aumentar equipe.
+* **Campanhas** de disparo com tracking de links e formulários — [Campanhas](funcionalidades/automacao/campanha/README.md)
+* **Agendamento de mensagens** (diário, trimestral, semestral, anual; até 5 contatos por envio)
+* **Agendamento de Status (Stories) no WhatsApp** — [Agendamento de Status](funcionalidades/automacao/agendamento-de-status-stories-whatsapp.md)
+* **Agendamento de publicações no Instagram** (Feed, Stories e Reels) — [Agendamento Instagram](funcionalidades/automacao/agendamento-de-publicacoes-no-instagram.md)
+* **Automação de comentários e Direct do Instagram** — [Comentários e Direct](funcionalidades/automacao/automacao-de-comentarios-e-direct-do-instagram.md)
+* **Resposta automática a comentários do TikTok** — [TikTok](funcionalidades/automacao/resposta-automatica-a-comentarios-do-tiktok.md)
 
 ***
 
-### 🧠 Outras Integrações com IA
+## 📅 Agenda e organização
 
-* **Transcrição Automática de Áudio**
-* **Integração de IA para melhorar e sugerir mensagens no atendimento**
-
-***
-
-### Integrações ERP PROVEDORES
-
-* **IXC Soft**: 2ª via de boletos e desbloqueio de confiança.
-* **TSMX SGP**: 2ª via de boletos e desbloqueio de confiança.
-* **HubSoft**: 2ª via de boletos e desbloqueio de confiança.
-* **Atlaz**: 2ª via de boletos, desbloqueio de confiança, abertura de chamados e disparo WhatsApp.
-* **ReceitaNET**: 2ª via de boletos.
+* **Agenda completa** (serviços, profissionais, calendários, lembretes, link público e relatórios) — [Agenda](funcionalidades/agenda/README.md)
+* **Recepção Inteligente na Agenda** — [Recepção](funcionalidades/agenda/recepcao.md)
+* **Kanban** simples — [Kanban](funcionalidades/kanban.md)
+* **Kanban Pro** (quadros, etapas, rótulos e relatórios) — [Kanban Pro](funcionalidades/kanban-pro/README.md)
+* **Tarefas**, **contatos** e **importação de contatos** — [Tarefas](funcionalidades/gestao/tarefas.md) · [Contatos](funcionalidades/gestao/contatos/README.md)
+* **Variáveis do sistema** para personalizar mensagens — [Variáveis](funcionalidades/gestao/variaveis-sistema.md)
 
 ***
 
-### 📲 Canais Disponíveis
+## 📊 Relatórios
 
-* **WhatsApp API Oficial** (Direto ou via HUB)
-* **WhatsApp API Não Oficial Plus** (Lista e Botões)
-* **WhatsApp API Não Oficial Wuzapi, Baileys e ZAPO**
-* **WebChat**
-* **Tiktok, Webchat, Facebook e Instagram via HUB**
-* **Wavoip (Chamadas WhatsApp)**
-* **Discador SIP (WebRTC)**
-* **Transferência de Chamadas SIP**
-* **Chat Interno**
-* **SMS**
-* **EMAIL**
+* **Relatórios de atendimento**, exportação em PDF e **Dashboard de SLA** — [Relatórios](funcionalidades/relatorios/README.md) · [Dashboard de SLA](funcionalidades/relatorios/dashboard-de-sla.md)
+* **Meta de Vendas** — [Meta de Vendas](funcionalidades/relatorios/meta-de-vendas.md)
+* **Meta Ads Analytics** — [Meta Ads](funcionalidades/relatorios/meta-ads.md)
+* **Rastreamento de Site** (visitantes, jornada e conversões) — [Rastreamento de Site](funcionalidades/site-tracking.md)
 
 ***
 
-### 🔗 Integrações e API
+## 📲 Canais de atendimento
 
-* API Própria
-* WebHook
-* TypeBot
-* N8N
-* PerfexCRM
-* WooCommerce
-* 2 Via Boleto Assas
-* GLPI
+| Canal | Como funciona | Guia |
+| --- | --- | --- |
+| **WhatsApp não oficial (WuzAPI)** | QR Code, sem custo por canal | [WuzAPI](canais-disponiveis/whatsapp-api-nao-oficial/whatsapp-wuzapi/README.md) |
+| **WhatsApp API PLUS** | Não oficial com botões e listas | [API PLUS](canais-disponiveis/whatsapp-api-nao-oficial/whatsapp_api_plus/README.md) |
+| **WhatsApp Oficial (WABA)** | API oficial da Meta | [API Oficial](canais-disponiveis/api-oficial/README.md) |
+| **Hub MultiAPIWA** | WhatsApp Oficial, Instagram e Facebook sem criar app (R$ 25/canal) | [Hub MultiAPIWA](canais-disponiveis/api-oficial/hub-multiapiwa.md) |
+| **Hub NotificaMe** | WhatsApp Oficial, Instagram, Facebook e TikTok (R$ 50/canal) | [NotificaMe](canais-disponiveis/hub-instagram-facebook-tiktok/facebook-e-instagram-via-hub/README.md) |
+| **ConnectionHub** | Instagram e Facebook — **somente Direct** | [ConnectionHub](canais-disponiveis/hub-instagram-facebook-tiktok/instagram-facebook-via-connectionhub.md) |
+| **Conexão direta Meta** | Instagram e Facebook com aplicativo próprio (avançado) | [Conexão direta](canais-disponiveis/conexao-direta-meta/README.md) |
+| **Telegram** | Bot oficial | [Telegram](canais-disponiveis/telegram.md) |
+| **WebChat** | Atendimento pelo seu site | [WebChat](canais-disponiveis/webchat.md) |
+| **E-mail** | Centraliza e-mails no atendimento | [E-mail](canais-disponiveis/email.md) |
+| **SMS** | Envio por créditos (Witi) | [SMS](canais-disponiveis/sms.md) |
+| **Canal privado** | Esconde o canal dos demais usuários | [Canal Privado](canais-disponiveis/canal-privado.md) |
 
-***
-
-### 🌐 Rastreamento de Site
-
-* **Novo módulo:** script no site para acompanhar **visitantes em tempo real**, a **jornada** página a página, origem, campanhas e **conversões** — veja [Rastreamento de Site](funcionalidades/site-tracking.md)
-
-***
-
-## 🆓 Versão Grátis
-
-* Exibe anúncios do Whazing
-* Propaganda automática em:
-  * Primeira mensagem
-  * API
-  * Agendamentos
-  * Follow-ups
-  * Campanhas
+> 🧭 Não sabe qual escolher? Veja [Canais Disponíveis](canais-disponiveis/canais-disponiveis.md) (com custos) e [O que cada hub faz](canais-disponiveis/recursos-por-hub.md).
 
 ***
 
-## 💎 Versão Premium
+## ☎️ Telefonia (ligações de voz)
 
-* Sem anúncios
-* Entregas limpas
-* Experiência profissional completa
+* **Wavoip** — liga e recebe no WhatsApp oficial ou não oficial, com gravação — [Wavoip](integracoes/telefonia/configurar_wavoip.md)
+* **WaCalls** — chamadas no WhatsApp não oficial, grátis, instalado na sua VPS — [WaCalls](integracoes/telefonia/wacalls.md)
+* **Discador SIP** — usa a sua central telefônica/PABX com ramais (WebRTC) — [Discador SIP](integracoes/telefonia/discador-sip.md)
+* **Servidor SIP para WhatsApp Oficial** — ramais e fila de voz na API Oficial (não funciona no COEX) — [Servidor SIP](integracoes/telefonia/servidor-sip-para-whatsapp-api-oficial.md)
+
+> 📞 Comparativo simples: [Telefonia](integracoes/telefonia/README.md)
 
 ***
 
-### 🔎 Acesse a Demo
+## 🔗 Integrações e API
+
+* **API própria** — [Introdução e Autenticação](integracoes/api/introducao-e-autenticacao.md)
+* **Webhooks** (avisar outros sistemas quando algo acontece) — [Webhooks](integracoes/webhooks/README.md)
+* **Typebot**, **N8N** — [Typebot](integracoes/outras/typebot/README.md) · [Webhook e N8N](integracoes/webhooks/webhook-e-n8n/README.md)
+* **ERP/Provedores:** IXC Soft, HubSoft, TSMX SGP, Atlaz, ReceitaNET — [ERP Provedor](integracoes/erp-provedor/README.md)
+* **CRM:** PerfexCRM e WooCommerce — [CRM & ERP](integracoes/crm-and-erp/README.md)
+* **Outras:** GLPI, 2ª via de boleto Asaas — [Outras](integracoes/outras/README.md)
+
+***
+
+## 🏢 Módulo SaaS (para quem revende)
+
+* **Painel SaaS** — empresas, usuários, planos e configurações num só lugar — [SaaS](modulo-saas/README.md)
+* **White Label** — o sistema com a sua marca — [Whitelabel](whitelabel.md)
+* **Planos, adicionais e canais adicionais** — [Criação de Planos](modulo-saas/criacao-de-planos-financeiro/README.md)
+* **Gateways de pagamento** — Asaas, EFI Bank, Mercado Pago, InfinitePay, Pushin Pay e Stripe — [Gateways](modulo-saas/gateways-pagamentos/README.md)
+* **Programa de afiliados**, **comunicados**, **onboarding** e **menu de ajuda** — [Afiliados](modulo-saas/programa-de-afiliados-indique-e-ganhe.md) · [Comunicados](modulo-saas/comunicados.md)
+* **Armazenamento S3** e **controle de espaço** — [Armazenamento S3](modulo-saas/armazenamento-s3.md)
+* **API e Webhook do SaaS** — [API SaaS](modulo-saas/api_saas.md) · [Webhook SaaS](modulo-saas/webhook-saas.md)
+* **Multi idioma** (Português, Inglês e Espanhol) e **controle de horário de login**
+* **Cloudflare Turnstile** (proteção anti-bot) — [Turnstile](modulo-saas/ativar-cloudflare-turnstile-protecao-anti-bot.md)
+
+***
+
+## 🆓 Versão grátis e 💎 Premium
+
+| | Versão grátis | Versão Premium |
+| --- | --- | --- |
+| Anúncios do Whazing | Exibe | Não exibe |
+| Primeira mensagem, API, agendamentos, follow-ups e campanhas | Com propaganda | Limpos |
+| White Label | Mediante solicitação | Disponível |
+
+> 💎 Para adquirir a versão Premium, fale com o atendimento: [+55 48 3197-0877](https://wa.me/554831970877) ou [+55 48 3197-0599](https://wa.me/554831970599). Veja também a [Tabela de Valores](tabela-de-valores.md).
+
+***
+
+## 🔎 Teste você mesmo
 
 * https://teste.whazing.com.br
-* Usuário: admin@admin.com
-* Senha: 123456
+* **Usuário:** `admin@admin.com`
+* **Senha:** `123456`
 
-📣 Quer receber novidades e comunicados oficiais do Whazing?
-
-Entre no nosso Telegram:\
-[Canal Oficial Whazing](https://t.me/whazing?utm_source=chatgpt.com)
+📣 Quer receber novidades e comunicados oficiais do Whazing? Entre no nosso Telegram:
+[Canal Oficial Whazing](https://t.me/whazing)

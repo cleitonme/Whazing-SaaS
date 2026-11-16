@@ -5,6 +5,18 @@ icon: circle-phone
 
 # Wavoip
 
+> **Em palavras simples:** a Wavoip é uma empresa parceira que faz as **ligações do WhatsApp** funcionarem dentro do Whazing. Você liga e recebe pela tela de atendimento, com gravação das chamadas.
+>
+> **Serve para:** ligar e receber no WhatsApp **oficial ou não oficial**, sem instalar nada na sua VPS.
+>
+> **Precisa de:** uma conta na Wavoip (tem plano gratuito e pagos) e o **token** do dispositivo colado no canal do Whazing.
+>
+> **Custa:** o plano contratado direto na Wavoip. Nas ligações pelo WhatsApp Oficial, a Meta cobra por minuto.
+>
+> **Quando não usar:** se você quer telefonia com ramais e PABX, veja [Discador SIP](discador-sip.md); se quer algo gratuito na sua VPS, veja [WaCalls](wacalls.md).
+
+> 🧭 **Comparativo das opções:** [Telefonia](README.md).
+
 ### 📌 Sobre a integração
 
 A Wavoip permite realizar e receber chamadas diretamente pelo sistema, integrando com WhatsApp.

@@ -16,6 +16,8 @@ O Whazing atende por **três famílias de canais**. Entender isso resolve 90% da
 
 📲 Precisa de um número para usar no sistema? Adquira pelo portal [Telera Whazing](https://telera.whazing.com.br/).
 
+🧭 **Dúvida sobre comentários ou agendamento do Instagram?** Veja [O que cada hub faz](recursos-por-hub.md).
+
 > 🔒 Precisa esconder um canal dos demais usuários? Veja [Canal Privado](canal-privado.md).
 >
 > 📵 Quer recusar chamadas de voz automaticamente? Veja [Bloquear Chamadas do WhatsApp](bloquear-chamadas.md).
@@ -157,7 +159,8 @@ O hub **oficial do Whazing** para conectar canais da Meta. A conexão acontece *
 * **O cliente conecta dentro do Whazing** — não sai do sistema, em poucos cliques;
 * **Sem taxa de ativação** e **o menor custo por canal** entre os hubs;
 * **Cobrança proporcional** aos dias de uso;
-* **Exclusivo do Whazing**, mantido pela própria equipe.
+* **Exclusivo do Whazing**, mantido pela própria equipe;
+* **Instagram e Facebook com recursos completos** — responder comentários, Direct automático e agendamento de Feed, Stories e Reels (comparativo em [O que cada hub faz](recursos-por-hub.md)).
 * Suporta **COEX** no WhatsApp Oficial;
 * Recursos extras no Instagram: agendamento de publicações e resposta a comentários.
 
@@ -189,6 +192,8 @@ Hub com o maior número de canais no mesmo lugar — inclusive **TikTok**.
 | **Facebook**         | Sem taxa      | R$ 50,00/canal (com cupom) |
 | **TikTok**           | **R$ 50,00**  | R$ 50,00/canal (com cupom) |
 
+> ℹ️ Também entrega os recursos de Instagram (comentários, Direct automático e agendamento), igual ao Hub MultiAPIWA — veja [O que cada hub faz](recursos-por-hub.md).
+
 * Suporta **COEX** no WhatsApp Oficial;
 * Recursos extras no Instagram: agendamento de publicações e resposta a comentários.
 
@@ -207,7 +212,7 @@ Site oficial: [connectionhub.com.br](https://www.connectionhub.com.br/)
 | **Facebook**  | Sem taxa | **R$ 59,90/canal** |
 | **Instagram** | Sem taxa | **R$ 59,90/canal** |
 
-> ⚠️ **Limitação:** não suporta agendamento de publicações de Feed, Stories e Reels do Instagram. Comentários são suportados apenas no Direct.
+> ⚠️ **Somente Direct:** o ConnectionHub **não** responde comentários, **não** envia Direct automático e **não** agenda Feed, Stories ou Reels. Se você precisa desses recursos, use o [Hub MultiAPIWA](api-oficial/hub-multiapiwa.md) — comparativo em [O que cada hub faz](recursos-por-hub.md).
 
 👉 Guia de conexão: [Instagram e Facebook via ConnectionHub](hub-instagram-facebook-tiktok/instagram-facebook-via-connectionhub.md)
 

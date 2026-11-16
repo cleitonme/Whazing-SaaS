@@ -48,6 +48,24 @@ Em resumo: **com o Hub, o trabalho técnico fica com o Whazing — e não com o 
 
 ***
 
+## ✨ O que você ganha no Instagram e no Facebook
+
+Além de conversar no **Direct**, o Hub entrega os recursos das redes sociais:
+
+| Recurso | Para que serve | Passo a passo |
+| --- | --- | --- |
+| **Responder comentários** | Responder o comentário direto na publicação | [Responder comentários do Instagram](../hub-instagram-facebook-tiktok/facebook-e-instagram-via-hub/responder-comentarios-instagram.md) |
+| **Direct automático após comentário** | Quem comentou recebe uma mensagem privada sozinho | [Responder comentários do Instagram](../hub-instagram-facebook-tiktok/facebook-e-instagram-via-hub/responder-comentarios-instagram.md) |
+| **Automação de comentários e Direct** | Responder todos os comentários com mensagem fixa ou IA | [Automação de Comentários e Direct](../../funcionalidades/automacao/automacao-de-comentarios-e-direct-do-instagram.md) |
+| **Agendar publicações** | Programar Feed, Stories e Reels | [Agendamento de Publicações no Instagram](../../funcionalidades/automacao/agendamento-de-publicacoes-no-instagram.md) |
+| **Coexistência (COEX)** | Manter o WhatsApp funcionando no celular |
+
+> 🔁 **Esses recursos não são exclusivos do MultiAPIWA.** Valem igual para o **Hub NotificaMe** e para a **conexão direta** com aplicativo aprovado na Meta. O **ConnectionHub** faz somente Direct.
+>
+> 📊 Comparativo completo: [O que cada hub faz](../recursos-por-hub.md).
+
+***
+
 ## 🔌 Como funciona a conexão (transparente)
 
 A conexão é chamada de **transparente** porque o cliente **não sai do Whazing** e não lida com dados técnicos:

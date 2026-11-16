@@ -1,5 +1,19 @@
 # WaCalls
 
+> **Em palavras simples:** o WaCalls é um programa que roda **na sua VPS** e faz as ligações do WhatsApp **não oficial** (conectado por QR Code) dentro do Whazing.
+>
+> **Serve para:** ligar e receber no WhatsApp não oficial, com gravação e transcrição.
+>
+> **Precisa de:** Docker, domínio e portas liberadas na VPS — e **manutenção sua** (instalar e atualizar).
+>
+> **Custa:** nada de mensalidade; o custo é a sua VPS.
+>
+> **Atenção:** é um recurso **novo e experimental**; com muitas ligações, o ideal é uma **VPS só para o WaCalls**, para não atrapalhar o desempenho do Whazing.
+>
+> **Quando não usar:** se você não quer mexer em servidor, use [Wavoip](configurar_wavoip.md); se já tem central telefônica, use o [Discador SIP](discador-sip.md).
+
+> 🧭 **Comparativo das opções:** [Telefonia](README.md).
+
 ### O que é o WaCalls?
 
 O WaCalls é um serviço responsável pelas chamadas de voz do WhatsApp integrado ao Whazing.

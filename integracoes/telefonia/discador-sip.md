@@ -4,6 +4,18 @@ icon: phone
 
 # Discador SIP
 
+> **Em palavras simples:** o Discador SIP coloca a **sua central telefônica** (PABX com ramais) dentro do Whazing. O atendente faz e recebe ligações pelo navegador, com transferência, espera, conferência e gravação.
+>
+> **Serve para:** empresas que já têm telefone fixo, PABX ou central com ramais (Asterisk, Issabel, FreePBX e similares).
+>
+> **Precisa de:** uma central com **WebRTC** e **WSS** habilitados (normalmente na porta `8089`).
+>
+> **Custa:** nada pelo Whazing — o custo é o da sua central/operadora de telefonia.
+>
+> **Quando não usar:** se você não tem central telefônica, use [Wavoip](configurar_wavoip.md) ou [WaCalls](wacalls.md).
+
+> 🧭 **Comparativo das opções:** [Telefonia](README.md).
+
 Suporte transferência, chamada em espera, gravação das chamadas, conferencia
 
 <figure><img src="../../.gitbook/assets/discador.png" alt=""><figcaption></figcaption></figure>

@@ -44,7 +44,31 @@ Código quadrado que o WhatsApp do celular escaneia para conectar o número ao s
 
 ### HUB
 
-Um serviço intermediário que conecta canais oficiais (WhatsApp, Instagram, Facebook, TikTok) ao Whazing, cuidando da parte técnica da conexão. Ex.: Hub NotificaMe, ConnectionHub, Hub MultiAPIWA.
+Um serviço intermediário que conecta canais oficiais (WhatsApp, Instagram, Facebook, TikTok) ao Whazing, cuidando da parte técnica da conexão.
+
+Os hubs do Whazing são: **Hub MultiAPIWA** (WhatsApp Oficial, Instagram e Facebook — R$ 25/canal), **Hub NotificaMe** (os mesmos canais + TikTok) e **ConnectionHub** (Instagram e Facebook, **somente Direct**).
+
+👉 O que cada um faz: [O que cada hub faz](canais-disponiveis/recursos-por-hub.md)
+
+### COEX (Coexistência)
+
+Modo da API Oficial em que o **WhatsApp continua funcionando no celular** ao mesmo tempo que atende pelo sistema. Não existe em todas as conexões: o Servidor SIP de telefonia, por exemplo, não funciona no COEX.
+
+### Direct
+
+A **conversa privada** do Instagram (o "chat" da rede social). Receber e responder Direct é diferente de **comentar** em uma publicação.
+
+### Comentário e publicação
+
+**Comentário** é o texto público que alguém escreve em uma publicação. **Publicação** é o conteúdo no perfil — no Instagram pode ser **Feed** (fica no perfil), **Stories** (some em 24 horas) ou **Reels** (vídeo curto). O Whazing consegue responder comentários e agendar publicações quando o canal está conectado por um provedor compatível.
+
+### Instância
+
+Uma **instalação** do sistema (ou de um serviço) rodando em um servidor. No Hub MultiAPIWA, "instalação" é o conjunto de credenciais que liga **o seu** Whazing ao hub.
+
+### SID
+
+Um **código de identificação** de cada conexão de chamadas (usado no WaCalls). Cada conexão tem o seu SID; vários SIDs permitem mais ligações ao mesmo tempo.
 
 ### Template (mensagem modelo)
 
@@ -53,6 +77,32 @@ Mensagem **pré-aprovada pela Meta** usada na API oficial do WhatsApp para inici
 ### Janela de 24 horas
 
 Na API oficial do WhatsApp, você tem **24 horas** para responder ao cliente depois da última mensagem dele. Fora dessa janela, só é possível enviar templates.
+
+***
+
+## ☎️ Telefonia
+
+### Ramal
+
+Um "número interno" de telefone. Em vez de um número comum, a empresa usa ramais (ex.: 2001, 2002) para cada atendente. Cada ramal atende **uma ligação por vez**.
+
+### SIP
+
+O "idioma" usado pelos sistemas de telefonia pela internet. Quando a documentação fala em **Servidor SIP** ou **Discador SIP**, significa que o Whazing está falando com uma central telefônica ou com um provedor de voz.
+
+### WebRTC
+
+Tecnologia que permite **fazer ligações pelo próprio navegador**, sem instalar programa. É o que o Discador SIP usa.
+
+### Softphone
+
+Um **programa ou aplicativo** que funciona como telefone (no Windows, no Linux, no Android ou no iPhone).
+
+### PABX / Central telefônica
+
+O equipamento (ou sistema, como Asterisk, Issabel e FreePBX) que **distribui as ligações entre os ramais** de uma empresa.
+
+👉 Comparativo das opções: [Telefonia](integracoes/telefonia/README.md)
 
 ***
 
