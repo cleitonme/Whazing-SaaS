@@ -19,7 +19,7 @@ description: >-
 | **Conexão direta Meta** (aplicativo com permissão de publicação aprovada) | ✅ |
 | **ConnectionHub** | ❌ |
 
-> ⚠️ **ConnectionHub não publica.** Ele faz somente Direct. Veja [O que cada hub faz](../../canais-disponiveis/recursos-por-hub.md) para trocar de provedor.
+> ⚠️ **ConnectionHub não publica.** Ele faz somente Direct. Veja [O que cada hub faz](../../canais-disponiveis/hubs/recursos-por-hub.md) para trocar de provedor.
 
 ***
 
@@ -119,7 +119,7 @@ Confirmar
 
 ### A tela de agendamento não aparece (ou não lista meu Instagram)
 
-O canal está conectado por um provedor que **não publica** (ConnectionHub) ou o tipo de canal não está liberado no plano. Veja [O que cada hub faz](../../canais-disponiveis/recursos-por-hub.md) e [Liberação de Canais para Empresas](../../modulo-saas/liberacao-de-canais.md).
+O canal está conectado por um provedor que **não publica** (ConnectionHub) ou o tipo de canal não está liberado no plano. Veja [O que cada hub faz](../../canais-disponiveis/hubs/recursos-por-hub.md) e [Liberação de Canais para Empresas](../../modulo-saas/liberacao-de-canais.md).
 
 ### A publicação ficou em "Processando" e não foi ao ar
 
@@ -139,7 +139,7 @@ Esta tela é do **Instagram**. A publicação no Facebook é feita direto na Pá
 
 ## 📚 Veja também
 
-* [O que cada hub faz (comparativo)](../../canais-disponiveis/recursos-por-hub.md)
+* [O que cada hub faz (comparativo)](../../canais-disponiveis/hubs/recursos-por-hub.md)
 * [Usar o Instagram e o Facebook pelo hub](../../canais-disponiveis/hubs/instagram-e-facebook.md)
 * [Automação de Comentários e Direct do Instagram](automacao-de-comentarios-e-direct-do-instagram.md)
 * [Agendamento de Status (Stories) WhatsApp](agendamento-de-status-stories-whatsapp.md)

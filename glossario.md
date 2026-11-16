@@ -48,7 +48,7 @@ Um serviço intermediário que conecta canais oficiais (WhatsApp, Instagram, Fac
 
 Os hubs do Whazing são: **Hub MultiAPIWA** (WhatsApp Oficial, Instagram e Facebook — R$ 25/canal), **Hub NotificaMe** (os mesmos canais + TikTok) e **ConnectionHub** (Instagram e Facebook, **somente Direct**).
 
-👉 O que cada um faz: [O que cada hub faz](canais-disponiveis/recursos-por-hub.md)
+👉 O que cada um faz: [O que cada hub faz](canais-disponiveis/hubs/recursos-por-hub.md)
 
 ### COEX (Coexistência)
 

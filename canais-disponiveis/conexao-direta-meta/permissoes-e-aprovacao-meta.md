@@ -11,7 +11,7 @@ Este é o conjunto de permissões que o aplicativo precisa ter **aprovadas** par
 
 Com elas aprovadas, o cliente **não faz mais nada além de autorizar** na tela da Meta durante a conexão: não existe configuração de permissão do lado dele.
 
-> ⚠️ O suporte Whazing **não conduz** o App Review. Para esse serviço existe **consultoria por R$ 1.000,00** (criação do app + aprovação). O caminho sem burocracia é o [Hub MultiAPIWA](../api-oficial/hub-multiapiwa.md).
+> ⚠️ O suporte Whazing **não conduz** o App Review. Para esse serviço existe **consultoria por R$ 1.000,00** (criação do app + aprovação). O caminho sem burocracia é o [Hub MultiAPIWA](../hubs/multiapiwa/README.md).
 
 ***
 
@@ -185,7 +185,7 @@ Exemplo pronto para `instagram_business_manage_messages`:
 | Interface sem legenda/inglês | Ativar inglês ou legendar cada passo |
 | App usado por terceiros **sem verificação de negócio** | Concluir a verificação antes do review |
 
-> ⚠️ Reprovação **não** bloqueia o app para sempre: corrija o vídeo/justificativa e reenvie. Enquanto isso, o canal pode operar para quem tem função no app (modo desenvolvimento) ou via [Hub MultiAPIWA](../api-oficial/hub-multiapiwa.md).
+> ⚠️ Reprovação **não** bloqueia o app para sempre: corrija o vídeo/justificativa e reenvie. Enquanto isso, o canal pode operar para quem tem função no app (modo desenvolvimento) ou via [Hub MultiAPIWA](../hubs/multiapiwa/README.md).
 
 ***
 
@@ -237,4 +237,4 @@ As permissões são **renovadas periodicamente**. Mantenha o app ativo, os dados
 * [Criar aplicativo na Meta](criar-aplicativo-meta.md)
 * [Conectar o canal direto](conectar-canal-direto.md)
 * [Solicitar Provedor de Tecnologia](../api-oficial/solicitar-provedor-de-tecnologia.md) — mesmo padrão de vídeos, para WhatsApp
-* [Hub MultiAPIWA (conexão integrada)](../api-oficial/hub-multiapiwa.md)
+* [Hub MultiAPIWA (conexão integrada)](../hubs/multiapiwa/README.md)

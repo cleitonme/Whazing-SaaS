@@ -35,7 +35,7 @@ description: >-
 | TikTok | ❌ | ✅ | ❌ |
 | WhatsApp Oficial no mesmo hub | ✅ | ✅ | ❌ |
 
-📄 Tabela completa, incluindo a **conexão direta Meta**: [O que cada hub faz (comparativo)](../recursos-por-hub.md)
+📄 Tabela completa, incluindo a **conexão direta Meta**: [O que cada hub faz (comparativo)](recursos-por-hub.md)
 
 ***
 
@@ -43,19 +43,19 @@ description: >-
 
 ### Hub MultiAPIWA
 
-* [Hub MultiAPIWA — o que é e como conectar](../api-oficial/hub-multiapiwa.md)
-* [Hub MultiAPIWA — ativar e vender (administrador)](../api-oficial/hub-multiapiwa-ativacao.md)
+* [Hub MultiAPIWA — o que é e como conectar](multiapiwa/README.md)
+* [Hub MultiAPIWA — ativar e vender (administrador)](multiapiwa/ativacao.md)
 * [Usar o Instagram e o Facebook pelo hub](instagram-e-facebook.md)
-  * [Responder comentários do Instagram](../hub-instagram-facebook-tiktok/facebook-e-instagram-via-hub/responder-comentarios-instagram.md)
+  * [Responder comentários do Instagram](responder-comentarios-instagram.md)
   * [Automação de Comentários e Direct do Instagram](../../funcionalidades/automacao/automacao-de-comentarios-e-direct-do-instagram.md)
   * [Agendamento de Publicações no Instagram](../../funcionalidades/automacao/agendamento-de-publicacoes-no-instagram.md)
 
 ### Hub NotificaMe e ConnectionHub
 
-* [NotificaMe e ConnectionHub (visão geral)](../hub-instagram-facebook-tiktok/README.md)
-* [Hub NotificaMe — WhatsApp Oficial](../api-oficial/api-oficial.md)
-* [Hub NotificaMe — Instagram, Facebook e TikTok](../hub-instagram-facebook-tiktok/facebook-e-instagram-via-hub/README.md)
-* [Hub ConnectionHub — somente Direct](../hub-instagram-facebook-tiktok/instagram-facebook-via-connectionhub.md)
+* [NotificaMe e ConnectionHub (visão geral)](notificame-e-connectionhub.md)
+* [Hub NotificaMe — WhatsApp Oficial](notificame/whatsapp-oficial.md)
+* [Hub NotificaMe — Instagram, Facebook e TikTok](notificame/README.md)
+* [Hub ConnectionHub — somente Direct](connectionhub/README.md)
 
 ***
 
@@ -83,7 +83,7 @@ description: >-
 
 ## Veja também
 
-* [O que cada hub faz (comparativo)](../recursos-por-hub.md)
+* [O que cada hub faz (comparativo)](recursos-por-hub.md)
 * [Canais Disponíveis](../canais-disponiveis.md) — comparativo completo e liberação por plano.
 * [Liberação de Canais para Empresas](../../modulo-saas/liberacao-de-canais.md)
 * [Canais Adicionais (venda aos seus clientes)](../../modulo-saas/criacao-de-planos-financeiro/adicionais-de-canais.md)

@@ -17,7 +17,7 @@ A **conexão direta** usa um **aplicativo próprio**, criado por você no Meta f
 >
 > Criar e **aprovar** um aplicativo na Meta é um processo técnico e burocrático (verificação de negócio, App Review, screencast de cada permissão). **O suporte Whazing não cria, não configura e não aprova aplicativos** — isso vale para **WhatsApp Oficial, Instagram e Facebook**.
 >
-> Quem quiser esse serviço pode contratar **consultoria por R$ 1.000,00** (criação do aplicativo + condução da aprovação na Meta). **Para quem quer simplicidade, use o [Hub MultiAPIWA](../api-oficial/hub-multiapiwa.md)**, que já está pronto e não exige app, token nem webhook.
+> Quem quiser esse serviço pode contratar **consultoria por R$ 1.000,00** (criação do aplicativo + condução da aprovação na Meta). **Para quem quer simplicidade, use o [Hub MultiAPIWA](../hubs/multiapiwa/README.md)**, que já está pronto e não exige app, token nem webhook.
 
 ***
 
@@ -83,7 +83,7 @@ Não. Um único App atende todos os clientes do seu Whazing — cada cliente ape
 
 #### Existe um caminho mais fácil?
 
-Sim: o [Hub MultiAPIWA](../api-oficial/hub-multiapiwa.md). A conexão acontece dentro do Whazing, sem app, sem token e sem webhook.
+Sim: o [Hub MultiAPIWA](../hubs/multiapiwa/README.md). A conexão acontece dentro do Whazing, sem app, sem token e sem webhook.
 
 #### A conexão direta é gratuita?
 
@@ -105,7 +105,7 @@ O aplicativo da Meta pode atender WhatsApp, Instagram e Facebook, mas **cada can
 
 ## Veja também
 
-* [Hub MultiAPIWA (conexão integrada)](../api-oficial/hub-multiapiwa.md)
+* [Hub MultiAPIWA (conexão integrada)](../hubs/multiapiwa/README.md)
 * [Canais Disponíveis](../canais-disponiveis.md)
 * [Automação de Comentários e Direct do Instagram](../../funcionalidades/automacao/automacao-de-comentarios-e-direct-do-instagram.md)
 * [Agendamento de Publicações no Instagram](../../funcionalidades/automacao/agendamento-de-publicacoes-no-instagram.md)

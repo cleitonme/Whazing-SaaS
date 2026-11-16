@@ -64,7 +64,7 @@ Crie (ou aproveite) um serviço e, na seção **Habilitado para**, marque a opç
 
 > 💡 As seis opções da classificação (classificação, etiqueta, lead, kanban, encaminhamento para humano e direcionamento de fila) usam **o mesmo serviço de IA**. Marcar "Classificação automática" já prepara o serviço para todas elas.
 
-Se ainda não sabe como cadastrar um serviço, consulte a página [IA Integrada](./README.md), que explica provedores, modelos, tokens e pool de tokens passo a passo.
+Se ainda não sabe como cadastrar um serviço, consulte a página [IA Integrada](./), que explica provedores, modelos, tokens e pool de tokens passo a passo.
 
 ***
 

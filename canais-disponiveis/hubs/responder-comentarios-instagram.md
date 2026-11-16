@@ -19,7 +19,7 @@ description: >-
 | **Conexão direta Meta** (app aprovado) | ✅                    | ✅                 |
 | **ConnectionHub**                      | ❌                    | ❌                 |
 
-> 🔎 Não sabe como o seu canal está conectado? Veja [O que cada hub faz](../../recursos-por-hub.md).
+> 🔎 Não sabe como o seu canal está conectado? Veja [O que cada hub faz](recursos-por-hub.md).
 
 ***
 
@@ -39,7 +39,7 @@ description: >-
 
 ## 📩 Direct automático depois do comentário
 
-Se você quer respostas diferentes conforme o comentário — ou respostas geradas por IA — use a [Automação de Comentários e Direct](../../../funcionalidades/automacao/automacao-de-comentarios-e-direct-do-instagram.md).
+Se você quer respostas diferentes conforme o comentário — ou respostas geradas por IA — use a [Automação de Comentários e Direct](../../funcionalidades/automacao/automacao-de-comentarios-e-direct-do-instagram.md).
 
 ***
 
@@ -70,8 +70,8 @@ O sistema acompanha os comentários a partir da conexão do canal. Comentários 
 
 ## 📚 Veja também
 
-* [O que cada hub faz (comparativo)](../../recursos-por-hub.md)
-* [Usar o Instagram e o Facebook pelo hub](../../hubs/instagram-e-facebook.md)
-* [Automação de Comentários e Direct do Instagram](../../../funcionalidades/automacao/automacao-de-comentarios-e-direct-do-instagram.md)
-* [Agendamento de Publicações no Instagram](../../../funcionalidades/automacao/agendamento-de-publicacoes-no-instagram.md)
+* [O que cada hub faz (comparativo)](recursos-por-hub.md)
+* [Usar o Instagram e o Facebook pelo hub](instagram-e-facebook.md)
+* [Automação de Comentários e Direct do Instagram](../../funcionalidades/automacao/automacao-de-comentarios-e-direct-do-instagram.md)
+* [Agendamento de Publicações no Instagram](../../funcionalidades/automacao/agendamento-de-publicacoes-no-instagram.md)
 * [Instagram, Facebook e TikTok via NotificaMe](./)

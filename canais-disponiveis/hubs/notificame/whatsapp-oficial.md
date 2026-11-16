@@ -1,6 +1,6 @@
 # WhatsApp Oficial via Hub NotificaMe
 
-> 🔀 **Esta página trata do Hub NotificaMe.** Se você quer a conexão **dentro do próprio Whazing**, sem o cliente copiar token nem configurar webhook, e com suporte a **WhatsApp Oficial, Instagram e Facebook**, veja o [Hub MultiAPIWA (conexão integrada)](hub-multiapiwa.md).
+> 🔀 **Esta página trata do Hub NotificaMe.** Se você quer a conexão **dentro do próprio Whazing**, sem o cliente copiar token nem configurar webhook, e com suporte a **WhatsApp Oficial, Instagram e Facebook**, veja o [Hub MultiAPIWA (conexão integrada)](../multiapiwa/README.md).
 
 A API oficial está disponível tanto na **versão gratuita** quanto para **clientes Premium**.
 
@@ -39,14 +39,14 @@ Para conectar verifique documentação oficial do HUB
 ### ✅ Whazing tem suporte às mensagens especiais da API OFICIAL
 
 * **Botões (até 3)**\
-  ![print](../../.gitbook/assets/botao.png)
+  ![print](../../../.gitbook/assets/botao.png)
 * **Lista**\
-  ![print](../../.gitbook/assets/lista.png)\
-  ![print](../../.gitbook/assets/lista2.png)
+  ![print](../../../.gitbook/assets/lista.png)\
+  ![print](../../../.gitbook/assets/lista2.png)
 * **Links com informações**\
-  ![print](../../.gitbook/assets/links.png)
+  ![print](../../../.gitbook/assets/links.png)
 * **Solicitar localização**\
-  ![print](../../.gitbook/assets/solicitarlocalizacao.png)
+  ![print](../../../.gitbook/assets/solicitarlocalizacao.png)
 
 ***
 

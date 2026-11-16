@@ -90,9 +90,9 @@ description: >-
 | **WhatsApp não oficial (WuzAPI)** | QR Code, sem custo por canal | [WuzAPI](canais-disponiveis/whatsapp-api-nao-oficial/whatsapp-wuzapi/README.md) |
 | **WhatsApp API PLUS** | Não oficial com botões e listas | [API PLUS](canais-disponiveis/whatsapp-api-nao-oficial/whatsapp_api_plus/README.md) |
 | **WhatsApp Oficial (WABA)** | API oficial da Meta | [API Oficial](canais-disponiveis/api-oficial/README.md) |
-| **Hub MultiAPIWA** | WhatsApp Oficial, Instagram e Facebook sem criar app (R$ 25/canal) | [Hub MultiAPIWA](canais-disponiveis/api-oficial/hub-multiapiwa.md) |
-| **Hub NotificaMe** | WhatsApp Oficial, Instagram, Facebook e TikTok (R$ 50/canal) | [NotificaMe](canais-disponiveis/hub-instagram-facebook-tiktok/facebook-e-instagram-via-hub/README.md) |
-| **ConnectionHub** | Instagram e Facebook — **somente Direct** | [ConnectionHub](canais-disponiveis/hub-instagram-facebook-tiktok/instagram-facebook-via-connectionhub.md) |
+| **Hub MultiAPIWA** | WhatsApp Oficial, Instagram e Facebook sem criar app (R$ 25/canal) | [Hub MultiAPIWA](canais-disponiveis/hubs/multiapiwa/README.md) |
+| **Hub NotificaMe** | WhatsApp Oficial, Instagram, Facebook e TikTok (R$ 50/canal) | [NotificaMe](canais-disponiveis/hubs/notificame/README.md) |
+| **ConnectionHub** | Instagram e Facebook — **somente Direct** | [ConnectionHub](canais-disponiveis/hubs/connectionhub/README.md) |
 | **Conexão direta Meta** | Instagram e Facebook com aplicativo próprio (avançado) | [Conexão direta](canais-disponiveis/conexao-direta-meta/README.md) |
 | **Telegram** | Bot oficial | [Telegram](canais-disponiveis/telegram.md) |
 | **WebChat** | Atendimento pelo seu site | [WebChat](canais-disponiveis/webchat.md) |
@@ -100,7 +100,7 @@ description: >-
 | **SMS** | Envio por créditos (Witi) | [SMS](canais-disponiveis/sms.md) |
 | **Canal privado** | Esconde o canal dos demais usuários | [Canal Privado](canais-disponiveis/canal-privado.md) |
 
-> 🧭 Não sabe qual escolher? Veja [Canais Disponíveis](canais-disponiveis/canais-disponiveis.md) (com custos) e [O que cada hub faz](canais-disponiveis/recursos-por-hub.md).
+> 🧭 Não sabe qual escolher? Veja [Canais Disponíveis](canais-disponiveis/canais-disponiveis.md) (com custos) e [O que cada hub faz](canais-disponiveis/hubs/recursos-por-hub.md).
 
 ***
 

@@ -8,9 +8,9 @@ Para conectar a API Oficial via Whazing existem 3 métodos: **direto** (App pró
 
 > 🚫 O **Hub MultiAPIWA** é **exclusivo do Whazing** — não funciona em outros sistemas.
 
-🔀 **Quer a conexão mais simples, direto dentro do Whazing, sem o cliente copiar token nem configurar webhook?** Conheça o [Hub MultiAPIWA (conexão integrada)](hub-multiapiwa.md) — atende **WhatsApp Oficial, Instagram e Facebook**.
+🔀 **Quer a conexão mais simples, direto dentro do Whazing, sem o cliente copiar token nem configurar webhook?** Conheça o [Hub MultiAPIWA (conexão integrada)](../hubs/multiapiwa/README.md) — atende **WhatsApp Oficial, Instagram e Facebook**.
 
-⚙️ **É administrador do SaaS?** Veja [Ativar e vender o Hub MultiAPIWA](hub-multiapiwa-ativacao.md).
+⚙️ **É administrador do SaaS?** Veja [Ativar e vender o Hub MultiAPIWA](../hubs/multiapiwa/ativacao.md).
 
 Para quem quiser manter aplicativo e usar coexistência único método suporta isso via HUB
 

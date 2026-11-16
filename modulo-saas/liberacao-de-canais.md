@@ -110,7 +110,7 @@ Se o plano inclui `0` canais de um tipo, o cliente compra por **adicionais**:
 | Nenhum canal, quer Instagram | Adicional **Instagram** | **R$ 99,90** |
 | Já tem 1 canal, quer Instagram | **Canais** + **Instagram** | **R$ 159,80** |
 
-📄 Passo a passo: [Canais Adicionais (venda aos seus clientes)](criacao-de-planos-financeiro/adicionais-de-canais.md) · [🛒 Adicionais](criacao-de-planos-financeiro/adicionais.md) · [Ativar e vender o Hub MultiAPIWA](../canais-disponiveis/api-oficial/hub-multiapiwa-ativacao.md)
+📄 Passo a passo: [Canais Adicionais (venda aos seus clientes)](criacao-de-planos-financeiro/adicionais-de-canais.md) · [🛒 Adicionais](criacao-de-planos-financeiro/adicionais.md) · [Ativar e vender o Hub MultiAPIWA](../canais-disponiveis/hubs/multiapiwa/ativacao.md)
 
 ***
 
@@ -163,4 +163,4 @@ Sim, inclusive Hub MultiAPIWA, NotificaMe, ConnectionHub, conexão direta, Teleg
 * [Canais Disponíveis](../canais-disponiveis/canais-disponiveis.md)
 * [Criação de Planos - Financeiro](criacao-de-planos-financeiro/README.md)
 * [Canais Adicionais](criacao-de-planos-financeiro/adicionais-de-canais.md)
-* [Ativar e vender o Hub MultiAPIWA](../canais-disponiveis/api-oficial/hub-multiapiwa-ativacao.md)
+* [Ativar e vender o Hub MultiAPIWA](../canais-disponiveis/hubs/multiapiwa/ativacao.md)

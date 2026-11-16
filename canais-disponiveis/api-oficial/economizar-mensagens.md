@@ -34,6 +34,6 @@ Toda mensagem enviada pela **API Oficial** tem custo cobrado pela Meta. Estes re
 
 ## Veja também
 
-* [WhatsApp Oficial (API Oficial)](README.md)
+* [WhatsApp Oficial (API Oficial)](./)
 * [API Oficial do WhatsApp - FAQ Completo](api-oficial-do-whatsapp-faq-completo.md)
 * [Tabela de Valores](../../tabela-de-valores.md)

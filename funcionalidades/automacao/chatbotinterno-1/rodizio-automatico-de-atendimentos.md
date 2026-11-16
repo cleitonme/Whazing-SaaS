@@ -2,7 +2,7 @@
 
 Sim 👍 É possível utilizar o sistema de **rodízio automático de atendimentos**, onde as conversas são distribuídas automaticamente entre os consultores da equipe.
 
-> 📖 Para entender como montar o fluxo do chatbot (etapas, interações, condições e roteamento para fila), consulte o guia completo: [CHATBOT 3.0 (ChatFlow)](./README.md).
+> 📖 Para entender como montar o fluxo do chatbot (etapas, interações, condições e roteamento para fila), consulte o guia completo: [CHATBOT 3.0 (ChatFlow)](./).
 
 ***
 

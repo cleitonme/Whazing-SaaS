@@ -14,7 +14,7 @@ icon: phone
 >
 > **Quando não usar:** se você não tem central telefônica, use [Wavoip](configurar_wavoip.md) ou [WaCalls](wacalls.md).
 
-> 🧭 **Comparativo das opções:** [Telefonia](README.md).
+> 🧭 **Comparativo das opções:** [Telefonia](./).
 
 Suporte transferência, chamada em espera, gravação das chamadas, conferencia
 

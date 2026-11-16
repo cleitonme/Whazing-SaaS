@@ -1,4 +1,4 @@
-# HUB Instagram - Facebook - TikTok
+# NotificaMe e ConnectionHub (visão geral)
 
 O Whazing permite conectar **Instagram, Facebook e TikTok** como canais de atendimento através de provedores HUB (serviços intermediários que cuidam da conexão com as redes sociais).
 
@@ -8,8 +8,8 @@ O Whazing permite conectar **Instagram, Facebook e TikTok** como canais de atend
 
 ## 📄 Opções de conexão
 
-* [WhatsApp, Instagram, Facebook, TikTok e WebChat via NotificaMe](facebook-e-instagram-via-hub/)
-* [Instagram e Facebook via ConnectionHub](instagram-facebook-via-connectionhub.md)
+* [WhatsApp, Instagram, Facebook, TikTok e WebChat via NotificaMe](notificame/)
+* [Instagram e Facebook via ConnectionHub](connectionhub/README.md)
 
 ## 👣 Depois de conectar
 

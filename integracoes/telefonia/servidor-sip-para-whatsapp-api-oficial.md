@@ -10,7 +10,7 @@
 >
 > **Custa:** R$ 35,00 por ramal/mês (1 a 9 ramais) ou a partir de R$ 25,00 acima de 10 ramais, sem taxa de ativação. Ligação recebida não tem custo da Meta; ligação feita pela empresa paga por minuto.
 
-> 🧭 **Não sabe se esta é a opção certa?** Veja o comparativo em [Telefonia](README.md).
+> 🧭 **Não sabe se esta é a opção certa?** Veja o comparativo em [Telefonia](./).
 
 Transforme sua API Oficial do WhatsApp em uma central de atendimento por voz utilizando ramais SIP.
 

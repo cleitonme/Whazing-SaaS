@@ -2,7 +2,7 @@
 
 Esta página é para o **dono do Whazing (administrador do SaaS)**. Ela mostra como **liberar o Hub**, **ativar por canal** e **vender os canais** para os seus clientes.
 
-> 👤 **Cliente final?** A página que explica a conexão e os custos é a [Hub MultiAPIWA (conexão integrada)](hub-multiapiwa.md).
+> 👤 **Cliente final?** A página que explica a conexão e os custos é a [Hub MultiAPIWA (conexão integrada)](./).
 
 ***
 
@@ -36,7 +36,7 @@ Fale com o **suporte Whazing** e peça a liberação do **Hub MultiAPIWA**. Voc�
 * A liberação **considera a URL do backend** do seu Whazing. Ela **precisa ser informada** para o Hub saber onde entregar as mensagens.
 * **Se a URL mudar** (troca de domínio, mudança de VPS, túnel/proxy novo), **informe novamente ao suporte**. Enquanto isso não for feito, as conexões **param de funcionar**.
 
-> 📌 Vale a pena revisar sempre que você fizer: [Trocar Domínio](../../instalacao-and-vps/trocar-dominio-instalacao-whazing.md) ou [Migração de VPS](../../instalacao-and-vps/migracao-do-sistema-whazing-para-nova-vps.md).
+> 📌 Vale a pena revisar sempre que você fizer: [Trocar Domínio](../../../instalacao-and-vps/trocar-dominio-instalacao-whazing.md) ou [Migração de VPS](../../../instalacao-and-vps/migracao-do-sistema-whazing-para-nova-vps.md).
 
 ***
 
@@ -284,7 +284,7 @@ R$ 59,90  +  R$ 99,90  =  R$ 159,80/mês
 * **Direto no catálogo de canais**, ao clicar em adicionar canal (o card mostra o valor: _"Adicionar por R$ X/mês"_);
 * Ou em **Financeiro → Canais adicionais**, quando você habilitou os adicionais no plano.
 
-O passo a passo das telas do cliente está em [Canais Adicionais (venda aos seus clientes)](../../modulo-saas/criacao-de-planos-financeiro/adicionais-de-canais.md).
+O passo a passo das telas do cliente está em [Canais Adicionais (venda aos seus clientes)](../../../modulo-saas/criacao-de-planos-financeiro/adicionais-de-canais.md).
 
 <figure><img src="../../.gitbook/assets/compracanal (1).png" alt=""><figcaption></figcaption></figure>
 
@@ -389,17 +389,17 @@ Os canais são **bloqueados automaticamente** e param de funcionar até a regula
 
 #### Posso usar o Hub para campanhas em massa?
 
-**Não.** O Hub é para **atendimento**, dentro das regras da Meta. Disparo em massa derruba a **qualidade do número**, pode bloquear o cadastro e, por o App Meta ser centralizado, **afeta todos os clientes**. Veja a seção **Regras de uso e qualidade do número** em [Hub MultiAPIWA (conexão integrada)](hub-multiapiwa.md).
+**Não.** O Hub é para **atendimento**, dentro das regras da Meta. Disparo em massa derruba a **qualidade do número**, pode bloquear o cadastro e, por o App Meta ser centralizado, **afeta todos os clientes**. Veja a seção **Regras de uso e qualidade do número** em [Hub MultiAPIWA (conexão integrada)](./).
 
 ***
 
 ## 📚 Veja também
 
-* [Hub MultiAPIWA (conexão integrada)](hub-multiapiwa.md) — visão geral, custos e conexão do cliente
-* [Canais Adicionais (venda aos seus clientes)](../../modulo-saas/criacao-de-planos-financeiro/adicionais-de-canais.md)
-* [🛒 Adicionais](../../modulo-saas/criacao-de-planos-financeiro/adicionais.md)
-* [Criação de Planos - Financeiro](../../modulo-saas/criacao-de-planos-financeiro/)
-* [Canais Disponíveis](../canais-disponiveis.md)
+* [Hub MultiAPIWA (conexão integrada)](./) — visão geral, custos e conexão do cliente
+* [Canais Adicionais (venda aos seus clientes)](../../../modulo-saas/criacao-de-planos-financeiro/adicionais-de-canais.md)
+* [🛒 Adicionais](../../../modulo-saas/criacao-de-planos-financeiro/adicionais.md)
+* [Criação de Planos - Financeiro](../../../modulo-saas/criacao-de-planos-financeiro/)
+* [Canais Disponíveis](../../canais-disponiveis.md)
 
 ***
 

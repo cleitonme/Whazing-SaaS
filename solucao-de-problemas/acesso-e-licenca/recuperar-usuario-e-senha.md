@@ -141,4 +141,4 @@ A recuperação técnica é responsabilidade do **administrador**. Solicite a el
 
 1. Faça login com o **e-mail + senha nova**;
 2. Se o campo **"Login automático"** estiver marcado, o navegador guardará suas credenciais — evite usá-lo em computadores compartilhados;
-3. Perdeu o acesso novamente no futuro? Esta página é o caminho: **[Acesso e Licença](README.md)**.
+3. Perdeu o acesso novamente no futuro? Esta página é o caminho: **[Acesso e Licença](./)**.

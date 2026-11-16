@@ -75,4 +75,4 @@ Isso acontece quando algum recurso específico está configurado para usar a IA 
 
 ---
 
-> 📄 Veja também: [Assistente IA — Menu Copiloto](README.md) · [Perguntar ao Copiloto IA](perguntar-ao-copiloto-ia.md) · [Sugerir Resposta com IA](sugerir-resposta-com-ia.md) · [Resumir Conversa com IA](resumir-conversa-com-ia.md) · [Melhorar Texto de Atendimento](melhorar_texto_atendimento.md)
+> 📄 Veja também: [Assistente IA — Menu Copiloto](./) · [Perguntar ao Copiloto IA](perguntar-ao-copiloto-ia.md) · [Sugerir Resposta com IA](sugerir-resposta-com-ia.md) · [Resumir Conversa com IA](resumir-conversa-com-ia.md) · [Melhorar Texto de Atendimento](melhorar_texto_atendimento.md)

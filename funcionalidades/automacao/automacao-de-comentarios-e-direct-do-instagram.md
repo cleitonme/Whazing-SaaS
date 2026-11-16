@@ -10,7 +10,7 @@ description: >-
 
 > ✅ Funciona com: **Hub MultiAPIWA**, **Hub NotificaMe** e **Conexão direta Meta** (aplicativo com permissões aprovadas).
 >
-> ❌ **Não funciona com ConnectionHub** — ele faz somente Direct. Veja [O que cada hub faz](../../canais-disponiveis/recursos-por-hub.md).
+> ❌ **Não funciona com ConnectionHub** — ele faz somente Direct. Veja [O que cada hub faz](../../canais-disponiveis/hubs/recursos-por-hub.md).
 
 ***
 
@@ -222,8 +222,8 @@ O sistema acompanha os comentários a partir da conexão do canal.
 
 ## 📚 Veja também
 
-* [Responder comentários do Instagram (manual)](../../canais-disponiveis/hub-instagram-facebook-tiktok/facebook-e-instagram-via-hub/responder-comentarios-instagram.md)
-* [O que cada hub faz (comparativo)](../../canais-disponiveis/recursos-por-hub.md)
+* [Responder comentários do Instagram (manual)](../../canais-disponiveis/hubs/responder-comentarios-instagram.md)
+* [O que cada hub faz (comparativo)](../../canais-disponiveis/hubs/recursos-por-hub.md)
 * [Agendamento de Publicações no Instagram](agendamento-de-publicacoes-no-instagram.md)
 * [Resposta Automática a Comentários do TikTok](resposta-automatica-a-comentarios-do-tiktok.md)
 * [Base de Conhecimento](../../integracoes/inteligencia-artificial/recepcao-inteligente/base-de-conhecimento.md)

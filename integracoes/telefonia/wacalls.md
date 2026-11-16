@@ -12,7 +12,7 @@
 >
 > **Quando não usar:** se você não quer mexer em servidor, use [Wavoip](configurar_wavoip.md); se já tem central telefônica, use o [Discador SIP](discador-sip.md).
 
-> 🧭 **Comparativo das opções:** [Telefonia](README.md).
+> 🧭 **Comparativo das opções:** [Telefonia](./).
 
 ### O que é o WaCalls?
 

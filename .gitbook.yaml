@@ -1,0 +1,15 @@
+root: ./
+
+structure:
+  readme: README.md
+  summary: SUMMARY.md
+
+redirects:
+  canais-disponiveis/api-oficial/hub-multiapiwa: canais-disponiveis/hubs/multiapiwa/README.md
+  canais-disponiveis/api-oficial/hub-multiapiwa-ativacao: canais-disponiveis/hubs/multiapiwa/ativacao.md
+  canais-disponiveis/api-oficial/api-oficial: canais-disponiveis/hubs/notificame/whatsapp-oficial.md
+  canais-disponiveis/hub-instagram-facebook-tiktok: canais-disponiveis/hubs/notificame-e-connectionhub.md
+  canais-disponiveis/hub-instagram-facebook-tiktok/facebook-e-instagram-via-hub: canais-disponiveis/hubs/notificame/README.md
+  canais-disponiveis/hub-instagram-facebook-tiktok/facebook-e-instagram-via-hub/responder-comentarios-instagram: canais-disponiveis/hubs/responder-comentarios-instagram.md
+  canais-disponiveis/hub-instagram-facebook-tiktok/instagram-facebook-via-connectionhub: canais-disponiveis/hubs/connectionhub/README.md
+  canais-disponiveis/recursos-por-hub: canais-disponiveis/hubs/recursos-por-hub.md

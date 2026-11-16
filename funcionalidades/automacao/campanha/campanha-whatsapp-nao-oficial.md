@@ -35,7 +35,7 @@ O WhatsApp **não gosta** de envio em massa e pode **bloquear seu número**. Na 
 * A tela só aparece para **admin** e **supervisor**.
 * O recurso é vendido como **adicional nos planos** — se o seu plano não inclui, a tela mostra como contratar.
 
-> 💡 As campanhas **criadas no modelo antigo** continuam disponíveis: na tela nova, clique em **"Campanhas anteriores"** para abri-las (veja [Campanhas (modelo anterior)](README.md)).
+> 💡 As campanhas **criadas no modelo antigo** continuam disponíveis: na tela nova, clique em **"Campanhas anteriores"** para abri-las (veja [Campanhas (modelo anterior)](./)).
 
 ***
 
@@ -191,4 +191,4 @@ Na tela da campanha, clique no botão **📊 Acompanhar**:
 
 ***
 
-* 📄 Campanhas criadas no **modelo anterior** continuam na tela antiga: veja [Campanhas (modelo anterior)](README.md).
+* 📄 Campanhas criadas no **modelo anterior** continuam na tela antiga: veja [Campanhas (modelo anterior)](./).

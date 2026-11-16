@@ -7,7 +7,7 @@ description: >-
 
 # Instagram e Facebook via ConnectionHub
 
-> **Em palavras simples:** o ConnectionHub é um provedor que conecta seu Instagram e sua Página do Facebook ao Whazing. Ele faz **somente o Direct** (conversas). Quem precisa **responder comentários** ou **agendar publicações** deve usar o [Hub MultiAPIWA](../api-oficial/hub-multiapiwa.md) ou o [Hub NotificaMe](facebook-e-instagram-via-hub/README.md).
+> **Em palavras simples:** o ConnectionHub é um provedor que conecta seu Instagram e sua Página do Facebook ao Whazing. Ele faz **somente o Direct** (conversas). Quem precisa **responder comentários** ou **agendar publicações** deve usar o [Hub MultiAPIWA](../multiapiwa/README.md) ou o [Hub NotificaMe](../notificame/README.md).
 
 > 💰 **Custo:** R$ 59,90 por canal/mês, cobrado pelo provedor (sem taxa de ativação). O Whazing não cobra nada por essa conexão. Confirme o valor no site antes de contratar.
 
@@ -93,13 +93,13 @@ A janela de conversa fechou. Só é possível responder depois que o cliente man
 
 ### Não encontro a opção de comentários ou de agendamento
 
-É uma limitação do provedor: o ConnectionHub é **somente Direct**. Para esses recursos, use o [Hub MultiAPIWA](../api-oficial/hub-multiapiwa.md).
+É uma limitação do provedor: o ConnectionHub é **somente Direct**. Para esses recursos, use o [Hub MultiAPIWA](../multiapiwa/README.md).
 
 ***
 
 ## 📚 Veja também
 
 * [O que cada hub faz (comparativo)](../recursos-por-hub.md)
-* [Hub MultiAPIWA (conexão integrada)](../api-oficial/hub-multiapiwa.md)
-* [Instagram, Facebook e TikTok via NotificaMe](facebook-e-instagram-via-hub/README.md)
-* [Canais Disponíveis](../canais-disponiveis.md)
+* [Hub MultiAPIWA (conexão integrada)](../multiapiwa/README.md)
+* [Instagram, Facebook e TikTok via NotificaMe](../notificame/README.md)
+* [Canais Disponíveis](../../canais-disponiveis.md)

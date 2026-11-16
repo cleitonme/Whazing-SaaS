@@ -8,7 +8,7 @@ description: >-
 
 Na conexão direta, as mensagens da **Página do Facebook (Messenger)** vão da **Meta direto para o seu Whazing**, usando o **seu aplicativo** no Meta for Developers — sem hub intermediário.
 
-> ⚠️ **Nível avançado.** Exige aplicativo criado e **aprovado** na Meta (verificação de negócio + App Review). O suporte Whazing **não cria, não configura e não aprova** aplicativos — existe **consultoria de R$ 1.000,00** para isso. Para funcionar hoje, use o [Hub MultiAPIWA](../api-oficial/hub-multiapiwa.md) ou o [ConnectionHub](../hub-instagram-facebook-tiktok/instagram-facebook-via-connectionhub.md).
+> ⚠️ **Nível avançado.** Exige aplicativo criado e **aprovado** na Meta (verificação de negócio + App Review). O suporte Whazing **não cria, não configura e não aprova** aplicativos — existe **consultoria de R$ 1.000,00** para isso. Para funcionar hoje, use o [Hub MultiAPIWA](../hubs/multiapiwa/README.md).
 
 ***
 
@@ -51,7 +51,7 @@ Na conexão direta, as mensagens da **Página do Facebook (Messenger)** vão da 
 
 ## 📚 Passo a passo completo
 
-* [Instagram e Facebook: conexão direta (visão geral)](README.md)
+* [Instagram e Facebook: conexão direta (visão geral)](./)
 * [Criar aplicativo na Meta](criar-aplicativo-meta.md)
 * [Permissões e aprovação na Meta](permissoes-e-aprovacao-meta.md)
 * [Conectar o canal direto](conectar-canal-direto.md)

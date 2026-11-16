@@ -8,7 +8,7 @@ description: >-
 
 Este guia mostra como criar o **aplicativo próprio** usado na conexão direta de **Instagram** e **Facebook**.
 
-> ⚠️ **Nível avançado.** O suporte Whazing **não cria, não configura e não aprova** aplicativos na Meta. Se preferir que alguém faça por você, existe **consultoria por R$ 1.000,00** (criação + condução da aprovação). Se quiser o caminho fácil, use o [Hub MultiAPIWA](../api-oficial/hub-multiapiwa.md).
+> ⚠️ **Nível avançado.** O suporte Whazing **não cria, não configura e não aprova** aplicativos na Meta. Se preferir que alguém faça por você, existe **consultoria por R$ 1.000,00** (criação + condução da aprovação). Se quiser o caminho fácil, use o [Hub MultiAPIWA](../hubs/multiapiwa/README.md).
 
 > ⚠️ **A Meta muda nomes de menus com frequência.** Os caminhos abaixo usam os nomes atuais do App Dashboard. Se um item não existir com esse nome, procure o equivalente (ex.: _Casos de uso_, _Produtos_, _Configurações do app_).
 
@@ -183,7 +183,7 @@ Na conexão direta, o acesso é concedido por **token do usuário** — ele **ex
 * O cliente precisa **reconectar** (autorizar novamente) em **Canais**;
 * A tela do Whazing sinaliza canais que precisam de atenção.
 
-> 💡 **Token de Página de longa duração** e revisões periódicas de permissão ajudam, mas **não eliminam** a necessidade de reconectar. Se isso for um problema operacional, o [Hub MultiAPIWA](../api-oficial/hub-multiapiwa.md) resolve justamente essa parte.
+> 💡 **Token de Página de longa duração** e revisões periódicas de permissão ajudam, mas **não eliminam** a necessidade de reconectar. Se isso for um problema operacional, o [Hub MultiAPIWA](../hubs/multiapiwa/README.md) resolve justamente essa parte.
 
 ***
 
@@ -221,5 +221,5 @@ A conta precisa ser **profissional** e estar **vinculada a uma Página** (no cas
 
 * [Permissões e aprovação na Meta](permissoes-e-aprovacao-meta.md)
 * [Conectar o canal direto](conectar-canal-direto.md)
-* [Hub MultiAPIWA (conexão integrada)](../api-oficial/hub-multiapiwa.md)
+* [Hub MultiAPIWA (conexão integrada)](../hubs/multiapiwa/README.md)
 * [API Oficial do WhatsApp (Meta)](../api-oficial/api-oficial-do-whatsapp-meta.md)

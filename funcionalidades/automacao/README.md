@@ -42,7 +42,7 @@ Tudo o que o sistema pode fazer **sozinho** para você: responder, organizar, di
 * [**Automação de Comentários e Direct do Instagram**](automacao-de-comentarios-e-direct-do-instagram.md) — responder comentários e enviar Direct automaticamente.
 * [**Resposta Automática a Comentários do TikTok**](resposta-automatica-a-comentarios-do-tiktok.md)
 
-> ✅ Comentários e agendamento do Instagram funcionam com **Hub MultiAPIWA**, **Hub NotificaMe** e **conexão direta Meta** aprovada. O **ConnectionHub** faz somente Direct — veja [O que cada hub faz](../../canais-disponiveis/recursos-por-hub.md).
+> ✅ Comentários e agendamento do Instagram funcionam com **Hub MultiAPIWA**, **Hub NotificaMe** e **conexão direta Meta** aprovada. O **ConnectionHub** faz somente Direct — veja [O que cada hub faz](../../canais-disponiveis/hubs/recursos-por-hub.md).
 
 ***
 

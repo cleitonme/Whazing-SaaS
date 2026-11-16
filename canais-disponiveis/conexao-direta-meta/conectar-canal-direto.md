@@ -8,7 +8,7 @@ description: >-
 
 Com o aplicativo já criado e aprovado ([Criar aplicativo na Meta](criar-aplicativo-meta.md)) e as permissões liberadas ([Permissões e aprovação](permissoes-e-aprovacao-meta.md)), falta liberar e conectar o canal.
 
-> ⚠️ O suporte Whazing **não cria nem aprova** aplicativos. Precisa de ajuda nesse processo? Existe **consultoria por R$ 1.000,00**. Quer o caminho sem app? Use o [Hub MultiAPIWA](../api-oficial/hub-multiapiwa.md).
+> ⚠️ O suporte Whazing **não cria nem aprova** aplicativos. Precisa de ajuda nesse processo? Existe **consultoria por R$ 1.000,00**. Quer o caminho sem app? Use o [Hub MultiAPIWA](../hubs/multiapiwa/README.md).
 
 ***
 
@@ -43,7 +43,7 @@ Ligue o botão do tipo que quer oferecer e salve.
 * Ligue **"Ativar limite de canais por tipo"** se quiser controlar quantidade por tipo;
 * Defina a quantidade de **Instagram** e/ou **Facebook** (pode ser `0` para vender só como adicional).
 
-> 💡 Para vender o canal separadamente, crie adicionais dos tipos **Instagram** / **Facebook**. O passo a passo comercial está em [Ativar e vender o Hub MultiAPIWA](../api-oficial/hub-multiapiwa-ativacao.md), na seção **Vender o canal como adicional** — a lógica de limites é a mesma.
+> 💡 Para vender o canal separadamente, crie adicionais dos tipos **Instagram** / **Facebook**. O passo a passo comercial está em [Ativar e vender o Hub MultiAPIWA](../hubs/multiapiwa/ativacao.md), na seção **Vender o canal como adicional** — a lógica de limites é a mesma.
 
 ***
 
@@ -119,7 +119,7 @@ Precisa ser conta **profissional** (comercial/criador) e, no Unified Login, **vi
 
 ### Funcionou e parou depois de um tempo
 
-Token expirado. **Reconecte** o canal. Se acontecer com frequência, avalie o [Hub MultiAPIWA](../api-oficial/hub-multiapiwa.md), que gerencia esse ciclo.
+Token expirado. **Reconecte** o canal. Se acontecer com frequência, avalie o [Hub MultiAPIWA](../hubs/multiapiwa/README.md), que gerencia esse ciclo.
 
 ### Erro ao salvar "Novo App Meta": credenciais inválidas
 
@@ -132,4 +132,4 @@ App ID e App Secret não são do mesmo app — ou você misturou **Instagram App
 * [Criar aplicativo na Meta](criar-aplicativo-meta.md)
 * [Permissões e aprovação na Meta](permissoes-e-aprovacao-meta.md)
 * [Canais Adicionais (venda aos seus clientes)](../../modulo-saas/criacao-de-planos-financeiro/adicionais-de-canais.md)
-* [Hub MultiAPIWA (conexão integrada)](../api-oficial/hub-multiapiwa.md)
+* [Hub MultiAPIWA (conexão integrada)](../hubs/multiapiwa/README.md)

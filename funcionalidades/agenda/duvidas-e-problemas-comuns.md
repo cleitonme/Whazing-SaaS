@@ -82,7 +82,7 @@ Verifique, nesta ordem:
 
 ### O menu/aba da Agenda não aparece para um usuário
 
-* **Sem o adicional contratado:** se o plano não inclui a Agenda, a tela mostra *"Recurso indisponível"* com o aviso para **contratar o adicional** (veja [Disponibilidade do módulo](README.md#disponibilidade-do-módulo)).
+* **Sem o adicional contratado:** se o plano não inclui a Agenda, a tela mostra *"Recurso indisponível"* com o aviso para **contratar o adicional** (veja [Disponibilidade do módulo](./#disponibilidade-do-módulo)).
 * **Usuário comum sem acesso aos calendários:** usuários comuns só veem calendários em que foram adicionados como **membros**. Admins e supervisores veem sempre.
 
 ### Aparece "Você só tem acesso de visualização a esta agenda"
@@ -210,7 +210,7 @@ Verifique:
 
 * Se existirem **agendamentos futuros**, o sistema **pergunta** o que fazer com eles: **excluir** (recomendado) ou apenas **cancelar** — a escolha aparece na hora de confirmar o cancelamento do adicional.
 * Os agendamentos **passados** nunca são mexidos — o **histórico** fica guardado.
-* Sem o adicional, a tela da Agenda volta a mostrar _"Recurso indisponível"_ até o adicional ser contratado de novo (veja [Disponibilidade do módulo](README.md#disponibilidade-do-módulo)).
+* Sem o adicional, a tela da Agenda volta a mostrar _"Recurso indisponível"_ até o adicional ser contratado de novo (veja [Disponibilidade do módulo](./#disponibilidade-do-módulo)).
 
 ***
 

@@ -54,10 +54,10 @@ Além de conversar no **Direct**, o Hub entrega os recursos das redes sociais:
 
 | Recurso | Para que serve | Passo a passo |
 | --- | --- | --- |
-| **Responder comentários** | Responder o comentário direto na publicação | [Responder comentários do Instagram](../hub-instagram-facebook-tiktok/facebook-e-instagram-via-hub/responder-comentarios-instagram.md) |
-| **Direct automático após comentário** | Quem comentou recebe uma mensagem privada sozinho | [Responder comentários do Instagram](../hub-instagram-facebook-tiktok/facebook-e-instagram-via-hub/responder-comentarios-instagram.md) |
-| **Automação de comentários e Direct** | Responder todos os comentários com mensagem fixa ou IA | [Automação de Comentários e Direct](../../funcionalidades/automacao/automacao-de-comentarios-e-direct-do-instagram.md) |
-| **Agendar publicações** | Programar Feed, Stories e Reels | [Agendamento de Publicações no Instagram](../../funcionalidades/automacao/agendamento-de-publicacoes-no-instagram.md) |
+| **Responder comentários** | Responder o comentário direto na publicação | [Responder comentários do Instagram](../responder-comentarios-instagram.md) |
+| **Direct automático após comentário** | Quem comentou recebe uma mensagem privada sozinho | [Responder comentários do Instagram](../responder-comentarios-instagram.md) |
+| **Automação de comentários e Direct** | Responder todos os comentários com mensagem fixa ou IA | [Automação de Comentários e Direct](../../../funcionalidades/automacao/automacao-de-comentarios-e-direct-do-instagram.md) |
+| **Agendar publicações** | Programar Feed, Stories e Reels | [Agendamento de Publicações no Instagram](../../../funcionalidades/automacao/agendamento-de-publicacoes-no-instagram.md) |
 | **Coexistência (COEX)** | Manter o WhatsApp funcionando no celular |
 
 > 🔁 **Esses recursos não são exclusivos do MultiAPIWA.** Valem igual para o **Hub NotificaMe** e para a **conexão direta** com aplicativo aprovado na Meta. O **ConnectionHub** faz somente Direct.
@@ -115,11 +115,11 @@ O Hub **não é ativado pelo cliente**. Ele é liberado para o **dono do Whazing
 >
 > A **URL do backend precisa ser informada** ao suporte (é o endereço pelo qual o seu Whazing é acessado). **Se essa URL mudar** — troca de domínio, mudança de VPS, instalação de túnel/proxy — **você precisa informar novamente**, senão as conexões param de funcionar.
 >
-> Veja também: [Trocar Domínio](../../instalacao-and-vps/trocar-dominio-instalacao-whazing.md).
+> Veja também: [Trocar Domínio](../../../instalacao-and-vps/trocar-dominio-instalacao-whazing.md).
 
 O passo a passo completo, com as telas, está na página:
 
-👉 [**Ativar e vender o Hub MultiAPIWA (administrador)**](hub-multiapiwa-ativacao.md)
+👉 [**Ativar e vender o Hub MultiAPIWA (administrador)**](ativacao.md)
 
 ***
 
@@ -424,7 +424,7 @@ Em **Painel SaaS → Integrações → MultiAPIWA (Hub Meta)**, pelo botão **Ab
 
 #### Continuo usando o WhatsApp no celular?
 
-Sim, quando o canal estiver em **Coexistência (Coex)**. Veja [Configuração do WABA Incorporado (Coexistência)](configuracao-do-waba-incorporado-coexistencia.md).
+Sim, quando o canal estiver em **Coexistência (Coex)**. Veja [Configuração do WABA Incorporado (Coexistência)](../../api-oficial/configuracao-do-waba-incorporado-coexistencia.md).
 
 #### Posso cancelar um canal quando quiser?
 
@@ -432,17 +432,17 @@ Sim. Pelo painel do Hub ou pelo Whazing (**Cancelar conexão**). O período usad
 
 #### Posso vender esse canal para os meus clientes?
 
-Sim — é exatamente para isso que existem os **planos** e os **adicionais**. Veja a seção **Vender o canal como adicional** em [Ativar e vender o Hub MultiAPIWA](hub-multiapiwa-ativacao.md).
+Sim — é exatamente para isso que existem os **planos** e os **adicionais**. Veja a seção **Vender o canal como adicional** em [Ativar e vender o Hub MultiAPIWA](ativacao.md).
 
 ***
 
 ## 📚 Veja também
 
-* [**Ativar e vender o Hub MultiAPIWA (administrador)**](hub-multiapiwa-ativacao.md) — credenciais, ativação por canal e venda em planos/adicionais
-* [Canais Adicionais (venda aos seus clientes)](../../modulo-saas/criacao-de-planos-financeiro/adicionais-de-canais.md)
-* [Adicionais](../../modulo-saas/criacao-de-planos-financeiro/adicionais.md)
-* [API Oficial do WhatsApp (Meta)](api-oficial-do-whatsapp-meta.md)
-* [API Oficial do WhatsApp — FAQ Completo](api-oficial-do-whatsapp-faq-completo.md)
+* [**Ativar e vender o Hub MultiAPIWA (administrador)**](ativacao.md) — credenciais, ativação por canal e venda em planos/adicionais
+* [Canais Adicionais (venda aos seus clientes)](../../../modulo-saas/criacao-de-planos-financeiro/adicionais-de-canais.md)
+* [Adicionais](../../../modulo-saas/criacao-de-planos-financeiro/adicionais.md)
+* [API Oficial do WhatsApp (Meta)](../../api-oficial/api-oficial-do-whatsapp-meta.md)
+* [API Oficial do WhatsApp — FAQ Completo](../../api-oficial/api-oficial-do-whatsapp-faq-completo.md)
 
 ***
 

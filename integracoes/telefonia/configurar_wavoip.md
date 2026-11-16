@@ -15,7 +15,7 @@ icon: circle-phone
 >
 > **Quando não usar:** se você quer telefonia com ramais e PABX, veja [Discador SIP](discador-sip.md); se quer algo gratuito na sua VPS, veja [WaCalls](wacalls.md).
 
-> 🧭 **Comparativo das opções:** [Telefonia](README.md).
+> 🧭 **Comparativo das opções:** [Telefonia](./).
 
 ### 📌 Sobre a integração
 

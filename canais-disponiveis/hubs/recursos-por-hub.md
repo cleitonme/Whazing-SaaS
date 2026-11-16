@@ -29,7 +29,7 @@ Se você só quer o resumo: **Hub MultiAPIWA e Hub NotificaMe fazem tudo** (Dire
 
 > ⚠️ Os valores dos hubs são definidos pelos provedores e podem mudar. Confirme antes de contratar.
 >
-> 💡 Na **conexão direta**, "conforme permissões aprovadas" significa: o recurso só funciona se o seu aplicativo na Meta tiver aquela permissão **aprovada** no App Review. Veja [Permissões e aprovação na Meta](conexao-direta-meta/permissoes-e-aprovacao-meta.md).
+> 💡 Na **conexão direta**, "conforme permissões aprovadas" significa: o recurso só funciona se o seu aplicativo na Meta tiver aquela permissão **aprovada** no App Review. Veja [Permissões e aprovação na Meta](../conexao-direta-meta/permissoes-e-aprovacao-meta.md).
 
 ***
 
@@ -59,15 +59,15 @@ O recurso só aparece quando **três coisas** estão verdadeiras:
 ```
 
 * Falhou o **item 1**? Veja a tabela acima. Exemplo: canal pelo **ConnectionHub** nunca mostrará agendamento nem comentários.
-* Falhou o **item 2 ou 3**? Veja [Liberação de Canais para Empresas](../modulo-saas/liberacao-de-canais.md).
+* Falhou o **item 2 ou 3**? Veja [Liberação de Canais para Empresas](../../modulo-saas/liberacao-de-canais.md).
 
 ***
 
 ## 📚 Veja também
 
-* [Hubs (oficiais sem criar aplicativo)](hubs/README.md) — o que é um hub, custos e quando usar
-* [Usar o Instagram e o Facebook pelo hub](hubs/instagram-e-facebook.md) — guia dos recursos
-* [Responder comentários do Instagram](hub-instagram-facebook-tiktok/facebook-e-instagram-via-hub/responder-comentarios-instagram.md)
-* [Automação de Comentários e Direct do Instagram](../funcionalidades/automacao/automacao-de-comentarios-e-direct-do-instagram.md)
-* [Agendamento de Publicações no Instagram](../funcionalidades/automacao/agendamento-de-publicacoes-no-instagram.md)
-* [Canais Disponíveis](canais-disponiveis.md)
+* [Hubs (oficiais sem criar aplicativo)](./) — o que é um hub, custos e quando usar
+* [Usar o Instagram e o Facebook pelo hub](instagram-e-facebook.md) — guia dos recursos
+* [Responder comentários do Instagram](responder-comentarios-instagram.md)
+* [Automação de Comentários e Direct do Instagram](../../funcionalidades/automacao/automacao-de-comentarios-e-direct-do-instagram.md)
+* [Agendamento de Publicações no Instagram](../../funcionalidades/automacao/agendamento-de-publicacoes-no-instagram.md)
+* [Canais Disponíveis](../canais-disponiveis.md)
