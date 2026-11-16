@@ -5,6 +5,8 @@ icon: microphone-lines
 
 # Transcrição de Áudio
 
+> 🧭 **Esta página trata da configuração por canal** (tela Automação e Integrações → Transcrição de Áudio). Se você procura a configuração global do painel SaaS (TranscreveAPI / fallback), veja [Transcrição de Áudio (painel SaaS)](../../modulo-saas/transcricao-de-audio.md).
+
 ## O que é?
 
 A **Transcrição de Áudio** transforma automaticamente as mensagens de voz em **texto** usando Inteligência Artificial. Assim, os operadores conseguem ler rapidamente o conteúdo do áudio sem precisar ouvir, agilizando o atendimento.

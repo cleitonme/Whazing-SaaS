@@ -1,4 +1,4 @@
-# Whatsapp API OFICIAL VIA HUB
+# WhatsApp Oficial via Hub NotificaMe
 
 > 🔀 **Esta página trata do Hub NotificaMe.** Se você quer a conexão **dentro do próprio Whazing**, sem o cliente copiar token nem configurar webhook, e com suporte a **WhatsApp Oficial, Instagram e Facebook**, veja o [Hub MultiAPIWA (conexão integrada)](hub-multiapiwa.md).
 

@@ -4,6 +4,8 @@ icon: microphone
 
 # Transcrição de Áudio
 
+> 🧭 **Esta página trata da configuração no painel SaaS** (transcrição global, usada como alternativa quando o canal não transcreve). O passo a passo por canal, na tela **Automação e Integrações → Transcrição de Áudio**, está em [Transcrição de Áudio (por canal)](../integracoes/inteligencia-artificial/transcricao_audio.md).
+
 **Disponível a partir da versão 3.0.0**
 
 O recurso **Transcrição de Áudio** permite transformar mensagens de áudio em texto automaticamente.

@@ -2,7 +2,7 @@
 icon: key
 ---
 
-# Geração automática TOKEN
+# Geração Automática de Token
 
 Esta configuração está disponível no painel SaaS na aba canais
 
