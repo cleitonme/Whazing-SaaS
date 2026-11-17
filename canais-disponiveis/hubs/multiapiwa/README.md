@@ -1,4 +1,4 @@
-# Hub MultiAPIWA (conexão integrada)
+# Hub MultiAPIWA
 
 O **Hub MultiAPIWA** é o **hub oficial do Whazing** para conectar os canais oficiais da Meta ao sistema:
 
@@ -52,13 +52,13 @@ Em resumo: **com o Hub, o trabalho técnico fica com o Whazing — e não com o 
 
 Além de conversar no **Direct**, o Hub entrega os recursos das redes sociais:
 
-| Recurso | Para que serve | Passo a passo |
-| --- | --- | --- |
-| **Responder comentários** | Responder o comentário direto na publicação | [Responder comentários do Instagram](../responder-comentarios-instagram.md) |
-| **Direct automático após comentário** | Quem comentou recebe uma mensagem privada sozinho | [Responder comentários do Instagram](../responder-comentarios-instagram.md) |
+| Recurso                               | Para que serve                                         | Passo a passo                                                                                                             |
+| ------------------------------------- | ------------------------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| **Responder comentários**             | Responder o comentário direto na publicação            | [Responder comentários do Instagram](../responder-comentarios-instagram.md)                                               |
+| **Direct automático após comentário** | Quem comentou recebe uma mensagem privada sozinho      | [Responder comentários do Instagram](../responder-comentarios-instagram.md)                                               |
 | **Automação de comentários e Direct** | Responder todos os comentários com mensagem fixa ou IA | [Automação de Comentários e Direct](../../../funcionalidades/automacao/automacao-de-comentarios-e-direct-do-instagram.md) |
-| **Agendar publicações** | Programar Feed, Stories e Reels | [Agendamento de Publicações no Instagram](../../../funcionalidades/automacao/agendamento-de-publicacoes-no-instagram.md) |
-| **Coexistência (COEX)** | Manter o WhatsApp funcionando no celular |
+| **Agendar publicações**               | Programar Feed, Stories e Reels                        | [Agendamento de Publicações no Instagram](../../../funcionalidades/automacao/agendamento-de-publicacoes-no-instagram.md)  |
+| **Coexistência (COEX)**               | Manter o WhatsApp funcionando no celular               |                                                                                                                           |
 
 > 🔁 **Esses recursos não são exclusivos do MultiAPIWA.** Valem igual para o **Hub NotificaMe** e para a **conexão direta** com aplicativo aprovado na Meta. O **ConnectionHub** faz somente Direct.
 >
@@ -88,8 +88,6 @@ Na prática, o cliente apenas:
 2. clica no botão de conexão;
 3. faz login na Meta e autoriza;
 4. volta para o Whazing com o canal pronto.
-
-<figure><img src="../../.gitbook/assets/conectarinstagram.png" alt=""><figcaption></figcaption></figure>
 
 > 💡 **Dica:** se a janela da Meta não abrir, o navegador pode estar bloqueando pop-ups. Libere os pop-ups para o site do Whazing e clique novamente. No **Firefox**, a própria tela mostra o passo a passo (ícone de escudo 🛡️ na barra de endereço → desativar a proteção para o site).
 
@@ -138,8 +136,6 @@ Regras simples:
 * ✅ As **credenciais são compartilhadas** pelos três canais. Se você já preencheu ao ativar o primeiro canal, **não precisa preencher de novo** nos outros — os campos já estarão lá.
 * ✅ Você pode ativar **só um** canal e deixar os outros desligados.
 * ⚠️ Com o Hub ligado em um canal, os **Aplicativos próprios** cadastrados naquela tela ficam **inativos** para esse canal (o próprio sistema avisa). Desligar o Hub devolve o canal para a conexão tradicional.
-
-<figure><img src="../../.gitbook/assets/dadoshub.png" alt=""><figcaption></figcaption></figure>
 
 ***
 
@@ -221,8 +217,6 @@ Nessa página você encontra:
 * o botão **Abrir link de pagamento** (página do InfinityPay, com Pix e cartão);
 * os botões **Atualizar** e **Verificar pagamento**;
 * a tabela **"Canais conectados pelo Hub"**.
-
-<figure><img src="../../.gitbook/assets/canaisconectadormulto.png" alt=""><figcaption></figcaption></figure>
 
 > ℹ️ O cartão **"MultiAPIWA (Hub Meta)"** só aparece no menu quando o Hub está ligado em **pelo menos um** canal.
 

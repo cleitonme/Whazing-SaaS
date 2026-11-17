@@ -1,13 +1,13 @@
 ---
-icon: code-branch
 description: >-
   Como conectar Instagram e Facebook pelo ConnectionHub e o que esse provedor
   faz (somente Direct).
+icon: code-branch
 ---
 
-# Instagram e Facebook via ConnectionHub
+# Hub ConnectionHub (somente Direct)
 
-> **Em palavras simples:** o ConnectionHub é um provedor que conecta seu Instagram e sua Página do Facebook ao Whazing. Ele faz **somente o Direct** (conversas). Quem precisa **responder comentários** ou **agendar publicações** deve usar o [Hub MultiAPIWA](../multiapiwa/README.md) ou o [Hub NotificaMe](../notificame/README.md).
+> **Em palavras simples:** o ConnectionHub é um provedor que conecta seu Instagram e sua Página do Facebook ao Whazing. Ele faz **somente o Direct** (conversas). Quem precisa **responder comentários** ou **agendar publicações** deve usar o [Hub MultiAPIWA](../multiapiwa/) ou o [Hub NotificaMe](../notificame/).
 
 > 💰 **Custo:** R$ 59,90 por canal/mês, cobrado pelo provedor (sem taxa de ativação). O Whazing não cobra nada por essa conexão. Confirme o valor no site antes de contratar.
 
@@ -15,15 +15,15 @@ description: >-
 
 ## ⚠️ O ConnectionHub só faz Direct
 
-| Recurso | ConnectionHub |
-| --- | --- |
-| Receber e responder mensagens (Direct) | ✅ |
-| Responder comentários das publicações | ❌ |
-| Direct automático após comentário | ❌ |
-| Agendar Feed, Stories e Reels | ❌ |
-| Iniciar conversa (falar primeiro) | ❌ |
+| Recurso                                | ConnectionHub |
+| -------------------------------------- | ------------- |
+| Receber e responder mensagens (Direct) | ✅             |
+| Responder comentários das publicações  | ❌             |
+| Direct automático após comentário      | ❌             |
+| Agendar Feed, Stories e Reels          | ❌             |
+| Iniciar conversa (falar primeiro)      | ❌             |
 
-```text
+```
 Cliente precisa mandar a primeira mensagem
         ↓
 Você tem 24 horas para responder
@@ -61,15 +61,11 @@ Acesse [https://www.connectionhub.com.br/](https://www.connectionhub.com.br/) e 
 2. Cole o token no campo do **Connection Hub**.
 3. Salve.
 
-<figure><img src="../../.gitbook/assets/image (32).png" alt=""><figcaption></figcaption></figure>
-
 ### 5. Adicione o canal
 
 1. Vá em **Canais → adicionar canal**.
 2. Escolha **Connection Hub**.
 3. Selecione o canal que você cadastrou no provedor.
-
-<figure><img src="../../.gitbook/assets/image (26).png" alt=""><figcaption></figcaption></figure>
 
 > ✅ Deu certo quando a conversa de teste aparece na tela de Atendimento.
 
@@ -93,13 +89,13 @@ A janela de conversa fechou. Só é possível responder depois que o cliente man
 
 ### Não encontro a opção de comentários ou de agendamento
 
-É uma limitação do provedor: o ConnectionHub é **somente Direct**. Para esses recursos, use o [Hub MultiAPIWA](../multiapiwa/README.md).
+É uma limitação do provedor: o ConnectionHub é **somente Direct**. Para esses recursos, use o [Hub MultiAPIWA](../multiapiwa/).
 
 ***
 
 ## 📚 Veja também
 
 * [O que cada hub faz (comparativo)](../recursos-por-hub.md)
-* [Hub MultiAPIWA (conexão integrada)](../multiapiwa/README.md)
-* [Instagram, Facebook e TikTok via NotificaMe](../notificame/README.md)
+* [Hub MultiAPIWA (conexão integrada)](../multiapiwa/)
+* [Instagram, Facebook e TikTok via NotificaMe](../notificame/)
 * [Canais Disponíveis](../../canais-disponiveis.md)

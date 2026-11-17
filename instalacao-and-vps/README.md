@@ -8,8 +8,8 @@
 [atualizar-whazing](atualizar-whazing/)
 {% endcontent-ref %}
 
-{% content-ref url="conectar-banco-de-dados.md" %}
-[conectar-banco-de-dados.md](conectar-banco-de-dados.md)
+{% content-ref url="instalacao-and-vps/conectar-banco-de-dados/" %}
+[conectar-banco-de-dados](instalacao-and-vps/conectar-banco-de-dados/)
 {% endcontent-ref %}
 
 {% content-ref url="backup.md" %}
@@ -55,4 +55,3 @@
 {% content-ref url="proxytodascontas_whatsapp.md" %}
 [proxytodascontas\_whatsapp.md](proxytodascontas_whatsapp.md)
 {% endcontent-ref %}
-

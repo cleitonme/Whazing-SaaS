@@ -1,6 +1,6 @@
-# WhatsApp Oficial via Hub NotificaMe
+# WhatsApp Oficial via NotificaMe
 
-> 🔀 **Esta página trata do Hub NotificaMe.** Se você quer a conexão **dentro do próprio Whazing**, sem o cliente copiar token nem configurar webhook, e com suporte a **WhatsApp Oficial, Instagram e Facebook**, veja o [Hub MultiAPIWA (conexão integrada)](../multiapiwa/README.md).
+> 🔀 **Esta página trata do Hub NotificaMe.** Se você quer a conexão **dentro do próprio Whazing**, sem o cliente copiar token nem configurar webhook, e com suporte a **WhatsApp Oficial, Instagram e Facebook**, veja o [Hub MultiAPIWA (conexão integrada)](../multiapiwa/).
 
 A API oficial está disponível tanto na **versão gratuita** quanto para **clientes Premium**.
 
@@ -18,8 +18,6 @@ Cadastrar através da URL [https://hub.whazing.com.br/](https://hub.whazing.com.
 Usar cupom desconto: whazing
 
 Para conectar verifique documentação oficial do HUB
-
-<figure><img src="../../.gitbook/assets/image (12) (1).png" alt=""><figcaption></figcaption></figure>
 
 \*\*\*
 

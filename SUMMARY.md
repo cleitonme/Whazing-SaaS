@@ -1,8 +1,10 @@
 # Table of contents
 
+* [README](README.md)
+
 ## Começando
 
-* [Introdução](./)
+* [Introdução](comecando/introducao.md)
 * [Demonstração](demonstracao.md)
   * [Whitelabel](whitelabel.md)
   * [Principais Recursos do Sistema](principais-recursos-do-sistema.md)
@@ -27,7 +29,8 @@
     * [📸 Criar Snapshot da VPS (Hetzner)](instalacao-and-vps/atualizar-whazing/criar-snapshot-da-vps-hetzner.md)
     * [📸 Criar Snapshot da VPS (Hostinger)](instalacao-and-vps/atualizar-whazing/criar-snapshot-da-vps-hostinger.md)
     * [📸 Criar Snapshot da VPS (Hostear)](instalacao-and-vps/atualizar-whazing/criar-snapshot-da-vps-hostear.md)
-  * [Banco de Dados](instalacao-and-vps/conectar-banco-de-dados.md)
+  * [Banco de Dados](instalacao-and-vps/instalacao-and-vps/conectar-banco-de-dados/README.md)
+    * [Atualizar PostgreSQL 17.2 para 17.12 no Docker](instalacao-and-vps/instalacao-and-vps/conectar-banco-de-dados/atualizar-postgresql-17.2-para-17.12-no-docker.md)
   * [Backup](instalacao-and-vps/backup.md)
   * [Migração de VPS](instalacao-and-vps/migracao-do-sistema-whazing-para-nova-vps.md)
   * [Trocar Domínio](instalacao-and-vps/trocar-dominio-instalacao-whazing.md)

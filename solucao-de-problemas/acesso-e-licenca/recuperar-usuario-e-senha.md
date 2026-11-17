@@ -1,18 +1,19 @@
 ---
-icon: key-round
-description: Esqueci meu e-mail de acesso e/ou minha senha — todas as formas de recuperar o acesso ao sistema
+description: >-
+  Esqueci meu e-mail de acesso e/ou minha senha — todas as formas de recuperar o
+  acesso ao sistema
 ---
 
 # 🔑 Esqueci meu usuário e/ou senha
 
 Perdeu o acesso ao sistema? Existem **três formas de recuperar**, dependendo de quem é você e do que tem em mãos:
 
-| Sua situação | Melhor solução |
-| --- | --- |
-| Sei meu e-mail e o sistema envia e-mails (o login tem o link "Esqueci a senha") | **1. Recuperar pelo e-mail** |
-| Sei meu e-mail, sou o administrador/dono do servidor e não consigo receber o e-mail | **2. Senha Universal** |
-| Sou o dono do servidor e tenho acesso ao servidor | **3. Redefinir pelo Banco de Dados** |
-| Não sei qual é o meu usuário (e-mail) | Veja a seção **Não sei meu usuário** abaixo |
+| Sua situação                                                                        | Melhor solução                              |
+| ----------------------------------------------------------------------------------- | ------------------------------------------- |
+| Sei meu e-mail e o sistema envia e-mails (o login tem o link "Esqueci a senha")     | **1. Recuperar pelo e-mail**                |
+| Sei meu e-mail, sou o administrador/dono do servidor e não consigo receber o e-mail | **2. Senha Universal**                      |
+| Sou o dono do servidor e tenho acesso ao servidor                                   | **3. Redefinir pelo Banco de Dados**        |
+| Não sei qual é o meu usuário (e-mail)                                               | Veja a seção **Não sei meu usuário** abaixo |
 
 > 💡 O **usuário** do sistema é sempre o **e-mail** cadastrado. Se você não lembra a senha, mas sabe o e-mail, basta seguir uma das soluções abaixo.
 
@@ -51,12 +52,12 @@ A senha precisa seguir estas regras (o sistema mostra as mesmas ao cadastrar um 
 
 ### Mensagens que podem aparecer
 
-| Mensagem | O que significa |
-| --- | --- |
-| "Email enviado com sucesso!" | O código foi enviado para o seu e-mail. Siga com os passos 5 a 8. |
-| "Email não encontrado" | Esse e-mail não está cadastrado no sistema. Confira se digitou certo, ou veja a seção **Não sei meu usuário**. |
-| "As senhas não correspondem" | Os campos **Nova Senha** e **Confirmar Nova Senha** estão diferentes. Digite a mesma senha nos dois. |
-| "Erro ao redefinir senha" | O código está errado/expirado ou houve falha na conexão. Solicite um novo código repetindo o passo 3 e tente de novo. |
+| Mensagem                     | O que significa                                                                                                       |
+| ---------------------------- | --------------------------------------------------------------------------------------------------------------------- |
+| "Email enviado com sucesso!" | O código foi enviado para o seu e-mail. Siga com os passos 5 a 8.                                                     |
+| "Email não encontrado"       | Esse e-mail não está cadastrado no sistema. Confira se digitou certo, ou veja a seção **Não sei meu usuário**.        |
+| "As senhas não correspondem" | Os campos **Nova Senha** e **Confirmar Nova Senha** estão diferentes. Digite a mesma senha nos dois.                  |
+| "Erro ao redefinir senha"    | O código está errado/expirado ou houve falha na conexão. Solicite um novo código repetindo o passo 3 e tente de novo. |
 
 > 💡 Se o **código de verificação não chegar**, verifique a pasta de spam/lixo eletrônico do seu e-mail. Se ainda assim não chegar, é sinal de que o envio de e-mails do servidor não está funcionando — fale com o administrador (ele pode usar a **Senha Universal** para liberar seu acesso).
 
@@ -99,7 +100,7 @@ A senha precisa seguir estas regras (o sistema mostra as mesmas ao cadastrar um 
 3. Executar o comando que define uma **senha nova** para esse e-mail;
 4. Entrar no sistema normalmente com o e-mail + senha nova.
 
-📄 **Guia técnico completo, com os comandos prontos:** [Banco de Dados → Recuperação de Senha de Usuário](../../instalacao-and-vps/conectar-banco-de-dados.md)
+📄 **Guia técnico completo, com os comandos prontos:** [Banco de Dados → Recuperação de Senha de Usuário](../../instalacao-and-vps/instalacao-and-vps/conectar-banco-de-dados/)
 
 ***
 
@@ -117,23 +118,17 @@ O login do sistema é sempre o **e-mail cadastrado**. Para descobrir qual é:
 
 ## Problemas comuns
 
-**O link "Esqueci a senha" não aparece na tela de login.**
-Ele só existe quando o **envio de e-mails (SMTP) está habilitado** na instalação. Sem isso, o sistema não consegue enviar o código de verificação. Nesse caso, use a **Senha Universal** (administrador) ou solicite ao administrador que defina uma senha nova no seu cadastro.
+**O link "Esqueci a senha" não aparece na tela de login.** Ele só existe quando o **envio de e-mails (SMTP) está habilitado** na instalação. Sem isso, o sistema não consegue enviar o código de verificação. Nesse caso, use a **Senha Universal** (administrador) ou solicite ao administrador que defina uma senha nova no seu cadastro.
 
-**Digitou um e-mail e apareceu "Email não encontrado".**
-O e-mail não existe no sistema. Verifique erros de digitação (espaços, `.com` vs `.com.br`). Se você realmente não sabe qual e-mail usa, veja a seção **Não sei meu usuário**.
+**Digitou um e-mail e apareceu "Email não encontrado".** O e-mail não existe no sistema. Verifique erros de digitação (espaços, `.com` vs `.com.br`). Se você realmente não sabe qual e-mail usa, veja a seção **Não sei meu usuário**.
 
-**O código de verificação não chega.**
-Confira o **spam/lixo eletrônico**. Se não chegar, o envio de e-mails do servidor pode estar com problema — o administrador deve verificar o SMTP. Enquanto isso, ele pode liberar seu acesso com a **Senha Universal**.
+**O código de verificação não chega.** Confira o **spam/lixo eletrônico**. Se não chegar, o envio de e-mails do servidor pode estar com problema — o administrador deve verificar o SMTP. Enquanto isso, ele pode liberar seu acesso com a **Senha Universal**.
 
-**"Erro ao redefinir senha" ao tentar salvar.**
-O código de verificação pode ter sido digitado errado ou ter expirado. Clique em **"Enviar Email"** novamente para gerar um código novo e refazer os campos.
+**"Erro ao redefinir senha" ao tentar salvar.** O código de verificação pode ter sido digitado errado ou ter expirado. Clique em **"Enviar Email"** novamente para gerar um código novo e refazer os campos.
 
-**A senha nova foi recusada.**
-Ela precisa ter **6 ou mais caracteres, uma letra maiúscula, uma letra minúscula e um número**. Exemplo válido: `Vendas2026`.
+**A senha nova foi recusada.** Ela precisa ter **6 ou mais caracteres, uma letra maiúscula, uma letra minúscula e um número**. Exemplo válido: `Vendas2026`.
 
-**Sou atendente e não tenho acesso a nada disso.**
-A recuperação técnica é responsabilidade do **administrador**. Solicite a ele: usar a senha universal ou simplesmente **editar seu usuário em Usuários e digitar uma senha nova** — leva menos de um minuto e você já volta a acessar.
+**Sou atendente e não tenho acesso a nada disso.** A recuperação técnica é responsabilidade do **administrador**. Solicite a ele: usar a senha universal ou simplesmente **editar seu usuário em Usuários e digitar uma senha nova** — leva menos de um minuto e você já volta a acessar.
 
 ***
 
@@ -141,4 +136,4 @@ A recuperação técnica é responsabilidade do **administrador**. Solicite a el
 
 1. Faça login com o **e-mail + senha nova**;
 2. Se o campo **"Login automático"** estiver marcado, o navegador guardará suas credenciais — evite usá-lo em computadores compartilhados;
-3. Perdeu o acesso novamente no futuro? Esta página é o caminho: **[Acesso e Licença](./)**.
+3. Perdeu o acesso novamente no futuro? Esta página é o caminho: [**Acesso e Licença**](./).

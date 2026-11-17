@@ -1,4 +1,4 @@
-# Ativar e vender o Hub MultiAPIWA
+# Ativar e vender (administrador)
 
 Esta página é para o **dono do Whazing (administrador do SaaS)**. Ela mostra como **liberar o Hub**, **ativar por canal** e **vender os canais** para os seus clientes.
 
@@ -126,8 +126,6 @@ O canal precisa estar **no plano daquele cliente**:
 
 > 💡 **Quantidade `0` é válida e é muito usada.** Significa: _"este plano não inclui nenhum canal deste tipo; o cliente compra por adicional"_. É o modelo recomendado para vender Instagram, Facebook ou WABA separadamente.
 
-<figure><img src="../../.gitbook/assets/limite0intagram.png" alt=""><figcaption></figcaption></figure>
-
 ***
 
 ## 🔎 Passo 6 — Conferir se está tudo funcionando
@@ -207,8 +205,6 @@ Resultado: o cliente **vê** o Instagram na lista, mas **não tem nenhum incluí
 
 > 💡 Os tipos disponíveis para canal são: **Canais** (geral), **WhatsApp Plus**, **WhatsApp Oficial (WABA)**, **Instagram** e **Facebook**. Você pode repetir essa estrutura para cada tipo que quiser vender.
 
-<figure><img src="../../.gitbook/assets/adicionainstagram.png" alt=""><figcaption></figcaption></figure>
-
 > ℹ️ O adicional de tipo **só tem efeito** em planos que tenham **aquele tipo habilitado** _e_ **"Ativar limite de canais por tipo"** ligado — mesmo que a quantidade inclusa seja `0`. Se faltar um dos dois, o próprio sistema avisa na criação do adicional.
 
 ### 🧮 Exemplo A — Cliente sem nenhum canal
@@ -285,8 +281,6 @@ R$ 59,90  +  R$ 99,90  =  R$ 159,80/mês
 * Ou em **Financeiro → Canais adicionais**, quando você habilitou os adicionais no plano.
 
 O passo a passo das telas do cliente está em [Canais Adicionais (venda aos seus clientes)](../../../modulo-saas/criacao-de-planos-financeiro/adicionais-de-canais.md).
-
-<figure><img src="../../.gitbook/assets/compracanal (1).png" alt=""><figcaption></figcaption></figure>
 
 ***
 
