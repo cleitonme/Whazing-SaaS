@@ -1,4 +1,8 @@
-## Changelog e Atualizações
+# Changelog e Atualizações
+
+# 🚀 Versão 3.1.12 FINAL
+
+- Update de segurança do node
 
 # 🚀 Versão 3.1.11 FINAL
 
