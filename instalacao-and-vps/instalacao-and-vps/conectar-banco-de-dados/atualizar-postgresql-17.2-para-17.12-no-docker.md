@@ -209,6 +209,8 @@ docker logs --tail 100 postgresql
 
 Se não tiver familiaridade com comandos SQL ou administração do PostgreSQL, solicite auxílio técnico antes de realizar o procedimento.
 
+Talvez tenha reiniciar vps ou whazing avalie tudo após atualizar
+
 ### Responsabilidade e suporte técnico
 
 A atualização pode ser feita pelo cliente seguindo este procedimento. Caso prefira que a equipe realize o serviço, a execução é feita mediante contratação de **hora técnica**.
