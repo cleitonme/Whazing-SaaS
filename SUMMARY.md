@@ -93,6 +93,7 @@
 * [WhatsApp não oficial (QR Code)](canais-disponiveis/whatsapp-api-nao-oficial/README.md)
   * [WhatsApp Wuzapi (WhatsMeow)](canais-disponiveis/whatsapp-api-nao-oficial/whatsapp-wuzapi/README.md)
     * [WuzAPI não conecta ou não lê o QR Code](canais-disponiveis/whatsapp-api-nao-oficial/whatsapp-wuzapi/wuzapi-nao-conecta-ou-nao-ler-qrcode.md)
+    * [Atualizar o PostgreSQL do WuzAPI para a versão 17.12](canais-disponiveis/whatsapp-api-nao-oficial/whatsapp-wuzapi/atualizar-o-postgresql-do-wuzapi-para-a-versao-17.12.md)
   * [WhatsApp API PLUS](canais-disponiveis/whatsapp-api-nao-oficial/whatsapp_api_plus/README.md)
     * [Gerenciamento de Tokens Plus](canais-disponiveis/whatsapp-api-nao-oficial/whatsapp_api_plus/gerenciamento-de-tokens-plus.md)
     * [Geração Automática de Token](canais-disponiveis/whatsapp-api-nao-oficial/whatsapp_api_plus/geracao-automatica-token.md)
