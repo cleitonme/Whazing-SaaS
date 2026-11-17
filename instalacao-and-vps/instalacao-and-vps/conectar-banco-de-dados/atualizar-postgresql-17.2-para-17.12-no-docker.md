@@ -103,6 +103,112 @@ docker logs postgresql
 
 Mantenha o arquivo de backup até confirmar que a aplicação está funcionando e que os dados estão corretos. Se precisar restaurar o banco usando o backup, solicite apoio técnico.
 
+#### Aviso: Collation Version Mismatch após a atualização
+
+Após atualizar o PostgreSQL de 17.2 para 17.12 no Docker, pode aparecer um aviso semelhante a este nos registros:
+
+```
+WARNING: database "postgres" has a collation version mismatch
+
+DETAIL: The database was created using collation version 2.36,
+but the operating system provides version 2.41.
+```
+
+**Por que isso acontece?**
+
+A nova imagem do PostgreSQL pode utilizar uma versão mais recente das bibliotecas do sistema operacional, como a `glibc`.
+
+O PostgreSQL registra a versão da biblioteca de ordenação de textos (collation) utilizada quando o banco foi criado. Quando essa versão muda, ele identifica a divergência e emite o aviso.
+
+Isso não significa necessariamente que houve perda de dados ou falha na atualização do PostgreSQL.
+
+#### Como corrigir
+
+**Importante:** antes de executar os procedimentos, faça um backup do banco de dados. Recomenda-se realizar essa manutenção em horário de baixo movimento, pois a reconstrução dos índices pode bloquear operações no banco.
+
+**1. Identificar os bancos afetados**
+
+Execute:
+
+```
+docker exec -it postgresql psql -U whazing -d postgres
+```
+
+Dentro do PostgreSQL, execute:
+
+```
+SELECT
+    datname,
+    datcollversion AS versao_anterior,
+    pg_database_collation_actual_version(oid) AS versao_atual
+FROM pg_database
+WHERE datallowconn = true
+AND datcollversion IS DISTINCT FROM
+    pg_database_collation_actual_version(oid);
+```
+
+A consulta apresenta os bancos que possuem divergência na versão da collation.
+
+**2. Reconstruir os índices**
+
+Para cada banco identificado na consulta, é necessário reconstruir os índices antes de atualizar a versão registrada.
+
+No caso do aviso apresentado no banco `postgres`, execute:
+
+```
+REINDEX DATABASE postgres;
+```
+
+Aguarde a conclusão do procedimento.
+
+**3. Atualizar a versão da collation**
+
+Depois que a reconstrução dos índices terminar, execute:
+
+```
+ALTER DATABASE postgres REFRESH COLLATION VERSION;
+```
+
+Esse comando atualiza a versão registrada no PostgreSQL para corresponder à versão atualmente disponibilizada pelo sistema operacional.
+
+**Atenção:** o comando `REFRESH COLLATION VERSION` sozinho não reconstrói índices. Por isso, não deve ser executado antes do `REINDEX DATABASE`.
+
+**4. Repetir nos demais bancos, se necessário**
+
+Se a consulta inicial identificar outros bancos afetados, repita o procedimento para cada um deles.
+
+Exemplo para um banco chamado `whazing`:
+
+```
+REINDEX DATABASE whazing;
+
+ALTER DATABASE whazing REFRESH COLLATION VERSION;
+```
+
+Substitua o nome pelo banco identificado na consulta.
+
+**5. Conferir se a divergência foi resolvida**
+
+Execute novamente a consulta do primeiro passo.
+
+Se nenhum banco for retornado, não existem divergências de versão da collation detectadas nessa consulta.
+
+Também é possível consultar os registros do container:
+
+```
+docker logs --tail 100 postgresql
+```
+
+#### Observações importantes
+
+* Esse procedimento não exige apagar ou recriar o container.
+* Não apague nem altere a pasta `/data`, onde ficam armazenados os dados do PostgreSQL.
+* A reconstrução dos índices não apaga os registros das tabelas, mas pode exigir bloqueios e espaço adicional em disco.
+* Não execute o procedimento indiscriminadamente em bancos que não apresentam divergência.
+* Mantenha o backup até confirmar que o sistema está funcionando normalmente.
+
+Se não tiver familiaridade com comandos SQL ou administração do PostgreSQL, solicite auxílio técnico antes de realizar o procedimento.
+
 ### Responsabilidade e suporte técnico
 
 A atualização pode ser feita pelo cliente seguindo este procedimento. Caso prefira que a equipe realize o serviço, a execução é feita mediante contratação de **hora técnica**.
