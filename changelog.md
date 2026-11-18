@@ -1,5 +1,11 @@
 # Changelog e Atualizações
 
+# 🚀 Versão 3.1.13 FINAL
+
+### Wuzapi
+
+- Correção de um bug nas integrações e nos bots que impedia o reconhecimento de respostas do tipo lista. Outros tipos de resposta também podem ter sido afetados e foram contemplados pela correção.
+
 # 🚀 Versão 3.1.12 FINAL
 
 - Update de segurança do node
