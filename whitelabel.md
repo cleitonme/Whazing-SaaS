@@ -4,7 +4,6 @@
 *   É possível:
 
     * Trocar ícones, imagens e nome no painel
-    * **Retirar referências ao nome Whazing** no sistema
 
     💼 Tenha seu próprio sistema de atendimento com a sua marca!
 
@@ -20,38 +19,40 @@
 
 Maioria das imagens no formato PNG que deve ser usadas ao selecionar arquivo sistema indica qual formato e tamanho recomendado. Se for enviado formato diferente o arquivo não é alterado. E teste janela anônima ou limpe cache.
 
-Você pode adicionar uma seção logo abaixo do bloco atual de **WhiteLabel**. Ela deixa claro que existe uma modalidade para revendedores que desejam ocultar completamente a marca Whazing.
+**Onde configurar**
+
+As configurações de personalização da identidade visual estão disponíveis em:
+
+**Painel SaaS → Sistema → White Label**
+
+**Para quem é indicado?**
+
+* Empresas de tecnologia e TI.
+* Agências que oferecem soluções digitais.
+* Revendedores de sistemas SaaS.
+* Provedores de Internet.
+* Empresas que desejam comercializar uma plataforma de atendimento com sua própria marca.
+
+#### 💼 White Label Avançado – Sua plataforma com sua marca
+
+Para empresas que desejam comercializar o Whazing como sua própria plataforma de atendimento, oferecemos recursos avançados de White Label.
+
+Com essa modalidade, você pode apresentar o sistema aos seus clientes utilizando sua própria identidade visual, sem referências à marca Whazing.
+
+**O que pode ser personalizado**
+
+* ✅ Remoção das referências à marca Whazing no painel SaaS.
+* ✅ Ocultação das informações de contato e identificação do Whazing.
+
+**Requisitos para liberação**
+
+Para utilizar os recursos avançados de White Label, é necessário:
+
+* Possuir, no mínimo, **2 licenças Premium adquiridas**.
+
+**Importante:** Os recursos avançados de White Label não são habilitados automaticamente. Após adquirir a quantidade mínima de licenças Premium, entre em contato com nossa equipe para solicitar a liberação.
 
 ***
-
-### 💼 Revenda WhiteLabel
-
-Além da personalização visual, oferecemos uma modalidade exclusiva para quem deseja comercializar o sistema como uma plataforma própria.
-
-#### O que pode ser liberado
-
-* ✅ Remoção das referências ao Whazing no painel SaaS.
-* ✅ Ocultação dos dados de contato do Whazing.
-* ✅ Menu de suporte direcionado para sua empresa.
-* ✅ Clientes finais visualizam apenas sua marca.
-* ✅ Experiência totalmente WhiteLabel.
-
-> Esta liberação é destinada exclusivamente para parceiros que revendem o sistema como SaaS.
-
-#### Como solicitar
-
-Caso deseje utilizar o Whazing como sua própria plataforma de atendimento, entre em contato com nossa equipe para solicitar a liberação dos recursos avançados de WhiteLabel. Após a análise, as funcionalidades poderão ser habilitadas em sua licença Premium.
-
-#### Indicado para
-
-* Empresas de TI
-* Agências
-* Revendedores SaaS
-* Consultorias
-* Provedores de Internet
-* Desenvolvedores que desejam oferecer a plataforma com sua própria identidade
-
-> **Importante:** A ocultação completa das informações do Whazing no painel SaaS não é habilitada automaticamente. É necessário solicitar a liberação junto ao suporte após adquirir a licença Premium.
 
 📣 Quer receber novidades e comunicados oficiais do Whazing?
 
