@@ -6,6 +6,14 @@ Esta página é para o **dono do Whazing (administrador do SaaS)**. Ela mostra c
 
 ***
 
+> 🔑 **Para usar o Hub você precisa de 3 informações:** **URL da API**, **Token da Integração** e **Segredo HMAC**.
+>
+> Elas **não são geradas por você** e **não aparecem no Whazing**: são entregues pelo **atendimento humano** do suporte Whazing.
+>
+> Sem as três, o Hub não conecta nenhum canal.
+
+***
+
 ## ✅ Antes de começar
 
 Você vai precisar de:
@@ -19,17 +27,48 @@ Você vai precisar de:
 
 ***
 
-## 🔑 Passo 1 — Solicitar o acesso e receber os três dados
+## 🔑 Passo 1 — Pedir a liberação no atendimento humano e receber as 3 informações
 
-Fale com o **suporte Whazing** e peça a liberação do **Hub MultiAPIWA**. Você vai receber **três dados**:
+O Hub **não tem cadastro automático**: a instalação é criada pela equipe do Whazing. Por isso o pedido é feito no **atendimento humano** — o assistente virtual inicial **não** entrega essas credenciais.
 
-| Dado                                  | Onde aparece no Whazing                     | O que é                                                           |
-| ------------------------------------- | ------------------------------------------- | ----------------------------------------------------------------- |
-| **URL do backend**                    | campo **URL da API do MultiAPIWA**          | Endereço do servidor que faz a ponte entre o seu Whazing e a Meta |
-| **Token de integração da instalação** | campo **Token de integração da instalação** | Identifica o seu Whazing perante o Hub                            |
-| **Segredo HMAC da instalação**        | campo **Segredo HMAC da instalação**        | Assinatura de segurança das mensagens trocadas                    |
+1. Chame o suporte em um dos números abaixo (o atendimento começa com um assistente virtual).
+2. Escreva **Atendimento Humano** para ser transferido para a equipe que cria a instalação.
+3. Informe que quer liberar o **Hub MultiAPIWA** e passe a **URL do backend** (o endereço pelo qual o seu Whazing é acessado).
+4. A equipe cria a instalação e devolve as **3 informações**.
+
+> 📱 **WhatsApp do suporte Whazing:**
+>
+> **+55 48 3197-0877**
+>
+> **+55 48 3197-0599**
+
+**Mensagem pronta para copiar e enviar:**
+
+```text
+Atendimento Humano
+
+Olá! Quero liberar o Hub MultiAPIWA no meu Whazing.
+
+URL do backend (endereço do meu Whazing): https://painel.seudominio.com.br
+Nome da instalação / empresa: Minha Empresa
+E-mail para contato: meuemail@dominio.com.br
+
+Canais que pretendo usar: WhatsApp Oficial ( ) Instagram ( ) Facebook ( )
+```
+
+### 📦 As 3 informações que você vai receber
+
+| Informação              | Nome na tela do Whazing                     | Para que serve                                                    |
+| ----------------------- | ------------------------------------------- | ----------------------------------------------------------------- |
+| **URL da API**          | campo **URL da API do MultiAPIWA**          | Endereço do servidor que faz a ponte entre o seu Whazing e a Meta |
+| **Token da Integração** | campo **Token de integração da instalação** | Identifica o seu Whazing perante o Hub                            |
+| **Segredo Hmac**        | campo **Segredo HMAC da instalação**        | Assinatura de segurança das mensagens trocadas                    |
+
+> ⚠️ **Sem as três o Hub não conecta nenhum canal.** Se faltar uma delas, o canal fica com erro de comunicação.
 
 > 🔒 **Trate esses dados como senha.** Não publique, não envie em grupo e não coloque em prints. Quem tiver os três consegue agir como a sua instalação.
+>
+> 🛡️ **O suporte não pede esses dados de volta** por WhatsApp: eles apenas são **entregues** na liberação. Se alguém pedir o token ou o segredo por mensagem, **não envie**.
 
 ### ⚠️ A URL do backend é obrigatória — e precisa ser atualizada
 
@@ -286,7 +325,8 @@ O passo a passo das telas do cliente está em [Canais Adicionais (venda aos seus
 
 ## ✅ Checklist do administrador
 
-* [ ] Pedi o acesso ao suporte e recebi os **três dados** (URL do backend, token de integração, segredo HMAC)
+* [ ] Pedi a liberação no **atendimento humano** (WhatsApp **+55 48 3197-0877** / **+55 48 3197-0599**) informando a **URL do backend**
+* [ ] Recebi e guardei as **3 informações**: **URL da API**, **Token da Integração** e **Segredo Hmac**
 * [ ] Preenchi os três campos em **Integrações → WhatsApp Oficial (WABA)** e salvei
 * [ ] Liguei **"Hub MultiAPIWA (…)"** nos canais que quero oferecer
 * [ ] Liberei os tipos em **Integrações → Canais Disponíveis**
@@ -300,6 +340,14 @@ O passo a passo das telas do cliente está em [Canais Adicionais (venda aos seus
 ***
 
 ## 🆘 Problemas comuns
+
+### Pedi no chat e o assistente virtual não me passou as credenciais
+
+É o esperado: as **3 informações** (URL da API, Token da Integração e Segredo Hmac) só são criadas pela equipe do Whazing. Responda **Atendimento Humano** em um dos números (**+55 48 3197-0877** ou **+55 48 3197-0599**) e informe a **URL do backend**.
+
+### Não lembro ou perdi o Token da Integração / o Segredo Hmac
+
+É preciso **pedir novamente ao atendimento humano** — eles não ficam visíveis em outro lugar do painel. Depois de receber, atualize os campos em **Integrações → WhatsApp Oficial (WABA)** e salve.
 
 ### O cartão "MultiAPIWA (Hub Meta)" não aparece no menu
 
@@ -340,6 +388,10 @@ Falha momentânea de comunicação com o Hub. Use **Atualizar**; se persistir, c
 ***
 
 ## ❓ Perguntas frequentes
+
+#### Onde consigo a URL da API, o Token da Integração e o Segredo Hmac?
+
+Somente no **atendimento humano** do suporte Whazing (📱 **+55 48 3197-0877** ou **+55 48 3197-0599**), informando a **URL do backend**. Não existe geração automática pelo painel do Whazing.
 
 #### Preciso de uma instalação do Hub por cliente?
 
