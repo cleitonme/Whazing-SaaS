@@ -97,14 +97,27 @@ Na prática, o cliente apenas:
 
 O Hub **não é ativado pelo cliente**. Ele é liberado para o **dono do Whazing (você, que administra o SaaS)**:
 
-1. **Solicite o acesso ao suporte Whazing**, informando que quer usar o **Hub MultiAPIWA**.
-2. O suporte cria a sua **instalação** e devolve **três dados**:
+1. **Solicite o acesso no atendimento humano do suporte Whazing**, informando que quer usar o **Hub MultiAPIWA**. O atendimento começa com um assistente virtual: escreva **Atendimento Humano** para falar com a equipe que cria a instalação.
 
-| Dado recebido                         | Para que serve                                                    |
-| ------------------------------------- | ----------------------------------------------------------------- |
-| **URL do backend**                    | Endereço do servidor que faz a ponte entre o seu Whazing e a Meta |
-| **Token de integração da instalação** | Identifica o seu Whazing perante o Hub                            |
-| **Segredo HMAC da instalação**        | Garante que as mensagens trocadas são realmente do seu Whazing    |
+   📱 **+55 48 3197-0877**
+
+   📱 **+55 48 3197-0599**
+
+   **Mensagem pronta:**
+
+   ```text
+   Atendimento Humano — quero liberar o Hub MultiAPIWA no meu Whazing. URL do backend: https://painel.seudominio.com.br
+   ```
+
+2. O suporte cria a sua **instalação** e devolve as **3 informações**:
+
+| Informação              | Nome na tela do Whazing                     | Para que serve                                                    |
+| ----------------------- | ------------------------------------------- | ----------------------------------------------------------------- |
+| **URL da API**          | campo **URL da API do MultiAPIWA**          | Endereço do servidor que faz a ponte entre o seu Whazing e a Meta |
+| **Token da Integração** | campo **Token de integração da instalação** | Identifica o seu Whazing perante o Hub                            |
+| **Segredo Hmac**        | campo **Segredo HMAC da instalação**        | Garante que as mensagens trocadas são realmente do seu Whazing    |
+
+> ⚠️ **Sem as três, nenhum canal conecta.** As informações são entregues **somente** na liberação, pelo atendimento humano — o painel não gera esses dados.
 
 3. Você preenche esses três dados **uma única vez** no painel do Whazing.
 4. Depois disso, liga o Hub **apenas nos canais que quiser usar**.
