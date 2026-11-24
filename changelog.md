@@ -1,5 +1,10 @@
 # Changelog e Atualizações
 
+# 🚀 Versão 3.1.14 FINAL
+
+- **Relatórios e impressão:** melhorias na geração de relatórios em PDF e na impressão de conversas.
+- **Segurança:** correções e melhorias internas de segurança.
+
 # 🚀 Versão 3.1.13 FINAL
 
 ### Wuzapi
