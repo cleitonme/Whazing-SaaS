@@ -24,6 +24,16 @@ Esta página explica, de forma simples, **o que você precisa para começar a us
 2. Clique em **Adicionar** e selecione o canal que deseja usar;
 3. Aparecerá o botão para baixar o **modelo Postman** (`API_modelo_postman.json`).
 
+### 🧪 Testar sem instalar nada (Testar API)
+
+Na mesma tela existe o botão **Testar API**: ele abre a documentação interativa (Swagger) com **todas as rotas**, já preenchida com a **URL do seu sistema** e o **token da API selecionada**.
+
+1. Selecione a API (canal) no topo da tela;
+2. Escolha a rota, clique em **Try it out**, preencha os campos e execute;
+3. A resposta aparece logo abaixo da chamada.
+
+> 💡 A tela é exclusiva para **administradores** e usa o token **apenas na memória do navegador** — ele não é gravado em lugar nenhum. Se a página avisar que não conseguiu carregar a documentação, o arquivo `openapi.yaml` não foi encontrado no servidor; contate o suporte.
+
 > ⚠️ **Importante:** novos endpoints podem não estar na documentação desta página — **sempre baixe o modelo Postman** pelo próprio sistema, pois ele acompanha a versão mais atual da API.
 ***
 
@@ -52,8 +62,11 @@ Quando um pedido não pode ser atendido, a API responde com um **código numéri
 | **403** | "Proibido" — o token é válido, mas **não corresponde à conexão (canal) configurada** para este acesso |
 | **404** | "Não encontrado" — o registro não existe (ou pertence a outra empresa/conexão). Ex.: número não é um WhatsApp válido |
 | **409** | "Conflito" — a operação não pode acontecer agora. Ex.: cancelar algo que já foi enviado/concluído, ou o profissional já tem outro compromisso nesse horário |
+| **502** | "Falha no provedor" — o Whazing tentou falar com o WhatsApp (por exemplo, ao listar grupos) e o provedor não respondeu corretamente |
 
-> 💡 **Dica prática:** se apareceu **401 ou 403**, o problema está no token ou no canal selecionado. Se apareceu **400**, revise os campos do pedido. Se **404**, confira o ID/número informado.
+> 💡 **Dica prática:** se apareceu **401 ou 403**, o problema está no token ou no canal selecionado. Se apareceu **400**, revise os campos do pedido. Se **404**, confira o ID/número informado. Se **502**, a falha foi na conversa com o provedor do WhatsApp — tente novamente em instantes.
+
+> ⚠️ **403 também pode ser permissão:** nas rotas de **Cobranças**, o `403` acontece quando o token não tem permissão para a ação, quando o **recurso de cobranças não está no plano** da empresa ou quando o **usuário do token está inativo**.
 
 ***
 
