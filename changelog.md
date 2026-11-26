@@ -1,5 +1,144 @@
 # Changelog e Atualizações
 
+## 🚀 Versão 3.2.0 BETA
+
+## 🔐 Segurança e Monitoramento
+
+- **Tentativas de acesso suspeitas:** implementação de notificações por e-mail, push e navegador para alertar sobre tentativas de acesso suspeitas. Configuração disponível no Painel SaaS, na seção Segurança.
+- **Segurança de arquivos públicos:** a pasta `public` passa a ter acesso restrito por padrão. A liberação de acesso poderá ser configurada pelo Painel SaaS, com suporte à criação de tokens de acesso.
+
+## 📱 WhatsApp API Oficial (WABA)
+
+- **Templates de marketing:** atualização da integração com a API Oficial para adequação ao novo padrão da Meta para disparos de templates de marketing.
+- **Validação de conexão:** adicionada validação para verificar se o canal WABA está conectado antes de permitir sua exclusão.
+- **Eventos de desconexão:** melhoria na captura dos eventos de desconexão da WABA, garantindo que o canal seja atualizado corretamente e exibido como desconectado no sistema.
+- **Relatório de cliques:** novo relatório para acompanhar os eventos de cliques em links enviados em campanhas de marketing pela API Oficial do WhatsApp, utilizando os eventos disponibilizados pela Meta.
+- **Coexistência (WhatsApp Business + API):** suporte à sincronização de contatos e histórico de mensagens durante a conexão do número com a API Oficial, permitindo manter o uso do WhatsApp Business no celular.(app proprio ativar todos eventos webhook)
+- **Prazo de sincronização:** a sincronização de contatos e histórico deve ser iniciada dentro de 24 horas após a conclusão da conexão, conforme as regras da Meta. O compartilhamento do histórico depende da autorização do cliente.
+
+## 🤖 Chatbot Interno
+
+- **Criar anotação:** novo campo para criar anotações diretamente pelo fluxo do chatbot
+- **Alterar contato:** novo campo para alterar o nome e o e-mail do contato
+- **Limpar informações adicionais:** novo nó para limpar variáveis e informações adicionais do contato
+
+## 🔌 API
+
+- **Listar grupos:** novo endpoint para consultar grupos
+- **Kanban:** novo endpoint para consultar a lane do Kanban
+
+## ⚡ Respostas Rápidas
+
+- **Ocultar botão flutuante:** nova opção nas configurações de atendimento para ocultar o botão flutuante de respostas rápidas
+- **Favoritos:** possibilidade de favoritar mensagens rápidas para exibi-las diretamente no botão de acesso
+
+## 🧠 Recepção Inteligente
+
+- **Qualificação de leads:** novo módulo de qualificação de leads integrado à Recepção Inteligente
+- **Simulador:** melhorias no simulador e avisos mais claros sobre os recursos que ainda não são suportados
+
+## ✈️ Telegram
+
+- **Tópicos em grupos:** suporte a tópicos em grupos do Telegram
+
+### Instagram
+
+- Correção no recebimento de comentários em publicações: esse tipo de ticket não deve iniciar um atendimento, pois permite apenas responder ao comentário, e não enviar mensagens privadas.
+- Resposta automática por publicação: permite selecionar uma publicação específica e definir a ação que será executada.
+- Adicionados webhook e endpoint para comentários do Instagram.
+- Identificação da publicação de origem ao responder Stories do Instagram.
+- Adicionado suporte a carrossel do Instagram.
+- Adicionado suporte a botões do Instagram.
+- Adicionado suporte a arquivos PDF no Instagram.
+- Corrigido o recebimento de Reels do Instagram, que anteriormente eram identificados como não suportados.
+- Adicionado suporte a reações de coração no Instagram.
+- Ampliado o suporte aos formatos de mensagens recebidos pelo Instagram Direct, incluindo a identificação e o tratamento de formatos que ainda não estavam mapeados.
+
+## 📝 Cadastro e Segurança
+
+- **Cadastro de teste:** suporte ao envio de código de validação por e-mail ou telefone para confirmar o cadastro
+- **Verificação em duas etapas:** suporte à verificação em duas etapas
+- **Troca de senha:** nova opção para exigir que o usuário altere a senha no próximo login
+
+## 🔧 API Admin
+
+- **Anotações:** atualização do endpoint de anotações
+- **Menu:** suporte à edição do menu pela API Admin
+
+## 👥 Contatos
+
+- **Importação:** possibilidade de importar contatos utilizando somente o e-mail, sem a necessidade de informar um telefone
+
+## 📅 Agenda
+
+- **Link público:** possibilidade de incorporar o WebChat ao link público de agendamento
+
+## 🎫 Atendimento
+
+- **Itens arquivados:** suporte a ações em massa nos itens arquivados e melhorias nos filtros
+- **Silenciar contato:** nova opção para silenciar contatos
+- **Mensagens em grupos:** nova configuração para alinhar mensagens conforme o remetente. Em tickets de grupo, as mensagens do atendente logado são exibidas à direita, enquanto as mensagens dos demais atendentes ficam à esquerda
+- **Impressão de conversas:** melhorias no sistema de impressão de conversas e tickets, incluindo a geração de arquivos PDF.
+- **Ações em massa:** melhorias nos recursos de fechamento e exclusão de tickets em massa, tornando o gerenciamento de atendimentos mais eficiente.
+
+## 📆 Cadastro de Feriados
+
+- **Imagem:** possibilidade de adicionar uma imagem ao cadastrar feriados, permitindo que ela seja enviada junto com as informações
+
+## 📋 Kanban Pro
+
+- **Modelos de checklist:** suporte à criação e utilização de modelos de checklist
+
+## 💰 Novo Módulo de Cobranças
+
+Novo módulo para gerenciamento de cobranças, com os seguintes recursos:
+
+- **Integração com bot:** possibilidade de consultar faturas pelo chatbot
+- **Lembretes:** envio de lembretes de cobrança
+- **Relatórios:** relatórios de cobranças
+- **Orçamentos:** gerenciamento de orçamentos
+- **Recorrência:** suporte a cobranças recorrentes
+- **Despesas:** gerenciamento de despesas
+- **API:** novos endpoints para integração com o módulo
+
+## 🕒 Horário de Atendimento
+
+- **Horário de almoço:** configuração simplificada e menos confusa, permitindo ativar ou desativar o horário de almoço
+
+## 🛍️ Novo Módulo de Catálogo
+
+Novo módulo para gerenciamento e divulgação de produtos, com integração aos canais de atendimento e à Recepção Inteligente.
+
+**Principais recursos:**
+
+- **Cadastro de produtos:** gerenciamento de produtos do catálogo
+- **Link público:** disponibilização de um link público para consulta dos produtos
+- **Envio pelo atendimento:** possibilidade de enviar produtos diretamente pela tela de atendimento
+- **Recepção Inteligente:** a IA poderá consultar o catálogo e enviar produtos aos clientes
+- **Relatórios de interesse:** relatórios dedicados aos produtos oferecidos pela IA e ao interesse demonstrado pelos clientes
+- **Sincronização com lojas virtuais:** integração com lojas virtuais utilizando o formato de dados do Google Shopping
+- **Relatórios:** relatórios específicos do módulo
+- **WhatsApp:** sincronização com WhatsApp por meio da API Plus
+- **API:** novos endpoints para integração com o catálogo
+
+## 🔊 Campanhas com Áudio
+
+- **Novo módulo:** suporte à criação de campanhas com chamadas de áudio gravadas, disponível exclusivamente para a API Plus
+
+## 🌐 WebChat
+
+- **Resposta a mensagens:** suporte à resposta direta de mensagens
+- **Incorporação em sites:** possibilidade de incorporar o WebChat em sites externos
+
+## 💬 Automação de Comentários e Direct
+
+- **Palavras-chave no Direct:** nova opção para cadastrar palavras-chave e enviar mensagens automaticamente conforme a palavra-chave utilizada pelo usuário na conversa pelo Direct
+- **Automação por publicação:** escolher publicação mudar automação
+
+## 🔄 Outros ajustes
+
+- Outras melhorias, correções e ajustes internos não documentados nesta versão.
+
 # 🚀 Versão 3.1.14 FINAL
 
 - **Relatórios e impressão:** melhorias na geração de relatórios em PDF e na impressão de conversas.
