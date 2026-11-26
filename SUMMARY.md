@@ -86,6 +86,13 @@
   * [Ativar Cloudflare Turnstile (Proteção Anti-Bot)](modulo-saas/ativar-cloudflare-turnstile-protecao-anti-bot.md)
   * [Armazenamento S3](modulo-saas/armazenamento-s3.md)
   * [🎛️ Botão Coringa](modulo-saas/botao-coringa.md)
+  * [🔐 Segurança](modulo-saas/seguranca/README.md)
+    * [Alertas de Segurança](modulo-saas/seguranca/alertas-de-seguranca.md)
+    * [Verificação em Duas Etapas](modulo-saas/seguranca/verificacao-em-duas-etapas.md)
+    * [Proteção de Mídia](modulo-saas/seguranca/protecao-de-midia.md)
+    * [Logs de Tentativas de Acesso](modulo-saas/seguranca/logs-de-tentativas.md)
+  * [📝 Verificação de Contato no Cadastro de Teste](modulo-saas/verificacao-de-contato-no-cadastro-de-teste.md)
+  * [🔑 Exigir Troca de Senha no Próximo Login](modulo-saas/exigir-troca-de-senha.md)
 
 ## Canais Disponíveis
 

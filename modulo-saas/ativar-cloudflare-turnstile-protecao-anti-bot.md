@@ -255,3 +255,12 @@ Passos principais:
 
 💡 **Dica:**\
 Sempre teste antes de sair da conta para evitar bloqueio de acesso.
+
+***
+
+## 📚 Veja também
+
+* [🔐 Segurança](seguranca/README.md) — visão geral das telas de segurança do painel
+* [Alertas de Segurança](seguranca/alertas-de-seguranca.md)
+* [Logs de Tentativas de Acesso](seguranca/logs-de-tentativas.md)
+* [Verificação de Contato no Cadastro de Teste](verificacao-de-contato-no-cadastro-de-teste.md)

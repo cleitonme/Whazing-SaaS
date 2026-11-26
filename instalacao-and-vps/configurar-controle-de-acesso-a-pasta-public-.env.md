@@ -4,9 +4,17 @@ icon: lock-keyhole
 
 # Configurar Controle de Acesso à Pasta Public (.env)
 
-Por padrão, a pasta **`/public`** do sistema fica **acessível pela internet**.
+> 🔄 **Atualizado na versão 3.2.0:** esta configuração **saiu do arquivo `.env`** e agora é feita pelo painel, em **Painel SaaS → Segurança → Proteção de mídia** — com estado ligado/desligado, exceções de IP, validade dos links e chave de acesso para integrações.
+>
+> As variáveis `MEDIA_PROTECTION_ENABLED`, `MEDIA_PROTECTION_ALLOWED_IPS` e `MEDIA_API_KEY` **não têm mais efeito**. O passo a passo abaixo fica mantido como **referência legada** (útil para entender instalações antigas), mas a configuração válida é a do painel.
+>
+> 👉 Guia atual: [Proteção de Mídia](../modulo-saas/seguranca/protecao-de-midia.md)
 
-Isso significa que **qualquer pessoa que saiba o link completo do arquivo pode acessá-lo**.
+A partir da **versão 3.2.0**, a pasta **`/public`** do sistema passa a ter **acesso restrito por padrão**. Nas versões anteriores, ela ficava **acessível pela internet**.
+
+O funcionamento descrito abaixo é o **modelo de proteção de mídia**: quem não estiver autorizado só acessa o arquivo por link com prazo de validade. Hoje, porém, **quem liga e desliga essa proteção é o painel SaaS**, não o `.env`.
+
+Sem a proteção, isso significa que **qualquer pessoa que saiba o link completo do arquivo pode acessá-lo**.
 
 Exemplo de acesso direto:
 
@@ -40,6 +48,10 @@ Exemplos de integrações que podem precisar acesso:
 Por isso é importante **testar após ativar**.
 
 ***
+
+## 🧭 Passo a passo com `.env` (referência legada)
+
+> ⚠️ **Não use estes passos em instalações atualizadas.** As variáveis abaixo não são mais lidas pelo sistema. Configure pela tela **Painel SaaS → Segurança → Proteção de mídia**.
 
 ## 1️⃣ Acessar o servidor
 
@@ -256,3 +268,11 @@ Use sempre:
 * uma **API key forte**
 * **IPs restritos**
 * e monitore os logs regularmente.
+
+***
+
+## 📚 Veja também
+
+* [Proteção de Mídia (painel SaaS)](../modulo-saas/seguranca/protecao-de-midia.md) — configuração atual
+* [🔐 Segurança](../modulo-saas/seguranca/README.md)
+* [Armazenamento S3](../modulo-saas/armazenamento-s3.md)

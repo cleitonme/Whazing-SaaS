@@ -9,6 +9,8 @@ No **Módulo SaaS** você controla sua instalação como administrador/revendedo
 * **Configuração inicial** — Onboarding Inicial, opção de Ajuda, Comunicados;
 * **Personalização SaaS** — personalize o aviso exibido ao cliente antes de conectar um canal WhatsApp não oficial: [Personalização SaaS](personalizacao-saas.md);
 * **Menu por empresa** — escolha o que cada empresa vê no menu e configure até 2 atalhos (Botão Coringa): [⚙️ Configurar Menu da Empresa](configurar-menu-da-empresa.md);
+* **Segurança e Monitoramento** — alertas de eventos suspeitos, proteção de mídia, verificação em duas etapas, logs de tentativas de acesso, verificação de contato no cadastro de teste e troca de senha obrigatória: [🔐 Segurança](seguranca/README.md);
+
 * **Financeiro e planos** — criação de planos, adicionais, gateways de pagamento, NFS-e, afiliados, armazenamento e WaCalls;
 * **Backup** — programação de backups automáticos do banco de dados: [Backup do Banco](backup-banco-de-dados.md);
 * **Inteligência Artificial** — IA integrada, gerador de chatbot e transcrição de áudio;

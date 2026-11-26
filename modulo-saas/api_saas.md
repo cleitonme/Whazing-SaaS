@@ -95,6 +95,59 @@ Chave de API utilizada para integração com o N8N.
 | Listar Usuários | GET    | Listar usuários do tenant     |
 | Listar Planos   | GET    | Listar Planos                 |
 
+### Anotações da empresa (`notes`) — 🔄 atualizado
+
+O campo `notes` guarda a **anotação interna** da empresa (aquela que aparece só para você, no painel SaaS). Ele é aceito na criação e na edição do tenant:
+
+| Ação | Como usar |
+| --- | --- |
+| **Criar Tenant** | Envie `notes` no corpo. `null`, `""` ou campo omitido gravam vazio |
+| **Editar Tenant** | Envie `notes` para substituir o texto. `null` ou `""` **limpam** a anotação; campo omitido não altera nada |
+
+Exemplo — atualizar **somente** a anotação:
+
+```json
+{
+  "tenantId": "23",
+  "notes": "Cliente pediu retorno na segunda."
+}
+```
+
+### Menu da empresa pela API — 🆕 novo
+
+O `updatetenant` também aceita **flags de menu**, permitindo ligar e desligar itens do menu da empresa sem abrir o painel. A atualização é **parcial**: flag omitida fica como está.
+
+```json
+{
+  "tenantId": "23",
+  "crm": false,
+  "kanbanpro": false,
+  "campanha": true
+}
+```
+
+Flags aceitas (valem `true`/`false` ou os textos `"true"`/`"false"`):
+
+| Flag | Item do menu |
+| --- | --- |
+| `crm` | Kanban |
+| `kanbanpro` | Kanban Pro |
+| `chatinterno` | Chat Interno |
+| `mensagensrapidas` | Mensagens Rápidas |
+| `tarefas` | Tarefas |
+| `despedida` | Despedida |
+| `agendamentos` | Agendamentos |
+| `ajuda` | Ajuda |
+| `financeiro` | Financeiro |
+| `motivoencerramento` | Encerramento |
+| `campanha` | Campanha |
+| `followup` | Follow-up |
+
+> ℹ️ Os **Botões Coringa** (`JokerButton`) **não** são editáveis pela API: continuam exclusivos do painel, em [⚙️ Configurar Menu da Empresa](configurar-menu-da-empresa.md).
+
+> ℹ️ Requisições que alteram **somente** `status` ou flags de menu **não recriam** as faturas abertas da empresa.
+
+
 ### Faturas
 
 | Endpoint                  | Método | Descrição                                         |
