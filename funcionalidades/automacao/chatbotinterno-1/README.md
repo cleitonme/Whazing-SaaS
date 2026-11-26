@@ -77,7 +77,7 @@ Contém um campo de **busca** e os blocos organizados por categoria:
 
 * **💬 Mensagens** — texto, arquivos, figurinhas, contato, botões, listas, carrosséis, PIX, localização.
 * **🧮 Lógica** — delay e forçar execução de condições.
-* **🎯 Atendimento** — tag, CRM/Kanban, Kanban Pro e follow-up.
+* **🎯 Atendimento** — tag, CRM/Kanban, Kanban Pro, follow-up, anotação interna 🆕, atualizar contato 🆕 e limpar variáveis 🆕.
 * **🔌 Integrações** — HTTP Request.
 
 Para usar: **clique** no bloco (cria uma nova etapa com ele) ou **arraste** para o canvas.
@@ -311,6 +311,40 @@ O fluxo salva automaticamente. Use o botão **Testar** para simular a conversa a
 * Adiciona o cliente a um **follow-up (funil)** ou o **remove** (opção "Remover cliente Follow-up").
 * Requer funis de follow-up cadastrados no sistema.
 
+#### 🗒️ Adicionar anotação interna 🆕
+
+* Cria uma **anotação interna no atendimento** automaticamente quando o fluxo passa por este bloco.
+* Campo: **"Anotação no atendimento"** — texto livre, com botão de **emoji** e botão **`{}`** para inserir **variáveis** (ex.: "Cliente pediu retorno em {{date}}").
+* O próprio editor avisa: _"Visível para a equipe no atendimento; não é enviada ao cliente."_
+* Se o campo estiver **em branco**, nada é registrado (no Simulador aparece _"Anotação vazia ignorada"_).
+* **Não envia nada ao cliente** e não muda a etapa: é uma ação, como os demais blocos desta categoria.
+
+> 💡 No **Simulador**, o bloco aparece no histórico como ação executada (`[TicketNoteField] anotação interna: ...`).
+
+#### ✏️ Atualizar contato 🆕
+
+* Altera o **nome** e/ou o **e-mail do contato** do atendimento direto pelo fluxo, sem precisar editar a ficha na mão.
+* Campos:
+  * **Nome do contato** — até 255 caracteres; aceita texto e variáveis.
+  * **E-mail do contato** — até 255 caracteres; aceita texto e variáveis.
+* Cada campo tem o botão **`{}`** para inserir variáveis do sistema ou as variáveis já salvas no fluxo.
+* **Campo em branco é ignorado** — se você preencher só o e-mail, o nome do contato continua como estava (e vice-versa).
+* O e-mail digitado é **validado no editor**: um texto sem formato de e-mail mostra _"Informe um e-mail válido ou use uma variável."_. Quando o valor é uma variável (`{{...}}`), essa checagem de formato não é aplicada no editor.
+* **Não envia mensagem** ao cliente.
+
+> 💡 No **Simulador**, o histórico mostra o que foi atualizado e o que foi ignorado (ex.: e-mail inválido ou nome com mais de 255 caracteres).
+
+#### 🧹 Limpar variáveis 🆕
+
+* **Remove valores das Informações adicionais do contato** quando o fluxo passa por este bloco — útil para apagar **dados temporários** no fim do atendimento (ex.: um CPF consultado no meio da conversa).
+* Campo: **"Variáveis a remover"** — uma seleção múltipla que já sugere as **variáveis usadas no próprio fluxo**.
+* Para adicionar: clique nas sugestões **ou digite o nome e pressione Enter** (também é possível separar vários nomes por vírgula, ponto e vírgula ou quebra de linha).
+* Os nomes são padronizados em **minúsculas** e **sem as chaves**: digitar `{{CPF}}` ou `CPF` resulta na variável `cpf`.
+* Se o fluxo ainda não tiver variáveis, o seletor avisa: _"Nenhuma variável encontrada no fluxo. Você pode digitar um nome para adicionar."_
+* **Não envia mensagem** ao cliente.
+
+> 💡 Coloque este bloco **no fim do fluxo**, depois de usar a informação temporária nas mensagens e condições.
+
 ### 📅 Agendamento
 
 #### 🗓️ Agendamento
@@ -530,11 +564,10 @@ Ao clicar no nó **Configurações**, um **painel/modal** abre com as opções g
   * Ative **"Verificar horário de atendimento"** para o sistema interromper o bot fora do expediente e executar o comportamento abaixo.
   * **Ação** — encaminhar para **Fila**, para **Usuário**, ou **Sem Fila** (apenas interrompe o bot sem encaminhar).
   * ⚠️ Se o seu fluxo já usa as condições **"Dentro/Fora do Horário de Atendimento"**, essa configuração global **não é aplicada** (as condições têm prioridade).
-* **Auto Distribuir Atendimento:**
-  * **Não** — distribuição automática desativada.
-  * **Aleatória** — escolhe um usuário da fila de forma randômica.
-  * **Balanceada** — escolhe o usuário da fila **com menos atendimentos ativos**.
-  * ⚙️ Os **perfis** que participam da distribuição são definidos na [Distribuição Automática](../../gestao/distribuicao-automatica.md) da fila — a nota exibida no próprio editor diz: "Os perfis que participam da distribuição são definidos na configuração de Distribuição Automática da fila (Central de Configurações > Atendimento), não aqui." Os usuários considerados precisam estar **online**.
+* **Distribuição automática (🔄 alterado):**
+  * A opção **"Auto Distribuir Atendimento"** que existia neste painel foi **removida** do editor. A decisão de como distribuir — **Aleatória**, **Balanceada**, **Porcentagem** ou **Rodízio por ordem de cadastro** —, os perfis que participam, a carteira do contato e o que fazer quando ninguém está disponível agora são definidos **na fila**, em **Central de Configurações → Atendimento → Distribuição Automática**.
+  * Quando o fluxo encaminha o atendimento para uma fila (condição **Fila** ou **Fila + Usuário**), vale a configuração daquela fila.
+  * Veja: [Distribuição Automática](../../gestao/distribuicao-automatica.md) e [Rodízio Automático de Atendimentos](rodizio-automatico-de-atendimentos.md).
 * **Encerrar Atendimento:** lista de **palavras** que, se digitadas pelo cliente, **encerram o atendimento**. Acompanhada da **mensagem de despedida** enviada ao cliente.
 * **Palavras-chave para reiniciar o atendimento:** lista de palavras (ex.: `#menu`) que fazem o bot **voltar para o início** (etapa Boas-vindas) a partir de qualquer etapa.
 * **Mensagem de saudação (Fila/Usuário):** mensagem enviada automaticamente **sempre que o bot transfere** o atendimento para uma fila ou usuário.
@@ -606,6 +639,7 @@ Por favor, confirme se seu endereço é Rua Marechal Deodoro, 11?
 
 * **Resposta do cliente:** no campo **"Salvar resposta na variável (opcional)"** da condição, o texto digitado pelo cliente fica salvo e pode ser usado em mensagens e condições.
 * **Respostas de HTTP Request:** os campos mapeados no bloco HTTP Request são salvos como variáveis (ex.: `{{status}}`, `{{data.cep}}`).
+* **Limpeza de variáveis:** o bloco **Limpar variáveis** remove das Informações adicionais do contato as variáveis que você escolher — veja a descrição do bloco em [Tipos de blocos](./#tipos-de-blocos-interações).
 
 > 💡 Veja o guia completo em [Variáveis do Sistema](../../gestao/variaveis-sistema.md).
 
@@ -653,7 +687,7 @@ O botão **"Automações"** (na barra superior) abre o painel de **automações*
 * O botão **"+ Adicionar automação"** cria uma automação **sem sair do editor** — ao terminar a ativação, a **fila resultante é aplicada automaticamente** na condição.
 * O botão "Automações" só aparece se o **plano da empresa** incluir o recurso de integrações.
 
-> 💡 O rodízio de atendimentos depende de um chatbot configurado para encaminhar para uma fila com **Auto Distribuir Atendimento** ativo. Veja: [Rodízio Automático de Atendimentos](rodizio-automatico-de-atendimentos.md).
+> 💡 O rodízio de atendimentos funciona quando o chatbot encaminha o atendimento para uma fila que tenha a **Distribuição Automática** configurada (Central de Configurações → Atendimento). Veja: [Rodízio Automático de Atendimentos](rodizio-automatico-de-atendimentos.md).
 
 ***
 

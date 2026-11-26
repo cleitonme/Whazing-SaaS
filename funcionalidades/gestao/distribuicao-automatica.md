@@ -390,12 +390,27 @@ Outras configurações do sistema também podem definir **quem atende**. A regra
 
 Ao lado do botão **"Salvar"**, na tela de Distribuição Automática, fica o botão **"Ver histórico de distribuição"**. Ele abre o relatório que registra as decisões de distribuição — inclusive as do rodízio — para ajudar a **identificar e analisar erros**.
 
+### Onde fica
+
+O botão **"Ver histórico de distribuição"** abre o relatório **Relatórios → Auditoria → Distribuição Automática**.
+
+### Filtros
+
+* **Início** e **Fim** — o período (por padrão, o mês atual);
+* **Fila** — uma fila específica;
+* **Regra usada** — Aleatória, Balanceada, Porcentagem ou Rodízio por ordem de cadastro;
+* **Resultado** — "Entregue a alguém" ou "Ninguém disponível";
+* **Usuário** — o atendente;
+* **Só os que ignoraram presença** — mostra apenas as decisões em que o sistema precisou ignorar presença/disponibilidade para escolher alguém.
+
 ### O que cada registro mostra
 
-* **Data e hora**, **fila**, **canal** e o **atendimento**;
-* **Resultado:** entregue a alguém, ou ninguém disponível (o atendimento ficou na fila);
-* **Regra usada:** Aleatória, Balanceada, Porcentagem ou Rodízio;
-* **Quem recebeu** o atendimento.
+* **Data e hora**, **fila**, **regra usada** e o **atendimento** (o número abre o ticket);
+* **Quem recebeu** — "Entregue" com o nome do atendente, ou **"Ninguém disponível"**;
+* **Por que** — o motivo da decisão; quando o sistema ignorou presença, aparece um ícone com a dica **"Distribuído ignorando presença"**;
+* **Os quatro contadores do momento:** **Na fila**, **Online**, **Ocupados** e **Disponíveis** — juntos, explicam por que ninguém recebeu (fila sem gente, perfis que não pegam ninguém, todos fora ou todos ocupados).
+
+> 💡 Clique no título das colunas para ordenar e use o botão de exportação para baixar o resultado filtrado em **Excel**.
 
 ### Ver o que estava acontecendo naquele momento
 
