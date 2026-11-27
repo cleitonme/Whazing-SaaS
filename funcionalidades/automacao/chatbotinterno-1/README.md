@@ -77,7 +77,7 @@ Contém um campo de **busca** e os blocos organizados por categoria:
 
 * **💬 Mensagens** — texto, arquivos, figurinhas, contato, botões, listas, carrosséis, PIX, localização.
 * **🧮 Lógica** — delay e forçar execução de condições.
-* **🎯 Atendimento** — tag, CRM/Kanban, Kanban Pro, follow-up, anotação interna 🆕, atualizar contato 🆕 e limpar variáveis 🆕.
+* **🎯 Atendimento** — tag, CRM/Kanban, Kanban Pro, follow-up, anotação interna 🆕, atualizar contato 🆕, limpar variáveis 🆕 e consultar faturas (Cobranças) 🆕.
 * **🔌 Integrações** — HTTP Request.
 
 Para usar: **clique** no bloco (cria uma nova etapa com ele) ou **arraste** para o canvas.
@@ -344,6 +344,14 @@ O fluxo salva automaticamente. Use o botão **Testar** para simular a conversa a
 * **Não envia mensagem** ao cliente.
 
 > 💡 Coloque este bloco **no fim do fluxo**, depois de usar a informação temporária nas mensagens e condições.
+
+#### 🧾 Consultar Faturas (Cobranças)
+
+* Consulta as **faturas do contato do atendimento** e envia o **link da fatura escolhida** — **não** cria, **não** altera e **não** cancela cobrança.
+* Se houver **só uma fatura**, o bloco já a envia direto.
+* Tem **3 saídas fixas**: fatura enviada, sem faturas e falha (a falha também cobre a fatura que ainda não tem link).
+* Configurações: o que o cliente pode consultar (faturas **em aberto**, que já inclui as vencidas, e **pagas**), como apresentar as opções (automático, texto numerado, lista ou botões), formato do link (botão só no WhatsApp oficial, hub e API Plus), faturas por página e textos com as variáveis `{numero}`, `{valor}`, `{vencimento}`, `{status}`, `{descricao}`, `{cliente}` e `{link}`.
+* Requer o recurso **Cobranças** no plano ou como adicional. Veja o guia completo: [Cobranças no Chatbot](../../cobrancas/cobrancas-no-chatbot.md).
 
 ### 📅 Agendamento
 

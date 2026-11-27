@@ -359,5 +359,6 @@ Os arquivos de referência só citam a permissão `create` para `/charges/paymen
 ## 👣 Próximos passos
 
 * [Catálogo](catalogo.md) — produtos e vitrine;
+* [Cobranças na interface](../../../funcionalidades/cobrancas/README.md) — como usar o módulo no dia a dia, configurar meios de pagamento, avisos e recorrências;
 * [Contatos](contatos.md) — criar e atualizar clientes;
 * [Introdução e Autenticação](../introducao-e-autenticacao.md) — token e códigos de erro.

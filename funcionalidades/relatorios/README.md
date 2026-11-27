@@ -24,7 +24,7 @@ As seções disponíveis são:
 | **Kanban Pro**  | Cards e movimentações do Kanban Pro                                                   |
 | **Kanban CRM**  | Oportunidades e funil do Kanban CRM                                                   |
 | **Marketing**   | Campanhas, tracking links, resultados de disparos e o **Meta Ads Analytics** — veja [Meta Ads Analytics](meta-ads.md) |
-| **Financeiro**  | Custos, cobranças, o **Meta de Vendas** e os **Produtos em faturas e orçamentos** — veja [Meta de Vendas](meta-de-vendas.md) e [Relatórios do Catálogo](../catalogo/relatorios.md) |
+| **Financeiro**  | Custos, cobranças, despesas, o **Meta de Vendas** e os **Produtos em faturas e orçamentos** — veja [Relatórios de Cobranças](../cobrancas/relatorios-de-cobrancas.md), [Meta de Vendas](meta-de-vendas.md) e [Relatórios do Catálogo](../catalogo/relatorios.md) |
 | **WebChat**     | **Visitantes do WebChat**: quem está no site em tempo real, histórico e mapa — veja o guia do [WebChat](../../canais-disponiveis/webchat.md#️-visitantes-do-webchat--quem-está-no-site-agora) |
 | **Auditoria**   | Histórico de alterações e exclusões (logs de auditoria)                               |
 | **Agenda**      | Agendamentos: **Agenda do Dia**, **Agendamentos**, **Agenda por profissional e serviço** e **Estatísticas da Agenda** — veja [Relatórios da Agenda](../agenda/relatorios-da-agenda.md) |
@@ -71,4 +71,4 @@ Confira o período e os filtros. Períodos muito largos podem demorar mais — p
 
 ---
 
-> 📄 Relatórios por módulo: [Relatórios da Agenda](../agenda/relatorios-da-agenda.md) · [Relatórios do Kanban Pro](../kanban-pro/relatorios.md) · [Relatórios do Catálogo](../catalogo/relatorios.md) · [Dashboard de SLA](dashboard-de-sla.md) · [Meta de Vendas](meta-de-vendas.md)
+> 📄 Relatórios por módulo: [Relatórios da Agenda](../agenda/relatorios-da-agenda.md) · [Relatórios do Kanban Pro](../kanban-pro/relatorios.md) · [Relatórios do Catálogo](../catalogo/relatorios.md) · [Relatórios de Cobranças](../cobrancas/relatorios-de-cobrancas.md) · [Dashboard de SLA](dashboard-de-sla.md) · [Meta de Vendas](meta-de-vendas.md)

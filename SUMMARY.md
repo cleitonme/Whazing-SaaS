@@ -246,6 +246,15 @@
     * [Importar Produtos da Loja](funcionalidades/catalogo/importar-produtos-da-loja.md)
     * [Catálogo no WhatsApp (API Plus)](funcionalidades/catalogo/whatsapp-plus.md)
     * [Relatórios do Catálogo](funcionalidades/catalogo/relatorios.md)
+  * [💰 Cobranças](funcionalidades/cobrancas/README.md)
+    * [Como criar e enviar uma cobrança](funcionalidades/cobrancas/como-criar-e-enviar-uma-cobranca.md)
+    * [Orçamentos](funcionalidades/cobrancas/orcamentos.md)
+    * [Recorrências](funcionalidades/cobrancas/recorrencias.md)
+    * [Despesas](funcionalidades/cobrancas/despesas.md)
+    * [Configurações de cobrança](funcionalidades/cobrancas/configuracoes-de-cobranca.md)
+    * [Avisos e lembretes](funcionalidades/cobrancas/avisos-e-lembretes.md)
+    * [Cobranças no Chatbot](funcionalidades/cobrancas/cobrancas-no-chatbot.md)
+    * [Relatórios de cobranças](funcionalidades/cobrancas/relatorios-de-cobrancas.md)
   * [PWA CELULAR](funcionalidades/instalacao-do-pwa-e-habilitacao-de-notificacoes.md)
 
 ## Integrações

@@ -16,6 +16,10 @@
 [gestao](gestao/)
 {% endcontent-ref %}
 
+{% content-ref url="cobrancas/" %}
+[cobrancas](cobrancas/)
+{% endcontent-ref %}
+
 {% content-ref url="catalogo/" %}
 [catalogo](catalogo/)
 {% endcontent-ref %}
