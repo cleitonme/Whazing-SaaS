@@ -69,7 +69,22 @@ Somente responda o que estiver prompt, transfira para setor conforme palavras ch
 
 ***
 
-## ⚙️ Passo 5 — Ações Automáticas
+## 🧭 Passo 5 — Qualificação de Leads
+
+A IA pode fazer algumas perguntas no início da conversa para descobrir se o contato tem perfil de cliente. Esta etapa é **opcional** — dá para pular e configurar depois na edição.
+
+* Ligue **Ativar qualificação** para usar.
+* Monte as perguntas do zero ou use um modelo pronto: **Imobiliária — comprador**, **Assistência técnica** ou **Serviços para empresas**.
+* Ajuste as perguntas, as instruções, o **contexto do negócio** e os **critérios de classificação**.
+* Se quiser, escolha as etiquetas de qualificado/não qualificado e a etapa do Kanban.
+
+📖 [Qualificação de leads — passo a passo →](qualificacao-de-leads.md)
+
+> 💡 Se pular, a IA atende normalmente, sem triagem.
+
+***
+
+## ⚙️ Passo 6 — Ações Automáticas
 
 * **Transferência por palavras-chave** — quer transferir automaticamente para alguma fila com base em palavras-chave? Você pode configurar agora ou pular e fazer depois na edição.
 * **Automação de Kanban** — escolha qual sistema de Kanban a IA deve usar e como ela deve decidir quando mover ou criar cards. Ative a **movimentação automática** se desejar.
@@ -78,7 +93,7 @@ Somente responda o que estiver prompt, transfira para setor conforme palavras ch
 
 ***
 
-## 📚 Passo 6 — Fonte de Informações
+## 📚 Passo 7 — Fonte de Informações
 
 Sua IA pode consultar uma **base de conhecimento** para responder melhor. Isso é opcional.
 
@@ -87,7 +102,7 @@ Sua IA pode consultar uma **base de conhecimento** para responder melhor. Isso �
 
 ***
 
-## ✅ Passo 7 — Revisão
+## ✅ Passo 8 — Revisão
 
 Confira tudo antes de criar sua integração:
 
@@ -95,6 +110,7 @@ Confira tudo antes de criar sua integração:
 * Modelo
 * IA
 * Personalidade
+* Qualificação (ativada ou desativada e quantas perguntas foram configuradas)
 
 Clique em **criar** para finalizar.
 
@@ -124,43 +140,38 @@ A partir de agora, os **novos atendimentos** destes canais utilizarão a sua int
 Na lista de integrações você encontra:
 
 * **Ativar** — reabre o wizard de ativação (fila, canais, confirmação) para ativar ou alterar os canais.
-* **Editar** — abre as **informações avançadas** com as abas:
+* **Editar** — abre as **informações avançadas** com as abas.
+* **Duplicar** — cria uma cópia da integração, com o nome terminado em **(cópia)**. Útil para testar variações sem mexer na original.
+* **Excluir** — remove a integração, após confirmação.
+* **Instruções** — abre uma janela com orientações sobre as integrações.
 
 ### 📋 Aba Geral
 
-A aba **Geral** mostra as informações da integração:
+No topo da tela de edição, fora das abas, ficam o **tipo** e o **nome** da integração. A aba **Geral** concentra a escolha da IA:
 
-* **Tipo** — Inteligência Artificial – Recepção Inteligente
-* **Nome da Integração** — o nome definido no cadastro
-* **Status** — "Sua integração está 100% pronta" com o resumo (IA compartilhada do sistema · Fila · canais vinculados)
-* **IA** — escolha entre **Utilizar IA disponibilizada pelo sistema** (recomendado) ou **Utilizar minha própria API**
-* **Testar integração** — botão para validar o funcionamento
+* **Utilizar IA disponibilizada pelo sistema** — pronto para usar, incluído no plano (quando o seu plano libera essa opção).
+* **Utilizar minha própria API** — provedor, modelo, URL base (quando o provedor é **Custom**) e API Key.
+* **Testar conexão** — confere a configuração e, quando algo falha, mostra uma mensagem explicando o motivo (chave inválida, modelo inexistente, sem crédito).
 
-Resumo da integração:
-
-* IA compartilhada do sistema
-* Prompt principal preenchido
-* Base de conhecimento utilizada ou não
-* PIX utilizado ou não
-
-***
+Acima das abas fica o card de status **“Sua integração está X% pronta”**, com o resumo (modelo de IA · fila vinculada · canais) e uma lista de conferências. **Cada item da lista é clicável** e leva direto à aba que precisa de ajuste.
 
 ### 🗂️ Abas de configuração
 
 | Aba | O que configura | Documentação |
 | --- | --- | --- |
-| **Geral** | Tipo, nome, IA (compartilhada do sistema ou própria) e teste | — |
-| **Personalidade** | Modelo de atendimento e prompt principal/secundário | [Instruções eficientes](como-criar-instrucoes-eficientes-para-atendimento-automatico-com-ia.md) |
-| **Comportamento** | Histórico de atendimentos anteriores e tempo de espera para resposta | — |
-| **Automação** | Transferência por filas/palavras-chave, usuários, chatbot, etiquetas, Kanban, arquivos, chave PIX e agendamento | [Etiquetas e Kanban](etiquetas-automaticas-e-kanban-com-ia.md) · [Arquivos](envio-de-arquivos-via-ia.md) · [PIX](botao-pix-automatico-no-atendimento.md) · [Agendamento pela IA](../../../funcionalidades/agenda/agendamento-pela-recepcao-inteligente.md) |
+| **Geral** | IA compartilhada do sistema ou própria API, provedor, modelo, URL base, API Key e teste de conexão | [Provedor personalizado](configurando-provedor-de-ia-personalizado-openai-compativel.md) |
+| **Personalidade** | Modelo de atendimento, prompt principal/secundário e **Qualificação de leads** | [Instruções eficientes](como-criar-instrucoes-eficientes-para-atendimento-automatico-com-ia.md) · [Qualificação](qualificacao-de-leads.md) |
+| **Comportamento** | Histórico de atendimentos anteriores e tempo de espera para resposta | [Comportamento](comportamento.md) |
+| **Automação** | Transferência por filas/palavras-chave, usuários, chatbot, etiquetas, Kanban, arquivos, chave PIX, agendamento e Chat Externo | [Etiquetas e Kanban](etiquetas-automaticas-e-kanban-com-ia.md) · [Arquivos](envio-de-arquivos-via-ia.md) · [PIX](botao-pix-automatico-no-atendimento.md) · [Agendamento pela IA](../../../funcionalidades/agenda/agendamento-pela-recepcao-inteligente.md) · [Chat Externo](chat-externo-na-recepcao-inteligente.md) |
 | **Conhecimento** | Base de conhecimento, busca na web, MCP e correspondência semântica | [Base de conhecimento](base-de-conhecimento.md) · [Busca na web](busca-na-web.md) · [MCP](mcp-e-ferramentas-de-ia.md) · [Busca semântica](busca-semantica.md) |
+| **Produtos** | Catálogo consultado pela IA: escopo, disponibilidade, fotos, links e escolha do produto | [Catálogo na Recepção Inteligente](catalogo-na-recepcao-inteligente.md) |
 | **Voz** | Respostas por áudio (provedor, modelo e quando enviar áudio) | [Resposta por áudio](configuracao-de-resposta-por-audio.md) |
 | **Followup** | Follow-up automático e ausência de resposta | [Follow-up](follow-up-recepcao-inteligente.md) |
-| **Avançado** | Parâmetros técnicos (tokens, temperatura) e Command Analyzer (IA 2) | [Provedor personalizado](configurando-provedor-de-ia-personalizado-openai-compativel.md) |
+| **Avançado** | Parâmetros técnicos (tokens, temperatura, tentativas) e Command Analyzer (IA 2) | [Provedor personalizado](configurando-provedor-de-ia-personalizado-openai-compativel.md) |
 
 ### ⚙️ Parâmetros Técnicos (aba Avançado)
 
-A aba **Avançado** só aparece quando você liga o toggle **"Configurações avançadas"** na aba **Geral**.
+A aba **Avançado** aparece quando você liga o toggle **Mostrar configurações avançadas**, localizado **acima das abas**. Ela também aparece sozinha quando os parâmetros técnicos estão fora dos valores recomendados (tokens diferentes de `300` ou temperatura diferente de `0.1`).
 
 | Campo | O que significa (sem enrolação) | Padrão |
 | --- | --- | --- |

@@ -45,4 +45,4 @@ Não. Ela segue o prompt configurado e pode ser limitada a responder dentro do q
 Não. Ela faz pré-atendimento: responde o que consegue e encaminha para a equipe no momento certo.
 
 **Como testar antes de usar de verdade?**
-Use **Simular conversa** na tela da integração. O simulador testa o prompt e as transferências, mas tem limitações — veja o botão **Ver limitações** dentro do teste.
+Use **Testar configuração** para um diagnóstico rápido e **Simular conversa** para conversar com a IA. O simulador consulta a Base de Conhecimento, o catálogo e a busca web de verdade, mas não envia nem grava nada — e ainda não reproduz áudio, imagem, voz e follow-up. Veja [Simulador de conversa e testes](simulador-de-conversa.md).

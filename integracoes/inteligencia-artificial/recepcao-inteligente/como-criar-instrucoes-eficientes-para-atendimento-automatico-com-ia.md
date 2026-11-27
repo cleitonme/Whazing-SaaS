@@ -64,7 +64,9 @@ Na tela da integração, a seção **Testar IA** oferece duas formas de validar 
 * **Testar configuração** — um diagnóstico que confere provedor, modelo, API Key e conexão, e ainda dá uma **nota à qualidade do seu prompt** com sugestões de melhoria (dá para ver e copiar uma versão melhorada do prompt).
 * **Simular conversa** — um chat de teste para conversar com a sua IA como se fosse o cliente.
 
-> ⚠️ O simulador é uma **aproximação**: Base de Conhecimento, busca na web, arquivos e PIX não são executados de verdade. Veja as limitações completas na seção [Testando a integração](./#-testando-a-integração-simular-conversa) do guia principal.
+> 💡 O simulador **consulta de verdade** a Base de Conhecimento, o catálogo, os arquivos e a busca web (quando você autoriza). O que ele não faz é **escrita real**: nenhuma mensagem, arquivo, PIX, etiqueta ou agendamento é enviado ou gravado.
+
+> ⚠️ Áudio, imagem e vídeo recebidos, respostas em áudio e o follow-up automático ainda não são reproduzidos. Veja [Simulador de conversa e testes](simulador-de-conversa.md).
 
 ***
 

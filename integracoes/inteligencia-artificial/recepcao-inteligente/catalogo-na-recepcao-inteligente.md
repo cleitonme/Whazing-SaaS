@@ -124,7 +124,7 @@ A opção **Usar tools nativas da API (avançado)** fica **desativada por padrã
 * Ao conversar com a IA (em teste real pelo canal), ela responde com produtos do seu catálogo, usando os preços cadastrados.
 * As escolhas dos clientes aparecem na aba **Vendas** do atendimento e no relatório de vendas da IA.
 
-> ⚠️ **Teste com um cliente ou número de teste.** A simulação de conversa da Recepção Inteligente tem limitações e pode não reproduzir todos os recursos.
+> 💡 **Teste no simulador:** a simulação consulta o catálogo de verdade e mostra os produtos que a IA escolheria. O envio de fotos, de links e a transferência ficam apenas simulados — para validar a entrega, use um cliente ou número de teste. Veja [Simulador de conversa e testes](simulador-de-conversa.md).
 
 ---
 

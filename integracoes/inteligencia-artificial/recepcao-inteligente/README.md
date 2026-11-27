@@ -19,6 +19,15 @@ Esse recurso ajuda a reduzir a carga da equipe, garantindo que o cliente seja di
 
 ***
 
+## 🆕 Novidades
+
+* **Qualificação de leads** — a IA faz perguntas, registra as respostas e classifica o contato para a equipe. [Como configurar →](qualificacao-de-leads.md)
+* **Simulador reformulado** — janela flutuante, escolha de contato e leituras reais (Base de Conhecimento, catálogo, busca web e MCP), sem nenhuma escrita real. [Como testar →](simulador-de-conversa.md)
+* **Catálogo** — a IA consulta produtos, informa disponibilidade, envia fotos e registra a escolha do cliente. [Catálogo na Recepção →](catalogo-na-recepcao-inteligente.md)
+* **Chat Externo** — envio do link para o cliente continuar o atendimento pelo navegador. [Como configurar →](chat-externo-na-recepcao-inteligente.md)
+
+***
+
 ## 📍 Onde acessar
 
 Acesse:
@@ -31,15 +40,16 @@ No primeiro cadastro, o sistema exibe um **wizard guiado** simples, ideal para i
 
 ## 🚀 Como criar sua integração
 
-O cadastro é feito pelo wizard **Nova integração Smart Reception** em **7 passos**:
+O cadastro é feito pelo wizard **Nova integração Smart Reception** em **8 passos**:
 
 1. **Nome** — como chamar a integração
 2. **Modelo** — personalizado ou modelo pronto por segmento
 3. **IA** — IA disponibilizada pelo sistema ou sua própria API
 4. **Personalidade** — prompt principal (e secundário opcional)
-5. **Ações Automáticas** — transferência por palavras-chave e Kanban (opcional)
-6. **Fonte de Informações** — base de conhecimento e arquivos (opcional)
-7. **Revisão** — confira e crie
+5. **Qualificação de Leads** — perguntas de triagem e critérios de classificação (opcional)
+6. **Ações Automáticas** — transferência por palavras-chave e Kanban (opcional)
+7. **Fonte de Informações** — base de conhecimento e arquivos (opcional)
+8. **Revisão** — confira e crie
 
 Depois, o wizard **"Vamos ativar sua integração"** define a **fila** (criada automaticamente), os **canais** e a **confirmação**.
 
@@ -53,14 +63,15 @@ Após criar, o botão **Editar** abre as **informações avançadas** em abas:
 
 | Aba | O que configura | Documentação |
 | --- | --- | --- |
-| **Personalidade** | Modelo de atendimento, prompt principal e secundário | [Instruções eficientes](como-criar-instrucoes-eficientes-para-atendimento-automatico-com-ia.md) |
+| **Geral** | IA do sistema ou própria API, provedor, modelo, URL base, API Key e teste de conexão | [Criar e ativar](como-ativar-a-integracao.md) · [Provedor personalizado](configurando-provedor-de-ia-personalizado-openai-compativel.md) |
+| **Personalidade** | Modelo de atendimento, prompt principal/secundário e **Qualificação de leads** | [Instruções eficientes](como-criar-instrucoes-eficientes-para-atendimento-automatico-com-ia.md) · [Qualificação](qualificacao-de-leads.md) |
 | **Comportamento** | Histórico de atendimentos anteriores e tempo de espera para resposta | [Comportamento](comportamento.md) |
-| **Automação** | Transferência por filas, usuários, chatbot, etiquetas, Kanban, arquivos, chave PIX e agendamento | [Etiquetas e Kanban](etiquetas-automaticas-e-kanban-com-ia.md) · [Arquivos](envio-de-arquivos-via-ia.md) · [PIX](botao-pix-automatico-no-atendimento.md) · [Agendamento pela IA](../../../funcionalidades/agenda/agendamento-pela-recepcao-inteligente.md) |
+| **Automação** | Transferência por filas, usuários, chatbot, etiquetas, Kanban, arquivos, chave PIX, agendamento e **Chat Externo** | [Etiquetas e Kanban](etiquetas-automaticas-e-kanban-com-ia.md) · [Arquivos](envio-de-arquivos-via-ia.md) · [PIX](botao-pix-automatico-no-atendimento.md) · [Agendamento pela IA](../../../funcionalidades/agenda/agendamento-pela-recepcao-inteligente.md) · [Chat Externo](chat-externo-na-recepcao-inteligente.md) |
 | **Conhecimento** | Base de conhecimento, busca na web, MCP e busca semântica | [Base de conhecimento](base-de-conhecimento.md) · [Busca na web](busca-na-web.md) · [MCP](mcp-e-ferramentas-de-ia.md) · [Busca semântica](busca-semantica.md) |
 | **Produtos** | Catálogo consultado pela IA: escopo, estoque, fotos, links e escolha do produto | [Catálogo na Recepção Inteligente](catalogo-na-recepcao-inteligente.md) |
 | **Voz** | Respostas por áudio | [Resposta por áudio](configuracao-de-resposta-por-audio.md) |
 | **Followup** | Follow-up automático e ausência de resposta | [Follow-up](follow-up-recepcao-inteligente.md) |
-| **Avançado** | Parâmetros técnicos (tokens, temperatura) e Command Analyzer (IA 2) | [Provedor personalizado](configurando-provedor-de-ia-personalizado-openai-compativel.md) |
+| **Avançado** | Parâmetros técnicos (tokens, temperatura, tentativas) e Command Analyzer (IA 2) | [Provedor personalizado](configurando-provedor-de-ia-personalizado-openai-compativel.md) |
 
 ***
 
@@ -73,6 +84,8 @@ Após criar, o botão **Editar** abre as **informações avançadas** em abas:
 * **Mensagens personalizadas** — mensagem de transferência com ou sem usuários online.
 * **Parâmetros avançados** — máximo de tokens, temperatura e histórico de mensagens.
 * **Command Analyzer (IA 2)** — segunda IA que analisa a resposta da IA 1 e decide ações de sistema (transferir para fila/usuário, enviar arquivo, PIX, encerrar). A IA 1 autoriza a ação; a IA 2 escolhe o destino.
+* **Qualificação de leads** — perguntas de triagem, critérios e classificação do contato (Qualificado, Em avaliação ou Não qualificado).
+* **Dry-run do simulador** — o simulador lê dados reais (base, catálogo, busca web, MCP), mas não envia nem grava nada.
 
 ***
 
@@ -127,24 +140,18 @@ Para dúvidas rápidas sobre o comportamento da Recepção Inteligente — espec
 
 ***
 
-## 🧪 Testando a integração (Simular conversa)
+## 🧪 Testando a integração
 
-Na tela da integração você encontra o botão **Simular conversa**, que abre um chat de teste para conversar com a sua IA.
+No fim da tela de edição, na seção **Testar integração**, ficam duas ferramentas — elas aparecem em qualquer aba:
 
-> ⚠️ **O simulador é uma simulação — tem limitações.** Veja o botão **Ver limitações** no próprio teste.
+* **Testar configuração** — diagnóstico de provedor, modelo, API Key e conexão, com uma **nota para a qualidade do prompt** e sugestões de melhoria.
+* **Simular conversa** — um chat de teste em janela flutuante, para conversar com a sua IA como se fosse o cliente.
 
-| Recurso | Comportamento no simulador |
-| --- | --- |
-| **Base de Conhecimento** | Itens da KB **não são buscados** — a IA responde apenas com o prompt configurado |
-| **Busca web (Tavily)** | Nenhuma pesquisa é feita na web durante a simulação |
-| **Envio de arquivos** | O comando `sendFile` é detectado e exibido, mas o arquivo **não é enviado de fato** |
-| **PIX** | O comando `SendPix` é detectado e exibido, mas nenhuma chave é enviada |
-| **Verificação de usuários online** | Transferências acontecem **sem checar** se há atendentes disponíveis |
-| **Histórico real de tickets** | A conversa começa do zero — sem contexto de atendimentos anteriores do contato |
+> 🆕 O simulador agora é de **alta fidelidade**: ele **lê de verdade** a Base de Conhecimento, o catálogo, os arquivos, a busca web (quando você autoriza) e as ferramentas MCP. O que ele **não faz** é escrever — mensagens, arquivos, PIX, agendamentos, etiquetas e Kanban ficam apenas simulados.
 
-> 💡 **O que funciona fielmente:** prompt principal, filas, usuários e comandos são simulados fielmente.
+> 💡 Áudio, imagem e vídeo recebidos, respostas em áudio (TTS) e o follow-up automático ainda **não** são reproduzidos no simulador.
 
-> 💡 Para testar **Base de Conhecimento, busca web, arquivos e PIX de verdade**, faça um teste **real** pelo WhatsApp/canal configurado.
+📖 [Passo a passo do simulador e do teste de configuração →](simulador-de-conversa.md)
 
 ***
 
