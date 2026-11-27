@@ -44,6 +44,8 @@ Assim você identifica de onde vem o lead sem precisar abrir a aba de dados.
 * ✔️ **Validar WhatsApp:** botão de ativação que indica que o número tem WhatsApp válido. Em grupos, ele fica desativado automaticamente.
 * Extras que aparecem **durante a edição** (não no cadastro): **@username** (Telegram/Instagram) e **código do país**.
 
+> 💡 **Contatos sem telefone:** contatos importados **somente com e-mail** (veja [Importar Contatos](importarcontatos.md)) aparecem sem número. Ao editar um contato já salvo, o campo pode continuar vazio e o contato é gravado normalmente. Já no **cadastro manual** de um contato novo, o número continua obrigatório.
+
 ### 🔒 Número escondido (configuração HideNumber)
 
 Se o administrador ativou a opção **HideNumber** nas configurações, o campo de telefone fica **escondido dos usuários comuns**. Só administradores e supervisores continuam vendo/editando o número.

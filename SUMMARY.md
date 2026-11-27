@@ -213,6 +213,7 @@
       * [Bloquear Múltiplos Logins](funcionalidades/gestao/usuarios/bloquear-multiplos-logins.md)
     * [Perfil de Usuário](funcionalidades/gestao/perfil_usuario.md)
     * [Contatos](funcionalidades/gestao/contatos/README.md)
+      * [Lista de Contatos](funcionalidades/gestao/contatos/lista-de-contatos.md)
       * [Modal de Edição de Contatos](funcionalidades/gestao/contatos/modal-de-edicao-de-contatos.md)
       * [Importar Contatos](funcionalidades/gestao/contatos/importarcontatos.md)
       * [Arquivos do Contato](funcionalidades/gestao/contatos/arquivos-do-contato.md)
