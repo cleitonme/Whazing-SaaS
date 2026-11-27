@@ -20,16 +20,19 @@ A tela **Atendimento** é o coração do Whazing: é nela que sua equipe lê as 
 2. [Status dos atendimentos](tela-atendimento.md#status-dos-atendimentos)
 3. [A lista de atendimentos em detalhe](tela-atendimento.md#a-lista-de-atendimentos-em-detalhe)
 4. [Como encontrar um atendimento](tela-atendimento.md#como-encontrar-um-atendimento)
-5. [Como abrir uma conversa](tela-atendimento.md#como-abrir-uma-conversa)
-6. [Conversando com o cliente](tela-atendimento.md#conversando-com-o-cliente)
-7. [Ações dentro da conversa (mensagens)](tela-atendimento.md#ações-dentro-da-conversa-mensagens)
-8. [Ações do atendimento (cabeçalho da conversa)](tela-atendimento.md#ações-do-atendimento-cabeçalho-da-conversa)
-9. [Informações do cliente (painel do cliente)](tela-atendimento.md#informações-do-cliente-painel-do-cliente)
-10. [Criar um novo atendimento](tela-atendimento.md#criar-um-novo-atendimento)
-11. [Permissões: o que muda entre administrador, supervisor e atendente](tela-atendimento.md#permissões-o-que-muda-entre-administrador-supervisor-e-atendente)
-12. [Diferenças por canal (WhatsApp, Instagram, Telegram etc.)](tela-atendimento.md#diferenças-por-canal-whatsapp-instagram-telegram-etc)
-13. [Configurações que mudam o que aparece na tela](tela-atendimento.md#configurações-que-mudam-o-que-aparece-na-tela)
-14. [Problemas comuns](tela-atendimento.md#problemas-comuns)
+5. [Itens arquivados](tela-atendimento.md#itens-arquivados)
+6. [Como abrir uma conversa](tela-atendimento.md#como-abrir-uma-conversa)
+7. [Conversando com o cliente](tela-atendimento.md#conversando-com-o-cliente)
+8. [Ações dentro da conversa (mensagens)](tela-atendimento.md#ações-dentro-da-conversa-mensagens)
+9. [Silenciar contato](tela-atendimento.md#silenciar-contato)
+10. [Ações do atendimento (cabeçalho da conversa)](tela-atendimento.md#ações-do-atendimento-cabeçalho-da-conversa)
+11. [Informações do cliente (painel do cliente)](tela-atendimento.md#informações-do-cliente-painel-do-cliente)
+12. [Impressão e PDF da conversa](tela-atendimento.md#impressão-e-pdf-da-conversa)
+13. [Criar um novo atendimento](tela-atendimento.md#criar-um-novo-atendimento)
+14. [Permissões: o que muda entre administrador, supervisor e atendente](tela-atendimento.md#permissões-o-que-muda-entre-administrador-supervisor-e-atendente)
+15. [Diferenças por canal (WhatsApp, Instagram, Telegram etc.)](tela-atendimento.md#diferenças-por-canal-whatsapp-instagram-telegram-etc)
+16. [Configurações que mudam o que aparece na tela](tela-atendimento.md#configurações-que-mudam-o-que-aparece-na-tela)
+17. [Problemas comuns](tela-atendimento.md#problemas-comuns)
 
 ***
 
@@ -75,7 +78,9 @@ Dentro das abas **Individual** e **Grupos** há pílulas de status:
 
 Cada pílula mostra um **número**: quantas conversas existem naquele status. Na pílula **Abertos**, esse número fica **vermelho** quando há mensagens não lidas.
 
-> 💡 Abas/pílulas **vazias podem ficar escondidas** — depende da configuração "Ocultar abas vazias" feita pelo administrador. Se você não vê uma pílula, provavelmente é porque ela está vazia ou desativada.`ores]`
+> 💡 Abas/pílulas **vazias podem ficar escondidas** — depende da configuração "Ocultar abas vazias" feita pelo administrador. Se você não vê uma pílula, provavelmente é porque ela está vazia ou desativada.
+
+> 💬 **Mensagens de grupo:** o administrador pode configurar o alinhamento por remetente — as mensagens do atendente logado à direita e as dos demais atendentes à esquerda. Veja [Alinhar mensagens por remetente em grupos](../gestao/configuracoes-do-atendimento.md#alinhar-mensagens-por-remetente-em-grupos).
 
 ***
 
@@ -120,7 +125,8 @@ Cada item da lista mostra:
 <figure><img src="../../.gitbook/assets/itemticket.png" alt=""><figcaption></figcaption></figure>
 
 * **Iniciar Atendimento** ➤ _(só em conversas Pendentes)_ — assume a conversa para você.
-* **Finalizar Atendimento** ✓ _(só em conversas Abertas/Pendentes)_ — encerra o atendimento. Em grupos, só administrador e supervisor veem este botão.
+* **Finalizar Atendimento** ✓ _(só em conversas Abertas/Pendentes)_ — encerra o atendimento. Em grupos, o botão aparece para administrador e supervisor — ou para todos, se o administrador ativar "Permitir fechar e transferir tickets de grupos para todos os usuários".
+
 * **Opções** ⋮ (três pontinhos) — abre o menu:
   * **Fixar no topo / Desafixar** — prende o atendimento no começo da lista, para não se perder entre tantas conversas.
   * **Prioridade** _(só aparece quando o item está fixado)_ — **Subir prioridade** e **Descer prioridade** reordenam os fixados entre si. O de cima da lista é o mais prioritário.
@@ -128,6 +134,26 @@ Cada item da lista mostra:
   * **Arquivar / Desarquivar** — guarda a conversa na aba Arquivados (ou traz de volta). Ao arquivar, o sistema pede confirmação. Não é possível arquivar um atendimento **fechado** que ainda não está arquivado — primeiro feche, depois arquive, ou arquive antes de fechar.
 
 > 💡 **Fixar ≠ Prioridade ≠ Arquivar.** Fixar deixa sempre visível no topo; prioridade ordena entre os fixados; arquivar tira da lista normal. Nenhuma dessas ações muda o status do atendimento.
+
+### Silenciar contato
+
+Para parar de receber avisos de um contato ou grupo **sem perder nenhuma mensagem**:
+
+1. No item da conversa, clique no menu **⋮** (três pontinhos).
+2. Escolha **Silenciar notificações**.
+3. Selecione por quanto tempo:
+
+| Opção | O que faz |
+| --- | --- |
+| **Por 8 horas** | Silencia até o fim do dia de trabalho |
+| **Por 1 semana** | Silencia por sete dias |
+| **Sempre** | Silencia até você reativar manualmente |
+
+Enquanto estiver silenciado, o item mostra um **sino cortado** ao lado do nome (passe o mouse para ver "Notificações silenciadas"). Para voltar a receber avisos, abra o menu **⋮** e escolha **Reativar notificações**.
+
+**O que o silêncio corta:** som, notificação de desktop, push e o badge do sino. **O que continua igual:** a mensagem chega normalmente e continua contando como **não lida**.
+
+> 💡 O silêncio fica **gravado no contato ou grupo**, não no ticket: vale também para atendimentos futuros da mesma conversa.
 
 ***
 
@@ -195,9 +221,17 @@ Nos dois, você pode **marcar mais de uma opção** — a lista mostra os atendi
 
 A lista carrega as conversas aos poucos. Role até o fim para carregar mais automaticamente, ou clique no botão **📄 Carregar Mais Tickets** ao lado das abas. _(Com "Visualizar Todos" ligado, use o botão — a rolagem automática fica desligada nesse modo.)_
 
-### Aba Arquivados
+### Itens arquivados
 
-Na aba **Arquivados** existe um campo próprio "**Buscar arquivados...**" para localizar conversas arquivadas por nome, número, texto da última mensagem ou número do ticket. Clique em **Carregar mais** para ver mais resultados.
+A aba **Arquivados** reúne as conversas que foram guardadas fora da lista normal. Ela usa **os mesmos recursos de busca da aba Individual**:
+
+* os **três modos de pesquisa** no campo do topo — contato, mensagens e Ticket ID;
+* os **filtros avançados** do funil (filas, etiquetas, usuários, status e demais filtros);
+* o botão **Carregar mais**, no fim da lista, para trazer mais conversas arquivadas.
+
+A aba também tem **seleção e ações em massa** (para administradores e supervisores), incluindo uma ação exclusiva: **Desarquivar**. Veja [Ações em massa](tela-atendimento.md#ações-em-massa-selecionar-vários-atendimentos).
+
+> 💡 Arquivar **não é fechar**: o atendimento continua com o mesmo status, apenas sai da lista normal. Ao receber uma nova mensagem, o ticket arquivado volta automaticamente para a lista.
 
 ### Canais desconectados
 
@@ -207,11 +241,11 @@ Se um canal (número de WhatsApp, Instagram...) **desconectar**, um aviso aparec
 
 ## Ações em massa (selecionar vários atendimentos)
 
-Para administradores e supervisores, é possível aplicar uma mesma ação em **vários atendimentos de uma vez**, escolhendo **exatamente quais** participarão. Somente admin e Supervisor
+Para administradores e supervisores, é possível aplicar uma mesma ação em **vários atendimentos de uma vez**, escolhendo **exatamente quais** participarão. Funciona nas abas **Individual**, **Grupos** e **Arquivados**.
 
 ### Como selecionar
 
-1. No topo da lista de atendimentos, clique no botão de **checkbox múltiplo** — o tooltip mostra **"Selecionar atendimentos"**. Ele fica destacado enquanto o modo está ativo. (_Não aparece na aba **Arquivados**._)
+1. No topo da lista de atendimentos, clique no botão de **checkbox múltiplo** — o tooltip mostra **"Selecionar atendimentos"**. Ele fica destacado enquanto o modo está ativo e aparece também na aba **Arquivados**.
 2. **Aparecem os checkboxes** em cada card da lista. Clique nos cards que quiser — o card inteiro alterna a marcação (no modo seleção, clicar no card **não abre** a conversa, só marca/desmarca).
 3. Uma **barra fixa no rodapé** da lista mostra **"{n} selecionado(s)"** e os atalhos:
    * **"Selecionar todos os carregados"** — marca de uma vez todos os atendimentos visíveis naquela aba;
@@ -232,15 +266,12 @@ Com um ou mais atendimentos selecionados, clique em **"Ações"** na barra do ro
 | **Desatribuir atendente** | Tira o responsável dos selecionados                                                 |
 | **Adicionar etiqueta**    | Aplica uma etiqueta em todos                                                        |
 | **Remover etiqueta**      | Tira uma etiqueta de todos                                                          |
+| **Desarquivar**           | Devolve os atendimentos para a lista normal — **só aparece na aba Arquivados**       |
 | **Excluir atendimentos**  | **Apaga** os selecionados — **pede confirmação** e a ação **não pode ser desfeita** |
 
 Ao concluir, o sistema informa **"{n} atendimento(s) atualizado(s)."** — e, quando algum fica de fora por regra (ex.: já estava naquele status, ou desatribuir um atendimento aberto), avisa quantos foram **ignorados** e por quê.
 
-> 💡 As confirmações só aparecem nas ações difíceis de desfazer (fechar e excluir). As demais são aplicadas direto — mas vale conferir a seleção antes, pela contagem na barra.
-
-
-
-<figure><img src="../../.gitbook/assets/acoesemmassaatendimento.png" alt=""><figcaption></figcaption></figure>
+> 💡 As confirmações só aparecem nas ações difíceis de desfazer. **Fechar** pergunta "Fechar {n} atendimento(s) selecionado(s)?"; **Excluir** pergunta "Excluir {n} atendimento(s) selecionado(s)? Esta ação não pode ser desfeita". As demais são aplicadas direto — vale conferir a seleção antes, pela contagem na barra.
 
 <figure><img src="../../.gitbook/assets/acoesmassaatendomento2.png" alt=""><figcaption></figcaption></figure>
 
@@ -540,10 +571,31 @@ Mostra **foto, nome e telefone** (o telefone pode estar oculto por configuraçã
 * **⋮ Mais ações** — abre o menu com:
   * **Desativar bot deste atendimento** _(aparece só quando um robô está atendendo)_ — tira a conversa do chatbot/IA e deixa ela Pendente para humanos.
   * **Sincronizar Mensagens** _(só canais WhatsApp Plus/Wuzapi, com conversa aberta)_ — importa de novo as últimas mensagens que não chegaram; você escolhe a quantidade (até 100).
-  * **Exibir Chat Completo** — abre a conversa em modo de consulta (leitura), incluindo histórico de conversas anteriores do mesmo contato.
-  * **Baixar PDF mensagens ticket ativo** — gera um **PDF do atendimento** com todas as mensagens (bom para anexar em um chamado ou guardar como comprovante).
+  * **Imprimir / PDF** — abre a conversa completa em uma janela própria, com os botões **Imprimir** e **Baixar PDF** (veja [Impressão e PDF da conversa](tela-atendimento.md#impressão-e-pdf-da-conversa)).
   * **Logs** — linha do tempo do ticket: quem assumiu, transferiu, adicionou colaborador etc. (com data e hora). Também registram **menções em anotações**: quando alguém cria uma anotação marcando um usuário ou equipe, aparece "Mencionou {nome} na anotação" — veja [Anotação Tickets](../gestao/anotacao-tickets.md).
   * **Deletar Ticket** _(só admin/supervisor)_ — **exclui permanentemente** o atendimento, com confirmação. Cuidado: não tem volta.
+
+### Impressão e PDF da conversa
+
+Para guardar ou enviar o histórico do atendimento:
+
+1. No **painel do cliente**, abra o menu **⋮ Mais ações**.
+2. Escolha **Imprimir / PDF** (ícone de impressora).
+3. A janela **"Ticket {número}"** abre com a conversa completa.
+4. No rodapé, escolha:
+   * **Imprimir** — abre a janela de impressão do navegador;
+   * **Baixar PDF** — gera o arquivo **`atendimento_{número}_mensagens.pdf`**.
+
+O documento sai com um **cabeçalho** identificando o ticket e o contato, e o sistema **carrega todo o histórico** antes de gerar o arquivo — enquanto isso, aparece o aviso **"Gerando documento..."** com o progresso.
+
+**O que esperar do arquivo:**
+
+* todas as mensagens do atendimento, em ordem;
+* anexos (áudio, vídeo, imagem, documento) **não são incluídos**: no lugar deles aparece uma observação;
+* em atendimentos de **e-mail**, as mensagens são abertas por completo para sair no documento;
+* se não for possível carregar todas as mensagens, o sistema avisa que é preciso tentar novamente antes de exportar.
+
+> 💡 Em conversas de **e-mail**, cada mensagem também tem um botão de **imprimir** no próprio cabeçalho, para imprimir apenas aquela mensagem.
 
 ### Aba Perfil
 
@@ -661,27 +713,27 @@ A tela muda conforme o canal da conversa. O resumo do que **só aparece** em cad
 
 Estas opções são definidas pelo administrador em **Configurações do Atendimento** (veja o guia). Elas fazem recursos **aparecerem ou sumirem** para todos os usuários:
 
-| Configuração                                                 | Efeito na tela Atendimento                                            |
-| ------------------------------------------------------------ | --------------------------------------------------------------------- |
-| **Ocultar abas vazias** (`hidetab`)                          | Pílulas de status sem conversas ficam escondidas                      |
-| **Chatbot em lane separada** (`chatbotLane`)                 | Cria a pílula "Chatbot" e tira os robôs da pílula "Pendentes"         |
-| **Exibir conexões** (`ExibirConexao`)                        | Mostra o aviso de canais desconectados no fim da lista                |
-| **Mostrar nome do canal** (`ShowChannelName`)                | Exibe/oculta o nome da conexão em cada conversa                       |
-| **Ocultar número** (`HideNumber`)                            | Esconde o telefone do cliente de quem não é admin/supervisor          |
-| **Reabrir Ticket** (`userReopenTicket`)                      | Libera o botão "Reabrir Ticket" para atendentes                       |
-| **Assinatura do usuário** (`userDisableSignature`)           | Quando ligada, atendentes não podem desligar a assinatura             |
-| **Espionar ticket** (`spyticket`)                            | Permite ler conversas Pendentes sem assumi-las                        |
-| **Assistente IA** (`AiAssist`)                               | Ativa o menu ✨ Assistente IA no campo de mensagem                     |
-| **Contatos apenas admin** (`ContactAdmin`)                   | Restringe o botão Contatos a admin/supervisor                         |
-| **Lançar Pedido** (`PedidoMI`)                               | Mostra o botão de integração de pedidos no cabeçalho                  |
-| **Visualizar Todos Tickets**                                 | Disponível nativamente a admin/supervisor (filtro do funil)           |
-| **Colaboradores** (`AllowJoinTicketCollaborator`)            | Habilita "Participar deste atendimento" na janela de ticket atribuído |
-| **Assumir tickets bloqueados** (`AllowAssumeBlockedTickets`) | Habilita "Assumir este atendimento" em conversas presas em fila/bot   |
-| **Reação como mensagem** (`reactionResponse`)                | Mostra as reações também como mensagens na conversa                   |
-| **Pacote de arquivos no chat** (`MediaZipGroupEnabled`)      | Quando desligada, some o card "Baixar todos em ZIP" e cada mídia volta a aparecer sozinha, com seu próprio botão de baixar |
-| **Marcador de mensagens não lidas** (`UnreadDividerEnabled`) | Quando desligada, some a linha "Mensagens não lidas" e a conversa volta a abrir sempre na mensagem mais recente           |
+| Configuração | Efeito na tela Atendimento |
+| --- | --- |
+| **Ocultar abas vazias** (`hidetab`) | Pílulas de status sem conversas ficam escondidas |
+| **Chatbot em lane separada** (`chatbotLane`) | Cria a pílula "Chatbot" e tira os robôs da pílula "Pendentes" |
+| **Exibir conexões** (`ExibirConexao`) | Mostra o aviso de canais desconectados no fim da lista |
+| **Mostrar nome do canal** (`ShowChannelName`) | Exibe/oculta o nome da conexão em cada conversa |
+| **Ocultar número** (`HideNumber`) | Esconde o telefone do cliente de quem não é admin/supervisor |
+| **Barra de respostas rápidas** (`QuickMessagesBarEnabled`) | Mostra/oculta as respostas rápidas favoritas acima do campo de mensagem |
+| **Último ticket fechado** (`GroupClosedTicket`) | Na lista de fechados, mostra só o ticket mais recente de cada contato |
+| **Ocultar encerrados de outros usuários** (`isNotViewAssignedClosedTickets`) | Esconde tickets fechados atribuídos a outros atendentes |
+| **Espionar ticket** (`spyticket`) | Permite ler conversas Pendentes sem assumi-las |
+| **Reabrir Ticket** (`userReopenTicket`) | Libera o botão "Reabrir Ticket" para atendentes |
+| **Assinatura do usuário** (`userDisableSignature`) | Quando ligada, atendentes não podem desligar a assinatura |
+| **Reação como mensagem** (`reactionResponse`) | Mostra as reações também como mensagens na conversa |
+| **Pacote de arquivos no chat** (`MediaZipGroupEnabled`) | Quando desligada, some o card "Baixar todos em ZIP" e cada mídia volta a aparecer sozinha |
+| **Marcador de mensagens não lidas** (`UnreadDividerEnabled`) | Quando desligada, some a linha "Mensagens não lidas" e a conversa abre sempre no fim |
+| **Alinhar mensagens por remetente em grupos** (`GroupTicketMessageAlignment`) | Em grupos, separa as mensagens do atendente logado (direita) das dos colegas (esquerda) |
 
-> Se algum recurso deste guia **não está aparecendo** para você, provavelmente é uma destas configurações — ou a permissão do seu perfil. Confira com o administrador.
+> 📄 O significado de cada opção, os valores padrão e as demais configurações estão no guia [Configurações do Atendimento](../gestao/configuracoes-do-atendimento.md).
+>
+> Se algum recurso deste guia **não está aparecendo** para você, pode ser uma dessas configurações — ou a permissão do seu perfil. Confira com o administrador.
 
 ***
 
