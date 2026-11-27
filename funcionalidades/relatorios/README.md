@@ -18,13 +18,13 @@ As seções disponíveis são:
 
 | Seção          | O que você encontra lá                                                              |
 | -------------- | ------------------------------------------------------------------------------------- |
-| **Atendimento** | Tickets, produtividade de atendentes, avaliações, anotações e o **Dashboard de SLA** — veja [Dashboard de SLA](dashboard-de-sla.md) |
+| **Atendimento** | Tickets, produtividade de atendentes, avaliações, anotações, o **Dashboard de SLA** e as **Vendas da Recepção Inteligente** — veja [Dashboard de SLA](dashboard-de-sla.md) e [Vendas da Recepção Inteligente](../catalogo/relatorios.md) |
 | **Contatos**    | Análises sobre a base de clientes                                                     |
 | **Ligações**    | Chamadas e telefonia (SIP, WaCalls etc.)                                              |
 | **Kanban Pro**  | Cards e movimentações do Kanban Pro                                                   |
 | **Kanban CRM**  | Oportunidades e funil do Kanban CRM                                                   |
 | **Marketing**   | Campanhas, tracking links, resultados de disparos e o **Meta Ads Analytics** — veja [Meta Ads Analytics](meta-ads.md) |
-| **Financeiro**  | Custos, cobranças e o **Meta de Vendas** — veja [Meta de Vendas](meta-de-vendas.md) |
+| **Financeiro**  | Custos, cobranças, o **Meta de Vendas** e os **Produtos em faturas e orçamentos** — veja [Meta de Vendas](meta-de-vendas.md) e [Relatórios do Catálogo](../catalogo/relatorios.md) |
 | **WebChat**     | **Visitantes do WebChat**: quem está no site em tempo real, histórico e mapa — veja o guia do [WebChat](../../canais-disponiveis/webchat.md#️-visitantes-do-webchat--quem-está-no-site-agora) |
 | **Auditoria**   | Histórico de alterações e exclusões (logs de auditoria)                               |
 | **Agenda**      | Agendamentos: **Agenda do Dia**, **Agendamentos**, **Agenda por profissional e serviço** e **Estatísticas da Agenda** — veja [Relatórios da Agenda](../agenda/relatorios-da-agenda.md) |
@@ -71,4 +71,4 @@ Confira o período e os filtros. Períodos muito largos podem demorar mais — p
 
 ---
 
-> 📄 Relatórios por módulo: [Relatórios da Agenda](../agenda/relatorios-da-agenda.md) · [Relatórios do Kanban Pro](../kanban-pro/relatorios.md) · [Dashboard de SLA](dashboard-de-sla.md) · [Meta de Vendas](meta-de-vendas.md)
+> 📄 Relatórios por módulo: [Relatórios da Agenda](../agenda/relatorios-da-agenda.md) · [Relatórios do Kanban Pro](../kanban-pro/relatorios.md) · [Relatórios do Catálogo](../catalogo/relatorios.md) · [Dashboard de SLA](dashboard-de-sla.md) · [Meta de Vendas](meta-de-vendas.md)

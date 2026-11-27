@@ -10,6 +10,8 @@ O **Catálogo** é a vitrine de produtos da empresa — a página que o cliente 
 
 > 🔐 Autenticação igual aos demais endpoints: token no cabeçalho `Authorization: Bearer` (veja [Introdução e Autenticação](../introducao-e-autenticacao.md)). Toda operação enxerga apenas os dados da empresa do token.
 
+> 🛍️ **Esta página documenta a API oficial do catálogo.** Para usar o catálogo pela tela — cadastro de produtos, vitrine pública, envio no atendimento e publicação no catálogo do WhatsApp pelo canal Plus — veja [Catálogo](../../../funcionalidades/catalogo/README.md). Produto criado pela API **não é publicado automaticamente** no catálogo do WhatsApp.
+
 ## 🧭 Como o catálogo é organizado
 
 | Conceito | O que é | Observação |

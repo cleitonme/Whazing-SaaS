@@ -237,6 +237,13 @@
     * [Relatórios](funcionalidades/kanban-pro/relatorios.md)
     * [Cards nos Atendimentos](funcionalidades/kanban-pro/cards-nos-atendimentos.md)
     * [Api](funcionalidades/kanban-pro/api.md)
+  * [🛍️ Catálogo](funcionalidades/catalogo/README.md)
+    * [Produtos e Coleções](funcionalidades/catalogo/produtos-e-colecoes.md)
+    * [Link Público e Vitrine](funcionalidades/catalogo/link-publico.md)
+    * [Enviar Produto no Atendimento](funcionalidades/catalogo/envio-no-atendimento.md)
+    * [Importar Produtos da Loja](funcionalidades/catalogo/importar-produtos-da-loja.md)
+    * [Catálogo no WhatsApp (API Plus)](funcionalidades/catalogo/whatsapp-plus.md)
+    * [Relatórios do Catálogo](funcionalidades/catalogo/relatorios.md)
   * [PWA CELULAR](funcionalidades/instalacao-do-pwa-e-habilitacao-de-notificacoes.md)
 
 ## Integrações
@@ -255,6 +262,7 @@
       * [Base de Conhecimento](integracoes/inteligencia-artificial/recepcao-inteligente/base-de-conhecimento.md)
       * [Busca na Web](integracoes/inteligencia-artificial/recepcao-inteligente/busca-na-web.md)
       * [Envio de Arquivos via IA](integracoes/inteligencia-artificial/recepcao-inteligente/envio-de-arquivos-via-ia.md)
+      * [Catálogo na Recepção Inteligente](integracoes/inteligencia-artificial/recepcao-inteligente/catalogo-na-recepcao-inteligente.md)
       * [Outros Comandos](integracoes/inteligencia-artificial/recepcao-inteligente/outros-comandos.md)
       * [Configuração de Resposta por Áudio](integracoes/inteligencia-artificial/recepcao-inteligente/configuracao-de-resposta-por-audio.md)
       * [Busca Semântica](integracoes/inteligencia-artificial/recepcao-inteligente/busca-semantica.md)
