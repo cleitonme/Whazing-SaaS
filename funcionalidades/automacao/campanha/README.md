@@ -7,7 +7,9 @@ icon: bullhorn
 
 Lembre-se campanha tem riscos altos de ban aconselhamos uso de números descartáveis.
 
-⚠️ Atualmente, as campanhas estão disponíveis apenas para o canal **WhatsApp**.
+⚠️ Esta página cobre campanhas de **mensagem** pelo canal **WhatsApp**.
+
+> 📞 **Campanhas de chamada de voz:** o sistema também faz **ligações** que tocam um áudio gravado. Esse módulo é separado, exclusivo de canais **WhatsApp Plus** e depende do adicional **Campanhas de chamada de voz**. Veja [Campanha de Chamadas (áudio)](campanha-de-chamadas.md).
 
 > 🆕 **Novo módulo de campanhas:** agora existe um módulo novo e mais completo para envio por WhatsApp não oficial — com **sequência de mensagens**, **variações de texto** (com ajuda da IA), **intervalos variados**, pausas, horários e limite por dia. Veja [Campanha WhatsApp Não Oficial](campanha-whatsapp-nao-oficial.md). Esta página continua disponível para as campanhas criadas no modelo anterior.
 

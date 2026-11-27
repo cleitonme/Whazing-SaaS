@@ -193,6 +193,7 @@
     * [Envio da Cópia do Atendimento por E-mail](funcionalidades/automacao/envio-da-copia-do-atendimento-por-e-mail.md)
     * [Campanhas](funcionalidades/automacao/campanha/README.md)
       * [Campanha WhatsApp Não Oficial (novo módulo)](funcionalidades/automacao/campanha/campanha-whatsapp-nao-oficial.md)
+      * [Campanha de Chamadas (áudio)](funcionalidades/automacao/campanha/campanha-de-chamadas.md)
       * [Tracking Links](funcionalidades/automacao/campanha/tracking-links.md)
       * [Formulários](funcionalidades/automacao/campanha/formularios.md)
     * [Agendamento de Status (Stories) WhatsApp](funcionalidades/automacao/agendamento-de-status-stories-whatsapp.md)

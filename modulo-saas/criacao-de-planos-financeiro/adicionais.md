@@ -69,6 +69,7 @@ Entre os exemplos estão:
 * **Campanhas Oficial (Meta)**
 * **Campanhas Email**
 * **Campanhas SMS**
+* **Campanhas de chamada de voz**
 * **Integrações**
 * **Serviço avulso / externo**
 * **Copilot**
@@ -274,6 +275,8 @@ Liberar envio de campanhas por email
 ## 📱 8. Campanhas SMS
 
 Liberar envio de campanhas SMS
+
+> 📞 Também existe o adicional **Campanhas de chamada de voz**, que libera ligações com áudio gravado. Ele é exclusivo para empresas com **canal WhatsApp Plus conectado** — sem um canal desse tipo, o sistema orienta conectar antes de contratar. Saiba como funciona em [Campanha de Chamadas (áudio)](../../funcionalidades/automacao/campanha/campanha-de-chamadas.md).
 
 ***
 
@@ -654,6 +657,7 @@ Dependendo do tipo:
 * Campanhas Oficial (Meta)
 * Campanhas Email
 * Campanhas SMS
+* Campanhas de chamada de voz (WhatsApp Plus)
 
 ***
 

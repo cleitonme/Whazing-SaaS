@@ -22,6 +22,7 @@ A **WhatsApp API PLUS** é uma **API não oficial** que conecta seu WhatsApp ao 
 * **Botão “Copiar e colar”** — facilita copiar texto.
 * **Links clicáveis** — abrir sites direto do chat.
 * **Solicitação de localização** — usuário envia a localização automaticamente.
+* **Campanhas de chamada de voz** — ligue para uma lista de contatos e toque um áudio gravado quando a pessoa atender. Requer o adicional **Campanhas de chamada de voz**; veja [Campanha de Chamadas (áudio)](../../../funcionalidades/automacao/campanha/campanha-de-chamadas.md).
 
 Em termos simples: são funcionalidades que deixam a conversa mais automática e profissional.
 
